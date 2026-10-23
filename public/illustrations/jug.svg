@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 216" width="320" height="432" role="img" aria-labelledby="jug-title">
+  <title id="jug-title">A 20-litre water jug</title>
+  <!-- Proportions (CLAUDE.md): body 100 wide x 140 tall (1.4x), shoulder radius 25 (25%), neck 38 wide (38%), short neck, small orange cap. -->
+  <defs>
+    <clipPath id="jug-body">
+      <path d="M30 86a25 25 0 0 1 25-25h50a25 25 0 0 1 25 25v104a10 10 0 0 1-10 10H40a10 10 0 0 1-10-10z"/>
+    </clipPath>
+  </defs>
+  <!-- neck -->
+  <rect x="61" y="47" width="38" height="16" rx="3" fill="#FAFAF7" stroke="#111827" stroke-width="2"/>
+  <!-- cap -->
+  <rect x="58" y="36" width="44" height="13" rx="4" fill="#F97316"/>
+  <!-- clear body -->
+  <path d="M30 86a25 25 0 0 1 25-25h50a25 25 0 0 1 25 25v104a10 10 0 0 1-10 10H40a10 10 0 0 1-10-10z" fill="#FAFAF7"/>
+  <!-- water -->
+  <g clip-path="url(#jug-body)">
+    <rect x="28" y="92" width="104" height="110" fill="#BFE3F0"/>
+    <line x1="28" y1="92" x2="132" y2="92" stroke="#111827" stroke-opacity=".35" stroke-width="1.5"/>
+    <!-- grip ribs: what makes it read as a 20-litre jug rather than a jar -->
+    <path d="M30 124h100M30 158h100" stroke="#111827" stroke-opacity=".18" stroke-width="2"/>
+  </g>
+  <!-- one soft highlight down the left side -->
+  <rect x="40" y="74" width="7" height="112" rx="3.5" fill="#FAFAF7" fill-opacity=".75"/>
+  <!-- outline -->
+  <path d="M30 86a25 25 0 0 1 25-25h50a25 25 0 0 1 25 25v104a10 10 0 0 1-10 10H40a10 10 0 0 1-10-10z" fill="none" stroke="#111827" stroke-width="2"/>
+</svg>

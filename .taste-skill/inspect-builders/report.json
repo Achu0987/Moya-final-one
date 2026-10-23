@@ -1,0 +1,1999 @@
+{
+ "url": "http://localhost:3100/b2b/builders",
+ "at": "2026-10-23T12:13:35.159Z",
+ "allow": [],
+ "viewports": [
+  {
+   "width": 1440,
+   "height": 900,
+   "load": "load",
+   "screens": 5,
+   "filled": [
+    0.96,
+    0.6,
+    0.71,
+    0.82,
+    0.97
+   ],
+   "motion": {
+    "elements": 66,
+    "css": 1,
+    "transitions": 4,
+    "scripted": 61,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "page": {
+     "height": 3997,
+     "screens": 4.4,
+     "words": 365,
+     "img": 0,
+     "video": 0,
+     "canvas": 2,
+     "svg": 16,
+     "sections": 5,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 1,
+     "uiAbuse": false,
+     "realPictures": 0,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Drinking water, planned in.",
+     "words": 4,
+     "chars": 27,
+     "lines": 2,
+     "size": 64,
+     "vw": 4.4,
+     "font": "Plus Jakarta Sans",
+     "weight": 700,
+     "tracking": -0.03,
+     "leading": 1,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "left",
+     "widthRatio": 0.34,
+     "top": 321,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Drinking water, planned in.",
+     "words": 4,
+     "lines": 2,
+     "size": 64,
+     "font": "Plus Jakarta Sans"
+    },
+    "headings": [
+     {
+      "text": "12 / 12",
+      "words": 3,
+      "chars": 7,
+      "lines": 1,
+      "size": 32,
+      "vw": 2.2,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": 0,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.05,
+      "top": 224,
+      "tag": "strong",
+      "kind": "heading"
+     },
+     {
+      "text": "Drinking water, planned in.",
+      "words": 4,
+      "chars": 27,
+      "lines": 2,
+      "size": 64,
+      "vw": 4.4,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": -0.03,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.34,
+      "top": 321,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "What it asks of your project.",
+      "words": 6,
+      "chars": 29,
+      "lines": 1,
+      "size": 44,
+      "vw": 3.1,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": -0.02,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.41,
+      "top": 1080,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "The whole system, on film.",
+      "words": 5,
+      "chars": 26,
+      "lines": 2,
+      "size": 44,
+      "vw": 3.1,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": -0.02,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.34,
+      "top": 2093,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Where Moya One is going in.",
+      "words": 6,
+      "chars": 27,
+      "lines": 2,
+      "size": 44,
+      "vw": 3.1,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": -0.02,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.34,
+      "top": 2510,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Plan it into your next tower.",
+      "words": 6,
+      "chars": 29,
+      "lines": 2,
+      "size": 64,
+      "vw": 4.4,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": -0.03,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.38,
+      "top": 3134,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Moya One",
+      "words": 2,
+      "chars": 8,
+      "lines": 1,
+      "size": 269,
+      "vw": 18.7,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": -0.055,
+      "leading": 0.8,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.85,
+      "top": 3827,
+      "tag": "p",
+      "kind": "statement"
+     }
+    ],
+    "headingSummary": {
+     "count": 7,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 1,
+     "centered": 0,
+     "medianWords": 6,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Inter",
+       "share": 0.84,
+       "mono": false
+      },
+      {
+       "family": "Plus Jakarta Sans",
+       "share": 0.16,
+       "mono": false
+      }
+     ],
+     "familyCount": 2,
+     "sizes": [
+      13,
+      15,
+      16,
+      20,
+      22,
+      44,
+      64,
+      269
+     ],
+     "sizeCount": 8,
+     "notLoaded": [],
+     "body": {
+      "font": "Inter",
+      "size": 16,
+      "leading": 1.6,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 6.9
+     },
+     "measureChars": 49,
+     "max": {
+      "size": 269,
+      "vw": 18.7,
+      "font": "Plus Jakarta Sans",
+      "text": "Moya One"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0,
+     "centerShare": 0.04,
+     "smallText": 0
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#fafaf7",
+     "bodyBgHsl": {
+      "h": 60,
+      "s": 0.23,
+      "l": 0.97
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#111827",
+       "top": 89,
+       "hsl": {
+        "h": 221,
+        "s": 0.39,
+        "l": 0.11
+       }
+      },
+      {
+       "color": "#212836",
+       "top": 161,
+       "hsl": {
+        "h": 220,
+        "s": 0.24,
+        "l": 0.17
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#b9bbbd",
+       "share": 0.35
+      },
+      {
+       "color": "#4b5563",
+       "share": 0.33
+      },
+      {
+       "color": "#111827",
+       "share": 0.18
+      },
+      {
+       "color": "#fafaf7",
+       "share": 0.14
+      }
+     ],
+     "button": {
+      "bg": "#111827",
+      "hsl": {
+       "h": 221,
+       "s": 0.39,
+       "l": 0.11
+      },
+      "fg": "#fafaf7"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 4,
+     "inHero": 3,
+     "radius": "pill",
+     "height": 50,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Skip to content",
+      "Contact",
+      "Start an enquiry"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 2,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 1,
+     "hairlineSamples": [
+      "header.nav 1440px"
+     ],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 10,
+     "boxRadius": 20,
+     "squareMedia": 0,
+     "roundedMedia": 2,
+     "mediaRadius": 14,
+     "textShadow": 0,
+     "cardRows": [
+      {
+       "count": 4,
+       "iconTopped": false,
+       "rounded": true,
+       "top": 1160
+      }
+     ]
+    },
+    "heroMedia": [
+     {
+      "type": "canvas",
+      "ratio": 0.31
+     },
+     {
+      "type": "svg",
+      "ratio": 0.31
+     }
+    ],
+    "nav": {
+     "links": 6,
+     "fixed": true,
+     "height": 89,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "plus jakarta sans",
+     "inter"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "pageH": 3998,
+    "margins": {
+     "left": 120,
+     "right": 120
+    },
+    "sections": [
+     {
+      "sel": "section.b-hero",
+      "tag": "section",
+      "top": 89,
+      "height": 871,
+      "words": 88,
+      "media": 1,
+      "middle": 63,
+      "heading": {
+       "text": "Drinking water,",
+       "size": 64,
+       "tag": "h1"
+      },
+      "left": 120,
+      "right": 136,
+      "textLeft": 120,
+      "textRight": 178,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.b-asks",
+      "tag": "section",
+      "top": 960,
+      "height": 802,
+      "words": 113,
+      "media": 2,
+      "middle": 42,
+      "heading": {
+       "text": "What",
+       "size": 44,
+       "tag": "h2"
+      },
+      "left": 120,
+      "right": 106,
+      "textLeft": 120,
+      "textRight": 106,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.b-film",
+      "tag": "section",
+      "top": 1762,
+      "height": 628,
+      "words": 36,
+      "media": 0,
+      "middle": 240,
+      "heading": {
+       "text": "The",
+       "size": 44,
+       "tag": "h2"
+      },
+      "left": 120,
+      "right": 333,
+      "textLeft": 120,
+      "textRight": 333,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.b-refs",
+      "tag": "section",
+      "top": 2390,
+      "height": 490,
+      "words": 30,
+      "media": 0,
+      "middle": 237,
+      "heading": {
+       "text": "Where",
+       "size": 44,
+       "tag": "h2"
+      },
+      "left": 120,
+      "right": 190,
+      "textLeft": 120,
+      "textRight": 190,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.b-enquire",
+      "tag": "section",
+      "top": 2880,
+      "height": 442,
+      "words": 33,
+      "media": 0,
+      "middle": 275,
+      "heading": {
+       "text": "Plan",
+       "size": 64,
+       "tag": "h2"
+      },
+      "left": 120,
+      "right": 144,
+      "textLeft": 120,
+      "textRight": 144,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "footer.footer",
+      "tag": "footer",
+      "top": 3322,
+      "height": 676,
+      "words": 44,
+      "media": 0,
+      "middle": 282,
+      "heading": {
+       "text": "Moya One",
+       "size": 22,
+       "tag": "p"
+      },
+      "left": 120,
+      "right": 170,
+      "textLeft": 120,
+      "textRight": 170,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "Drinking water, planned in.",
+      "size": 64,
+      "top": 321,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 120,
+      "n": 12
+     },
+     {
+      "x": 254,
+      "n": 4
+     },
+     {
+      "x": 293,
+      "n": 2
+     },
+     {
+      "x": 372,
+      "n": 2
+     },
+     {
+      "x": 423,
+      "n": 2
+     },
+     {
+      "x": 201,
+      "n": 1
+     },
+     {
+      "x": 216,
+      "n": 1
+     },
+     {
+      "x": 238,
+      "n": 1
+     },
+     {
+      "x": 272,
+      "n": 1
+     },
+     {
+      "x": 353,
+      "n": 1
+     },
+     {
+      "x": 523,
+      "n": 1
+     },
+     {
+      "x": 834,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 29,
+    "bodySize": 16,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0.08,
+    "voidBox": {
+     "x": 0,
+     "y": 120,
+     "w": 600,
+     "h": 180
+    }
+   },
+   "app": null,
+   "consoleErrors": []
+  },
+  {
+   "width": 768,
+   "height": 1024,
+   "load": "load",
+   "screens": 5,
+   "filled": [
+    0.91,
+    0.93,
+    0.72,
+    0.81,
+    0.95
+   ],
+   "motion": {
+    "elements": 66,
+    "css": 1,
+    "transitions": 4,
+    "scripted": 61,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "page": {
+     "height": 4795,
+     "screens": 4.7,
+     "words": 330,
+     "img": 0,
+     "video": 0,
+     "canvas": 2,
+     "svg": 16,
+     "sections": 5,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 1,
+     "uiAbuse": false,
+     "realPictures": 0,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Drinking water, planned in.",
+     "words": 4,
+     "chars": 27,
+     "lines": 2,
+     "size": 40,
+     "vw": 5.2,
+     "font": "Plus Jakarta Sans",
+     "weight": 700,
+     "tracking": -0.03,
+     "leading": 1.05,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "center",
+     "widthRatio": 0.96,
+     "top": 105,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Drinking water, planned in.",
+     "words": 4,
+     "lines": 2,
+     "size": 40,
+     "font": "Plus Jakarta Sans"
+    },
+    "headings": [
+     {
+      "text": "Drinking water, planned in.",
+      "words": 4,
+      "chars": 27,
+      "lines": 2,
+      "size": 40,
+      "vw": 5.2,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": -0.03,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.96,
+      "top": 105,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "12 / 12",
+      "words": 3,
+      "chars": 7,
+      "lines": 1,
+      "size": 32,
+      "vw": 4.2,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": 0,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.09,
+      "top": 468,
+      "tag": "strong",
+      "kind": "heading"
+     },
+     {
+      "text": "What it asks of your project.",
+      "words": 6,
+      "chars": 29,
+      "lines": 1,
+      "size": 32,
+      "vw": 4.2,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": -0.02,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.96,
+      "top": 1052,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "The whole system, on film.",
+      "words": 5,
+      "chars": 26,
+      "lines": 1,
+      "size": 32,
+      "vw": 4.2,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": -0.02,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.96,
+      "top": 2163,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Where Moya One is going in.",
+      "words": 6,
+      "chars": 27,
+      "lines": 1,
+      "size": 32,
+      "vw": 4.2,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": -0.02,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.96,
+      "top": 2862,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Plan it into your next tower.",
+      "words": 6,
+      "chars": 29,
+      "lines": 2,
+      "size": 40,
+      "vw": 5.2,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": -0.03,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.44,
+      "top": 3615,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Moya One",
+      "words": 2,
+      "chars": 8,
+      "lines": 1,
+      "size": 165,
+      "vw": 21.5,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": -0.055,
+      "leading": 0.8,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.94,
+      "top": 4690,
+      "tag": "p",
+      "kind": "statement"
+     }
+    ],
+    "headingSummary": {
+     "count": 7,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 1,
+     "centered": 0,
+     "medianWords": 6,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Inter",
+       "share": 0.82,
+       "mono": false
+      },
+      {
+       "family": "Plus Jakarta Sans",
+       "share": 0.18,
+       "mono": false
+      }
+     ],
+     "familyCount": 2,
+     "sizes": [
+      13,
+      15,
+      16,
+      18,
+      20,
+      22,
+      32,
+      40,
+      165
+     ],
+     "sizeCount": 9,
+     "notLoaded": [],
+     "body": {
+      "font": "Inter",
+      "size": 16,
+      "leading": 1.6,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 6.9
+     },
+     "measureChars": 50,
+     "max": {
+      "size": 165,
+      "vw": 21.5,
+      "font": "Plus Jakarta Sans",
+      "text": "Moya One"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0,
+     "centerShare": 0.05,
+     "smallText": 0
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#fafaf7",
+     "bodyBgHsl": {
+      "h": 60,
+      "s": 0.23,
+      "l": 0.97
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#111827",
+       "top": 65,
+       "hsl": {
+        "h": 221,
+        "s": 0.39,
+        "l": 0.11
+       }
+      },
+      {
+       "color": "#212836",
+       "top": 409,
+       "hsl": {
+        "h": 220,
+        "s": 0.24,
+        "l": 0.17
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#b9bbbd",
+       "share": 0.39
+      },
+      {
+       "color": "#4b5563",
+       "share": 0.27
+      },
+      {
+       "color": "#111827",
+       "share": 0.19
+      },
+      {
+       "color": "#fafaf7",
+       "share": 0.15
+      }
+     ],
+     "button": {
+      "bg": "#f97316",
+      "hsl": {
+       "h": 25,
+       "s": 0.95,
+       "l": 0.53
+      },
+      "fg": "#111827"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 3,
+     "inHero": 2,
+     "radius": "pill",
+     "height": 50,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Skip to content",
+      "Start an enquiry"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 2,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 1,
+     "hairlineSamples": [
+      "header.nav 768px"
+     ],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 10,
+     "boxRadius": 20,
+     "squareMedia": 0,
+     "roundedMedia": 2,
+     "mediaRadius": 14,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [
+     {
+      "type": "canvas",
+      "ratio": 0.4
+     },
+     {
+      "type": "svg",
+      "ratio": 0.4
+     }
+    ],
+    "nav": {
+     "links": 1,
+     "fixed": true,
+     "height": 65,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "plus jakarta sans",
+     "inter"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "pageH": 4795,
+    "margins": {
+     "left": 16,
+     "right": 16
+    },
+    "sections": [
+     {
+      "sel": "section.b-hero",
+      "tag": "section",
+      "top": 65,
+      "height": 915,
+      "words": 68,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "Drinking water,",
+       "size": 40,
+       "tag": "h1"
+      },
+      "left": 16,
+      "right": 28,
+      "textLeft": 16,
+      "textRight": 119,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.b-asks",
+      "tag": "section",
+      "top": 980,
+      "height": 1111,
+      "words": 106,
+      "media": 2,
+      "middle": 0,
+      "heading": {
+       "text": "What",
+       "size": 32,
+       "tag": "h2"
+      },
+      "left": 16,
+      "right": 16,
+      "textLeft": 16,
+      "textRight": 70,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.b-film",
+      "tag": "section",
+      "top": 2091,
+      "height": 699,
+      "words": 36,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "The",
+       "size": 32,
+       "tag": "h2"
+      },
+      "left": 16,
+      "right": 252,
+      "textLeft": 16,
+      "textRight": 252,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.b-refs",
+      "tag": "section",
+      "top": 2790,
+      "height": 753,
+      "words": 30,
+      "media": 0,
+      "middle": 5,
+      "heading": {
+       "text": "Where",
+       "size": 32,
+       "tag": "h2"
+      },
+      "left": 16,
+      "right": 332,
+      "textLeft": 16,
+      "textRight": 332,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.b-enquire",
+      "tag": "section",
+      "top": 3543,
+      "height": 441,
+      "words": 33,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Plan",
+       "size": 40,
+       "tag": "h2"
+      },
+      "left": 16,
+      "right": 134,
+      "textLeft": 16,
+      "textRight": 134,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "footer.footer",
+      "tag": "footer",
+      "top": 3984,
+      "height": 811,
+      "words": 44,
+      "media": 0,
+      "middle": 295,
+      "heading": null,
+      "left": 16,
+      "right": 58,
+      "textLeft": 16,
+      "textRight": 58,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "Drinking water, planned in.",
+      "size": 40,
+      "top": 105,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 16,
+      "n": 11
+     },
+     {
+      "x": 100,
+      "n": 3
+     },
+     {
+      "x": 121,
+      "n": 3
+     },
+     {
+      "x": 199,
+      "n": 3
+     },
+     {
+      "x": 298,
+      "n": 2
+     },
+     {
+      "x": 75,
+      "n": 1
+     },
+     {
+      "x": 173,
+      "n": 1
+     },
+     {
+      "x": 236,
+      "n": 1
+     },
+     {
+      "x": 279,
+      "n": 1
+     },
+     {
+      "x": 309,
+      "n": 1
+     },
+     {
+      "x": 342,
+      "n": 1
+     },
+     {
+      "x": 399,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 29,
+    "bodySize": 16,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": null,
+   "consoleErrors": []
+  },
+  {
+   "width": 390,
+   "height": 844,
+   "load": "load",
+   "screens": 6,
+   "filled": [
+    0.97,
+    0.8,
+    0.86,
+    0.79,
+    0.89,
+    0.97
+   ],
+   "motion": {
+    "elements": 66,
+    "css": 1,
+    "transitions": 4,
+    "scripted": 61,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "page": {
+     "height": 4938,
+     "screens": 5.9,
+     "words": 330,
+     "img": 0,
+     "video": 0,
+     "canvas": 2,
+     "svg": 16,
+     "sections": 5,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 1,
+     "uiAbuse": false,
+     "realPictures": 0,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Drinking water, planned in.",
+     "words": 4,
+     "chars": 27,
+     "lines": 2,
+     "size": 40,
+     "vw": 10.3,
+     "font": "Plus Jakarta Sans",
+     "weight": 700,
+     "tracking": -0.03,
+     "leading": 1.05,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "center",
+     "widthRatio": 0.92,
+     "top": 105,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Drinking water, planned in.",
+     "words": 4,
+     "lines": 2,
+     "size": 40,
+     "font": "Plus Jakarta Sans"
+    },
+    "headings": [
+     {
+      "text": "Moya One",
+      "words": 2,
+      "chars": 8,
+      "lines": 1,
+      "size": 22,
+      "vw": 5.6,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": -0.035,
+      "leading": 1.6,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.36,
+      "top": 10,
+      "tag": "a",
+      "kind": "heading"
+     },
+     {
+      "text": "Drinking water, planned in.",
+      "words": 4,
+      "chars": 27,
+      "lines": 2,
+      "size": 40,
+      "vw": 10.3,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": -0.03,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 105,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "12 / 12",
+      "words": 3,
+      "chars": 7,
+      "lines": 1,
+      "size": 22,
+      "vw": 5.6,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": 0,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.15,
+      "top": 910,
+      "tag": "strong",
+      "kind": "heading"
+     },
+     {
+      "text": "What it asks of your project.",
+      "words": 6,
+      "chars": 29,
+      "lines": 2,
+      "size": 32,
+      "vw": 8.2,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": -0.02,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 1141,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "The whole system, on film.",
+      "words": 5,
+      "chars": 26,
+      "lines": 2,
+      "size": 32,
+      "vw": 8.2,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": -0.02,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 2441,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Where Moya One is going in.",
+      "words": 6,
+      "chars": 27,
+      "lines": 2,
+      "size": 32,
+      "vw": 8.2,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": -0.02,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 2962,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Plan it into your next tower.",
+      "words": 6,
+      "chars": 29,
+      "lines": 2,
+      "size": 40,
+      "vw": 10.3,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": -0.03,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.87,
+      "top": 3750,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Moya One",
+      "words": 2,
+      "chars": 8,
+      "lines": 1,
+      "size": 80.3,
+      "vw": 20.6,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": -0.055,
+      "leading": 0.8,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.94,
+      "top": 4887,
+      "tag": "p",
+      "kind": "statement"
+     }
+    ],
+    "headingSummary": {
+     "count": 8,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 1,
+     "centered": 0,
+     "medianWords": 5,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Inter",
+       "share": 0.82,
+       "mono": false
+      },
+      {
+       "family": "Plus Jakarta Sans",
+       "share": 0.18,
+       "mono": false
+      }
+     ],
+     "familyCount": 2,
+     "sizes": [
+      13,
+      15,
+      16,
+      18,
+      20,
+      22,
+      32,
+      40,
+      80
+     ],
+     "sizeCount": 9,
+     "notLoaded": [],
+     "body": {
+      "font": "Inter",
+      "size": 16,
+      "leading": 1.6,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 6.9
+     },
+     "measureChars": 40,
+     "max": {
+      "size": 80.3,
+      "vw": 20.6,
+      "font": "Plus Jakarta Sans",
+      "text": "Moya One"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0,
+     "centerShare": 0.05,
+     "smallText": 0
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#fafaf7",
+     "bodyBgHsl": {
+      "h": 60,
+      "s": 0.23,
+      "l": 0.97
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#111827",
+       "top": 65,
+       "hsl": {
+        "h": 221,
+        "s": 0.39,
+        "l": 0.11
+       }
+      },
+      {
+       "color": "#212836",
+       "top": 498,
+       "hsl": {
+        "h": 220,
+        "s": 0.24,
+        "l": 0.17
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#b9bbbd",
+       "share": 0.39
+      },
+      {
+       "color": "#4b5563",
+       "share": 0.27
+      },
+      {
+       "color": "#111827",
+       "share": 0.19
+      },
+      {
+       "color": "#fafaf7",
+       "share": 0.15
+      }
+     ],
+     "button": {
+      "bg": "#f97316",
+      "hsl": {
+       "h": 25,
+       "s": 0.95,
+       "l": 0.53
+      },
+      "fg": "#111827"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 3,
+     "inHero": 2,
+     "radius": "pill",
+     "height": 50,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Skip to content",
+      "Start an enquiry"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 2,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 1,
+     "hairlineSamples": [
+      "header.nav 390px"
+     ],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 10,
+     "boxRadius": 20,
+     "squareMedia": 0,
+     "roundedMedia": 2,
+     "mediaRadius": 14,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [
+     {
+      "type": "canvas",
+      "ratio": 0.34
+     },
+     {
+      "type": "svg",
+      "ratio": 0.34
+     }
+    ],
+    "nav": {
+     "links": 1,
+     "fixed": true,
+     "height": 65,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "plus jakarta sans",
+     "inter"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "pageH": 4938,
+    "margins": {
+     "left": 16,
+     "right": 16
+    },
+    "sections": [
+     {
+      "sel": "section.b-hero",
+      "tag": "section",
+      "top": 65,
+      "height": 1004,
+      "words": 68,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "Drinking water,",
+       "size": 40,
+       "tag": "h1"
+      },
+      "left": 16,
+      "right": 22,
+      "textLeft": 16,
+      "textRight": 22,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.b-asks",
+      "tag": "section",
+      "top": 1069,
+      "height": 1300,
+      "words": 106,
+      "media": 2,
+      "middle": 0,
+      "heading": {
+       "text": "What",
+       "size": 32,
+       "tag": "h2"
+      },
+      "left": 16,
+      "right": 16,
+      "textLeft": 16,
+      "textRight": 22,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.b-film",
+      "tag": "section",
+      "top": 2369,
+      "height": 521,
+      "words": 36,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "The",
+       "size": 32,
+       "tag": "h2"
+      },
+      "left": 16,
+      "right": 20,
+      "textLeft": 16,
+      "textRight": 20,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.b-refs",
+      "tag": "section",
+      "top": 2890,
+      "height": 788,
+      "words": 30,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Where",
+       "size": 32,
+       "tag": "h2"
+      },
+      "left": 16,
+      "right": 58,
+      "textLeft": 16,
+      "textRight": 58,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.b-enquire",
+      "tag": "section",
+      "top": 3678,
+      "height": 470,
+      "words": 33,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Plan",
+       "size": 40,
+       "tag": "h2"
+      },
+      "left": 16,
+      "right": 26,
+      "textLeft": 16,
+      "textRight": 26,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "footer.footer",
+      "tag": "footer",
+      "top": 4148,
+      "height": 790,
+      "words": 44,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": 16,
+      "right": 44,
+      "textLeft": 16,
+      "textRight": 44,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "Drinking water, planned in.",
+      "size": 40,
+      "top": 105,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 16,
+      "n": 14
+     },
+     {
+      "x": 100,
+      "n": 3
+     },
+     {
+      "x": 199,
+      "n": 3
+     },
+     {
+      "x": 86,
+      "n": 2
+     },
+     {
+      "x": 114,
+      "n": 2
+     },
+     {
+      "x": 127,
+      "n": 2
+     },
+     {
+      "x": 75,
+      "n": 1
+     },
+     {
+      "x": 142,
+      "n": 1
+     },
+     {
+      "x": 185,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 29,
+    "bodySize": 16,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": null,
+   "consoleErrors": []
+  }
+ ],
+ "findings": [
+  {
+   "level": "WARN",
+   "id": "hairline",
+   "width": 1440,
+   "message": "1 thin rule(s)/divider line(s): header.nav 1440px",
+   "fix": "Delete. Separate with space, a tone change, or scale. Lines are only for real tables and form fields.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "palette-cream",
+   "width": 1440,
+   "message": "Yellow-cream background (page background #fafaf7, text #fafaf7).",
+   "fix": "Use the drawn palette. If you want warmth, take a low-chroma stone or bone, not a yellow cream.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "grey-body",
+   "width": 1440,
+   "message": "The running text is a soft grey on its ground (6.9:1).",
+   "fix": "Set body copy in the full ink (7:1 or more). Keep the muted ink for secondary notes; pages read thin and unfinished when everything is grey.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "few-pictures",
+   "width": 1440,
+   "message": "Only 0 picture(s) on the page (0 photographs, footage or raster images, 0 interface fragments). Drawings in SVG do not count.",
+   "fix": "Find real pictures of the subject's world with scripts/assets.mjs (photographs, archival images, maps, engravings, footage), download them to assets/ and give them room: a hero picture, one per section that has a subject, a full-width band. At least four, usually six to twelve."
+  },
+  {
+   "level": "WARN",
+   "id": "no-footage",
+   "width": 1440,
+   "message": "No video anywhere on the page.",
+   "fix": "Look for one honest clip with scripts/assets.mjs --video (the place, the material, the process) and use it as a muted loop with a poster frame. Defend its absence only if no clip fits the subject."
+  },
+  {
+   "level": "WARN",
+   "id": "lopsided",
+   "width": 768,
+   "message": "A section keeps its content on one side and leaves 332px of the width empty: \"Where\".",
+   "fix": "Fill the other side with what the section has (its picture, a second column, the figure), or defend the void in one sentence."
+  },
+  {
+   "level": "WARN",
+   "id": "ragged-edges",
+   "width": 768,
+   "message": "Left-aligned text starts at 12 different lines (16px, 100px, 121px, 199px, 298px, 75px, 173px); the three most used hold only 59% of it.",
+   "fix": "Pick two or three anchor lines from the grid and start every heading and paragraph on one of them."
+  },
+  {
+   "level": "FAIL",
+   "id": "covered-text",
+   "width": 390,
+   "message": "Large text lies under another element at some scroll position: \"Moya One\" (screen 6, 38% hidden)",
+   "fix": "Nothing may sit on top of a headline or statement. Move the picture, shorten the pinned run, or raise the text above it (z-index) and give it a ground."
+  }
+ ],
+ "images": [
+  {
+   "viewport": "desktop",
+   "width": 1440,
+   "fold": "C:\\Users\\Dell\\Documents\\Moya-one-final\\.taste-skill\\inspect-builders\\desktop-fold.jpg",
+   "pages": [
+    "C:\\Users\\Dell\\Documents\\Moya-one-final\\.taste-skill\\inspect-builders\\desktop-page-01.jpg",
+    "C:\\Users\\Dell\\Documents\\Moya-one-final\\.taste-skill\\inspect-builders\\desktop-page-02.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "tablet",
+   "width": 768,
+   "fold": "C:\\Users\\Dell\\Documents\\Moya-one-final\\.taste-skill\\inspect-builders\\tablet-fold.jpg",
+   "pages": [
+    "C:\\Users\\Dell\\Documents\\Moya-one-final\\.taste-skill\\inspect-builders\\tablet-page-01.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "mobile",
+   "width": 390,
+   "fold": "C:\\Users\\Dell\\Documents\\Moya-one-final\\.taste-skill\\inspect-builders\\mobile-fold.jpg",
+   "pages": [
+    "C:\\Users\\Dell\\Documents\\Moya-one-final\\.taste-skill\\inspect-builders\\mobile-page-01.jpg"
+   ],
+   "film": []
+  }
+ ]
+}

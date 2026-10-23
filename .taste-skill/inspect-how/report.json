@@ -1,0 +1,1811 @@
+{
+ "url": "http://localhost:3100/b2c/how-it-works",
+ "at": "2026-10-23T11:49:47.545Z",
+ "allow": [],
+ "viewports": [
+  {
+   "width": 1440,
+   "height": 900,
+   "load": "load",
+   "screens": 6,
+   "filled": [
+    0.44,
+    0.47,
+    0.43,
+    0.48,
+    0.58,
+    0.81
+   ],
+   "motion": {
+    "elements": 46,
+    "css": 1,
+    "transitions": 10,
+    "scripted": 35,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "page": {
+     "height": 5035,
+     "screens": 5.6,
+     "words": 302,
+     "img": 0,
+     "video": 0,
+     "canvas": 2,
+     "svg": 10,
+     "sections": 2,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 1,
+     "uiAbuse": false,
+     "realPictures": 0,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "From the building to your glass.",
+     "words": 6,
+     "chars": 32,
+     "lines": 2,
+     "size": 64,
+     "vw": 4.4,
+     "font": "Plus Jakarta Sans",
+     "weight": 700,
+     "tracking": -0.03,
+     "leading": 1,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "left",
+     "widthRatio": 0.41,
+     "top": 349,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "From the building to your glass.",
+     "words": 6,
+     "lines": 2,
+     "size": 64,
+     "font": "Plus Jakarta Sans"
+    },
+    "headings": [
+     {
+      "text": "0 / 12",
+      "words": 3,
+      "chars": 6,
+      "lines": 1,
+      "size": 32,
+      "vw": 2.2,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": 0,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.04,
+      "top": 159,
+      "tag": "strong",
+      "kind": "heading"
+     },
+     {
+      "text": "From the building to your glass.",
+      "words": 6,
+      "chars": 32,
+      "lines": 2,
+      "size": 64,
+      "vw": 4.4,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": -0.03,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.41,
+      "top": 349,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "It starts in the basement.",
+      "words": 5,
+      "chars": 26,
+      "lines": 1,
+      "size": 44,
+      "vw": 3.1,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": -0.02,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.38,
+      "top": 1101,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "One line runs up to your flat.",
+      "words": 7,
+      "chars": 30,
+      "lines": 2,
+      "size": 44,
+      "vw": 3.1,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": -0.02,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.38,
+      "top": 1637,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Your kitchen gets a Moya1™ control unit.",
+      "words": 7,
+      "chars": 40,
+      "lines": 2,
+      "size": 44,
+      "vw": 3.1,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": -0.02,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.38,
+      "top": 2229,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "You recharge litres from your phone.",
+      "words": 6,
+      "chars": 36,
+      "lines": 2,
+      "size": 44,
+      "vw": 3.1,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": -0.02,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.38,
+      "top": 2788,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Then you pour a glass.",
+      "words": 5,
+      "chars": 22,
+      "lines": 1,
+      "size": 44,
+      "vw": 3.1,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": -0.02,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.38,
+      "top": 3405,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "See your water, in litres.",
+      "words": 5,
+      "chars": 26,
+      "lines": 1,
+      "size": 44,
+      "vw": 3.1,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": -0.02,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.43,
+      "top": 3925,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Moya One",
+      "words": 2,
+      "chars": 8,
+      "lines": 1,
+      "size": 269,
+      "vw": 18.7,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": -0.055,
+      "leading": 0.8,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.85,
+      "top": 4865,
+      "tag": "p",
+      "kind": "statement"
+     }
+    ],
+    "headingSummary": {
+     "count": 9,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 1,
+     "centered": 0,
+     "medianWords": 5,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Inter",
+       "share": 0.83,
+       "mono": false
+      },
+      {
+       "family": "Plus Jakarta Sans",
+       "share": 0.17,
+       "mono": false
+      }
+     ],
+     "familyCount": 2,
+     "sizes": [
+      13,
+      15,
+      16,
+      20,
+      22,
+      44,
+      64,
+      269
+     ],
+     "sizeCount": 8,
+     "notLoaded": [],
+     "body": {
+      "font": "Inter",
+      "size": 20,
+      "leading": 1.6,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 7.2
+     },
+     "measureChars": 50,
+     "max": {
+      "size": 269,
+      "vw": 18.7,
+      "font": "Plus Jakarta Sans",
+      "text": "Moya One"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0,
+     "centerShare": 0,
+     "smallText": 0
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#fafaf7",
+     "bodyBgHsl": {
+      "h": 60,
+      "s": 0.23,
+      "l": 0.97
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#111827",
+       "top": 112,
+       "hsl": {
+        "h": 221,
+        "s": 0.39,
+        "l": 0.11
+       }
+      },
+      {
+       "color": "#f3f4f6",
+       "top": 3853,
+       "hsl": {
+        "h": 220,
+        "s": 0.14,
+        "l": 0.96
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#4b5563",
+       "share": 0.59
+      },
+      {
+       "color": "#111827",
+       "share": 0.2
+      },
+      {
+       "color": "#b9bbbd",
+       "share": 0.15
+      },
+      {
+       "color": "#fafaf7",
+       "share": 0.06
+      }
+     ],
+     "button": {
+      "bg": "#111827",
+      "hsl": {
+       "h": 221,
+       "s": 0.39,
+       "l": 0.11
+      },
+      "fg": "#fafaf7"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 3,
+     "inHero": 2,
+     "radius": "pill",
+     "height": 50,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Skip to content",
+      "Contact"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 2,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 1,
+     "hairlineSamples": [
+      "header.nav 1440px"
+     ],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 3,
+     "boxRadius": 20,
+     "squareMedia": 0,
+     "roundedMedia": 1,
+     "mediaRadius": 20,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [
+     {
+      "type": "canvas",
+      "ratio": 0.33
+     },
+     {
+      "type": "svg",
+      "ratio": 0.33
+     }
+    ],
+    "nav": {
+     "links": 6,
+     "fixed": true,
+     "height": 89,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "plus jakarta sans",
+     "inter"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "pageH": 5035,
+    "margins": {
+     "left": 120,
+     "right": 120
+    },
+    "sections": [
+     {
+      "sel": "section.journey",
+      "tag": "section",
+      "top": 89,
+      "height": 3764,
+      "words": 191,
+      "media": 2,
+      "middle": 71,
+      "heading": {
+       "text": "From the building",
+       "size": 64,
+       "tag": "h1"
+      },
+      "left": 120,
+      "right": 92,
+      "textLeft": 120,
+      "textRight": 92,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": true,
+      "pinned": true
+     },
+     {
+      "sel": "section.how-next",
+      "tag": "section",
+      "top": 3853,
+      "height": 506,
+      "words": 33,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "See",
+       "size": 44,
+       "tag": "h2"
+      },
+      "left": 184,
+      "right": 704,
+      "textLeft": 184,
+      "textRight": 704,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "footer.footer",
+      "tag": "footer",
+      "top": 4359,
+      "height": 676,
+      "words": 44,
+      "media": 0,
+      "middle": 282,
+      "heading": null,
+      "left": 120,
+      "right": 170,
+      "textLeft": 120,
+      "textRight": 170,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "From the building to your glass.",
+      "size": 64,
+      "top": 349,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 120,
+      "n": 3
+     },
+     {
+      "x": 184,
+      "n": 2
+     },
+     {
+      "x": 271,
+      "n": 1
+     },
+     {
+      "x": 371,
+      "n": 1
+     },
+     {
+      "x": 511,
+      "n": 1
+     },
+     {
+      "x": 553,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 9,
+    "bodySize": 20,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0.17,
+    "voidBox": {
+     "x": 0,
+     "y": 600,
+     "w": 720,
+     "h": 300
+    }
+   },
+   "app": null,
+   "consoleErrors": []
+  },
+  {
+   "width": 768,
+   "height": 1024,
+   "load": "load",
+   "screens": 6,
+   "filled": [
+    0.58,
+    0.57,
+    0.54,
+    0.56,
+    0.89,
+    0.88
+   ],
+   "motion": {
+    "elements": 46,
+    "css": 1,
+    "transitions": 10,
+    "scripted": 35,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "page": {
+     "height": 5255,
+     "screens": 5.1,
+     "words": 287,
+     "img": 0,
+     "video": 0,
+     "canvas": 2,
+     "svg": 10,
+     "sections": 2,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 1,
+     "uiAbuse": false,
+     "realPictures": 0,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "From the building to your glass.",
+     "words": 6,
+     "chars": 32,
+     "lines": 2,
+     "size": 40,
+     "vw": 5.2,
+     "font": "Plus Jakarta Sans",
+     "weight": 700,
+     "tracking": -0.03,
+     "leading": 1.05,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "center",
+     "widthRatio": 0.96,
+     "top": 105,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "From the building to your glass.",
+     "words": 6,
+     "lines": 2,
+     "size": 40,
+     "font": "Plus Jakarta Sans"
+    },
+    "headings": [
+     {
+      "text": "From the building to your glass.",
+      "words": 6,
+      "chars": 32,
+      "lines": 2,
+      "size": 40,
+      "vw": 5.2,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": -0.03,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.96,
+      "top": 105,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "0 / 12",
+      "words": 3,
+      "chars": 6,
+      "lines": 1,
+      "size": 32,
+      "vw": 4.2,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": 0,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.07,
+      "top": 376,
+      "tag": "strong",
+      "kind": "heading"
+     },
+     {
+      "text": "It starts in the basement.",
+      "words": 5,
+      "chars": 26,
+      "lines": 1,
+      "size": 32,
+      "vw": 4.2,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": -0.02,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.71,
+      "top": 1113,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "One line runs up to your flat.",
+      "words": 7,
+      "chars": 30,
+      "lines": 1,
+      "size": 32,
+      "vw": 4.2,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": -0.02,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.71,
+      "top": 1734,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Your kitchen gets a Moya1™ control unit.",
+      "words": 7,
+      "chars": 40,
+      "lines": 2,
+      "size": 32,
+      "vw": 4.2,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": -0.02,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.71,
+      "top": 2366,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "You recharge litres from your phone.",
+      "words": 6,
+      "chars": 36,
+      "lines": 1,
+      "size": 32,
+      "vw": 4.2,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": -0.02,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.71,
+      "top": 3002,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Then you pour a glass.",
+      "words": 5,
+      "chars": 22,
+      "lines": 1,
+      "size": 32,
+      "vw": 4.2,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": -0.02,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.71,
+      "top": 3653,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "See your water, in litres.",
+      "words": 5,
+      "chars": 26,
+      "lines": 1,
+      "size": 32,
+      "vw": 4.2,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": -0.02,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 4113,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Moya One",
+      "words": 2,
+      "chars": 8,
+      "lines": 1,
+      "size": 165,
+      "vw": 21.5,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": -0.055,
+      "leading": 0.8,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.94,
+      "top": 5151,
+      "tag": "p",
+      "kind": "statement"
+     }
+    ],
+    "headingSummary": {
+     "count": 9,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 1,
+     "centered": 0,
+     "medianWords": 5,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Inter",
+       "share": 0.82,
+       "mono": false
+      },
+      {
+       "family": "Plus Jakarta Sans",
+       "share": 0.18,
+       "mono": false
+      }
+     ],
+     "familyCount": 2,
+     "sizes": [
+      13,
+      15,
+      16,
+      18,
+      20,
+      22,
+      32,
+      40,
+      165
+     ],
+     "sizeCount": 9,
+     "notLoaded": [],
+     "body": {
+      "font": "Inter",
+      "size": 18,
+      "leading": 1.6,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 7.2
+     },
+     "measureChars": 50,
+     "max": {
+      "size": 165,
+      "vw": 21.5,
+      "font": "Plus Jakarta Sans",
+      "text": "Moya One"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0,
+     "centerShare": 0,
+     "smallText": 0
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#fafaf7",
+     "bodyBgHsl": {
+      "h": 60,
+      "s": 0.23,
+      "l": 0.97
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#111827",
+       "top": 331,
+       "hsl": {
+        "h": 221,
+        "s": 0.39,
+        "l": 0.11
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#4b5563",
+       "share": 0.59
+      },
+      {
+       "color": "#111827",
+       "share": 0.21
+      },
+      {
+       "color": "#b9bbbd",
+       "share": 0.13
+      },
+      {
+       "color": "#fafaf7",
+       "share": 0.06
+      }
+     ],
+     "button": {
+      "bg": "#111827",
+      "hsl": {
+       "h": 221,
+       "s": 0.39,
+       "l": 0.11
+      },
+      "fg": "#fafaf7"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 2,
+     "inHero": 1,
+     "radius": "pill",
+     "height": 50,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Skip to content"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 2,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 1,
+     "hairlineSamples": [
+      "header.nav 768px"
+     ],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 3,
+     "boxRadius": 20,
+     "squareMedia": 0,
+     "roundedMedia": 1,
+     "mediaRadius": 20,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [
+     {
+      "type": "canvas",
+      "ratio": 0.44
+     },
+     {
+      "type": "svg",
+      "ratio": 0.44
+     }
+    ],
+    "nav": {
+     "links": 1,
+     "fixed": true,
+     "height": 65,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "plus jakarta sans",
+     "inter"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "pageH": 5255,
+    "margins": {
+     "left": 16,
+     "right": 16
+    },
+    "sections": [
+     {
+      "sel": "section.journey",
+      "tag": "section",
+      "top": 65,
+      "height": 4008,
+      "words": 178,
+      "media": 2,
+      "middle": 0,
+      "heading": {
+       "text": "From the building",
+       "size": 40,
+       "tag": "h1"
+      },
+      "left": 16,
+      "right": 16,
+      "textLeft": 16,
+      "textRight": 122,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.how-next",
+      "tag": "section",
+      "top": 4073,
+      "height": 372,
+      "words": 33,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "See",
+       "size": 32,
+       "tag": "h2"
+      },
+      "left": 40,
+      "right": 232,
+      "textLeft": 40,
+      "textRight": 232,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "footer.footer",
+      "tag": "footer",
+      "top": 4444,
+      "height": 811,
+      "words": 44,
+      "media": 0,
+      "middle": 295,
+      "heading": null,
+      "left": 16,
+      "right": 58,
+      "textLeft": 16,
+      "textRight": 58,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "From the building to your glass.",
+      "size": 40,
+      "top": 105,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 16,
+      "n": 3
+     },
+     {
+      "x": 40,
+      "n": 2
+     },
+     {
+      "x": 103,
+      "n": 1
+     },
+     {
+      "x": 176,
+      "n": 1
+     },
+     {
+      "x": 278,
+      "n": 1
+     },
+     {
+      "x": 308,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 9,
+    "bodySize": 18,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": null,
+   "consoleErrors": []
+  },
+  {
+   "width": 390,
+   "height": 844,
+   "load": "load",
+   "screens": 6,
+   "filled": [
+    0.67,
+    0.64,
+    0.53,
+    0.57,
+    0.86,
+    0.97
+   ],
+   "motion": {
+    "elements": 46,
+    "css": 1,
+    "transitions": 10,
+    "scripted": 35,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "page": {
+     "height": 4746,
+     "screens": 5.6,
+     "words": 287,
+     "img": 0,
+     "video": 0,
+     "canvas": 2,
+     "svg": 10,
+     "sections": 2,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 1,
+     "uiAbuse": false,
+     "realPictures": 0,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "From the building to your glass.",
+     "words": 6,
+     "chars": 32,
+     "lines": 2,
+     "size": 40,
+     "vw": 10.3,
+     "font": "Plus Jakarta Sans",
+     "weight": 700,
+     "tracking": -0.03,
+     "leading": 1.05,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "center",
+     "widthRatio": 0.92,
+     "top": 105,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "From the building to your glass.",
+     "words": 6,
+     "lines": 2,
+     "size": 40,
+     "font": "Plus Jakarta Sans"
+    },
+    "headings": [
+     {
+      "text": "Moya One",
+      "words": 2,
+      "chars": 8,
+      "lines": 1,
+      "size": 22,
+      "vw": 5.6,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": -0.035,
+      "leading": 1.6,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.36,
+      "top": 10,
+      "tag": "a",
+      "kind": "heading"
+     },
+     {
+      "text": "From the building to your glass.",
+      "words": 6,
+      "chars": 32,
+      "lines": 2,
+      "size": 40,
+      "vw": 10.3,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": -0.03,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 105,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "0 / 12",
+      "words": 3,
+      "chars": 6,
+      "lines": 1,
+      "size": 22,
+      "vw": 5.6,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": 0,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.12,
+      "top": 401,
+      "tag": "strong",
+      "kind": "heading"
+     },
+     {
+      "text": "It starts in the basement.",
+      "words": 5,
+      "chars": 26,
+      "lines": 2,
+      "size": 32,
+      "vw": 8.2,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": -0.02,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 972,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "One line runs up to your flat.",
+      "words": 7,
+      "chars": 30,
+      "lines": 2,
+      "size": 32,
+      "vw": 8.2,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": -0.02,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 1481,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Your kitchen gets a Moya1™ control unit.",
+      "words": 7,
+      "chars": 40,
+      "lines": 2,
+      "size": 32,
+      "vw": 8.2,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": -0.02,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 2018,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "You recharge litres from your phone.",
+      "words": 6,
+      "chars": 36,
+      "lines": 2,
+      "size": 32,
+      "vw": 8.2,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": -0.02,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 2525,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Then you pour a glass.",
+      "words": 5,
+      "chars": 22,
+      "lines": 1,
+      "size": 32,
+      "vw": 8.2,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": -0.02,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 3082,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "See your water, in litres.",
+      "words": 5,
+      "chars": 26,
+      "lines": 2,
+      "size": 32,
+      "vw": 8.2,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": -0.02,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.79,
+      "top": 3501,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Moya One",
+      "words": 2,
+      "chars": 8,
+      "lines": 1,
+      "size": 80.3,
+      "vw": 20.6,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": -0.055,
+      "leading": 0.8,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.94,
+      "top": 4695,
+      "tag": "p",
+      "kind": "statement"
+     }
+    ],
+    "headingSummary": {
+     "count": 10,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 1,
+     "centered": 0,
+     "medianWords": 5,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Inter",
+       "share": 0.82,
+       "mono": false
+      },
+      {
+       "family": "Plus Jakarta Sans",
+       "share": 0.18,
+       "mono": false
+      }
+     ],
+     "familyCount": 2,
+     "sizes": [
+      13,
+      15,
+      16,
+      18,
+      20,
+      22,
+      32,
+      40,
+      80
+     ],
+     "sizeCount": 9,
+     "notLoaded": [],
+     "body": {
+      "font": "Inter",
+      "size": 18,
+      "leading": 1.6,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 7.2
+     },
+     "measureChars": 40,
+     "max": {
+      "size": 80.3,
+      "vw": 20.6,
+      "font": "Plus Jakarta Sans",
+      "text": "Moya One"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0,
+     "centerShare": 0,
+     "smallText": 0
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#fafaf7",
+     "bodyBgHsl": {
+      "h": 60,
+      "s": 0.23,
+      "l": 0.97
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#111827",
+       "top": 360,
+       "hsl": {
+        "h": 221,
+        "s": 0.39,
+        "l": 0.11
+       }
+      },
+      {
+       "color": "#f3f4f6",
+       "top": 3461,
+       "hsl": {
+        "h": 220,
+        "s": 0.14,
+        "l": 0.96
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#4b5563",
+       "share": 0.59
+      },
+      {
+       "color": "#111827",
+       "share": 0.21
+      },
+      {
+       "color": "#b9bbbd",
+       "share": 0.13
+      },
+      {
+       "color": "#fafaf7",
+       "share": 0.06
+      }
+     ],
+     "button": {
+      "bg": "#111827",
+      "hsl": {
+       "h": 221,
+       "s": 0.39,
+       "l": 0.11
+      },
+      "fg": "#fafaf7"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 2,
+     "inHero": 1,
+     "radius": "pill",
+     "height": 50,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Skip to content"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 2,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 1,
+     "hairlineSamples": [
+      "header.nav 390px"
+     ],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 3,
+     "boxRadius": 20,
+     "squareMedia": 0,
+     "roundedMedia": 1,
+     "mediaRadius": 20,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [
+     {
+      "type": "canvas",
+      "ratio": 0.42
+     },
+     {
+      "type": "svg",
+      "ratio": 0.42
+     }
+    ],
+    "nav": {
+     "links": 1,
+     "fixed": true,
+     "height": 65,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "plus jakarta sans",
+     "inter"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "pageH": 4746,
+    "margins": {
+     "left": 16,
+     "right": 16
+    },
+    "sections": [
+     {
+      "sel": "section.journey",
+      "tag": "section",
+      "top": 65,
+      "height": 3396,
+      "words": 178,
+      "media": 2,
+      "middle": 0,
+      "heading": {
+       "text": "From the building",
+       "size": 40,
+       "tag": "h1"
+      },
+      "left": 16,
+      "right": 16,
+      "textLeft": 16,
+      "textRight": 18,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.how-next",
+      "tag": "section",
+      "top": 3461,
+      "height": 496,
+      "words": 33,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "See",
+       "size": 32,
+       "tag": "h2"
+      },
+      "left": 40,
+      "right": 72,
+      "textLeft": 40,
+      "textRight": 72,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "footer.footer",
+      "tag": "footer",
+      "top": 3956,
+      "height": 790,
+      "words": 44,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": 16,
+      "right": 44,
+      "textLeft": 16,
+      "textRight": 44,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "From the building to your glass.",
+      "size": 40,
+      "top": 105,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 16,
+      "n": 3
+     },
+     {
+      "x": 40,
+      "n": 3
+     },
+     {
+      "x": 103,
+      "n": 1
+     },
+     {
+      "x": 142,
+      "n": 1
+     },
+     {
+      "x": 173,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 9,
+    "bodySize": 18,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": null,
+   "consoleErrors": []
+  }
+ ],
+ "findings": [
+  {
+   "level": "WARN",
+   "id": "hairline",
+   "width": 1440,
+   "message": "1 thin rule(s)/divider line(s): header.nav 1440px",
+   "fix": "Delete. Separate with space, a tone change, or scale. Lines are only for real tables and form fields.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "palette-cream",
+   "width": 1440,
+   "message": "Yellow-cream background (page background #fafaf7, text #fafaf7).",
+   "fix": "Use the drawn palette. If you want warmth, take a low-chroma stone or bone, not a yellow cream.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "few-pictures",
+   "width": 1440,
+   "message": "Only 0 picture(s) on the page (0 photographs, footage or raster images, 0 interface fragments). Drawings in SVG do not count.",
+   "fix": "Find real pictures of the subject's world with scripts/assets.mjs (photographs, archival images, maps, engravings, footage), download them to assets/ and give them room: a hero picture, one per section that has a subject, a full-width band. At least four, usually six to twelve."
+  },
+  {
+   "level": "WARN",
+   "id": "no-footage",
+   "width": 1440,
+   "message": "No video anywhere on the page.",
+   "fix": "Look for one honest clip with scripts/assets.mjs --video (the place, the material, the process) and use it as a muted loop with a poster frame. Defend its absence only if no clip fits the subject."
+  },
+  {
+   "level": "FAIL",
+   "id": "covered-text",
+   "width": 768,
+   "message": "Large text lies under another element at some scroll position: \"It starts in the basement.\" (screen 2, 100% hidden); \"Your kitchen gets a Moya1™ control unit.\" (screen 3, 100% hidden)",
+   "fix": "Nothing may sit on top of a headline or statement. Move the picture, shorten the pinned run, or raise the text above it (z-index) and give it a ground.",
+   "alsoAt": [
+    390
+   ]
+  }
+ ],
+ "images": [
+  {
+   "viewport": "desktop",
+   "width": 1440,
+   "fold": "C:\\Users\\Dell\\Documents\\Moya-one-final\\.taste-skill\\inspect-how\\desktop-fold.jpg",
+   "pages": [
+    "C:\\Users\\Dell\\Documents\\Moya-one-final\\.taste-skill\\inspect-how\\desktop-page-01.jpg",
+    "C:\\Users\\Dell\\Documents\\Moya-one-final\\.taste-skill\\inspect-how\\desktop-page-02.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "tablet",
+   "width": 768,
+   "fold": "C:\\Users\\Dell\\Documents\\Moya-one-final\\.taste-skill\\inspect-how\\tablet-fold.jpg",
+   "pages": [
+    "C:\\Users\\Dell\\Documents\\Moya-one-final\\.taste-skill\\inspect-how\\tablet-page-01.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "mobile",
+   "width": 390,
+   "fold": "C:\\Users\\Dell\\Documents\\Moya-one-final\\.taste-skill\\inspect-how\\mobile-fold.jpg",
+   "pages": [
+    "C:\\Users\\Dell\\Documents\\Moya-one-final\\.taste-skill\\inspect-how\\mobile-page-01.jpg"
+   ],
+   "film": []
+  }
+ ]
+}

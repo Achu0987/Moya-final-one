@@ -1,0 +1,379 @@
+/* Builders (/b2b/builders). Tokens only; shared pieces live in app/site.css.
+   Rhythm: dark hero, light ledger, dark film, light references, dark enquiry running into the dark footer. */
+
+/* ---------- Hero: copy beside the tower that builds itself ---------- */
+.b-hero {
+  background: var(--ink);
+  color: var(--base);
+  padding-block: 40px var(--section);
+  overflow-x: clip;
+}
+
+.b-hero-grid {
+  display: grid;
+  gap: 32px;
+}
+
+.b-title {
+  font-size: var(--fs-h1);
+  line-height: var(--lh-h1);
+  letter-spacing: -0.03em;
+}
+
+.b-lede {
+  margin-top: 20px;
+  max-width: 40ch;
+  font-size: var(--fs-body-lg);
+  color: var(--on-ink-muted);
+}
+
+.b-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 16px 28px;
+  margin-top: 32px;
+}
+
+.b-link-light {
+  color: var(--base);
+}
+
+.b-hero-visual {
+  background: var(--ink-raised);
+  border-radius: var(--radius-card);
+  padding: 12px 12px 16px;
+}
+
+.b-hero-visual .tower3d {
+  height: 440px;
+}
+
+.b-hero-visual figcaption,
+.b-asks-visual figcaption {
+  margin-top: 10px;
+  padding-inline: 8px;
+  font-size: var(--fs-caption);
+  color: var(--on-ink-muted);
+}
+
+@media (min-width: 900px) {
+  .b-hero {
+    padding-top: 72px;
+  }
+
+  .b-hero-grid {
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 24px;
+    align-items: center;
+  }
+
+  .b-hero-copy {
+    grid-column: 1 / 6;
+  }
+
+  .b-hero-visual {
+    grid-column: 6 / 13;
+    padding: 16px 16px 20px;
+  }
+
+  .b-hero-visual .tower3d {
+    height: min(620px, calc(100svh - var(--nav-h) - 200px));
+    min-height: 460px;
+  }
+}
+
+/* ---------- What it asks: a plain ledger beside the kitchen close-up ---------- */
+.b-asks {
+  padding-block: var(--section);
+  overflow-x: clip;
+}
+
+.b-asks-grid {
+  display: grid;
+  gap: 40px;
+}
+
+.b-ledger {
+  display: grid;
+  gap: 8px;
+  margin: 32px 0 0;
+}
+
+.b-ledger-row {
+  display: grid;
+  gap: 6px;
+  padding: 20px 24px;
+  background: var(--grey);
+  border-radius: var(--radius-card);
+}
+
+.b-ledger-row dt {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: var(--fs-h3);
+  line-height: var(--lh-h3);
+  letter-spacing: -0.01em;
+}
+
+.b-ledger-row dd {
+  margin: 0;
+  color: var(--muted);
+}
+
+.b-asks-visual {
+  position: relative;
+  min-height: 420px;
+  background: var(--ink);
+  border-radius: var(--radius-card);
+  padding-bottom: 44px;
+}
+
+.b-asks-visual .kitchen {
+  inset: 0 0 44px;
+}
+
+.b-asks-visual figcaption {
+  position: absolute;
+  left: 16px;
+  right: 16px;
+  bottom: 14px;
+  margin: 0;
+  padding: 0;
+}
+
+@media (min-width: 900px) {
+  .b-asks-grid {
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 24px;
+    align-items: stretch;
+  }
+
+  .b-asks-copy {
+    grid-column: 1 / 7;
+  }
+
+  .b-ledger-row {
+    grid-template-columns: 2fr 3fr;
+    gap: 24px;
+    align-items: baseline;
+  }
+
+  .b-asks-visual {
+    grid-column: 7 / 13;
+    min-height: 0;
+  }
+
+  .b-asks-visual figcaption {
+    left: 24px;
+    bottom: 16px;
+  }
+}
+
+/* ---------- The film ---------- */
+.b-film {
+  background: var(--ink);
+  color: var(--base);
+  padding-block: var(--section);
+}
+
+.b-film-grid {
+  display: grid;
+  gap: 32px;
+}
+
+.b-film-copy p {
+  margin-top: 16px;
+  max-width: 40ch;
+  font-size: var(--fs-body-lg);
+  color: var(--on-ink-muted);
+}
+
+.video-slot {
+  aspect-ratio: 16 / 9;
+  border-radius: var(--radius-card);
+  overflow: hidden;
+  background: var(--ink-raised);
+}
+
+.video-slot video {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.video-slot.is-placeholder {
+  display: grid;
+  place-content: center;
+  justify-items: center;
+  gap: 10px;
+  padding: 24px;
+  text-align: center;
+  color: var(--on-ink-muted);
+}
+
+.video-slot.is-placeholder svg {
+  color: var(--base);
+}
+
+.video-slot-title {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: var(--fs-h3);
+  color: var(--base);
+}
+
+.video-slot-note {
+  max-width: 34ch;
+  font-size: var(--fs-caption);
+}
+
+@media (min-width: 900px) {
+  .b-film-grid {
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 24px;
+    align-items: end;
+  }
+
+  .b-film-copy {
+    grid-column: 1 / 6;
+  }
+
+  .b-film-slot {
+    grid-column: 6 / 13;
+  }
+}
+
+/* ---------- Reference projects (placeholders until approved) ---------- */
+.b-refs {
+  padding-block: var(--section);
+}
+
+.b-refs-grid {
+  display: grid;
+  gap: 32px;
+}
+
+.b-refs-copy p {
+  margin-top: 16px;
+  max-width: 38ch;
+  font-size: var(--fs-body-lg);
+  color: var(--muted);
+}
+
+.b-refs-list {
+  display: grid;
+  gap: 16px;
+}
+
+.b-ref {
+  display: grid;
+  justify-items: start;
+  gap: 10px;
+  padding: 28px;
+  background: var(--grey);
+  border-radius: var(--radius-card);
+}
+
+.b-ref svg {
+  color: var(--orange);
+}
+
+.b-ref-name {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: var(--fs-h3);
+}
+
+.b-ref .sample {
+  background: var(--base);
+}
+
+.b-ref-place {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--muted);
+}
+
+@media (min-width: 900px) {
+  .b-refs-grid {
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 24px;
+    align-items: start;
+  }
+
+  .b-refs-copy {
+    grid-column: 1 / 6;
+  }
+
+  .b-refs-list {
+    grid-column: 7 / 13;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+  }
+}
+
+/* ---------- Enquiry: the close, on ink, running into the footer ---------- */
+.b-enquire {
+  background: var(--ink);
+  color: var(--base);
+  padding-block: var(--section) calc(var(--section) * 0.5);
+}
+
+.b-enquire-grid {
+  display: grid;
+  gap: 32px;
+}
+
+.b-enquire-title {
+  font-size: var(--fs-h1);
+  line-height: var(--lh-h1);
+  letter-spacing: -0.03em;
+  max-width: 12ch;
+}
+
+.b-enquire-side {
+  display: grid;
+  justify-items: start;
+  gap: 16px;
+  color: var(--on-ink-muted);
+  font-size: var(--fs-body-lg);
+}
+
+.b-enquire-side ul {
+  display: grid;
+  gap: 6px;
+  color: var(--base);
+}
+
+.b-enquire-side li::before {
+  content: '';
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  margin: 0 12px 3px 0;
+  border-radius: 50%;
+  background: var(--water);
+}
+
+.b-enquire-side .btn {
+  margin-top: 8px;
+}
+
+@media (min-width: 900px) {
+  .b-enquire-grid {
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 24px;
+    align-items: end;
+  }
+
+  .b-enquire-title {
+    grid-column: 1 / 8;
+  }
+
+  .b-enquire-side {
+    grid-column: 8 / 13;
+  }
+}

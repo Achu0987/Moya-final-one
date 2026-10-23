@@ -1,0 +1,2255 @@
+{
+ "url": "http://localhost:3100",
+ "at": "2026-10-23T11:49:02.617Z",
+ "allow": [],
+ "viewports": [
+  {
+   "width": 1440,
+   "height": 900,
+   "load": "load",
+   "screens": 6,
+   "filled": [
+    0.88,
+    0.51,
+    0.61,
+    0.96,
+    0.48,
+    0.76
+   ],
+   "motion": {
+    "elements": 115,
+    "css": 28,
+    "transitions": 13,
+    "scripted": 74,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "page": {
+     "height": 4816,
+     "screens": 5.4,
+     "words": 475,
+     "img": 0,
+     "video": 0,
+     "canvas": 2,
+     "svg": 30,
+     "sections": 6,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 2,
+     "uiAbuse": false,
+     "realPictures": 0,
+     "videoCount": 0,
+     "uiPictures": 1,
+     "pictureSamples": [],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Drinking water, on tap at home.",
+     "words": 6,
+     "chars": 31,
+     "lines": 2,
+     "size": 64,
+     "vw": 4.4,
+     "font": "Plus Jakarta Sans",
+     "weight": 700,
+     "tracking": -0.03,
+     "leading": 1,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "left",
+     "widthRatio": 0.41,
+     "top": 240,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Drinking water, on tap at home.",
+     "words": 6,
+     "lines": 2,
+     "size": 64,
+     "font": "Plus Jakarta Sans"
+    },
+    "headings": [
+     {
+      "text": "Drinking water, on tap at home.",
+      "words": 6,
+      "chars": 31,
+      "lines": 2,
+      "size": 64,
+      "vw": 4.4,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": -0.03,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.41,
+      "top": 240,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "From the building to your tap.",
+      "words": 6,
+      "chars": 30,
+      "lines": 1,
+      "size": 44,
+      "vw": 3.1,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": -0.02,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.48,
+      "top": 1133,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Water, the way the rest of your home works.",
+      "words": 9,
+      "chars": 43,
+      "lines": 2,
+      "size": 64,
+      "vw": 4.4,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": -0.03,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.55,
+      "top": 1841,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Know your balance. Top up in litres.",
+      "words": 7,
+      "chars": 36,
+      "lines": 2,
+      "size": 44,
+      "vw": 3.1,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": -0.02,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.34,
+      "top": 2264,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "120 litres",
+      "words": 2,
+      "chars": 10,
+      "lines": 1,
+      "size": 44,
+      "vw": 3.1,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": -0.02,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.17,
+      "top": 2331,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "Built in, not added on.",
+      "words": 5,
+      "chars": 23,
+      "lines": 1,
+      "size": 44,
+      "vw": 3.1,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": -0.02,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.34,
+      "top": 2948,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "10 / 12",
+      "words": 3,
+      "chars": 7,
+      "lines": 1,
+      "size": 32,
+      "vw": 2.2,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": 0,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.05,
+      "top": 3000,
+      "tag": "strong",
+      "kind": "heading"
+     },
+     {
+      "text": "Leave the jugs behind.",
+      "words": 4,
+      "chars": 22,
+      "lines": 1,
+      "size": 44,
+      "vw": 3.1,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": -0.02,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.32,
+      "top": 3806,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Moya One",
+      "words": 2,
+      "chars": 8,
+      "lines": 1,
+      "size": 269,
+      "vw": 18.7,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": -0.055,
+      "leading": 0.8,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.85,
+      "top": 4646,
+      "tag": "p",
+      "kind": "statement"
+     }
+    ],
+    "headingSummary": {
+     "count": 9,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 2,
+     "centered": 1,
+     "medianWords": 5,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Inter",
+       "share": 0.88,
+       "mono": false
+      },
+      {
+       "family": "Plus Jakarta Sans",
+       "share": 0.13,
+       "mono": false
+      }
+     ],
+     "familyCount": 2,
+     "sizes": [
+      13,
+      15,
+      16,
+      20,
+      22,
+      44,
+      64,
+      269
+     ],
+     "sizeCount": 8,
+     "notLoaded": [],
+     "body": {
+      "font": "Inter",
+      "size": 20,
+      "leading": 1.6,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 15.7
+     },
+     "measureChars": 53,
+     "max": {
+      "size": 269,
+      "vw": 18.7,
+      "font": "Plus Jakarta Sans",
+      "text": "Moya One"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0,
+     "centerShare": 0.06,
+     "smallText": 0
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#fafaf7",
+     "bodyBgHsl": {
+      "h": 60,
+      "s": 0.23,
+      "l": 0.97
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#e8f3f5",
+       "top": 89,
+       "hsl": {
+        "h": 189,
+        "s": 0.39,
+        "l": 0.94
+       }
+      },
+      {
+       "color": "#f3f4f6",
+       "top": 2089,
+       "hsl": {
+        "h": 220,
+        "s": 0.14,
+        "l": 0.96
+       }
+      },
+      {
+       "color": "#111827",
+       "top": 2809,
+       "hsl": {
+        "h": 221,
+        "s": 0.39,
+        "l": 0.11
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#4b5563",
+       "share": 0.38
+      },
+      {
+       "color": "#111827",
+       "share": 0.31
+      },
+      {
+       "color": "#b9bbbd",
+       "share": 0.22
+      },
+      {
+       "color": "#fafaf7",
+       "share": 0.09
+      }
+     ],
+     "button": {
+      "bg": "#f97316",
+      "hsl": {
+       "h": 25,
+       "s": 0.95,
+       "l": 0.53
+      },
+      "fg": "#111827"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 7,
+     "inHero": 4,
+     "radius": "pill",
+     "height": 50,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Skip to content",
+      "Contact",
+      "See how it works",
+      "Replay"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 2,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 1,
+     "hairlineSamples": [
+      "header.nav 1440px"
+     ],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 16,
+     "boxRadius": 20,
+     "squareMedia": 0,
+     "roundedMedia": 2,
+     "mediaRadius": 20,
+     "textShadow": 0,
+     "cardRows": [
+      {
+       "count": 3,
+       "iconTopped": false,
+       "rounded": true,
+       "top": 1238
+      }
+     ]
+    },
+    "heroMedia": [
+     {
+      "type": "svg",
+      "ratio": 0.9
+     },
+     {
+      "type": "svg",
+      "ratio": 0.27
+     },
+     {
+      "type": "canvas",
+      "ratio": 0.24
+     }
+    ],
+    "nav": {
+     "links": 6,
+     "fixed": true,
+     "height": 89,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "plus jakarta sans",
+     "inter"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "pageH": 4817,
+    "margins": {
+     "left": 120,
+     "right": 125
+    },
+    "sections": [
+     {
+      "sel": "section#top.hero",
+      "tag": "section",
+      "top": 89,
+      "height": 909,
+      "words": 89,
+      "media": 3,
+      "middle": 0,
+      "heading": {
+       "text": "Drinking water,",
+       "size": 64,
+       "tag": "h1"
+      },
+      "left": 120,
+      "right": 120,
+      "textLeft": 120,
+      "textRight": 168,
+      "fullBleed": true,
+      "footer": false,
+      "hero": true,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#how.steps",
+      "tag": "section",
+      "top": 998,
+      "height": 723,
+      "words": 78,
+      "media": 6,
+      "middle": 1,
+      "heading": {
+       "text": "From",
+       "size": 44,
+       "tag": "h2"
+      },
+      "left": 120,
+      "right": 120,
+      "textLeft": 120,
+      "textRight": 141,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.statement",
+      "tag": "section",
+      "top": 1721,
+      "height": 248,
+      "words": 23,
+      "media": 0,
+      "middle": 74,
+      "heading": {
+       "text": "Water,",
+       "size": 64,
+       "tag": "h2"
+      },
+      "left": 120,
+      "right": 125,
+      "textLeft": 120,
+      "textRight": 125,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#water.app",
+      "tag": "section",
+      "top": 1969,
+      "height": 720,
+      "words": 60,
+      "media": 0,
+      "middle": 233,
+      "heading": {
+       "text": "Know",
+       "size": 44,
+       "tag": "h2"
+      },
+      "left": 222,
+      "right": 274,
+      "textLeft": 222,
+      "textRight": 284,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#builders.builders",
+      "tag": "section",
+      "top": 2809,
+      "height": 878,
+      "words": 119,
+      "media": 1,
+      "middle": 165,
+      "heading": {
+       "text": "Built",
+       "size": 44,
+       "tag": "h2"
+      },
+      "left": 120,
+      "right": 144,
+      "textLeft": 120,
+      "textRight": 166,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#contact.closing",
+      "tag": "section",
+      "top": 3686,
+      "height": 454,
+      "words": 24,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Leave",
+       "size": 44,
+       "tag": "h2"
+      },
+      "left": 473,
+      "right": 473,
+      "textLeft": 473,
+      "textRight": 473,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "footer.footer",
+      "tag": "footer",
+      "top": 4141,
+      "height": 676,
+      "words": 44,
+      "media": 0,
+      "middle": 282,
+      "heading": null,
+      "left": 120,
+      "right": 170,
+      "textLeft": 120,
+      "textRight": 170,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "Drinking water, on tap at home.",
+      "size": 64,
+      "top": 240,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 120,
+      "n": 8
+     },
+     {
+      "x": 219,
+      "n": 4
+     },
+     {
+      "x": 305,
+      "n": 2
+     },
+     {
+      "x": 349,
+      "n": 2
+     },
+     {
+      "x": 434,
+      "n": 2
+     },
+     {
+      "x": 234,
+      "n": 1
+     },
+     {
+      "x": 262,
+      "n": 1
+     },
+     {
+      "x": 277,
+      "n": 1
+     },
+     {
+      "x": 327,
+      "n": 1
+     },
+     {
+      "x": 366,
+      "n": 1
+     },
+     {
+      "x": 409,
+      "n": 1
+     },
+     {
+      "x": 449,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 34,
+    "bodySize": 20,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": null,
+   "consoleErrors": []
+  },
+  {
+   "width": 768,
+   "height": 1024,
+   "load": "load",
+   "screens": 7,
+   "filled": [
+    0.96,
+    0.63,
+    0.78,
+    0.74,
+    0.96,
+    0.67,
+    0.85
+   ],
+   "motion": {
+    "elements": 110,
+    "css": 27,
+    "transitions": 10,
+    "scripted": 73,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "page": {
+     "height": 6478,
+     "screens": 6.3,
+     "words": 453,
+     "img": 0,
+     "video": 0,
+     "canvas": 2,
+     "svg": 30,
+     "sections": 6,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 2,
+     "uiAbuse": false,
+     "realPictures": 0,
+     "videoCount": 0,
+     "uiPictures": 1,
+     "pictureSamples": [],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Drinking water, on tap at home.",
+     "words": 6,
+     "chars": 31,
+     "lines": 2,
+     "size": 40,
+     "vw": 5.2,
+     "font": "Plus Jakarta Sans",
+     "weight": 700,
+     "tracking": -0.03,
+     "leading": 1.05,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "center",
+     "widthRatio": 0.96,
+     "top": 97,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Drinking water, on tap at home.",
+     "words": 6,
+     "lines": 2,
+     "size": 40,
+     "font": "Plus Jakarta Sans"
+    },
+    "headings": [
+     {
+      "text": "Drinking water, on tap at home.",
+      "words": 6,
+      "chars": 31,
+      "lines": 2,
+      "size": 40,
+      "vw": 5.2,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": -0.03,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.96,
+      "top": 97,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "From the building to your tap.",
+      "words": 6,
+      "chars": 30,
+      "lines": 1,
+      "size": 32,
+      "vw": 4.2,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": -0.02,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.96,
+      "top": 1720,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Water, the way the rest of your home works.",
+      "words": 9,
+      "chars": 43,
+      "lines": 1,
+      "size": 32,
+      "vw": 4.2,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": -0.03,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.96,
+      "top": 3080,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Know your balance. Top up in litres.",
+      "words": 7,
+      "chars": 36,
+      "lines": 1,
+      "size": 32,
+      "vw": 4.2,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": -0.02,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.91,
+      "top": 3326,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "120 litres",
+      "words": 2,
+      "chars": 10,
+      "lines": 1,
+      "size": 44,
+      "vw": 5.7,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": -0.02,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.32,
+      "top": 3710,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "Built in, not added on.",
+      "words": 5,
+      "chars": 23,
+      "lines": 1,
+      "size": 32,
+      "vw": 4.2,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": -0.02,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.96,
+      "top": 4172,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "6 / 12",
+      "words": 3,
+      "chars": 6,
+      "lines": 1,
+      "size": 32,
+      "vw": 4.2,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": 0,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.07,
+      "top": 4838,
+      "tag": "strong",
+      "kind": "heading"
+     },
+     {
+      "text": "Leave the jugs behind.",
+      "words": 4,
+      "chars": 22,
+      "lines": 1,
+      "size": 32,
+      "vw": 4.2,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": -0.02,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.43,
+      "top": 5400,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Moya One",
+      "words": 2,
+      "chars": 8,
+      "lines": 1,
+      "size": 165,
+      "vw": 21.5,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": -0.055,
+      "leading": 0.8,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.94,
+      "top": 6374,
+      "tag": "p",
+      "kind": "statement"
+     }
+    ],
+    "headingSummary": {
+     "count": 9,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 2,
+     "centered": 1,
+     "medianWords": 5,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Inter",
+       "share": 0.87,
+       "mono": false
+      },
+      {
+       "family": "Plus Jakarta Sans",
+       "share": 0.13,
+       "mono": false
+      }
+     ],
+     "familyCount": 2,
+     "sizes": [
+      13,
+      15,
+      16,
+      18,
+      20,
+      22,
+      32,
+      40,
+      165
+     ],
+     "sizeCount": 9,
+     "notLoaded": [],
+     "body": {
+      "font": "Inter",
+      "size": 18,
+      "leading": 1.6,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 15.7
+     },
+     "measureChars": 53,
+     "max": {
+      "size": 165,
+      "vw": 21.5,
+      "font": "Plus Jakarta Sans",
+      "text": "Moya One"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0,
+     "centerShare": 0.06,
+     "smallText": 0
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#fafaf7",
+     "bodyBgHsl": {
+      "h": 60,
+      "s": 0.23,
+      "l": 0.97
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#e8f3f5",
+       "top": 65,
+       "hsl": {
+        "h": 189,
+        "s": 0.39,
+        "l": 0.94
+       }
+      },
+      {
+       "color": "#111827",
+       "top": 475,
+       "hsl": {
+        "h": 221,
+        "s": 0.39,
+        "l": 0.11
+       }
+      },
+      {
+       "color": "#f3f4f6",
+       "top": 1869,
+       "hsl": {
+        "h": 220,
+        "s": 0.14,
+        "l": 0.96
+       }
+      },
+      {
+       "color": "#212836",
+       "top": 4772,
+       "hsl": {
+        "h": 220,
+        "s": 0.24,
+        "l": 0.17
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#4b5563",
+       "share": 0.34
+      },
+      {
+       "color": "#111827",
+       "share": 0.33
+      },
+      {
+       "color": "#b9bbbd",
+       "share": 0.24
+      },
+      {
+       "color": "#fafaf7",
+       "share": 0.09
+      }
+     ],
+     "button": {
+      "bg": "#f97316",
+      "hsl": {
+       "h": 25,
+       "s": 0.95,
+       "l": 0.53
+      },
+      "fg": "#111827"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 6,
+     "inHero": 2,
+     "radius": "pill",
+     "height": 50,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Skip to content",
+      "See how it works"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 2,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 1,
+     "hairlineSamples": [
+      "header.nav 768px"
+     ],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 15,
+     "boxRadius": 20,
+     "squareMedia": 0,
+     "roundedMedia": 2,
+     "mediaRadius": 20,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [
+     {
+      "type": "svg",
+      "ratio": 0.94
+     },
+     {
+      "type": "canvas",
+      "ratio": 0.51
+     },
+     {
+      "type": "svg",
+      "ratio": 0.51
+     }
+    ],
+    "nav": {
+     "links": 1,
+     "fixed": true,
+     "height": 65,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "plus jakarta sans",
+     "inter"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "pageH": 6478,
+    "margins": {
+     "left": 16,
+     "right": 16
+    },
+    "sections": [
+     {
+      "sel": "section#top.hero",
+      "tag": "section",
+      "top": 65,
+      "height": 1583,
+      "words": 91,
+      "media": 3,
+      "middle": 0,
+      "heading": {
+       "text": "Drinking water,",
+       "size": 40,
+       "tag": "h1"
+      },
+      "left": 16,
+      "right": 16,
+      "textLeft": 16,
+      "textRight": 56,
+      "fullBleed": true,
+      "footer": false,
+      "hero": true,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#how.steps",
+      "tag": "section",
+      "top": 1648,
+      "height": 1360,
+      "words": 78,
+      "media": 6,
+      "middle": 0,
+      "heading": {
+       "text": "From",
+       "size": 32,
+       "tag": "h2"
+      },
+      "left": 16,
+      "right": 16,
+      "textLeft": 16,
+      "textRight": 73,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.statement",
+      "tag": "section",
+      "top": 3008,
+      "height": 214,
+      "words": 26,
+      "media": 0,
+      "middle": 5,
+      "heading": {
+       "text": "Water,",
+       "size": 32,
+       "tag": "h2"
+      },
+      "left": 16,
+      "right": 113,
+      "textLeft": 16,
+      "textRight": 113,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#water.app",
+      "tag": "section",
+      "top": 3222,
+      "height": 807,
+      "words": 60,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "120",
+       "size": 44,
+       "tag": "p"
+      },
+      "left": 36,
+      "right": 210,
+      "textLeft": 36,
+      "textRight": 210,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#builders.builders",
+      "tag": "section",
+      "top": 4100,
+      "height": 1228,
+      "words": 102,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "Built",
+       "size": 32,
+       "tag": "h2"
+      },
+      "left": 16,
+      "right": 28,
+      "textLeft": 16,
+      "textRight": 99,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#contact.closing",
+      "tag": "section",
+      "top": 5328,
+      "height": 339,
+      "words": 24,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Leave",
+       "size": 32,
+       "tag": "h2"
+      },
+      "left": 162,
+      "right": 162,
+      "textLeft": 162,
+      "textRight": 162,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "footer.footer",
+      "tag": "footer",
+      "top": 5667,
+      "height": 811,
+      "words": 44,
+      "media": 0,
+      "middle": 295,
+      "heading": null,
+      "left": 16,
+      "right": 58,
+      "textLeft": 16,
+      "textRight": 58,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "Drinking water, on tap at home.",
+      "size": 40,
+      "top": 97,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 16,
+      "n": 9
+     },
+     {
+      "x": 390,
+      "n": 3
+     },
+     {
+      "x": 36,
+      "n": 2
+     },
+     {
+      "x": 119,
+      "n": 2
+     },
+     {
+      "x": 290,
+      "n": 2
+     },
+     {
+      "x": 88,
+      "n": 1
+     },
+     {
+      "x": 99,
+      "n": 1
+     },
+     {
+      "x": 130,
+      "n": 1
+     },
+     {
+      "x": 154,
+      "n": 1
+     },
+     {
+      "x": 173,
+      "n": 1
+     },
+     {
+      "x": 186,
+      "n": 1
+     },
+     {
+      "x": 201,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 34,
+    "bodySize": 18,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": null,
+   "consoleErrors": []
+  },
+  {
+   "width": 390,
+   "height": 844,
+   "load": "load",
+   "screens": 8,
+   "filled": [
+    0.97,
+    0.51,
+    0.86,
+    0.69,
+    0.71,
+    0.99,
+    0.73,
+    0.97
+   ],
+   "motion": {
+    "elements": 110,
+    "css": 27,
+    "transitions": 10,
+    "scripted": 73,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "page": {
+     "height": 6557,
+     "screens": 7.8,
+     "words": 447,
+     "img": 0,
+     "video": 0,
+     "canvas": 2,
+     "svg": 30,
+     "sections": 6,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 2,
+     "uiAbuse": false,
+     "realPictures": 0,
+     "videoCount": 0,
+     "uiPictures": 1,
+     "pictureSamples": [],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Drinking water, on tap at home.",
+     "words": 6,
+     "chars": 31,
+     "lines": 2,
+     "size": 40,
+     "vw": 10.3,
+     "font": "Plus Jakarta Sans",
+     "weight": 700,
+     "tracking": -0.03,
+     "leading": 1.05,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "center",
+     "widthRatio": 0.92,
+     "top": 97,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Drinking water, on tap at home.",
+     "words": 6,
+     "lines": 2,
+     "size": 40,
+     "font": "Plus Jakarta Sans"
+    },
+    "headings": [
+     {
+      "text": "Moya One",
+      "words": 2,
+      "chars": 8,
+      "lines": 1,
+      "size": 22,
+      "vw": 5.6,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": -0.035,
+      "leading": 1.6,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.36,
+      "top": 10,
+      "tag": "a",
+      "kind": "heading"
+     },
+     {
+      "text": "Drinking water, on tap at home.",
+      "words": 6,
+      "chars": 31,
+      "lines": 2,
+      "size": 40,
+      "vw": 10.3,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": -0.03,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 97,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "From the building to your tap.",
+      "words": 6,
+      "chars": 30,
+      "lines": 2,
+      "size": 32,
+      "vw": 8.2,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": -0.02,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 1437,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Water, the way the rest of your home works.",
+      "words": 9,
+      "chars": 43,
+      "lines": 2,
+      "size": 32,
+      "vw": 8.2,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": -0.03,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 2935,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Know your balance. Top up in litres.",
+      "words": 7,
+      "chars": 36,
+      "lines": 2,
+      "size": 32,
+      "vw": 8.2,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": -0.02,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.82,
+      "top": 3216,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "120 litres",
+      "words": 2,
+      "chars": 10,
+      "lines": 1,
+      "size": 44,
+      "vw": 11.3,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": -0.02,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.57,
+      "top": 3685,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "Built in, not added on.",
+      "words": 5,
+      "chars": 23,
+      "lines": 1,
+      "size": 32,
+      "vw": 8.2,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": -0.02,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 4147,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "7 / 12",
+      "words": 3,
+      "chars": 6,
+      "lines": 1,
+      "size": 22,
+      "vw": 5.6,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": 0,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.12,
+      "top": 5201,
+      "tag": "strong",
+      "kind": "heading"
+     },
+     {
+      "text": "Leave the jugs behind.",
+      "words": 4,
+      "chars": 22,
+      "lines": 1,
+      "size": 32,
+      "vw": 8.2,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": -0.02,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.85,
+      "top": 5471,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Moya One",
+      "words": 2,
+      "chars": 8,
+      "lines": 1,
+      "size": 80.3,
+      "vw": 20.6,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": -0.055,
+      "leading": 0.8,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.94,
+      "top": 6506,
+      "tag": "p",
+      "kind": "statement"
+     }
+    ],
+    "headingSummary": {
+     "count": 10,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 2,
+     "centered": 1,
+     "medianWords": 4,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Inter",
+       "share": 0.87,
+       "mono": false
+      },
+      {
+       "family": "Plus Jakarta Sans",
+       "share": 0.13,
+       "mono": false
+      }
+     ],
+     "familyCount": 2,
+     "sizes": [
+      13,
+      15,
+      16,
+      18,
+      20,
+      22,
+      32,
+      40,
+      80
+     ],
+     "sizeCount": 9,
+     "notLoaded": [],
+     "body": {
+      "font": "Inter",
+      "size": 18,
+      "leading": 1.6,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 15.7
+     },
+     "measureChars": 40,
+     "max": {
+      "size": 80.3,
+      "vw": 20.6,
+      "font": "Plus Jakarta Sans",
+      "text": "Moya One"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0,
+     "centerShare": 0.06,
+     "smallText": 0
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#fafaf7",
+     "bodyBgHsl": {
+      "h": 60,
+      "s": 0.23,
+      "l": 0.97
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#e8f3f5",
+       "top": 65,
+       "hsl": {
+        "h": 189,
+        "s": 0.39,
+        "l": 0.94
+       }
+      },
+      {
+       "color": "#111827",
+       "top": 564,
+       "hsl": {
+        "h": 221,
+        "s": 0.39,
+        "l": 0.11
+       }
+      },
+      {
+       "color": "#fafaf7",
+       "top": 980,
+       "hsl": {
+        "h": 60,
+        "s": 0.23,
+        "l": 0.97
+       }
+      },
+      {
+       "color": "#f3f4f6",
+       "top": 1621,
+       "hsl": {
+        "h": 220,
+        "s": 0.14,
+        "l": 0.96
+       }
+      },
+      {
+       "color": "#212836",
+       "top": 4801,
+       "hsl": {
+        "h": 220,
+        "s": 0.24,
+        "l": 0.17
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#4b5563",
+       "share": 0.35
+      },
+      {
+       "color": "#111827",
+       "share": 0.33
+      },
+      {
+       "color": "#b9bbbd",
+       "share": 0.24
+      },
+      {
+       "color": "#fafaf7",
+       "share": 0.09
+      }
+     ],
+     "button": {
+      "bg": "#f97316",
+      "hsl": {
+       "h": 25,
+       "s": 0.95,
+       "l": 0.53
+      },
+      "fg": "#111827"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 6,
+     "inHero": 2,
+     "radius": "pill",
+     "height": 50,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Skip to content",
+      "See how it works"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 2,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 1,
+     "hairlineSamples": [
+      "header.nav 390px"
+     ],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 15,
+     "boxRadius": 20,
+     "squareMedia": 0,
+     "roundedMedia": 2,
+     "mediaRadius": 20,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [
+     {
+      "type": "svg",
+      "ratio": 0.92
+     },
+     {
+      "type": "canvas",
+      "ratio": 0.3
+     },
+     {
+      "type": "svg",
+      "ratio": 0.3
+     }
+    ],
+    "nav": {
+     "links": 1,
+     "fixed": true,
+     "height": 65,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "plus jakarta sans",
+     "inter"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "pageH": 6557,
+    "margins": {
+     "left": 16,
+     "right": 16
+    },
+    "sections": [
+     {
+      "sel": "section#top.hero",
+      "tag": "section",
+      "top": 65,
+      "height": 1300,
+      "words": 85,
+      "media": 3,
+      "middle": 0,
+      "heading": {
+       "text": "Drinking water,",
+       "size": 40,
+       "tag": "h1"
+      },
+      "left": 16,
+      "right": 16,
+      "textLeft": 16,
+      "textRight": 28,
+      "fullBleed": true,
+      "footer": false,
+      "hero": true,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#how.steps",
+      "tag": "section",
+      "top": 1365,
+      "height": 1498,
+      "words": 78,
+      "media": 6,
+      "middle": 0,
+      "heading": {
+       "text": "From",
+       "size": 32,
+       "tag": "h2"
+      },
+      "left": 16,
+      "right": 16,
+      "textLeft": 16,
+      "textRight": 31,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.statement",
+      "tag": "section",
+      "top": 2863,
+      "height": 249,
+      "words": 26,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Water,",
+       "size": 32,
+       "tag": "h2"
+      },
+      "left": 16,
+      "right": 33,
+      "textLeft": 16,
+      "textRight": 33,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#water.app",
+      "tag": "section",
+      "top": 3112,
+      "height": 892,
+      "words": 60,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Know",
+       "size": 32,
+       "tag": "h2"
+      },
+      "left": 36,
+      "right": 40,
+      "textLeft": 36,
+      "textRight": 40,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#builders.builders",
+      "tag": "section",
+      "top": 4075,
+      "height": 1324,
+      "words": 102,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "Built",
+       "size": 32,
+       "tag": "h2"
+      },
+      "left": 16,
+      "right": 28,
+      "textLeft": 16,
+      "textRight": 34,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#contact.closing",
+      "tag": "section",
+      "top": 5399,
+      "height": 368,
+      "words": 24,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Leave",
+       "size": 32,
+       "tag": "h2"
+      },
+      "left": 29,
+      "right": 29,
+      "textLeft": 29,
+      "textRight": 29,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "footer.footer",
+      "tag": "footer",
+      "top": 5767,
+      "height": 790,
+      "words": 44,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": 16,
+      "right": 44,
+      "textLeft": 16,
+      "textRight": 44,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "Drinking water, on tap at home.",
+      "size": 40,
+      "top": 97,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 16,
+      "n": 11
+     },
+     {
+      "x": 119,
+      "n": 4
+     },
+     {
+      "x": 36,
+      "n": 3
+     },
+     {
+      "x": 52,
+      "n": 2
+     },
+     {
+      "x": 88,
+      "n": 2
+     },
+     {
+      "x": 172,
+      "n": 2
+     },
+     {
+      "x": 290,
+      "n": 2
+     },
+     {
+      "x": 99,
+      "n": 1
+     },
+     {
+      "x": 130,
+      "n": 1
+     },
+     {
+      "x": 141,
+      "n": 1
+     },
+     {
+      "x": 154,
+      "n": 1
+     },
+     {
+      "x": 186,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 34,
+    "bodySize": 18,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": null,
+   "consoleErrors": []
+  }
+ ],
+ "findings": [
+  {
+   "level": "WARN",
+   "id": "hairline",
+   "width": 1440,
+   "message": "1 thin rule(s)/divider line(s): header.nav 1440px",
+   "fix": "Delete. Separate with space, a tone change, or scale. Lines are only for real tables and form fields.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "palette-cream",
+   "width": 1440,
+   "message": "Yellow-cream background (page background #fafaf7, text #fafaf7).",
+   "fix": "Use the drawn palette. If you want warmth, take a low-chroma stone or bone, not a yellow cream.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "few-pictures",
+   "width": 1440,
+   "message": "Only 1 picture(s) on the page (0 photographs, footage or raster images, 1 interface fragments). Drawings in SVG do not count.",
+   "fix": "Find real pictures of the subject's world with scripts/assets.mjs (photographs, archival images, maps, engravings, footage), download them to assets/ and give them room: a hero picture, one per section that has a subject, a full-width band. At least four, usually six to twelve."
+  },
+  {
+   "level": "WARN",
+   "id": "no-footage",
+   "width": 1440,
+   "message": "No video anywhere on the page.",
+   "fix": "Look for one honest clip with scripts/assets.mjs --video (the place, the material, the process) and use it as a muted loop with a poster frame. Defend its absence only if no clip fits the subject."
+  },
+  {
+   "level": "WARN",
+   "id": "ragged-edges",
+   "width": 1440,
+   "message": "Left-aligned text starts at 12 different lines (120px, 219px, 305px, 349px, 434px, 234px, 262px); the three most used hold only 41% of it.",
+   "fix": "Pick two or three anchor lines from the grid and start every heading and paragraph on one of them.",
+   "alsoAt": [
+    768
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "covered-text",
+   "width": 390,
+   "message": "Large text lies under another element at some scroll position: \"on.\" (screen 5, 75% hidden); \"Moya One\" (screen 8, 38% hidden)",
+   "fix": "Nothing may sit on top of a headline or statement. Move the picture, shorten the pinned run, or raise the text above it (z-index) and give it a ground."
+  }
+ ],
+ "images": [
+  {
+   "viewport": "desktop",
+   "width": 1440,
+   "fold": "C:\\Users\\Dell\\Documents\\Moya-one-final\\.taste-skill\\inspect-home\\desktop-fold.jpg",
+   "pages": [
+    "C:\\Users\\Dell\\Documents\\Moya-one-final\\.taste-skill\\inspect-home\\desktop-page-01.jpg",
+    "C:\\Users\\Dell\\Documents\\Moya-one-final\\.taste-skill\\inspect-home\\desktop-page-02.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "tablet",
+   "width": 768,
+   "fold": "C:\\Users\\Dell\\Documents\\Moya-one-final\\.taste-skill\\inspect-home\\tablet-fold.jpg",
+   "pages": [
+    "C:\\Users\\Dell\\Documents\\Moya-one-final\\.taste-skill\\inspect-home\\tablet-page-01.jpg",
+    "C:\\Users\\Dell\\Documents\\Moya-one-final\\.taste-skill\\inspect-home\\tablet-page-02.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "mobile",
+   "width": 390,
+   "fold": "C:\\Users\\Dell\\Documents\\Moya-one-final\\.taste-skill\\inspect-home\\mobile-fold.jpg",
+   "pages": [
+    "C:\\Users\\Dell\\Documents\\Moya-one-final\\.taste-skill\\inspect-home\\mobile-page-01.jpg"
+   ],
+   "film": []
+  }
+ ]
+}

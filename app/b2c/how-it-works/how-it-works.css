@@ -1,0 +1,270 @@
+/* How it works (/b2c/how-it-works). Tokens only; shared pieces live in app/site.css. */
+
+/* ---------- Intro: the page title and lede, beside the stage on the first screen ---------- */
+.journey-intro {
+  display: grid;
+  gap: 20px;
+  padding-block: 40px 24px;
+}
+
+.how-title {
+  font-size: var(--fs-h1);
+  line-height: var(--lh-h1);
+  letter-spacing: -0.03em;
+}
+
+.how-lede {
+  max-width: 40ch;
+  font-size: var(--fs-body-lg);
+  color: var(--muted);
+}
+
+@media (min-width: 900px) {
+  .journey-intro {
+    grid-column: 1 / 7;
+    grid-row: 1;
+    align-content: center;
+    min-height: calc(100svh - var(--nav-h) - 48px);
+    max-height: 760px;
+    padding-block: 0;
+  }
+}
+
+/* ---------- Journey: steps scroll past one sticky 3D stage ---------- */
+.journey {
+  padding-bottom: var(--section);
+  overflow-x: clip;
+}
+
+.journey-grid {
+  display: grid;
+}
+
+/* the stage stays in view while the steps scroll under it (phone) or beside it (desktop) */
+.journey-stage {
+  position: sticky;
+  z-index: 2;
+  top: calc(var(--nav-h) + 8px);
+  height: 46svh;
+  margin-top: 12px;
+  min-height: 300px;
+  background: var(--ink);
+  border-radius: var(--radius-card);
+}
+
+/* closes the gap above the sticky stage so step text never peeks out above it */
+.journey-stage::before {
+  content: '';
+  position: absolute;
+  left: calc(-1 * var(--gutter));
+  right: calc(-1 * var(--gutter));
+  bottom: 100%;
+  height: 12px;
+  background: var(--base);
+}
+
+/* the 3D stays inside the rounded frame; its labels may reach past it so they are never cut */
+.journey-stage .kitchen-canvas,
+.journey-stage .tower3d-canvas {
+  border-radius: var(--radius-card);
+}
+
+.journey-layer {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition:
+    opacity 0.7s var(--ease-enter),
+    visibility 0s linear 0.7s;
+}
+
+.journey-layer.is-on {
+  opacity: 1;
+  visibility: visible;
+  transition:
+    opacity 0.7s var(--ease-enter),
+    visibility 0s;
+}
+
+/* scenes fill the stage; the tower's own card styling is not needed here */
+.journey-layer .tower3d,
+.journey-layer .kitchen {
+  position: absolute;
+  inset: 0;
+  height: auto;
+}
+
+.journey-stage figcaption {
+  position: absolute;
+  z-index: 3;
+  left: 16px;
+  bottom: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px 12px;
+  font-size: var(--fs-caption);
+  color: var(--on-ink-muted);
+}
+
+/* phones: the step pill only, and the floor counter moves to the top corner */
+@media (max-width: 899px) {
+  .journey-stage figcaption {
+    font-size: 0;
+  }
+
+  .journey-stage .tower3d-count {
+    top: 10px;
+    bottom: auto;
+    left: 10px;
+    right: auto;
+  }
+}
+
+.journey-stage figcaption span {
+  font-size: var(--fs-caption);
+  padding: 4px 10px;
+  border-radius: var(--radius-pill);
+  background: var(--base);
+  color: var(--ink);
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+}
+
+.journey-steps {
+  display: grid;
+  padding-top: 24px;
+}
+
+.journey-steps li {
+  min-height: 62svh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 12px;
+  max-width: 34rem;
+  opacity: 0.4;
+  transition: opacity 0.5s var(--ease-enter);
+}
+
+.journey-steps li.is-active {
+  opacity: 1;
+}
+
+.journey-num {
+  display: grid;
+  place-items: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: var(--ink);
+  color: var(--base);
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.journey-steps li.is-active .journey-num {
+  background: var(--orange);
+  color: var(--ink);
+}
+
+.journey-steps h2 {
+  font-size: var(--fs-h2);
+  line-height: var(--lh-h2);
+  letter-spacing: -0.02em;
+  font-weight: 700;
+}
+
+.journey-steps p {
+  font-size: var(--fs-body-lg);
+  color: var(--muted);
+}
+
+.journey-note {
+  font-size: var(--fs-caption) !important;
+}
+
+@media (min-width: 900px) {
+  .journey-grid {
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 24px;
+    align-items: start;
+  }
+
+  .journey-steps {
+    grid-column: 1 / 7;
+    grid-row: 2;
+    padding-top: 0;
+  }
+
+  .journey-steps li {
+    min-height: 64svh;
+  }
+
+  .journey-stage {
+    grid-column: 7 / 13;
+    grid-row: 1 / 3;
+    align-self: start;
+    top: calc(var(--nav-h) + 24px);
+    height: calc(100svh - var(--nav-h) - 48px);
+    max-height: 720px;
+  }
+
+  .journey-stage figcaption {
+    left: 24px;
+    bottom: 20px;
+  }
+}
+
+/* reduced motion: every step at full strength */
+@media (prefers-reduced-motion: reduce) {
+  .journey-steps li {
+    opacity: 1;
+  }
+}
+
+/* ---------- Next step ---------- */
+.how-next {
+  padding-bottom: var(--section);
+}
+
+.how-next-panel {
+  display: grid;
+  gap: 20px;
+  padding: 40px 24px;
+  background: var(--grey);
+  border-radius: var(--radius-card);
+}
+
+.how-next-panel p {
+  max-width: 44ch;
+  font-size: var(--fs-body-lg);
+  color: var(--muted);
+}
+
+.how-next-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 16px 28px;
+  margin-top: 8px;
+}
+
+@media (min-width: 900px) {
+  .how-next-panel {
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 24px;
+    padding: 72px 64px;
+  }
+
+  .how-next-panel h2 {
+    grid-column: 1 / 8;
+  }
+
+  .how-next-panel p,
+  .how-next-actions {
+    grid-column: 1 / 9;
+  }
+}
