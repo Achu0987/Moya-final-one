@@ -781,14 +781,13 @@
 /* the guide: a tall portrait on the right door, leaving with it */
 .drop-guide {
   position: absolute;
-  top: 12%;
-  bottom: 12%;
-  left: 18%;
-  width: min(380px, 56%);
-  height: auto;
+  top: 8%;
+  left: 10%;
+  width: min(520px, 78%);
+  height: 84%;
   border-radius: var(--radius-card);
   object-fit: cover;
-  object-position: 55% 50%;
+  object-position: 44% 50%;
 }
 
 /* the recap: the doors close again and the six steps are laid out on them */
