@@ -1,0 +1,803 @@
+/* Environment (/environment). Tokens only. A dark first screen as on the builders page, then two scenes this page
+   alone has: a year of jugs piling up in one kitchen (held while you scroll) and the delivery card washed clean,
+   then the figures that wait for proof and the centred close. Flat 2px-ink drawings throughout.
+   Shared pieces (.hero-*, .closing, .sample) live in app/site.css and app/globals.css.
+   Rhythm: ink, grey (held scene), water, ink, base. */
+
+/* ---------- First screen: dark ink, the same ground as the builders page's first screen ---------- */
+.ev-hero {
+  background: var(--ink);
+  color: var(--base);
+  padding-block: 48px var(--section);
+}
+
+.ev-hero .hero-lede,
+.ev-hero .hero-note {
+  color: var(--on-ink-muted);
+}
+
+/* the hero size and tracking of the builders page's first screen */
+.ev-hero .hero-title {
+  font-size: var(--fs-hero);
+  line-height: var(--lh-hero);
+  letter-spacing: -0.035em;
+}
+
+.ev-hero .text-link {
+  color: var(--base);
+}
+
+@media (min-width: 900px) {
+  .ev-hero {
+    padding-top: 72px;
+  }
+
+  /* as on the builders page: copy across seven columns, the picture in the last five */
+  .ev-hero .hero-copy {
+    grid-column: 1 / 8;
+  }
+}
+
+/* ---------- The tower, today and with Moya One ---------- */
+.tt {
+  margin: 0;
+  color: var(--ink);
+  display: grid;
+  border-radius: var(--radius-card);
+  background: var(--base);
+  overflow: hidden;
+}
+
+.tt-art {
+  width: 100%;
+  height: auto;
+  padding: 20px 12px 0;
+}
+
+.tt-plant {
+  fill: none;
+  stroke: var(--muted);
+  stroke-width: 1.5;
+  stroke-dasharray: 4 4;
+}
+
+.tt-trip {
+  fill: none;
+  stroke: var(--muted);
+  stroke-width: 2;
+  stroke-dasharray: 2 7;
+  stroke-linecap: round;
+}
+
+.tt-riser,
+.tt-branch {
+  fill: none;
+  stroke: var(--orange);
+  stroke-width: 4;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-dasharray: 1;
+  stroke-dashoffset: 1;
+}
+
+.tt-branch {
+  stroke-width: 3;
+}
+
+.tt-dot {
+  fill: var(--yellow);
+  stroke: var(--ink);
+  stroke-width: 1.5;
+  opacity: 0;
+}
+
+.tt-jugs use,
+.tt-van,
+.tt-dot {
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+/* With Moya One: the van drives off, the jugs go, the line rises and each flat lights */
+.tt.is-moya .tt-van {
+  opacity: 0;
+  transform: translateX(-130%);
+}
+
+.tt.is-moya .tt-trip,
+.tt.is-moya .tt-jugs use {
+  opacity: 0;
+}
+
+.tt.is-moya .tt-jugs use {
+  transform: scale(0.6);
+}
+
+.tt.is-moya .tt-riser,
+.tt.is-moya .tt-branch {
+  stroke-dashoffset: 0;
+}
+
+.tt.is-moya .tt-dot {
+  opacity: 1;
+}
+
+.tt-bar {
+  display: grid;
+  gap: 12px;
+  padding: 16px 20px 20px;
+}
+
+.tt-switch {
+  display: inline-flex;
+  justify-self: start;
+  padding: 4px;
+  border-radius: var(--radius-pill);
+  background: var(--grey);
+}
+
+.tt-switch button {
+  min-height: 44px;
+  padding: 0 18px;
+  border: 0;
+  border-radius: var(--radius-pill);
+  background: transparent;
+  color: var(--ink);
+  font: inherit;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition:
+    background-color 0.3s var(--ease-enter),
+    color 0.3s var(--ease-enter);
+}
+
+.tt-switch button:hover {
+  background: color-mix(in srgb, var(--ink) 8%, var(--grey));
+}
+
+.tt-switch button[aria-pressed='true'] {
+  background: var(--ink);
+  color: var(--base);
+}
+
+.tt-caption {
+  min-height: 3.2em;
+  font-size: 15px;
+  color: var(--muted);
+}
+
+/* ---------- A year in one kitchen (held while you scroll) ---------- */
+.ky {
+  position: relative;
+  height: 230vh;
+  background: var(--grey);
+}
+
+.ky-stage {
+  position: sticky;
+  top: var(--nav-h);
+  height: calc(100svh - var(--nav-h));
+  display: grid;
+  align-items: center;
+  overflow: hidden;
+}
+
+.ky-grid {
+  display: grid;
+  gap: 16px;
+  align-items: center;
+}
+
+.ky-title {
+  font-size: var(--fs-h2);
+  line-height: var(--lh-h2);
+}
+
+/* the months of the year, filled with water as the weeks pass */
+.ky-months {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  margin: 16px 0 12px;
+  padding: 6px 0;
+  border-radius: var(--radius-pill);
+  background: var(--base);
+  overflow: hidden;
+  isolation: isolate;
+}
+
+.ky-months::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: var(--water);
+  transform: scaleX(var(--y));
+  transform-origin: left;
+}
+
+.ky-months span {
+  font-size: var(--fs-caption);
+  font-weight: 600;
+  text-align: center;
+  color: var(--muted);
+  transition: color 0.3s var(--ease-enter);
+}
+
+.ky-months span.is-past {
+  color: var(--ink);
+}
+
+.ky-week {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: var(--fs-h1);
+  line-height: 1;
+  letter-spacing: -0.03em;
+  font-variant-numeric: tabular-nums;
+}
+
+.ky-counts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 24px;
+  margin: 12px 0 0;
+}
+
+.ky-counts div {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+}
+
+.ky-counts dt {
+  order: 2;
+  font-size: 15px;
+  color: var(--muted);
+}
+
+.ky-counts dd {
+  margin: 0;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: var(--fs-h3);
+  font-variant-numeric: tabular-nums;
+}
+
+.ky-counts .ky-none {
+  display: none;
+}
+
+.ky-counts .ky-none.is-on {
+  display: flex;
+}
+
+.ky-none dd {
+  padding-inline: 4px;
+  background: var(--yellow);
+}
+
+.ky-beat {
+  min-height: 3.2em;
+  margin-top: 8px;
+  max-width: 34ch;
+  font-size: var(--fs-body-lg);
+}
+
+.ky-chips {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+  margin: 8px 0 12px;
+}
+
+.ky-chips-label {
+  margin-right: 6px;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.ky-chips button {
+  width: 44px;
+  height: 44px;
+  border: 0;
+  border-radius: 50%;
+  background: var(--base);
+  color: var(--ink);
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+  transition:
+    background-color 0.25s var(--ease-enter),
+    color 0.25s var(--ease-enter),
+    transform 0.25s var(--ease-enter);
+}
+
+.ky-chips button:hover {
+  background: color-mix(in srgb, var(--ink) 10%, var(--base));
+}
+
+.ky-chips button:active {
+  transform: scale(0.94);
+}
+
+.ky-chips button[aria-pressed='true'] {
+  background: var(--ink);
+  color: var(--base);
+}
+
+.ky-hud .sample {
+  background: var(--base);
+}
+
+.ky-scene {
+  margin: 0;
+}
+
+.ky-art {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 36svh;
+}
+
+.ky-jug {
+  opacity: 0;
+  transform: translateX(-140px);
+}
+
+.ky-jug.is-in {
+  opacity: 1;
+  transform: none;
+}
+
+.ky-jug.is-gone {
+  opacity: 0;
+  transform: translateY(-40px);
+}
+
+.ky-line {
+  fill: none;
+  stroke: var(--orange);
+  stroke-width: 5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-dasharray: 1;
+}
+
+.ky-unit,
+.ky-glass {
+  opacity: 0;
+  transform: translateY(8px);
+}
+
+.ky-unit.is-on,
+.ky-glass.is-on {
+  opacity: 1;
+  transform: none;
+}
+
+.ky-pour {
+  transform-box: fill-box;
+  transform-origin: top;
+}
+
+.ky-progress {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 4px;
+  background: color-mix(in srgb, var(--ink) 8%, var(--grey));
+}
+
+.ky-progress span {
+  display: block;
+  height: 100%;
+  background: var(--water);
+  transform-origin: left;
+}
+
+/* reduced motion: not held; the finished kitchen in normal flow */
+.ky.is-still {
+  height: auto;
+}
+
+.ky.is-still .ky-stage {
+  position: static;
+  height: auto;
+  padding-block: var(--section);
+}
+
+.ky.is-still .ky-progress {
+  display: none;
+}
+
+/* ---------- The delivery card ---------- */
+.dc {
+  padding-block: var(--section);
+  background: color-mix(in srgb, var(--water) 30%, var(--base));
+}
+
+.dc-grid {
+  display: grid;
+  gap: 40px;
+  align-items: center;
+}
+
+.dc-title {
+  font-size: var(--fs-h1);
+  line-height: var(--lh-h1);
+  letter-spacing: -0.03em;
+}
+
+.dc-copy p {
+  max-width: 38ch;
+  margin-top: 16px;
+  font-size: var(--fs-body-lg);
+}
+
+.dc-replay {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 44px;
+  margin-top: 24px;
+  padding: 0 18px;
+  border: 1.5px solid var(--ink);
+  border-radius: var(--radius-pill);
+  background: transparent;
+  color: var(--ink);
+  font: inherit;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition:
+    background-color 0.25s var(--ease-enter),
+    color 0.25s var(--ease-enter);
+}
+
+.dc-replay:hover:not(:disabled) {
+  background: var(--ink);
+  color: var(--base);
+}
+
+.dc-replay:active:not(:disabled) {
+  transform: scale(0.98);
+}
+
+.dc-replay:disabled {
+  opacity: 0.4;
+  cursor: default;
+}
+
+.dc-card {
+  margin: 0;
+}
+
+.dc-card svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  transform: rotate(-1.5deg);
+}
+
+.dc-paper {
+  fill: var(--base);
+}
+
+.dc-head {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 28px;
+  letter-spacing: -0.02em;
+  fill: var(--ink);
+}
+
+.dc-small {
+  font-family: var(--font-text);
+  font-weight: 600;
+  font-size: 16px;
+  fill: var(--muted);
+}
+
+.dc-cell {
+  fill: var(--grey);
+}
+
+.dc-tick {
+  fill: none;
+  stroke: var(--ink);
+  stroke-width: 3;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-dasharray: 1;
+  stroke-dashoffset: 1;
+}
+
+.dc-wave {
+  fill: var(--water);
+}
+
+.dc-cap {
+  margin-top: 16px;
+  font-size: var(--fs-caption);
+  color: var(--muted);
+}
+
+/* ---------- Proof before numbers ---------- */
+.ev-proof {
+  padding-block: var(--section);
+  background: var(--ink);
+  color: var(--base);
+}
+
+.ev-proof-grid {
+  display: grid;
+  gap: 40px;
+}
+
+.ev-proof-head {
+  display: grid;
+  gap: 16px;
+  align-content: start;
+}
+
+.ev-proof-head p {
+  max-width: 40ch;
+  font-size: var(--fs-body-lg);
+  color: var(--on-ink-muted);
+}
+
+/* three figures in plain rows, each waiting for its proof */
+.ev-proof-list {
+  display: grid;
+  gap: 32px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.ev-proof-list li {
+  display: grid;
+  gap: 6px;
+  justify-items: start;
+}
+
+.ev-proof-list p {
+  max-width: 44ch;
+  color: var(--on-ink-muted);
+}
+
+.ev-pending {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 28px;
+  margin-top: 6px;
+  padding: 0 12px;
+  border-radius: var(--radius-pill);
+  background: var(--ink-raised);
+  font-size: var(--fs-caption);
+  font-weight: 500;
+  color: var(--on-ink-muted);
+}
+
+/* a status dot (DESIGN.md section 5: filled shapes only for status dots) */
+.ev-pending::before {
+  content: '';
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--yellow);
+}
+
+/* ---------- Close ---------- */
+.ev-close-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 16px 28px;
+  margin-top: 12px;
+}
+
+/* ---------- Desktop ---------- */
+@media (min-width: 900px) {
+  .tt {
+    grid-column: 8 / 13;
+  }
+
+  .tt-art {
+    padding: 28px 24px 0;
+  }
+
+  .tt-bar {
+    padding: 16px 28px 24px;
+  }
+
+  .ky-grid {
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 24px;
+  }
+
+  .ky-hud {
+    grid-column: 1 / 5;
+  }
+
+  .ky-scene {
+    grid-column: 5 / 13;
+  }
+
+  .ky-art {
+    max-height: calc(100svh - var(--nav-h) - 80px);
+  }
+
+  .ky {
+    height: 280vh;
+  }
+
+  .dc-grid {
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 24px;
+  }
+
+  .dc-copy {
+    grid-column: 1 / 5;
+  }
+
+  .dc-card {
+    grid-column: 6 / 13;
+  }
+
+  .ev-proof-grid {
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 24px;
+  }
+
+  .ev-proof-head {
+    grid-column: 1 / 6;
+  }
+
+  .ev-proof-list {
+    grid-column: 7 / 13;
+    gap: 40px;
+  }
+}
+
+/* ======================= Motion =======================
+   Every move shows the change: in the hero the van drives off and the line rises through the tower; in the kitchen
+   each week's jug slides in from the door and the stack lifts away for the line; on the card the ticks go in across
+   the year and a wave of water washes them off. Reduced motion: the final state, no travel. */
+@media (prefers-reduced-motion: no-preference) {
+  /* ---- the hero drawing ---- */
+  .tt-van {
+    transition:
+      transform 1.1s cubic-bezier(0.6, 0, 0.3, 1),
+      opacity 0.6s var(--ease-enter) 0.5s;
+  }
+
+  .tt.is-moya .tt-van {
+    transition:
+      transform 1.1s cubic-bezier(0.6, 0, 0.3, 1),
+      opacity 0.5s var(--ease-enter) 0.4s;
+  }
+
+  .tt-trip {
+    transition: opacity 0.4s var(--ease-enter);
+  }
+
+  .tt-jugs use {
+    transition:
+      opacity 0.4s var(--ease-enter) calc(var(--k) * 0.05s),
+      transform 0.4s var(--ease-enter) calc(var(--k) * 0.05s);
+  }
+
+  .tt-riser {
+    transition: stroke-dashoffset 0.3s var(--ease-fill);
+  }
+
+  .tt-branch,
+  .tt-dot {
+    transition:
+      stroke-dashoffset 0.25s var(--ease-fill),
+      opacity 0.25s var(--ease-enter);
+  }
+
+  .tt.is-moya .tt-riser {
+    transition: stroke-dashoffset 1.1s var(--ease-fill) 0.5s;
+  }
+
+  .tt.is-moya .tt-branch {
+    transition: stroke-dashoffset 0.4s var(--ease-fill) calc(0.8s + var(--f) * 0.18s);
+  }
+
+  .tt.is-moya .tt-dot {
+    animation: ev-pop 0.45s cubic-bezier(0.22, 1, 0.36, 1) calc(1s + var(--f) * 0.18s) both;
+  }
+
+  @keyframes ev-pop {
+    from {
+      opacity: 0;
+      transform: scale(0.4);
+    }
+  }
+
+  /* ---- the kitchen: jugs slide in from the door; for Moya One they lift away, the top of the stack first ---- */
+  .ky-jug {
+    transition:
+      opacity 0.45s var(--ease-enter),
+      transform 0.6s cubic-bezier(0.2, 0.7, 0.2, 1);
+  }
+
+  .ky-jug.is-gone {
+    transition-delay: calc(var(--o) * 0.025s);
+  }
+
+  .ky-unit,
+  .ky-glass {
+    transition:
+      opacity 0.5s var(--ease-enter),
+      transform 0.5s var(--ease-enter);
+  }
+
+  .ky-beat {
+    animation: ev-beat 0.6s var(--ease-enter) both;
+  }
+
+  @keyframes ev-beat {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+  }
+
+  /* ---- the card: ticks go in across the year, then the wave washes them off ---- */
+  .dc-card.is-run .dc-tick {
+    animation:
+      dc-tick 0.3s var(--ease-fill) var(--t) forwards,
+      dc-wash 0.25s var(--ease-enter) var(--w) forwards;
+  }
+
+  .dc-card.is-run .dc-wave {
+    animation: dc-wave 1.5s cubic-bezier(0.45, 0, 0.3, 1) 2.4s forwards;
+  }
+
+  @keyframes dc-tick {
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+
+  @keyframes dc-wash {
+    from {
+      stroke-dashoffset: 0;
+    }
+    to {
+      stroke-dashoffset: 0;
+      opacity: 0;
+    }
+  }
+
+  @keyframes dc-wave {
+    to {
+      transform: translateX(1060px);
+    }
+  }
+
+  /* ---- the proof rows arrive one after another ---- */
+  .ev-proof-list li {
+    opacity: 0;
+    transform: translateY(18px);
+    transition:
+      opacity 0.6s var(--ease-enter) calc(var(--i) * 0.12s),
+      transform 0.6s var(--ease-enter) calc(var(--i) * 0.12s);
+  }
+
+  .ev-proof-list.is-in li {
+    opacity: 1;
+    transform: none;
+  }
+}
