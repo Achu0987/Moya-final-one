@@ -15,21 +15,8 @@ export const metadata = {
 export default function HowItWorks() {
   return (
     <>
-      {/* start to end, in order: who does what, before and after you move in */}
-      <section className="how-intro" aria-labelledby="how-title">
-        <div className="container">
-          <div className="how-intro-head">
-            <h1 id="how-title" className="how-title">
-              How it works,
-              <br /> start to end.
-            </h1>
-            <p className="how-lede">
-              Six steps, in order. Your builder does the first three while the tower goes up. The last three are yours, from the day you move in.
-            </p>
-          </div>
-          <Story />
-        </div>
-      </section>
+      {/* start to end, in order: a full-screen story the page scrolls through, one step at a time */}
+      <Story />
 
       <DropJourney />
 

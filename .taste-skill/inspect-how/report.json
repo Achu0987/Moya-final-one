@@ -1,30 +1,32 @@
 {
  "url": "http://localhost:3100/b2c/how-it-works",
- "at": "2026-10-24T03:12:48.743Z",
+ "at": "2026-10-24T03:30:57.859Z",
  "allow": [],
  "viewports": [
   {
    "width": 1440,
    "height": 900,
    "load": "load",
-   "screens": 10,
+   "screens": 12,
    "filled": [
-    0.46,
-    0.89,
+    0.41,
+    0.42,
+    0.43,
+    0.45,
+    0.43,
+    0.43,
     0.96,
     0.96,
     0.96,
     0.96,
-    0.93,
-    0.73,
-    0.68,
-    0.95
+    0.96,
+    0.91
    ],
    "motion": {
-    "elements": 50,
-    "css": 8,
-    "transitions": 19,
-    "scripted": 23,
+    "elements": 73,
+    "css": 9,
+    "transitions": 36,
+    "scripted": 28,
     "videos": 0,
     "playingVideos": 0
    },
@@ -34,9 +36,9 @@
      "h": 900
     },
     "page": {
-     "height": 8722,
-     "screens": 9.7,
-     "words": 357,
+     "height": 13173,
+     "screens": 14.6,
+     "words": 325,
      "img": 1,
      "video": 0,
      "canvas": 1,
@@ -61,19 +63,19 @@
      "words": 6,
      "chars": 27,
      "lines": 2,
-     "size": 64,
-     "vw": 4.4,
+     "size": 44,
+     "vw": 3.1,
      "font": "Plus Jakarta Sans",
      "weight": 700,
-     "tracking": -0.03,
-     "leading": 1,
+     "tracking": -0.02,
+     "leading": 1.1,
      "upper": false,
      "italic": false,
      "mono": false,
      "align": "left",
-     "position": "left",
-     "widthRatio": 0.48,
-     "top": 169,
+     "position": "right",
+     "widthRatio": 0.34,
+     "top": 184,
      "tag": "h1",
      "kind": "heading"
     },
@@ -81,7 +83,7 @@
      "text": "How it works, start to end.",
      "words": 6,
      "lines": 2,
-     "size": 64,
+     "size": 44,
      "font": "Plus Jakarta Sans"
     },
     "headings": [
@@ -90,19 +92,19 @@
       "words": 6,
       "chars": 27,
       "lines": 2,
-      "size": 64,
-      "vw": 4.4,
+      "size": 44,
+      "vw": 3.1,
       "font": "Plus Jakarta Sans",
       "weight": 700,
-      "tracking": -0.03,
-      "leading": 1,
+      "tracking": -0.02,
+      "leading": 1.1,
       "upper": false,
       "italic": false,
       "mono": false,
       "align": "left",
-      "position": "left",
-      "widthRatio": 0.48,
-      "top": 169,
+      "position": "right",
+      "widthRatio": 0.34,
+      "top": 184,
       "tag": "h1",
       "kind": "heading"
      },
@@ -123,7 +125,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.27,
-      "top": 1080,
+      "top": 5532,
       "tag": "h2",
       "kind": "heading"
      },
@@ -144,7 +146,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.41,
-      "top": 5886,
+      "top": 10336,
       "tag": "h2",
       "kind": "heading"
      },
@@ -165,7 +167,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.17,
-      "top": 6242,
+      "top": 10693,
       "tag": "p",
       "kind": "statement"
      },
@@ -186,7 +188,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.83,
-      "top": 6856,
+      "top": 11306,
       "tag": "h2",
       "kind": "heading"
      },
@@ -207,7 +209,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.43,
-      "top": 7436,
+      "top": 11886,
       "tag": "h2",
       "kind": "heading"
      },
@@ -228,7 +230,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.85,
-      "top": 8552,
+      "top": 13003,
       "tag": "p",
       "kind": "statement"
      }
@@ -246,12 +248,12 @@
      "families": [
       {
        "family": "Inter",
-       "share": 0.71,
+       "share": 0.69,
        "mono": false
       },
       {
        "family": "Plus Jakarta Sans",
-       "share": 0.29,
+       "share": 0.31,
        "mono": false
       }
      ],
@@ -263,10 +265,9 @@
       20,
       22,
       44,
-      64,
       269
      ],
-     "sizeCount": 8,
+     "sizeCount": 7,
      "notLoaded": [],
      "body": {
       "font": "Inter",
@@ -274,7 +275,7 @@
       "leading": 1.6,
       "weight": 400,
       "tracking": 0,
-      "contrast": 7.2
+      "contrast": 6.9
      },
      "measureChars": 49,
      "max": {
@@ -307,7 +308,7 @@
      "sectionBgs": [
       {
        "color": "#111827",
-       "top": 1038,
+       "top": 5489,
        "hsl": {
         "h": 221,
         "s": 0.39,
@@ -316,7 +317,7 @@
       },
       {
        "color": "#f3f4f6",
-       "top": 5718,
+       "top": 10169,
        "hsl": {
         "h": 220,
         "s": 0.14,
@@ -327,19 +328,23 @@
      "textColors": [
       {
        "color": "#4b5563",
-       "share": 0.43
+       "share": 0.38
       },
       {
        "color": "#111827",
-       "share": 0.21
+       "share": 0.24
       },
       {
        "color": "#b9bbbd",
-       "share": 0.19
+       "share": 0.2
       },
       {
        "color": "#fafaf7",
-       "share": 0.16
+       "share": 0.17
+      },
+      {
+       "color": "#d7d8d8",
+       "share": 0.01
       }
      ],
      "button": {
@@ -354,18 +359,17 @@
      "lowContrast": []
     },
     "buttons": {
-     "count": 6,
-     "inHero": 3,
+     "count": 5,
+     "inHero": 2,
      "radius": "pill",
-     "height": 44,
+     "height": 50,
      "withShadow": 0,
      "withGradient": 0,
      "mono": 0,
      "upper": 0,
      "heroLabels": [
       "Skip to content",
-      "Contact",
-      "Pause"
+      "Contact"
      ]
     },
     "surfaces": {
@@ -394,7 +398,7 @@
     "heroMedia": [
      {
       "type": "svg",
-      "ratio": 0.29
+      "ratio": 0.3
      }
     ],
     "nav": {
@@ -414,29 +418,29 @@
      "w": 1440,
      "h": 900
     },
-    "pageH": 8722,
+    "pageH": 13173,
     "margins": {
      "left": 120,
      "right": 120
     },
     "sections": [
      {
-      "sel": "section.how-intro",
+      "sel": "section.tale",
       "tag": "section",
       "top": 89,
-      "height": 950,
-      "words": 94,
+      "height": 5400,
+      "words": 66,
       "media": 1,
       "middle": 24,
       "heading": {
-       "text": "How it works,",
-       "size": 64,
+       "text": "How it works, start to end.",
+       "size": 44,
        "tag": "h1"
       },
       "left": 120,
       "right": 120,
-      "textLeft": 120,
-      "textRight": 127,
+      "textLeft": 150,
+      "textRight": 120,
       "fullBleed": false,
       "footer": false,
       "hero": true,
@@ -446,15 +450,19 @@
      {
       "sel": "section.drop.is-ready",
       "tag": "section",
-      "top": 1038,
+      "top": 5489,
       "height": 4680,
-      "words": 6,
+      "words": 44,
       "media": 1,
-      "middle": 22,
-      "heading": null,
-      "left": 1124,
+      "middle": 592,
+      "heading": {
+       "text": "Now see it happen.",
+       "size": 44,
+       "tag": "h2"
+      },
+      "left": 138,
       "right": 114,
-      "textLeft": 1124,
+      "textLeft": 138,
       "textRight": 114,
       "fullBleed": true,
       "footer": false,
@@ -465,7 +473,7 @@
      {
       "sel": "section.try",
       "tag": "section",
-      "top": 5718,
+      "top": 10169,
       "height": 1017,
       "words": 63,
       "media": 1,
@@ -488,20 +496,20 @@
      {
       "sel": "section.dodont",
       "tag": "section",
-      "top": 6736,
+      "top": 11186,
       "height": 628,
-      "words": 39,
-      "media": 1,
-      "middle": 41,
+      "words": 7,
+      "media": 0,
+      "middle": 7,
       "heading": {
        "text": "What",
        "size": 44,
        "tag": "h2"
       },
       "left": 120,
-      "right": 133,
+      "right": 641,
       "textLeft": 120,
-      "textRight": 363,
+      "textRight": 641,
       "fullBleed": false,
       "footer": false,
       "hero": false,
@@ -511,20 +519,20 @@
      {
       "sel": "section.how-next",
       "tag": "section",
-      "top": 7364,
+      "top": 11815,
       "height": 506,
-      "words": 32,
+      "words": 5,
       "media": 0,
-      "middle": 0,
+      "middle": 7,
       "heading": {
        "text": "See",
        "size": 44,
        "tag": "h2"
       },
       "left": 184,
-      "right": 704,
+      "right": 770,
       "textLeft": 184,
-      "textRight": 704,
+      "textRight": 770,
       "fullBleed": false,
       "footer": false,
       "hero": false,
@@ -534,12 +542,16 @@
      {
       "sel": "footer.footer",
       "tag": "footer",
-      "top": 7871,
+      "top": 12321,
       "height": 852,
       "words": 49,
       "media": 0,
       "middle": 282,
-      "heading": null,
+      "heading": {
+       "text": "Moya One",
+       "size": 22,
+       "tag": "p"
+      },
       "left": 120,
       "right": 170,
       "textLeft": 120,
@@ -555,8 +567,8 @@
     "h1s": [
      {
       "text": "How it works, start to end.",
-      "size": 64,
-      "top": 169,
+      "size": 44,
+      "top": 184,
       "firstScreen": true
      }
     ],
@@ -564,11 +576,15 @@
     "edges": [
      {
       "x": 120,
-      "n": 4
+      "n": 2
+     },
+     {
+      "x": 138,
+      "n": 2
      },
      {
       "x": 184,
-      "n": 3
+      "n": 2
      },
      {
       "x": 238,
@@ -605,16 +621,12 @@
      {
       "x": 447,
       "n": 1
-     },
-     {
-      "x": 603,
-      "n": 1
      }
     ],
-    "leftBlocks": 22,
-    "bodySize": 20,
+    "leftBlocks": 21,
+    "bodySize": 16,
     "stage": false,
-    "explains": true,
+    "explains": false,
     "slivers": [],
     "voidShare": 0.07,
     "voidBox": {
@@ -631,24 +643,26 @@
    "width": 768,
    "height": 1024,
    "load": "load",
-   "screens": 10,
+   "screens": 12,
    "filled": [
-    0.68,
-    0.83,
+    0.57,
+    0.58,
+    0.57,
+    0.57,
+    0.56,
+    0.56,
+    0.94,
     0.96,
     0.96,
     0.96,
     0.96,
-    0.89,
-    0.87,
-    0.73,
-    0.93
+    0.87
    ],
    "motion": {
-    "elements": 39,
-    "css": 7,
-    "transitions": 9,
-    "scripted": 23,
+    "elements": 66,
+    "css": 9,
+    "transitions": 29,
+    "scripted": 28,
     "videos": 0,
     "playingVideos": 0
    },
@@ -658,9 +672,9 @@
      "h": 1024
     },
     "page": {
-     "height": 10013,
-     "screens": 9.8,
-     "words": 360,
+     "height": 14946,
+     "screens": 14.6,
+     "words": 336,
      "img": 1,
      "video": 0,
      "canvas": 1,
@@ -684,28 +698,28 @@
      "text": "How it works, start to end.",
      "words": 6,
      "chars": 27,
-     "lines": 2,
-     "size": 40,
-     "vw": 5.2,
+     "lines": 1,
+     "size": 32,
+     "vw": 4.2,
      "font": "Plus Jakarta Sans",
      "weight": 700,
-     "tracking": -0.03,
-     "leading": 1.05,
+     "tracking": -0.02,
+     "leading": 1.1,
      "upper": false,
      "italic": false,
      "mono": false,
      "align": "left",
      "position": "center",
      "widthRatio": 0.96,
-     "top": 113,
+     "top": 237,
      "tag": "h1",
      "kind": "heading"
     },
     "h1": {
      "text": "How it works, start to end.",
      "words": 6,
-     "lines": 2,
-     "size": 40,
+     "lines": 1,
+     "size": 32,
      "font": "Plus Jakarta Sans"
     },
     "headings": [
@@ -713,20 +727,20 @@
       "text": "How it works, start to end.",
       "words": 6,
       "chars": 27,
-      "lines": 2,
-      "size": 40,
-      "vw": 5.2,
+      "lines": 1,
+      "size": 32,
+      "vw": 4.2,
       "font": "Plus Jakarta Sans",
       "weight": 700,
-      "tracking": -0.03,
-      "leading": 1.05,
+      "tracking": -0.02,
+      "leading": 1.1,
       "upper": false,
       "italic": false,
       "mono": false,
       "align": "left",
       "position": "center",
       "widthRatio": 0.96,
-      "top": 113,
+      "top": 237,
       "tag": "h1",
       "kind": "heading"
      },
@@ -747,7 +761,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.37,
-      "top": 1303,
+      "top": 6237,
       "tag": "h2",
       "kind": "heading"
      },
@@ -768,7 +782,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.96,
-      "top": 6672,
+      "top": 11606,
       "tag": "h2",
       "kind": "heading"
      },
@@ -789,7 +803,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.32,
-      "top": 7016,
+      "top": 11950,
       "tag": "p",
       "kind": "statement"
      },
@@ -810,7 +824,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.96,
-      "top": 8108,
+      "top": 13042,
       "tag": "h2",
       "kind": "heading"
      },
@@ -831,7 +845,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.9,
-      "top": 8695,
+      "top": 13628,
       "tag": "h2",
       "kind": "heading"
      },
@@ -852,14 +866,14 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.94,
-      "top": 9909,
+      "top": 14842,
       "tag": "p",
       "kind": "statement"
      }
     ],
     "headingSummary": {
      "count": 7,
-     "maxLines": 2,
+     "maxLines": 1,
      "over2Lines": 0,
      "statements": 2,
      "centered": 0,
@@ -870,12 +884,12 @@
      "families": [
       {
        "family": "Inter",
-       "share": 0.74,
+       "share": 0.72,
        "mono": false
       },
       {
        "family": "Plus Jakarta Sans",
-       "share": 0.26,
+       "share": 0.28,
        "mono": false
       }
      ],
@@ -888,10 +902,9 @@
       20,
       22,
       32,
-      40,
       165
      ],
-     "sizeCount": 9,
+     "sizeCount": 8,
      "notLoaded": [],
      "body": {
       "font": "Inter",
@@ -899,9 +912,9 @@
       "leading": 1.6,
       "weight": 400,
       "tracking": 0,
-      "contrast": 7.2
+      "contrast": 6.9
      },
-     "measureChars": 50,
+     "measureChars": 56,
      "max": {
       "size": 165,
       "vw": 21.5,
@@ -932,7 +945,7 @@
      "sectionBgs": [
       {
        "color": "#edf5f5",
-       "top": 347,
+       "top": 284,
        "hsl": {
         "h": 180,
         "s": 0.29,
@@ -941,7 +954,7 @@
       },
       {
        "color": "#111827",
-       "top": 1275,
+       "top": 6209,
        "hsl": {
         "h": 221,
         "s": 0.39,
@@ -950,7 +963,7 @@
       },
       {
        "color": "#f3f4f6",
-       "top": 6600,
+       "top": 11534,
        "hsl": {
         "h": 220,
         "s": 0.14,
@@ -961,35 +974,39 @@
      "textColors": [
       {
        "color": "#4b5563",
-       "share": 0.44
+       "share": 0.38
       },
       {
        "color": "#b9bbbd",
-       "share": 0.21
+       "share": 0.23
+      },
+      {
+       "color": "#111827",
+       "share": 0.19
       },
       {
        "color": "#fafaf7",
        "share": 0.18
       },
       {
-       "color": "#111827",
-       "share": 0.17
+       "color": "#dedfde",
+       "share": 0.01
       }
      ],
      "button": {
-      "bg": "#fafaf7",
+      "bg": "#f97316",
       "hsl": {
-       "h": 60,
-       "s": 0.23,
-       "l": 0.97
+       "h": 25,
+       "s": 0.95,
+       "l": 0.53
       },
       "fg": "#111827"
      },
      "lowContrast": []
     },
     "buttons": {
-     "count": 5,
-     "inHero": 2,
+     "count": 4,
+     "inHero": 1,
      "radius": "pill",
      "height": 50,
      "withShadow": 0,
@@ -997,8 +1014,7 @@
      "mono": 0,
      "upper": 0,
      "heroLabels": [
-      "Skip to content",
-      "Pause"
+      "Skip to content"
      ]
     },
     "surfaces": {
@@ -1027,7 +1043,7 @@
     "heroMedia": [
      {
       "type": "svg",
-      "ratio": 0.55
+      "ratio": 0.34
      }
     ],
     "nav": {
@@ -1047,39 +1063,39 @@
      "w": 768,
      "h": 1024
     },
-    "pageH": 10013,
+    "pageH": 14946,
     "margins": {
      "left": 16,
      "right": 16
     },
     "sections": [
      {
-      "sel": "section.how-intro",
+      "sel": "section.tale",
       "tag": "section",
       "top": 65,
-      "height": 1210,
-      "words": 57,
+      "height": 6144,
+      "words": 35,
       "media": 1,
       "middle": 0,
       "heading": {
-       "text": "How it works,",
-       "size": 40,
+       "text": "How it works, start to end.",
+       "size": 32,
        "tag": "h1"
       },
       "left": 16,
       "right": 16,
       "textLeft": 16,
-      "textRight": 31,
+      "textRight": 16,
       "fullBleed": false,
       "footer": false,
       "hero": true,
       "continues": true,
-      "pinned": false
+      "pinned": true
      },
      {
       "sel": "section.drop.is-ready",
       "tag": "section",
-      "top": 1275,
+      "top": 6209,
       "height": 5325,
       "words": 44,
       "media": 1,
@@ -1102,7 +1118,7 @@
      {
       "sel": "section.try",
       "tag": "section",
-      "top": 6600,
+      "top": 11534,
       "height": 1436,
       "words": 63,
       "media": 1,
@@ -1125,18 +1141,18 @@
      {
       "sel": "section.dodont",
       "tag": "section",
-      "top": 8036,
+      "top": 12970,
       "height": 618,
-      "words": 39,
-      "media": 1,
-      "middle": 91,
+      "words": 7,
+      "media": 0,
+      "middle": 5,
       "heading": {
        "text": "What",
        "size": 32,
        "tag": "h2"
       },
       "left": 16,
-      "right": 16,
+      "right": 258,
       "textLeft": 16,
       "textRight": 258,
       "fullBleed": false,
@@ -1148,20 +1164,20 @@
      {
       "sel": "section.how-next",
       "tag": "section",
-      "top": 8655,
+      "top": 13588,
       "height": 372,
-      "words": 32,
+      "words": 5,
       "media": 0,
-      "middle": 0,
+      "middle": 5,
       "heading": {
        "text": "See",
        "size": 32,
        "tag": "h2"
       },
       "left": 40,
-      "right": 232,
+      "right": 375,
       "textLeft": 40,
-      "textRight": 232,
+      "textRight": 375,
       "fullBleed": false,
       "footer": false,
       "hero": false,
@@ -1171,7 +1187,7 @@
      {
       "sel": "footer.footer",
       "tag": "footer",
-      "top": 9026,
+      "top": 13960,
       "height": 987,
       "words": 49,
       "media": 0,
@@ -1192,8 +1208,8 @@
     "h1s": [
      {
       "text": "How it works, start to end.",
-      "size": 40,
-      "top": 113,
+      "size": 32,
+      "top": 237,
       "firstScreen": true
      }
     ],
@@ -1201,11 +1217,11 @@
     "edges": [
      {
       "x": 16,
-      "n": 7
+      "n": 5
      },
      {
       "x": 34,
-      "n": 4
+      "n": 3
      },
      {
       "x": 102,
@@ -1248,8 +1264,8 @@
       "n": 1
      }
     ],
-    "leftBlocks": 25,
-    "bodySize": 18,
+    "leftBlocks": 22,
+    "bodySize": 16,
     "stage": false,
     "explains": true,
     "slivers": [],
@@ -1263,25 +1279,26 @@
    "width": 390,
    "height": 844,
    "load": "load",
-   "screens": 11,
+   "screens": 12,
    "filled": [
-    0.56,
-    0.94,
+    0.61,
+    0.64,
+    0.65,
+    0.62,
+    0.61,
+    0.63,
+    0.96,
     0.97,
     0.97,
     0.97,
     0.97,
-    0.91,
-    0.84,
-    0.78,
-    0.81,
-    0.97
+    0.86
    ],
    "motion": {
-    "elements": 34,
-    "css": 7,
-    "transitions": 4,
-    "scripted": 23,
+    "elements": 61,
+    "css": 9,
+    "transitions": 24,
+    "scripted": 28,
     "videos": 0,
     "playingVideos": 0
    },
@@ -1291,9 +1308,9 @@
      "h": 844
     },
     "page": {
-     "height": 8941,
-     "screens": 10.6,
-     "words": 354,
+     "height": 13050,
+     "screens": 15.5,
+     "words": 330,
      "img": 1,
      "video": 0,
      "canvas": 1,
@@ -1318,19 +1335,19 @@
      "words": 6,
      "chars": 27,
      "lines": 2,
-     "size": 40,
-     "vw": 10.3,
+     "size": 32,
+     "vw": 8.2,
      "font": "Plus Jakarta Sans",
      "weight": 700,
-     "tracking": -0.03,
-     "leading": 1.05,
+     "tracking": -0.02,
+     "leading": 1.1,
      "upper": false,
      "italic": false,
      "mono": false,
      "align": "left",
      "position": "center",
      "widthRatio": 0.92,
-     "top": 113,
+     "top": 160,
      "tag": "h1",
      "kind": "heading"
     },
@@ -1338,7 +1355,7 @@
      "text": "How it works, start to end.",
      "words": 6,
      "lines": 2,
-     "size": 40,
+     "size": 32,
      "font": "Plus Jakarta Sans"
     },
     "headings": [
@@ -1368,19 +1385,19 @@
       "words": 6,
       "chars": 27,
       "lines": 2,
-      "size": 40,
-      "vw": 10.3,
+      "size": 32,
+      "vw": 8.2,
       "font": "Plus Jakarta Sans",
       "weight": 700,
-      "tracking": -0.03,
-      "leading": 1.05,
+      "tracking": -0.02,
+      "leading": 1.1,
       "upper": false,
       "italic": false,
       "mono": false,
       "align": "left",
       "position": "center",
       "widthRatio": 0.92,
-      "top": 113,
+      "top": 160,
       "tag": "h1",
       "kind": "heading"
      },
@@ -1401,7 +1418,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.73,
-      "top": 1049,
+      "top": 5157,
       "tag": "h2",
       "kind": "heading"
      },
@@ -1422,7 +1439,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.92,
-      "top": 5481,
+      "top": 9590,
       "tag": "h2",
       "kind": "heading"
      },
@@ -1443,7 +1460,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.63,
-      "top": 5889,
+      "top": 9998,
       "tag": "p",
       "kind": "statement"
      },
@@ -1464,7 +1481,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.92,
-      "top": 6933,
+      "top": 11041,
       "tag": "h2",
       "kind": "heading"
      },
@@ -1485,7 +1502,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.79,
-      "top": 7580,
+      "top": 11688,
       "tag": "h2",
       "kind": "heading"
      },
@@ -1506,7 +1523,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.94,
-      "top": 8891,
+      "top": 12999,
       "tag": "p",
       "kind": "statement"
      }
@@ -1524,12 +1541,12 @@
      "families": [
       {
        "family": "Inter",
-       "share": 0.74,
+       "share": 0.72,
        "mono": false
       },
       {
        "family": "Plus Jakarta Sans",
-       "share": 0.26,
+       "share": 0.28,
        "mono": false
       }
      ],
@@ -1542,10 +1559,9 @@
       20,
       22,
       32,
-      40,
       80
      ],
-     "sizeCount": 9,
+     "sizeCount": 8,
      "notLoaded": [],
      "body": {
       "font": "Inter",
@@ -1553,7 +1569,7 @@
       "leading": 1.6,
       "weight": 400,
       "tracking": 0,
-      "contrast": 7.2
+      "contrast": 6.9
      },
      "measureChars": 40,
      "max": {
@@ -1586,7 +1602,7 @@
      "sectionBgs": [
       {
        "color": "#edf5f5",
-       "top": 376,
+       "top": 242,
        "hsl": {
         "h": 180,
         "s": 0.29,
@@ -1595,7 +1611,7 @@
       },
       {
        "color": "#111827",
-       "top": 1021,
+       "top": 5129,
        "hsl": {
         "h": 221,
         "s": 0.39,
@@ -1604,7 +1620,7 @@
       },
       {
        "color": "#f3f4f6",
-       "top": 5409,
+       "top": 9518,
        "hsl": {
         "h": 220,
         "s": 0.14,
@@ -1613,7 +1629,7 @@
       },
       {
        "color": "#fafaf7",
-       "top": 5733,
+       "top": 9841,
        "hsl": {
         "h": 60,
         "s": 0.23,
@@ -1624,35 +1640,39 @@
      "textColors": [
       {
        "color": "#4b5563",
-       "share": 0.44
+       "share": 0.38
       },
       {
        "color": "#b9bbbd",
-       "share": 0.21
+       "share": 0.23
+      },
+      {
+       "color": "#111827",
+       "share": 0.19
       },
       {
        "color": "#fafaf7",
        "share": 0.18
       },
       {
-       "color": "#111827",
-       "share": 0.17
+       "color": "#dedfde",
+       "share": 0.01
       }
      ],
      "button": {
-      "bg": "#fafaf7",
+      "bg": "#f97316",
       "hsl": {
-       "h": 60,
-       "s": 0.23,
-       "l": 0.97
+       "h": 25,
+       "s": 0.95,
+       "l": 0.53
       },
       "fg": "#111827"
      },
      "lowContrast": []
     },
     "buttons": {
-     "count": 5,
-     "inHero": 2,
+     "count": 4,
+     "inHero": 1,
      "radius": "pill",
      "height": 50,
      "withShadow": 0,
@@ -1660,8 +1680,7 @@
      "mono": 0,
      "upper": 0,
      "heroLabels": [
-      "Skip to content",
-      "Pause"
+      "Skip to content"
      ]
     },
     "surfaces": {
@@ -1690,7 +1709,7 @@
     "heroMedia": [
      {
       "type": "svg",
-      "ratio": 0.34
+      "ratio": 0.33
      }
     ],
     "nav": {
@@ -1710,39 +1729,39 @@
      "w": 390,
      "h": 844
     },
-    "pageH": 8941,
+    "pageH": 13050,
     "margins": {
      "left": 16,
      "right": 16
     },
     "sections": [
      {
-      "sel": "section.how-intro",
+      "sel": "section.tale",
       "tag": "section",
       "top": 65,
-      "height": 956,
-      "words": 57,
+      "height": 5064,
+      "words": 35,
       "media": 1,
       "middle": 0,
       "heading": {
-       "text": "How it works,",
-       "size": 40,
+       "text": "How it works, start to end.",
+       "size": 32,
        "tag": "h1"
       },
       "left": 16,
       "right": 16,
       "textLeft": 16,
-      "textRight": 30,
+      "textRight": 16,
       "fullBleed": false,
       "footer": false,
       "hero": true,
       "continues": true,
-      "pinned": false
+      "pinned": true
      },
      {
       "sel": "section.drop.is-ready",
       "tag": "section",
-      "top": 1021,
+      "top": 5129,
       "height": 4389,
       "words": 38,
       "media": 1,
@@ -1765,7 +1784,7 @@
      {
       "sel": "section.try",
       "tag": "section",
-      "top": 5409,
+      "top": 9518,
       "height": 1451,
       "words": 63,
       "media": 1,
@@ -1788,20 +1807,20 @@
      {
       "sel": "section.dodont",
       "tag": "section",
-      "top": 6861,
+      "top": 10969,
       "height": 680,
-      "words": 39,
-      "media": 1,
-      "middle": 0,
+      "words": 7,
+      "media": 0,
+      "middle": 1,
       "heading": {
        "text": "What",
        "size": 32,
        "tag": "h2"
       },
       "left": 16,
-      "right": 16,
+      "right": 89,
       "textLeft": 16,
-      "textRight": 69,
+      "textRight": 89,
       "fullBleed": false,
       "footer": false,
       "hero": false,
@@ -1811,20 +1830,20 @@
      {
       "sel": "section.how-next",
       "tag": "section",
-      "top": 7540,
+      "top": 11648,
       "height": 436,
-      "words": 32,
+      "words": 5,
       "media": 0,
-      "middle": 0,
+      "middle": 2,
       "heading": {
        "text": "See",
        "size": 32,
        "tag": "h2"
       },
       "left": 40,
-      "right": 51,
+      "right": 132,
       "textLeft": 40,
-      "textRight": 51,
+      "textRight": 132,
       "fullBleed": false,
       "footer": false,
       "hero": false,
@@ -1834,7 +1853,7 @@
      {
       "sel": "footer.footer",
       "tag": "footer",
-      "top": 7976,
+      "top": 12084,
       "height": 966,
       "words": 49,
       "media": 0,
@@ -1855,8 +1874,8 @@
     "h1s": [
      {
       "text": "How it works, start to end.",
-      "size": 40,
-      "top": 113,
+      "size": 32,
+      "top": 160,
       "firstScreen": true
      }
     ],
@@ -1864,11 +1883,11 @@
     "edges": [
      {
       "x": 16,
-      "n": 9
+      "n": 7
      },
      {
       "x": 34,
-      "n": 5
+      "n": 4
      },
      {
       "x": 102,
@@ -1899,8 +1918,8 @@
       "n": 1
      }
     ],
-    "leftBlocks": 25,
-    "bodySize": 18,
+    "leftBlocks": 22,
+    "bodySize": 16,
     "stage": false,
     "explains": true,
     "slivers": [],
@@ -1935,6 +1954,17 @@
    ]
   },
   {
+   "level": "WARN",
+   "id": "grey-body",
+   "width": 1440,
+   "message": "The running text is a soft grey on its ground (6.9:1).",
+   "fix": "Set body copy in the full ink (7:1 or more). Keep the muted ink for secondary notes; pages read thin and unfinished when everything is grey.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
    "level": "FAIL",
    "id": "few-pictures",
    "width": 1440,
@@ -1952,7 +1982,7 @@
    "level": "WARN",
    "id": "ragged-edges",
    "width": 1440,
-   "message": "Left-aligned text starts at 12 different lines (120px, 184px, 238px, 511px, 547px, 834px, 271px); the three most used hold only 41% of it.",
+   "message": "Left-aligned text starts at 12 different lines (120px, 138px, 184px, 238px, 511px, 547px, 834px); the three most used hold only 29% of it.",
    "fix": "Pick two or three anchor lines from the grid and start every heading and paragraph on one of them.",
    "alsoAt": [
     768
@@ -1962,7 +1992,7 @@
    "level": "WARN",
    "id": "pinned-over-picture",
    "width": 1440,
-   "message": "Pinned large text slides across pictures while the page scrolls: \"Now see it happen.\" (screen 2, 100% over a picture)",
+   "message": "Pinned large text slides across pictures while the page scrolls: \"Now see it happen.\" (screen 7, 100% over a picture)",
    "fix": "Jurors read a pinned title crossing drawings or photographs as a collision. Keep the pictures in the column the title does not occupy, or unpin it.",
    "alsoAt": [
     768,
@@ -1970,11 +2000,11 @@
    ]
   },
   {
-   "level": "FAIL",
-   "id": "covered-text",
-   "width": 390,
-   "message": "Large text lies under another element at some scroll position: \"Moya One\" (screen 11, 38% hidden)",
-   "fix": "Nothing may sit on top of a headline or statement. Move the picture, shorten the pinned run, or raise the text above it (z-index) and give it a ground."
+   "level": "WARN",
+   "id": "long-pin",
+   "width": 1440,
+   "message": "The same large text stays on screen for 6 screens in a row: \"How it works, start to end.\"",
+   "fix": "A pinned element earns two screens, and something must change at each. Shorten the run or give every screen its own content."
   }
  ],
  "images": [

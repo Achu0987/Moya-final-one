@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect, useRef, useState } from 'react';
-import { Pause, Play } from '@phosphor-icons/react/dist/ssr';
+import { ArrowDown } from '@phosphor-icons/react/dist/ssr';
 
 // How Moya One works, start to end, told as one drawing that changes step by step:
 // the tower is planned, the line goes in, the kitchen is fitted, then the resident recharges, pours and tops up.
@@ -15,7 +15,6 @@ const STEPS = [
   // PLACEHOLDER: "no filter" follows CLIENT_CONTEXT.md; Claims tab "To confirm".
   { phase: 'After you move in', who: 'You', title: 'Top up when you run low', text: 'Recharge again from the app. No jugs to carry, no filter to service.' },
 ];
-const HOLD_MS = 5200; // how long each step stays on screen while playing
 
 const FLOORS = [80, 120, 160, 200, 240, 280, 320, 360]; // top edge of each floor in the drawing
 const HOME = 200; // your flat
@@ -146,80 +145,93 @@ function Art({ step }) {
 export default function Story() {
   const box = useRef(null);
   const [step, setStep] = useState(0);
-  const [playing, setPlaying] = useState(true);
-  const [seen, setSeen] = useState(false); // on screen
-  const [lap, setLap] = useState(0); // restarts the progress bar
+  const [part, setPart] = useState(0); // how far through the current step, 0 to 1
 
-  // play only while the story is on screen; reduced motion starts paused
+  // the section is tall and its view is pinned; scrolling through it moves the story one step at a time
   useEffect(() => {
-    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) setPlaying(false);
-    const io = new IntersectionObserver(([e]) => setSeen(e.isIntersecting), { threshold: 0.35 });
-    io.observe(box.current);
-    return () => io.disconnect();
+    let raf = 0;
+    const read = () => {
+      raf = 0;
+      const el = box.current;
+      const r = el.getBoundingClientRect();
+      const run = el.offsetHeight - window.innerHeight;
+      const p = Math.min(0.9999, Math.max(0, -r.top / run)) * STEPS.length;
+      setStep(Math.floor(p));
+      setPart(p - Math.floor(p));
+    };
+    const onScroll = () => raf || (raf = requestAnimationFrame(read));
+    read();
+    window.addEventListener('scroll', onScroll, { passive: true });
+    window.addEventListener('resize', onScroll);
+    return () => {
+      cancelAnimationFrame(raf);
+      window.removeEventListener('scroll', onScroll);
+      window.removeEventListener('resize', onScroll);
+    };
   }, []);
 
-  useEffect(() => {
-    if (!playing || !seen) return;
-    const t = setTimeout(() => {
-      setStep((s) => (s + 1) % STEPS.length);
-      setLap((l) => l + 1);
-    }, HOLD_MS);
-    return () => clearTimeout(t);
-  }, [playing, seen, step, lap]);
-
+  // a step button scrolls the page to that step
   const go = (i) => {
-    setStep(i);
-    setLap((l) => l + 1);
+    const el = box.current;
+    const run = el.offsetHeight - window.innerHeight;
+    const top = el.getBoundingClientRect().top + window.scrollY + (run * (i + 0.15)) / STEPS.length;
+    window.scrollTo({ top, behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth' });
   };
   const s = STEPS[step];
 
   return (
-    <div ref={box} className="tale">
-      <div className="tale-stage">
-        <div className="tale-top">
-          <span className={`tale-phase${step >= 3 ? ' is-after' : ''}`}>{s.phase}</span>
-          <span className="sample">Illustrative</span>
-        </div>
-        <Art step={step} />
-      </div>
+    <section ref={box} className="tale" aria-labelledby="how-title">
+      <div className="tale-pin">
+        <div className="container tale-inner">
+          <div className="tale-stage">
+            <div className="tale-top">
+              <span className={`tale-phase${step >= 3 ? ' is-after' : ''}`}>{s.phase}</span>
+              <span className="sample">Illustrative</span>
+            </div>
+            <Art step={step} />
+          </div>
 
-      <div className="tale-side">
-        <div className="tale-count">
-          <p aria-live="polite">
-            Step {step + 1} of {STEPS.length}
-          </p>
-          <button type="button" className="tale-play" onClick={() => setPlaying((p) => !p)}>
-            {playing ? <Pause size={18} aria-hidden="true" /> : <Play size={18} aria-hidden="true" />}
-            {playing ? 'Pause' : 'Play'}
-          </button>
-        </div>
-        {/* phones: the current step sits right under the picture; the list below becomes a row of numbers */}
-        <div className="tale-now" aria-hidden="true">
-          <p className="tale-who">{s.who}</p>
-          <p className="tale-title">{s.title}</p>
-          <p className="tale-text">{s.text}</p>
-        </div>
-        <ol className="tale-steps">
-          {STEPS.map((x, i) => (
-            <li key={x.title} className={`tale-step${i === step ? ' is-on' : ''}${i < step ? ' is-done' : ''}`}>
-              {(i === 0 || STEPS[i - 1].phase !== x.phase) && <p className="tale-step-phase">{x.phase}</p>}
-              <button type="button" onClick={() => go(i)} aria-current={i === step ? 'step' : undefined}>
-                <span className="tale-num" aria-hidden="true">
-                  {i + 1}
+          <div className="tale-side">
+            <h1 id="how-title" className="tale-heading">
+              How it works, start to end.
+            </h1>
+            <p className="tale-count" aria-live="polite">
+              Step {step + 1} of {STEPS.length}
+              {step === 0 && (
+                <span className="tale-hint">
+                  <ArrowDown size={16} aria-hidden="true" /> Scroll to follow
                 </span>
-                <span className="tale-step-body">
-                  <span className="tale-who">{x.who}</span>
-                  <span className="tale-title">{x.title}</span>
-                  <span className="tale-text">{x.text}</span>
-                </span>
-              </button>
-              {i === step && playing && seen && (
-                <span key={lap} className="tale-bar" style={{ '--hold': `${HOLD_MS}ms` }} aria-hidden="true" />
               )}
-            </li>
-          ))}
-        </ol>
+            </p>
+
+            {/* phones: the current step sits right under the picture; the list below becomes a row of numbers */}
+            <div className="tale-now" aria-hidden="true">
+              <p className="tale-who">{s.who}</p>
+              <p className="tale-title">{s.title}</p>
+              <p className="tale-text">{s.text}</p>
+            </div>
+
+            <ol className="tale-steps">
+              {STEPS.map((x, i) => (
+                <li key={x.title} className={`tale-step${i === step ? ' is-on' : ''}${i < step ? ' is-done' : ''}`}>
+                  {(i === 0 || STEPS[i - 1].phase !== x.phase) && <p className="tale-step-phase">{x.phase}</p>}
+                  <button type="button" onClick={() => go(i)} aria-current={i === step ? 'step' : undefined}>
+                    <span className="tale-num" aria-hidden="true">
+                      {i + 1}
+                    </span>
+                    <span className="tale-step-body">
+                      <span className="tale-who">{x.who}</span>
+                      <span className="tale-title">{x.title}</span>
+                      <span className="tale-text">{x.text}</span>
+                    </span>
+                  </button>
+                  {i === step && <span className="tale-bar" style={{ transform: `scaleX(${part})` }} aria-hidden="true" />}
+                </li>
+              ))}
+            </ol>
+          </div>
+        </div>
       </div>
-    </div>
+    </section>
   );
 }

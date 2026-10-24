@@ -557,33 +557,37 @@
   }
 }
 
-/* ---------- Start to end: the opening timeline ---------- */
-.how-intro {
-  padding-block: 48px var(--section);
-}
-
-.how-intro-head {
-  display: grid;
-  gap: 16px;
-  margin-bottom: 48px;
-}
-
-.how-title {
-  font-size: var(--fs-h1);
-  line-height: var(--lh-h1);
-  letter-spacing: -0.03em;
-}
-
-.how-lede {
-  max-width: 40ch;
-  font-size: var(--fs-body-lg);
-  color: var(--muted);
-}
-
-/* the story: one drawing that changes step by step, the steps listed beside it */
+/* ---------- Start to end: a full-screen story, pinned while the page scrolls through six steps ---------- */
 .tale {
+  position: relative;
+  height: 600svh;
+}
+
+.tale-pin {
+  position: sticky;
+  top: var(--nav-h);
+  display: flex;
+  align-items: center;
+  height: calc(100svh - var(--nav-h));
+  overflow: hidden;
+}
+
+.tale-inner {
   display: grid;
-  gap: 24px;
+  gap: 12px;
+  width: 100%;
+}
+
+/* phones: heading, picture, current step, then the numbers */
+.tale-side {
+  display: contents;
+}
+
+.tale-heading {
+  order: -1;
+  font-size: var(--fs-h2);
+  line-height: var(--lh-h2);
+  letter-spacing: -0.02em;
 }
 
 .tale-stage {
@@ -811,24 +815,17 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 12px;
+  gap: 12px;
   font-size: var(--fs-caption);
   font-weight: 600;
   color: var(--muted);
 }
 
-.tale-play {
+.tale-hint {
   display: inline-flex;
   align-items: center;
-  gap: 6px;
-  min-height: 44px;
-  padding: 0 14px;
-  border: 1px solid var(--line);
-  border-radius: var(--radius-pill);
-  background: var(--base);
+  gap: 4px;
   color: var(--ink);
-  font: inherit;
-  cursor: pointer;
 }
 
 .tale-steps {
@@ -940,33 +937,37 @@
   border-radius: 2px;
   background: var(--orange);
   transform-origin: left;
-  animation: tale-bar var(--hold) linear both;
-}
-
-@keyframes tale-bar {
-  from {
-    transform: scaleX(0);
-  }
-  to {
-    transform: scaleX(1);
-  }
+  transition: transform 0.15s linear;
 }
 
 @media (min-width: 900px) {
-  .tale {
+  .tale-inner {
     grid-template-columns: repeat(12, 1fr);
     column-gap: 24px;
-    align-items: start;
+    align-items: center;
   }
 
   .tale-stage {
     grid-column: 1 / 8;
-    position: sticky;
-    top: calc(var(--nav-h) + 24px);
+  }
+
+  .tale-art {
+    max-height: calc(100svh - var(--nav-h) - 64px);
   }
 
   .tale-side {
     grid-column: 8 / 13;
+    display: block;
+  }
+
+  .tale-heading {
+    margin-bottom: 20px;
+    font-size: var(--fs-h2);
+    line-height: var(--lh-h2);
+  }
+
+  .tale-count {
+    margin-bottom: 8px;
   }
 }
 
@@ -984,34 +985,11 @@
   }
 }
 
-@media (min-width: 900px) {
-  .how-intro {
-    padding-top: 80px;
-  }
-
-  .how-intro-head {
-    grid-template-columns: repeat(12, 1fr);
-    column-gap: 24px;
-    align-items: end;
-    margin-bottom: 64px;
-  }
-
-  .how-title {
-    grid-column: 1 / 8;
-  }
-
-  .how-lede {
-    grid-column: 8 / 13;
-  }
-
-}
-
 /* phones: the picture, then the current step, then a row of numbers to jump between steps */
 .tale-now {
   display: grid;
   gap: 2px;
-  min-height: 120px;
-  margin-bottom: 16px;
+  min-height: 96px;
 }
 
 .tale-now .tale-who,
@@ -1020,6 +998,10 @@
 }
 
 @media (max-width: 899px) {
+  .tale-art {
+    max-height: 36svh;
+  }
+
   .tale-steps {
     display: flex;
     justify-content: space-between;
