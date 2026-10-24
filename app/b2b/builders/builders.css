@@ -53,7 +53,7 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: 60% 40%;
+  object-position: 50% 20%;
   animation: bx-settle 1.6s var(--ease-enter) both;
 }
 
@@ -154,7 +154,7 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: 50% 60%;
+  object-position: 50% 12%;
 }
 
 /* ---------- In and out ---------- */
@@ -213,6 +213,39 @@
 
 .bx-flat-photo figcaption {
   color: var(--muted);
+}
+
+/* the kitchen drawing (components/environment/KitchenYear.js) on a grey panel, in the photo's place */
+.bx-flat-drawing {
+  display: grid;
+  place-items: center;
+  aspect-ratio: 4 / 5;
+  padding: 28px 20px;
+  border-radius: var(--radius-card);
+  background: var(--grey);
+}
+
+.bx-flat-drawing svg {
+  width: 100%;
+  height: auto;
+}
+
+.bx-flat-drawing .ky-jug {
+  display: none;
+}
+
+.bx-flat-drawing .ky-line {
+  fill: none;
+  stroke: var(--orange);
+  stroke-width: 5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-dasharray: 1;
+}
+
+.bx-flat-drawing .ky-pour {
+  transform-box: fill-box;
+  transform-origin: top;
 }
 
 .bx-enquire-photo figcaption {
@@ -716,6 +749,26 @@
     transition:
       clip-path 1s cubic-bezier(0.6, 0, 0.2, 1),
       transform 1.4s var(--ease-enter);
+  }
+
+  /* the kitchen drawing opens like the photos, then its line climbs the wall */
+  .bx-flat-drawing {
+    clip-path: inset(0 0 100% 0 round var(--radius-card));
+    transition: clip-path 1s cubic-bezier(0.6, 0, 0.2, 1);
+  }
+
+  .bx-flat-photo.is-in .bx-flat-drawing {
+    clip-path: inset(0 0 0 0 round var(--radius-card));
+  }
+
+  .bx-flat-photo.is-in .ky-line {
+    animation: bx-line 1.2s var(--ease-fill) 0.8s both;
+  }
+
+  @keyframes bx-line {
+    from {
+      stroke-dashoffset: 1 !important;
+    }
   }
 
   .bx-flat-photo.is-in img,

@@ -1,7 +1,8 @@
 'use client';
 
-import { useEffect, useRef, useState } from 'react';
+import { useState } from 'react';
 import { ArrowRight } from '@phosphor-icons/react/dist/ssr';
+import useCount from '@/components/common/useCount';
 import { CONTACT_EMAIL } from '@/lib/content';
 
 // Size it to your tower: set the floors and flats per floor, and the tower section redraws with one line
@@ -10,28 +11,6 @@ import { CONTACT_EMAIL } from '@/lib/content';
 // The enquiry below carries the same tower into a pre-written email.
 const STAGES = ['Design', 'Structure', 'Services', 'Finishing'];
 const fmt = (n) => n.toLocaleString('en-IN');
-
-// a count that runs up or down to its new value instead of jumping (reduced motion: it jumps)
-function useCount(to) {
-  const [shown, setShown] = useState(to);
-  const from = useRef(to);
-  useEffect(() => {
-    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return setShown(to);
-    const start = from.current;
-    const t0 = performance.now();
-    let raf = 0;
-    const step = (now) => {
-      const p = Math.min(1, (now - t0) / 500);
-      const v = Math.round(start + (to - start) * (1 - Math.pow(1 - p, 3)));
-      from.current = v;
-      setShown(v);
-      if (p < 1) raf = requestAnimationFrame(step);
-    };
-    raf = requestAnimationFrame(step);
-    return () => cancelAnimationFrame(raf);
-  }, [to]);
-  return shown;
-}
 
 function Tower({ floors, perFloor }) {
   const top = 30;
@@ -180,7 +159,11 @@ export default function Sizer() {
           </form>
         </div>
         <p className="container bx-credits">
-          Photographs on Unsplash: James Sullivan, EJ Yao, Filip Baotić and Zoshua Colah.
+          {/* PLACEHOLDER: confirm the photographer of city.webp (it came with the earlier Unsplash set). */}
+          Photographs: Byculla, Mumbai, by Zoshua Colah on Unsplash; “Moscow, Five Tower construction” by Retired
+          electrician, <a href="https://commons.wikimedia.org/wiki/File:Moscow,_Five_Tower_construction_June_2025_01.jpg">CC0</a>;
+          “Torre Millennium Construccion” by JMRAFFi, colour adjusted,{' '}
+          <a href="https://commons.wikimedia.org/wiki/File:Torre_Millennium_Construccion.jpg">CC BY-SA 4.0</a>, via Wikimedia Commons.
         </p>
       </section>
     </>

@@ -3,6 +3,7 @@ import Words from '@/components/common/Words';
 import Motion from '@/components/Motion';
 import Sizer from '@/components/builders/Sizer';
 import BuilderMotion from '@/components/builders/BuilderMotion';
+import { Kitchen } from '@/components/environment/KitchenYear';
 import './builders.css';
 
 export const metadata = {
@@ -64,7 +65,7 @@ export default function Builders() {
           </div>
           <figure className="bx-hero-photo">
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/builders/crane.webp" alt="A tower crane above a residential tower under construction, at sunset." />
+            <img src="/builders/tower.webp" alt="A tall residential tower near completion against a soft, cloudy sky." />
           </figure>
         </div>
       </section>
@@ -94,9 +95,9 @@ export default function Builders() {
       </section>
 
       {/* ---- a rest: the skyline being built ---- */}
-      <figure className="bx-band" aria-label="Tower cranes over buildings under construction at dusk.">
+      <figure className="bx-band" aria-label="A tower going up above a green city, with hills behind.">
         {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src="/builders/skyline.webp" alt="" loading="lazy" />
+        <img src="/builders/city-build.webp" alt="" loading="lazy" />
       </figure>
 
       {/* ---- what a flat gains, and what it never has to hold ---- */}
@@ -130,9 +131,11 @@ export default function Builders() {
           </div>
           </div>
           <figure className="bx-flat-photo" data-in>
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/builders/kitchen.webp" alt="An apartment kitchen with a tap over a round sink." loading="lazy" />
-            <figcaption>A flat kitchen. Moya One adds a control unit and one extra tap.</figcaption>
+            {/* the site's own drawing of a flat's kitchen: the Moya1 control unit, the extra tap and the line up the wall */}
+            <div className="bx-flat-drawing">
+              <Kitchen shown={0} moya q={1} />
+            </div>
+            <figcaption>Illustration. A flat kitchen with its Moya1™ control unit and one extra tap.</figcaption>
           </figure>
         </div>
       </section>
