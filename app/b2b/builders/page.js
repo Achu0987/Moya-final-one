@@ -1,155 +1,138 @@
-import { ArrowRight, Buildings, MapPin } from '@phosphor-icons/react/dist/ssr';
-import TowerScene from '@/components/TowerScene';
-import KitchenScene from '@/components/KitchenScene';
-import VideoSlot from '@/components/common/VideoSlot';
+import { ArrowDown, ArrowRight, Check, X } from '@phosphor-icons/react/dist/ssr';
 import Words from '@/components/common/Words';
 import Motion from '@/components/Motion';
-import { BUILDER_MAILTO, BUILDER_VIDEO } from '@/lib/content';
+import Sizer from '@/components/builders/Sizer';
 import './builders.css';
 
 export const metadata = {
   title: 'For builders: Moya One',
   description:
-    'Plan drinking water into your tower at construction stage: a dedicated line to every flat, a Moya1 control unit and an extra tap in each kitchen, and no retrofit after handover.',
+    'Plan drinking water into your tower during construction: one dedicated line to every flat, a Moya1 control unit and an extra tap in each kitchen, nothing added after handover.',
 };
 
-// What the system asks of a project. Every line restates CLAUDE.md and CLIENT_CONTEXT.md.
-const ASKS = [
-  { name: 'Installed during construction', text: 'The line is laid while the tower is built, through you. Nothing is added after handover.' },
-  // PLACEHOLDER: "No retrofit" is a brief point, Claims tab "To confirm". Rayansh to mark OK before launch.
-  { name: 'No retrofit', text: 'Residents move into a finished system. Nothing is opened up after they arrive.' },
-  // PLACEHOLDER: "No lost space" is a brief point, Claims tab "To confirm". Rayansh to mark OK before launch.
-  { name: 'No lost space in the flat', text: 'No jug corner and no filter box under the sink. One control unit on the wall and an extra tap.' },
+// Where Moya One sits in a construction schedule. Each step restates CLAUDE.md "What the project is".
+// PLACEHOLDER: the stage-by-stage mapping is our reading of "installed during construction, through the builder";
+// Rayansh to confirm with the client before launch.
+const STAGES = [
+  { stage: 'Design', title: 'Planned in', text: 'Moya One is chosen at the design stage and shown in your drawings.' },
   // PLACEHOLDER: "its own plant room" follows CLIENT_CONTEXT.md; Claims tab "To confirm".
-  { name: 'Its own plant room', text: 'The line starts in the tower’s own plant room below ground and rises to every flat.' },
+  { stage: 'Structure', title: 'Room for the line', text: 'Space is kept for one line to rise from the plant room through the tower.' },
+  { stage: 'Services', title: 'A line to every flat', text: 'The dedicated line is laid floor by floor while the tower is built.' },
+  { stage: 'Finishing', title: 'Kitchens fitted', text: 'Each kitchen gets a Moya1™ control unit and an extra tap.' },
+  { stage: 'Handover', title: 'Ready on day one', text: 'Residents move in and recharge litres from their phones.' },
 ];
 
-// PLACEHOLDER: reference projects. Claims tab: "Deployed in India" and the Hyderabad community are "To confirm";
-// no project is named until the developer gives written permission (PAGE_BRIEFS.md, Builders).
-const REFERENCES = [
-  { name: 'Residential community', place: 'India', status: 'To confirm' },
-  { name: 'Residential tower', place: 'India', status: 'To confirm' },
+const GOES_IN = ['Its own branch of the line', 'A Moya1™ control unit on the kitchen wall', 'An extra tap beside the sink'];
+const STAYS_OUT = [
+  'A corner stacked with water jugs',
+  // PLACEHOLDER: "no filter" and "no retrofit" are brief points, Claims tab "To confirm". Rayansh to mark OK before launch.
+  'A filter box under the sink',
+  'Work in the flat after handover',
 ];
 
 export default function Builders() {
   return (
     <>
-      {/* ---- the tower builds itself, the line rises with it ---- */}
-      <section className="b-hero" aria-labelledby="b-hero-title">
-        <div className="container b-hero-grid">
-          <div className="b-hero-copy">
-            <h1 id="b-hero-title" className="b-title">
+      {/* ---- the first screen: dark, one photograph of a tower going up ---- */}
+      <section className="bx-hero" aria-labelledby="bx-title">
+        <div className="container bx-hero-grid">
+          <div className="bx-hero-copy">
+            <h1 id="bx-title" className="bx-title">
               Drinking water,
               <br /> planned in.
             </h1>
-            <p className="b-lede">
-              Moya One goes into your project during construction, through you. Every flat gets its own line, a
-              Moya1™ control unit and an extra tap in the kitchen.
+            <p className="bx-lede">
+              Moya One goes into your tower while it is built, through you. Every flat gets its own line, a Moya1™
+              control unit and an extra tap. Nothing is added after handover.
             </p>
-            <div className="b-actions">
-              {/* PLACEHOLDER: enquiries go to the placeholder email until /contact and the client's address exist. */}
-              <a href={BUILDER_MAILTO} className="btn btn-primary">
-                Start an enquiry
-                <ArrowRight size={20} aria-hidden="true" />
+            <div className="bx-actions">
+              <a href="#size" className="btn btn-primary">
+                Size it to your tower
+                <ArrowDown size={20} aria-hidden="true" />
               </a>
-              <a href="/b2c/how-it-works" className="text-link b-link-light">
-                How it works for residents
+              <a href="#enquire" className="text-link bx-link-light">
+                Start an enquiry
                 <ArrowRight size={20} aria-hidden="true" />
               </a>
             </div>
           </div>
-          <figure className="b-hero-visual">
-            <TowerScene mode="construct" />
-            <figcaption>3D illustration, not a real project. Drag to turn.</figcaption>
+          <figure className="bx-hero-photo">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src="/builders/crane.webp" alt="A tower crane above a residential tower under construction, at sunset." />
           </figure>
         </div>
       </section>
 
-      {/* ---- what it asks of the project ---- */}
-      <section className="b-asks" aria-labelledby="b-asks-title">
-        <div className="container b-asks-grid">
-          <div className="b-asks-copy">
-            <h2 id="b-asks-title" data-reveal="words">
-              <Words>What it asks of your project.</Words>
-            </h2>
-            <dl className="b-ledger">
-              {ASKS.map((a) => (
-                <div key={a.name} className="b-ledger-row" data-reveal="fade">
-                  <dt>{a.name}</dt>
-                  <dd>{a.text}</dd>
-                </div>
-              ))}
-            </dl>
-          </div>
-          <figure className="b-asks-visual">
-            <KitchenScene stage={3} />
-            <figcaption>All a flat gives up: one control unit and an extra tap. 3D illustration.</figcaption>
-          </figure>
-        </div>
-      </section>
-
-      {/* ---- the explainer film ---- */}
-      <section className="b-film" aria-labelledby="b-film-title">
-        <div className="container b-film-grid">
-          <div className="b-film-copy">
-            <h2 id="b-film-title" data-reveal="words">
-              <Words>The whole system, on film.</Words>
-            </h2>
-            <p data-reveal="fade">A short film follows the line from the plant room, up the tower, into the kitchen.</p>
-          </div>
-          <div className="b-film-slot" data-reveal="fade">
-            <VideoSlot src={BUILDER_VIDEO.src} poster={BUILDER_VIDEO.poster} title="Moya One explainer film" />
-          </div>
-        </div>
-      </section>
-
-      {/* ---- reference projects, placeholders until approved ---- */}
-      <section className="b-refs" aria-labelledby="b-refs-title">
-        <div className="container b-refs-grid">
-          <div className="b-refs-copy">
-            <h2 id="b-refs-title" data-reveal="words">
-              <Words>Where Moya One is going in.</Words>
+      {/* ---- where it sits in the construction schedule ---- */}
+      <section className="bx-plan" aria-labelledby="bx-plan-title">
+        <div className="container">
+          <div className="bx-plan-head">
+            <h2 id="bx-plan-title" data-reveal="words">
+              <Words>It follows your build.</Words>
             </h2>
             <p data-reveal="fade">
-              Reference projects appear here once each developer has given written permission to be named.
+              One decision at the design stage, then a step at each stage after it. By handover, every flat is ready.
             </p>
           </div>
-          <ul className="b-refs-list">
-            {REFERENCES.map((r, i) => (
-              <li key={i} className="b-ref" data-reveal="fade">
-                <Buildings size={44} aria-hidden="true" />
-                <p className="b-ref-name">{r.name}</p>
-                <p className="b-ref-place">
-                  <MapPin size={20} aria-hidden="true" />
-                  {r.place}
-                </p>
-                <span className="sample">{r.status}</span>
+          <ol className="bx-schedule">
+            {STAGES.map((s, i) => (
+              <li key={s.stage} className="bx-stage" style={{ '--i': i }} data-reveal="fade">
+                <p className="bx-stage-name">{s.stage}</p>
+                <span className="bx-stage-bar" aria-hidden="true" />
+                <h3 className="bx-stage-title">{s.title}</h3>
+                <p className="bx-stage-text">{s.text}</p>
               </li>
             ))}
-          </ul>
+          </ol>
         </div>
       </section>
 
-      {/* ---- the enquiry ---- */}
-      <section className="b-enquire" aria-labelledby="b-enquire-title">
-        <div className="container b-enquire-grid">
-          <h2 id="b-enquire-title" className="b-enquire-title" data-reveal="words">
-            <Words>Plan it into your next tower.</Words>
+      {/* ---- a rest: the skyline being built ---- */}
+      <figure className="bx-band" aria-label="Tower cranes over buildings under construction at dusk.">
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img src="/builders/skyline.webp" alt="" loading="lazy" />
+      </figure>
+
+      {/* ---- what a flat gains, and what it never has to hold ---- */}
+      <section className="bx-flat" aria-labelledby="bx-flat-title">
+        <div className="container bx-flat-grid">
+          <h2 id="bx-flat-title" className="bx-flat-title" data-reveal="words">
+            <Words>Three things go in.</Words>
           </h2>
-          <div className="b-enquire-side" data-reveal="fade">
-            <p>Tell us about your project and we will get back to you. It helps to include:</p>
+          <div className="bx-flat-lists">
+          <div className="bx-flat-col" data-reveal="fade">
+            <p className="bx-flat-label">In every flat</p>
             <ul>
-              <li>Project name and city</li>
-              <li>Number of flats</li>
-              <li>Construction stage</li>
+              {GOES_IN.map((t) => (
+                <li key={t}>
+                  <Check size={24} aria-hidden="true" />
+                  {t}
+                </li>
+              ))}
             </ul>
-            <a href={BUILDER_MAILTO} className="btn btn-primary">
-              Start an enquiry
-              <ArrowRight size={20} aria-hidden="true" />
-            </a>
           </div>
+          <div className="bx-flat-col is-out" data-reveal="fade">
+            <p className="bx-flat-label">Never in the flat</p>
+            <ul>
+              {STAYS_OUT.map((t) => (
+                <li key={t}>
+                  <X size={24} aria-hidden="true" />
+                  {t}
+                </li>
+              ))}
+            </ul>
+          </div>
+          </div>
+          <figure className="bx-flat-photo" data-reveal="fade">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src="/builders/kitchen.webp" alt="An apartment kitchen with a tap over a round sink." loading="lazy" />
+            <figcaption>A flat kitchen. Moya One adds a control unit and one extra tap.</figcaption>
+          </figure>
         </div>
       </section>
+
+      {/* ---- the live thing: size it, then send it ---- */}
+      <Sizer />
 
       <Motion />
     </>

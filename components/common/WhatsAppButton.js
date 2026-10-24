@@ -19,7 +19,7 @@ export default function WhatsAppButton() {
     const t3 = setTimeout(() => setBubble(false), reduce ? 4000 : 6500);
     // step aside while the footer is on screen, so it never covers the footer's contact details
     const footer = document.querySelector('.footer');
-    const io = footer && new IntersectionObserver(([e]) => setAway(e.isIntersecting), { threshold: 0.15 });
+    const io = footer && new IntersectionObserver(([e]) => setAway(e.isIntersecting), { threshold: 0 });
     if (footer) io.observe(footer);
     return () => {
       [t1, t2, t3].forEach(clearTimeout);
