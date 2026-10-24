@@ -6,7 +6,7 @@ import { WHATSAPP_NUMBER } from '@/lib/content';
 
 // Floating WhatsApp button, bottom-right. It pops in shortly after the page opens, waves once,
 // and shows a "Chat with us" bubble for a few seconds (and again on hover or focus).
-// Until the client confirms a number it points to the contact section instead of WhatsApp.
+// Until the client confirms a number it points to the Contact page instead of WhatsApp.
 export default function WhatsAppButton() {
   const [shown, setShown] = useState(false);
   const [bubble, setBubble] = useState(false);
@@ -29,7 +29,7 @@ export default function WhatsAppButton() {
 
   const href = WHATSAPP_NUMBER
     ? `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent('Hi Moya One, I would like to know more.')}`
-    : '/#contact';
+    : '/contact';
 
   return (
     <div className={`wa${shown ? ' is-shown' : ''}${bubble && !away ? ' has-bubble' : ''}${away ? ' is-away' : ''}`}>

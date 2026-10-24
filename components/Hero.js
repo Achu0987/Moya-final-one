@@ -32,7 +32,7 @@ export default function Hero() {
               See how it works
               <ArrowRight size={20} aria-hidden="true" />
             </a>
-            <a href="/#builders" className="text-link">
+            <a href="/b2b/builders" className="text-link">
               For builders
               <ArrowRight size={20} aria-hidden="true" />
             </a>

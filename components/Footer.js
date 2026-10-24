@@ -1,5 +1,5 @@
 import { ArrowUp, ArrowUpRight } from '@phosphor-icons/react/dist/ssr';
-import { CONTACT_EMAIL, CONTACT_PHONE, LEGAL_NAME, NAV_LINKS } from '@/lib/content';
+import { ALL_PAGES, CONTACT_EMAIL, CONTACT_PHONE, LEGAL_NAME } from '@/lib/content';
 
 export default function Footer() {
   const year = new Date().getFullYear();
@@ -18,8 +18,8 @@ export default function Footer() {
           <nav aria-label="Footer" className="footer-col">
             <p className="footer-label">Explore</p>
             <ul>
-              {NAV_LINKS.map((l) => (
-                <li key={l.href}>
+              {ALL_PAGES.map((l) => (
+                <li key={l.href + l.label}>
                   <a href={l.href}>{l.label}</a>
                 </li>
               ))}

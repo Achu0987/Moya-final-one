@@ -44,7 +44,7 @@ export default function HowItWorks() {
                 Try a sample recharge
                 <ArrowRight size={20} aria-hidden="true" />
               </a>
-              <a href="/#contact" className="text-link">
+              <a href="/contact" className="text-link">
                 Talk to us
                 <ArrowRight size={20} aria-hidden="true" />
               </a>

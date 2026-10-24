@@ -1,9 +1,9 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { usePathname } from 'next/navigation';
-import { ArrowUpRight, List, X } from '@phosphor-icons/react/dist/ssr';
-import { NAV_LINKS } from '@/lib/content';
+import { ArrowUpRight, CaretDown, List, X } from '@phosphor-icons/react/dist/ssr';
+import { ALL_PAGES, CONTACT_LINK, NAV_LINKS } from '@/lib/content';
 
 // PLACEHOLDER: brand mark and wordmark until the client's approved logo arrives (DESIGN.md DD2, DD5).
 // The mark is a drop carrying the water line from the brand drawings.
@@ -17,42 +17,37 @@ function Mark() {
 }
 
 export default function Nav() {
-  const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(false); // phone menu
+  const [menu, setMenu] = useState(false); // Compare menu
   const [scrolled, setScrolled] = useState(false);
   const pathname = usePathname();
-  const [section, setSection] = useState('top');
+  const compareRef = useRef(null);
 
+  // Escape closes either menu; a click outside closes the Compare menu
   useEffect(() => {
-    if (!open) return;
-    const onKey = (e) => e.key === 'Escape' && setOpen(false);
+    const onKey = (e) => {
+      if (e.key !== 'Escape') return;
+      setOpen(false);
+      setMenu(false);
+    };
+    const onClick = (e) => compareRef.current && !compareRef.current.contains(e.target) && setMenu(false);
     window.addEventListener('keydown', onKey);
-    return () => window.removeEventListener('keydown', onKey);
-  }, [open]);
+    document.addEventListener('click', onClick);
+    return () => {
+      window.removeEventListener('keydown', onKey);
+      document.removeEventListener('click', onClick);
+    };
+  }, []);
 
-  // the bar tightens once the page moves; on the home page the link for the section in view is marked
+  // the bar tightens once the page moves
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 8);
     onScroll();
     window.addEventListener('scroll', onScroll, { passive: true });
-    let io;
-    if (pathname === '/') {
-      const ids = new Set(NAV_LINKS.map((l) => l.section).filter(Boolean));
-      io = new IntersectionObserver(
-        (entries) => entries.forEach((e) => e.isIntersecting && ids.has(e.target.id) && setSection(e.target.id)),
-        { rootMargin: '-45% 0px -50% 0px' },
-      );
-      ids.forEach((id) => {
-        const el = document.getElementById(id);
-        if (el) io.observe(el);
-      });
-    }
-    return () => {
-      window.removeEventListener('scroll', onScroll);
-      io?.disconnect();
-    };
-  }, [pathname]);
+    return () => window.removeEventListener('scroll', onScroll);
+  }, []);
 
-  const isCurrent = (l) => (pathname === '/' ? l.section === section : l.href === pathname);
+  const isCurrent = (l) => (l.children ? pathname.startsWith(l.href) : l.href === pathname);
 
   return (
     <header className={`nav${scrolled ? ' is-scrolled' : ''}`}>
@@ -63,17 +58,43 @@ export default function Nav() {
         </a>
         <nav aria-label="Main">
           <ul className="nav-links">
-            {NAV_LINKS.map((l) => (
-              <li key={l.href}>
-                <a href={l.href} aria-current={isCurrent(l) ? 'page' : undefined}>
-                  {l.label}
-                </a>
-              </li>
-            ))}
+            {NAV_LINKS.map((l) =>
+              l.children ? (
+                <li key={l.href} className="nav-compare" ref={compareRef}>
+                  <button
+                    type="button"
+                    className="nav-menu-button"
+                    aria-expanded={menu}
+                    aria-controls="compare-menu"
+                    aria-current={isCurrent(l) ? 'page' : undefined}
+                    onClick={() => setMenu((m) => !m)}
+                  >
+                    {l.label}
+                    <CaretDown size={16} aria-hidden="true" />
+                  </button>
+                  <ul id="compare-menu" className="nav-menu" hidden={!menu}>
+                    {l.children.map((c) => (
+                      <li key={c.href}>
+                        <a href={c.href} aria-current={c.href === pathname ? 'page' : undefined}>
+                          <strong>{c.label}</strong>
+                          <span>{c.note}</span>
+                        </a>
+                      </li>
+                    ))}
+                  </ul>
+                </li>
+              ) : (
+                <li key={l.href}>
+                  <a href={l.href} aria-current={isCurrent(l) ? 'page' : undefined}>
+                    {l.label}
+                  </a>
+                </li>
+              ),
+            )}
           </ul>
         </nav>
-        <a href="/#contact" className="nav-cta">
-          Contact
+        <a href={CONTACT_LINK.href} className="nav-cta" aria-current={pathname === CONTACT_LINK.href ? 'page' : undefined}>
+          {CONTACT_LINK.label}
           <ArrowUpRight size={18} aria-hidden="true" />
         </a>
         <button
@@ -88,15 +109,15 @@ export default function Nav() {
         </button>
       </div>
       <div id="mobile-menu" className="nav-sheet" hidden={!open}>
-        <ul>
-          {[...NAV_LINKS, { href: '/#contact', label: 'Contact' }].map((l) => (
-            <li key={l.href}>
-              <a href={l.href} onClick={() => setOpen(false)}>
+        <ol>
+          {ALL_PAGES.map((l) => (
+            <li key={l.href + l.label}>
+              <a href={l.href} aria-current={l.href === pathname ? 'page' : undefined} onClick={() => setOpen(false)}>
                 {l.label}
               </a>
             </li>
           ))}
-        </ul>
+        </ol>
       </div>
     </header>
   );
