@@ -570,6 +570,7 @@
   align-items: center;
   height: calc(100svh - var(--nav-h));
   overflow: hidden;
+  background: color-mix(in srgb, var(--water) 22%, var(--base));
 }
 
 .tale-inner {
@@ -592,9 +593,6 @@
 
 .tale-stage {
   position: relative;
-  overflow: hidden;
-  border-radius: var(--radius-card);
-  background: color-mix(in srgb, var(--water) 22%, var(--base));
 }
 
 .tale-top {
@@ -948,16 +946,28 @@
   }
 
   .tale-stage {
-    grid-column: 1 / 8;
+    grid-column: 5 / 13;
+    grid-row: 1;
   }
 
   .tale-art {
-    max-height: calc(100svh - var(--nav-h) - 64px);
+    max-height: calc(100svh - var(--nav-h) - 32px);
   }
 
   .tale-side {
-    grid-column: 8 / 13;
+    grid-column: 1 / 5;
+    grid-row: 1;
     display: block;
+  }
+
+  .tale-side .tale-now {
+    min-height: 150px;
+    margin-block: 8px 24px;
+  }
+
+  .tale-now .tale-title {
+    font-size: var(--fs-h3);
+    line-height: var(--lh-h3);
   }
 
   .tale-heading {
@@ -999,9 +1009,11 @@
 
 @media (max-width: 899px) {
   .tale-art {
-    max-height: 36svh;
+    max-height: 42svh;
   }
+}
 
+@media all {
   .tale-steps {
     display: flex;
     justify-content: space-between;
@@ -1041,8 +1053,4 @@
   }
 }
 
-@media (min-width: 900px) {
-  .tale-now {
-    display: none;
-  }
-}
+

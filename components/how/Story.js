@@ -25,9 +25,6 @@ function Art({ step }) {
   return (
     <svg className={cls} viewBox="0 0 640 480" role="img" aria-label={`Step ${n} of 6: ${STEPS[step].title}.`}>
       <defs>
-        <pattern id="tale-grid" width="20" height="20" patternUnits="userSpaceOnUse">
-          <path d="M20 0H0V20" fill="none" stroke="var(--water)" strokeWidth="1" />
-        </pattern>
         <clipPath id="tale-glass">
           <path d="M450 246h32l-4 46a4 4 0 0 1-4 4h-16a4 4 0 0 1-4-4z" />
         </clipPath>
@@ -35,9 +32,6 @@ function Art({ step }) {
           <rect x="370" y="150" width="60" height="112" rx="10" />
         </clipPath>
       </defs>
-
-      {/* the builder's drawing board, only while it is a plan */}
-      <rect className="tale-board" x="0" y="0" width="640" height="480" fill="url(#tale-grid)" />
 
       {/* ground and the basement */}
       <path d="M0 400H640" stroke="var(--ink)" strokeWidth="2" opacity=".25" />

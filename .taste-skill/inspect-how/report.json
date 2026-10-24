@@ -1,6 +1,6 @@
 {
  "url": "http://localhost:3100/b2c/how-it-works",
- "at": "2026-10-24T03:30:57.859Z",
+ "at": "2026-10-24T03:34:42.252Z",
  "allow": [],
  "viewports": [
   {
@@ -9,12 +9,12 @@
    "load": "load",
    "screens": 12,
    "filled": [
-    0.41,
-    0.42,
-    0.43,
-    0.45,
-    0.43,
-    0.43,
+    0.96,
+    0.96,
+    0.96,
+    0.96,
+    0.96,
+    0.96,
     0.96,
     0.96,
     0.96,
@@ -23,9 +23,9 @@
     0.91
    ],
    "motion": {
-    "elements": 73,
+    "elements": 66,
     "css": 9,
-    "transitions": 36,
+    "transitions": 29,
     "scripted": 28,
     "videos": 0,
     "playingVideos": 0
@@ -38,7 +38,7 @@
     "page": {
      "height": 13173,
      "screens": 14.6,
-     "words": 325,
+     "words": 343,
      "img": 1,
      "video": 0,
      "canvas": 1,
@@ -73,9 +73,9 @@
      "italic": false,
      "mono": false,
      "align": "left",
-     "position": "right",
-     "widthRatio": 0.34,
-     "top": 184,
+     "position": "left",
+     "widthRatio": 0.27,
+     "top": 311,
      "tag": "h1",
      "kind": "heading"
     },
@@ -102,9 +102,9 @@
       "italic": false,
       "mono": false,
       "align": "left",
-      "position": "right",
-      "widthRatio": 0.34,
-      "top": 184,
+      "position": "left",
+      "widthRatio": 0.27,
+      "top": 311,
       "tag": "h1",
       "kind": "heading"
      },
@@ -125,7 +125,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.27,
-      "top": 5532,
+      "top": 5533,
       "tag": "h2",
       "kind": "heading"
      },
@@ -146,7 +146,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.41,
-      "top": 10336,
+      "top": 10337,
       "tag": "h2",
       "kind": "heading"
      },
@@ -209,7 +209,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.43,
-      "top": 11886,
+      "top": 11887,
       "tag": "h2",
       "kind": "heading"
      },
@@ -248,12 +248,12 @@
      "families": [
       {
        "family": "Inter",
-       "share": 0.69,
+       "share": 0.73,
        "mono": false
       },
       {
        "family": "Plus Jakarta Sans",
-       "share": 0.31,
+       "share": 0.27,
        "mono": false
       }
      ],
@@ -307,6 +307,15 @@
      "dark": false,
      "sectionBgs": [
       {
+       "color": "#edf5f5",
+       "top": 89,
+       "hsl": {
+        "h": 180,
+        "s": 0.29,
+        "l": 0.95
+       }
+      },
+      {
        "color": "#111827",
        "top": 5489,
        "hsl": {
@@ -328,22 +337,22 @@
      "textColors": [
       {
        "color": "#4b5563",
-       "share": 0.38
-      },
-      {
-       "color": "#111827",
-       "share": 0.24
+       "share": 0.39
       },
       {
        "color": "#b9bbbd",
-       "share": 0.2
+       "share": 0.22
+      },
+      {
+       "color": "#111827",
+       "share": 0.19
       },
       {
        "color": "#fafaf7",
-       "share": 0.17
+       "share": 0.18
       },
       {
-       "color": "#d7d8d8",
+       "color": "#e3e4e3",
        "share": 0.01
       }
      ],
@@ -387,7 +396,7 @@
      "outlinedBoxes": 0,
      "dashed": 0,
      "blurred": 0,
-     "roundedBoxes": 12,
+     "roundedBoxes": 10,
      "boxRadius": 20,
      "squareMedia": 1,
      "roundedMedia": 0,
@@ -398,7 +407,7 @@
     "heroMedia": [
      {
       "type": "svg",
-      "ratio": 0.3
+      "ratio": 0.39
      }
     ],
     "nav": {
@@ -421,7 +430,7 @@
     "pageH": 13173,
     "margins": {
      "left": 120,
-     "right": 120
+     "right": 125
     },
     "sections": [
      {
@@ -429,7 +438,7 @@
       "tag": "section",
       "top": 89,
       "height": 5400,
-      "words": 66,
+      "words": 35,
       "media": 1,
       "middle": 24,
       "heading": {
@@ -439,8 +448,8 @@
       },
       "left": 120,
       "right": 120,
-      "textLeft": 150,
-      "textRight": 120,
+      "textLeft": 120,
+      "textRight": 146,
       "fullBleed": false,
       "footer": false,
       "hero": true,
@@ -568,7 +577,7 @@
      {
       "text": "How it works, start to end.",
       "size": 44,
-      "top": 184,
+      "top": 311,
       "firstScreen": true
      }
     ],
@@ -576,7 +585,7 @@
     "edges": [
      {
       "x": 120,
-      "n": 2
+      "n": 4
      },
      {
       "x": 138,
@@ -599,10 +608,6 @@
       "n": 2
      },
      {
-      "x": 834,
-      "n": 2
-     },
-     {
       "x": 271,
       "n": 1
      },
@@ -621,12 +626,16 @@
      {
       "x": 447,
       "n": 1
+     },
+     {
+      "x": 603,
+      "n": 1
      }
     ],
-    "leftBlocks": 21,
+    "leftBlocks": 22,
     "bodySize": 16,
     "stage": false,
-    "explains": false,
+    "explains": true,
     "slivers": [],
     "voidShare": 0.07,
     "voidBox": {
@@ -645,13 +654,13 @@
    "load": "load",
    "screens": 12,
    "filled": [
-    0.57,
-    0.58,
-    0.57,
-    0.57,
-    0.56,
-    0.56,
-    0.94,
+    0.96,
+    0.96,
+    0.96,
+    0.96,
+    0.96,
+    0.96,
+    0.95,
     0.96,
     0.96,
     0.96,
@@ -659,9 +668,9 @@
     0.87
    ],
    "motion": {
-    "elements": 66,
+    "elements": 65,
     "css": 9,
-    "transitions": 29,
+    "transitions": 28,
     "scripted": 28,
     "videos": 0,
     "playingVideos": 0
@@ -711,7 +720,7 @@
      "align": "left",
      "position": "center",
      "widthRatio": 0.96,
-     "top": 237,
+     "top": 206,
      "tag": "h1",
      "kind": "heading"
     },
@@ -740,7 +749,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.96,
-      "top": 237,
+      "top": 206,
       "tag": "h1",
       "kind": "heading"
      },
@@ -945,7 +954,7 @@
      "sectionBgs": [
       {
        "color": "#edf5f5",
-       "top": 284,
+       "top": 65,
        "hsl": {
         "h": 180,
         "s": 0.29,
@@ -989,7 +998,7 @@
        "share": 0.18
       },
       {
-       "color": "#dedfde",
+       "color": "#e3e4e3",
        "share": 0.01
       }
      ],
@@ -1032,7 +1041,7 @@
      "outlinedBoxes": 0,
      "dashed": 0,
      "blurred": 0,
-     "roundedBoxes": 10,
+     "roundedBoxes": 9,
      "boxRadius": 20,
      "squareMedia": 1,
      "roundedMedia": 0,
@@ -1043,7 +1052,7 @@
     "heroMedia": [
      {
       "type": "svg",
-      "ratio": 0.34
+      "ratio": 0.4
      }
     ],
     "nav": {
@@ -1209,7 +1218,7 @@
      {
       "text": "How it works, start to end.",
       "size": 32,
-      "top": 237,
+      "top": 206,
       "firstScreen": true
      }
     ],
@@ -1281,12 +1290,12 @@
    "load": "load",
    "screens": 12,
    "filled": [
-    0.61,
-    0.64,
-    0.65,
-    0.62,
-    0.61,
-    0.63,
+    0.97,
+    0.97,
+    0.97,
+    0.97,
+    0.97,
+    0.97,
     0.96,
     0.97,
     0.97,
@@ -1295,9 +1304,9 @@
     0.86
    ],
    "motion": {
-    "elements": 61,
+    "elements": 60,
     "css": 9,
-    "transitions": 24,
+    "transitions": 23,
     "scripted": 28,
     "videos": 0,
     "playingVideos": 0
@@ -1347,7 +1356,7 @@
      "align": "left",
      "position": "center",
      "widthRatio": 0.92,
-     "top": 160,
+     "top": 157,
      "tag": "h1",
      "kind": "heading"
     },
@@ -1397,7 +1406,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.92,
-      "top": 160,
+      "top": 157,
       "tag": "h1",
       "kind": "heading"
      },
@@ -1602,7 +1611,7 @@
      "sectionBgs": [
       {
        "color": "#edf5f5",
-       "top": 242,
+       "top": 65,
        "hsl": {
         "h": 180,
         "s": 0.29,
@@ -1698,7 +1707,7 @@
      "outlinedBoxes": 0,
      "dashed": 0,
      "blurred": 0,
-     "roundedBoxes": 11,
+     "roundedBoxes": 10,
      "boxRadius": 20,
      "squareMedia": 1,
      "roundedMedia": 0,
@@ -1709,7 +1718,7 @@
     "heroMedia": [
      {
       "type": "svg",
-      "ratio": 0.33
+      "ratio": 0.34
      }
     ],
     "nav": {
@@ -1875,7 +1884,7 @@
      {
       "text": "How it works, start to end.",
       "size": 32,
-      "top": 160,
+      "top": 157,
       "firstScreen": true
      }
     ],
@@ -1982,7 +1991,7 @@
    "level": "WARN",
    "id": "ragged-edges",
    "width": 1440,
-   "message": "Left-aligned text starts at 12 different lines (120px, 138px, 184px, 238px, 511px, 547px, 834px); the three most used hold only 29% of it.",
+   "message": "Left-aligned text starts at 12 different lines (120px, 138px, 184px, 238px, 511px, 547px, 271px); the three most used hold only 36% of it.",
    "fix": "Pick two or three anchor lines from the grid and start every heading and paragraph on one of them.",
    "alsoAt": [
     768
