@@ -4,7 +4,6 @@ import './site.css';
 import Nav from '@/components/Nav';
 import Footer from '@/components/Footer';
 import WhatsAppButton from '@/components/common/WhatsAppButton';
-import Intro from '@/components/common/Intro';
 
 // next/font downloads both families at build time and serves them from this site (self-hosted).
 const display = Plus_Jakarta_Sans({
@@ -33,17 +32,8 @@ export const viewport = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en-IN" className={`${display.variable} ${text.variable}`} suppressHydrationWarning>
-      <head>
-        {/* the opening moment plays once per visit; this runs before paint so a repeat view never flashes it */}
-        <script
-          dangerouslySetInnerHTML={{
-            __html: "try{if(sessionStorage.getItem('moya-intro'))document.documentElement.dataset.intro='seen'}catch(e){}",
-          }}
-        />
-      </head>
+    <html lang="en-IN" className={`${display.variable} ${text.variable}`}>
       <body>
-        <Intro />
         <a href="#main" className="skip-link">
           Skip to content
         </a>

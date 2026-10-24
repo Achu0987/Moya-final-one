@@ -2,11 +2,11 @@
 
 import { useEffect, useRef, useState } from 'react';
 
-// The opening moment, once per visit: the idea of Moya One in about two seconds.
+// The opening moment on the home page, every time it loads: the idea of Moya One in about two seconds.
 // A tower is drawn, one orange line rises from the plant room, every flat lights up as the line reaches it,
 // the name arrives, then the screen drains away like water and the page is there.
 // It is pure CSS on the first paint, so it never waits for the page to load. A click, tap or key ends it early.
-// Skipped for repeat views in the same visit (a flag set in <head> before paint) and for reduced motion.
+// Skipped for reduced motion.
 const FLOORS = [0, 1, 2, 3, 4, 5, 6, 7]; // bottom to top
 const TOP = 44;
 const FLOOR_H = 22;
@@ -17,9 +17,6 @@ export default function Intro() {
   const box = useRef(null);
 
   useEffect(() => {
-    try {
-      sessionStorage.setItem('moya-intro', '1');
-    } catch {}
     const end = () => setSkip(true);
     window.addEventListener('pointerdown', end, { once: true });
     window.addEventListener('keydown', end, { once: true });
