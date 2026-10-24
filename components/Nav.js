@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState } from 'react';
 import { usePathname } from 'next/navigation';
-import { ArrowUpRight, CaretDown, List, X } from '@phosphor-icons/react/dist/ssr';
+import { ArrowRight, ArrowUpRight, CaretDown, Funnel, List, Package, Scales, X } from '@phosphor-icons/react/dist/ssr';
 import { ALL_PAGES, CONTACT_LINK, NAV_LINKS } from '@/lib/content';
 
 // PLACEHOLDER: brand mark and wordmark until the client's approved logo arrives (DESIGN.md DD2, DD5).
@@ -16,12 +16,27 @@ function Mark() {
   );
 }
 
+// an icon for each comparison in the Compare menu
+const MENU_ICONS = { '/compare': Scales, '/compare/bottled-water': Package, '/compare/ro-filters': Funnel };
+
 export default function Nav() {
   const [open, setOpen] = useState(false); // phone menu
   const [menu, setMenu] = useState(false); // Compare menu
   const [scrolled, setScrolled] = useState(false);
   const pathname = usePathname();
   const compareRef = useRef(null);
+  const closeTimer = useRef(null);
+
+  // on a mouse or trackpad the Compare menu opens on hover; a short delay stops it flickering shut
+  const hoverOpen = (e) => {
+    if (e.pointerType !== 'mouse') return;
+    clearTimeout(closeTimer.current);
+    setMenu(true);
+  };
+  const hoverClose = (e) => {
+    if (e.pointerType !== 'mouse') return;
+    closeTimer.current = setTimeout(() => setMenu(false), 160);
+  };
 
   // Escape closes either menu; a click outside closes the Compare menu
   useEffect(() => {
@@ -60,7 +75,13 @@ export default function Nav() {
           <ul className="nav-links">
             {NAV_LINKS.map((l) =>
               l.children ? (
-                <li key={l.href} className="nav-compare" ref={compareRef}>
+                <li
+                  key={l.href}
+                  className="nav-compare"
+                  ref={compareRef}
+                  onPointerEnter={hoverOpen}
+                  onPointerLeave={hoverClose}
+                >
                   <button
                     type="button"
                     className="nav-menu-button"
@@ -73,14 +94,23 @@ export default function Nav() {
                     <CaretDown size={16} aria-hidden="true" />
                   </button>
                   <ul id="compare-menu" className="nav-menu" hidden={!menu}>
-                    {l.children.map((c) => (
-                      <li key={c.href}>
-                        <a href={c.href} aria-current={c.href === pathname ? 'page' : undefined}>
-                          <strong>{c.label}</strong>
-                          <span>{c.note}</span>
-                        </a>
-                      </li>
-                    ))}
+                    {l.children.map((c) => {
+                      const Icon = MENU_ICONS[c.href];
+                      return (
+                        <li key={c.href}>
+                          <a href={c.href} aria-current={c.href === pathname ? 'page' : undefined}>
+                            <span className="nav-menu-icon">
+                              <Icon size={22} aria-hidden="true" />
+                            </span>
+                            <span className="nav-menu-text">
+                              <strong>{c.label}</strong>
+                              <span>{c.note}</span>
+                            </span>
+                            <ArrowRight className="nav-menu-arrow" size={18} aria-hidden="true" />
+                          </a>
+                        </li>
+                      );
+                    })}
                   </ul>
                 </li>
               ) : (
