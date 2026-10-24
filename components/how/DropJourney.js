@@ -1,8 +1,9 @@
 'use client';
 
 import { useEffect, useRef, useState } from 'react';
-import { Play } from '@phosphor-icons/react/dist/ssr';
+import { ArrowDown } from '@phosphor-icons/react/dist/ssr';
 import { buildPlantRoom } from '@/lib/three/plantRoom';
+import Guide from './Guide';
 import { marbleTexture, tileTexture, woodTexture } from '@/lib/three/finishes';
 
 // "Follow one drop": a real residential tower at dusk, among its neighbours. The water line glows through the
@@ -38,6 +39,31 @@ export const MOMENTS = [
   { at: 0.84, title: 'It lands in your glass.', text: 'From its own tap. Your usual tap stays as it is.' },
 ];
 
+// How Moya One works, start to end: the six steps the film is told in, over the page's scroll (0 to 1).
+// The 3D film runs under them; recharge and top-up show a phone card over the kitchen, since the film has no phone.
+// Every step restates CLAUDE.md "What the project is"; nothing goes beyond it.
+export const STEPS = [
+  // PLACEHOLDER: "its own plant room" follows CLIENT_CONTEXT.md; Claims tab "To confirm".
+  { at: 0, phase: 'Before you move in', who: 'Your builder, with Moya One', title: 'Fits the plant room below the tower', text: 'Planned at the design stage, it goes in while the tower is built.' },
+  { at: 0.2, phase: 'Before you move in', who: 'Builder and Moya One', title: 'Lays one line to every flat', text: 'A dedicated line runs from the plant room below ground up the tower, while it is built.' },
+  { at: 0.5, phase: 'Before you move in', who: 'Builder and Moya One', title: 'Fits your kitchen', text: 'Your flat gets its own branch, a Moya1™ control unit and an extra tap.' },
+  { at: 0.74, phase: 'After you move in', who: 'You', title: 'Recharge litres on your phone', text: 'Choose a pack in the Moya One app, the way you top up a mobile plan.' },
+  { at: 0.81, phase: 'After you move in', who: 'You', title: 'Pour a glass', text: 'Drinking water comes from its own tap. Your usual tap stays as it is.' },
+  // PLACEHOLDER: "no filter" follows CLIENT_CONTEXT.md; Claims tab "To confirm".
+  { at: 0.89, phase: 'After you move in', who: 'You', title: 'Top up when you run low', text: 'Recharge again from the app. No jugs to carry, no filter to service.' },
+];
+const FIT_END = 0.2; // the plant room is fitted over the first part of the scroll
+const RECAP_AT = 0.95; // then the doors close on a recap
+// page progress to film progress: held on the plant room while it is fitted, on the kitchen while you recharge,
+// and at the end while you top up and read the recap
+const filmAt = (p) =>
+  p < FIT_END ? 0
+  : p < 0.5 ? ((p - FIT_END) / (0.5 - FIT_END)) * 0.5
+  : p < 0.74 ? 0.5 + ((p - 0.5) / 0.24) * 0.34
+  : p < 0.81 ? 0.84
+  : p < 0.89 ? 0.84 + ((p - 0.81) / 0.08) * 0.16
+  : 1;
+
 const smooth = (t) => t * t * (3 - 2 * t);
 const clamp01 = (t) => Math.max(0, Math.min(1, t));
 
@@ -67,7 +93,10 @@ export default function DropJourney() {
   const section = useRef(null);
   const host = useRef(null);
   const auto = useRef(null);
-  const [moment, setMoment] = useState(0);
+  const pin = useRef(null); // the plant room label, kept on the plant room as the camera moves
+  const [step, setStep] = useState(0);
+  const [open, setOpen] = useState(false); // the opening doors part once the page moves
+  const [recap, setRecap] = useState(false); // and close again on a recap at the end
   const [floor, setFloor] = useState(null);
   const [ready, setReady] = useState(false);
   const [still, setStill] = useState(false);
@@ -156,6 +185,7 @@ export default function DropJourney() {
       add(new THREE.BoxGeometry(14, 0.05, 8), asphalt, 0, -0.025, cutZ + 1.3 + 4, scene, false); // in front of the trench
       [-1, 1].forEach((s) => add(new THREE.BoxGeometry(7 - roomW / 2, -F, 0.04), earth, s * (roomW / 2 + (7 - roomW / 2) / 2), F / 2, cutZ, scene, false));
       add(new THREE.BoxGeometry(14, 0.04, 1.3), earth, 0, F - 0.1, cutZ + 0.65, scene, false); // the trench floor
+      const before = scene.children.length;
       const plant = buildPlantRoom(THREE, {
         scene,
         RoundedBoxGeometry,
@@ -166,6 +196,16 @@ export default function DropJourney() {
         z1: cutZ,
         riser: RISER,
       });
+
+      // the machinery (not the room's walls and floor) is what gets fitted, piece by piece
+      const box = new THREE.Box3();
+      const size = new THREE.Vector3();
+      const kit = scene.children.slice(before).filter((m) => {
+        if (!m.isMesh) return false;
+        box.setFromObject(m).getSize(size);
+        return Math.max(size.x, size.y, size.z) < 1.2;
+      });
+      kit.forEach((m) => (m.userData.s = m.scale.clone()));
 
       // ---- the tower ----
       // lobby: lit glass box with a canopy
@@ -336,9 +376,37 @@ export default function DropJourney() {
       const offset = new THREE.Vector3();
       const pos = new THREE.Vector3();
       let narrow = false;
-      let lastMoment = -1;
       let lastFloor;
-      const place = (p) => {
+      let lastStep = -1;
+      let lastOpen = false;
+      let lastRecap = false;
+      const close = new THREE.Vector3();
+      const closeLook = new THREE.Vector3(0, F + 0.2, -0.1);
+      const spot = new THREE.Vector3();
+      const place = (pp) => {
+        const isOpen = pp > 0.004;
+        if (isOpen !== lastOpen) {
+          lastOpen = isOpen;
+          setOpen(isOpen);
+        }
+        const isRecap = pp >= RECAP_AT;
+        if (isRecap !== lastRecap) {
+          lastRecap = isRecap;
+          setRecap(isRecap);
+        }
+        // step 1: the plant room's machinery is set in place, one piece after another
+        const fit = clamp01((pp - FIT_END * 0.08) / (FIT_END * 0.6)); // pieces go in over most of step 1, after the doors part
+        kit.forEach((m, k) => {
+          const e = smooth(clamp01((fit - (k / kit.length) * 0.6) / 0.4));
+          m.scale.copy(m.userData.s).multiplyScalar(Math.max(0.001, e));
+        });
+        let n = STEPS.length - 1;
+        while (n > 0 && pp < STEPS[n].at) n--;
+        if (n !== lastStep) {
+          lastStep = n;
+          setStep(n);
+        }
+        const p = filmAt(pp);
         let i = MOMENTS.length - 1;
         while (i > 0 && p < bounds[i]) i--;
         const local = clamp01((p - bounds[i]) / (bounds[i + 1] - bounds[i]));
@@ -376,6 +444,13 @@ export default function DropJourney() {
 
         lookAt.copy(LOOK[prev]).lerp(LOOK[i], blend).add(pos);
         camera.position.copy(pos).add(offset);
+        // step 1 looks into the plant room up close, then pulls back to the tower as the line climbs
+        if (pp < FIT_END) {
+          const back = smooth(clamp01((pp - FIT_END * 0.7) / (FIT_END * 0.3)));
+          close.set(narrow ? 1.1 : 0.8, F + 0.55, D / 2 + (narrow ? 3.2 : 2.3));
+          camera.position.lerpVectors(close, camera.position, back);
+          lookAt.lerpVectors(closeLook, lookAt, back);
+        }
         camera.lookAt(lookAt);
         // the x-ray line shows the route from outside; it fades as the camera reaches the window,
         // and inside the flat only the kitchen's own pipes show
@@ -384,12 +459,16 @@ export default function DropJourney() {
         xrayParts.forEach((m) => (m.visible = xr > 0.01));
         // the home window opens up once the camera passes through it
         homePane.mesh.visible = camera.position.z > D / 2 + 0.03;
+        // name the room under the tower while it is seen from outside
+        if (pin.current) {
+          spot.set(0, F / 2, D / 2).project(camera);
+          const x = ((spot.x + 1) / 2) * el.clientWidth;
+          const y = ((1 - spot.y) / 2) * el.clientHeight;
+          pin.current.style.transform = `translate(${x.toFixed(1)}px, ${y.toFixed(1)}px)`;
+          pin.current.style.opacity = i < 2 && xr > 0.3 ? '1' : '0';
+        }
         renderer.render(scene, camera);
 
-        if (i !== lastMoment) {
-          lastMoment = i;
-          setMoment(i);
-        }
         const f = i === 0 ? 0 : i === 1 ? Math.max(1, Math.min(HOME + 1, Math.floor((pos.y - PODIUM) / FLOOR_H) + 1)) : HOME + 1;
         if (f !== lastFloor) {
           lastFloor = f;
@@ -458,7 +537,7 @@ export default function DropJourney() {
     if (!s) return;
     const from = window.scrollY;
     const to = s.offsetTop + s.offsetHeight - window.innerHeight;
-    const dur = 15000;
+    const dur = 34000;
     const t0 = performance.now();
     setPlaying(true);
     const stop = () => {
@@ -476,13 +555,13 @@ export default function DropJourney() {
     auto.current = requestAnimationFrame(step);
   };
 
-  const m = MOMENTS[moment];
+  const s = STEPS[step];
 
   return (
     <section
       ref={section}
-      className={`drop${still ? ' is-still' : ''}${ready ? ' is-ready' : ''}${moment === 0 ? ' is-start' : ''}`}
-      aria-labelledby="drop-title"
+      className={`drop${still ? ' is-still' : ''}${ready ? ' is-ready' : ''}${step === 0 ? ' is-start' : ''}`}
+      aria-labelledby="how-title"
     >
       <div className="drop-stage">
         <div
@@ -492,23 +571,65 @@ export default function DropJourney() {
           aria-label="A residential tower at dusk among its neighbours. The water line glows through the building. One drop travels from the plant room below ground, up the tower, into a flat on floor 7, through its window into the kitchen, past the Moya1 control unit and out of the Moya One tap into a glass."
         />
 
-        <div className="drop-copy container">
-          <div className={`drop-intro${moment > 0 && !still ? ' is-away' : ''}`}>
-            <h2 id="drop-title" className="drop-title">
-              Now see it happen.
-            </h2>
-            <p className="drop-lede">Follow one drop from the plant room to your glass. Scroll, or play it like a film.</p>
+        {/* the opening: two doors carrying the water line; they part as the page moves, and the tower is behind them */}
+        <div className={`drop-open${(open && !recap) || still ? ' is-open' : ''}${recap ? ' is-recap' : ''}`}>
+          <span className="drop-door drop-door-l" aria-hidden="true" />
+          <span className="drop-door drop-door-r" aria-hidden="true">
+            <Guide className="drop-guide" />
+          </span>
+          {recap && !still && (
+            <div className="drop-recap container" aria-live="polite">
+              <p className="drop-recap-title">That’s Moya One, start to end.</p>
+              <p className="drop-open-lede">Fitted once, while your tower is built. Then it is yours.</p>
+              <div className="drop-recap-grid">
+                {['Before you move in', 'After you move in'].map((phase) => (
+                  <ol key={phase} aria-label={phase}>
+                    <li className="drop-recap-phase" aria-hidden="true">
+                      {phase}
+                    </li>
+                    {STEPS.map((x, i) =>
+                      x.phase === phase ? (
+                        <li key={x.title}>
+                          <span>{i + 1}</span>
+                          {x.title}
+                        </li>
+                      ) : null,
+                    )}
+                  </ol>
+                ))}
+              </div>
+            </div>
+          )}
+          <div className="drop-open-copy container">
+            <h1 id="how-title" className="drop-open-title">
+              How Moya One works
+            </h1>
+            <p className="drop-open-lede">Six steps, start to end: from your builder’s first drawing to the glass in your hand.</p>
             {!still && (
-              <button type="button" className="drop-play" onClick={play} disabled={playing}>
-                <Play size={18} aria-hidden="true" />
-                {playing ? 'Playing…' : 'Play the journey'}
+              <button type="button" className="btn btn-primary drop-open-go" onClick={play} disabled={playing}>
+                Let’s see
+                <ArrowDown size={18} aria-hidden="true" />
               </button>
             )}
+            {!still && <p className="drop-open-hint">or scroll</p>}
           </div>
+        </div>
+
+        {!still && (
+          <span ref={pin} className="drop-pin" aria-hidden="true">
+            Plant room, below ground
+          </span>
+        )}
+
+        <div className="drop-copy container">
           {!still && (
-            <div className="drop-caption" aria-live="polite" key={moment}>
-              <p className="drop-caption-title">{m.title}</p>
-              <p className="drop-caption-text">{m.text}</p>
+            <div className="drop-caption" aria-live="polite" key={step}>
+              <p className="drop-caption-step">
+                Step {step + 1} of {STEPS.length} <span>{s.phase}</span>
+              </p>
+              <p className="drop-caption-who">{s.who}</p>
+              <p className="drop-caption-title">{s.title}</p>
+              <p className="drop-caption-text">{s.text}</p>
             </div>
           )}
         </div>
@@ -516,12 +637,23 @@ export default function DropJourney() {
         {!still && (
           <>
             <ol className="drop-rail" aria-hidden="true">
-              {MOMENTS.map((x, i) => (
-                <li key={x.title} className={i < moment ? 'is-past' : i === moment ? 'is-now' : undefined}>
-                  <span />
+              {STEPS.map((x, i) => (
+                <li key={x.title} className={i < step ? 'is-past' : i === step ? 'is-now' : undefined}>
+                  <span>{i + 1}</span>
                 </li>
               ))}
             </ol>
+            {/* steps 4 and 6: the app, litres going in. No numbers, so nothing to mistake for a price or a real balance */}
+            <div className={`drop-phone${step === 3 || step === 5 ? ' is-on' : ''}${step === 5 ? ' is-topup' : ''}`} data-ui aria-hidden="true">
+              <p className="drop-phone-top">
+                Moya One <em className="sample">Sample</em>
+              </p>
+              <p className="drop-phone-label">Your water</p>
+              <span className="drop-phone-meter">
+                <span />
+              </span>
+              <span className="drop-phone-btn">Recharge litres</span>
+            </div>
             <div className="drop-hud" data-ui aria-hidden="true">
               <span>{floor ? 'Floor' : 'Where it is'}</span>
               <strong>{floor ? floor : 'Plant room'}</strong>
@@ -533,7 +665,7 @@ export default function DropJourney() {
 
       {still && (
         <ol className="drop-list container">
-          {MOMENTS.map((x) => (
+          {STEPS.map((x) => (
             <li key={x.title}>
               <strong>{x.title}</strong>
               <span>{x.text}</span>

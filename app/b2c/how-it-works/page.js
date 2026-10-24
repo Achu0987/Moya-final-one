@@ -1,7 +1,6 @@
 import { ArrowRight } from '@phosphor-icons/react/dist/ssr';
 import DropJourney from '@/components/how/DropJourney';
 import TryIt from '@/components/how/TryIt';
-import Story from '@/components/how/Story';
 import Words from '@/components/common/Words';
 import Motion from '@/components/Motion';
 import './how-it-works.css';
@@ -15,9 +14,7 @@ export const metadata = {
 export default function HowItWorks() {
   return (
     <>
-      {/* start to end, in order: a full-screen story the page scrolls through, one step at a time */}
-      <Story />
-
+      {/* start to end: the film opens the page, told in six steps as you scroll */}
       <DropJourney />
 
       <TryIt />

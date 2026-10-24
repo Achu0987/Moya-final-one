@@ -1,6 +1,6 @@
 {
  "url": "http://localhost:3100/b2c/how-it-works",
- "at": "2026-10-24T03:34:42.252Z",
+ "at": "2026-10-24T05:04:47.247Z",
  "allow": [],
  "viewports": [
   {
@@ -16,17 +16,17 @@
     0.96,
     0.96,
     0.96,
-    0.96,
-    0.96,
-    0.96,
-    0.96,
-    0.91
+    0.95,
+    0.91,
+    0.67,
+    0.69,
+    0.95
    ],
    "motion": {
-    "elements": 66,
-    "css": 9,
-    "transitions": 29,
-    "scripted": 28,
+    "elements": 46,
+    "css": 8,
+    "transitions": 14,
+    "scripted": 24,
     "videos": 0,
     "playingVideos": 0
    },
@@ -36,17 +36,17 @@
      "h": 900
     },
     "page": {
-     "height": 13173,
-     "screens": 14.6,
-     "words": 343,
-     "img": 1,
+     "height": 10473,
+     "screens": 11.6,
+     "words": 286,
+     "img": 2,
      "video": 0,
      "canvas": 1,
-     "svg": 20,
-     "sections": 5,
+     "svg": 18,
+     "sections": 4,
      "horizontalOverflow": 0,
      "overflowCulprits": [],
-     "uiFragments": 2,
+     "uiFragments": 3,
      "uiAbuse": false,
      "realPictures": 0,
      "videoCount": 0,
@@ -59,74 +59,53 @@
      "videosNoPoster": 0
     },
     "hero": {
-     "text": "How it works, start to end.",
-     "words": 6,
-     "chars": 27,
+     "text": "How Moya One works",
+     "words": 4,
+     "chars": 18,
      "lines": 2,
-     "size": 44,
-     "vw": 3.1,
+     "size": 96,
+     "vw": 6.7,
      "font": "Plus Jakarta Sans",
      "weight": 700,
-     "tracking": -0.02,
-     "leading": 1.1,
+     "tracking": -0.03,
+     "leading": 0.95,
      "upper": false,
      "italic": false,
      "mono": false,
      "align": "left",
      "position": "left",
-     "widthRatio": 0.27,
-     "top": 311,
+     "widthRatio": 0.57,
+     "top": 273,
      "tag": "h1",
      "kind": "heading"
     },
     "h1": {
-     "text": "How it works, start to end.",
-     "words": 6,
+     "text": "How Moya One works",
+     "words": 4,
      "lines": 2,
-     "size": 44,
+     "size": 96,
      "font": "Plus Jakarta Sans"
     },
     "headings": [
      {
-      "text": "How it works, start to end.",
-      "words": 6,
-      "chars": 27,
-      "lines": 2,
-      "size": 44,
-      "vw": 3.1,
-      "font": "Plus Jakarta Sans",
-      "weight": 700,
-      "tracking": -0.02,
-      "leading": 1.1,
-      "upper": false,
-      "italic": false,
-      "mono": false,
-      "align": "left",
-      "position": "left",
-      "widthRatio": 0.27,
-      "top": 311,
-      "tag": "h1",
-      "kind": "heading"
-     },
-     {
-      "text": "Now see it happen.",
+      "text": "How Moya One works",
       "words": 4,
       "chars": 18,
-      "lines": 1,
-      "size": 44,
-      "vw": 3.1,
+      "lines": 2,
+      "size": 96,
+      "vw": 6.7,
       "font": "Plus Jakarta Sans",
       "weight": 700,
-      "tracking": -0.02,
-      "leading": 1.1,
+      "tracking": -0.03,
+      "leading": 0.95,
       "upper": false,
       "italic": false,
       "mono": false,
       "align": "left",
       "position": "left",
-      "widthRatio": 0.27,
-      "top": 5533,
-      "tag": "h2",
+      "widthRatio": 0.57,
+      "top": 273,
+      "tag": "h1",
       "kind": "heading"
      },
      {
@@ -146,7 +125,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.41,
-      "top": 10337,
+      "top": 7636,
       "tag": "h2",
       "kind": "heading"
      },
@@ -167,7 +146,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.17,
-      "top": 10693,
+      "top": 7993,
       "tag": "p",
       "kind": "statement"
      },
@@ -188,7 +167,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.83,
-      "top": 11306,
+      "top": 8606,
       "tag": "h2",
       "kind": "heading"
      },
@@ -209,7 +188,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.43,
-      "top": 11887,
+      "top": 9187,
       "tag": "h2",
       "kind": "heading"
      },
@@ -230,13 +209,13 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.85,
-      "top": 13003,
+      "top": 10303,
       "tag": "p",
       "kind": "statement"
      }
     ],
     "headingSummary": {
-     "count": 7,
+     "count": 6,
      "maxLines": 2,
      "over2Lines": 0,
      "statements": 2,
@@ -248,26 +227,28 @@
      "families": [
       {
        "family": "Inter",
-       "share": 0.73,
+       "share": 0.74,
        "mono": false
       },
       {
        "family": "Plus Jakarta Sans",
-       "share": 0.27,
+       "share": 0.26,
        "mono": false
       }
      ],
      "familyCount": 2,
      "sizes": [
+      12,
       13,
       15,
       16,
       20,
       22,
       44,
+      96,
       269
      ],
-     "sizeCount": 7,
+     "sizeCount": 9,
      "notLoaded": [],
      "body": {
       "font": "Inter",
@@ -275,7 +256,7 @@
       "leading": 1.6,
       "weight": 400,
       "tracking": 0,
-      "contrast": 6.9
+      "contrast": null
      },
      "measureChars": 49,
      "max": {
@@ -292,7 +273,7 @@
      "microLabelShare": 0,
      "microSamples": [],
      "upperShare": 0,
-     "centerShare": 0.04,
+     "centerShare": 0.05,
      "smallText": 0
     },
     "eyebrows": [],
@@ -307,17 +288,8 @@
      "dark": false,
      "sectionBgs": [
       {
-       "color": "#edf5f5",
-       "top": 89,
-       "hsl": {
-        "h": 180,
-        "s": 0.29,
-        "l": 0.95
-       }
-      },
-      {
        "color": "#111827",
-       "top": 5489,
+       "top": 89,
        "hsl": {
         "h": 221,
         "s": 0.39,
@@ -326,7 +298,7 @@
       },
       {
        "color": "#f3f4f6",
-       "top": 10169,
+       "top": 7469,
        "hsl": {
         "h": 220,
         "s": 0.14,
@@ -337,31 +309,31 @@
      "textColors": [
       {
        "color": "#4b5563",
-       "share": 0.39
+       "share": 0.35
       },
       {
        "color": "#b9bbbd",
-       "share": 0.22
-      },
-      {
-       "color": "#111827",
-       "share": 0.19
+       "share": 0.28
       },
       {
        "color": "#fafaf7",
-       "share": 0.18
+       "share": 0.21
       },
       {
-       "color": "#e3e4e3",
+       "color": "#111827",
+       "share": 0.16
+      },
+      {
+       "color": "#f97316",
        "share": 0.01
       }
      ],
      "button": {
-      "bg": "#111827",
+      "bg": "#f97316",
       "hsl": {
-       "h": 221,
-       "s": 0.39,
-       "l": 0.11
+       "h": 25,
+       "s": 0.95,
+       "l": 0.53
       },
       "fg": "#111827"
      },
@@ -369,7 +341,7 @@
     },
     "buttons": {
      "count": 5,
-     "inHero": 2,
+     "inHero": 3,
      "radius": "pill",
      "height": 50,
      "withShadow": 0,
@@ -378,7 +350,8 @@
      "upper": 0,
      "heroLabels": [
       "Skip to content",
-      "Contact"
+      "Contact",
+      "Let’s see"
      ]
     },
     "surfaces": {
@@ -406,8 +379,8 @@
     },
     "heroMedia": [
      {
-      "type": "svg",
-      "ratio": 0.39
+      "type": "canvas",
+      "ratio": 0.9
      }
     ],
     "nav": {
@@ -427,62 +400,35 @@
      "w": 1440,
      "h": 900
     },
-    "pageH": 13173,
+    "pageH": 10473,
     "margins": {
      "left": 120,
-     "right": 125
+     "right": 119
     },
     "sections": [
      {
-      "sel": "section.tale",
+      "sel": "section.drop.is-ready",
       "tag": "section",
       "top": 89,
-      "height": 5400,
-      "words": 35,
+      "height": 7380,
+      "words": 17,
       "media": 1,
-      "middle": 24,
-      "heading": {
-       "text": "How it works, start to end.",
-       "size": 44,
-       "tag": "h1"
-      },
-      "left": 120,
-      "right": 120,
-      "textLeft": 120,
-      "textRight": 146,
-      "fullBleed": false,
+      "middle": 175,
+      "heading": null,
+      "left": 788,
+      "right": 102,
+      "textLeft": 788,
+      "textRight": 102,
+      "fullBleed": true,
       "footer": false,
       "hero": true,
       "continues": true,
       "pinned": true
      },
      {
-      "sel": "section.drop.is-ready",
-      "tag": "section",
-      "top": 5489,
-      "height": 4680,
-      "words": 44,
-      "media": 1,
-      "middle": 592,
-      "heading": {
-       "text": "Now see it happen.",
-       "size": 44,
-       "tag": "h2"
-      },
-      "left": 138,
-      "right": 114,
-      "textLeft": 138,
-      "textRight": 114,
-      "fullBleed": true,
-      "footer": false,
-      "hero": false,
-      "continues": true,
-      "pinned": true
-     },
-     {
       "sel": "section.try",
       "tag": "section",
-      "top": 10169,
+      "top": 7469,
       "height": 1017,
       "words": 63,
       "media": 1,
@@ -505,20 +451,20 @@
      {
       "sel": "section.dodont",
       "tag": "section",
-      "top": 11186,
+      "top": 8486,
       "height": 628,
-      "words": 7,
-      "media": 0,
-      "middle": 7,
+      "words": 39,
+      "media": 1,
+      "middle": 41,
       "heading": {
        "text": "What",
        "size": 44,
        "tag": "h2"
       },
       "left": 120,
-      "right": 641,
+      "right": 133,
       "textLeft": 120,
-      "textRight": 641,
+      "textRight": 363,
       "fullBleed": false,
       "footer": false,
       "hero": false,
@@ -528,20 +474,20 @@
      {
       "sel": "section.how-next",
       "tag": "section",
-      "top": 11815,
+      "top": 9115,
       "height": 506,
-      "words": 5,
+      "words": 32,
       "media": 0,
-      "middle": 7,
+      "middle": 0,
       "heading": {
        "text": "See",
        "size": 44,
        "tag": "h2"
       },
       "left": 184,
-      "right": 770,
+      "right": 704,
       "textLeft": 184,
-      "textRight": 770,
+      "textRight": 704,
       "fullBleed": false,
       "footer": false,
       "hero": false,
@@ -551,16 +497,12 @@
      {
       "sel": "footer.footer",
       "tag": "footer",
-      "top": 12321,
+      "top": 9621,
       "height": 852,
       "words": 49,
       "media": 0,
       "middle": 282,
-      "heading": {
-       "text": "Moya One",
-       "size": 22,
-       "tag": "p"
-      },
+      "heading": null,
       "left": 120,
       "right": 170,
       "textLeft": 120,
@@ -573,26 +515,15 @@
      }
     ],
     "gaps": [],
-    "h1s": [
-     {
-      "text": "How it works, start to end.",
-      "size": 44,
-      "top": 311,
-      "firstScreen": true
-     }
-    ],
+    "h1s": [],
     "edgeText": [],
     "edges": [
      {
-      "x": 120,
-      "n": 4
-     },
-     {
-      "x": 138,
-      "n": 2
-     },
-     {
       "x": 184,
+      "n": 3
+     },
+     {
+      "x": 120,
       "n": 2
      },
      {
@@ -630,20 +561,19 @@
      {
       "x": 603,
       "n": 1
+     },
+     {
+      "x": 726,
+      "n": 1
      }
     ],
-    "leftBlocks": 22,
-    "bodySize": 16,
+    "leftBlocks": 19,
+    "bodySize": 20,
     "stage": false,
-    "explains": true,
+    "explains": false,
     "slivers": [],
-    "voidShare": 0.07,
-    "voidBox": {
-     "x": 0,
-     "y": 120,
-     "w": 120,
-     "h": 780
-    }
+    "voidShare": 0,
+    "voidBox": null
    },
    "app": null,
    "consoleErrors": []
@@ -660,18 +590,18 @@
     0.96,
     0.96,
     0.96,
-    0.95,
     0.96,
-    0.96,
-    0.96,
-    0.96,
-    0.87
+    0.82,
+    0.87,
+    0.86,
+    0.79,
+    0.93
    ],
    "motion": {
-    "elements": 65,
-    "css": 9,
-    "transitions": 28,
-    "scripted": 28,
+    "elements": 46,
+    "css": 8,
+    "transitions": 14,
+    "scripted": 24,
     "videos": 0,
     "playingVideos": 0
    },
@@ -681,17 +611,17 @@
      "h": 1024
     },
     "page": {
-     "height": 14946,
-     "screens": 14.6,
-     "words": 336,
-     "img": 1,
+     "height": 11874,
+     "screens": 11.6,
+     "words": 281,
+     "img": 2,
      "video": 0,
      "canvas": 1,
-     "svg": 20,
-     "sections": 5,
+     "svg": 18,
+     "sections": 4,
      "horizontalOverflow": 0,
      "overflowCulprits": [],
-     "uiFragments": 2,
+     "uiFragments": 3,
      "uiAbuse": false,
      "realPictures": 0,
      "videoCount": 0,
@@ -704,74 +634,53 @@
      "videosNoPoster": 0
     },
     "hero": {
-     "text": "How it works, start to end.",
-     "words": 6,
-     "chars": 27,
-     "lines": 1,
-     "size": 32,
-     "vw": 4.2,
+     "text": "How Moya One works",
+     "words": 4,
+     "chars": 18,
+     "lines": 2,
+     "size": 48,
+     "vw": 6.3,
      "font": "Plus Jakarta Sans",
      "weight": 700,
-     "tracking": -0.02,
-     "leading": 1.1,
+     "tracking": -0.03,
+     "leading": 1,
      "upper": false,
      "italic": false,
      "mono": false,
      "align": "left",
-     "position": "center",
-     "widthRatio": 0.96,
-     "top": 206,
+     "position": "left",
+     "widthRatio": 0.53,
+     "top": 371,
      "tag": "h1",
      "kind": "heading"
     },
     "h1": {
-     "text": "How it works, start to end.",
-     "words": 6,
-     "lines": 1,
-     "size": 32,
+     "text": "How Moya One works",
+     "words": 4,
+     "lines": 2,
+     "size": 48,
      "font": "Plus Jakarta Sans"
     },
     "headings": [
      {
-      "text": "How it works, start to end.",
-      "words": 6,
-      "chars": 27,
-      "lines": 1,
-      "size": 32,
-      "vw": 4.2,
-      "font": "Plus Jakarta Sans",
-      "weight": 700,
-      "tracking": -0.02,
-      "leading": 1.1,
-      "upper": false,
-      "italic": false,
-      "mono": false,
-      "align": "left",
-      "position": "center",
-      "widthRatio": 0.96,
-      "top": 206,
-      "tag": "h1",
-      "kind": "heading"
-     },
-     {
-      "text": "Now see it happen.",
+      "text": "How Moya One works",
       "words": 4,
       "chars": 18,
-      "lines": 1,
-      "size": 32,
-      "vw": 4.2,
+      "lines": 2,
+      "size": 48,
+      "vw": 6.3,
       "font": "Plus Jakarta Sans",
       "weight": 700,
-      "tracking": -0.02,
-      "leading": 1.1,
+      "tracking": -0.03,
+      "leading": 1,
       "upper": false,
       "italic": false,
       "mono": false,
       "align": "left",
       "position": "left",
-      "widthRatio": 0.37,
-      "top": 6237,
-      "tag": "h2",
+      "widthRatio": 0.53,
+      "top": 371,
+      "tag": "h1",
       "kind": "heading"
      },
      {
@@ -791,7 +700,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.96,
-      "top": 11606,
+      "top": 8534,
       "tag": "h2",
       "kind": "heading"
      },
@@ -812,7 +721,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.32,
-      "top": 11950,
+      "top": 8878,
       "tag": "p",
       "kind": "statement"
      },
@@ -833,7 +742,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.96,
-      "top": 13042,
+      "top": 9970,
       "tag": "h2",
       "kind": "heading"
      },
@@ -854,7 +763,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.9,
-      "top": 13628,
+      "top": 10556,
       "tag": "h2",
       "kind": "heading"
      },
@@ -875,14 +784,14 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.94,
-      "top": 14842,
+      "top": 11770,
       "tag": "p",
       "kind": "statement"
      }
     ],
     "headingSummary": {
-     "count": 7,
-     "maxLines": 1,
+     "count": 6,
+     "maxLines": 2,
      "over2Lines": 0,
      "statements": 2,
      "centered": 0,
@@ -893,17 +802,18 @@
      "families": [
       {
        "family": "Inter",
-       "share": 0.72,
+       "share": 0.74,
        "mono": false
       },
       {
        "family": "Plus Jakarta Sans",
-       "share": 0.28,
+       "share": 0.26,
        "mono": false
       }
      ],
      "familyCount": 2,
      "sizes": [
+      12,
       13,
       15,
       16,
@@ -911,9 +821,10 @@
       20,
       22,
       32,
+      48,
       165
      ],
-     "sizeCount": 8,
+     "sizeCount": 10,
      "notLoaded": [],
      "body": {
       "font": "Inter",
@@ -921,7 +832,7 @@
       "leading": 1.6,
       "weight": 400,
       "tracking": 0,
-      "contrast": 6.9
+      "contrast": null
      },
      "measureChars": 56,
      "max": {
@@ -938,7 +849,7 @@
      "microLabelShare": 0,
      "microSamples": [],
      "upperShare": 0,
-     "centerShare": 0.04,
+     "centerShare": 0.05,
      "smallText": 0
     },
     "eyebrows": [],
@@ -953,17 +864,8 @@
      "dark": false,
      "sectionBgs": [
       {
-       "color": "#edf5f5",
-       "top": 65,
-       "hsl": {
-        "h": 180,
-        "s": 0.29,
-        "l": 0.95
-       }
-      },
-      {
        "color": "#111827",
-       "top": 6209,
+       "top": 65,
        "hsl": {
         "h": 221,
         "s": 0.39,
@@ -972,7 +874,7 @@
       },
       {
        "color": "#f3f4f6",
-       "top": 11534,
+       "top": 8462,
        "hsl": {
         "h": 220,
         "s": 0.14,
@@ -983,22 +885,22 @@
      "textColors": [
       {
        "color": "#4b5563",
-       "share": 0.38
+       "share": 0.33
       },
       {
        "color": "#b9bbbd",
-       "share": 0.23
-      },
-      {
-       "color": "#111827",
-       "share": 0.19
+       "share": 0.29
       },
       {
        "color": "#fafaf7",
-       "share": 0.18
+       "share": 0.2
       },
       {
-       "color": "#e3e4e3",
+       "color": "#111827",
+       "share": 0.16
+      },
+      {
+       "color": "#f97316",
        "share": 0.01
       }
      ],
@@ -1015,7 +917,7 @@
     },
     "buttons": {
      "count": 4,
-     "inHero": 1,
+     "inHero": 2,
      "radius": "pill",
      "height": 50,
      "withShadow": 0,
@@ -1023,7 +925,8 @@
      "mono": 0,
      "upper": 0,
      "heroLabels": [
-      "Skip to content"
+      "Skip to content",
+      "Let’s see"
      ]
     },
     "surfaces": {
@@ -1051,8 +954,8 @@
     },
     "heroMedia": [
      {
-      "type": "svg",
-      "ratio": 0.4
+      "type": "canvas",
+      "ratio": 0.94
      }
     ],
     "nav": {
@@ -1072,62 +975,35 @@
      "w": 768,
      "h": 1024
     },
-    "pageH": 14946,
+    "pageH": 11874,
     "margins": {
      "left": 16,
-     "right": 16
+     "right": 20
     },
     "sections": [
      {
-      "sel": "section.tale",
-      "tag": "section",
-      "top": 65,
-      "height": 6144,
-      "words": 35,
-      "media": 1,
-      "middle": 0,
-      "heading": {
-       "text": "How it works, start to end.",
-       "size": 32,
-       "tag": "h1"
-      },
-      "left": 16,
-      "right": 16,
-      "textLeft": 16,
-      "textRight": 16,
-      "fullBleed": false,
-      "footer": false,
-      "hero": true,
-      "continues": true,
-      "pinned": true
-     },
-     {
       "sel": "section.drop.is-ready",
       "tag": "section",
-      "top": 6209,
-      "height": 5325,
-      "words": 44,
+      "top": 65,
+      "height": 8397,
+      "words": 49,
       "media": 1,
-      "middle": 203,
-      "heading": {
-       "text": "Now see it happen.",
-       "size": 32,
-       "tag": "h2"
-      },
+      "middle": 101,
+      "heading": null,
       "left": 34,
       "right": 42,
       "textLeft": 34,
       "textRight": 42,
       "fullBleed": true,
       "footer": false,
-      "hero": false,
+      "hero": true,
       "continues": true,
       "pinned": true
      },
      {
       "sel": "section.try",
       "tag": "section",
-      "top": 11534,
+      "top": 8462,
       "height": 1436,
       "words": 63,
       "media": 1,
@@ -1150,18 +1026,18 @@
      {
       "sel": "section.dodont",
       "tag": "section",
-      "top": 12970,
+      "top": 9898,
       "height": 618,
-      "words": 7,
-      "media": 0,
-      "middle": 5,
+      "words": 39,
+      "media": 1,
+      "middle": 91,
       "heading": {
        "text": "What",
        "size": 32,
        "tag": "h2"
       },
       "left": 16,
-      "right": 258,
+      "right": 16,
       "textLeft": 16,
       "textRight": 258,
       "fullBleed": false,
@@ -1173,20 +1049,20 @@
      {
       "sel": "section.how-next",
       "tag": "section",
-      "top": 13588,
+      "top": 10516,
       "height": 372,
-      "words": 5,
+      "words": 32,
       "media": 0,
-      "middle": 5,
+      "middle": 0,
       "heading": {
        "text": "See",
        "size": 32,
        "tag": "h2"
       },
       "left": 40,
-      "right": 375,
+      "right": 232,
       "textLeft": 40,
-      "textRight": 375,
+      "textRight": 232,
       "fullBleed": false,
       "footer": false,
       "hero": false,
@@ -1196,7 +1072,7 @@
      {
       "sel": "footer.footer",
       "tag": "footer",
-      "top": 13960,
+      "top": 10888,
       "height": 987,
       "words": 49,
       "media": 0,
@@ -1214,19 +1090,12 @@
      }
     ],
     "gaps": [],
-    "h1s": [
-     {
-      "text": "How it works, start to end.",
-      "size": 32,
-      "top": 206,
-      "firstScreen": true
-     }
-    ],
+    "h1s": [],
     "edgeText": [],
     "edges": [
      {
       "x": 16,
-      "n": 5
+      "n": 3
      },
      {
       "x": 34,
@@ -1273,8 +1142,8 @@
       "n": 1
      }
     ],
-    "leftBlocks": 22,
-    "bodySize": 16,
+    "leftBlocks": 20,
+    "bodySize": 18,
     "stage": false,
     "explains": true,
     "slivers": [],
@@ -1296,18 +1165,18 @@
     0.97,
     0.97,
     0.97,
-    0.96,
     0.97,
-    0.97,
-    0.97,
-    0.97,
-    0.86
+    0.85,
+    0.86,
+    0.92,
+    0.8,
+    0.82
    ],
    "motion": {
-    "elements": 60,
-    "css": 9,
-    "transitions": 23,
-    "scripted": 28,
+    "elements": 40,
+    "css": 8,
+    "transitions": 8,
+    "scripted": 24,
     "videos": 0,
     "playingVideos": 0
    },
@@ -1317,17 +1186,17 @@
      "h": 844
     },
     "page": {
-     "height": 13050,
-     "screens": 15.5,
-     "words": 330,
-     "img": 1,
+     "height": 10518,
+     "screens": 12.5,
+     "words": 275,
+     "img": 2,
      "video": 0,
      "canvas": 1,
-     "svg": 20,
-     "sections": 5,
+     "svg": 18,
+     "sections": 4,
      "horizontalOverflow": 0,
      "overflowCulprits": [],
-     "uiFragments": 2,
+     "uiFragments": 3,
      "uiAbuse": false,
      "realPictures": 0,
      "videoCount": 0,
@@ -1340,31 +1209,31 @@
      "videosNoPoster": 0
     },
     "hero": {
-     "text": "How it works, start to end.",
-     "words": 6,
-     "chars": 27,
+     "text": "How Moya One works",
+     "words": 4,
+     "chars": 18,
      "lines": 2,
-     "size": 32,
-     "vw": 8.2,
+     "size": 48,
+     "vw": 12.3,
      "font": "Plus Jakarta Sans",
      "weight": 700,
-     "tracking": -0.02,
-     "leading": 1.1,
+     "tracking": -0.03,
+     "leading": 1,
      "upper": false,
      "italic": false,
      "mono": false,
      "align": "left",
      "position": "center",
      "widthRatio": 0.92,
-     "top": 157,
+     "top": 281,
      "tag": "h1",
      "kind": "heading"
     },
     "h1": {
-     "text": "How it works, start to end.",
-     "words": 6,
+     "text": "How Moya One works",
+     "words": 4,
      "lines": 2,
-     "size": 32,
+     "size": 48,
      "font": "Plus Jakarta Sans"
     },
     "headings": [
@@ -1390,45 +1259,24 @@
       "kind": "heading"
      },
      {
-      "text": "How it works, start to end.",
-      "words": 6,
-      "chars": 27,
+      "text": "How Moya One works",
+      "words": 4,
+      "chars": 18,
       "lines": 2,
-      "size": 32,
-      "vw": 8.2,
+      "size": 48,
+      "vw": 12.3,
       "font": "Plus Jakarta Sans",
       "weight": 700,
-      "tracking": -0.02,
-      "leading": 1.1,
+      "tracking": -0.03,
+      "leading": 1,
       "upper": false,
       "italic": false,
       "mono": false,
       "align": "left",
       "position": "center",
       "widthRatio": 0.92,
-      "top": 157,
+      "top": 281,
       "tag": "h1",
-      "kind": "heading"
-     },
-     {
-      "text": "Now see it happen.",
-      "words": 4,
-      "chars": 18,
-      "lines": 1,
-      "size": 32,
-      "vw": 8.2,
-      "font": "Plus Jakarta Sans",
-      "weight": 700,
-      "tracking": -0.02,
-      "leading": 1.1,
-      "upper": false,
-      "italic": false,
-      "mono": false,
-      "align": "left",
-      "position": "center",
-      "widthRatio": 0.73,
-      "top": 5157,
-      "tag": "h2",
       "kind": "heading"
      },
      {
@@ -1448,7 +1296,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.92,
-      "top": 9590,
+      "top": 7058,
       "tag": "h2",
       "kind": "heading"
      },
@@ -1469,7 +1317,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.63,
-      "top": 9998,
+      "top": 7466,
       "tag": "p",
       "kind": "statement"
      },
@@ -1490,7 +1338,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.92,
-      "top": 11041,
+      "top": 8509,
       "tag": "h2",
       "kind": "heading"
      },
@@ -1511,7 +1359,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.79,
-      "top": 11688,
+      "top": 9156,
       "tag": "h2",
       "kind": "heading"
      },
@@ -1532,30 +1380,30 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.94,
-      "top": 12999,
+      "top": 10467,
       "tag": "p",
       "kind": "statement"
      }
     ],
     "headingSummary": {
-     "count": 8,
+     "count": 7,
      "maxLines": 2,
      "over2Lines": 0,
      "statements": 2,
      "centered": 0,
-     "medianWords": 4,
+     "medianWords": 5,
      "mixedFontHeadings": 0
     },
     "type": {
      "families": [
       {
        "family": "Inter",
-       "share": 0.72,
+       "share": 0.74,
        "mono": false
       },
       {
        "family": "Plus Jakarta Sans",
-       "share": 0.28,
+       "share": 0.26,
        "mono": false
       }
      ],
@@ -1568,9 +1416,10 @@
       20,
       22,
       32,
+      48,
       80
      ],
-     "sizeCount": 8,
+     "sizeCount": 9,
      "notLoaded": [],
      "body": {
       "font": "Inter",
@@ -1578,7 +1427,7 @@
       "leading": 1.6,
       "weight": 400,
       "tracking": 0,
-      "contrast": 6.9
+      "contrast": null
      },
      "measureChars": 40,
      "max": {
@@ -1595,7 +1444,7 @@
      "microLabelShare": 0,
      "microSamples": [],
      "upperShare": 0,
-     "centerShare": 0.04,
+     "centerShare": 0.05,
      "smallText": 0
     },
     "eyebrows": [],
@@ -1610,17 +1459,8 @@
      "dark": false,
      "sectionBgs": [
       {
-       "color": "#edf5f5",
-       "top": 65,
-       "hsl": {
-        "h": 180,
-        "s": 0.29,
-        "l": 0.95
-       }
-      },
-      {
        "color": "#111827",
-       "top": 5129,
+       "top": 65,
        "hsl": {
         "h": 221,
         "s": 0.39,
@@ -1629,7 +1469,7 @@
       },
       {
        "color": "#f3f4f6",
-       "top": 9518,
+       "top": 6986,
        "hsl": {
         "h": 220,
         "s": 0.14,
@@ -1638,7 +1478,7 @@
       },
       {
        "color": "#fafaf7",
-       "top": 9841,
+       "top": 7309,
        "hsl": {
         "h": 60,
         "s": 0.23,
@@ -1649,22 +1489,22 @@
      "textColors": [
       {
        "color": "#4b5563",
-       "share": 0.38
+       "share": 0.33
       },
       {
        "color": "#b9bbbd",
-       "share": 0.23
-      },
-      {
-       "color": "#111827",
-       "share": 0.19
+       "share": 0.29
       },
       {
        "color": "#fafaf7",
-       "share": 0.18
+       "share": 0.2
       },
       {
-       "color": "#dedfde",
+       "color": "#111827",
+       "share": 0.16
+      },
+      {
+       "color": "#f97316",
        "share": 0.01
       }
      ],
@@ -1681,7 +1521,7 @@
     },
     "buttons": {
      "count": 4,
-     "inHero": 1,
+     "inHero": 2,
      "radius": "pill",
      "height": 50,
      "withShadow": 0,
@@ -1689,7 +1529,8 @@
      "mono": 0,
      "upper": 0,
      "heroLabels": [
-      "Skip to content"
+      "Skip to content",
+      "Let’s see"
      ]
     },
     "surfaces": {
@@ -1717,8 +1558,8 @@
     },
     "heroMedia": [
      {
-      "type": "svg",
-      "ratio": 0.34
+      "type": "canvas",
+      "ratio": 0.92
      }
     ],
     "nav": {
@@ -1738,62 +1579,35 @@
      "w": 390,
      "h": 844
     },
-    "pageH": 13050,
+    "pageH": 10518,
     "margins": {
      "left": 16,
      "right": 16
     },
     "sections": [
      {
-      "sel": "section.tale",
+      "sel": "section.drop.is-ready",
       "tag": "section",
       "top": 65,
-      "height": 5064,
-      "words": 35,
+      "height": 6921,
+      "words": 11,
       "media": 1,
       "middle": 0,
-      "heading": {
-       "text": "How it works, start to end.",
-       "size": 32,
-       "tag": "h1"
-      },
-      "left": 16,
-      "right": 16,
-      "textLeft": 16,
-      "textRight": 16,
-      "fullBleed": false,
+      "heading": null,
+      "left": 103,
+      "right": 126,
+      "textLeft": 103,
+      "textRight": 126,
+      "fullBleed": true,
       "footer": false,
       "hero": true,
       "continues": true,
       "pinned": true
      },
      {
-      "sel": "section.drop.is-ready",
-      "tag": "section",
-      "top": 5129,
-      "height": 4389,
-      "words": 38,
-      "media": 1,
-      "middle": 0,
-      "heading": {
-       "text": "Now see it happen.",
-       "size": 32,
-       "tag": "h2"
-      },
-      "left": 34,
-      "right": 58,
-      "textLeft": 34,
-      "textRight": 58,
-      "fullBleed": true,
-      "footer": false,
-      "hero": false,
-      "continues": true,
-      "pinned": true
-     },
-     {
       "sel": "section.try",
       "tag": "section",
-      "top": 9518,
+      "top": 6986,
       "height": 1451,
       "words": 63,
       "media": 1,
@@ -1816,20 +1630,20 @@
      {
       "sel": "section.dodont",
       "tag": "section",
-      "top": 10969,
+      "top": 8437,
       "height": 680,
-      "words": 7,
-      "media": 0,
-      "middle": 1,
+      "words": 39,
+      "media": 1,
+      "middle": 0,
       "heading": {
        "text": "What",
        "size": 32,
        "tag": "h2"
       },
       "left": 16,
-      "right": 89,
+      "right": 16,
       "textLeft": 16,
-      "textRight": 89,
+      "textRight": 69,
       "fullBleed": false,
       "footer": false,
       "hero": false,
@@ -1839,20 +1653,20 @@
      {
       "sel": "section.how-next",
       "tag": "section",
-      "top": 11648,
+      "top": 9116,
       "height": 436,
-      "words": 5,
+      "words": 32,
       "media": 0,
-      "middle": 2,
+      "middle": 0,
       "heading": {
        "text": "See",
        "size": 32,
        "tag": "h2"
       },
       "left": 40,
-      "right": 132,
+      "right": 51,
       "textLeft": 40,
-      "textRight": 132,
+      "textRight": 51,
       "fullBleed": false,
       "footer": false,
       "hero": false,
@@ -1862,7 +1676,7 @@
      {
       "sel": "footer.footer",
       "tag": "footer",
-      "top": 12084,
+      "top": 9552,
       "height": 966,
       "words": 49,
       "media": 0,
@@ -1880,23 +1694,16 @@
      }
     ],
     "gaps": [],
-    "h1s": [
-     {
-      "text": "How it works, start to end.",
-      "size": 32,
-      "top": 157,
-      "firstScreen": true
-     }
-    ],
+    "h1s": [],
     "edgeText": [],
     "edges": [
      {
       "x": 16,
-      "n": 7
+      "n": 5
      },
      {
-      "x": 34,
-      "n": 4
+      "x": 40,
+      "n": 3
      },
      {
       "x": 102,
@@ -1927,10 +1734,10 @@
       "n": 1
      }
     ],
-    "leftBlocks": 22,
-    "bodySize": 16,
+    "leftBlocks": 19,
+    "bodySize": 18,
     "stage": false,
-    "explains": true,
+    "explains": false,
     "slivers": [],
     "voidShare": 0,
     "voidBox": null
@@ -1963,17 +1770,6 @@
    ]
   },
   {
-   "level": "WARN",
-   "id": "grey-body",
-   "width": 1440,
-   "message": "The running text is a soft grey on its ground (6.9:1).",
-   "fix": "Set body copy in the full ink (7:1 or more). Keep the muted ink for secondary notes; pages read thin and unfinished when everything is grey.",
-   "alsoAt": [
-    768,
-    390
-   ]
-  },
-  {
    "level": "FAIL",
    "id": "few-pictures",
    "width": 1440,
@@ -1988,10 +1784,21 @@
    "fix": "Look for one honest clip with scripts/assets.mjs --video (the place, the material, the process) and use it as a muted loop with a poster frame. Defend its absence only if no clip fits the subject."
   },
   {
+   "level": "FAIL",
+   "id": "no-title",
+   "width": 1440,
+   "message": "The page has no visible h1.",
+   "fix": "Give the first screen a clear title in an h1 that says what this is (a name with what it does, the product with what it is for, the event with its date and place).",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
    "level": "WARN",
    "id": "ragged-edges",
    "width": 1440,
-   "message": "Left-aligned text starts at 12 different lines (120px, 138px, 184px, 238px, 511px, 547px, 271px); the three most used hold only 36% of it.",
+   "message": "Left-aligned text starts at 12 different lines (184px, 120px, 238px, 511px, 547px, 271px, 322px); the three most used hold only 37% of it.",
    "fix": "Pick two or three anchor lines from the grid and start every heading and paragraph on one of them.",
    "alsoAt": [
     768
@@ -2001,7 +1808,7 @@
    "level": "WARN",
    "id": "pinned-over-picture",
    "width": 1440,
-   "message": "Pinned large text slides across pictures while the page scrolls: \"Now see it happen.\" (screen 7, 100% over a picture)",
+   "message": "Pinned large text slides across pictures while the page scrolls: \"How Moya One works\" (screen 7, 100% over a picture); \"That’s Moya One, start to end.\" (screen 8, 100% over a picture)",
    "fix": "Jurors read a pinned title crossing drawings or photographs as a collision. Keep the pictures in the column the title does not occupy, or unpin it.",
    "alsoAt": [
     768,
@@ -2012,8 +1819,22 @@
    "level": "WARN",
    "id": "long-pin",
    "width": 1440,
-   "message": "The same large text stays on screen for 6 screens in a row: \"How it works, start to end.\"",
+   "message": "The same large text stays on screen for 7 screens in a row: \"How Moya One works\"",
    "fix": "A pinned element earns two screens, and something must change at each. Shorten the run or give every screen its own content."
+  },
+  {
+   "level": "WARN",
+   "id": "size-count",
+   "width": 768,
+   "message": "10 different font sizes (12, 13, 15, 16, 18, 20, 22, 32, 48, 165).",
+   "fix": "A page needs about five: display, heading, lead, body, small."
+  },
+  {
+   "level": "FAIL",
+   "id": "covered-text",
+   "width": 390,
+   "message": "Large text lies under another element at some scroll position: \"litres.\" (screen 11, 25% hidden)",
+   "fix": "Nothing may sit on top of a headline or statement. Move the picture, shorten the pinned run, or raise the text above it (z-index) and give it a ground."
   }
  ],
  "images": [
