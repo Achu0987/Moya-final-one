@@ -1919,3 +1919,162 @@
   gap: 16px 28px;
   margin-top: 8px;
 }
+
+/* ---------- The opening moment (components/common/Intro.js) ----------
+   0 to 0.5s the tower is drawn; 0.3 to 1.1s the line rises; 0.55 to 1.3s each flat lights as the line passes;
+   1.1s the name; 1.75 to 2.35s the screen drains down like water. Every step stays under 3s (CLAUDE.md). */
+.intro {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: grid;
+  place-items: center;
+  background: var(--ink);
+  color: var(--base);
+  animation: intro-drain 0.6s var(--ease-fill) 1.75s both;
+}
+
+/* the water surface, carried down as the screen drains */
+.intro::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 3px;
+  background: var(--orange);
+}
+
+@keyframes intro-drain {
+  to {
+    transform: translateY(100%);
+    visibility: hidden;
+  }
+}
+
+.intro.is-skip {
+  animation: intro-drain 0.35s var(--ease-fill) both;
+}
+
+.intro-inner {
+  display: grid;
+  justify-items: center;
+  gap: 6px;
+  animation: intro-out 0.35s var(--ease-enter) 1.6s both;
+}
+
+@keyframes intro-out {
+  to {
+    opacity: 0;
+    transform: translateY(-12px);
+  }
+}
+
+.intro-art {
+  width: min(260px, 58vw);
+  height: auto;
+  overflow: visible;
+}
+
+.intro-tower,
+.intro-plant,
+.intro-ground {
+  fill: none;
+  stroke: var(--on-ink-muted);
+  stroke-width: 1.5;
+  stroke-dasharray: 1;
+  stroke-dashoffset: 1;
+  animation: intro-draw 0.5s var(--ease-enter) both;
+}
+
+.intro-ground {
+  stroke: var(--ink-raised);
+  animation-delay: 0.05s;
+}
+
+.intro-plant {
+  animation-delay: 0.15s;
+}
+
+.intro-line {
+  fill: none;
+  stroke: var(--orange);
+  stroke-width: 3;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-dasharray: 1;
+  stroke-dashoffset: 1;
+  animation: intro-draw 0.8s var(--ease-fill) 0.3s both;
+}
+
+@keyframes intro-draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+/* a flat: dark until the line reaches its floor, then water in the window and a branch to it */
+.intro-win {
+  fill: var(--ink-raised);
+}
+
+/* water runs into each window from the branch side */
+.intro-water {
+  fill: var(--water);
+  transform-box: fill-box;
+  transform-origin: right;
+  animation: intro-lit 0.35s var(--ease-fill) calc(0.55s + var(--f) * 0.09s) both;
+}
+
+.intro-floor path {
+  stroke: var(--orange);
+  stroke-width: 2;
+  stroke-linecap: round;
+  opacity: 0;
+  animation: intro-branch 0.25s var(--ease-enter) calc(0.5s + var(--f) * 0.09s) both;
+}
+
+@keyframes intro-lit {
+  from {
+    transform: scaleX(0);
+  }
+}
+
+@keyframes intro-branch {
+  to {
+    opacity: 1;
+  }
+}
+
+.intro-name {
+  margin-top: 10px;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 40px;
+  letter-spacing: -0.03em;
+  animation: intro-arrive 0.45s var(--ease-enter) 1.05s both;
+}
+
+.intro-line-text {
+  font-size: var(--fs-body);
+  color: var(--on-ink-muted);
+  animation: intro-arrive 0.45s var(--ease-enter) 1.2s both;
+}
+
+@keyframes intro-arrive {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+}
+
+/* already seen in this visit, or reduced motion: no opening moment at all */
+[data-intro='seen'] .intro {
+  display: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .intro {
+    display: none;
+  }
+}
