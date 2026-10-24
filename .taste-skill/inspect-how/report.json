@@ -1,26 +1,30 @@
 {
  "url": "http://localhost:3100/b2c/how-it-works",
- "at": "2026-10-23T11:49:47.545Z",
+ "at": "2026-10-24T03:12:48.743Z",
  "allow": [],
  "viewports": [
   {
    "width": 1440,
    "height": 900,
    "load": "load",
-   "screens": 6,
+   "screens": 10,
    "filled": [
-    0.44,
-    0.47,
-    0.43,
-    0.48,
-    0.58,
-    0.81
+    0.46,
+    0.89,
+    0.96,
+    0.96,
+    0.96,
+    0.96,
+    0.93,
+    0.73,
+    0.68,
+    0.95
    ],
    "motion": {
-    "elements": 46,
-    "css": 1,
-    "transitions": 10,
-    "scripted": 35,
+    "elements": 50,
+    "css": 8,
+    "transitions": 19,
+    "scripted": 23,
     "videos": 0,
     "playingVideos": 0
    },
@@ -30,21 +34,21 @@
      "h": 900
     },
     "page": {
-     "height": 5035,
-     "screens": 5.6,
-     "words": 302,
-     "img": 0,
+     "height": 8722,
+     "screens": 9.7,
+     "words": 357,
+     "img": 1,
      "video": 0,
-     "canvas": 2,
-     "svg": 10,
-     "sections": 2,
+     "canvas": 1,
+     "svg": 20,
+     "sections": 5,
      "horizontalOverflow": 0,
      "overflowCulprits": [],
-     "uiFragments": 1,
+     "uiFragments": 2,
      "uiAbuse": false,
      "realPictures": 0,
      "videoCount": 0,
-     "uiPictures": 0,
+     "uiPictures": 1,
      "pictureSamples": [],
      "blendText": 0,
      "sideScrollers": 0,
@@ -53,9 +57,9 @@
      "videosNoPoster": 0
     },
     "hero": {
-     "text": "From the building to your glass.",
+     "text": "How it works, start to end.",
      "words": 6,
-     "chars": 32,
+     "chars": 27,
      "lines": 2,
      "size": 64,
      "vw": 4.4,
@@ -68,13 +72,13 @@
      "mono": false,
      "align": "left",
      "position": "left",
-     "widthRatio": 0.41,
-     "top": 349,
+     "widthRatio": 0.48,
+     "top": 169,
      "tag": "h1",
      "kind": "heading"
     },
     "h1": {
-     "text": "From the building to your glass.",
+     "text": "How it works, start to end.",
      "words": 6,
      "lines": 2,
      "size": 64,
@@ -82,30 +86,9 @@
     },
     "headings": [
      {
-      "text": "0 / 12",
-      "words": 3,
-      "chars": 6,
-      "lines": 1,
-      "size": 32,
-      "vw": 2.2,
-      "font": "Plus Jakarta Sans",
-      "weight": 700,
-      "tracking": 0,
-      "leading": 1.1,
-      "upper": false,
-      "italic": false,
-      "mono": false,
-      "align": "left",
-      "position": "center",
-      "widthRatio": 0.04,
-      "top": 159,
-      "tag": "strong",
-      "kind": "heading"
-     },
-     {
-      "text": "From the building to your glass.",
+      "text": "How it works, start to end.",
       "words": 6,
-      "chars": 32,
+      "chars": 27,
       "lines": 2,
       "size": 64,
       "vw": 4.4,
@@ -118,15 +101,15 @@
       "mono": false,
       "align": "left",
       "position": "left",
-      "widthRatio": 0.41,
-      "top": 349,
+      "widthRatio": 0.48,
+      "top": 169,
       "tag": "h1",
       "kind": "heading"
      },
      {
-      "text": "It starts in the basement.",
-      "words": 5,
-      "chars": 26,
+      "text": "Now see it happen.",
+      "words": 4,
+      "chars": 18,
       "lines": 1,
       "size": 44,
       "vw": 3.1,
@@ -139,78 +122,15 @@
       "mono": false,
       "align": "left",
       "position": "left",
-      "widthRatio": 0.38,
-      "top": 1101,
+      "widthRatio": 0.27,
+      "top": 1080,
       "tag": "h2",
       "kind": "heading"
      },
      {
-      "text": "One line runs up to your flat.",
-      "words": 7,
-      "chars": 30,
-      "lines": 2,
-      "size": 44,
-      "vw": 3.1,
-      "font": "Plus Jakarta Sans",
-      "weight": 700,
-      "tracking": -0.02,
-      "leading": 1.1,
-      "upper": false,
-      "italic": false,
-      "mono": false,
-      "align": "left",
-      "position": "left",
-      "widthRatio": 0.38,
-      "top": 1637,
-      "tag": "h2",
-      "kind": "heading"
-     },
-     {
-      "text": "Your kitchen gets a Moya1™ control unit.",
-      "words": 7,
-      "chars": 40,
-      "lines": 2,
-      "size": 44,
-      "vw": 3.1,
-      "font": "Plus Jakarta Sans",
-      "weight": 700,
-      "tracking": -0.02,
-      "leading": 1.1,
-      "upper": false,
-      "italic": false,
-      "mono": false,
-      "align": "left",
-      "position": "left",
-      "widthRatio": 0.38,
-      "top": 2229,
-      "tag": "h2",
-      "kind": "heading"
-     },
-     {
-      "text": "You recharge litres from your phone.",
-      "words": 6,
-      "chars": 36,
-      "lines": 2,
-      "size": 44,
-      "vw": 3.1,
-      "font": "Plus Jakarta Sans",
-      "weight": 700,
-      "tracking": -0.02,
-      "leading": 1.1,
-      "upper": false,
-      "italic": false,
-      "mono": false,
-      "align": "left",
-      "position": "left",
-      "widthRatio": 0.38,
-      "top": 2788,
-      "tag": "h2",
-      "kind": "heading"
-     },
-     {
-      "text": "Then you pour a glass.",
+      "text": "Try it: recharge, then pour.",
       "words": 5,
-      "chars": 22,
+      "chars": 28,
       "lines": 1,
       "size": 44,
       "vw": 3.1,
@@ -223,8 +143,50 @@
       "mono": false,
       "align": "left",
       "position": "left",
-      "widthRatio": 0.38,
-      "top": 3405,
+      "widthRatio": 0.41,
+      "top": 5886,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "120.00 litres",
+      "words": 2,
+      "chars": 13,
+      "lines": 1,
+      "size": 44,
+      "vw": 3.1,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": -0.02,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.17,
+      "top": 6242,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "What you do. What you never do.",
+      "words": 7,
+      "chars": 31,
+      "lines": 1,
+      "size": 44,
+      "vw": 3.1,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": -0.02,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.83,
+      "top": 6856,
       "tag": "h2",
       "kind": "heading"
      },
@@ -245,7 +207,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.43,
-      "top": 3925,
+      "top": 7436,
       "tag": "h2",
       "kind": "heading"
      },
@@ -266,16 +228,16 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.85,
-      "top": 4865,
+      "top": 8552,
       "tag": "p",
       "kind": "statement"
      }
     ],
     "headingSummary": {
-     "count": 9,
+     "count": 7,
      "maxLines": 2,
      "over2Lines": 0,
-     "statements": 1,
+     "statements": 2,
      "centered": 0,
      "medianWords": 5,
      "mixedFontHeadings": 0
@@ -284,12 +246,12 @@
      "families": [
       {
        "family": "Inter",
-       "share": 0.83,
+       "share": 0.71,
        "mono": false
       },
       {
        "family": "Plus Jakarta Sans",
-       "share": 0.17,
+       "share": 0.29,
        "mono": false
       }
      ],
@@ -314,7 +276,7 @@
       "tracking": 0,
       "contrast": 7.2
      },
-     "measureChars": 50,
+     "measureChars": 49,
      "max": {
       "size": 269,
       "vw": 18.7,
@@ -329,7 +291,7 @@
      "microLabelShare": 0,
      "microSamples": [],
      "upperShare": 0,
-     "centerShare": 0,
+     "centerShare": 0.04,
      "smallText": 0
     },
     "eyebrows": [],
@@ -345,7 +307,7 @@
      "sectionBgs": [
       {
        "color": "#111827",
-       "top": 112,
+       "top": 1038,
        "hsl": {
         "h": 221,
         "s": 0.39,
@@ -354,7 +316,7 @@
       },
       {
        "color": "#f3f4f6",
-       "top": 3853,
+       "top": 5718,
        "hsl": {
         "h": 220,
         "s": 0.14,
@@ -365,19 +327,19 @@
      "textColors": [
       {
        "color": "#4b5563",
-       "share": 0.59
+       "share": 0.43
       },
       {
        "color": "#111827",
-       "share": 0.2
+       "share": 0.21
       },
       {
        "color": "#b9bbbd",
-       "share": 0.15
+       "share": 0.19
       },
       {
        "color": "#fafaf7",
-       "share": 0.06
+       "share": 0.16
       }
      ],
      "button": {
@@ -387,22 +349,23 @@
        "s": 0.39,
        "l": 0.11
       },
-      "fg": "#fafaf7"
+      "fg": "#111827"
      },
      "lowContrast": []
     },
     "buttons": {
-     "count": 3,
-     "inHero": 2,
+     "count": 6,
+     "inHero": 3,
      "radius": "pill",
-     "height": 50,
+     "height": 44,
      "withShadow": 0,
      "withGradient": 0,
      "mono": 0,
      "upper": 0,
      "heroLabels": [
       "Skip to content",
-      "Contact"
+      "Contact",
+      "Pause"
      ]
     },
     "surfaces": {
@@ -420,22 +383,18 @@
      "outlinedBoxes": 0,
      "dashed": 0,
      "blurred": 0,
-     "roundedBoxes": 3,
+     "roundedBoxes": 12,
      "boxRadius": 20,
-     "squareMedia": 0,
-     "roundedMedia": 1,
-     "mediaRadius": 20,
+     "squareMedia": 1,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
      "textShadow": 0,
      "cardRows": []
     },
     "heroMedia": [
      {
-      "type": "canvas",
-      "ratio": 0.33
-     },
-     {
       "type": "svg",
-      "ratio": 0.33
+      "ratio": 0.29
      }
     ],
     "nav": {
@@ -455,29 +414,29 @@
      "w": 1440,
      "h": 900
     },
-    "pageH": 5035,
+    "pageH": 8722,
     "margins": {
      "left": 120,
      "right": 120
     },
     "sections": [
      {
-      "sel": "section.journey",
+      "sel": "section.how-intro",
       "tag": "section",
       "top": 89,
-      "height": 3764,
-      "words": 191,
-      "media": 2,
-      "middle": 71,
+      "height": 950,
+      "words": 94,
+      "media": 1,
+      "middle": 24,
       "heading": {
-       "text": "From the building",
+       "text": "How it works,",
        "size": 64,
        "tag": "h1"
       },
       "left": 120,
-      "right": 92,
+      "right": 120,
       "textLeft": 120,
-      "textRight": 92,
+      "textRight": 127,
       "fullBleed": false,
       "footer": false,
       "hero": true,
@@ -485,11 +444,76 @@
       "pinned": true
      },
      {
+      "sel": "section.drop.is-ready",
+      "tag": "section",
+      "top": 1038,
+      "height": 4680,
+      "words": 6,
+      "media": 1,
+      "middle": 22,
+      "heading": null,
+      "left": 1124,
+      "right": 114,
+      "textLeft": 1124,
+      "textRight": 114,
+      "fullBleed": true,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": true
+     },
+     {
+      "sel": "section.try",
+      "tag": "section",
+      "top": 5718,
+      "height": 1017,
+      "words": 63,
+      "media": 1,
+      "middle": 116,
+      "heading": {
+       "text": "Try",
+       "size": 44,
+       "tag": "h2"
+      },
+      "left": 120,
+      "right": 125,
+      "textLeft": 120,
+      "textRight": 125,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.dodont",
+      "tag": "section",
+      "top": 6736,
+      "height": 628,
+      "words": 39,
+      "media": 1,
+      "middle": 41,
+      "heading": {
+       "text": "What",
+       "size": 44,
+       "tag": "h2"
+      },
+      "left": 120,
+      "right": 133,
+      "textLeft": 120,
+      "textRight": 363,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
       "sel": "section.how-next",
       "tag": "section",
-      "top": 3853,
+      "top": 7364,
       "height": 506,
-      "words": 33,
+      "words": 32,
       "media": 0,
       "middle": 0,
       "heading": {
@@ -510,9 +534,9 @@
      {
       "sel": "footer.footer",
       "tag": "footer",
-      "top": 4359,
-      "height": 676,
-      "words": 44,
+      "top": 7871,
+      "height": 852,
+      "words": 49,
       "media": 0,
       "middle": 282,
       "heading": null,
@@ -530,9 +554,9 @@
     "gaps": [],
     "h1s": [
      {
-      "text": "From the building to your glass.",
+      "text": "How it works, start to end.",
       "size": 64,
-      "top": 349,
+      "top": 169,
       "firstScreen": true
      }
     ],
@@ -540,10 +564,26 @@
     "edges": [
      {
       "x": 120,
-      "n": 3
+      "n": 4
      },
      {
       "x": 184,
+      "n": 3
+     },
+     {
+      "x": 238,
+      "n": 2
+     },
+     {
+      "x": 511,
+      "n": 2
+     },
+     {
+      "x": 547,
+      "n": 2
+     },
+     {
+      "x": 834,
       "n": 2
      },
      {
@@ -551,29 +591,37 @@
       "n": 1
      },
      {
+      "x": 322,
+      "n": 1
+     },
+     {
       "x": 371,
       "n": 1
      },
      {
-      "x": 511,
+      "x": 401,
       "n": 1
      },
      {
-      "x": 553,
+      "x": 447,
+      "n": 1
+     },
+     {
+      "x": 603,
       "n": 1
      }
     ],
-    "leftBlocks": 9,
+    "leftBlocks": 22,
     "bodySize": 20,
     "stage": false,
     "explains": true,
     "slivers": [],
-    "voidShare": 0.17,
+    "voidShare": 0.07,
     "voidBox": {
      "x": 0,
-     "y": 600,
-     "w": 720,
-     "h": 300
+     "y": 120,
+     "w": 120,
+     "h": 780
     }
    },
    "app": null,
@@ -583,20 +631,24 @@
    "width": 768,
    "height": 1024,
    "load": "load",
-   "screens": 6,
+   "screens": 10,
    "filled": [
-    0.58,
-    0.57,
-    0.54,
-    0.56,
+    0.68,
+    0.83,
+    0.96,
+    0.96,
+    0.96,
+    0.96,
     0.89,
-    0.88
+    0.87,
+    0.73,
+    0.93
    ],
    "motion": {
-    "elements": 46,
-    "css": 1,
-    "transitions": 10,
-    "scripted": 35,
+    "elements": 39,
+    "css": 7,
+    "transitions": 9,
+    "scripted": 23,
     "videos": 0,
     "playingVideos": 0
    },
@@ -606,21 +658,21 @@
      "h": 1024
     },
     "page": {
-     "height": 5255,
-     "screens": 5.1,
-     "words": 287,
-     "img": 0,
+     "height": 10013,
+     "screens": 9.8,
+     "words": 360,
+     "img": 1,
      "video": 0,
-     "canvas": 2,
-     "svg": 10,
-     "sections": 2,
+     "canvas": 1,
+     "svg": 20,
+     "sections": 5,
      "horizontalOverflow": 0,
      "overflowCulprits": [],
-     "uiFragments": 1,
+     "uiFragments": 2,
      "uiAbuse": false,
      "realPictures": 0,
      "videoCount": 0,
-     "uiPictures": 0,
+     "uiPictures": 1,
      "pictureSamples": [],
      "blendText": 0,
      "sideScrollers": 0,
@@ -629,9 +681,9 @@
      "videosNoPoster": 0
     },
     "hero": {
-     "text": "From the building to your glass.",
+     "text": "How it works, start to end.",
      "words": 6,
-     "chars": 32,
+     "chars": 27,
      "lines": 2,
      "size": 40,
      "vw": 5.2,
@@ -645,12 +697,12 @@
      "align": "left",
      "position": "center",
      "widthRatio": 0.96,
-     "top": 105,
+     "top": 113,
      "tag": "h1",
      "kind": "heading"
     },
     "h1": {
-     "text": "From the building to your glass.",
+     "text": "How it works, start to end.",
      "words": 6,
      "lines": 2,
      "size": 40,
@@ -658,9 +710,9 @@
     },
     "headings": [
      {
-      "text": "From the building to your glass.",
+      "text": "How it works, start to end.",
       "words": 6,
-      "chars": 32,
+      "chars": 27,
       "lines": 2,
       "size": 40,
       "vw": 5.2,
@@ -674,35 +726,35 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.96,
-      "top": 105,
+      "top": 113,
       "tag": "h1",
       "kind": "heading"
      },
      {
-      "text": "0 / 12",
-      "words": 3,
-      "chars": 6,
+      "text": "Now see it happen.",
+      "words": 4,
+      "chars": 18,
       "lines": 1,
       "size": 32,
       "vw": 4.2,
       "font": "Plus Jakarta Sans",
       "weight": 700,
-      "tracking": 0,
+      "tracking": -0.02,
       "leading": 1.1,
       "upper": false,
       "italic": false,
       "mono": false,
       "align": "left",
       "position": "left",
-      "widthRatio": 0.07,
-      "top": 376,
-      "tag": "strong",
+      "widthRatio": 0.37,
+      "top": 1303,
+      "tag": "h2",
       "kind": "heading"
      },
      {
-      "text": "It starts in the basement.",
+      "text": "Try it: recharge, then pour.",
       "words": 5,
-      "chars": 26,
+      "chars": 28,
       "lines": 1,
       "size": 32,
       "vw": 4.2,
@@ -714,16 +766,37 @@
       "italic": false,
       "mono": false,
       "align": "left",
-      "position": "left",
-      "widthRatio": 0.71,
-      "top": 1113,
+      "position": "center",
+      "widthRatio": 0.96,
+      "top": 6672,
       "tag": "h2",
       "kind": "heading"
      },
      {
-      "text": "One line runs up to your flat.",
+      "text": "120.00 litres",
+      "words": 2,
+      "chars": 13,
+      "lines": 1,
+      "size": 44,
+      "vw": 5.7,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": -0.02,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.32,
+      "top": 7016,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "What you do. What you never do.",
       "words": 7,
-      "chars": 30,
+      "chars": 31,
       "lines": 1,
       "size": 32,
       "vw": 4.2,
@@ -735,72 +808,9 @@
       "italic": false,
       "mono": false,
       "align": "left",
-      "position": "left",
-      "widthRatio": 0.71,
-      "top": 1734,
-      "tag": "h2",
-      "kind": "heading"
-     },
-     {
-      "text": "Your kitchen gets a Moya1™ control unit.",
-      "words": 7,
-      "chars": 40,
-      "lines": 2,
-      "size": 32,
-      "vw": 4.2,
-      "font": "Plus Jakarta Sans",
-      "weight": 700,
-      "tracking": -0.02,
-      "leading": 1.1,
-      "upper": false,
-      "italic": false,
-      "mono": false,
-      "align": "left",
-      "position": "left",
-      "widthRatio": 0.71,
-      "top": 2366,
-      "tag": "h2",
-      "kind": "heading"
-     },
-     {
-      "text": "You recharge litres from your phone.",
-      "words": 6,
-      "chars": 36,
-      "lines": 1,
-      "size": 32,
-      "vw": 4.2,
-      "font": "Plus Jakarta Sans",
-      "weight": 700,
-      "tracking": -0.02,
-      "leading": 1.1,
-      "upper": false,
-      "italic": false,
-      "mono": false,
-      "align": "left",
-      "position": "left",
-      "widthRatio": 0.71,
-      "top": 3002,
-      "tag": "h2",
-      "kind": "heading"
-     },
-     {
-      "text": "Then you pour a glass.",
-      "words": 5,
-      "chars": 22,
-      "lines": 1,
-      "size": 32,
-      "vw": 4.2,
-      "font": "Plus Jakarta Sans",
-      "weight": 700,
-      "tracking": -0.02,
-      "leading": 1.1,
-      "upper": false,
-      "italic": false,
-      "mono": false,
-      "align": "left",
-      "position": "left",
-      "widthRatio": 0.71,
-      "top": 3653,
+      "position": "center",
+      "widthRatio": 0.96,
+      "top": 8108,
       "tag": "h2",
       "kind": "heading"
      },
@@ -821,7 +831,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.9,
-      "top": 4113,
+      "top": 8695,
       "tag": "h2",
       "kind": "heading"
      },
@@ -842,16 +852,16 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.94,
-      "top": 5151,
+      "top": 9909,
       "tag": "p",
       "kind": "statement"
      }
     ],
     "headingSummary": {
-     "count": 9,
+     "count": 7,
      "maxLines": 2,
      "over2Lines": 0,
-     "statements": 1,
+     "statements": 2,
      "centered": 0,
      "medianWords": 5,
      "mixedFontHeadings": 0
@@ -860,12 +870,12 @@
      "families": [
       {
        "family": "Inter",
-       "share": 0.82,
+       "share": 0.74,
        "mono": false
       },
       {
        "family": "Plus Jakarta Sans",
-       "share": 0.18,
+       "share": 0.26,
        "mono": false
       }
      ],
@@ -906,7 +916,7 @@
      "microLabelShare": 0,
      "microSamples": [],
      "upperShare": 0,
-     "centerShare": 0,
+     "centerShare": 0.04,
      "smallText": 0
     },
     "eyebrows": [],
@@ -921,47 +931,65 @@
      "dark": false,
      "sectionBgs": [
       {
+       "color": "#edf5f5",
+       "top": 347,
+       "hsl": {
+        "h": 180,
+        "s": 0.29,
+        "l": 0.95
+       }
+      },
+      {
        "color": "#111827",
-       "top": 331,
+       "top": 1275,
        "hsl": {
         "h": 221,
         "s": 0.39,
         "l": 0.11
+       }
+      },
+      {
+       "color": "#f3f4f6",
+       "top": 6600,
+       "hsl": {
+        "h": 220,
+        "s": 0.14,
+        "l": 0.96
        }
       }
      ],
      "textColors": [
       {
        "color": "#4b5563",
-       "share": 0.59
-      },
-      {
-       "color": "#111827",
-       "share": 0.21
+       "share": 0.44
       },
       {
        "color": "#b9bbbd",
-       "share": 0.13
+       "share": 0.21
       },
       {
        "color": "#fafaf7",
-       "share": 0.06
+       "share": 0.18
+      },
+      {
+       "color": "#111827",
+       "share": 0.17
       }
      ],
      "button": {
-      "bg": "#111827",
+      "bg": "#fafaf7",
       "hsl": {
-       "h": 221,
-       "s": 0.39,
-       "l": 0.11
+       "h": 60,
+       "s": 0.23,
+       "l": 0.97
       },
-      "fg": "#fafaf7"
+      "fg": "#111827"
      },
      "lowContrast": []
     },
     "buttons": {
-     "count": 2,
-     "inHero": 1,
+     "count": 5,
+     "inHero": 2,
      "radius": "pill",
      "height": 50,
      "withShadow": 0,
@@ -969,7 +997,8 @@
      "mono": 0,
      "upper": 0,
      "heroLabels": [
-      "Skip to content"
+      "Skip to content",
+      "Pause"
      ]
     },
     "surfaces": {
@@ -987,22 +1016,18 @@
      "outlinedBoxes": 0,
      "dashed": 0,
      "blurred": 0,
-     "roundedBoxes": 3,
+     "roundedBoxes": 10,
      "boxRadius": 20,
-     "squareMedia": 0,
-     "roundedMedia": 1,
-     "mediaRadius": 20,
+     "squareMedia": 1,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
      "textShadow": 0,
      "cardRows": []
     },
     "heroMedia": [
      {
-      "type": "canvas",
-      "ratio": 0.44
-     },
-     {
       "type": "svg",
-      "ratio": 0.44
+      "ratio": 0.55
      }
     ],
     "nav": {
@@ -1022,29 +1047,29 @@
      "w": 768,
      "h": 1024
     },
-    "pageH": 5255,
+    "pageH": 10013,
     "margins": {
      "left": 16,
      "right": 16
     },
     "sections": [
      {
-      "sel": "section.journey",
+      "sel": "section.how-intro",
       "tag": "section",
       "top": 65,
-      "height": 4008,
-      "words": 178,
-      "media": 2,
+      "height": 1210,
+      "words": 57,
+      "media": 1,
       "middle": 0,
       "heading": {
-       "text": "From the building",
+       "text": "How it works,",
        "size": 40,
        "tag": "h1"
       },
       "left": 16,
       "right": 16,
       "textLeft": 16,
-      "textRight": 122,
+      "textRight": 31,
       "fullBleed": false,
       "footer": false,
       "hero": true,
@@ -1052,11 +1077,80 @@
       "pinned": false
      },
      {
+      "sel": "section.drop.is-ready",
+      "tag": "section",
+      "top": 1275,
+      "height": 5325,
+      "words": 44,
+      "media": 1,
+      "middle": 203,
+      "heading": {
+       "text": "Now see it happen.",
+       "size": 32,
+       "tag": "h2"
+      },
+      "left": 34,
+      "right": 42,
+      "textLeft": 34,
+      "textRight": 42,
+      "fullBleed": true,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": true
+     },
+     {
+      "sel": "section.try",
+      "tag": "section",
+      "top": 6600,
+      "height": 1436,
+      "words": 63,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "120.00",
+       "size": 44,
+       "tag": "p"
+      },
+      "left": 16,
+      "right": 184,
+      "textLeft": 16,
+      "textRight": 254,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.dodont",
+      "tag": "section",
+      "top": 8036,
+      "height": 618,
+      "words": 39,
+      "media": 1,
+      "middle": 91,
+      "heading": {
+       "text": "What",
+       "size": 32,
+       "tag": "h2"
+      },
+      "left": 16,
+      "right": 16,
+      "textLeft": 16,
+      "textRight": 258,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
       "sel": "section.how-next",
       "tag": "section",
-      "top": 4073,
+      "top": 8655,
       "height": 372,
-      "words": 33,
+      "words": 32,
       "media": 0,
       "middle": 0,
       "heading": {
@@ -1077,9 +1171,9 @@
      {
       "sel": "footer.footer",
       "tag": "footer",
-      "top": 4444,
-      "height": 811,
-      "words": 44,
+      "top": 9026,
+      "height": 987,
+      "words": 49,
       "media": 0,
       "middle": 295,
       "heading": null,
@@ -1097,9 +1191,9 @@
     "gaps": [],
     "h1s": [
      {
-      "text": "From the building to your glass.",
+      "text": "How it works, start to end.",
       "size": 40,
-      "top": 105,
+      "top": 113,
       "firstScreen": true
      }
     ],
@@ -1107,14 +1201,26 @@
     "edges": [
      {
       "x": 16,
+      "n": 7
+     },
+     {
+      "x": 34,
+      "n": 4
+     },
+     {
+      "x": 102,
       "n": 3
      },
      {
-      "x": 40,
+      "x": 306,
       "n": 2
      },
      {
-      "x": 103,
+      "x": 65,
+      "n": 1
+     },
+     {
+      "x": 163,
       "n": 1
      },
      {
@@ -1122,15 +1228,27 @@
       "n": 1
      },
      {
+      "x": 221,
+      "n": 1
+     },
+     {
+      "x": 254,
+      "n": 1
+     },
+     {
       "x": 278,
       "n": 1
      },
      {
-      "x": 308,
+      "x": 327,
+      "n": 1
+     },
+     {
+      "x": 368,
       "n": 1
      }
     ],
-    "leftBlocks": 9,
+    "leftBlocks": 25,
     "bodySize": 18,
     "stage": false,
     "explains": true,
@@ -1145,20 +1263,25 @@
    "width": 390,
    "height": 844,
    "load": "load",
-   "screens": 6,
+   "screens": 11,
    "filled": [
-    0.67,
-    0.64,
-    0.53,
-    0.57,
-    0.86,
+    0.56,
+    0.94,
+    0.97,
+    0.97,
+    0.97,
+    0.97,
+    0.91,
+    0.84,
+    0.78,
+    0.81,
     0.97
    ],
    "motion": {
-    "elements": 46,
-    "css": 1,
-    "transitions": 10,
-    "scripted": 35,
+    "elements": 34,
+    "css": 7,
+    "transitions": 4,
+    "scripted": 23,
     "videos": 0,
     "playingVideos": 0
    },
@@ -1168,21 +1291,21 @@
      "h": 844
     },
     "page": {
-     "height": 4746,
-     "screens": 5.6,
-     "words": 287,
-     "img": 0,
+     "height": 8941,
+     "screens": 10.6,
+     "words": 354,
+     "img": 1,
      "video": 0,
-     "canvas": 2,
-     "svg": 10,
-     "sections": 2,
+     "canvas": 1,
+     "svg": 20,
+     "sections": 5,
      "horizontalOverflow": 0,
      "overflowCulprits": [],
-     "uiFragments": 1,
+     "uiFragments": 2,
      "uiAbuse": false,
      "realPictures": 0,
      "videoCount": 0,
-     "uiPictures": 0,
+     "uiPictures": 1,
      "pictureSamples": [],
      "blendText": 0,
      "sideScrollers": 0,
@@ -1191,9 +1314,9 @@
      "videosNoPoster": 0
     },
     "hero": {
-     "text": "From the building to your glass.",
+     "text": "How it works, start to end.",
      "words": 6,
-     "chars": 32,
+     "chars": 27,
      "lines": 2,
      "size": 40,
      "vw": 10.3,
@@ -1207,12 +1330,12 @@
      "align": "left",
      "position": "center",
      "widthRatio": 0.92,
-     "top": 105,
+     "top": 113,
      "tag": "h1",
      "kind": "heading"
     },
     "h1": {
-     "text": "From the building to your glass.",
+     "text": "How it works, start to end.",
      "words": 6,
      "lines": 2,
      "size": 40,
@@ -1241,9 +1364,9 @@
       "kind": "heading"
      },
      {
-      "text": "From the building to your glass.",
+      "text": "How it works, start to end.",
       "words": 6,
-      "chars": 32,
+      "chars": 27,
       "lines": 2,
       "size": 40,
       "vw": 10.3,
@@ -1257,119 +1380,14 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.92,
-      "top": 105,
+      "top": 113,
       "tag": "h1",
       "kind": "heading"
      },
      {
-      "text": "0 / 12",
-      "words": 3,
-      "chars": 6,
-      "lines": 1,
-      "size": 22,
-      "vw": 5.6,
-      "font": "Plus Jakarta Sans",
-      "weight": 700,
-      "tracking": 0,
-      "leading": 1.1,
-      "upper": false,
-      "italic": false,
-      "mono": false,
-      "align": "left",
-      "position": "left",
-      "widthRatio": 0.12,
-      "top": 401,
-      "tag": "strong",
-      "kind": "heading"
-     },
-     {
-      "text": "It starts in the basement.",
-      "words": 5,
-      "chars": 26,
-      "lines": 2,
-      "size": 32,
-      "vw": 8.2,
-      "font": "Plus Jakarta Sans",
-      "weight": 700,
-      "tracking": -0.02,
-      "leading": 1.1,
-      "upper": false,
-      "italic": false,
-      "mono": false,
-      "align": "left",
-      "position": "center",
-      "widthRatio": 0.92,
-      "top": 972,
-      "tag": "h2",
-      "kind": "heading"
-     },
-     {
-      "text": "One line runs up to your flat.",
-      "words": 7,
-      "chars": 30,
-      "lines": 2,
-      "size": 32,
-      "vw": 8.2,
-      "font": "Plus Jakarta Sans",
-      "weight": 700,
-      "tracking": -0.02,
-      "leading": 1.1,
-      "upper": false,
-      "italic": false,
-      "mono": false,
-      "align": "left",
-      "position": "center",
-      "widthRatio": 0.92,
-      "top": 1481,
-      "tag": "h2",
-      "kind": "heading"
-     },
-     {
-      "text": "Your kitchen gets a Moya1™ control unit.",
-      "words": 7,
-      "chars": 40,
-      "lines": 2,
-      "size": 32,
-      "vw": 8.2,
-      "font": "Plus Jakarta Sans",
-      "weight": 700,
-      "tracking": -0.02,
-      "leading": 1.1,
-      "upper": false,
-      "italic": false,
-      "mono": false,
-      "align": "left",
-      "position": "center",
-      "widthRatio": 0.92,
-      "top": 2018,
-      "tag": "h2",
-      "kind": "heading"
-     },
-     {
-      "text": "You recharge litres from your phone.",
-      "words": 6,
-      "chars": 36,
-      "lines": 2,
-      "size": 32,
-      "vw": 8.2,
-      "font": "Plus Jakarta Sans",
-      "weight": 700,
-      "tracking": -0.02,
-      "leading": 1.1,
-      "upper": false,
-      "italic": false,
-      "mono": false,
-      "align": "left",
-      "position": "center",
-      "widthRatio": 0.92,
-      "top": 2525,
-      "tag": "h2",
-      "kind": "heading"
-     },
-     {
-      "text": "Then you pour a glass.",
-      "words": 5,
-      "chars": 22,
+      "text": "Now see it happen.",
+      "words": 4,
+      "chars": 18,
       "lines": 1,
       "size": 32,
       "vw": 8.2,
@@ -1382,8 +1400,71 @@
       "mono": false,
       "align": "left",
       "position": "center",
+      "widthRatio": 0.73,
+      "top": 1049,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Try it: recharge, then pour.",
+      "words": 5,
+      "chars": 28,
+      "lines": 2,
+      "size": 32,
+      "vw": 8.2,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": -0.02,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
       "widthRatio": 0.92,
-      "top": 3082,
+      "top": 5481,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "120.00 litres",
+      "words": 2,
+      "chars": 13,
+      "lines": 1,
+      "size": 44,
+      "vw": 11.3,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": -0.02,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.63,
+      "top": 5889,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "What you do. What you never do.",
+      "words": 7,
+      "chars": 31,
+      "lines": 2,
+      "size": 32,
+      "vw": 8.2,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": -0.02,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 6933,
       "tag": "h2",
       "kind": "heading"
      },
@@ -1404,7 +1485,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.79,
-      "top": 3501,
+      "top": 7580,
       "tag": "h2",
       "kind": "heading"
      },
@@ -1425,30 +1506,30 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.94,
-      "top": 4695,
+      "top": 8891,
       "tag": "p",
       "kind": "statement"
      }
     ],
     "headingSummary": {
-     "count": 10,
+     "count": 8,
      "maxLines": 2,
      "over2Lines": 0,
-     "statements": 1,
+     "statements": 2,
      "centered": 0,
-     "medianWords": 5,
+     "medianWords": 4,
      "mixedFontHeadings": 0
     },
     "type": {
      "families": [
       {
        "family": "Inter",
-       "share": 0.82,
+       "share": 0.74,
        "mono": false
       },
       {
        "family": "Plus Jakarta Sans",
-       "share": 0.18,
+       "share": 0.26,
        "mono": false
       }
      ],
@@ -1489,7 +1570,7 @@
      "microLabelShare": 0,
      "microSamples": [],
      "upperShare": 0,
-     "centerShare": 0,
+     "centerShare": 0.04,
      "smallText": 0
     },
     "eyebrows": [],
@@ -1504,8 +1585,17 @@
      "dark": false,
      "sectionBgs": [
       {
+       "color": "#edf5f5",
+       "top": 376,
+       "hsl": {
+        "h": 180,
+        "s": 0.29,
+        "l": 0.95
+       }
+      },
+      {
        "color": "#111827",
-       "top": 360,
+       "top": 1021,
        "hsl": {
         "h": 221,
         "s": 0.39,
@@ -1514,46 +1604,55 @@
       },
       {
        "color": "#f3f4f6",
-       "top": 3461,
+       "top": 5409,
        "hsl": {
         "h": 220,
         "s": 0.14,
         "l": 0.96
+       }
+      },
+      {
+       "color": "#fafaf7",
+       "top": 5733,
+       "hsl": {
+        "h": 60,
+        "s": 0.23,
+        "l": 0.97
        }
       }
      ],
      "textColors": [
       {
        "color": "#4b5563",
-       "share": 0.59
-      },
-      {
-       "color": "#111827",
-       "share": 0.21
+       "share": 0.44
       },
       {
        "color": "#b9bbbd",
-       "share": 0.13
+       "share": 0.21
       },
       {
        "color": "#fafaf7",
-       "share": 0.06
+       "share": 0.18
+      },
+      {
+       "color": "#111827",
+       "share": 0.17
       }
      ],
      "button": {
-      "bg": "#111827",
+      "bg": "#fafaf7",
       "hsl": {
-       "h": 221,
-       "s": 0.39,
-       "l": 0.11
+       "h": 60,
+       "s": 0.23,
+       "l": 0.97
       },
-      "fg": "#fafaf7"
+      "fg": "#111827"
      },
      "lowContrast": []
     },
     "buttons": {
-     "count": 2,
-     "inHero": 1,
+     "count": 5,
+     "inHero": 2,
      "radius": "pill",
      "height": 50,
      "withShadow": 0,
@@ -1561,7 +1660,8 @@
      "mono": 0,
      "upper": 0,
      "heroLabels": [
-      "Skip to content"
+      "Skip to content",
+      "Pause"
      ]
     },
     "surfaces": {
@@ -1579,22 +1679,18 @@
      "outlinedBoxes": 0,
      "dashed": 0,
      "blurred": 0,
-     "roundedBoxes": 3,
+     "roundedBoxes": 11,
      "boxRadius": 20,
-     "squareMedia": 0,
-     "roundedMedia": 1,
-     "mediaRadius": 20,
+     "squareMedia": 1,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
      "textShadow": 0,
      "cardRows": []
     },
     "heroMedia": [
      {
-      "type": "canvas",
-      "ratio": 0.42
-     },
-     {
       "type": "svg",
-      "ratio": 0.42
+      "ratio": 0.34
      }
     ],
     "nav": {
@@ -1614,29 +1710,29 @@
      "w": 390,
      "h": 844
     },
-    "pageH": 4746,
+    "pageH": 8941,
     "margins": {
      "left": 16,
      "right": 16
     },
     "sections": [
      {
-      "sel": "section.journey",
+      "sel": "section.how-intro",
       "tag": "section",
       "top": 65,
-      "height": 3396,
-      "words": 178,
-      "media": 2,
+      "height": 956,
+      "words": 57,
+      "media": 1,
       "middle": 0,
       "heading": {
-       "text": "From the building",
+       "text": "How it works,",
        "size": 40,
        "tag": "h1"
       },
       "left": 16,
       "right": 16,
       "textLeft": 16,
-      "textRight": 18,
+      "textRight": 30,
       "fullBleed": false,
       "footer": false,
       "hero": true,
@@ -1644,11 +1740,80 @@
       "pinned": false
      },
      {
+      "sel": "section.drop.is-ready",
+      "tag": "section",
+      "top": 1021,
+      "height": 4389,
+      "words": 38,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "Now see it happen.",
+       "size": 32,
+       "tag": "h2"
+      },
+      "left": 34,
+      "right": 58,
+      "textLeft": 34,
+      "textRight": 58,
+      "fullBleed": true,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": true
+     },
+     {
+      "sel": "section.try",
+      "tag": "section",
+      "top": 5409,
+      "height": 1451,
+      "words": 63,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "120.00",
+       "size": 44,
+       "tag": "p"
+      },
+      "left": 16,
+      "right": 16,
+      "textLeft": 16,
+      "textRight": 52,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.dodont",
+      "tag": "section",
+      "top": 6861,
+      "height": 680,
+      "words": 39,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "What",
+       "size": 32,
+       "tag": "h2"
+      },
+      "left": 16,
+      "right": 16,
+      "textLeft": 16,
+      "textRight": 69,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
       "sel": "section.how-next",
       "tag": "section",
-      "top": 3461,
-      "height": 496,
-      "words": 33,
+      "top": 7540,
+      "height": 436,
+      "words": 32,
       "media": 0,
       "middle": 0,
       "heading": {
@@ -1657,9 +1822,9 @@
        "tag": "h2"
       },
       "left": 40,
-      "right": 72,
+      "right": 51,
       "textLeft": 40,
-      "textRight": 72,
+      "textRight": 51,
       "fullBleed": false,
       "footer": false,
       "hero": false,
@@ -1669,9 +1834,9 @@
      {
       "sel": "footer.footer",
       "tag": "footer",
-      "top": 3956,
-      "height": 790,
-      "words": 44,
+      "top": 7976,
+      "height": 966,
+      "words": 49,
       "media": 0,
       "middle": 0,
       "heading": null,
@@ -1689,9 +1854,9 @@
     "gaps": [],
     "h1s": [
      {
-      "text": "From the building to your glass.",
+      "text": "How it works, start to end.",
       "size": 40,
-      "top": 105,
+      "top": 113,
       "firstScreen": true
      }
     ],
@@ -1699,14 +1864,30 @@
     "edges": [
      {
       "x": 16,
+      "n": 9
+     },
+     {
+      "x": 34,
+      "n": 5
+     },
+     {
+      "x": 102,
       "n": 3
      },
      {
-      "x": 40,
+      "x": 163,
       "n": 3
      },
      {
-      "x": 103,
+      "x": 65,
+      "n": 1
+     },
+     {
+      "x": 77,
+      "n": 1
+     },
+     {
+      "x": 89,
       "n": 1
      },
      {
@@ -1714,11 +1895,11 @@
       "n": 1
      },
      {
-      "x": 173,
+      "x": 221,
       "n": 1
      }
     ],
-    "leftBlocks": 9,
+    "leftBlocks": 25,
     "bodySize": 18,
     "stage": false,
     "explains": true,
@@ -1757,7 +1938,7 @@
    "level": "FAIL",
    "id": "few-pictures",
    "width": 1440,
-   "message": "Only 0 picture(s) on the page (0 photographs, footage or raster images, 0 interface fragments). Drawings in SVG do not count.",
+   "message": "Only 1 picture(s) on the page (0 photographs, footage or raster images, 1 interface fragments). Drawings in SVG do not count.",
    "fix": "Find real pictures of the subject's world with scripts/assets.mjs (photographs, archival images, maps, engravings, footage), download them to assets/ and give them room: a hero picture, one per section that has a subject, a full-width band. At least four, usually six to twelve."
   },
   {
@@ -1768,14 +1949,32 @@
    "fix": "Look for one honest clip with scripts/assets.mjs --video (the place, the material, the process) and use it as a muted loop with a poster frame. Defend its absence only if no clip fits the subject."
   },
   {
-   "level": "FAIL",
-   "id": "covered-text",
-   "width": 768,
-   "message": "Large text lies under another element at some scroll position: \"It starts in the basement.\" (screen 2, 100% hidden); \"Your kitchen gets a Moya1™ control unit.\" (screen 3, 100% hidden)",
-   "fix": "Nothing may sit on top of a headline or statement. Move the picture, shorten the pinned run, or raise the text above it (z-index) and give it a ground.",
+   "level": "WARN",
+   "id": "ragged-edges",
+   "width": 1440,
+   "message": "Left-aligned text starts at 12 different lines (120px, 184px, 238px, 511px, 547px, 834px, 271px); the three most used hold only 41% of it.",
+   "fix": "Pick two or three anchor lines from the grid and start every heading and paragraph on one of them.",
    "alsoAt": [
+    768
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "pinned-over-picture",
+   "width": 1440,
+   "message": "Pinned large text slides across pictures while the page scrolls: \"Now see it happen.\" (screen 2, 100% over a picture)",
+   "fix": "Jurors read a pinned title crossing drawings or photographs as a collision. Keep the pictures in the column the title does not occupy, or unpin it.",
+   "alsoAt": [
+    768,
     390
    ]
+  },
+  {
+   "level": "FAIL",
+   "id": "covered-text",
+   "width": 390,
+   "message": "Large text lies under another element at some scroll position: \"Moya One\" (screen 11, 38% hidden)",
+   "fix": "Nothing may sit on top of a headline or statement. Move the picture, shorten the pinned run, or raise the text above it (z-index) and give it a ground."
   }
  ],
  "images": [
@@ -1785,7 +1984,8 @@
    "fold": "C:\\Users\\Dell\\Documents\\Moya-one-final\\.taste-skill\\inspect-how\\desktop-fold.jpg",
    "pages": [
     "C:\\Users\\Dell\\Documents\\Moya-one-final\\.taste-skill\\inspect-how\\desktop-page-01.jpg",
-    "C:\\Users\\Dell\\Documents\\Moya-one-final\\.taste-skill\\inspect-how\\desktop-page-02.jpg"
+    "C:\\Users\\Dell\\Documents\\Moya-one-final\\.taste-skill\\inspect-how\\desktop-page-02.jpg",
+    "C:\\Users\\Dell\\Documents\\Moya-one-final\\.taste-skill\\inspect-how\\desktop-page-03.jpg"
    ],
    "film": []
   },
@@ -1794,7 +1994,8 @@
    "width": 768,
    "fold": "C:\\Users\\Dell\\Documents\\Moya-one-final\\.taste-skill\\inspect-how\\tablet-fold.jpg",
    "pages": [
-    "C:\\Users\\Dell\\Documents\\Moya-one-final\\.taste-skill\\inspect-how\\tablet-page-01.jpg"
+    "C:\\Users\\Dell\\Documents\\Moya-one-final\\.taste-skill\\inspect-how\\tablet-page-01.jpg",
+    "C:\\Users\\Dell\\Documents\\Moya-one-final\\.taste-skill\\inspect-how\\tablet-page-02.jpg"
    ],
    "film": []
   },
@@ -1803,7 +2004,8 @@
    "width": 390,
    "fold": "C:\\Users\\Dell\\Documents\\Moya-one-final\\.taste-skill\\inspect-how\\mobile-fold.jpg",
    "pages": [
-    "C:\\Users\\Dell\\Documents\\Moya-one-final\\.taste-skill\\inspect-how\\mobile-page-01.jpg"
+    "C:\\Users\\Dell\\Documents\\Moya-one-final\\.taste-skill\\inspect-how\\mobile-page-01.jpg",
+    "C:\\Users\\Dell\\Documents\\Moya-one-final\\.taste-skill\\inspect-how\\mobile-page-02.jpg"
    ],
    "film": []
   }

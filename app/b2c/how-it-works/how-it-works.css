@@ -1,227 +1,515 @@
-/* How it works (/b2c/how-it-works). Tokens only; shared pieces live in app/site.css. */
+/* How it works (/b2c/how-it-works). Tokens only; shared pieces live in app/site.css.
+   Rhythm: the dark full-screen drop film, a light hands-on demo, a dark and light "do / never", a light close. */
 
-/* ---------- Intro: the page title and lede, beside the stage on the first screen ---------- */
-.journey-intro {
-  display: grid;
-  gap: 20px;
-  padding-block: 40px 24px;
+/* ---------- Follow one drop: a full-screen stage, held while the page scrolls past it ---------- */
+.drop {
+  position: relative;
+  height: 520svh;
+  background: var(--ink);
+  color: var(--base);
 }
 
-.how-title {
-  font-size: var(--fs-h1);
-  line-height: var(--lh-h1);
-  letter-spacing: -0.03em;
-}
-
-.how-lede {
-  max-width: 40ch;
-  font-size: var(--fs-body-lg);
-  color: var(--muted);
-}
-
-@media (min-width: 900px) {
-  .journey-intro {
-    grid-column: 1 / 7;
-    grid-row: 1;
-    align-content: center;
-    min-height: calc(100svh - var(--nav-h) - 48px);
-    max-height: 760px;
-    padding-block: 0;
-  }
-}
-
-/* ---------- Journey: steps scroll past one sticky 3D stage ---------- */
-.journey {
-  padding-bottom: var(--section);
-  overflow-x: clip;
-}
-
-.journey-grid {
-  display: grid;
-}
-
-/* the stage stays in view while the steps scroll under it (phone) or beside it (desktop) */
-.journey-stage {
+.drop-stage {
   position: sticky;
+  top: var(--nav-h);
+  height: calc(100svh - var(--nav-h));
+  overflow: hidden;
+}
+
+.drop-canvas {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity 0.9s var(--ease-enter);
+}
+
+.drop.is-ready .drop-canvas {
+  opacity: 1;
+}
+
+.drop-canvas canvas {
+  display: block;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+/* the title and each caption sit on solid ink panels, never straight on the drawing (DESIGN.md §3) */
+.drop-copy {
+  position: absolute;
+  inset: 24px 0 32px;
   z-index: 2;
-  top: calc(var(--nav-h) + 8px);
-  height: 46svh;
-  margin-top: 12px;
-  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  pointer-events: none;
+}
+
+.drop-copy > * {
+  padding: 14px 18px;
   background: var(--ink);
   border-radius: var(--radius-card);
 }
 
-/* closes the gap above the sticky stage so step text never peeks out above it */
-.journey-stage::before {
-  content: '';
-  position: absolute;
-  left: calc(-1 * var(--gutter));
-  right: calc(-1 * var(--gutter));
-  bottom: 100%;
-  height: 12px;
-  background: var(--base);
+/* the title steps aside once the journey starts, so the captions carry the story */
+.drop-intro {
+  transition:
+    opacity 0.5s var(--ease-enter),
+    transform 0.5s var(--ease-enter),
+    visibility 0s linear 0s;
 }
 
-/* the 3D stays inside the rounded frame; its labels may reach past it so they are never cut */
-.journey-stage .kitchen-canvas,
-.journey-stage .tower3d-canvas {
-  border-radius: var(--radius-card);
-}
-
-.journey-layer {
-  position: absolute;
-  inset: 0;
+.drop-intro.is-away {
   opacity: 0;
+  transform: translateY(-12px);
   visibility: hidden;
   transition:
-    opacity 0.7s var(--ease-enter),
-    visibility 0s linear 0.7s;
+    opacity 0.5s var(--ease-enter),
+    transform 0.5s var(--ease-enter),
+    visibility 0s linear 0.5s;
 }
 
-.journey-layer.is-on {
-  opacity: 1;
-  visibility: visible;
-  transition:
-    opacity 0.7s var(--ease-enter),
-    visibility 0s;
+.drop-title {
+  font-size: var(--fs-h2);
+  line-height: var(--lh-h2);
+  letter-spacing: -0.02em;
 }
 
-/* scenes fill the stage; the tower's own card styling is not needed here */
-.journey-layer .tower3d,
-.journey-layer .kitchen {
-  position: absolute;
-  inset: 0;
-  height: auto;
-}
-
-.journey-stage figcaption {
-  position: absolute;
-  z-index: 3;
-  left: 16px;
-  bottom: 12px;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 4px 12px;
+.drop-lede {
+  margin-top: 6px;
+  max-width: 30ch;
   font-size: var(--fs-caption);
   color: var(--on-ink-muted);
 }
 
-/* phones: the step pill only, and the floor counter moves to the top corner */
-@media (max-width: 899px) {
-  .journey-stage figcaption {
-    font-size: 0;
-  }
-
-  .journey-stage .tower3d-count {
-    top: 10px;
-    bottom: auto;
-    left: 10px;
-    right: auto;
-  }
-}
-
-.journey-stage figcaption span {
-  font-size: var(--fs-caption);
-  padding: 4px 10px;
+.drop-play {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 44px;
+  margin-top: 12px;
+  padding: 0 18px;
+  border: 0;
   border-radius: var(--radius-pill);
   background: var(--base);
   color: var(--ink);
-  font-weight: 600;
+  font: 600 15px / 1 var(--font-text);
+  cursor: pointer;
+  pointer-events: auto;
+  transition: transform 0.2s var(--ease-enter);
+}
+
+.drop-play:hover {
+  transform: translateY(-1px);
+}
+
+.drop-play:disabled {
+  opacity: 0.7;
+  cursor: default;
+}
+
+.drop-caption {
+  margin-top: auto;
+  max-width: 24rem;
+  animation: drop-caption-in 0.7s var(--ease-enter) both;
+}
+
+@keyframes drop-caption-in {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+}
+
+.drop-caption-title {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: var(--fs-h3);
+  line-height: var(--lh-h3);
+  letter-spacing: -0.01em;
+}
+
+.drop-caption-text {
+  margin-top: 4px;
+  color: var(--on-ink-muted);
+  font-size: var(--fs-body);
+}
+
+/* progress: five stops, like floors on the riser */
+.drop-rail {
+  position: absolute;
+  z-index: 2;
+  right: 18px;
+  top: 50%;
+  display: grid;
+  gap: 22px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  transform: translateY(-50%);
+}
+
+.drop-rail li {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: 14px;
+  height: 14px;
+}
+
+.drop-rail li + li::before {
+  content: '';
+  position: absolute;
+  bottom: 100%;
+  width: 2px;
+  height: 22px;
+  background: var(--ink-raised);
+}
+
+.drop-rail li.is-past + li::before,
+.drop-rail li.is-now::before {
+  background: var(--orange);
+}
+
+.drop-rail span {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--ink-raised);
+  box-sizing: content-box;
+  border: 2px solid var(--ink);
+  transition: transform 0.4s var(--ease-enter);
+}
+
+.drop-rail .is-past span {
+  background: var(--orange);
+}
+
+.drop-rail .is-now span {
+  background: var(--water);
+  transform: scale(1.4);
+}
+
+/* where the drop is, read out like a lift display */
+.drop-hud {
+  position: absolute;
+  z-index: 2;
+  top: 24px;
+  right: 16px;
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: center;
+  gap: 2px 12px;
+  padding: 12px 16px;
+  background: var(--ink-raised);
+  border-radius: 14px;
+}
+
+.drop-hud span {
+  grid-column: 1 / 3;
+  font-size: var(--fs-caption);
+  color: var(--on-ink-muted);
+}
+
+.drop-hud strong {
+  font-family: var(--font-display);
+  font-size: var(--fs-h3);
   font-variant-numeric: tabular-nums;
 }
 
-.journey-steps {
+.drop-hud .sample {
+  font-style: normal;
+}
+
+@media (max-width: 699px) {
+  /* phones: the read-out sits top right, and waits until the title has stepped aside */
+  .drop-hud {
+    top: 16px;
+    right: 16px;
+    padding: 8px 12px;
+  }
+
+  .drop.is-start .drop-hud {
+    display: none;
+  }
+
+  .drop-caption {
+    margin-bottom: 72px;
+  }
+
+  .drop-rail {
+    display: none;
+  }
+
+}
+
+@media (min-width: 900px) {
+  .drop-copy {
+    inset: 40px 0 48px;
+  }
+
+  .drop-rail {
+    right: 40px;
+  }
+
+  .drop-hud {
+    top: 40px;
+    right: 88px;
+  }
+}
+
+/* reduced motion: a still frame of the finished glass, and the five moments as a list */
+.drop.is-still {
+  height: auto;
+  padding-bottom: var(--section);
+}
+
+.drop.is-still .drop-stage {
+  position: relative;
+  top: 0;
+  height: 70svh;
+}
+
+.drop-list {
   display: grid;
-  padding-top: 24px;
+  gap: 16px;
+  margin-top: 32px;
+  list-style: none;
 }
 
-.journey-steps li {
-  min-height: 62svh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 12px;
-  max-width: 34rem;
-  opacity: 0.4;
-  transition: opacity 0.5s var(--ease-enter);
-}
-
-.journey-steps li.is-active {
-  opacity: 1;
-}
-
-.journey-num {
+.drop-list li {
   display: grid;
-  place-items: center;
-  width: 32px;
-  height: 32px;
-  border-radius: 50%;
-  background: var(--ink);
-  color: var(--base);
+  gap: 4px;
+}
+
+.drop-list strong {
   font-family: var(--font-display);
-  font-weight: 700;
-  font-size: 16px;
+  font-size: var(--fs-h3);
 }
 
-.journey-steps li.is-active .journey-num {
-  background: var(--orange);
-  color: var(--ink);
+.drop-list span {
+  color: var(--on-ink-muted);
 }
 
-.journey-steps h2 {
-  font-size: var(--fs-h2);
-  line-height: var(--lh-h2);
-  letter-spacing: -0.02em;
-  font-weight: 700;
+/* ---------- Try it: recharge, then pour ---------- */
+.try {
+  padding-block: var(--section);
+  background: var(--grey);
 }
 
-.journey-steps p {
+.try-head {
+  display: grid;
+  gap: 16px;
+  margin-bottom: 40px;
+}
+
+.try-head p {
+  max-width: 44ch;
   font-size: var(--fs-body-lg);
   color: var(--muted);
 }
 
-.journey-note {
-  font-size: var(--fs-caption) !important;
+.try-stage {
+  display: grid;
+  gap: 32px;
+  align-items: center;
+}
+
+.try-phone {
+  justify-self: center;
+}
+
+.try-glasses {
+  margin-top: 8px;
+  font-size: var(--fs-caption);
+  color: var(--muted);
+}
+
+.try-done {
+  margin-top: 12px;
+  font-size: var(--fs-caption);
+  color: var(--muted);
+  text-align: center;
+}
+
+.try-tap {
+  display: grid;
+  justify-items: center;
+  gap: 16px;
+}
+
+.try-tap svg {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+}
+
+.try-stream {
+  opacity: 0;
+  transition: opacity 0.2s var(--ease-enter);
+}
+
+.try-stream.is-on {
+  opacity: 1;
+}
+
+/* the hold-to-pour control: an ink pill (one orange action per view stays the recharge) */
+.try-pour {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 56px;
+  padding: 0 28px;
+  border: 0;
+  border-radius: var(--radius-pill);
+  background: var(--ink);
+  color: var(--base);
+  font: 600 16px / 1 var(--font-text);
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: none;
+  transition: transform 0.2s var(--ease-enter);
+}
+
+.try-pour svg {
+  color: var(--water);
+}
+
+.try-pour[aria-pressed='true'] {
+  transform: scale(0.97);
+}
+
+.try-note {
+  font-size: var(--fs-caption);
+  color: var(--muted);
 }
 
 @media (min-width: 900px) {
-  .journey-grid {
+  .try-head {
     grid-template-columns: repeat(12, 1fr);
     column-gap: 24px;
-    align-items: start;
+    align-items: end;
+    margin-bottom: 56px;
   }
 
-  .journey-steps {
+  .try-head h2 {
     grid-column: 1 / 7;
-    grid-row: 2;
-    padding-top: 0;
   }
 
-  .journey-steps li {
-    min-height: 64svh;
+  .try-head p {
+    grid-column: 8 / 13;
   }
 
-  .journey-stage {
-    grid-column: 7 / 13;
-    grid-row: 1 / 3;
-    align-self: start;
-    top: calc(var(--nav-h) + 24px);
-    height: calc(100svh - var(--nav-h) - 48px);
-    max-height: 720px;
+  .try-stage {
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 24px;
   }
 
-  .journey-stage figcaption {
-    left: 24px;
-    bottom: 20px;
+  .try-phone {
+    grid-column: 2 / 6;
+  }
+
+  .try-tap {
+    grid-column: 7 / 12;
   }
 }
 
-/* reduced motion: every step at full strength */
-@media (prefers-reduced-motion: reduce) {
-  .journey-steps li {
-    opacity: 1;
+/* ---------- What you do. What you never do. ---------- */
+.dodont {
+  padding-block: var(--section);
+}
+
+.dodont-title {
+  margin-bottom: 40px;
+}
+
+.dodont-grid {
+  display: grid;
+  gap: 16px;
+}
+
+.dodont-grid > div {
+  position: relative;
+  overflow: hidden;
+  padding: 32px 28px;
+  border-radius: var(--radius-card);
+}
+
+.dodont-label {
+  margin-bottom: 16px;
+  font-weight: 600;
+}
+
+.dodont-grid li {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: var(--fs-h3);
+  line-height: var(--lh-h3);
+  letter-spacing: -0.01em;
+}
+
+.dodont-grid li + li {
+  margin-top: 14px;
+}
+
+.dodont-do {
+  background: var(--ink);
+  color: var(--base);
+}
+
+.dodont-do .dodont-label {
+  color: var(--on-ink-muted);
+}
+
+.dodont-do ol {
+  list-style: none;
+  padding: 0;
+}
+
+.dodont-never {
+  background: var(--grey);
+}
+
+.dodont-never .dodont-label {
+  color: var(--muted);
+}
+
+.dodont-never ul {
+  position: relative;
+  z-index: 1;
+}
+
+.dodont-never li {
+  color: var(--muted);
+  text-decoration: line-through;
+  text-decoration-color: var(--orange);
+  text-decoration-thickness: 2px;
+}
+
+.dodont-jug {
+  position: absolute;
+  right: 16px;
+  bottom: -24px;
+  width: 120px;
+  height: auto;
+  opacity: 0.35;
+  transform: rotate(-12deg);
+}
+
+@media (min-width: 900px) {
+  .dodont-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+  }
+
+  .dodont-grid > div {
+    padding: 44px 40px;
+    min-height: 300px;
+  }
+
+  .dodont-jug {
+    width: 150px;
+    right: 32px;
   }
 }
 
@@ -266,5 +554,513 @@
   .how-next-panel p,
   .how-next-actions {
     grid-column: 1 / 9;
+  }
+}
+
+/* ---------- Start to end: the opening timeline ---------- */
+.how-intro {
+  padding-block: 48px var(--section);
+}
+
+.how-intro-head {
+  display: grid;
+  gap: 16px;
+  margin-bottom: 48px;
+}
+
+.how-title {
+  font-size: var(--fs-h1);
+  line-height: var(--lh-h1);
+  letter-spacing: -0.03em;
+}
+
+.how-lede {
+  max-width: 40ch;
+  font-size: var(--fs-body-lg);
+  color: var(--muted);
+}
+
+/* the story: one drawing that changes step by step, the steps listed beside it */
+.tale {
+  display: grid;
+  gap: 24px;
+}
+
+.tale-stage {
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--radius-card);
+  background: color-mix(in srgb, var(--water) 22%, var(--base));
+}
+
+.tale-top {
+  position: absolute;
+  inset: 16px 16px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1;
+}
+
+.tale-phase {
+  padding: 6px 14px;
+  border-radius: var(--radius-pill);
+  background: var(--ink);
+  color: var(--base);
+  font-size: var(--fs-caption);
+  font-weight: 600;
+  transition: background-color 0.5s var(--ease-enter), color 0.5s var(--ease-enter);
+}
+
+.tale-phase.is-after {
+  background: var(--water);
+  color: var(--ink);
+}
+
+.tale-art {
+  display: block;
+  width: 100%;
+  height: auto;
+  padding-top: 40px;
+}
+
+.tale-art * {
+  transform-box: fill-box;
+}
+
+.tale-board,
+.tale-blueprint,
+.tale-solid,
+.tale-flat,
+.tale-stubs,
+.tale-crane,
+.tale-panel,
+.tale-phone,
+.tale-glass,
+.tale-stream {
+  transition:
+    opacity 0.7s var(--ease-enter),
+    transform 1s var(--ease-enter);
+}
+
+/* step 1: a plan on the drawing board; steps 1 and 2: the tower being built, centred, with a crane */
+.tale-board,
+.tale-blueprint,
+.tale-crane,
+.tale-flat,
+.tale-stubs,
+.tale-panel,
+.tale-phone,
+.tale-glass,
+.tale-stream {
+  opacity: 0;
+}
+
+.tale-tower {
+  transform: translateX(160px);
+  transition: transform 1s var(--ease-enter);
+}
+
+.s-1 .tale-board {
+  opacity: 0.6;
+}
+
+.s-1 .tale-blueprint,
+.s-1 .tale-crane,
+.s-2 .tale-crane {
+  opacity: 1;
+}
+
+.s-1 .tale-solid {
+  opacity: 0;
+}
+
+/* step 2: the line draws up the tower, then branches into every flat */
+.tale-line {
+  stroke-dasharray: 1;
+  stroke-dashoffset: 1;
+  transition: stroke-dashoffset 1.6s var(--ease-fill);
+}
+
+.is-built .tale-line {
+  stroke-dashoffset: 0;
+}
+
+.is-built .tale-stubs {
+  opacity: 1;
+  transition-delay: 1.2s;
+}
+
+/* step 3 on: the tower steps aside and your kitchen opens beside it */
+.is-in .tale-tower {
+  transform: none;
+}
+
+.is-in .tale-flat,
+.is-in .tale-panel {
+  opacity: 1;
+}
+
+.tale-panel {
+  transform: translateX(24px);
+}
+
+.is-in .tale-panel {
+  transform: none;
+  transition-delay: 0.3s;
+}
+
+.tale-ring {
+  opacity: 0;
+  transform-origin: center;
+}
+
+.s-3 .tale-ring {
+  animation: tale-ring 1.4s var(--ease-enter) 1s 2 both;
+}
+
+.s-3 .tale-ring-2 {
+  animation-delay: 1.3s;
+}
+
+@keyframes tale-ring {
+  from {
+    opacity: 1;
+    transform: scale(0.7);
+  }
+  to {
+    opacity: 0;
+    transform: scale(1.15);
+  }
+}
+
+/* steps 4 and 6: the phone, litres going in */
+.tale-phone {
+  transform: translateY(30px);
+}
+
+.s-4 .tale-phone,
+.s-6 .tale-phone {
+  opacity: 1;
+  transform: none;
+}
+
+.tale-meter {
+  transform-origin: bottom;
+  transform: scaleY(0.2);
+}
+
+.s-4 .tale-meter {
+  transform: scaleY(0.9);
+  transition: transform 1.6s var(--ease-fill) 0.6s;
+}
+
+/* step 6: the balance runs low, then a recharge fills it again */
+.s-6 .tale-meter {
+  transform: scaleY(0.9);
+  animation: tale-topup 2.8s var(--ease-fill) 0.4s both;
+}
+
+@keyframes tale-topup {
+  0% {
+    transform: scaleY(0.9);
+  }
+  40%,
+  55% {
+    transform: scaleY(0.15);
+  }
+  100% {
+    transform: scaleY(0.9);
+  }
+}
+
+/* step 5: the extra tap pours a glass */
+.s-5 .tale-glass,
+.s-6 .tale-glass {
+  opacity: 1;
+}
+
+.tale-glass-water {
+  transform-origin: bottom;
+  transform: scaleY(0);
+}
+
+.s-5 .tale-glass-water,
+.s-6 .tale-glass-water {
+  transform: scaleY(1);
+  transition: transform 2s var(--ease-fill) 0.7s;
+}
+
+.s-5 .tale-stream {
+  animation: tale-pour 2.6s linear 0.5s both;
+}
+
+@keyframes tale-pour {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  8%,
+  88% {
+    opacity: 1;
+  }
+}
+
+/* the step list */
+.tale-count {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+  font-size: var(--fs-caption);
+  font-weight: 600;
+  color: var(--muted);
+}
+
+.tale-play {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  min-height: 44px;
+  padding: 0 14px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-pill);
+  background: var(--base);
+  color: var(--ink);
+  font: inherit;
+  cursor: pointer;
+}
+
+.tale-steps {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.tale-step {
+  position: relative;
+}
+
+.tale-step-phase {
+  margin: 16px 0 6px;
+  font-size: var(--fs-caption);
+  font-weight: 600;
+  color: var(--muted);
+}
+
+.tale-step:first-child .tale-step-phase {
+  margin-top: 0;
+}
+
+.tale-step button {
+  display: grid;
+  grid-template-columns: 32px 1fr;
+  gap: 14px;
+  width: 100%;
+  padding: 12px 14px;
+  border: 0;
+  border-radius: 14px;
+  background: none;
+  color: var(--ink);
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+  transition: background-color 0.3s var(--ease-enter);
+}
+
+.tale-step button:hover {
+  background: var(--grey);
+}
+
+.tale-step.is-on button {
+  background: color-mix(in srgb, var(--water) 30%, var(--base));
+}
+
+.tale-num {
+  display: grid;
+  place-items: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: var(--grey);
+  color: var(--muted);
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: var(--fs-caption);
+  transition: background-color 0.3s var(--ease-enter), color 0.3s var(--ease-enter);
+}
+
+.tale-step.is-done .tale-num {
+  background: var(--ink);
+  color: var(--base);
+}
+
+.tale-step.is-on .tale-num {
+  background: var(--orange);
+  color: var(--ink);
+}
+
+.tale-step-body {
+  display: grid;
+  gap: 2px;
+  align-self: center;
+}
+
+.tale-who {
+  display: none;
+  font-size: var(--fs-caption);
+  font-weight: 600;
+  color: var(--muted);
+}
+
+.tale-title {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: var(--fs-body-lg);
+  line-height: 1.3;
+}
+
+.tale-text {
+  display: none;
+  color: var(--muted);
+  font-size: var(--fs-body);
+}
+
+.tale-step.is-on .tale-who,
+.tale-step.is-on .tale-text {
+  display: block;
+}
+
+.tale-bar {
+  position: absolute;
+  left: 14px;
+  right: 14px;
+  bottom: 0;
+  height: 3px;
+  border-radius: 2px;
+  background: var(--orange);
+  transform-origin: left;
+  animation: tale-bar var(--hold) linear both;
+}
+
+@keyframes tale-bar {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+
+@media (min-width: 900px) {
+  .tale {
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 24px;
+    align-items: start;
+  }
+
+  .tale-stage {
+    grid-column: 1 / 8;
+    position: sticky;
+    top: calc(var(--nav-h) + 24px);
+  }
+
+  .tale-side {
+    grid-column: 8 / 13;
+  }
+}
+
+/* reduced motion: no autoplay, no tweening; each step shows its finished picture */
+@media (prefers-reduced-motion: reduce) {
+  .tale-art *,
+  .tale-phase,
+  .tale-bar {
+    transition: none !important;
+    animation: none !important;
+  }
+
+  .s-3 .tale-ring {
+    opacity: 1;
+  }
+}
+
+@media (min-width: 900px) {
+  .how-intro {
+    padding-top: 80px;
+  }
+
+  .how-intro-head {
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 24px;
+    align-items: end;
+    margin-bottom: 64px;
+  }
+
+  .how-title {
+    grid-column: 1 / 8;
+  }
+
+  .how-lede {
+    grid-column: 8 / 13;
+  }
+
+}
+
+/* phones: the picture, then the current step, then a row of numbers to jump between steps */
+.tale-now {
+  display: grid;
+  gap: 2px;
+  min-height: 120px;
+  margin-bottom: 16px;
+}
+
+.tale-now .tale-who,
+.tale-now .tale-text {
+  display: block;
+}
+
+@media (max-width: 899px) {
+  .tale-steps {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .tale-step-phase,
+  .tale-step-body {
+    position: absolute;
+    width: 1px;
+    height: 1px; /* taste-skill-ignore: visually hidden label, not a rule */
+    overflow: hidden;
+    clip-path: inset(50%);
+  }
+
+  .tale-step button {
+    display: grid;
+    place-items: center;
+    width: 48px;
+    height: 48px;
+    padding: 0;
+    border-radius: 50%;
+  }
+
+  .tale-step.is-on button {
+    background: none;
+  }
+
+  .tale-num {
+    width: 36px;
+    height: 36px;
+  }
+
+  .tale-bar {
+    left: 6px;
+    right: 6px;
+    bottom: -6px;
+  }
+}
+
+@media (min-width: 900px) {
+  .tale-now {
+    display: none;
   }
 }
