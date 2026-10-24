@@ -1,6 +1,6 @@
 {
- "url": "http://localhost:3100",
- "at": "2026-10-23T11:49:02.617Z",
+ "url": "http://localhost:3100/",
+ "at": "2026-10-24T05:47:43.027Z",
  "allow": [],
  "viewports": [
   {
@@ -13,13 +13,13 @@
     0.51,
     0.61,
     0.96,
-    0.48,
-    0.76
+    0.47,
+    0.95
    ],
    "motion": {
-    "elements": 115,
-    "css": 28,
-    "transitions": 13,
+    "elements": 136,
+    "css": 52,
+    "transitions": 10,
     "scripted": 74,
     "videos": 0,
     "playingVideos": 0
@@ -30,13 +30,13 @@
      "h": 900
     },
     "page": {
-     "height": 4816,
-     "screens": 5.4,
-     "words": 475,
+     "height": 4992,
+     "screens": 5.5,
+     "words": 525,
      "img": 0,
      "video": 0,
      "canvas": 2,
-     "svg": 30,
+     "svg": 37,
      "sections": 6,
      "horizontalOverflow": 0,
      "overflowCulprits": [],
@@ -69,7 +69,7 @@
      "align": "left",
      "position": "left",
      "widthRatio": 0.41,
-     "top": 240,
+     "top": 239,
      "tag": "h1",
      "kind": "heading"
     },
@@ -98,7 +98,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.41,
-      "top": 240,
+      "top": 239,
       "tag": "h1",
       "kind": "heading"
      },
@@ -208,7 +208,7 @@
       "kind": "heading"
      },
      {
-      "text": "10 / 12",
+      "text": "12 / 12",
       "words": 3,
       "chars": 7,
       "lines": 1,
@@ -224,7 +224,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.05,
-      "top": 3000,
+      "top": 2999,
       "tag": "strong",
       "kind": "heading"
      },
@@ -266,7 +266,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.85,
-      "top": 4646,
+      "top": 4822,
       "tag": "p",
       "kind": "statement"
      }
@@ -284,12 +284,12 @@
      "families": [
       {
        "family": "Inter",
-       "share": 0.88,
+       "share": 0.89,
        "mono": false
       },
       {
        "family": "Plus Jakarta Sans",
-       "share": 0.13,
+       "share": 0.11,
        "mono": false
       }
      ],
@@ -329,7 +329,7 @@
      "microLabelShare": 0,
      "microSamples": [],
      "upperShare": 0,
-     "centerShare": 0.06,
+     "centerShare": 0.05,
      "smallText": 0
     },
     "eyebrows": [],
@@ -374,15 +374,15 @@
      "textColors": [
       {
        "color": "#4b5563",
-       "share": 0.38
+       "share": 0.39
       },
       {
        "color": "#111827",
-       "share": 0.31
+       "share": 0.32
       },
       {
        "color": "#b9bbbd",
-       "share": 0.22
+       "share": 0.2
       },
       {
        "color": "#fafaf7",
@@ -477,10 +477,10 @@
      "w": 1440,
      "h": 900
     },
-    "pageH": 4817,
+    "pageH": 4992,
     "margins": {
      "left": 120,
-     "right": 125
+     "right": 120
     },
     "sections": [
      {
@@ -488,7 +488,7 @@
       "tag": "section",
       "top": 89,
       "height": 909,
-      "words": 89,
+      "words": 128,
       "media": 3,
       "middle": 0,
       "heading": {
@@ -497,9 +497,9 @@
        "tag": "h1"
       },
       "left": 120,
-      "right": 120,
+      "right": 92,
       "textLeft": 120,
-      "textRight": 168,
+      "textRight": 92,
       "fullBleed": true,
       "footer": false,
       "hero": true,
@@ -580,7 +580,7 @@
       "tag": "section",
       "top": 2809,
       "height": 878,
-      "words": 119,
+      "words": 126,
       "media": 1,
       "middle": 165,
       "heading": {
@@ -589,9 +589,9 @@
        "tag": "h2"
       },
       "left": 120,
-      "right": 144,
+      "right": 133,
       "textLeft": 120,
-      "textRight": 166,
+      "textRight": 133,
       "fullBleed": false,
       "footer": false,
       "hero": false,
@@ -625,8 +625,8 @@
       "sel": "footer.footer",
       "tag": "footer",
       "top": 4141,
-      "height": 676,
-      "words": 44,
+      "height": 852,
+      "words": 49,
       "media": 0,
       "middle": 282,
       "heading": null,
@@ -719,18 +719,18 @@
    "screens": 7,
    "filled": [
     0.96,
-    0.63,
+    0.59,
     0.78,
     0.74,
     0.96,
-    0.67,
-    0.85
+    0.68,
+    0.93
    ],
    "motion": {
-    "elements": 110,
-    "css": 27,
+    "elements": 135,
+    "css": 51,
     "transitions": 10,
-    "scripted": 73,
+    "scripted": 74,
     "videos": 0,
     "playingVideos": 0
    },
@@ -740,13 +740,13 @@
      "h": 1024
     },
     "page": {
-     "height": 6478,
-     "screens": 6.3,
-     "words": 453,
+     "height": 6654,
+     "screens": 6.5,
+     "words": 456,
      "img": 0,
      "video": 0,
      "canvas": 2,
-     "svg": 30,
+     "svg": 37,
      "sections": 6,
      "horizontalOverflow": 0,
      "overflowCulprits": [],
@@ -918,9 +918,9 @@
       "kind": "heading"
      },
      {
-      "text": "6 / 12",
+      "text": "10 / 12",
       "words": 3,
-      "chars": 6,
+      "chars": 7,
       "lines": 1,
       "size": 32,
       "vw": 4.2,
@@ -933,7 +933,7 @@
       "mono": false,
       "align": "left",
       "position": "left",
-      "widthRatio": 0.07,
+      "widthRatio": 0.09,
       "top": 4838,
       "tag": "strong",
       "kind": "heading"
@@ -976,7 +976,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.94,
-      "top": 6374,
+      "top": 6550,
       "tag": "p",
       "kind": "statement"
      }
@@ -1098,15 +1098,15 @@
       },
       {
        "color": "#111827",
-       "share": 0.33
+       "share": 0.32
       },
       {
        "color": "#b9bbbd",
-       "share": 0.24
+       "share": 0.23
       },
       {
        "color": "#fafaf7",
-       "share": 0.09
+       "share": 0.1
       }
      ],
      "button": {
@@ -1188,7 +1188,7 @@
      "w": 768,
      "h": 1024
     },
-    "pageH": 6478,
+    "pageH": 6654,
     "margins": {
      "left": 16,
      "right": 16
@@ -1199,7 +1199,7 @@
       "tag": "section",
       "top": 65,
       "height": 1583,
-      "words": 91,
+      "words": 89,
       "media": 3,
       "middle": 0,
       "heading": {
@@ -1291,7 +1291,7 @@
       "tag": "section",
       "top": 4100,
       "height": 1228,
-      "words": 102,
+      "words": 103,
       "media": 1,
       "middle": 0,
       "heading": {
@@ -1336,8 +1336,8 @@
       "sel": "footer.footer",
       "tag": "footer",
       "top": 5667,
-      "height": 811,
-      "words": 44,
+      "height": 987,
+      "words": 49,
       "media": 0,
       "middle": 295,
       "heading": null,
@@ -1430,19 +1430,19 @@
    "screens": 8,
    "filled": [
     0.97,
-    0.51,
+    0.53,
     0.86,
-    0.69,
+    0.68,
     0.71,
     0.99,
     0.73,
     0.97
    ],
    "motion": {
-    "elements": 110,
-    "css": 27,
+    "elements": 135,
+    "css": 51,
     "transitions": 10,
-    "scripted": 73,
+    "scripted": 74,
     "videos": 0,
     "playingVideos": 0
    },
@@ -1452,13 +1452,13 @@
      "h": 844
     },
     "page": {
-     "height": 6557,
-     "screens": 7.8,
-     "words": 447,
+     "height": 6733,
+     "screens": 8,
+     "words": 458,
      "img": 0,
      "video": 0,
      "canvas": 2,
-     "svg": 30,
+     "svg": 37,
      "sections": 6,
      "horizontalOverflow": 0,
      "overflowCulprits": [],
@@ -1651,9 +1651,9 @@
       "kind": "heading"
      },
      {
-      "text": "7 / 12",
+      "text": "11 / 12",
       "words": 3,
-      "chars": 6,
+      "chars": 7,
       "lines": 1,
       "size": 22,
       "vw": 5.6,
@@ -1666,7 +1666,7 @@
       "mono": false,
       "align": "left",
       "position": "center",
-      "widthRatio": 0.12,
+      "widthRatio": 0.15,
       "top": 5201,
       "tag": "strong",
       "kind": "heading"
@@ -1709,7 +1709,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.94,
-      "top": 6506,
+      "top": 6682,
       "tag": "p",
       "kind": "statement"
      }
@@ -1836,19 +1836,19 @@
      "textColors": [
       {
        "color": "#4b5563",
-       "share": 0.35
+       "share": 0.34
       },
       {
        "color": "#111827",
-       "share": 0.33
+       "share": 0.32
       },
       {
        "color": "#b9bbbd",
-       "share": 0.24
+       "share": 0.23
       },
       {
        "color": "#fafaf7",
-       "share": 0.09
+       "share": 0.1
       }
      ],
      "button": {
@@ -1891,7 +1891,7 @@
      "outlinedBoxes": 0,
      "dashed": 0,
      "blurred": 0,
-     "roundedBoxes": 15,
+     "roundedBoxes": 16,
      "boxRadius": 20,
      "squareMedia": 0,
      "roundedMedia": 2,
@@ -1930,7 +1930,7 @@
      "w": 390,
      "h": 844
     },
-    "pageH": 6557,
+    "pageH": 6733,
     "margins": {
      "left": 16,
      "right": 16
@@ -1941,7 +1941,7 @@
       "tag": "section",
       "top": 65,
       "height": 1300,
-      "words": 85,
+      "words": 91,
       "media": 3,
       "middle": 0,
       "heading": {
@@ -1952,7 +1952,7 @@
       "left": 16,
       "right": 16,
       "textLeft": 16,
-      "textRight": 28,
+      "textRight": 22,
       "fullBleed": true,
       "footer": false,
       "hero": true,
@@ -2033,7 +2033,7 @@
       "tag": "section",
       "top": 4075,
       "height": 1324,
-      "words": 102,
+      "words": 103,
       "media": 1,
       "middle": 0,
       "heading": {
@@ -2078,8 +2078,8 @@
       "sel": "footer.footer",
       "tag": "footer",
       "top": 5767,
-      "height": 790,
-      "words": 44,
+      "height": 966,
+      "words": 49,
       "media": 0,
       "middle": 0,
       "heading": null,
@@ -2202,6 +2202,17 @@
    "width": 1440,
    "message": "No video anywhere on the page.",
    "fix": "Look for one honest clip with scripts/assets.mjs --video (the place, the material, the process) and use it as a muted loop with a poster frame. Defend its absence only if no clip fits the subject."
+  },
+  {
+   "level": "FAIL",
+   "id": "late-title",
+   "width": 1440,
+   "message": "The title is not readable 1.2s after the page loaded (something lies over it).",
+   "fix": "Put the headline in the HTML, painted on the first frame; the load sequence only adds arrival and is settled by 1.2s (references/motion.md, \"Load sequence in 1.2 seconds\"). No preloader, no gate, no waiting for the load event.",
+   "alsoAt": [
+    768,
+    390
+   ]
   },
   {
    "level": "WARN",
