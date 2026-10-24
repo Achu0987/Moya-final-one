@@ -518,7 +518,7 @@
   bottom: 0;
   height: 100%;
   background: var(--water);
-  transform: translateY(100%);
+  transform: translateY(calc(100% + 32px)); /* the wave starts just below the screen */
   transition: transform 1.2s var(--ease-fill);
 }
 
@@ -1920,144 +1920,195 @@
   margin-top: 8px;
 }
 
-/* ---------- The opening moment (components/common/Intro.js) ----------
-   0 to 0.5s the tower is drawn; 0.3 to 1.1s the line rises; 0.55 to 1.3s each flat lights as the line passes;
-   1.1s the name; 1.75 to 2.35s the screen drains down like water. Every step stays under 3s (CLAUDE.md). */
+/* ---------- The opening moment (components/common/Intro.js): "the first drop" ----------
+   0.1 to 0.7s the drop falls; 0.7s it lands and ripples open; 0.8 to 1.3s the name rises out of them;
+   0.95 to 2.05s the water rises, filling the name as it passes; 2.15 to 2.7s it dissolves into the hero.
+   Every step stays under 3s (CLAUDE.md). */
 .intro {
   position: fixed;
   inset: 0;
   z-index: 1000;
-  display: grid;
-  place-items: center;
+  overflow: hidden;
   background: var(--ink);
-  color: var(--base);
-  animation: intro-drain 0.6s var(--ease-fill) 1.75s both;
+  animation: intro-leave 0.55s var(--ease-enter) 2.15s both;
 }
 
-@keyframes intro-drain {
+.intro.is-skip {
+  animation: intro-leave 0.3s var(--ease-enter) both;
+}
+
+@keyframes intro-leave {
   to {
-    transform: translateY(100%);
+    opacity: 0;
     visibility: hidden;
   }
 }
 
-.intro.is-skip {
-  animation: intro-drain 0.35s var(--ease-fill) both;
+/* the drop: falls faster and faster, stretching, and is gone where it lands */
+.intro-drop {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 34px;
+  margin: -48px 0 0 -17px;
+  transform-origin: 50% 100%;
+  animation: intro-fall 0.6s cubic-bezier(0.55, 0, 1, 0.45) 0.1s both;
 }
 
-.intro-inner {
-  display: grid;
-  justify-items: center;
-  gap: 6px;
-  animation: intro-out 0.35s var(--ease-enter) 1.6s both;
-}
-
-@keyframes intro-out {
-  to {
+@keyframes intro-fall {
+  0% {
+    transform: translateY(-60vh) scale(0.8, 1);
     opacity: 0;
-    transform: translateY(-12px);
   }
-}
-
-.intro-art {
-  width: min(260px, 58vw);
-  height: auto;
-  overflow: visible;
-}
-
-.intro-tower,
-.intro-plant,
-.intro-ground {
-  fill: none;
-  stroke: var(--on-ink-muted);
-  stroke-width: 1.5;
-  stroke-dasharray: 1;
-  stroke-dashoffset: 1;
-  animation: intro-draw 0.5s var(--ease-enter) both;
-}
-
-.intro-ground {
-  stroke: var(--ink-raised);
-  animation-delay: 0.05s;
-}
-
-.intro-plant {
-  animation-delay: 0.15s;
-}
-
-.intro-line {
-  fill: none;
-  stroke: var(--orange);
-  stroke-width: 3;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  stroke-dasharray: 1;
-  stroke-dashoffset: 1;
-  animation: intro-draw 0.8s var(--ease-fill) 0.3s both;
-}
-
-@keyframes intro-draw {
-  to {
-    stroke-dashoffset: 0;
-  }
-}
-
-/* a flat: dark until the line reaches its floor, then water in the window and a branch to it */
-.intro-win {
-  fill: var(--ink-raised);
-}
-
-/* water runs into each window from the branch side */
-.intro-water {
-  fill: var(--water);
-  transform-box: fill-box;
-  transform-origin: right;
-  animation: intro-lit 0.35s var(--ease-fill) calc(0.55s + var(--f) * 0.09s) both;
-}
-
-.intro-floor path {
-  stroke: var(--orange);
-  stroke-width: 2;
-  stroke-linecap: round;
-  opacity: 0;
-  animation: intro-branch 0.25s var(--ease-enter) calc(0.5s + var(--f) * 0.09s) both;
-}
-
-@keyframes intro-lit {
-  from {
-    transform: scaleX(0);
-  }
-}
-
-@keyframes intro-branch {
-  to {
+  15% {
     opacity: 1;
   }
+  90% {
+    transform: translateY(0) scale(0.75, 1.25);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(6px) scale(1.4, 0.4);
+    opacity: 0;
+  }
+}
+
+/* where it lands: three rings open out and fade */
+.intro-ripple {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 120px;
+  height: 120px;
+  margin: -60px 0 0 -60px;
+  border: 2px solid var(--water);
+  border-radius: 50%;
+  opacity: 0;
+  animation: intro-ripple 1.3s var(--ease-enter) 0.68s both;
+}
+
+.intro-ripple:nth-of-type(2) {
+  animation-delay: 0.8s;
+}
+
+.intro-ripple:nth-of-type(3) {
+  animation-delay: 0.92s;
+}
+
+@keyframes intro-ripple {
+  0% {
+    opacity: 0.9;
+    transform: scale(0.1, 0.04);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(9, 3.4);
+  }
+}
+
+/* the name: rises out of the ripples, very large */
+.intro-word {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-content: center;
+  justify-items: center;
+  gap: 28px;
+  padding: 0 var(--gutter);
+  text-align: center;
 }
 
 .intro-name {
-  margin-top: 10px;
   font-family: var(--font-display);
   font-weight: 700;
-  font-size: 40px;
-  letter-spacing: -0.03em;
-  animation: intro-arrive 0.45s var(--ease-enter) 1.05s both;
+  font-size: clamp(56px, 13vw, 184px);
+  line-height: 0.95;
+  letter-spacing: -0.045em;
+  animation: intro-rise 0.6s var(--ease-enter) 0.78s both;
 }
 
-.intro-line-text {
-  font-size: var(--fs-body);
-  color: var(--on-ink-muted);
-  animation: intro-arrive 0.45s var(--ease-enter) 1.2s both;
+.intro-tag {
+  font-size: var(--fs-body-lg);
+  animation: intro-rise 0.5s var(--ease-enter) 1.05s both;
 }
 
-@keyframes intro-arrive {
+@keyframes intro-rise {
   from {
     opacity: 0;
-    transform: translateY(8px);
+    transform: translateY(28px);
+    letter-spacing: 0.02em;
   }
 }
 
-/* reduced motion: no opening moment at all */
+.intro-word.is-dry {
+  color: var(--base);
+}
+
+.intro-word.is-dry .intro-tag {
+  color: var(--on-ink-muted);
+}
+
+.intro-word.is-wet {
+  color: var(--ink);
+}
+
+.intro-word.is-wet .intro-tag {
+  color: var(--muted);
+}
+
+/* the water: the level rises from the bottom, its wave surface on top; everything inside is clipped to it.
+   Its contents move the other way, so the ink name inside stays exactly over the light one and the
+   letters fill as the surface passes. It ends 28px high so the wave clears the top of the screen. */
+.intro-water {
+  position: absolute;
+  inset: 0 0 -28px; /* taller by the wave, so it still covers the bottom when it ends 28px high */
+  overflow: hidden;
+  transform: translateY(100%);
+  animation: intro-level 1.1s cubic-bezier(0.45, 0, 0.25, 1) 0.95s both;
+}
+
+.intro-water::before {
+  content: '';
+  position: absolute;
+  inset: 27px 0 0;
+  background: var(--water);
+}
+
+.intro-still {
+  position: absolute;
+  inset: 0;
+  transform: translateY(-100%);
+  animation: intro-hold 1.1s cubic-bezier(0.45, 0, 0.25, 1) 0.95s both;
+}
+
+@keyframes intro-level {
+  to {
+    transform: translateY(-28px);
+  }
+}
+
+@keyframes intro-hold {
+  to {
+    transform: translateY(28px);
+  }
+}
+
+/* the surface: a wave that keeps moving while the level rises */
+.intro-wave {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 200%;
+  height: 28px;
+  animation: intro-flow 1.2s linear infinite;
+}
+
+@keyframes intro-flow {
+  to {
+    transform: translateX(-50%);
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   .intro {
     display: none;
