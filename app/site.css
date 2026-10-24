@@ -1934,17 +1934,6 @@
   animation: intro-drain 0.6s var(--ease-fill) 1.75s both;
 }
 
-/* the water surface, carried down as the screen drains */
-.intro::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  height: 3px;
-  background: var(--orange);
-}
-
 @keyframes intro-drain {
   to {
     transform: translateY(100%);
