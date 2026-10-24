@@ -1921,9 +1921,9 @@
 }
 
 /* ---------- The opening moment (components/common/Intro.js) ----------
-   0 to 0.5s the tower is drawn; 0.3 to 1.15s the line rises with a drop riding it; each flat fills as the drop
-   passes its floor; 1.15s the mark and name; 1.85 to 2.45s the screen drains down like water.
-   Every step stays under 3s (CLAUDE.md). */
+   0 to 0.6s the tower rises from the ground; 0.45 to 1.3s the line climbs with a drop riding it, each flat
+   filling as the drop passes its floor; 1.3s the mark and name, held; 2.5 to 3.1s the screen drains down
+   like water. Every step stays under 3s (CLAUDE.md). */
 .intro {
   position: fixed;
   inset: 0;
@@ -1932,7 +1932,7 @@
   place-items: center;
   background: var(--ink);
   color: var(--base);
-  animation: intro-drain 0.6s var(--ease-fill) 1.85s both;
+  animation: intro-drain 0.6s var(--ease-fill) 2.5s both;
 }
 
 @keyframes intro-drain {
@@ -1949,7 +1949,7 @@
 .intro-inner {
   display: grid;
   justify-items: center;
-  animation: intro-out 0.35s var(--ease-enter) 1.7s both;
+  animation: intro-out 0.35s var(--ease-enter) 2.4s both;
 }
 
 @keyframes intro-out {
@@ -1961,43 +1961,94 @@
 
 .intro-art {
   width: auto;
-  height: min(52vh, 440px);
+  height: min(54vh, 460px);
   overflow: visible;
 }
 
-/* the drawing: lines that draw themselves */
-.intro-tower,
-.intro-roof,
-.intro-plant,
-.intro-ground {
+/* the neighbours: dim shapes, a few lit windows */
+.intro-city rect {
+  fill: var(--ink-raised);
+}
+
+.intro-city .intro-city-win {
+  fill: var(--on-ink-muted);
+  opacity: 0.18;
+}
+
+.intro-city {
+  opacity: 0;
+  animation: intro-show 0.6s var(--ease-enter) 0.1s both;
+}
+
+/* the tower rises from the ground */
+.intro-build {
+  clip-path: inset(100% 0 0 0);
+  animation: intro-rise-up 0.6s cubic-bezier(0.3, 0, 0.2, 1) both;
+}
+
+@keyframes intro-rise-up {
+  to {
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+.intro-body {
+  fill: color-mix(in srgb, var(--base) 12%, var(--ink));
+  stroke: color-mix(in srgb, var(--base) 30%, var(--ink));
+  stroke-width: 1;
+}
+
+.intro-parapet {
+  fill: var(--base);
+}
+
+.intro-roof-tank {
   fill: none;
   stroke: var(--on-ink-muted);
   stroke-width: 1.5;
-  stroke-dasharray: 1;
-  stroke-dashoffset: 1;
-  animation: intro-draw 0.55s var(--ease-enter) both;
 }
 
-.intro-roof {
-  stroke: var(--base);
-  stroke-width: 3;
-  stroke-linecap: round;
-  animation-delay: 0.2s;
+.intro-win {
+  fill: var(--ink);
+}
+
+.intro-mullion {
+  stroke: color-mix(in srgb, var(--base) 12%, var(--ink));
+  stroke-width: 1.5;
+}
+
+.intro-slab {
+  stroke: var(--on-ink-muted);
+  stroke-width: 1.5;
+  opacity: 0.55;
+}
+
+.intro-lobby {
+  fill: var(--water);
+  opacity: 0.35;
+}
+
+.intro-door {
+  fill: var(--water);
+  opacity: 0.7;
 }
 
 .intro-ground {
-  stroke: var(--ink-raised);
-  animation-delay: 0.05s;
+  stroke: color-mix(in srgb, var(--base) 25%, var(--ink));
+  stroke-width: 1.5;
 }
 
 .intro-plant {
-  animation-delay: 0.12s;
+  fill: none;
+  stroke: var(--on-ink-muted);
+  stroke-width: 1.5;
+  stroke-dasharray: 4 4;
 }
 
 .intro-tank {
   fill: var(--water);
   opacity: 0;
-  animation: intro-show 0.3s var(--ease-enter) 0.3s both;
+  animation: intro-show 0.3s var(--ease-enter) 0.35s both;
 }
 
 .intro-line {
@@ -2008,7 +2059,7 @@
   stroke-linejoin: round;
   stroke-dasharray: 1;
   stroke-dashoffset: 1;
-  animation: intro-draw 0.85s cubic-bezier(0.45, 0, 0.55, 1) 0.3s both;
+  animation: intro-draw 0.85s cubic-bezier(0.45, 0, 0.55, 1) 0.45s both;
 }
 
 @keyframes intro-draw {
@@ -2025,7 +2076,7 @@
 
 /* the drop: rides the tip of the line from the tank to the top floor, then is gone */
 .intro-drop {
-  animation: intro-ride 0.85s cubic-bezier(0.45, 0, 0.55, 1) 0.3s both;
+  animation: intro-ride 0.85s cubic-bezier(0.45, 0, 0.55, 1) 0.45s both;
 }
 
 .intro-drop-core {
@@ -2039,34 +2090,30 @@
 
 @keyframes intro-ride {
   0% {
-    transform: translate(92px, 325px);
+    transform: translate(92px, 321px);
     opacity: 0;
   }
   6% {
     opacity: 1;
   }
-  18% {
-    transform: translate(146px, 325px);
+  22% {
+    transform: translate(168px, 321px);
   }
   94% {
     opacity: 1;
   }
   100% {
-    transform: translate(146px, 46px);
+    transform: translate(168px, 54px);
     opacity: 0;
   }
 }
 
-/* a flat: dark until the drop reaches its floor, then a branch and water running into the windows */
-.intro-win {
-  fill: var(--ink-raised);
-}
-
+/* a flat fills as the drop reaches its floor: a branch, then water running into its windows */
 .intro-water {
   fill: var(--water);
   transform-box: fill-box;
   transform-origin: right;
-  animation: intro-fill 0.35s var(--ease-fill) calc(0.5s + var(--f) * 0.055s) both;
+  animation: intro-fill 0.35s var(--ease-fill) calc(0.76s + var(--f) * 0.052s) both;
 }
 
 @keyframes intro-fill {
@@ -2075,21 +2122,21 @@
   }
 }
 
-.intro-floor path {
+.intro-branch {
   stroke: var(--orange);
   stroke-width: 2;
   stroke-linecap: round;
   opacity: 0;
-  animation: intro-show 0.2s var(--ease-enter) calc(0.46s + var(--f) * 0.055s) both;
+  animation: intro-show 0.2s var(--ease-enter) calc(0.72s + var(--f) * 0.052s) both;
 }
 
-/* the mark and the name */
+/* the mark and the name, held on screen */
 .intro-brand {
   display: flex;
   align-items: center;
   gap: 14px;
   margin-top: 22px;
-  animation: intro-arrive 0.5s var(--ease-enter) 1.1s both;
+  animation: intro-arrive 0.5s var(--ease-enter) 1.25s both;
 }
 
 .intro-mark {
@@ -2109,7 +2156,7 @@
   margin-top: 10px;
   font-size: var(--fs-body-lg);
   color: var(--on-ink-muted);
-  animation: intro-arrive 0.5s var(--ease-enter) 1.25s both;
+  animation: intro-arrive 0.5s var(--ease-enter) 1.4s both;
 }
 
 @keyframes intro-arrive {
