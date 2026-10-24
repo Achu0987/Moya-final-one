@@ -1,6 +1,6 @@
 {
  "url": "http://localhost:3100/b2b/builders",
- "at": "2026-10-24T06:54:16.412Z",
+ "at": "2026-10-24T07:05:13.054Z",
  "allow": [],
  "viewports": [
   {
@@ -10,17 +10,17 @@
    "screens": 6,
    "filled": [
     0.96,
-    0.55,
+    0.51,
     0.34,
     0.96,
     0.96,
     0.95
    ],
    "motion": {
-    "elements": 23,
-    "css": 2,
-    "transitions": 3,
-    "scripted": 18,
+    "elements": 82,
+    "css": 7,
+    "transitions": 64,
+    "scripted": 11,
     "videos": 0,
     "playingVideos": 0
    },
@@ -383,7 +383,7 @@
       },
       {
        "color": "#fafaf7",
-       "share": 0.12
+       "share": 0.11
       }
      ],
      "button": {
@@ -516,14 +516,14 @@
       "top": 1424,
       "height": 468,
       "words": 0,
-      "media": 1,
+      "media": 0,
       "middle": 0,
       "heading": null,
       "left": null,
       "right": null,
       "textLeft": null,
       "textRight": null,
-      "fullBleed": true,
+      "fullBleed": false,
       "footer": false,
       "hero": false,
       "continues": true,
@@ -689,19 +689,19 @@
    "screens": 8,
    "filled": [
     0.96,
-    0.52,
+    0.53,
     0.63,
-    0.54,
+    0.62,
     0.84,
     0.96,
     0.96,
     0.93
    ],
    "motion": {
-    "elements": 22,
-    "css": 2,
-    "transitions": 2,
-    "scripted": 18,
+    "elements": 81,
+    "css": 7,
+    "transitions": 63,
+    "scripted": 11,
     "videos": 0,
     "playingVideos": 0
    },
@@ -1206,14 +1206,14 @@
       "top": 2512,
       "height": 532,
       "words": 0,
-      "media": 1,
+      "media": 0,
       "middle": 0,
       "heading": null,
       "left": null,
       "right": null,
       "textLeft": null,
       "textRight": null,
-      "fullBleed": true,
+      "fullBleed": false,
       "footer": false,
       "hero": false,
       "continues": true,
@@ -1376,10 +1376,10 @@
     0.97
    ],
    "motion": {
-    "elements": 22,
-    "css": 2,
-    "transitions": 2,
-    "scripted": 18,
+    "elements": 81,
+    "css": 7,
+    "transitions": 63,
+    "scripted": 11,
     "videos": 0,
     "playingVideos": 0
    },
@@ -1905,14 +1905,14 @@
       "top": 2170,
       "height": 439,
       "words": 0,
-      "media": 1,
+      "media": 0,
       "middle": 0,
       "heading": null,
       "left": null,
       "right": null,
       "textLeft": null,
       "textRight": null,
-      "fullBleed": true,
+      "fullBleed": false,
       "footer": false,
       "hero": false,
       "continues": true,

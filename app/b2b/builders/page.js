@@ -2,6 +2,7 @@ import { ArrowDown, ArrowRight, Check, X } from '@phosphor-icons/react/dist/ssr'
 import Words from '@/components/common/Words';
 import Motion from '@/components/Motion';
 import Sizer from '@/components/builders/Sizer';
+import BuilderMotion from '@/components/builders/BuilderMotion';
 import './builders.css';
 
 export const metadata = {
@@ -37,9 +38,14 @@ export default function Builders() {
       <section className="bx-hero" aria-labelledby="bx-title">
         <div className="container bx-hero-grid">
           <div className="bx-hero-copy">
+            {/* each line rises out of its own mask as the page opens */}
             <h1 id="bx-title" className="bx-title">
-              Drinking water,
-              <br /> planned in.
+              <span className="bx-line">
+                <span>Drinking water,</span>
+              </span>
+              <span className="bx-line">
+                <span>planned in.</span>
+              </span>
             </h1>
             <p className="bx-lede">
               Moya One goes into your tower while it is built, through you. Every flat gets its own line, a Moya1™
@@ -74,9 +80,9 @@ export default function Builders() {
               One decision at the design stage, then a step at each stage after it. By handover, every flat is ready.
             </p>
           </div>
-          <ol className="bx-schedule">
+          <ol className="bx-schedule" data-in>
             {STAGES.map((s, i) => (
-              <li key={s.stage} className="bx-stage" style={{ '--i': i }} data-reveal="fade">
+              <li key={s.stage} className="bx-stage" style={{ '--i': i }}>
                 <p className="bx-stage-name">{s.stage}</p>
                 <span className="bx-stage-bar" aria-hidden="true" />
                 <h3 className="bx-stage-title">{s.title}</h3>
@@ -99,23 +105,23 @@ export default function Builders() {
           <h2 id="bx-flat-title" className="bx-flat-title" data-reveal="words">
             <Words>Three things go in.</Words>
           </h2>
-          <div className="bx-flat-lists">
-          <div className="bx-flat-col" data-reveal="fade">
+          <div className="bx-flat-lists" data-in>
+          <div className="bx-flat-col">
             <p className="bx-flat-label">In every flat</p>
             <ul>
-              {GOES_IN.map((t) => (
-                <li key={t}>
+              {GOES_IN.map((t, i) => (
+                <li key={t} style={{ '--i': i }}>
                   <Check size={24} aria-hidden="true" />
                   {t}
                 </li>
               ))}
             </ul>
           </div>
-          <div className="bx-flat-col is-out" data-reveal="fade">
+          <div className="bx-flat-col is-out">
             <p className="bx-flat-label">Never in the flat</p>
             <ul>
-              {STAYS_OUT.map((t) => (
-                <li key={t}>
+              {STAYS_OUT.map((t, i) => (
+                <li key={t} style={{ '--i': i + 3 }}>
                   <X size={24} aria-hidden="true" />
                   {t}
                 </li>
@@ -123,7 +129,7 @@ export default function Builders() {
             </ul>
           </div>
           </div>
-          <figure className="bx-flat-photo" data-reveal="fade">
+          <figure className="bx-flat-photo" data-in>
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img src="/builders/kitchen.webp" alt="An apartment kitchen with a tap over a round sink." loading="lazy" />
             <figcaption>A flat kitchen. Moya One adds a control unit and one extra tap.</figcaption>
@@ -135,6 +141,7 @@ export default function Builders() {
       <Sizer />
 
       <Motion />
+      <BuilderMotion />
     </>
   );
 }

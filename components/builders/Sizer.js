@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { ArrowRight } from '@phosphor-icons/react/dist/ssr';
 import { CONTACT_EMAIL } from '@/lib/content';
 
@@ -10,6 +10,28 @@ import { CONTACT_EMAIL } from '@/lib/content';
 // The enquiry below carries the same tower into a pre-written email.
 const STAGES = ['Design', 'Structure', 'Services', 'Finishing'];
 const fmt = (n) => n.toLocaleString('en-IN');
+
+// a count that runs up or down to its new value instead of jumping (reduced motion: it jumps)
+function useCount(to) {
+  const [shown, setShown] = useState(to);
+  const from = useRef(to);
+  useEffect(() => {
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return setShown(to);
+    const start = from.current;
+    const t0 = performance.now();
+    let raf = 0;
+    const step = (now) => {
+      const p = Math.min(1, (now - t0) / 500);
+      const v = Math.round(start + (to - start) * (1 - Math.pow(1 - p, 3)));
+      from.current = v;
+      setShown(v);
+      if (p < 1) raf = requestAnimationFrame(step);
+    };
+    raf = requestAnimationFrame(step);
+    return () => cancelAnimationFrame(raf);
+  }, [to]);
+  return shown;
+}
 
 function Tower({ floors, perFloor }) {
   const top = 30;
@@ -28,7 +50,7 @@ function Tower({ floors, perFloor }) {
       {Array.from({ length: floors }, (_, f) => {
         const y = top + fh * f;
         return (
-          <g key={f}>
+          <g key={f} className="bx-tower-floor" style={{ '--f': floors - 1 - f, '--n': floors }}>
             {Array.from({ length: perFloor }, (_, k) => (
               <rect key={k} className="bx-tower-flat" x={left + k * (ww + gap)} y={y + (fh - wh) / 2} width={ww} height={wh} rx={Math.min(2, wh / 3)} />
             ))}
@@ -39,7 +61,7 @@ function Tower({ floors, perFloor }) {
       <path className="bx-tower-ground" d={`M20 ${ground}H300`} />
       <rect className="bx-tower-plant" x="84" y={ground + 8} width="172" height="32" rx="4" />
       <rect className="bx-tower-tank" x="100" y={ground + 16} width="26" height="16" rx="4" />
-      <path className="bx-tower-line" d={`M126 ${ground + 24}H${riser}V${top + 4}`} />
+      <path className="bx-tower-line" d={`M126 ${ground + 24}H${riser}V${top + 4}`} pathLength="1" />
     </svg>
   );
 }
@@ -51,6 +73,7 @@ export default function Sizer() {
   const [city, setCity] = useState('');
   const [stage, setStage] = useState(STAGES[0]);
   const flats = floors * perFloor;
+  const shown = useCount(flats);
 
   const body = [
     'Hello Moya One,',
@@ -91,20 +114,20 @@ export default function Sizer() {
             <dl className="bx-count" aria-live="polite">
               <div className="is-lead">
                 <dt>Flats on one line</dt>
-                <dd>{fmt(flats)}</dd>
+                <dd>{fmt(shown)}</dd>
               </div>
               <div>
                 <dt>Moya1™ control units</dt>
-                <dd>{fmt(flats)}</dd>
+                <dd>{fmt(shown)}</dd>
               </div>
               <div>
                 <dt>Extra taps</dt>
-                <dd>{fmt(flats)}</dd>
+                <dd>{fmt(shown)}</dd>
               </div>
             </dl>
             <span className="sample">Illustrative</span>
           </div>
-          <figure className="bx-size-visual">
+          <figure className="bx-size-visual" data-in>
             <Tower floors={floors} perFloor={perFloor} />
           </figure>
         </div>
@@ -120,7 +143,7 @@ export default function Sizer() {
               Your tower of {floors} floors and {fmt(flats)} flats goes into the email for you. Add a name, a city and
               where the build is.
             </p>
-            <figure className="bx-enquire-photo">
+            <figure className="bx-enquire-photo" data-in>
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img src="/builders/city.webp" alt="Residential towers and cranes over Byculla, Mumbai." loading="lazy" />
               <figcaption>Byculla, Mumbai.</figcaption>
