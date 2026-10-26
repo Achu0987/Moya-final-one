@@ -1920,6 +1920,14 @@
   margin-top: 8px;
 }
 
+/* the neighbouring pages, below the actions, separated by space only */
+.holding-related {
+  display: grid;
+  justify-items: start;
+  gap: 4px;
+  margin-top: 24px;
+}
+
 /* ---------- The opening moment (components/common/Intro.js) ----------
    0 to 0.6s the tower rises from the ground; 0.45 to 1.3s the line climbs with a drop riding it, each flat
    filling as the drop passes its floor; 1.3s the mark and name, held; 2.5 to 3.1s the screen drains down

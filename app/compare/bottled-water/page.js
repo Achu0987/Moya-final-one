@@ -4,5 +4,5 @@ import Holding from '@/components/common/Holding';
 export const metadata = { title: 'Bottled water: Moya One', robots: { index: false } };
 
 export default function Page() {
-  return <Holding title="Bottled water" text="The weekly jug routine, against one line to your kitchen." />;
+  return <Holding title="Bottled water" text="The weekly jug routine, against one line to your kitchen." related={[{ href: '/compare/ro-filters', label: 'Moya One and RO filters' }, { href: '/compare', label: 'All three side by side' }]} />;
 }

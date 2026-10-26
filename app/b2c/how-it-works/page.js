@@ -41,6 +41,10 @@ export default function HowItWorks() {
                 {/* PLACEHOLDER: "no filters for residents" follows CLIENT_CONTEXT.md; Claims tab "To confirm". */}
                 <li>Change a filter under the sink.</li>
               </ul>
+              <a href="/compare" className="text-link dodont-link">
+                Compare jugs, RO filters and Moya One
+                <ArrowRight size={20} aria-hidden="true" />
+              </a>
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img className="dodont-jug" src="/illustrations/jug.svg" alt="" width="160" height="216" />
             </div>

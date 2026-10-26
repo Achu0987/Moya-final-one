@@ -290,6 +290,19 @@
   color: var(--muted);
 }
 
+/* contextual links: on to How it works under the schedule, on to Compare under what stays out */
+.bx-plan-link {
+  margin-top: 40px;
+}
+
+.bx-flat-link {
+  margin-top: 20px;
+  font-family: var(--font-text);
+  font-size: var(--fs-body);
+  font-weight: 600;
+  color: var(--ink);
+}
+
 /* ---------- The sizer ---------- */
 .bx-size {
   padding-block: var(--section);

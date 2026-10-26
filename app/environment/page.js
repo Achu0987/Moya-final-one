@@ -101,6 +101,10 @@ export default function Environment() {
               For builders
               <ArrowRight size={20} aria-hidden="true" />
             </a>
+            <a href="/compare" className="text-link">
+              Compare the options
+              <ArrowRight size={20} aria-hidden="true" />
+            </a>
           </div>
         </div>
       </section>

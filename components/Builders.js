@@ -4,7 +4,6 @@ import { useState } from 'react';
 import { ArrowRight, CaretDown } from '@phosphor-icons/react/dist/ssr';
 import Words from './common/Words';
 import TowerScene from './TowerScene';
-import { BUILDER_MAILTO } from '@/lib/content';
 
 // Every line restates CLAUDE.md "What the project is" and CLIENT_CONTEXT.md.
 // PLACEHOLDER: "No retrofit" and "No lost space" are brief points, not yet Claims-tab entries. Add them there as OK before launch.
@@ -52,7 +51,7 @@ export default function Builders() {
             })}
           </ul>
 
-          <a href={BUILDER_MAILTO} className="btn btn-primary" data-reveal="fade">
+          <a href="/contact?as=builder" className="btn btn-primary" data-reveal="fade">
             Talk to us about a project
             <ArrowRight size={20} aria-hidden="true" />
           </a>

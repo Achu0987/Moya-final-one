@@ -685,6 +685,14 @@
   z-index: 1;
 }
 
+/* the way on to the comparisons, kept clear of the jug drawing */
+.dodont-link {
+  position: relative;
+  z-index: 1;
+  margin-top: 20px;
+  padding-right: 136px;
+}
+
 .dodont-never li {
   color: var(--muted);
   text-decoration: line-through;

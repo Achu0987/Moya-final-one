@@ -91,6 +91,10 @@ export default function Builders() {
               </li>
             ))}
           </ol>
+          <a href="/b2c/how-it-works" className="text-link bx-plan-link">
+            See how the water reaches each flat
+            <ArrowRight size={20} aria-hidden="true" />
+          </a>
         </div>
       </section>
 
@@ -128,6 +132,10 @@ export default function Builders() {
                 </li>
               ))}
             </ul>
+            <a href="/compare" className="text-link bx-flat-link">
+              Compare jugs, RO filters and Moya One
+              <ArrowRight size={20} aria-hidden="true" />
+            </a>
           </div>
           </div>
           <figure className="bx-flat-photo" data-in>
