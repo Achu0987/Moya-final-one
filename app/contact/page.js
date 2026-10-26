@@ -10,7 +10,7 @@ import './contact.css';
 export const metadata = {
   title: 'Contact: Moya One',
   description:
-    'Write to Moya One. Residents with a question about their tower, and builders planning drinking water into a project.',
+    'Living in a tower, or building one? Talk to Moya One about drinking water on tap in every flat, planned in from the first drawing.',
 };
 
 export default function Contact() {
