@@ -1,0 +1,1148 @@
+/* Compare (/compare, /compare/bottled-water, /compare/ro-filters). Tokens only; shared pieces (.closing, .sample,
+   .text-link, .btn) live in app/site.css and app/globals.css.
+   The three pages share one world: a dark first screen as on the builders and environment pages with a white
+   drawing card, flat 2px-ink drawings, the comparison as a real table, grey tone-step panels, the centred close.
+   Each page has its own live thing: the kitchen switch (hub, RO), the routine loop and the year of lifting
+   (bottled water), the filter-unit count (RO). */
+
+/* ---------- First screen ---------- */
+.cp-hero {
+  background: var(--ink);
+  color: var(--base);
+  padding-block: 48px var(--section);
+}
+
+.cp-hero-grid {
+  display: grid;
+  gap: 40px;
+  align-items: center;
+}
+
+.cp-title {
+  font-size: var(--fs-hero);
+  line-height: var(--lh-hero);
+  letter-spacing: -0.035em;
+}
+
+.cp-lede {
+  max-width: 38ch;
+  margin-top: 24px;
+  font-size: var(--fs-body-lg);
+  color: var(--on-ink-muted);
+}
+
+.cp-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 16px 28px;
+  margin-top: 36px;
+}
+
+.cp-hero .text-link {
+  color: var(--base);
+}
+
+/* ---------- Section heads (heading left, sentence right on desktop) ---------- */
+.cp-head {
+  display: grid;
+  gap: 16px;
+  margin-bottom: 40px;
+}
+
+.cp-head h2 {
+  font-size: var(--fs-h1);
+  line-height: var(--lh-h1);
+  letter-spacing: -0.03em;
+}
+
+.cp-head p {
+  max-width: 44ch;
+  font-size: var(--fs-body-lg);
+}
+
+/* ---------- The kitchen switch (hub and RO first screens) ---------- */
+.ks,
+.bw-jug {
+  margin: 0;
+  display: grid;
+  border-radius: var(--radius-card);
+  background: var(--base);
+  color: var(--ink);
+  overflow: hidden;
+}
+
+.ks-art {
+  width: 100%;
+  height: auto;
+  padding: 20px 12px 0;
+}
+
+.ks-jugs use,
+.ks-ro,
+.ks-moya,
+.ks-closed {
+  transition:
+    opacity 0.45s var(--ease-enter),
+    transform 0.5s var(--ease-enter);
+}
+
+.ks-jugs use {
+  transform-box: fill-box;
+  transform-origin: bottom;
+}
+
+.ks-ro,
+.ks-moya {
+  opacity: 0;
+}
+
+.ks-moya {
+  transform: translateY(8px);
+}
+
+.ks-line {
+  fill: none;
+  stroke: var(--orange);
+  stroke-width: 5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-dasharray: 1;
+  stroke-dashoffset: 1;
+  transition: stroke-dashoffset 0.3s var(--ease-fill);
+}
+
+.ks-drain {
+  fill: none;
+  stroke: var(--muted);
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-dasharray: 3 6;
+}
+
+/* jugs only in the jug state */
+.ks:not(.is-jugs) .ks-jugs use {
+  opacity: 0;
+  transform: translateY(-24px) scale(0.9);
+}
+
+/* the RO unit: the cupboard opens to show it */
+.ks.is-ro .ks-ro {
+  opacity: 1;
+}
+
+.ks.is-ro .ks-closed {
+  opacity: 0;
+}
+
+/* Moya One: the line climbs the wall, the unit and the extra tap appear */
+.ks.is-moya .ks-moya {
+  opacity: 1;
+  transform: none;
+  transition-delay: 0.5s;
+}
+
+.ks.is-moya .ks-line {
+  stroke-dashoffset: 0;
+  transition: stroke-dashoffset 0.9s var(--ease-fill) 0.1s;
+}
+
+.ks-bar {
+  display: grid;
+  gap: 12px;
+  padding: 16px 20px 20px;
+}
+
+.ks-switch {
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-self: start;
+  padding: 4px;
+  border-radius: var(--radius-pill);
+  background: var(--grey);
+}
+
+.ks-switch button {
+  min-height: 44px;
+  padding: 0 18px;
+  border: 0;
+  border-radius: var(--radius-pill);
+  background: transparent;
+  color: var(--ink);
+  font: inherit;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition:
+    background-color 0.3s var(--ease-enter),
+    color 0.3s var(--ease-enter);
+}
+
+.ks-switch button:hover {
+  background: color-mix(in srgb, var(--ink) 8%, var(--grey));
+}
+
+.ks-switch button[aria-pressed='true'] {
+  background: var(--ink);
+  color: var(--base);
+}
+
+.ks-caption {
+  min-height: 3.2em;
+  font-size: 15px;
+  color: var(--muted);
+}
+
+/* ---------- The comparison table ---------- */
+.cp-table {
+  padding-block: var(--section);
+}
+
+.cmp-pick {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.cmp-pick span {
+  margin-right: 4px;
+  font-weight: 600;
+}
+
+.cmp-pick button {
+  min-height: 44px;
+  padding: 0 18px;
+  border: 0;
+  border-radius: var(--radius-pill);
+  background: var(--grey);
+  color: var(--ink);
+  font: inherit;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition:
+    background-color 0.25s var(--ease-enter),
+    color 0.25s var(--ease-enter);
+}
+
+.cmp-pick button[aria-pressed='true'] {
+  background: var(--ink);
+  color: var(--base);
+}
+
+.cmp-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+.cmp-table th,
+.cmp-table td {
+  padding: 18px 20px;
+  text-align: left;
+  vertical-align: top;
+}
+
+.cmp-table thead th {
+  position: sticky;
+  top: var(--nav-h);
+  z-index: 1;
+  background: var(--base);
+  font-family: var(--font-display);
+  font-size: var(--fs-h3);
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+.cmp-table tbody tr:nth-child(odd) > * {
+  background: var(--grey);
+}
+
+.cmp-table tbody tr > :first-child {
+  border-radius: 12px 0 0 12px;
+}
+
+.cmp-table tbody tr > :last-child {
+  border-radius: 0 12px 12px 0;
+}
+
+.cmp-table tbody th {
+  font-weight: 600;
+  color: var(--muted);
+}
+
+/* the Moya One column, tinted (DESIGN.md section 8) */
+.cmp-table .is-moya {
+  font-weight: 600;
+}
+
+.cmp-table thead th.is-moya,
+.cmp-table tbody tr > td.is-moya {
+  background: color-mix(in srgb, var(--orange) 9%, var(--base));
+}
+
+.cmp-table tbody tr:nth-child(odd) > td.is-moya {
+  background: color-mix(in srgb, var(--orange) 13%, var(--base));
+}
+
+.cmp-table thead th.is-moya {
+  border-radius: 12px 12px 0 0;
+}
+
+.ct-pending {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-left: 8px;
+  padding: 2px 10px;
+  border-radius: var(--radius-pill);
+  background: var(--base);
+  font-size: var(--fs-caption);
+  font-weight: 500;
+  color: var(--muted);
+  white-space: nowrap;
+}
+
+/* a status dot (DESIGN.md section 5: filled shapes only for status dots) */
+.ct-pending::before {
+  content: '';
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--yellow);
+}
+
+/* phones: each question on its own line, Moya One against the chosen option below it */
+@media (max-width: 767px) {
+  .cmp-table,
+  .cmp-table thead,
+  .cmp-table tbody,
+  .cmp-table tr {
+    display: block;
+  }
+
+  .cmp-table tr {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .cmp-table th,
+  .cmp-table td {
+    padding: 12px 14px;
+  }
+
+  .cmp-table .cmp-q {
+    grid-column: 1 / -1;
+    padding-bottom: 0;
+  }
+
+  .cmp-table thead .cmp-q {
+    display: none;
+  }
+
+  .cmp-table thead th {
+    font-size: 16px;
+  }
+
+  .cmp-table tbody tr > :first-child,
+  .cmp-table tbody tr > :last-child {
+    border-radius: 0;
+  }
+
+  .cmp-table tbody tr {
+    margin-bottom: 8px;
+    border-radius: 12px;
+    overflow: hidden;
+  }
+
+  .cmp-table tbody tr:nth-child(even) > * {
+    background: var(--grey);
+  }
+
+  .cmp-table tbody tr > td.is-moya {
+    background: color-mix(in srgb, var(--orange) 13%, var(--base)) !important;
+  }
+
+  /* Moya One first, then the option chosen above the table */
+  .cmp-table .is-moya {
+    order: 1;
+  }
+
+  .cmp-table .is-jugs,
+  .cmp-table .is-ro {
+    order: 2;
+  }
+
+  .cmp.cols-3[data-other='jugs'] .is-ro,
+  .cmp.cols-3[data-other='ro'] .is-jugs {
+    display: none;
+  }
+
+  .ct-pending {
+    margin: 6px 0 0;
+  }
+}
+
+/* ---------- Hub: the two doors ---------- */
+.cp-doors {
+  padding-block: 24px var(--section);
+}
+
+.cp-door-list {
+  display: grid;
+  gap: 16px;
+}
+
+.cp-door {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  gap: 20px;
+  align-items: center;
+  padding: 24px;
+  border-radius: var(--radius-card);
+  background: var(--grey);
+  color: var(--ink);
+  text-decoration: none;
+  transition:
+    background-color 0.3s var(--ease-enter),
+    transform 0.45s var(--ease-enter);
+}
+
+.cp-door.is-ro {
+  background: var(--ink);
+  color: var(--base);
+}
+
+.cp-door:hover {
+  transform: translateY(-4px);
+}
+
+.cp-door.is-jugs:hover {
+  background: color-mix(in srgb, var(--ink) 6%, var(--grey));
+}
+
+.cp-door.is-ro:hover {
+  background: var(--ink-raised);
+}
+
+.cp-door-art {
+  display: grid;
+  place-items: center;
+  aspect-ratio: 1;
+  border-radius: 12px;
+  background: var(--base);
+  padding: 12px;
+}
+
+.cp-door-art svg {
+  width: 100%;
+  height: 100%;
+}
+
+.cp-door-text {
+  display: grid;
+  gap: 8px;
+}
+
+.cp-door-title {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: var(--fs-h3);
+  line-height: var(--lh-h3);
+  letter-spacing: -0.01em;
+}
+
+.cp-door-sub {
+  max-width: 40ch;
+}
+
+.cp-door.is-ro .cp-door-sub {
+  color: var(--on-ink-muted);
+}
+
+.cp-door-go {
+  justify-self: start;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 4px;
+  font-weight: 600;
+  text-decoration: underline;
+  text-decoration-thickness: 1.5px;
+  text-underline-offset: 6px;
+}
+
+.cp-door-go svg {
+  transition: transform 0.3s var(--ease-enter);
+}
+
+.cp-door:hover .cp-door-go svg {
+  transform: translateX(3px);
+}
+
+/* ---------- Hub: one thing to know ---------- */
+.cp-note {
+  padding-block: var(--section);
+  background: color-mix(in srgb, var(--water) 30%, var(--base));
+}
+
+.cp-note-grid {
+  display: grid;
+  gap: 24px;
+}
+
+.cp-note-title {
+  font-size: var(--fs-h1);
+  line-height: var(--lh-h1);
+  letter-spacing: -0.03em;
+}
+
+.cp-note-text {
+  max-width: 44ch;
+  margin-top: 16px;
+  font-size: var(--fs-body-lg);
+}
+
+.cp-note-body .cp-actions {
+  margin-top: 28px;
+}
+
+.cp-statement {
+  max-width: 30ch;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.3;
+  letter-spacing: -0.01em;
+}
+
+/* ---------- Bottled water: the jug on the first screen ---------- */
+.bw-jug svg {
+  width: 100%;
+  height: auto;
+  padding: 24px 24px 0;
+}
+
+.bw-jug figcaption {
+  padding: 12px 24px 20px;
+  font-size: 15px;
+  color: var(--muted);
+}
+
+.bw-string {
+  fill: none;
+  stroke: var(--ink);
+  stroke-width: 2;
+  stroke-linecap: round;
+}
+
+.bw-tag-text {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 22px;
+  fill: var(--ink);
+}
+
+/* ---------- Bottled water: the routine loop ---------- */
+.bw-routine {
+  padding-block: var(--section);
+}
+
+.rt {
+  display: grid;
+  gap: 32px;
+  align-items: center;
+}
+
+.rt-ring {
+  width: 100%;
+  max-width: 420px;
+  height: auto;
+  justify-self: center;
+}
+
+.rt-loop {
+  fill: none;
+  stroke: var(--muted);
+  stroke-width: 2;
+  stroke-dasharray: 3 8;
+  stroke-linecap: round;
+}
+
+.rt-stop {
+  fill: var(--base);
+  stroke: var(--ink);
+  stroke-width: 2;
+  transition: fill 0.3s var(--ease-enter);
+}
+
+.rt-stop.is-on {
+  fill: var(--yellow);
+}
+
+.rt-centre {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 34px;
+  letter-spacing: -0.02em;
+  fill: var(--ink);
+}
+
+.rt-mover {
+  transform-box: view-box;
+  transform-origin: 180px 180px;
+  transition: transform 0.9s cubic-bezier(0.45, 0, 0.25, 1);
+}
+
+.rt-jug {
+  transform-box: view-box;
+  transform-origin: 180px 52px;
+  transition: transform 0.9s cubic-bezier(0.45, 0, 0.25, 1);
+}
+
+.rt-list {
+  display: grid;
+  gap: 4px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.rt-list li {
+  padding: 14px 18px;
+  border-radius: 12px;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: var(--fs-h3);
+  line-height: var(--lh-h3);
+  color: var(--muted);
+  transition:
+    background-color 0.35s var(--ease-enter),
+    color 0.35s var(--ease-enter);
+}
+
+.rt-list li.is-on {
+  background: var(--grey);
+  color: var(--ink);
+}
+
+.rt.is-still .rt-list li {
+  color: var(--ink);
+}
+
+.rt.is-still .rt-list li.is-on {
+  background: transparent;
+}
+
+/* ---------- Bottled water: a year of lifting ---------- */
+.bw-year {
+  padding-block: var(--section);
+  background: var(--grey);
+}
+
+.ly {
+  display: grid;
+  gap: 24px;
+  padding: 28px 20px;
+  border-radius: var(--radius-card);
+  background: var(--base);
+}
+
+.ly-label {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 16px;
+  font-weight: 600;
+}
+
+.ly-label output {
+  font-family: var(--font-display);
+  font-size: var(--fs-h3);
+  font-variant-numeric: tabular-nums;
+}
+
+.ly input[type='range'],
+.fc input[type='range'] {
+  width: 100%;
+  height: 44px;
+  margin: 0;
+  accent-color: var(--ink);
+  cursor: pointer;
+}
+
+.ly-total,
+.fc-total {
+  display: grid;
+  gap: 6px;
+}
+
+.ly-total strong,
+.fc-total strong {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: var(--fs-h1);
+  line-height: 1;
+  letter-spacing: -0.03em;
+  font-variant-numeric: tabular-nums;
+}
+
+.ly-total span,
+.fc-total span {
+  max-width: 40ch;
+  font-size: var(--fs-body-lg);
+}
+
+.ly-blocks {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 8px;
+}
+
+.ly-block {
+  position: relative;
+  aspect-ratio: 1;
+  border-radius: 8px;
+  background: var(--grey);
+  overflow: hidden;
+  opacity: 0.45;
+  transition: opacity 0.4s var(--ease-enter);
+}
+
+.ly-block.is-on {
+  opacity: 1;
+}
+
+.ly-water {
+  position: absolute;
+  inset: 0;
+  background: var(--water);
+  transform: scaleY(var(--fill));
+  transform-origin: bottom;
+  transition: transform 0.6s var(--ease-fill);
+}
+
+.ly-key {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 12px;
+  font-size: var(--fs-caption);
+  color: var(--muted);
+}
+
+/* ---------- RO: water, servicing, space ---------- */
+.ro-asks {
+  padding-block: var(--section);
+}
+
+.ro-ask-list {
+  display: grid;
+  gap: 16px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.ro-ask-key {
+  display: none;
+}
+
+.ro-ask {
+  display: grid;
+  gap: 12px;
+  padding: 24px 20px;
+  border-radius: var(--radius-card);
+  background: var(--grey);
+}
+
+.ro-word {
+  font-size: var(--fs-h2);
+  line-height: var(--lh-h2);
+  letter-spacing: -0.02em;
+  font-weight: 700;
+}
+
+.ro-them,
+.ro-us {
+  max-width: 44ch;
+}
+
+.ro-us {
+  font-weight: 600;
+}
+
+.ro-who {
+  display: block;
+  margin-bottom: 4px;
+  font-size: var(--fs-caption);
+  font-weight: 600;
+  color: var(--muted);
+}
+
+.ro-us .ct-pending {
+  margin-left: 8px;
+}
+
+/* ---------- RO: one system, not one per flat ---------- */
+.ro-build {
+  padding-block: var(--section);
+  background: var(--ink);
+  color: var(--base);
+}
+
+.ro-build .cp-head p {
+  color: var(--on-ink-muted);
+}
+
+.fc {
+  display: grid;
+  gap: 32px;
+  align-items: start;
+}
+
+.fc-copy {
+  display: grid;
+  gap: 16px;
+  align-content: start;
+}
+
+.fc input[type='range'] {
+  accent-color: var(--orange);
+}
+
+.fc-total span {
+  color: var(--on-ink-muted);
+}
+
+.fc .ly-key {
+  color: var(--on-ink-muted);
+}
+
+.fc .sample {
+  background: var(--ink-raised);
+  color: var(--on-ink-muted);
+}
+
+.fc .ks-switch {
+  background: var(--ink-raised);
+}
+
+.fc .ks-switch button {
+  color: var(--base);
+}
+
+.fc .ks-switch button:hover {
+  background: color-mix(in srgb, var(--base) 10%, var(--ink-raised));
+}
+
+.fc .ks-switch button[aria-pressed='true'] {
+  background: var(--base);
+  color: var(--ink);
+}
+
+.fc-art {
+  margin: 0;
+  padding: 24px 20px;
+  border-radius: var(--radius-card);
+  background: var(--ink-raised);
+}
+
+.fc-art svg {
+  width: 100%;
+  height: auto;
+}
+
+.fc-unit {
+  fill: color-mix(in srgb, var(--base) 12%, var(--ink-raised));
+}
+
+.fc-unit.is-on {
+  fill: var(--water);
+}
+
+.fc.is-moya .fc-unit.is-on {
+  fill: color-mix(in srgb, var(--base) 12%, var(--ink-raised));
+}
+
+.fc-line {
+  fill: none;
+  stroke: var(--orange);
+  stroke-width: 4;
+  stroke-linecap: round;
+  stroke-dasharray: 1;
+  stroke-dashoffset: 1;
+}
+
+.fc.is-moya .fc-line {
+  stroke-dashoffset: 0;
+}
+
+/* ---------- Close ---------- */
+.cp-close-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 12px 28px;
+  margin-top: 12px;
+}
+
+/* phones: keep the last heading clear of the floating chat button */
+@media (max-width: 899px) {
+  .cp-note-title {
+    padding-right: 72px;
+  }
+}
+
+/* ---------- Desktop ---------- */
+@media (min-width: 900px) {
+  .cp-hero {
+    padding-top: 72px;
+  }
+
+  .cp-hero-grid,
+  .cp-head,
+  .cp-note-grid,
+  .bw-routine-grid,
+  .bw-year-grid {
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 24px;
+  }
+
+  .cp-hero-copy {
+    grid-column: 1 / 8;
+  }
+
+  .ks,
+  .bw-jug {
+    grid-column: 8 / 13;
+  }
+
+  .ks-art {
+    padding: 28px 24px 0;
+  }
+
+  .ks-bar {
+    padding: 16px 28px 24px;
+  }
+
+  .cp-head {
+    align-items: end;
+    margin-bottom: 56px;
+  }
+
+  .cp-head h2 {
+    grid-column: 1 / 7;
+  }
+
+  .cp-head p {
+    grid-column: 8 / 13;
+  }
+
+  .cp-door-list {
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+  }
+
+  .cp-door {
+    grid-template-columns: 180px 1fr;
+    gap: 28px;
+    padding: 32px;
+  }
+
+  .cp-note-title {
+    grid-column: 1 / 6;
+  }
+
+  .cp-note-body {
+    grid-column: 7 / 13;
+  }
+
+  .cp-statement {
+    font-size: 32px;
+  }
+
+  /* bottled water: head and loop side by side */
+  .bw-routine-grid .cp-head,
+  .bw-year-grid .cp-head {
+    grid-column: 1 / 6;
+    grid-template-columns: 1fr;
+    align-self: start;
+    margin-bottom: 0;
+  }
+
+  .bw-routine-grid .cp-head h2,
+  .bw-routine-grid .cp-head p,
+  .bw-year-grid .cp-head h2,
+  .bw-year-grid .cp-head p {
+    grid-column: auto;
+  }
+
+  .bw-routine-grid .rt {
+    grid-column: 6 / 13;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .bw-year-grid .ly {
+    grid-column: 6 / 13;
+    padding: 40px;
+  }
+
+  /* RO: the word large on the left, both answers to its right, with a key above */
+  .ro-ask-key {
+    display: grid;
+    grid-template-columns: 4fr 4fr 4fr;
+    gap: 24px;
+    padding: 0 32px;
+    font-size: var(--fs-caption);
+    font-weight: 600;
+    color: var(--muted);
+  }
+
+  .ro-ask {
+    grid-template-columns: 4fr 4fr 4fr;
+    gap: 24px;
+    align-items: baseline;
+    padding: 32px;
+  }
+
+  .ro-word {
+    font-size: var(--fs-h1);
+    line-height: var(--lh-h1);
+    letter-spacing: -0.03em;
+  }
+
+  .ro-who {
+    display: none;
+  }
+
+  .fc {
+    grid-template-columns: 5fr 7fr;
+    gap: 48px;
+  }
+
+  .fc-art {
+    padding: 32px;
+  }
+}
+
+/* ======================= Motion =======================
+   Each move shows the comparison: the kitchen switches between its three states (jugs lift away, the cupboard
+   opens on the RO unit, the line climbs the wall); the jug on the bottled water page is lifted, as it is every
+   week; the routine's jug travels its loop; the tonne blocks fill with water; the filter units vanish from the
+   flats when one line serves the tower. Reduced motion: the final state, no travel, no loops. */
+@media (prefers-reduced-motion: no-preference) {
+  .cp-title,
+  .cp-lede,
+  .cp-hero .cp-actions {
+    animation: cp-up 0.8s var(--ease-enter) both;
+  }
+
+  .cp-lede {
+    animation-delay: 0.12s;
+  }
+
+  .cp-hero .cp-actions {
+    animation-delay: 0.24s;
+  }
+
+  .ks,
+  .bw-jug {
+    animation: cp-up 0.9s var(--ease-enter) 0.2s both;
+  }
+
+  @keyframes cp-up {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+  }
+
+  .ks-jugs use {
+    transition-delay: calc(var(--i) * 0.05s);
+  }
+
+  /* the jug is lifted once as the page opens, then set down */
+  .bw-jug-lift {
+    animation: bw-lift 1.8s cubic-bezier(0.45, 0, 0.3, 1) 0.9s both;
+  }
+
+  @keyframes bw-lift {
+    40% {
+      transform: translateY(-14px);
+    }
+    100% {
+      transform: none;
+    }
+  }
+
+  .bw-tag {
+    transform-box: fill-box;
+    transform-origin: 0% 50%;
+    animation: bw-swing 1.8s cubic-bezier(0.45, 0, 0.3, 1) 0.9s both;
+  }
+
+  @keyframes bw-swing {
+    40% {
+      transform: rotate(-6deg);
+    }
+    70% {
+      transform: rotate(3deg);
+    }
+  }
+
+  .cp-door {
+    opacity: 0;
+    transform: translateY(24px);
+    transition:
+      opacity 0.6s var(--ease-enter) calc(var(--i) * 0.12s),
+      transform 0.6s var(--ease-enter) calc(var(--i) * 0.12s),
+      background-color 0.3s var(--ease-enter);
+  }
+
+  .cp-door-list.is-in .cp-door {
+    opacity: 1;
+    transform: none;
+  }
+
+  .cp-door-list.is-in .cp-door:hover {
+    transform: translateY(-4px);
+    transition-delay: 0s;
+  }
+
+  .ro-ask {
+    opacity: 0;
+    transform: translateY(20px);
+    transition:
+      opacity 0.6s var(--ease-enter) calc(var(--i) * 0.12s),
+      transform 0.6s var(--ease-enter) calc(var(--i) * 0.12s);
+  }
+
+  .ro-ask-list.is-in .ro-ask {
+    opacity: 1;
+    transform: none;
+  }
+
+  .fc-unit {
+    transition: fill 0.35s var(--ease-enter) var(--d);
+  }
+
+  .fc-line {
+    transition: stroke-dashoffset 0.9s var(--ease-fill) 0.4s;
+  }
+
+  .cmp-pick button:active,
+  .ks-switch button:active {
+    transform: scale(0.97);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .rt-mover,
+  .rt-jug {
+    transition: none;
+  }
+}
