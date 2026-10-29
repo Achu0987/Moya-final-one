@@ -1,0 +1,1965 @@
+{
+ "url": "http://localhost:3123/compare/bottled-water",
+ "at": "2026-10-29T04:59:33.329Z",
+ "allow": [],
+ "viewports": [
+  {
+   "width": 1440,
+   "height": 900,
+   "load": "load",
+   "screens": 6,
+   "filled": [
+    0.81,
+    0.5,
+    0.47,
+    0.29,
+    0.83,
+    0.95
+   ],
+   "motion": {
+    "elements": 32,
+    "css": 7,
+    "transitions": 3,
+    "scripted": 22,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "page": {
+     "height": 4668,
+     "screens": 5.2,
+     "words": 395,
+     "img": 0,
+     "video": 0,
+     "canvas": 0,
+     "svg": 20,
+     "sections": 5,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 0,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Twenty kilos at a time.",
+     "words": 5,
+     "chars": 23,
+     "lines": 2,
+     "size": 96,
+     "vw": 6.7,
+     "font": "Plus Jakarta Sans",
+     "weight": 700,
+     "tracking": -0.035,
+     "leading": 0.95,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "left",
+     "widthRatio": 0.48,
+     "top": 210,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Twenty kilos at a time.",
+     "words": 5,
+     "lines": 2,
+     "size": 96,
+     "font": "Plus Jakarta Sans"
+    },
+    "headings": [
+     {
+      "text": "Twenty kilos at a time.",
+      "words": 5,
+      "chars": 23,
+      "lines": 2,
+      "size": 96,
+      "vw": 6.7,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": -0.035,
+      "leading": 0.95,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.48,
+      "top": 210,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "The weekly routine.",
+      "words": 3,
+      "chars": 19,
+      "lines": 1,
+      "size": 64,
+      "vw": 4.4,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": -0.03,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.83,
+      "top": 919,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Your year of lifting.",
+      "words": 4,
+      "chars": 21,
+      "lines": 1,
+      "size": 64,
+      "vw": 4.4,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": -0.03,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.83,
+      "top": 1755,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "3,120 kg",
+      "words": 2,
+      "chars": 8,
+      "lines": 1,
+      "size": 64,
+      "vw": 4.4,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": -0.03,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.78,
+      "top": 2050,
+      "tag": "strong",
+      "kind": "statement"
+     },
+     {
+      "text": "Jugs and Moya One.",
+      "words": 4,
+      "chars": 18,
+      "lines": 1,
+      "size": 64,
+      "vw": 4.4,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": -0.03,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.41,
+      "top": 2669,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Put the jugs down.",
+      "words": 4,
+      "chars": 18,
+      "lines": 1,
+      "size": 44,
+      "vw": 3.1,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": -0.02,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.26,
+      "top": 3469,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Moya One",
+      "words": 2,
+      "chars": 8,
+      "lines": 1,
+      "size": 269,
+      "vw": 18.7,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": -0.055,
+      "leading": 0.8,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.85,
+      "top": 4498,
+      "tag": "p",
+      "kind": "statement"
+     }
+    ],
+    "headingSummary": {
+     "count": 7,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 2,
+     "centered": 1,
+     "medianWords": 4,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Inter",
+       "share": 0.83,
+       "mono": false
+      },
+      {
+       "family": "Plus Jakarta Sans",
+       "share": 0.17,
+       "mono": false
+      }
+     ],
+     "familyCount": 2,
+     "sizes": [
+      13,
+      15,
+      16,
+      20,
+      22,
+      44,
+      64,
+      96,
+      269
+     ],
+     "sizeCount": 9,
+     "notLoaded": [],
+     "body": {
+      "font": "Inter",
+      "size": 20,
+      "leading": 1.6,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 9.2
+     },
+     "measureChars": 48,
+     "max": {
+      "size": 269,
+      "vw": 18.7,
+      "font": "Plus Jakarta Sans",
+      "text": "Moya One"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0,
+     "centerShare": 0.08,
+     "smallText": 0
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#fafaf7",
+     "bodyBgHsl": {
+      "h": 60,
+      "s": 0.23,
+      "l": 0.97
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#111827",
+       "top": 89,
+       "hsl": {
+        "h": 221,
+        "s": 0.39,
+        "l": 0.11
+       }
+      },
+      {
+       "color": "#f3f4f6",
+       "top": 1635,
+       "hsl": {
+        "h": 220,
+        "s": 0.14,
+        "l": 0.96
+       }
+      },
+      {
+       "color": "#fafaf7",
+       "top": 1899,
+       "hsl": {
+        "h": 60,
+        "s": 0.23,
+        "l": 0.97
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#111827",
+       "share": 0.48
+      },
+      {
+       "color": "#4b5563",
+       "share": 0.26
+      },
+      {
+       "color": "#b9bbbd",
+       "share": 0.17
+      },
+      {
+       "color": "#fafaf7",
+       "share": 0.09
+      }
+     ],
+     "button": {
+      "bg": "#111827",
+      "hsl": {
+       "h": 221,
+       "s": 0.39,
+       "l": 0.11
+      },
+      "fg": "#fafaf7"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 4,
+     "inHero": 3,
+     "radius": "pill",
+     "height": 50,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Skip to content",
+      "Contact",
+      "See how it works"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 2,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 1,
+     "hairlineSamples": [
+      "header.nav 1440px"
+     ],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 2,
+     "boxRadius": 20,
+     "squareMedia": 0,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [
+     {
+      "type": "svg",
+      "ratio": 0.17
+     }
+    ],
+    "nav": {
+     "links": 6,
+     "fixed": true,
+     "height": 89,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "plus jakarta sans",
+     "inter"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "pageH": 4668,
+    "margins": {
+     "left": 120,
+     "right": 162
+    },
+    "sections": [
+     {
+      "sel": "section.cp-hero",
+      "tag": "section",
+      "top": 89,
+      "height": 710,
+      "words": 52,
+      "media": 1,
+      "middle": 178,
+      "heading": {
+       "text": "Twenty kilos",
+       "size": 96,
+       "tag": "h1"
+      },
+      "left": 120,
+      "right": 120,
+      "textLeft": 120,
+      "textRight": 257,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.bw-routine",
+      "tag": "section",
+      "top": 799,
+      "height": 836,
+      "words": 64,
+      "media": 1,
+      "middle": 64,
+      "heading": {
+       "text": "The",
+       "size": 64,
+       "tag": "h2"
+      },
+      "left": 120,
+      "right": 338,
+      "textLeft": 120,
+      "textRight": 338,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#year.bw-year",
+      "tag": "section",
+      "top": 1635,
+      "height": 914,
+      "words": 59,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Your",
+       "size": 64,
+       "tag": "h2"
+      },
+      "left": 120,
+      "right": 160,
+      "textLeft": 120,
+      "textRight": 730,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.cp-table",
+      "tag": "section",
+      "top": 2549,
+      "height": 801,
+      "words": 109,
+      "media": 0,
+      "middle": 69,
+      "heading": {
+       "text": "Jugs",
+       "size": 64,
+       "tag": "h2"
+      },
+      "left": 120,
+      "right": 217,
+      "textLeft": 120,
+      "textRight": 217,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.closing",
+      "tag": "section",
+      "top": 3350,
+      "height": 466,
+      "words": 33,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Put",
+       "size": 44,
+       "tag": "h2"
+      },
+      "left": 410,
+      "right": 411,
+      "textLeft": 410,
+      "textRight": 411,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "footer.footer",
+      "tag": "footer",
+      "top": 3816,
+      "height": 852,
+      "words": 49,
+      "media": 0,
+      "middle": 282,
+      "heading": null,
+      "left": 120,
+      "right": 170,
+      "textLeft": 120,
+      "textRight": 170,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "Twenty kilos at a time.",
+      "size": 96,
+      "top": 210,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 120,
+      "n": 8
+     },
+     {
+      "x": 260,
+      "n": 2
+     },
+     {
+      "x": 160,
+      "n": 1
+     },
+     {
+      "x": 236,
+      "n": 1
+     },
+     {
+      "x": 381,
+      "n": 1
+     },
+     {
+      "x": 400,
+      "n": 1
+     },
+     {
+      "x": 458,
+      "n": 1
+     },
+     {
+      "x": 473,
+      "n": 1
+     },
+     {
+      "x": 555,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 17,
+    "bodySize": 20,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0.27,
+    "voidBox": {
+     "x": 0,
+     "y": 660,
+     "w": 1440,
+     "h": 240
+    }
+   },
+   "app": null,
+   "consoleErrors": []
+  },
+  {
+   "width": 768,
+   "height": 1024,
+   "load": "load",
+   "screens": 6,
+   "filled": [
+    0.96,
+    0.51,
+    0.55,
+    0.52,
+    0.84,
+    0.93
+   ],
+   "motion": {
+    "elements": 31,
+    "css": 7,
+    "transitions": 2,
+    "scripted": 22,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "page": {
+     "height": 5357,
+     "screens": 5.2,
+     "words": 388,
+     "img": 0,
+     "video": 0,
+     "canvas": 0,
+     "svg": 20,
+     "sections": 5,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 0,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Twenty kilos at a time.",
+     "words": 5,
+     "chars": 23,
+     "lines": 2,
+     "size": 48,
+     "vw": 6.3,
+     "font": "Plus Jakarta Sans",
+     "weight": 700,
+     "tracking": -0.035,
+     "leading": 1,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "center",
+     "widthRatio": 0.96,
+     "top": 113,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Twenty kilos at a time.",
+     "words": 5,
+     "lines": 2,
+     "size": 48,
+     "font": "Plus Jakarta Sans"
+    },
+    "headings": [
+     {
+      "text": "Twenty kilos at a time.",
+      "words": 5,
+      "chars": 23,
+      "lines": 2,
+      "size": 48,
+      "vw": 6.3,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": -0.035,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.96,
+      "top": 113,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "The weekly routine.",
+      "words": 3,
+      "chars": 19,
+      "lines": 1,
+      "size": 40,
+      "vw": 5.2,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": -0.03,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.96,
+      "top": 1386,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Your year of lifting.",
+      "words": 4,
+      "chars": 21,
+      "lines": 1,
+      "size": 40,
+      "vw": 5.2,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": -0.03,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.96,
+      "top": 2511,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "3,120 kg",
+      "words": 2,
+      "chars": 8,
+      "lines": 1,
+      "size": 40,
+      "vw": 5.2,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": -0.03,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.91,
+      "top": 2802,
+      "tag": "strong",
+      "kind": "statement"
+     },
+     {
+      "text": "Jugs and Moya One.",
+      "words": 4,
+      "chars": 18,
+      "lines": 1,
+      "size": 40,
+      "vw": 5.2,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": -0.03,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.96,
+      "top": 3229,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Put the jugs down.",
+      "words": 4,
+      "chars": 18,
+      "lines": 1,
+      "size": 32,
+      "vw": 4.2,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": -0.02,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.36,
+      "top": 4091,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Moya One",
+      "words": 2,
+      "chars": 8,
+      "lines": 1,
+      "size": 165,
+      "vw": 21.5,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": -0.055,
+      "leading": 0.8,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.94,
+      "top": 5252,
+      "tag": "p",
+      "kind": "statement"
+     }
+    ],
+    "headingSummary": {
+     "count": 7,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 2,
+     "centered": 1,
+     "medianWords": 4,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Inter",
+       "share": 0.83,
+       "mono": false
+      },
+      {
+       "family": "Plus Jakarta Sans",
+       "share": 0.17,
+       "mono": false
+      }
+     ],
+     "familyCount": 2,
+     "sizes": [
+      13,
+      15,
+      16,
+      18,
+      20,
+      22,
+      32,
+      40,
+      48,
+      165
+     ],
+     "sizeCount": 10,
+     "notLoaded": [],
+     "body": {
+      "font": "Inter",
+      "size": 18,
+      "leading": 1.6,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 9.2
+     },
+     "measureChars": 48,
+     "max": {
+      "size": 165,
+      "vw": 21.5,
+      "font": "Plus Jakarta Sans",
+      "text": "Moya One"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0,
+     "centerShare": 0.08,
+     "smallText": 0
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#fafaf7",
+     "bodyBgHsl": {
+      "h": 60,
+      "s": 0.23,
+      "l": 0.97
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#111827",
+       "top": 65,
+       "hsl": {
+        "h": 221,
+        "s": 0.39,
+        "l": 0.11
+       }
+      },
+      {
+       "color": "#fafaf7",
+       "top": 474,
+       "hsl": {
+        "h": 60,
+        "s": 0.23,
+        "l": 0.97
+       }
+      },
+      {
+       "color": "#f3f4f6",
+       "top": 2439,
+       "hsl": {
+        "h": 220,
+        "s": 0.14,
+        "l": 0.96
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#111827",
+       "share": 0.49
+      },
+      {
+       "color": "#4b5563",
+       "share": 0.25
+      },
+      {
+       "color": "#b9bbbd",
+       "share": 0.17
+      },
+      {
+       "color": "#fafaf7",
+       "share": 0.08
+      }
+     ],
+     "button": {
+      "bg": "#f97316",
+      "hsl": {
+       "h": 25,
+       "s": 0.95,
+       "l": 0.53
+      },
+      "fg": "#111827"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 3,
+     "inHero": 2,
+     "radius": "pill",
+     "height": 50,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Skip to content",
+      "See how it works"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 2,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 1,
+     "hairlineSamples": [
+      "header.nav 768px"
+     ],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 5,
+     "boxRadius": 12,
+     "squareMedia": 0,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [
+     {
+      "type": "svg",
+      "ratio": 0.51
+     }
+    ],
+    "nav": {
+     "links": 1,
+     "fixed": true,
+     "height": 65,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "plus jakarta sans",
+     "inter"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "pageH": 5357,
+    "margins": {
+     "left": 16,
+     "right": 20
+    },
+    "sections": [
+     {
+      "sel": "section.cp-hero",
+      "tag": "section",
+      "top": 65,
+      "height": 1249,
+      "words": 52,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "Twenty kilos",
+       "size": 48,
+       "tag": "h1"
+      },
+      "left": 16,
+      "right": 16,
+      "textLeft": 16,
+      "textRight": 335,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.bw-routine",
+      "tag": "section",
+      "top": 1314,
+      "height": 1124,
+      "words": 64,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "The",
+       "size": 40,
+       "tag": "h2"
+      },
+      "left": 16,
+      "right": 174,
+      "textLeft": 16,
+      "textRight": 253,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#year.bw-year",
+      "tag": "section",
+      "top": 2439,
+      "height": 719,
+      "words": 59,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Your",
+       "size": 40,
+       "tag": "h2"
+      },
+      "left": 16,
+      "right": 36,
+      "textLeft": 16,
+      "textRight": 182,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.cp-table",
+      "tag": "section",
+      "top": 3157,
+      "height": 862,
+      "words": 109,
+      "media": 0,
+      "middle": 41,
+      "heading": {
+       "text": "Jugs",
+       "size": 40,
+       "tag": "h2"
+      },
+      "left": 16,
+      "right": 36,
+      "textLeft": 16,
+      "textRight": 36,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.closing",
+      "tag": "section",
+      "top": 4019,
+      "height": 351,
+      "words": 33,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Put",
+       "size": 32,
+       "tag": "h2"
+      },
+      "left": 74,
+      "right": 75,
+      "textLeft": 74,
+      "textRight": 75,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "footer.footer",
+      "tag": "footer",
+      "top": 4370,
+      "height": 987,
+      "words": 49,
+      "media": 0,
+      "middle": 295,
+      "heading": null,
+      "left": 16,
+      "right": 58,
+      "textLeft": 16,
+      "textRight": 58,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "Twenty kilos at a time.",
+      "size": 48,
+      "top": 113,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 16,
+      "n": 8
+     },
+     {
+      "x": 103,
+      "n": 2
+     },
+     {
+      "x": 227,
+      "n": 2
+     },
+     {
+      "x": 36,
+      "n": 1
+     },
+     {
+      "x": 88,
+      "n": 1
+     },
+     {
+      "x": 179,
+      "n": 1
+     },
+     {
+      "x": 191,
+      "n": 1
+     },
+     {
+      "x": 288,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 17,
+    "bodySize": 18,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": null,
+   "consoleErrors": []
+  },
+  {
+   "width": 390,
+   "height": 844,
+   "load": "load",
+   "screens": 7,
+   "filled": [
+    0.97,
+    0.77,
+    0.6,
+    0.57,
+    0.73,
+    0.63,
+    0.97
+   ],
+   "motion": {
+    "elements": 37,
+    "css": 7,
+    "transitions": 6,
+    "scripted": 24,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "page": {
+     "height": 5508,
+     "screens": 6.5,
+     "words": 387,
+     "img": 0,
+     "video": 0,
+     "canvas": 0,
+     "svg": 20,
+     "sections": 5,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 0,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Twenty kilos at a time.",
+     "words": 5,
+     "chars": 23,
+     "lines": 2,
+     "size": 48,
+     "vw": 12.3,
+     "font": "Plus Jakarta Sans",
+     "weight": 700,
+     "tracking": -0.035,
+     "leading": 1,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "center",
+     "widthRatio": 0.92,
+     "top": 113,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Twenty kilos at a time.",
+     "words": 5,
+     "lines": 2,
+     "size": 48,
+     "font": "Plus Jakarta Sans"
+    },
+    "headings": [
+     {
+      "text": "Moya One",
+      "words": 2,
+      "chars": 8,
+      "lines": 1,
+      "size": 22,
+      "vw": 5.6,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": -0.035,
+      "leading": 1.6,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.36,
+      "top": 10,
+      "tag": "a",
+      "kind": "heading"
+     },
+     {
+      "text": "Twenty kilos at a time.",
+      "words": 5,
+      "chars": 23,
+      "lines": 2,
+      "size": 48,
+      "vw": 12.3,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": -0.035,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 113,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "The weekly routine.",
+      "words": 3,
+      "chars": 19,
+      "lines": 1,
+      "size": 40,
+      "vw": 10.3,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": -0.03,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 1121,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Your year of lifting.",
+      "words": 4,
+      "chars": 21,
+      "lines": 1,
+      "size": 40,
+      "vw": 10.3,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": -0.03,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 2212,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "3,120 kg",
+      "words": 2,
+      "chars": 8,
+      "lines": 1,
+      "size": 40,
+      "vw": 10.3,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": -0.03,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.82,
+      "top": 2503,
+      "tag": "strong",
+      "kind": "statement"
+     },
+     {
+      "text": "Jugs and Moya One.",
+      "words": 4,
+      "chars": 18,
+      "lines": 2,
+      "size": 40,
+      "vw": 10.3,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": -0.03,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 2962,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Put the jugs down.",
+      "words": 4,
+      "chars": 18,
+      "lines": 1,
+      "size": 32,
+      "vw": 8.2,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": -0.02,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.71,
+      "top": 4152,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Moya One",
+      "words": 2,
+      "chars": 8,
+      "lines": 1,
+      "size": 80.3,
+      "vw": 20.6,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": -0.055,
+      "leading": 0.8,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.94,
+      "top": 5457,
+      "tag": "p",
+      "kind": "statement"
+     }
+    ],
+    "headingSummary": {
+     "count": 8,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 2,
+     "centered": 1,
+     "medianWords": 3,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Inter",
+       "share": 0.83,
+       "mono": false
+      },
+      {
+       "family": "Plus Jakarta Sans",
+       "share": 0.17,
+       "mono": false
+      }
+     ],
+     "familyCount": 2,
+     "sizes": [
+      13,
+      15,
+      16,
+      18,
+      20,
+      22,
+      32,
+      40,
+      48,
+      80
+     ],
+     "sizeCount": 10,
+     "notLoaded": [],
+     "body": {
+      "font": "Inter",
+      "size": 18,
+      "leading": 1.6,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 9.2
+     },
+     "measureChars": 40,
+     "max": {
+      "size": 80.3,
+      "vw": 20.6,
+      "font": "Plus Jakarta Sans",
+      "text": "Moya One"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0,
+     "centerShare": 0.08,
+     "smallText": 0
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#fafaf7",
+     "bodyBgHsl": {
+      "h": 60,
+      "s": 0.23,
+      "l": 0.97
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#111827",
+       "top": 65,
+       "hsl": {
+        "h": 221,
+        "s": 0.39,
+        "l": 0.11
+       }
+      },
+      {
+       "color": "#fafaf7",
+       "top": 563,
+       "hsl": {
+        "h": 60,
+        "s": 0.23,
+        "l": 0.97
+       }
+      },
+      {
+       "color": "#f3f4f6",
+       "top": 2140,
+       "hsl": {
+        "h": 220,
+        "s": 0.14,
+        "l": 0.96
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#111827",
+       "share": 0.49
+      },
+      {
+       "color": "#4b5563",
+       "share": 0.25
+      },
+      {
+       "color": "#b9bbbd",
+       "share": 0.17
+      },
+      {
+       "color": "#fafaf7",
+       "share": 0.08
+      }
+     ],
+     "button": {
+      "bg": "#f97316",
+      "hsl": {
+       "h": 25,
+       "s": 0.95,
+       "l": 0.53
+      },
+      "fg": "#111827"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 3,
+     "inHero": 2,
+     "radius": "pill",
+     "height": 50,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Skip to content",
+      "See how it works"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 2,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 1,
+     "hairlineSamples": [
+      "header.nav 390px"
+     ],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 3,
+     "boxRadius": 20,
+     "squareMedia": 0,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [
+     {
+      "type": "svg",
+      "ratio": 0.31
+     }
+    ],
+    "nav": {
+     "links": 1,
+     "fixed": true,
+     "height": 65,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "plus jakarta sans",
+     "inter"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "pageH": 5508,
+    "margins": {
+     "left": 16,
+     "right": 16
+    },
+    "sections": [
+     {
+      "sel": "section.cp-hero",
+      "tag": "section",
+      "top": 65,
+      "height": 984,
+      "words": 52,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "Twenty kilos",
+       "size": 48,
+       "tag": "h1"
+      },
+      "left": 16,
+      "right": 16,
+      "textLeft": 16,
+      "textRight": 38,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.bw-routine",
+      "tag": "section",
+      "top": 1049,
+      "height": 1091,
+      "words": 64,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "The",
+       "size": 40,
+       "tag": "h2"
+      },
+      "left": 16,
+      "right": 16,
+      "textLeft": 16,
+      "textRight": 18,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#year.bw-year",
+      "tag": "section",
+      "top": 2140,
+      "height": 750,
+      "words": 59,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Your",
+       "size": 40,
+       "tag": "h2"
+      },
+      "left": 16,
+      "right": 21,
+      "textLeft": 16,
+      "textRight": 21,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.cp-table",
+      "tag": "section",
+      "top": 2890,
+      "height": 1189,
+      "words": 109,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Jugs",
+       "size": 40,
+       "tag": "h2"
+      },
+      "left": 16,
+      "right": 32,
+      "textLeft": 16,
+      "textRight": 32,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.closing",
+      "tag": "section",
+      "top": 4080,
+      "height": 463,
+      "words": 33,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Put",
+       "size": 32,
+       "tag": "h2"
+      },
+      "left": 19,
+      "right": 19,
+      "textLeft": 19,
+      "textRight": 19,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "footer.footer",
+      "tag": "footer",
+      "top": 4542,
+      "height": 966,
+      "words": 49,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": 16,
+      "right": 44,
+      "textLeft": 16,
+      "textRight": 44,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "Twenty kilos at a time.",
+      "size": 48,
+      "top": 113,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 16,
+      "n": 9
+     },
+     {
+      "x": 103,
+      "n": 2
+     },
+     {
+      "x": 227,
+      "n": 2
+     },
+     {
+      "x": 36,
+      "n": 1
+     },
+     {
+      "x": 88,
+      "n": 1
+     },
+     {
+      "x": 124,
+      "n": 1
+     },
+     {
+      "x": 191,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 17,
+    "bodySize": 18,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": null,
+   "consoleErrors": []
+  }
+ ],
+ "findings": [
+  {
+   "level": "WARN",
+   "id": "hairline",
+   "width": 1440,
+   "message": "1 thin rule(s)/divider line(s): header.nav 1440px",
+   "fix": "Delete. Separate with space, a tone change, or scale. Lines are only for real tables and form fields.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "palette-cream",
+   "width": 1440,
+   "message": "Yellow-cream background (page background #fafaf7, section #fafaf7, text #fafaf7).",
+   "fix": "Use the drawn palette. If you want warmth, take a low-chroma stone or bone, not a yellow cream.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "few-pictures",
+   "width": 1440,
+   "message": "Only 0 picture(s) on the page (0 photographs, footage or raster images, 0 interface fragments). Drawings in SVG do not count.",
+   "fix": "Find real pictures of the subject's world with scripts/assets.mjs (photographs, archival images, maps, engravings, footage), download them to assets/ and give them room: a hero picture, one per section that has a subject, a full-width band. At least four, usually six to twelve."
+  },
+  {
+   "level": "WARN",
+   "id": "no-footage",
+   "width": 1440,
+   "message": "No video anywhere on the page.",
+   "fix": "Look for one honest clip with scripts/assets.mjs --video (the place, the material, the process) and use it as a muted loop with a poster frame. Defend its absence only if no clip fits the subject."
+  },
+  {
+   "level": "WARN",
+   "id": "off-centre",
+   "width": 1440,
+   "message": "The margins differ: 120px on the left, 162px on the right, at 1440px.",
+   "fix": "Put the navigation and the content on one pair of margins; check for padding on one side only, a scrollbar gutter, or a header on another inset than the page."
+  },
+  {
+   "level": "WARN",
+   "id": "size-count",
+   "width": 768,
+   "message": "10 different font sizes (13, 15, 16, 18, 20, 22, 32, 40, 48, 165).",
+   "fix": "A page needs about five: display, heading, lead, body, small.",
+   "alsoAt": [
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "covered-text",
+   "width": 390,
+   "message": "Large text lies under another element at some scroll position: \"down.\" (screen 5, 25% hidden); \"Moya One\" (screen 7, 38% hidden)",
+   "fix": "Nothing may sit on top of a headline or statement. Move the picture, shorten the pinned run, or raise the text above it (z-index) and give it a ground."
+  }
+ ],
+ "images": [
+  {
+   "viewport": "desktop",
+   "width": 1440,
+   "fold": "C:\\Users\\Dell\\Documents\\Moya-one-final\\.taste-skill\\inspect-compare-bottled-water\\desktop-fold.jpg",
+   "pages": [
+    "C:\\Users\\Dell\\Documents\\Moya-one-final\\.taste-skill\\inspect-compare-bottled-water\\desktop-page-01.jpg",
+    "C:\\Users\\Dell\\Documents\\Moya-one-final\\.taste-skill\\inspect-compare-bottled-water\\desktop-page-02.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "tablet",
+   "width": 768,
+   "fold": "C:\\Users\\Dell\\Documents\\Moya-one-final\\.taste-skill\\inspect-compare-bottled-water\\tablet-fold.jpg",
+   "pages": [
+    "C:\\Users\\Dell\\Documents\\Moya-one-final\\.taste-skill\\inspect-compare-bottled-water\\tablet-page-01.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "mobile",
+   "width": 390,
+   "fold": "C:\\Users\\Dell\\Documents\\Moya-one-final\\.taste-skill\\inspect-compare-bottled-water\\mobile-fold.jpg",
+   "pages": [
+    "C:\\Users\\Dell\\Documents\\Moya-one-final\\.taste-skill\\inspect-compare-bottled-water\\mobile-page-01.jpg"
+   ],
+   "film": []
+  }
+ ]
+}
