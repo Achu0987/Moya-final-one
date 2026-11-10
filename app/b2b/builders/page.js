@@ -24,6 +24,26 @@ const STAGES = [
   { stage: 'Handover', title: 'Ready on day one', text: 'Residents move in and recharge litres from their phones.' },
 ];
 
+// The three pillars Khan set out for builders in the review call (Nov 7). Wording follows his notes; his page-wise
+// text arrives later as a PDF and replaces it.
+// PLACEHOLDER: the "20-30% kitchen space" figure is left out until the Claims tab marks it OK (non-negotiable 3).
+// PLACEHOLDER: "zero maintenance" and "after-installation support" are the client's own words; Rayansh to add them
+// to the Claims tab as OK before launch.
+const PILLARS = [
+  {
+    title: 'A selling point.',
+    text: 'Drinking water on tap is an amenity buyers can see in every kitchen. It sets your project apart and gives it an edge at launch.',
+  },
+  {
+    title: 'Kitchens and lifts, decluttered.',
+    text: 'No jug corner in the modular kitchen, no jugs riding the lifts, and less delivery and security traffic at the gate every day.',
+  },
+  {
+    title: 'Zero maintenance.',
+    text: 'Nothing for residents to service in the flat, with after-installation support from Moya One.',
+  },
+];
+
 const GOES_IN = ['Its own branch of the line', 'A Moya1™ control unit on the kitchen wall', 'An extra tap beside the sink'];
 const STAYS_OUT = [
   'A corner stacked with water jugs',
@@ -67,6 +87,26 @@ export default function Builders() {
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img src="/builders/tower.webp" alt="A tall residential tower near completion against a soft, cloudy sky." />
           </figure>
+        </div>
+      </section>
+
+      {/* ---- why plan it in: the three pillars (client review, Nov 7) ---- */}
+      <section className="bx-pillars" aria-labelledby="bx-pillars-title">
+        <div className="container">
+          <div className="bx-plan-head">
+            <h2 id="bx-pillars-title" data-reveal="words">
+              <Words>Three reasons to plan it in.</Words>
+            </h2>
+            <p data-reveal="fade">What Moya One adds to a project, for the buyers you sell to and the building you run.</p>
+          </div>
+          <ul className="bx-pillar-list" data-in>
+            {PILLARS.map((p, i) => (
+              <li key={p.title} className="bx-pillar" style={{ '--i': i }}>
+                <h3>{p.title}</h3>
+                <p>{p.text}</p>
+              </li>
+            ))}
+          </ul>
         </div>
       </section>
 

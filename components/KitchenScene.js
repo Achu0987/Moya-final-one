@@ -1,15 +1,19 @@
 'use client';
 
 import { useEffect, useRef, useState } from 'react';
-import { ArrowCounterClockwise } from '@phosphor-icons/react/dist/ssr';
+import { Pause, Play } from '@phosphor-icons/react/dist/ssr';
 import { SAMPLE_BALANCE_L, SAMPLE_PACKS_L } from '@/lib/content';
 import { marbleTexture, tileTexture, woodTexture } from '@/lib/three/finishes';
 
 // A real-time 3D Moya One kitchen, built in code (no downloaded model, no raster images), staged like a
-// showroom: marble worktop, walnut cabinets, an undermount steel sink, the resident's usual mixer and the
-// slim Moya One drinking-water tap. It plays like a short film: the line rises, the unit wakes, the phone
-// recharges, the tap pours. Nothing shows how the water is treated (CLAUDE.md non-negotiable 2).
-// UI colours are DESIGN.md tokens; the 3D materials (stone, wood, metal) are real-world finishes.
+// showroom in warm light: veined marble worktop, walnut cabinets, a steel sink with its rim, the resident's
+// usual tap in matte black and the Moya One tap in brushed stainless steel. Its own line is a silver pipe
+// with blue water running through it. It plays like a short film on a loop (the line rises, the unit wakes,
+// the phone recharges, the tap pours), and the visitor can pause it and drag to look around.
+// Client review, Nov 7: taps swapped (black = usual water, silver = Moya One), pipe silver not orange,
+// marble and warm light, plays continuously with no replay. Nothing shows how the water is treated
+// (CLAUDE.md non-negotiable 2). UI colours are DESIGN.md tokens; 3D materials are real-world finishes.
+// PLACEHOLDER: the Moya One tap is a stand-in brushed steel gooseneck until Khan shares the real tap.
 const C = {
   base: 0xfafaf7,
   ink: 0x111827,
@@ -105,6 +109,8 @@ export default function KitchenScene({ stage }) {
   const [ready, setReady] = useState(false);
   const [chapter, setChapter] = useState(-1); // -1: not started; CHAPTERS.length: finished
   const [progress, setProgress] = useState(0);
+  const [paused, setPaused] = useState(false);
+  const [still, setStill] = useState(false); // reduced motion: the finished kitchen, no film to pause
 
   useEffect(() => {
     const el = host.current;
@@ -132,7 +138,7 @@ export default function KitchenScene({ stage }) {
       }
       renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
       renderer.toneMapping = THREE.ACESFilmicToneMapping;
-      renderer.toneMappingExposure = 1.05;
+      renderer.toneMappingExposure = 0.96;
       renderer.outputColorSpace = THREE.SRGBColorSpace;
       renderer.shadowMap.enabled = true; // taste-skill-ignore: 3D lighting, not a CSS shadow
       renderer.shadowMap.type = THREE.PCFSoftShadowMap;
@@ -165,6 +171,8 @@ export default function KitchenScene({ stage }) {
       const chrome = phys({ color: 0xe8ebef, metalness: 1, roughness: 0.08 });
       const brushed = phys({ color: 0xc9ced4, metalness: 1, roughness: 0.32 });
       const matteInk = phys({ color: C.ink, roughness: 0.42, metalness: 0.2, clearcoat: 0.4 });
+      const matteBlack = phys({ color: 0x17181b, roughness: 0.48, metalness: 0.35, clearcoat: 0.25 });
+      const steel = phys({ color: 0xd9dce0, metalness: 1, roughness: 0.24, clearcoat: 0.3, clearcoatRoughness: 0.2 });
 
       // walnut cabinets: carcass, three doors with fine gaps, slim steel pulls, recessed plinth
       add(new THREE.BoxGeometry(2.4, 0.08, 0.84), phys({ color: 0x1a1a1a, roughness: 0.9 }), 0, 0.04, -0.03);
@@ -198,34 +206,41 @@ export default function KitchenScene({ stage }) {
       add(new THREE.BoxGeometry(0.01, SINK.depth, SINK.d), brushed, sx0, sinkY + SINK.depth / 2, SINK.z);
       add(new THREE.BoxGeometry(0.01, SINK.depth, SINK.d), brushed, sx1, sinkY + SINK.depth / 2, SINK.z);
       add(new THREE.CylinderGeometry(0.035, 0.035, 0.006, 32), chrome, SINK.x - 0.12, sinkY + 0.008, SINK.z);
+      add(new THREE.TorusGeometry(0.036, 0.004, 10, 40), steel, SINK.x - 0.12, sinkY + 0.011, SINK.z).rotation.x = Math.PI / 2;
+      // a slim polished rim round the cut-out, so it reads as a proper sink
+      const R = 0.022;
+      add(new THREE.BoxGeometry(SINK.w + 2 * R, 0.006, R), steel, SINK.x, TOP + 0.003, sz0 - R / 2);
+      add(new THREE.BoxGeometry(SINK.w + 2 * R, 0.006, R), steel, SINK.x, TOP + 0.003, sz1 + R / 2);
+      add(new THREE.BoxGeometry(R, 0.006, SINK.d), steel, sx0 - R / 2, TOP + 0.003, SINK.z);
+      add(new THREE.BoxGeometry(R, 0.006, SINK.d), steel, sx1 + R / 2, TOP + 0.003, SINK.z);
 
       // stone-tile splashback and wall
       add(new THREE.BoxGeometry(2.52, 1.36, 0.04), phys({ map: tiles, roughness: 0.35, clearcoat: 0.3 }), 0, 1.6, -0.52);
 
-      // the resident's usual mixer tap: chrome, tall spout, side lever
-      add(new THREE.CylinderGeometry(0.035, 0.04, 0.03, 32), chrome, MIXER.x, TOP + 0.015, MIXER.z);
-      add(new THREE.CylinderGeometry(0.024, 0.026, 0.26, 32), chrome, MIXER.x, TOP + 0.16, MIXER.z);
+      // the resident's usual mixer tap: matte black, tall spout, side lever
+      add(new THREE.CylinderGeometry(0.035, 0.04, 0.03, 32), matteBlack, MIXER.x, TOP + 0.015, MIXER.z);
+      add(new THREE.CylinderGeometry(0.024, 0.026, 0.26, 32), matteBlack, MIXER.x, TOP + 0.16, MIXER.z);
       const mixerSpout = new THREE.CatmullRomCurve3([
         new THREE.Vector3(MIXER.x, TOP + 0.28, MIXER.z),
         new THREE.Vector3(MIXER.x, TOP + 0.36, MIXER.z + 0.04),
         new THREE.Vector3(MIXER.x, TOP + 0.34, MIXER.z + 0.2),
         new THREE.Vector3(MIXER.x, TOP + 0.27, MIXER.z + 0.26),
       ]);
-      add(new THREE.TubeGeometry(mixerSpout, 48, 0.016, 20), chrome, 0, 0, 0);
-      const lever = add(new THREE.BoxGeometry(0.11, 0.012, 0.016), chrome, MIXER.x + 0.07, TOP + 0.24, MIXER.z);
+      add(new THREE.TubeGeometry(mixerSpout, 48, 0.016, 20), matteBlack, 0, 0, 0);
+      const lever = add(new THREE.BoxGeometry(0.11, 0.012, 0.016), matteBlack, MIXER.x + 0.07, TOP + 0.24, MIXER.z);
       lever.rotation.z = 0.25;
 
-      // the Moya One tap: slim matte ink column, orange ring, fine gooseneck in brushed steel
-      add(new THREE.CylinderGeometry(0.03, 0.034, 0.02, 32), matteInk, MOYA_TAP.x, TOP + 0.01, MOYA_TAP.z);
-      add(new THREE.TorusGeometry(0.031, 0.005, 12, 48), phys({ color: C.orange, roughness: 0.35, emissive: C.orange, emissiveIntensity: 0.25 }), MOYA_TAP.x, TOP + 0.024, MOYA_TAP.z).rotation.x = Math.PI / 2;
-      add(new THREE.CylinderGeometry(0.016, 0.018, 0.3, 32), matteInk, MOYA_TAP.x, TOP + 0.17, MOYA_TAP.z);
+      // the Moya One tap: slim brushed stainless steel column, a polished collar, fine gooseneck
+      add(new THREE.CylinderGeometry(0.03, 0.034, 0.02, 32), steel, MOYA_TAP.x, TOP + 0.01, MOYA_TAP.z);
+      add(new THREE.TorusGeometry(0.031, 0.004, 12, 48), chrome, MOYA_TAP.x, TOP + 0.024, MOYA_TAP.z).rotation.x = Math.PI / 2;
+      add(new THREE.CylinderGeometry(0.016, 0.018, 0.3, 32), steel, MOYA_TAP.x, TOP + 0.17, MOYA_TAP.z);
       const moyaSpout = new THREE.CatmullRomCurve3([
         new THREE.Vector3(MOYA_TAP.x, TOP + 0.32, MOYA_TAP.z),
         new THREE.Vector3(MOYA_TAP.x, TOP + 0.45, MOYA_TAP.z + 0.06),
         new THREE.Vector3(MOYA_TAP.x, TOP + 0.43, MOYA_TAP.z + 0.24),
         new THREE.Vector3(MOYA_TAP.x, TOP + 0.37, MOYA_TAP.z + 0.32),
       ]);
-      add(new THREE.TubeGeometry(moyaSpout, 48, 0.011, 20), matteInk, 0, 0, 0);
+      add(new THREE.TubeGeometry(moyaSpout, 48, 0.011, 20), steel, 0, 0, 0);
       const spoutEnd = moyaSpout.getPoint(1);
 
       // water from the Moya One tap into a glass standing in the sink
@@ -244,8 +259,23 @@ export default function KitchenScene({ stage }) {
       const unitScreen = add(new RoundedBoxGeometry(0.22, 0.09, 0.01, 3, 0.004), new THREE.MeshStandardMaterial({ color: C.ink, emissive: C.water, emissiveIntensity: 0, roughness: 0.15 }), 0.8, 1.5, -0.416);
       const led = add(new THREE.SphereGeometry(0.013, 24, 24), new THREE.MeshStandardMaterial({ color: C.yellow, emissive: C.yellow, emissiveIntensity: 0 }), 0.8, 1.33, -0.416);
 
-      // its own water line: up the wall into the unit, then on to the Moya One tap
-      const lineMat = phys({ color: C.orange, roughness: 0.4, clearcoat: 0.5 });
+      // its own water line: up the wall into the unit, then on to the Moya One tap. A silver pipe, tinted
+      // clear enough to show the blue water running inside it (client review: orange read as a third brand colour)
+      const lineMat = phys({ color: 0xd3d7dc, metalness: 0.85, roughness: 0.2, clearcoat: 0.6, transparent: true, opacity: 0.5, depthWrite: false });
+      const flowCanvas = document.createElement('canvas');
+      flowCanvas.width = 256;
+      flowCanvas.height = 8;
+      const fg = flowCanvas.getContext('2d');
+      fg.fillStyle = '#3f9fd6';
+      fg.fillRect(0, 0, 256, 8);
+      fg.fillStyle = '#bfe3f0';
+      [0, 96, 168].forEach((x, i) => fg.fillRect(x, 0, 28 + i * 10, 8));
+      const flowTex = new THREE.CanvasTexture(flowCanvas);
+      flowTex.colorSpace = THREE.SRGBColorSpace;
+      flowTex.wrapS = flowTex.wrapT = THREE.RepeatWrapping;
+      flowTex.repeat.set(22, 1);
+      textures.push(flowTex);
+      const flowMat = new THREE.MeshStandardMaterial({ map: flowTex, emissive: 0x3f9fd6, emissiveMap: flowTex, emissiveIntensity: 0.45, roughness: 0.2 });
       const pipePath = new THREE.CatmullRomCurve3(
         [
           new THREE.Vector3(-1.02, TOP, -0.475),
@@ -261,6 +291,9 @@ export default function KitchenScene({ stage }) {
       );
       const pipe = add(new THREE.TubeGeometry(pipePath, 200, 0.018, 16), lineMat, 0, 0, 0);
       const pipeCount = pipe.geometry.index.count;
+      const pipeWater = add(new THREE.TubeGeometry(pipePath, 200, 0.011, 12), flowMat, 0, 0, 0);
+      const pipeWaterCount = pipeWater.geometry.index.count;
+      pipe.renderOrder = 2;
       const feedPath = new THREE.CatmullRomCurve3(
         [
           new THREE.Vector3(0.8, 1.19, -0.475),
@@ -276,6 +309,9 @@ export default function KitchenScene({ stage }) {
       );
       const feed = add(new THREE.TubeGeometry(feedPath, 120, 0.012, 12), lineMat, 0, 0, 0);
       const feedCount = feed.geometry.index.count;
+      const feedWater = add(new THREE.TubeGeometry(feedPath, 120, 0.007, 10), flowMat, 0, 0, 0);
+      const feedWaterCount = feedWater.geometry.index.count;
+      feed.renderOrder = 2;
 
       // phone on the worktop, its screen drawn live
       const phone = new THREE.Group();
@@ -310,12 +346,20 @@ export default function KitchenScene({ stage }) {
       );
       add(vase, phys({ color: 0xd9d3c7, roughness: 0.85 }), -1.0, TOP, -0.25);
 
-      // ground contact and a warm key light
-      const floor = new THREE.Mesh(new THREE.PlaneGeometry(10, 10), new THREE.ShadowMaterial({ opacity: 0.35 })); // taste-skill-ignore: 3D lighting
+      // the room around it: a warm plaster wall and an oak floor, so the kitchen sits in a home, not a void
+      add(new THREE.BoxGeometry(9, 4.2, 0.04), phys({ color: 0xd8c2a4, roughness: 0.92 }), 0, 2.1, -0.56);
+      const oak = woodTexture(THREE);
+      oak.wrapS = oak.wrapT = THREE.RepeatWrapping;
+      oak.repeat.set(6, 6);
+      textures.push(oak);
+      const floor = new THREE.Mesh(new THREE.PlaneGeometry(9, 9), phys({ map: oak, color: 0xc89b74, roughness: 0.55, clearcoat: 0.2 }));
       floor.rotation.x = -Math.PI / 2;
+      floor.position.set(0, 0, 3.9);
       floor.receiveShadow = true;
       scene.add(floor);
-      const sun = new THREE.DirectionalLight(0xfff4e6, 1.9);
+
+      // warm light: a low golden key from the window side, a pendant glow over the worktop, warm fill
+      const sun = new THREE.DirectionalLight(0xffcd94, 2.1);
       sun.position.set(-2.5, 5, 4);
       sun.castShadow = true;
       sun.shadow.mapSize.set(2048, 2048);
@@ -323,7 +367,10 @@ export default function KitchenScene({ stage }) {
       sun.shadow.bias = -0.0004;
       Object.assign(sun.shadow.camera, { left: -3, right: 3, top: 3, bottom: -3 });
       scene.add(sun);
-      scene.add(new THREE.HemisphereLight(0xffffff, 0x2a2a2a, 0.35));
+      const pendant = new THREE.PointLight(0xffb978, 2.2, 4.5, 1.6);
+      pendant.position.set(0.15, 2.25, 0.55);
+      scene.add(pendant);
+      scene.add(new THREE.HemisphereLight(0xffeedb, 0x4a3524, 0.4));
 
       // ---- the film ----
       const state = { pipe: 1, unit: 1, phone: 1, pour: 1 };
@@ -342,8 +389,12 @@ export default function KitchenScene({ stage }) {
       let playing = false;
 
       const apply = () => {
-        pipe.geometry.setDrawRange(0, Math.floor((pipeCount * clamp01(state.pipe * 1.25)) / 6) * 6);
-        feed.geometry.setDrawRange(0, Math.floor((feedCount * clamp01(state.pipe * 1.25 - 0.25)) / 6) * 6);
+        const run = clamp01(state.pipe * 1.25);
+        const runFeed = clamp01(state.pipe * 1.25 - 0.25);
+        pipe.geometry.setDrawRange(0, Math.floor((pipeCount * run) / 6) * 6);
+        pipeWater.geometry.setDrawRange(0, Math.floor((pipeWaterCount * run) / 6) * 6);
+        feed.geometry.setDrawRange(0, Math.floor((feedCount * runFeed) / 6) * 6);
+        feedWater.geometry.setDrawRange(0, Math.floor((feedWaterCount * runFeed) / 6) * 6);
         led.material.emissiveIntensity = 1.2 * state.unit;
         unitScreen.material.emissiveIntensity = 0.5 * state.unit;
         const litres = FROM_L + (TO_L - FROM_L) * state.phone;
@@ -429,6 +480,7 @@ export default function KitchenScene({ stage }) {
       let t0 = 0;
 
       const setFinal = () => {
+        setStill(true);
         Object.assign(state, { pipe: 1, unit: 1, phone: 1, pour: 1 });
         camPos.set(...OVERVIEW[0]);
         camLook.set(...OVERVIEW[1]);
@@ -442,6 +494,10 @@ export default function KitchenScene({ stage }) {
       // a tapped chapter: show its finished state without motion
       const showChapter = (i) => {
         cancelAnimationFrame(raf);
+        running = false;
+        afterChapter = true;
+        userPaused = true;
+        setPaused(true);
         playing = false;
         orbit = 0;
         Object.assign(state, { pipe: 1, unit: i >= 1 ? 1 : 0, phone: i >= 2 ? 1 : 0, pour: i >= 3 ? 1 : 0 });
@@ -454,65 +510,114 @@ export default function KitchenScene({ stage }) {
         setProgress((i + 1) / CHAPTERS.length);
       };
 
-      const frame = (now) => {
-        const t = Math.max(0, (now - t0) / 1000); // the first frame can be stamped just before t0
-        const i = Math.floor(t / STEP);
-        if (i >= CHAPTERS.length) {
-          // back out to the whole kitchen, then rest
-          const e = ease(clamp01((t - CHAPTERS.length * STEP) / 1.6));
-          camPos.lerpVectors(fromPos.set(...CHAPTERS[3].cam[0]), toPos.set(...OVERVIEW[0]), e);
-          camLook.lerpVectors(fromLook.set(...CHAPTERS[3].cam[1]), toLook.set(...OVERVIEW[1]), e);
-          active = -1;
-          state.pour = 1;
-          apply();
-          render();
-          if (e < 1) raf = requestAnimationFrame(frame);
-          else {
-            playing = false;
-            render();
-            setChapter(CHAPTERS.length);
-            setProgress(1);
-          }
-          return;
-        }
-        const local = (t - i * STEP) / STEP;
-        if (i !== active) {
-          active = i;
-          setChapter(i);
-        }
-        setProgress((i + local) / CHAPTERS.length);
-        // the camera travels in the first 40% of each chapter, the action plays after it
-        const prev = i === 0 ? OVERVIEW : CHAPTERS[i - 1].cam;
-        const e = ease(clamp01(local / 0.4));
-        camPos.lerpVectors(fromPos.set(...prev[0]), toPos.set(...CHAPTERS[i].cam[0]), e);
-        camLook.lerpVectors(fromLook.set(...prev[1]), toLook.set(...CHAPTERS[i].cam[1]), e);
-        const a = ease(clamp01((local - 0.25) / 0.7));
-        if (i === 0) state.pipe = a;
-        if (i === 1) state.unit = a;
-        if (i === 2) state.phone = a;
-        if (i === 3) state.pour = a;
-        apply();
-        render();
-        raf = requestAnimationFrame(frame);
-      };
+      // The film loops like a video: four chapters, a pull back to the whole kitchen, a short rest, then again.
+      // The water in the pipe keeps running throughout. Pause stops it; it also rests while off screen.
+      const HOLD = 2.6; // seconds the finished kitchen rests before the film starts again
+      const END = CHAPTERS.length * STEP + 1.6; // end of the pull back to the whole kitchen
+      let running = false;
+      let shown = -2; // the chapter last handed to the captions and progress bar
+      let lastNow = 0;
+      let pausedAt = 0;
+      let afterChapter = false; // a tapped chapter interrupted the loop: resuming starts it from the top
 
-      const play = () => {
-        cancelAnimationFrame(raf);
+      const restart = (now) => {
         orbit = 0;
         Object.assign(state, { pipe: 0, unit: 0, phone: 0, pour: 0 });
         camPos.set(...OVERVIEW[0]);
         camLook.set(...OVERVIEW[1]);
         active = -1;
+        t0 = now;
+      };
+
+      const frame = (now) => {
+        if (!running) return;
+        const dt = lastNow ? Math.min(0.1, (now - lastNow) / 1000) : 0;
+        lastNow = now;
+        flowTex.offset.x -= dt * 0.35; // the water runs along the pipe
+        let t = Math.max(0, (now - t0) / 1000); // the first frame can be stamped just before t0
+        if (t >= END + HOLD) {
+          restart(now);
+          t = 0;
+        }
+        playing = t < END;
+        const i = Math.floor(t / STEP);
+        if (i >= CHAPTERS.length) {
+          // pull back to the whole kitchen, then rest on it
+          const e = ease(clamp01((t - CHAPTERS.length * STEP) / 1.6));
+          camPos.lerpVectors(fromPos.set(...CHAPTERS[3].cam[0]), toPos.set(...OVERVIEW[0]), e);
+          camLook.lerpVectors(fromLook.set(...CHAPTERS[3].cam[1]), toLook.set(...OVERVIEW[1]), e);
+          Object.assign(state, { pipe: 1, unit: 1, phone: 1, pour: 1 });
+          active = -1; // every label shows while the kitchen rests
+          if (shown !== CHAPTERS.length) {
+            shown = CHAPTERS.length;
+            setChapter(CHAPTERS.length);
+          }
+          setProgress(1);
+        } else {
+          const local = (t - i * STEP) / STEP;
+          active = i;
+          if (shown !== i) {
+            shown = i;
+            setChapter(i);
+          }
+          setProgress((i + local) / CHAPTERS.length);
+          // the camera travels in the first 40% of each chapter, the action plays after it;
+          // the pour starts earlier and runs longer (client review)
+          const prev = i === 0 ? OVERVIEW : CHAPTERS[i - 1].cam;
+          const e = ease(clamp01(local / 0.4));
+          camPos.lerpVectors(fromPos.set(...prev[0]), toPos.set(...CHAPTERS[i].cam[0]), e);
+          camLook.lerpVectors(fromLook.set(...prev[1]), toLook.set(...CHAPTERS[i].cam[1]), e);
+          const a = i === 3 ? clamp01((local - 0.12) / 0.86) : ease(clamp01((local - 0.25) / 0.7));
+          if (i === 0) state.pipe = a;
+          if (i === 1) state.unit = a;
+          if (i === 2) state.phone = a;
+          if (i === 3) state.pour = a;
+        }
         apply();
-        playing = true;
-        t0 = performance.now();
+        render();
         raf = requestAnimationFrame(frame);
       };
 
-      // after the film, drag to look around the kitchen
+      const start = (fromTop) => {
+        cancelAnimationFrame(raf);
+        if (fromTop) restart(performance.now());
+        else t0 += performance.now() - pausedAt;
+        afterChapter = false;
+        running = true;
+        lastNow = 0;
+        setPaused(false);
+        raf = requestAnimationFrame(frame);
+      };
+      const play = () => start(true);
+      const resume = () => {
+        if (running) return;
+        start(afterChapter);
+      };
+      const pause = () => {
+        if (!running) return;
+        running = false;
+        pausedAt = performance.now();
+        cancelAnimationFrame(raf);
+        playing = false;
+        render();
+        setPaused(true);
+      };
+
+      // the film rests while the hero is off screen, and carries on when it is back, unless the visitor paused it
+      let userPaused = false;
+      const io = new IntersectionObserver(([en]) => {
+        if (stageRef.current != null || reduce || userPaused) return;
+        if (en.isIntersecting) resume();
+        else if (running) {
+          pause();
+          setPaused(false);
+        }
+      });
+      io.observe(el);
+
+      // drag to look around the kitchen, at any point in the film
       let dragX = null;
       const down = (e) => {
-        if (playing) return;
         dragX = e.clientX;
         el.setPointerCapture?.(e.pointerId);
       };
@@ -532,6 +637,7 @@ export default function KitchenScene({ stage }) {
       const KEYS = ['pipe', 'unit', 'phone', 'pour'];
       const goTo = (i, instant) => {
         cancelAnimationFrame(raf);
+        running = false;
         playing = false;
         orbit = 0;
         active = i;
@@ -555,7 +661,19 @@ export default function KitchenScene({ stage }) {
         raf = requestAnimationFrame(tick);
       };
 
-      api.current = { play, showChapter, goTo };
+      api.current = {
+        play,
+        showChapter,
+        goTo,
+        pause: () => {
+          userPaused = true;
+          pause();
+        },
+        resume: () => {
+          userPaused = false;
+          resume();
+        },
+      };
       resize();
       document.fonts?.ready.then(() => !disposed && render()); // labels are measured after the fonts arrive
       setReady(true);
@@ -565,7 +683,9 @@ export default function KitchenScene({ stage }) {
 
       cleanup = () => {
         cancelAnimationFrame(raf);
+        running = false;
         ro.disconnect();
+        io.disconnect();
         el.removeEventListener('pointerdown', down);
         el.removeEventListener('pointermove', move);
         el.removeEventListener('pointerup', release);
@@ -638,10 +758,18 @@ export default function KitchenScene({ stage }) {
                 </li>
               ))}
             </ol>
-            <button type="button" className="story-replay" onClick={() => api.current?.play()} disabled={!ready}>
-              <ArrowCounterClockwise size={18} aria-hidden="true" />
-              Replay
+            {!still && (
+            <button
+              type="button"
+              className="story-replay"
+              onClick={() => (paused ? api.current?.resume() : api.current?.pause())}
+              disabled={!ready || chapter === -1}
+              aria-pressed={paused}
+            >
+              {paused ? <Play size={18} aria-hidden="true" /> : <Pause size={18} aria-hidden="true" />}
+              {paused ? 'Play' : 'Pause'}
             </button>
+            )}
           </div>
         </div>
       )}

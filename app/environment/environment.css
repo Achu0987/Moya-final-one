@@ -1,14 +1,127 @@
-/* Environment (/environment). Tokens only. A dark first screen as on the builders page, then two scenes this page
-   alone has: a year of jugs piling up in one kitchen (held while you scroll) and the delivery card washed clean,
-   then the figures that wait for proof and the centred close. Flat 2px-ink drawings throughout.
-   Shared pieces (.hero-*, .closing, .sample) live in app/site.css and app/globals.css.
-   Rhythm: ink, grey (held scene), water, ink, base. */
+/* Environment (/environment). Tokens only. A quiet forest film opens the page (client review, Nov 7), then the
+   tower today and with Moya One on dark ink, then two scenes this page alone has: a year of jugs piling up in one
+   kitchen (held while you scroll) and the delivery card washed clean, then the figures that wait for proof and the
+   centred close. Shared pieces (.hero-*, .closing, .sample) live in app/site.css and app/globals.css.
+   Rhythm: film, ink, grey (held scene), water, ink, base. */
 
-/* ---------- First screen: dark ink, the same ground as the builders page's first screen ---------- */
+/* ---------- First screen: the forest film, the promise set on it ---------- */
+.ev-film {
+  position: relative;
+  isolation: isolate;
+  display: grid;
+  align-items: end;
+  min-height: min(calc(100svh - var(--nav-h)), 860px);
+  padding-block: 120px 56px;
+  overflow: hidden;
+  background: var(--ink);
+  color: var(--base);
+}
+
+.ev-film-video {
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 40%;
+}
+
+/* a neutral scrim under the words only, so the text reads on any frame of the film */
+.ev-film::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(to top, rgb(17 24 39 / 0.78), rgb(17 24 39 / 0.18) 62%, rgb(17 24 39 / 0.05)); /* taste-skill-ignore: scrim under text on a photograph */
+}
+
+.ev-film-title {
+  font-size: var(--fs-hero);
+  line-height: var(--lh-hero);
+  letter-spacing: -0.035em;
+}
+
+.ev-film-lede {
+  max-width: 36ch;
+  margin-top: 20px;
+  font-size: var(--fs-body-lg);
+  color: color-mix(in srgb, var(--base) 88%, var(--ink));
+}
+
+.ev-film .text-link {
+  color: var(--base);
+}
+
+.ev-film-toggle {
+  position: absolute;
+  right: var(--gutter);
+  top: 24px;
+  z-index: 1;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 44px;
+  padding: 0 16px;
+  border: 0;
+  border-radius: var(--radius-pill);
+  background: rgb(17 24 39 / 0.55);
+  color: var(--base);
+  font: 600 14px / 1 var(--font-text);
+  cursor: pointer;
+  transition: background-color 0.25s var(--ease-enter);
+}
+
+.ev-film-toggle:hover {
+  background: rgb(17 24 39 / 0.8);
+}
+
+@media (max-width: 599px) {
+  .ev-film-toggle span {
+    position: absolute;
+    width: 1px;
+    height: 1px; /* taste-skill-ignore: visually hidden label kept for screen readers, not a rule */
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+  }
+
+  .ev-film-toggle {
+    padding: 0 13px;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .ev-film-copy > * {
+    animation: ev-film-up 0.9s var(--ease-enter) both;
+  }
+
+  .ev-film-copy > :nth-child(2) {
+    animation-delay: 0.12s;
+  }
+
+  .ev-film-copy > :nth-child(3) {
+    animation-delay: 0.24s;
+  }
+
+  @keyframes ev-film-up {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+  }
+}
+
+/* ---------- Second: the tower, today and with Moya One, on dark ink ---------- */
 .ev-hero {
   background: var(--ink);
   color: var(--base);
-  padding-block: 48px var(--section);
+  padding-block: var(--section);
+}
+
+.ev-today-title {
+  font-size: var(--fs-h1);
+  line-height: var(--lh-h1);
+  letter-spacing: -0.03em;
 }
 
 .ev-hero .hero-lede,
@@ -28,8 +141,8 @@
 }
 
 @media (min-width: 900px) {
-  .ev-hero {
-    padding-top: 72px;
+  .ev-film {
+    padding-bottom: 88px;
   }
 
   /* as on the builders page: copy across seven columns, the picture in the last five */
@@ -800,4 +913,12 @@
     opacity: 1;
     transform: none;
   }
+}
+
+/* ---------- The film's credit, small, at the foot of the close ---------- */
+.ev-credits {
+  margin-top: 56px;
+  font-size: var(--fs-caption);
+  color: var(--muted);
+  text-align: center;
 }
