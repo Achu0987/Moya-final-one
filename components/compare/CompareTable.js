@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import Jug from '@/components/Jug';
 import { OPTIONS, ROWS } from '@/lib/compare';
 
 // The comparison as a real table. On a desktop all the options sit side by side with Moya One tinted (DESIGN.md
@@ -43,6 +44,14 @@ export default function CompareTable({ only, rows, caption }) {
             </th>
             {cols.map((o) => (
               <th key={o.id} scope="col" className={`cmp-col is-${o.id}`}>
+                <span className="cmp-pic">
+                  {o.drawn ? (
+                    <Jug id={`cmp-jug-${o.id}`} title="A 20-litre water jug" />
+                  ) : (
+                    // eslint-disable-next-line @next/next/no-img-element
+                    <img src={o.img} alt={o.alt} width="600" height="600" loading="lazy" />
+                  )}
+                </span>
                 {o.long}
               </th>
             ))}

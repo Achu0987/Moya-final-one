@@ -854,3 +854,75 @@
     transform-origin: left;
   }
 }
+
+/* ---------- Three reasons to plan it in (client review, Nov 7) ----------
+   A grey field between the dark first screen and the schedule. Each reason is a row: the reason large on the left,
+   what it means on the right. Rows, not a card grid. */
+.bx-pillars {
+  padding-block: var(--section);
+  background: var(--grey);
+}
+
+.bx-pillar-list {
+  display: grid;
+  gap: 12px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.bx-pillar {
+  display: grid;
+  gap: 10px;
+  padding: 24px 20px;
+  border-radius: var(--radius-card);
+  background: var(--base);
+}
+
+.bx-pillar h3 {
+  font-size: var(--fs-h2);
+  line-height: var(--lh-h2);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.bx-pillar p {
+  max-width: 46ch;
+  font-size: var(--fs-body-lg);
+}
+
+@media (min-width: 900px) {
+  .bx-pillar-list {
+    gap: 16px;
+  }
+
+  .bx-pillar {
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 24px;
+    align-items: baseline;
+    padding: 36px 40px;
+  }
+
+  .bx-pillar h3 {
+    grid-column: 1 / 7;
+  }
+
+  .bx-pillar p {
+    grid-column: 7 / 13;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .bx-pillar {
+    opacity: 0;
+    transform: translateY(20px);
+    transition:
+      opacity 0.6s var(--ease-enter) calc(var(--i) * 0.12s),
+      transform 0.6s var(--ease-enter) calc(var(--i) * 0.12s);
+  }
+
+  .bx-pillar-list.is-in .bx-pillar {
+    opacity: 1;
+    transform: none;
+  }
+}
