@@ -1,6 +1,6 @@
 {
  "url": "http://localhost:3123/compare/ro-filters",
- "at": "2026-10-29T05:01:41.170Z",
+ "at": "2026-11-11T10:44:40.837Z",
  "allow": [],
  "viewports": [
   {
@@ -9,18 +9,18 @@
    "load": "load",
    "screens": 6,
    "filled": [
+    0.79,
+    0.72,
     0.75,
-    0.64,
-    0.9,
-    0.44,
-    0.63,
-    0.95
+    0.37,
+    0.86,
+    0.99
    ],
    "motion": {
     "elements": 46,
     "css": 5,
-    "transitions": 12,
-    "scripted": 29,
+    "transitions": 13,
+    "scripted": 28,
     "videos": 0,
     "playingVideos": 0
    },
@@ -30,13 +30,13 @@
      "h": 900
     },
     "page": {
-     "height": 4898,
-     "screens": 5.4,
-     "words": 469,
-     "img": 0,
+     "height": 5001,
+     "screens": 5.6,
+     "words": 451,
+     "img": 2,
      "video": 0,
      "canvas": 0,
-     "svg": 20,
+     "svg": 19,
      "sections": 5,
      "horizontalOverflow": 0,
      "overflowCulprits": [],
@@ -57,19 +57,19 @@
      "words": 5,
      "chars": 26,
      "lines": 2,
-     "size": 96,
-     "vw": 6.7,
-     "font": "Plus Jakarta Sans",
+     "size": 72,
+     "vw": 5,
+     "font": "League Spartan",
      "weight": 700,
-     "tracking": -0.035,
-     "leading": 0.95,
+     "tracking": -0.01,
+     "leading": 1,
      "upper": false,
      "italic": false,
      "mono": false,
      "align": "left",
      "position": "left",
      "widthRatio": 0.48,
-     "top": 196,
+     "top": 213,
      "tag": "h1",
      "kind": "heading"
     },
@@ -77,8 +77,8 @@
      "text": "A filter under every sink.",
      "words": 5,
      "lines": 2,
-     "size": 96,
-     "font": "Plus Jakarta Sans"
+     "size": 72,
+     "font": "League Spartan"
     },
     "headings": [
      {
@@ -86,19 +86,19 @@
       "words": 5,
       "chars": 26,
       "lines": 2,
-      "size": 96,
-      "vw": 6.7,
-      "font": "Plus Jakarta Sans",
+      "size": 72,
+      "vw": 5,
+      "font": "League Spartan",
       "weight": 700,
-      "tracking": -0.035,
-      "leading": 0.95,
+      "tracking": -0.01,
+      "leading": 1,
       "upper": false,
       "italic": false,
       "mono": false,
       "align": "left",
       "position": "left",
       "widthRatio": 0.48,
-      "top": 196,
+      "top": 213,
       "tag": "h1",
       "kind": "heading"
      },
@@ -106,20 +106,20 @@
       "text": "Three things it asks for.",
       "words": 5,
       "chars": 25,
-      "lines": 2,
-      "size": 64,
-      "vw": 4.4,
-      "font": "Plus Jakarta Sans",
+      "lines": 1,
+      "size": 48,
+      "vw": 3.3,
+      "font": "League Spartan",
       "weight": 700,
-      "tracking": -0.03,
-      "leading": 1,
+      "tracking": -0.01,
+      "leading": 1.05,
       "upper": false,
       "italic": false,
       "mono": false,
       "align": "left",
       "position": "left",
       "widthRatio": 0.41,
-      "top": 859,
+      "top": 871,
       "tag": "h2",
       "kind": "heading"
      },
@@ -128,19 +128,19 @@
       "words": 1,
       "chars": 6,
       "lines": 1,
-      "size": 64,
-      "vw": 4.4,
-      "font": "Plus Jakarta Sans",
+      "size": 48,
+      "vw": 3.3,
+      "font": "League Spartan",
       "weight": 700,
-      "tracking": -0.03,
-      "leading": 1,
+      "tracking": -0.01,
+      "leading": 1.05,
       "upper": false,
       "italic": false,
       "mono": false,
       "align": "left",
       "position": "left",
       "widthRatio": 0.25,
-      "top": 1112,
+      "top": 1046,
       "tag": "h3",
       "kind": "heading"
      },
@@ -149,19 +149,19 @@
       "words": 1,
       "chars": 10,
       "lines": 1,
-      "size": 64,
-      "vw": 4.4,
-      "font": "Plus Jakarta Sans",
+      "size": 48,
+      "vw": 3.3,
+      "font": "League Spartan",
       "weight": 700,
-      "tracking": -0.03,
-      "leading": 1,
+      "tracking": -0.01,
+      "leading": 1.05,
       "upper": false,
       "italic": false,
       "mono": false,
       "align": "left",
       "position": "left",
       "widthRatio": 0.25,
-      "top": 1308,
+      "top": 1224,
       "tag": "h3",
       "kind": "heading"
      },
@@ -170,19 +170,19 @@
       "words": 1,
       "chars": 6,
       "lines": 1,
-      "size": 64,
-      "vw": 4.4,
-      "font": "Plus Jakarta Sans",
+      "size": 48,
+      "vw": 3.3,
+      "font": "League Spartan",
       "weight": 700,
-      "tracking": -0.03,
-      "leading": 1,
+      "tracking": -0.01,
+      "leading": 1.05,
       "upper": false,
       "italic": false,
       "mono": false,
       "align": "left",
       "position": "left",
       "widthRatio": 0.25,
-      "top": 1505,
+      "top": 1402,
       "tag": "h3",
       "kind": "heading"
      },
@@ -191,19 +191,19 @@
       "words": 6,
       "chars": 29,
       "lines": 2,
-      "size": 64,
-      "vw": 4.4,
-      "font": "Plus Jakarta Sans",
+      "size": 48,
+      "vw": 3.3,
+      "font": "League Spartan",
       "weight": 700,
-      "tracking": -0.03,
-      "leading": 1,
+      "tracking": -0.01,
+      "leading": 1.05,
       "upper": false,
       "italic": false,
       "mono": false,
       "align": "left",
       "position": "left",
       "widthRatio": 0.41,
-      "top": 1868,
+      "top": 1744,
       "tag": "h2",
       "kind": "heading"
      },
@@ -212,11 +212,11 @@
       "words": 1,
       "chars": 3,
       "lines": 1,
-      "size": 64,
-      "vw": 4.4,
-      "font": "Plus Jakarta Sans",
+      "size": 48,
+      "vw": 3.3,
+      "font": "League Spartan",
       "weight": 700,
-      "tracking": -0.03,
+      "tracking": -0.01,
       "leading": 1,
       "upper": false,
       "italic": false,
@@ -224,28 +224,28 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.33,
-      "top": 2163,
+      "top": 2012,
       "tag": "strong",
       "kind": "statement"
      },
      {
-      "text": "RO filters and Moya One.",
-      "words": 5,
-      "chars": 24,
-      "lines": 2,
-      "size": 64,
-      "vw": 4.4,
-      "font": "Plus Jakarta Sans",
+      "text": "RO filters and MoyaOne.",
+      "words": 4,
+      "chars": 23,
+      "lines": 1,
+      "size": 48,
+      "vw": 3.3,
+      "font": "League Spartan",
       "weight": 700,
-      "tracking": -0.03,
-      "leading": 1,
+      "tracking": -0.01,
+      "leading": 1.05,
       "upper": false,
       "italic": false,
       "mono": false,
       "align": "left",
       "position": "left",
       "widthRatio": 0.41,
-      "top": 2772,
+      "top": 2621,
       "tag": "h2",
       "kind": "heading"
      },
@@ -254,63 +254,42 @@
       "words": 6,
       "chars": 28,
       "lines": 1,
-      "size": 44,
-      "vw": 3.1,
-      "font": "Plus Jakarta Sans",
+      "size": 32,
+      "vw": 2.2,
+      "font": "League Spartan",
       "weight": 700,
-      "tracking": -0.02,
-      "leading": 1.1,
+      "tracking": 0,
+      "leading": 1.15,
       "upper": false,
       "italic": false,
       "mono": false,
       "align": "center",
       "position": "center",
-      "widthRatio": 0.39,
-      "top": 3700,
+      "widthRatio": 0.27,
+      "top": 3482,
       "tag": "h2",
       "kind": "heading"
-     },
-     {
-      "text": "Moya One",
-      "words": 2,
-      "chars": 8,
-      "lines": 1,
-      "size": 269,
-      "vw": 18.7,
-      "font": "Plus Jakarta Sans",
-      "weight": 700,
-      "tracking": -0.055,
-      "leading": 0.8,
-      "upper": false,
-      "italic": false,
-      "mono": false,
-      "align": "left",
-      "position": "center",
-      "widthRatio": 0.85,
-      "top": 4728,
-      "tag": "p",
-      "kind": "statement"
      }
     ],
     "headingSummary": {
-     "count": 10,
+     "count": 9,
      "maxLines": 2,
      "over2Lines": 0,
-     "statements": 2,
+     "statements": 1,
      "centered": 1,
-     "medianWords": 2,
+     "medianWords": 4,
      "mixedFontHeadings": 0
     },
     "type": {
      "families": [
       {
-       "family": "Inter",
-       "share": 0.91,
+       "family": "Outfit",
+       "share": 0.92,
        "mono": false
       },
       {
-       "family": "Plus Jakarta Sans",
-       "share": 0.09,
+       "family": "League Spartan",
+       "share": 0.08,
        "mono": false
       }
      ],
@@ -319,29 +298,29 @@
       13,
       15,
       16,
+      17,
       20,
       22,
-      44,
-      64,
-      96,
-      269
+      32,
+      48,
+      72
      ],
      "sizeCount": 9,
      "notLoaded": [],
      "body": {
-      "font": "Inter",
-      "size": 16,
+      "font": "Outfit",
+      "size": 17,
       "leading": 1.6,
       "weight": 400,
       "tracking": 0,
       "contrast": 16.1
      },
-     "measureChars": 48,
+     "measureChars": 50,
      "max": {
-      "size": 269,
-      "vw": 18.7,
-      "font": "Plus Jakarta Sans",
-      "text": "Moya One"
+      "size": 72,
+      "vw": 5,
+      "font": "League Spartan",
+      "text": "A filter under every sink."
      },
      "monoShare": 0,
      "monoProseShare": 0,
@@ -357,67 +336,70 @@
     "eyebrows": [],
     "numbered": [],
     "color": {
-     "bodyBg": "#fafaf7",
+     "bodyBg": "#ffffff",
      "bodyBgHsl": {
-      "h": 60,
-      "s": 0.23,
-      "l": 0.97
+      "h": 0,
+      "s": 0,
+      "l": 1
      },
      "dark": false,
      "sectionBgs": [
       {
-       "color": "#111827",
-       "top": 89,
+       "color": "#0b1626",
+       "top": 88,
        "hsl": {
-        "h": 221,
-        "s": 0.39,
-        "l": 0.11
+        "h": 216,
+        "s": 0.55,
+        "l": 0.1
        }
       }
      ],
      "textColors": [
       {
-       "color": "#111827",
-       "share": 0.52
+       "color": "#0b1626",
+       "share": 0.5
       },
       {
-       "color": "#b9bbbd",
-       "share": 0.21
+       "color": "#8792a3",
+       "share": 0.23
       },
       {
-       "color": "#4b5563",
-       "share": 0.17
+       "color": "#4b5768",
+       "share": 0.16
       },
       {
-       "color": "#fafaf7",
-       "share": 0.1
+       "color": "#ffffff",
+       "share": 0.09
+      },
+      {
+       "color": "#0450f5",
+       "share": 0.02
       }
      ],
      "button": {
-      "bg": "#111827",
+      "bg": "#0b1626",
       "hsl": {
-       "h": 221,
-       "s": 0.39,
-       "l": 0.11
+       "h": 216,
+       "s": 0.55,
+       "l": 0.1
       },
-      "fg": "#fafaf7"
+      "fg": "#0b1626"
      },
      "lowContrast": []
     },
     "buttons": {
-     "count": 6,
-     "inHero": 4,
+     "count": 5,
+     "inHero": 3,
      "radius": "pill",
-     "height": 50,
+     "height": 52,
      "withShadow": 0,
      "withGradient": 0,
      "mono": 0,
      "upper": 0,
      "heroLabels": [
       "Skip to content",
-      "Contact",
       "Talk to us",
-      "Moya One"
+      "MoyaOne"
      ]
     },
     "surfaces": {
@@ -428,16 +410,14 @@
      "scrims": 0,
      "gradientSamples": [],
      "gradientText": 0,
-     "hairlines": 1,
-     "hairlineSamples": [
-      "header.nav 1440px"
-     ],
+     "hairlines": 0,
+     "hairlineSamples": [],
      "outlinedBoxes": 0,
      "dashed": 0,
      "blurred": 0,
      "roundedBoxes": 5,
      "boxRadius": 20,
-     "squareMedia": 0,
+     "squareMedia": 1,
      "roundedMedia": 0,
      "mediaRadius": 0,
      "textShadow": 0,
@@ -446,7 +426,7 @@
        "count": 3,
        "iconTopped": false,
        "rounded": true,
-       "top": 1080
+       "top": 1014
       }
      ]
     },
@@ -459,13 +439,13 @@
     "nav": {
      "links": 6,
      "fixed": true,
-     "height": 89,
+     "height": 88,
      "floatingPill": false,
      "blur": false
     },
     "fontsLoaded": [
-     "plus jakarta sans",
-     "inter"
+     "league spartan",
+     "outfit"
     ]
    },
    "layout": {
@@ -473,7 +453,7 @@
      "w": 1440,
      "h": 900
     },
-    "pageH": 4898,
+    "pageH": 5001,
     "margins": {
      "left": 120,
      "right": 152
@@ -482,20 +462,20 @@
      {
       "sel": "section.cp-hero",
       "tag": "section",
-      "top": 89,
+      "top": 88,
       "height": 650,
-      "words": 56,
+      "words": 54,
       "media": 1,
-      "middle": 165,
+      "middle": 249,
       "heading": {
        "text": "A filter under",
-       "size": 96,
+       "size": 72,
        "tag": "h1"
       },
       "left": 120,
       "right": 120,
       "textLeft": 120,
-      "textRight": 174,
+      "textRight": 159,
       "fullBleed": false,
       "footer": false,
       "hero": true,
@@ -505,20 +485,20 @@
      {
       "sel": "section#asks.ro-asks",
       "tag": "section",
-      "top": 739,
-      "height": 1010,
-      "words": 125,
+      "top": 738,
+      "height": 886,
+      "words": 122,
       "media": 0,
-      "middle": 62,
+      "middle": 12,
       "heading": {
        "text": "Three",
-       "size": 64,
+       "size": 48,
        "tag": "h2"
       },
       "left": 120,
-      "right": 160,
+      "right": 138,
       "textLeft": 120,
-      "textRight": 160,
+      "textRight": 138,
       "fullBleed": false,
       "footer": false,
       "hero": false,
@@ -528,20 +508,20 @@
      {
       "sel": "section.ro-build",
       "tag": "section",
-      "top": 1748,
-      "height": 904,
-      "words": 55,
+      "top": 1624,
+      "height": 877,
+      "words": 54,
       "media": 1,
       "middle": 80,
       "heading": {
        "text": "One",
-       "size": 64,
+       "size": 48,
        "tag": "h2"
       },
       "left": 120,
-      "right": 121,
+      "right": 152,
       "textLeft": 120,
-      "textRight": 121,
+      "textRight": 155,
       "fullBleed": false,
       "footer": false,
       "hero": false,
@@ -551,20 +531,20 @@
      {
       "sel": "section.cp-table",
       "tag": "section",
-      "top": 2652,
-      "height": 928,
-      "words": 128,
+      "top": 2501,
+      "height": 862,
+      "words": 126,
       "media": 0,
-      "middle": 31,
+      "middle": 37,
       "heading": {
        "text": "RO",
-       "size": 64,
+       "size": 48,
        "tag": "h2"
       },
       "left": 120,
-      "right": 183,
+      "right": 194,
       "textLeft": 120,
-      "textRight": 183,
+      "textRight": 194,
       "fullBleed": false,
       "footer": false,
       "hero": false,
@@ -574,20 +554,20 @@
      {
       "sel": "section.closing",
       "tag": "section",
-      "top": 3580,
-      "height": 466,
-      "words": 34,
+      "top": 3363,
+      "height": 457,
+      "words": 33,
       "media": 0,
       "middle": 0,
       "heading": {
        "text": "Talk",
-       "size": 44,
+       "size": 32,
        "tag": "h2"
       },
-      "left": 423,
-      "right": 424,
-      "textLeft": 423,
-      "textRight": 424,
+      "left": 428,
+      "right": 427,
+      "textLeft": 428,
+      "textRight": 427,
       "fullBleed": false,
       "footer": false,
       "hero": false,
@@ -597,16 +577,12 @@
      {
       "sel": "footer.footer",
       "tag": "footer",
-      "top": 4046,
-      "height": 852,
-      "words": 49,
-      "media": 0,
-      "middle": 282,
-      "heading": {
-       "text": "Moya One",
-       "size": 22,
-       "tag": "p"
-      },
+      "top": 3819,
+      "height": 1182,
+      "words": 46,
+      "media": 1,
+      "middle": 55,
+      "heading": null,
       "left": 120,
       "right": 170,
       "textLeft": 120,
@@ -622,8 +598,8 @@
     "h1s": [
      {
       "text": "A filter under every sink.",
-      "size": 96,
-      "top": 196,
+      "size": 72,
+      "top": 213,
       "firstScreen": true
      }
     ],
@@ -631,14 +607,10 @@
     "edges": [
      {
       "x": 120,
-      "n": 9
+      "n": 7
      },
      {
-      "x": 224,
-      "n": 2
-     },
-     {
-      "x": 293,
+      "x": 194,
       "n": 2
      },
      {
@@ -646,32 +618,44 @@
       "n": 2
      },
      {
-      "x": 168,
+      "x": 217,
       "n": 1
      },
      {
-      "x": 257,
+      "x": 247,
       "n": 1
      },
      {
-      "x": 310,
+      "x": 285,
       "n": 1
      },
      {
-      "x": 352,
+      "x": 325,
       "n": 1
      },
      {
-      "x": 400,
+      "x": 366,
       "n": 1
      },
      {
-      "x": 462,
+      "x": 387,
+      "n": 1
+     },
+     {
+      "x": 416,
+      "n": 1
+     },
+     {
+      "x": 429,
+      "n": 1
+     },
+     {
+      "x": 532,
       "n": 1
      }
     ],
-    "leftBlocks": 21,
-    "bodySize": 16,
+    "leftBlocks": 20,
+    "bodySize": 17,
     "stage": false,
     "explains": true,
     "slivers": [],
@@ -692,18 +676,18 @@
    "load": "load",
    "screens": 6,
    "filled": [
-    0.84,
-    0.73,
-    0.89,
-    0.7,
-    0.63,
-    0.93
+    0.93,
+    0.82,
+    0.93,
+    0.78,
+    0.66,
+    0.98
    ],
    "motion": {
-    "elements": 45,
+    "elements": 44,
     "css": 5,
     "transitions": 11,
-    "scripted": 29,
+    "scripted": 28,
     "videos": 0,
     "playingVideos": 0
    },
@@ -713,13 +697,13 @@
      "h": 1024
     },
     "page": {
-     "height": 5709,
-     "screens": 5.6,
-     "words": 476,
-     "img": 0,
+     "height": 5922,
+     "screens": 5.8,
+     "words": 456,
+     "img": 2,
      "video": 0,
      "canvas": 0,
-     "svg": 20,
+     "svg": 19,
      "sections": 5,
      "horizontalOverflow": 0,
      "overflowCulprits": [],
@@ -740,11 +724,11 @@
      "words": 5,
      "chars": 26,
      "lines": 2,
-     "size": 48,
-     "vw": 6.3,
-     "font": "Plus Jakarta Sans",
+     "size": 44,
+     "vw": 5.7,
+     "font": "League Spartan",
      "weight": 700,
-     "tracking": -0.035,
+     "tracking": -0.01,
      "leading": 1,
      "upper": false,
      "italic": false,
@@ -752,7 +736,7 @@
      "align": "left",
      "position": "center",
      "widthRatio": 0.96,
-     "top": 113,
+     "top": 112,
      "tag": "h1",
      "kind": "heading"
     },
@@ -760,8 +744,8 @@
      "text": "A filter under every sink.",
      "words": 5,
      "lines": 2,
-     "size": 48,
-     "font": "Plus Jakarta Sans"
+     "size": 44,
+     "font": "League Spartan"
     },
     "headings": [
      {
@@ -769,11 +753,11 @@
       "words": 5,
       "chars": 26,
       "lines": 2,
-      "size": 48,
-      "vw": 6.3,
-      "font": "Plus Jakarta Sans",
+      "size": 44,
+      "vw": 5.7,
+      "font": "League Spartan",
       "weight": 700,
-      "tracking": -0.035,
+      "tracking": -0.01,
       "leading": 1,
       "upper": false,
       "italic": false,
@@ -781,7 +765,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.96,
-      "top": 113,
+      "top": 112,
       "tag": "h1",
       "kind": "heading"
      },
@@ -790,11 +774,11 @@
       "words": 5,
       "chars": 25,
       "lines": 1,
-      "size": 40,
-      "vw": 5.2,
-      "font": "Plus Jakarta Sans",
+      "size": 36,
+      "vw": 4.7,
+      "font": "League Spartan",
       "weight": 700,
-      "tracking": -0.03,
+      "tracking": -0.01,
       "leading": 1.05,
       "upper": false,
       "italic": false,
@@ -802,7 +786,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.96,
-      "top": 1209,
+      "top": 1202,
       "tag": "h2",
       "kind": "heading"
      },
@@ -811,19 +795,19 @@
       "words": 1,
       "chars": 6,
       "lines": 1,
-      "size": 32,
-      "vw": 4.2,
-      "font": "Plus Jakarta Sans",
+      "size": 28,
+      "vw": 3.6,
+      "font": "League Spartan",
       "weight": 700,
-      "tracking": -0.02,
-      "leading": 1.1,
+      "tracking": -0.01,
+      "leading": 1.15,
       "upper": false,
       "italic": false,
       "mono": false,
       "align": "left",
       "position": "center",
       "widthRatio": 0.91,
-      "top": 1388,
+      "top": 1377,
       "tag": "h3",
       "kind": "heading"
      },
@@ -832,19 +816,19 @@
       "words": 1,
       "chars": 10,
       "lines": 1,
-      "size": 32,
-      "vw": 4.2,
-      "font": "Plus Jakarta Sans",
+      "size": 28,
+      "vw": 3.6,
+      "font": "League Spartan",
       "weight": 700,
-      "tracking": -0.02,
-      "leading": 1.1,
+      "tracking": -0.01,
+      "leading": 1.15,
       "upper": false,
       "italic": false,
       "mono": false,
       "align": "left",
       "position": "center",
       "widthRatio": 0.91,
-      "top": 1664,
+      "top": 1656,
       "tag": "h3",
       "kind": "heading"
      },
@@ -853,19 +837,19 @@
       "words": 1,
       "chars": 6,
       "lines": 1,
-      "size": 32,
-      "vw": 4.2,
-      "font": "Plus Jakarta Sans",
+      "size": 28,
+      "vw": 3.6,
+      "font": "League Spartan",
       "weight": 700,
-      "tracking": -0.02,
-      "leading": 1.1,
+      "tracking": -0.01,
+      "leading": 1.15,
       "upper": false,
       "italic": false,
       "mono": false,
       "align": "left",
       "position": "center",
       "widthRatio": 0.91,
-      "top": 1939,
+      "top": 1934,
       "tag": "h3",
       "kind": "heading"
      },
@@ -874,11 +858,11 @@
       "words": 6,
       "chars": 29,
       "lines": 1,
-      "size": 40,
-      "vw": 5.2,
-      "font": "Plus Jakarta Sans",
+      "size": 36,
+      "vw": 4.7,
+      "font": "League Spartan",
       "weight": 700,
-      "tracking": -0.03,
+      "tracking": -0.01,
       "leading": 1.05,
       "upper": false,
       "italic": false,
@@ -886,7 +870,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.96,
-      "top": 2318,
+      "top": 2317,
       "tag": "h2",
       "kind": "heading"
      },
@@ -895,11 +879,11 @@
       "words": 1,
       "chars": 3,
       "lines": 1,
-      "size": 40,
-      "vw": 5.2,
-      "font": "Plus Jakarta Sans",
+      "size": 36,
+      "vw": 4.7,
+      "font": "League Spartan",
       "weight": 700,
-      "tracking": -0.03,
+      "tracking": -0.01,
       "leading": 1,
       "upper": false,
       "italic": false,
@@ -907,20 +891,20 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.96,
-      "top": 2582,
+      "top": 2576,
       "tag": "strong",
       "kind": "statement"
      },
      {
-      "text": "RO filters and Moya One.",
-      "words": 5,
-      "chars": 24,
+      "text": "RO filters and MoyaOne.",
+      "words": 4,
+      "chars": 23,
       "lines": 1,
-      "size": 40,
-      "vw": 5.2,
-      "font": "Plus Jakarta Sans",
+      "size": 36,
+      "vw": 4.7,
+      "font": "League Spartan",
       "weight": 700,
-      "tracking": -0.03,
+      "tracking": -0.01,
       "leading": 1.05,
       "upper": false,
       "italic": false,
@@ -928,7 +912,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.96,
-      "top": 3494,
+      "top": 3455,
       "tag": "h2",
       "kind": "heading"
      },
@@ -937,62 +921,41 @@
       "words": 6,
       "chars": 28,
       "lines": 1,
-      "size": 32,
-      "vw": 4.2,
-      "font": "Plus Jakarta Sans",
+      "size": 28,
+      "vw": 3.6,
+      "font": "League Spartan",
       "weight": 700,
-      "tracking": -0.02,
-      "leading": 1.1,
+      "tracking": 0,
+      "leading": 1.15,
       "upper": false,
       "italic": false,
       "mono": false,
       "align": "center",
       "position": "center",
-      "widthRatio": 0.53,
-      "top": 4444,
+      "widthRatio": 0.45,
+      "top": 4397,
       "tag": "h2",
       "kind": "heading"
-     },
-     {
-      "text": "Moya One",
-      "words": 2,
-      "chars": 8,
-      "lines": 1,
-      "size": 165,
-      "vw": 21.5,
-      "font": "Plus Jakarta Sans",
-      "weight": 700,
-      "tracking": -0.055,
-      "leading": 0.8,
-      "upper": false,
-      "italic": false,
-      "mono": false,
-      "align": "left",
-      "position": "center",
-      "widthRatio": 0.94,
-      "top": 5605,
-      "tag": "p",
-      "kind": "statement"
      }
     ],
     "headingSummary": {
-     "count": 10,
+     "count": 9,
      "maxLines": 2,
      "over2Lines": 0,
-     "statements": 2,
+     "statements": 1,
      "centered": 1,
-     "medianWords": 2,
+     "medianWords": 4,
      "mixedFontHeadings": 0
     },
     "type": {
      "families": [
       {
-       "family": "Inter",
+       "family": "Outfit",
        "share": 0.92,
        "mono": false
       },
       {
-       "family": "Plus Jakarta Sans",
+       "family": "League Spartan",
        "share": 0.08,
        "mono": false
       }
@@ -1002,30 +965,29 @@
       13,
       15,
       16,
+      17,
       18,
       20,
-      22,
-      32,
-      40,
-      48,
-      165
+      28,
+      36,
+      44
      ],
-     "sizeCount": 10,
+     "sizeCount": 9,
      "notLoaded": [],
      "body": {
-      "font": "Inter",
-      "size": 16,
+      "font": "Outfit",
+      "size": 17,
       "leading": 1.6,
       "weight": 400,
       "tracking": 0,
       "contrast": 16.1
      },
-     "measureChars": 48,
+     "measureChars": 50,
      "max": {
-      "size": 165,
-      "vw": 21.5,
-      "font": "Plus Jakarta Sans",
-      "text": "Moya One"
+      "size": 44,
+      "vw": 5.7,
+      "font": "League Spartan",
+      "text": "A filter under every sink."
      },
      "monoShare": 0,
      "monoProseShare": 0,
@@ -1041,68 +1003,72 @@
     "eyebrows": [],
     "numbered": [],
     "color": {
-     "bodyBg": "#fafaf7",
+     "bodyBg": "#ffffff",
      "bodyBgHsl": {
-      "h": 60,
-      "s": 0.23,
-      "l": 0.97
+      "h": 0,
+      "s": 0,
+      "l": 1
      },
      "dark": false,
      "sectionBgs": [
       {
-       "color": "#111827",
-       "top": 65,
+       "color": "#0b1626",
+       "top": 64,
        "hsl": {
-        "h": 221,
-        "s": 0.39,
-        "l": 0.11
+        "h": 216,
+        "s": 0.55,
+        "l": 0.1
        }
       },
       {
-       "color": "#fafaf7",
-       "top": 445,
+       "color": "#ffffff",
+       "top": 438,
        "hsl": {
-        "h": 60,
-        "s": 0.23,
-        "l": 0.97
+        "h": 0,
+        "s": 0,
+        "l": 1
        }
       },
       {
-       "color": "#212836",
-       "top": 2825,
+       "color": "#1c2635",
+       "top": 2787,
        "hsl": {
-        "h": 220,
-        "s": 0.24,
-        "l": 0.17
+        "h": 216,
+        "s": 0.31,
+        "l": 0.16
        }
       }
      ],
      "textColors": [
       {
-       "color": "#111827",
-       "share": 0.51
+       "color": "#0b1626",
+       "share": 0.5
       },
       {
-       "color": "#b9bbbd",
+       "color": "#8792a3",
        "share": 0.21
       },
       {
-       "color": "#4b5563",
+       "color": "#4b5768",
        "share": 0.18
       },
       {
-       "color": "#fafaf7",
-       "share": 0.1
+       "color": "#ffffff",
+       "share": 0.08
+      },
+      {
+       "color": "#0450f5",
+       "share": 0.02
       }
      ],
      "button": {
-      "bg": "#111827",
+      "bg": "#0b1626",
       "hsl": {
-       "h": 221,
-       "s": 0.39,
-       "l": 0.11
+       "h": 216,
+       "s": 0.55,
+       "l": 0.1
       },
-      "fg": "#111827"
+      "fg": "#0b1626"
      },
      "lowContrast": []
     },
@@ -1110,7 +1076,7 @@
      "count": 5,
      "inHero": 3,
      "radius": "pill",
-     "height": 50,
+     "height": 52,
      "withShadow": 0,
      "withGradient": 0,
      "mono": 0,
@@ -1118,7 +1084,7 @@
      "heroLabels": [
       "Skip to content",
       "Talk to us",
-      "Moya One"
+      "MoyaOne"
      ]
     },
     "surfaces": {
@@ -1129,16 +1095,14 @@
      "scrims": 0,
      "gradientSamples": [],
      "gradientText": 0,
-     "hairlines": 1,
-     "hairlineSamples": [
-      "header.nav 768px"
-     ],
+     "hairlines": 0,
+     "hairlineSamples": [],
      "outlinedBoxes": 0,
      "dashed": 0,
      "blurred": 0,
      "roundedBoxes": 9,
      "boxRadius": 20,
-     "squareMedia": 0,
+     "squareMedia": 1,
      "roundedMedia": 0,
      "mediaRadius": 0,
      "textShadow": 0,
@@ -1153,13 +1117,13 @@
     "nav": {
      "links": 1,
      "fixed": true,
-     "height": 65,
+     "height": 64,
      "floatingPill": false,
      "blur": false
     },
     "fontsLoaded": [
-     "plus jakarta sans",
-     "inter"
+     "league spartan",
+     "outfit"
     ]
    },
    "layout": {
@@ -1167,7 +1131,7 @@
      "w": 768,
      "h": 1024
     },
-    "pageH": 5709,
+    "pageH": 5922,
     "margins": {
      "left": 16,
      "right": 16
@@ -1176,20 +1140,20 @@
      {
       "sel": "section.cp-hero",
       "tag": "section",
-      "top": 65,
-      "height": 1072,
-      "words": 56,
+      "top": 64,
+      "height": 1066,
+      "words": 54,
       "media": 1,
       "middle": 0,
       "heading": {
        "text": "A filter under",
-       "size": 48,
+       "size": 44,
        "tag": "h1"
       },
       "left": 16,
       "right": 16,
       "textLeft": 16,
-      "textRight": 105,
+      "textRight": 153,
       "fullBleed": false,
       "footer": false,
       "hero": true,
@@ -1199,20 +1163,20 @@
      {
       "sel": "section#asks.ro-asks",
       "tag": "section",
-      "top": 1137,
-      "height": 1109,
-      "words": 139,
+      "top": 1130,
+      "height": 1115,
+      "words": 134,
       "media": 0,
       "middle": 0,
       "heading": {
        "text": "Three",
-       "size": 40,
+       "size": 36,
        "tag": "h2"
       },
       "left": 16,
-      "right": 252,
+      "right": 246,
       "textLeft": 16,
-      "textRight": 252,
+      "textRight": 246,
       "fullBleed": false,
       "footer": false,
       "hero": false,
@@ -1222,14 +1186,14 @@
      {
       "sel": "section.ro-build",
       "tag": "section",
-      "top": 2246,
-      "height": 1176,
-      "words": 55,
+      "top": 2245,
+      "height": 1139,
+      "words": 54,
       "media": 1,
       "middle": 0,
       "heading": {
        "text": "One",
-       "size": 40,
+       "size": 36,
        "tag": "h2"
       },
       "left": 16,
@@ -1245,20 +1209,20 @@
      {
       "sel": "section.cp-table",
       "tag": "section",
-      "top": 3422,
-      "height": 950,
-      "words": 128,
+      "top": 3383,
+      "height": 942,
+      "words": 126,
       "media": 0,
-      "middle": 16,
+      "middle": 43,
       "heading": {
        "text": "RO",
-       "size": 40,
+       "size": 36,
        "tag": "h2"
       },
       "left": 16,
-      "right": 41,
+      "right": 40,
       "textLeft": 16,
-      "textRight": 41,
+      "textRight": 40,
       "fullBleed": false,
       "footer": false,
       "hero": false,
@@ -1268,20 +1232,20 @@
      {
       "sel": "section.closing",
       "tag": "section",
-      "top": 4372,
-      "height": 351,
-      "words": 34,
+      "top": 4325,
+      "height": 350,
+      "words": 33,
       "media": 0,
-      "middle": 1,
+      "middle": 0,
       "heading": {
        "text": "Talk",
-       "size": 32,
+       "size": 28,
        "tag": "h2"
       },
-      "left": 87,
-      "right": 88,
-      "textLeft": 87,
-      "textRight": 88,
+      "left": 92,
+      "right": 91,
+      "textLeft": 92,
+      "textRight": 91,
       "fullBleed": false,
       "footer": false,
       "hero": false,
@@ -1291,14 +1255,14 @@
      {
       "sel": "footer.footer",
       "tag": "footer",
-      "top": 4723,
-      "height": 987,
-      "words": 49,
-      "media": 0,
-      "middle": 295,
+      "top": 4675,
+      "height": 1247,
+      "words": 46,
+      "media": 1,
+      "middle": 0,
       "heading": null,
       "left": 16,
-      "right": 58,
+      "right": 38,
       "textLeft": 16,
       "textRight": 58,
       "fullBleed": false,
@@ -1312,8 +1276,8 @@
     "h1s": [
      {
       "text": "A filter under every sink.",
-      "size": 48,
-      "top": 113,
+      "size": 44,
+      "top": 112,
       "firstScreen": true
      }
     ],
@@ -1324,43 +1288,39 @@
       "n": 8
      },
      {
-      "x": 267,
+      "x": 215,
       "n": 2
      },
      {
-      "x": 81,
+      "x": 238,
+      "n": 2
+     },
+     {
+      "x": 71,
       "n": 1
      },
      {
-      "x": 102,
+      "x": 89,
       "n": 1
      },
      {
-      "x": 125,
+      "x": 111,
       "n": 1
      },
      {
-      "x": 191,
+      "x": 170,
       "n": 1
      },
      {
-      "x": 245,
+      "x": 275,
       "n": 1
      },
      {
-      "x": 255,
+      "x": 325,
       "n": 1
      },
      {
-      "x": 324,
-      "n": 1
-     },
-     {
-      "x": 363,
-      "n": 1
-     },
-     {
-      "x": 375,
+      "x": 339,
       "n": 1
      },
      {
@@ -1368,8 +1328,8 @@
       "n": 1
      }
     ],
-    "leftBlocks": 21,
-    "bodySize": 16,
+    "leftBlocks": 20,
+    "bodySize": 17,
     "stage": false,
     "explains": true,
     "slivers": [],
@@ -1385,20 +1345,20 @@
    "load": "load",
    "screens": 8,
    "filled": [
-    0.96,
-    0.63,
-    0.88,
-    0.87,
+    0.97,
     0.77,
-    0.34,
-    0.94,
-    0.97
+    0.89,
+    0.82,
+    0.93,
+    0.36,
+    0.95,
+    0.99
    ],
    "motion": {
-    "elements": 45,
+    "elements": 44,
     "css": 5,
     "transitions": 11,
-    "scripted": 29,
+    "scripted": 28,
     "videos": 0,
     "playingVideos": 0
    },
@@ -1408,13 +1368,13 @@
      "h": 844
     },
     "page": {
-     "height": 6008,
-     "screens": 7.1,
-     "words": 475,
-     "img": 0,
+     "height": 6052,
+     "screens": 7.2,
+     "words": 455,
+     "img": 2,
      "video": 0,
      "canvas": 0,
-     "svg": 20,
+     "svg": 19,
      "sections": 5,
      "horizontalOverflow": 0,
      "overflowCulprits": [],
@@ -1435,11 +1395,11 @@
      "words": 5,
      "chars": 26,
      "lines": 2,
-     "size": 48,
-     "vw": 12.3,
-     "font": "Plus Jakarta Sans",
+     "size": 44,
+     "vw": 11.3,
+     "font": "League Spartan",
      "weight": 700,
-     "tracking": -0.035,
+     "tracking": -0.01,
      "leading": 1,
      "upper": false,
      "italic": false,
@@ -1447,7 +1407,7 @@
      "align": "left",
      "position": "center",
      "widthRatio": 0.92,
-     "top": 113,
+     "top": 112,
      "tag": "h1",
      "kind": "heading"
     },
@@ -1455,41 +1415,20 @@
      "text": "A filter under every sink.",
      "words": 5,
      "lines": 2,
-     "size": 48,
-     "font": "Plus Jakarta Sans"
+     "size": 44,
+     "font": "League Spartan"
     },
     "headings": [
-     {
-      "text": "Moya One",
-      "words": 2,
-      "chars": 8,
-      "lines": 1,
-      "size": 22,
-      "vw": 5.6,
-      "font": "Plus Jakarta Sans",
-      "weight": 700,
-      "tracking": -0.035,
-      "leading": 1.6,
-      "upper": false,
-      "italic": false,
-      "mono": false,
-      "align": "left",
-      "position": "left",
-      "widthRatio": 0.36,
-      "top": 10,
-      "tag": "a",
-      "kind": "heading"
-     },
      {
       "text": "A filter under every sink.",
       "words": 5,
       "chars": 26,
       "lines": 2,
-      "size": 48,
-      "vw": 12.3,
-      "font": "Plus Jakarta Sans",
+      "size": 44,
+      "vw": 11.3,
+      "font": "League Spartan",
       "weight": 700,
-      "tracking": -0.035,
+      "tracking": -0.01,
       "leading": 1,
       "upper": false,
       "italic": false,
@@ -1497,7 +1436,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.92,
-      "top": 113,
+      "top": 112,
       "tag": "h1",
       "kind": "heading"
      },
@@ -1506,11 +1445,11 @@
       "words": 5,
       "chars": 25,
       "lines": 2,
-      "size": 40,
-      "vw": 10.3,
-      "font": "Plus Jakarta Sans",
+      "size": 36,
+      "vw": 9.2,
+      "font": "League Spartan",
       "weight": 700,
-      "tracking": -0.03,
+      "tracking": -0.01,
       "leading": 1.05,
       "upper": false,
       "italic": false,
@@ -1518,7 +1457,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.92,
-      "top": 1082,
+      "top": 1022,
       "tag": "h2",
       "kind": "heading"
      },
@@ -1527,19 +1466,19 @@
       "words": 1,
       "chars": 6,
       "lines": 1,
-      "size": 32,
-      "vw": 8.2,
-      "font": "Plus Jakarta Sans",
+      "size": 28,
+      "vw": 7.2,
+      "font": "League Spartan",
       "weight": 700,
-      "tracking": -0.02,
-      "leading": 1.1,
+      "tracking": -0.01,
+      "leading": 1.15,
       "upper": false,
       "italic": false,
       "mono": false,
       "align": "left",
       "position": "center",
       "widthRatio": 0.82,
-      "top": 1332,
+      "top": 1235,
       "tag": "h3",
       "kind": "heading"
      },
@@ -1548,19 +1487,19 @@
       "words": 1,
       "chars": 10,
       "lines": 1,
-      "size": 32,
-      "vw": 8.2,
-      "font": "Plus Jakarta Sans",
+      "size": 28,
+      "vw": 7.2,
+      "font": "League Spartan",
       "weight": 700,
-      "tracking": -0.02,
-      "leading": 1.1,
+      "tracking": -0.01,
+      "leading": 1.15,
       "upper": false,
       "italic": false,
       "mono": false,
       "align": "left",
       "position": "center",
       "widthRatio": 0.82,
-      "top": 1633,
+      "top": 1541,
       "tag": "h3",
       "kind": "heading"
      },
@@ -1569,19 +1508,19 @@
       "words": 1,
       "chars": 6,
       "lines": 1,
-      "size": 32,
-      "vw": 8.2,
-      "font": "Plus Jakarta Sans",
+      "size": 28,
+      "vw": 7.2,
+      "font": "League Spartan",
       "weight": 700,
-      "tracking": -0.02,
-      "leading": 1.1,
+      "tracking": -0.01,
+      "leading": 1.15,
       "upper": false,
       "italic": false,
       "mono": false,
       "align": "left",
       "position": "center",
       "widthRatio": 0.82,
-      "top": 1934,
+      "top": 1847,
       "tag": "h3",
       "kind": "heading"
      },
@@ -1590,11 +1529,11 @@
       "words": 6,
       "chars": 29,
       "lines": 2,
-      "size": 40,
-      "vw": 10.3,
-      "font": "Plus Jakarta Sans",
+      "size": 36,
+      "vw": 9.2,
+      "font": "League Spartan",
       "weight": 700,
-      "tracking": -0.03,
+      "tracking": -0.01,
       "leading": 1.05,
       "upper": false,
       "italic": false,
@@ -1602,7 +1541,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.92,
-      "top": 2339,
+      "top": 2257,
       "tag": "h2",
       "kind": "heading"
      },
@@ -1611,11 +1550,11 @@
       "words": 1,
       "chars": 3,
       "lines": 1,
-      "size": 40,
-      "vw": 10.3,
-      "font": "Plus Jakarta Sans",
+      "size": 36,
+      "vw": 9.2,
+      "font": "League Spartan",
       "weight": 700,
-      "tracking": -0.03,
+      "tracking": -0.01,
       "leading": 1,
       "upper": false,
       "italic": false,
@@ -1623,20 +1562,20 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.92,
-      "top": 2673,
+      "top": 2583,
       "tag": "strong",
       "kind": "statement"
      },
      {
-      "text": "RO filters and Moya One.",
-      "words": 5,
-      "chars": 24,
+      "text": "RO filters and MoyaOne.",
+      "words": 4,
+      "chars": 23,
       "lines": 2,
-      "size": 40,
-      "vw": 10.3,
-      "font": "Plus Jakarta Sans",
+      "size": 36,
+      "vw": 9.2,
+      "font": "League Spartan",
       "weight": 700,
-      "tracking": -0.03,
+      "tracking": -0.01,
       "leading": 1.05,
       "upper": false,
       "italic": false,
@@ -1644,7 +1583,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.92,
-      "top": 3326,
+      "top": 3232,
       "tag": "h2",
       "kind": "heading"
      },
@@ -1652,63 +1591,42 @@
       "text": "Talk to us about your tower.",
       "words": 6,
       "chars": 28,
-      "lines": 2,
-      "size": 32,
-      "vw": 8.2,
-      "font": "Plus Jakarta Sans",
+      "lines": 1,
+      "size": 28,
+      "vw": 7.2,
+      "font": "League Spartan",
       "weight": 700,
-      "tracking": -0.02,
-      "leading": 1.1,
+      "tracking": 0,
+      "leading": 1.15,
       "upper": false,
       "italic": false,
       "mono": false,
       "align": "center",
       "position": "center",
-      "widthRatio": 0.92,
-      "top": 4616,
+      "widthRatio": 0.88,
+      "top": 4550,
       "tag": "h2",
       "kind": "heading"
-     },
-     {
-      "text": "Moya One",
-      "words": 2,
-      "chars": 8,
-      "lines": 1,
-      "size": 80.3,
-      "vw": 20.6,
-      "font": "Plus Jakarta Sans",
-      "weight": 700,
-      "tracking": -0.055,
-      "leading": 0.8,
-      "upper": false,
-      "italic": false,
-      "mono": false,
-      "align": "left",
-      "position": "center",
-      "widthRatio": 0.94,
-      "top": 5957,
-      "tag": "p",
-      "kind": "statement"
      }
     ],
     "headingSummary": {
-     "count": 11,
+     "count": 9,
      "maxLines": 2,
      "over2Lines": 0,
-     "statements": 2,
+     "statements": 1,
      "centered": 1,
-     "medianWords": 2,
+     "medianWords": 4,
      "mixedFontHeadings": 0
     },
     "type": {
      "families": [
       {
-       "family": "Inter",
+       "family": "Outfit",
        "share": 0.92,
        "mono": false
       },
       {
-       "family": "Plus Jakarta Sans",
+       "family": "League Spartan",
        "share": 0.08,
        "mono": false
       }
@@ -1718,19 +1636,18 @@
       13,
       15,
       16,
+      17,
       18,
       20,
-      22,
-      32,
-      40,
-      48,
-      80
+      28,
+      36,
+      44
      ],
-     "sizeCount": 10,
+     "sizeCount": 9,
      "notLoaded": [],
      "body": {
-      "font": "Inter",
-      "size": 16,
+      "font": "Outfit",
+      "size": 17,
       "leading": 1.6,
       "weight": 400,
       "tracking": 0,
@@ -1738,10 +1655,10 @@
      },
      "measureChars": 40,
      "max": {
-      "size": 80.3,
-      "vw": 20.6,
-      "font": "Plus Jakarta Sans",
-      "text": "Moya One"
+      "size": 44,
+      "vw": 11.3,
+      "font": "League Spartan",
+      "text": "A filter under every sink."
      },
      "monoShare": 0,
      "monoProseShare": 0,
@@ -1757,68 +1674,72 @@
     "eyebrows": [],
     "numbered": [],
     "color": {
-     "bodyBg": "#fafaf7",
+     "bodyBg": "#ffffff",
      "bodyBgHsl": {
-      "h": 60,
-      "s": 0.23,
-      "l": 0.97
+      "h": 0,
+      "s": 0,
+      "l": 1
      },
      "dark": false,
      "sectionBgs": [
       {
-       "color": "#111827",
-       "top": 65,
+       "color": "#0b1626",
+       "top": 64,
        "hsl": {
-        "h": 221,
-        "s": 0.39,
-        "l": 0.11
+        "h": 216,
+        "s": 0.55,
+        "l": 0.1
        }
       },
       {
-       "color": "#fafaf7",
-       "top": 534,
+       "color": "#ffffff",
+       "top": 498,
        "hsl": {
-        "h": 60,
-        "s": 0.23,
-        "l": 0.97
+        "h": 0,
+        "s": 0,
+        "l": 1
        }
       },
       {
-       "color": "#f3f4f6",
-       "top": 1308,
+       "color": "#eef2f7",
+       "top": 1211,
        "hsl": {
-        "h": 220,
-        "s": 0.14,
-        "l": 0.96
+        "h": 213,
+        "s": 0.36,
+        "l": 0.95
        }
       }
      ],
      "textColors": [
       {
-       "color": "#111827",
-       "share": 0.51
+       "color": "#0b1626",
+       "share": 0.5
       },
       {
-       "color": "#b9bbbd",
+       "color": "#8792a3",
        "share": 0.21
       },
       {
-       "color": "#4b5563",
+       "color": "#4b5768",
        "share": 0.18
       },
       {
-       "color": "#fafaf7",
-       "share": 0.1
+       "color": "#ffffff",
+       "share": 0.08
+      },
+      {
+       "color": "#0450f5",
+       "share": 0.02
       }
      ],
      "button": {
-      "bg": "#111827",
+      "bg": "#0b1626",
       "hsl": {
-       "h": 221,
-       "s": 0.39,
-       "l": 0.11
+       "h": 216,
+       "s": 0.55,
+       "l": 0.1
       },
-      "fg": "#111827"
+      "fg": "#0b1626"
      },
      "lowContrast": []
     },
@@ -1826,7 +1747,7 @@
      "count": 5,
      "inHero": 3,
      "radius": "pill",
-     "height": 50,
+     "height": 52,
      "withShadow": 0,
      "withGradient": 0,
      "mono": 0,
@@ -1834,7 +1755,7 @@
      "heroLabels": [
       "Skip to content",
       "Talk to us",
-      "Moya One"
+      "MoyaOne"
      ]
     },
     "surfaces": {
@@ -1845,16 +1766,14 @@
      "scrims": 0,
      "gradientSamples": [],
      "gradientText": 0,
-     "hairlines": 1,
-     "hairlineSamples": [
-      "header.nav 390px"
-     ],
+     "hairlines": 0,
+     "hairlineSamples": [],
      "outlinedBoxes": 0,
      "dashed": 0,
      "blurred": 0,
      "roundedBoxes": 6,
      "boxRadius": 20,
-     "squareMedia": 0,
+     "squareMedia": 1,
      "roundedMedia": 0,
      "mediaRadius": 0,
      "textShadow": 0,
@@ -1869,13 +1788,13 @@
     "nav": {
      "links": 1,
      "fixed": true,
-     "height": 65,
+     "height": 64,
      "floatingPill": false,
      "blur": false
     },
     "fontsLoaded": [
-     "plus jakarta sans",
-     "inter"
+     "league spartan",
+     "outfit"
     ]
    },
    "layout": {
@@ -1883,7 +1802,7 @@
      "w": 390,
      "h": 844
     },
-    "pageH": 6008,
+    "pageH": 6052,
     "margins": {
      "left": 16,
      "right": 16
@@ -1892,20 +1811,20 @@
      {
       "sel": "section.cp-hero",
       "tag": "section",
-      "top": 65,
-      "height": 945,
-      "words": 56,
+      "top": 64,
+      "height": 886,
+      "words": 54,
       "media": 1,
       "middle": 0,
       "heading": {
        "text": "A filter under",
-       "size": 48,
+       "size": 44,
        "tag": "h1"
       },
       "left": 16,
       "right": 16,
       "textLeft": 16,
-      "textRight": 41,
+      "textRight": 27,
       "fullBleed": false,
       "footer": false,
       "hero": true,
@@ -1915,20 +1834,20 @@
      {
       "sel": "section#asks.ro-asks",
       "tag": "section",
-      "top": 1010,
-      "height": 1257,
-      "words": 139,
+      "top": 950,
+      "height": 1234,
+      "words": 134,
       "media": 0,
       "middle": 0,
       "heading": {
        "text": "Three",
-       "size": 40,
+       "size": 36,
        "tag": "h2"
       },
       "left": 16,
-      "right": 45,
+      "right": 32,
       "textLeft": 16,
-      "textRight": 45,
+      "textRight": 32,
       "fullBleed": false,
       "footer": false,
       "hero": false,
@@ -1938,14 +1857,14 @@
      {
       "sel": "section.ro-build",
       "tag": "section",
-      "top": 2267,
-      "height": 988,
-      "words": 55,
+      "top": 2185,
+      "height": 975,
+      "words": 54,
       "media": 1,
       "middle": 0,
       "heading": {
        "text": "One",
-       "size": 40,
+       "size": 36,
        "tag": "h2"
       },
       "left": 16,
@@ -1961,20 +1880,20 @@
      {
       "sel": "section.cp-table",
       "tag": "section",
-      "top": 3254,
-      "height": 1290,
-      "words": 128,
+      "top": 3160,
+      "height": 1318,
+      "words": 126,
       "media": 0,
       "middle": 0,
       "heading": {
        "text": "RO",
-       "size": 40,
+       "size": 36,
        "tag": "h2"
       },
       "left": 16,
-      "right": 32,
+      "right": 37,
       "textLeft": 16,
-      "textRight": 32,
+      "textRight": 37,
       "fullBleed": false,
       "footer": false,
       "hero": false,
@@ -1984,20 +1903,20 @@
      {
       "sel": "section.closing",
       "tag": "section",
-      "top": 4544,
-      "height": 498,
-      "words": 34,
+      "top": 4478,
+      "height": 462,
+      "words": 33,
       "media": 0,
       "middle": 0,
       "heading": {
        "text": "Talk",
-       "size": 32,
+       "size": 28,
        "tag": "h2"
       },
-      "left": 20,
-      "right": 20,
-      "textLeft": 20,
-      "textRight": 20,
+      "left": 18,
+      "right": 18,
+      "textLeft": 18,
+      "textRight": 18,
       "fullBleed": false,
       "footer": false,
       "hero": false,
@@ -2007,16 +1926,16 @@
      {
       "sel": "footer.footer",
       "tag": "footer",
-      "top": 5042,
-      "height": 966,
-      "words": 49,
-      "media": 0,
+      "top": 4940,
+      "height": 1112,
+      "words": 46,
+      "media": 1,
       "middle": 0,
       "heading": null,
       "left": 16,
-      "right": 44,
+      "right": 26,
       "textLeft": 16,
-      "textRight": 44,
+      "textRight": 26,
       "fullBleed": false,
       "footer": true,
       "hero": false,
@@ -2028,8 +1947,8 @@
     "h1s": [
      {
       "text": "A filter under every sink.",
-      "size": 48,
-      "top": 113,
+      "size": 44,
+      "top": 112,
       "firstScreen": true
      }
     ],
@@ -2040,40 +1959,36 @@
       "n": 11
      },
      {
-      "x": 81,
+      "x": 71,
       "n": 2
+     },
+     {
+      "x": 84,
+      "n": 2
+     },
+     {
+      "x": 47,
+      "n": 1
+     },
+     {
+      "x": 111,
+      "n": 1
      },
      {
       "x": 124,
-      "n": 2
-     },
-     {
-      "x": 46,
       "n": 1
      },
      {
-      "x": 102,
+      "x": 140,
       "n": 1
      },
      {
-      "x": 135,
-      "n": 1
-     },
-     {
-      "x": 161,
-      "n": 1
-     },
-     {
-      "x": 191,
-      "n": 1
-     },
-     {
-      "x": 230,
+      "x": 201,
       "n": 1
      }
     ],
-    "leftBlocks": 21,
-    "bodySize": 16,
+    "leftBlocks": 20,
+    "bodySize": 17,
     "stage": false,
     "explains": true,
     "slivers": [],
@@ -2085,28 +2000,6 @@
   }
  ],
  "findings": [
-  {
-   "level": "WARN",
-   "id": "hairline",
-   "width": 1440,
-   "message": "1 thin rule(s)/divider line(s): header.nav 1440px",
-   "fix": "Delete. Separate with space, a tone change, or scale. Lines are only for real tables and form fields.",
-   "alsoAt": [
-    768,
-    390
-   ]
-  },
-  {
-   "level": "WARN",
-   "id": "palette-cream",
-   "width": 1440,
-   "message": "Yellow-cream background (page background #fafaf7, text #fafaf7).",
-   "fix": "Use the drawn palette. If you want warmth, take a low-chroma stone or bone, not a yellow cream.",
-   "alsoAt": [
-    768,
-    390
-   ]
-  },
   {
    "level": "FAIL",
    "id": "few-pictures",
@@ -2130,27 +2023,10 @@
   },
   {
    "level": "WARN",
-   "id": "size-count",
-   "width": 768,
-   "message": "10 different font sizes (13, 15, 16, 18, 20, 22, 32, 40, 48, 165).",
-   "fix": "A page needs about five: display, heading, lead, body, small.",
-   "alsoAt": [
-    390
-   ]
-  },
-  {
-   "level": "WARN",
    "id": "ragged-edges",
-   "width": 768,
-   "message": "Left-aligned text starts at 12 different lines (16px, 267px, 81px, 102px, 125px, 191px, 245px); the three most used hold only 52% of it.",
+   "width": 1440,
+   "message": "Left-aligned text starts at 12 different lines (120px, 194px, 834px, 217px, 247px, 285px, 325px); the three most used hold only 55% of it.",
    "fix": "Pick two or three anchor lines from the grid and start every heading and paragraph on one of them."
-  },
-  {
-   "level": "FAIL",
-   "id": "covered-text",
-   "width": 390,
-   "message": "Large text lies under another element at some scroll position: \"Moya One\" (screen 8, 38% hidden)",
-   "fix": "Nothing may sit on top of a headline or statement. Move the picture, shorten the pinned run, or raise the text above it (z-index) and give it a ground."
   }
  ],
  "images": [

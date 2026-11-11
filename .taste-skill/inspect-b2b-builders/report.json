@@ -1,0 +1,2353 @@
+{
+ "url": "http://localhost:3123/b2b/builders",
+ "at": "2026-11-11T14:17:41.428Z",
+ "allow": [],
+ "viewports": [
+  {
+   "width": 1440,
+   "height": 900,
+   "load": "load",
+   "screens": 7,
+   "filled": [
+    0.96,
+    0.74,
+    0.6,
+    0.42,
+    0.92,
+    0.96,
+    0.96
+   ],
+   "motion": {
+    "elements": 91,
+    "css": 8,
+    "transitions": 68,
+    "scripted": 15,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "page": {
+     "height": 5553,
+     "screens": 6.2,
+     "words": 447,
+     "img": 5,
+     "video": 0,
+     "canvas": 0,
+     "svg": 28,
+     "sections": 6,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 3,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "tower.webp",
+      "city-build.webp",
+      "city.webp"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Drinking water, planned in.",
+     "words": 4,
+     "chars": 27,
+     "lines": 2,
+     "size": 72,
+     "vw": 5,
+     "font": "League Spartan",
+     "weight": 700,
+     "tracking": -0.01,
+     "leading": 1,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "left",
+     "widthRatio": 0.48,
+     "top": 273,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Drinking water, planned in.",
+     "words": 4,
+     "lines": 2,
+     "size": 72,
+     "font": "League Spartan"
+    },
+    "headings": [
+     {
+      "text": "Drinking water, planned in.",
+      "words": 4,
+      "chars": 27,
+      "lines": 2,
+      "size": 72,
+      "vw": 5,
+      "font": "League Spartan",
+      "weight": 700,
+      "tracking": -0.01,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.48,
+      "top": 273,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "Why builders plan it in.",
+      "words": 5,
+      "chars": 24,
+      "lines": 1,
+      "size": 32,
+      "vw": 2.2,
+      "font": "League Spartan",
+      "weight": 700,
+      "tracking": 0,
+      "leading": 1.15,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.83,
+      "top": 1009,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "High sales value.",
+      "words": 3,
+      "chars": 17,
+      "lines": 1,
+      "size": 32,
+      "vw": 2.2,
+      "font": "League Spartan",
+      "weight": 700,
+      "tracking": 0,
+      "leading": 1.15,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.34,
+      "top": 1115,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "20–30%",
+      "words": 1,
+      "chars": 6,
+      "lines": 1,
+      "size": 32,
+      "vw": 2.2,
+      "font": "League Spartan",
+      "weight": 700,
+      "tracking": 0,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.08,
+      "top": 1222,
+      "tag": "strong",
+      "kind": "statement"
+     },
+     {
+      "text": "Decluttered modular kitchens and elevators.",
+      "words": 5,
+      "chars": 43,
+      "lines": 2,
+      "size": 32,
+      "vw": 2.2,
+      "font": "League Spartan",
+      "weight": 700,
+      "tracking": 0,
+      "leading": 1.15,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.34,
+      "top": 1236,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Zero maintenance.",
+      "words": 2,
+      "chars": 17,
+      "lines": 1,
+      "size": 32,
+      "vw": 2.2,
+      "font": "League Spartan",
+      "weight": 700,
+      "tracking": 0,
+      "leading": 1.15,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.34,
+      "top": 1393,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "It follows your build.",
+      "words": 4,
+      "chars": 22,
+      "lines": 1,
+      "size": 48,
+      "vw": 3.3,
+      "font": "League Spartan",
+      "weight": 700,
+      "tracking": -0.01,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.41,
+      "top": 1697,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Three things go in.",
+      "words": 4,
+      "chars": 19,
+      "lines": 1,
+      "size": 48,
+      "vw": 3.3,
+      "font": "League Spartan",
+      "weight": 700,
+      "tracking": -0.01,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.28,
+      "top": 2775,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Size it to your tower.",
+      "words": 5,
+      "chars": 22,
+      "lines": 1,
+      "size": 48,
+      "vw": 3.3,
+      "font": "League Spartan",
+      "weight": 700,
+      "tracking": -0.01,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.34,
+      "top": 3703,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "96",
+      "words": 1,
+      "chars": 2,
+      "lines": 1,
+      "size": 36,
+      "vw": 2.5,
+      "font": "League Spartan",
+      "weight": 700,
+      "tracking": -0.01,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.11,
+      "top": 4104,
+      "tag": "dd",
+      "kind": "statement"
+     },
+     {
+      "text": "96",
+      "words": 1,
+      "chars": 2,
+      "lines": 1,
+      "size": 36,
+      "vw": 2.5,
+      "font": "League Spartan",
+      "weight": 700,
+      "tracking": -0.01,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.11,
+      "top": 4104,
+      "tag": "dd",
+      "kind": "statement"
+     },
+     {
+      "text": "96",
+      "words": 1,
+      "chars": 2,
+      "lines": 1,
+      "size": 36,
+      "vw": 2.5,
+      "font": "League Spartan",
+      "weight": 700,
+      "tracking": -0.01,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.11,
+      "top": 4104,
+      "tag": "dd",
+      "kind": "statement"
+     },
+     {
+      "text": "Your next tower.",
+      "words": 3,
+      "chars": 16,
+      "lines": 1,
+      "size": 48,
+      "vw": 3.3,
+      "font": "League Spartan",
+      "weight": 700,
+      "tracking": -0.01,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.28,
+      "top": 4496,
+      "tag": "h2",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 13,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 4,
+     "centered": 0,
+     "medianWords": 3,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Outfit",
+       "share": 0.8,
+       "mono": false
+      },
+      {
+       "family": "League Spartan",
+       "share": 0.2,
+       "mono": false
+      }
+     ],
+     "familyCount": 2,
+     "sizes": [
+      13,
+      15,
+      16,
+      17,
+      20,
+      22,
+      32,
+      36,
+      48,
+      72
+     ],
+     "sizeCount": 10,
+     "notLoaded": [],
+     "body": {
+      "font": "Outfit",
+      "size": 20,
+      "leading": 1.6,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 5.8
+     },
+     "measureChars": 199,
+     "max": {
+      "size": 72,
+      "vw": 5,
+      "font": "League Spartan",
+      "text": "Drinking water,"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0.01,
+     "centerShare": 0.01,
+     "smallText": 0
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#ffffff",
+     "bodyBgHsl": {
+      "h": 0,
+      "s": 0,
+      "l": 1
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#0b1626",
+       "top": 89,
+       "hsl": {
+        "h": 216,
+        "s": 0.55,
+        "l": 0.1
+       }
+      },
+      {
+       "color": "#eef2f7",
+       "top": 889,
+       "hsl": {
+        "h": 213,
+        "s": 0.36,
+        "l": 0.95
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#0b1626",
+       "share": 0.39
+      },
+      {
+       "color": "#8792a3",
+       "share": 0.29
+      },
+      {
+       "color": "#4b5768",
+       "share": 0.22
+      },
+      {
+       "color": "#ffffff",
+       "share": 0.08
+      },
+      {
+       "color": "#0450f5",
+       "share": 0.02
+      }
+     ],
+     "button": {
+      "bg": "#0b1626",
+      "hsl": {
+       "h": 216,
+       "s": 0.55,
+       "l": 0.1
+      },
+      "fg": "#ffffff"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 4,
+     "inHero": 3,
+     "radius": "pill",
+     "height": 52,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Skip to content",
+      "Contact",
+      "Size it to your tower"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 2,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 1,
+     "hairlineSamples": [
+      "header.nav 1440px"
+     ],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 3,
+     "boxRadius": 20,
+     "squareMedia": 1,
+     "roundedMedia": 2,
+     "mediaRadius": 20,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [
+     {
+      "type": "img",
+      "ratio": 0.23
+     }
+    ],
+    "nav": {
+     "links": 6,
+     "fixed": true,
+     "height": 89,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "league spartan",
+     "outfit"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "pageH": 5553,
+    "margins": {
+     "left": 120,
+     "right": 120
+    },
+    "sections": [
+     {
+      "sel": "section.bx-hero",
+      "tag": "section",
+      "top": 89,
+      "height": 800,
+      "words": 41,
+      "media": 1,
+      "middle": 235,
+      "heading": {
+       "text": "Drinking water,",
+       "size": 72,
+       "tag": "h1"
+      },
+      "left": 120,
+      "right": 120,
+      "textLeft": 120,
+      "textRight": 841,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.bx-pillars",
+      "tag": "section",
+      "top": 889,
+      "height": 675,
+      "words": 54,
+      "media": 0,
+      "middle": 191,
+      "heading": {
+       "text": "Why",
+       "size": 32,
+       "tag": "h2"
+      },
+      "left": 120,
+      "right": 178,
+      "textLeft": 120,
+      "textRight": 178,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.bx-plan",
+      "tag": "section",
+      "top": 1563,
+      "height": 624,
+      "words": 116,
+      "media": 0,
+      "middle": 40,
+      "heading": {
+       "text": "It",
+       "size": 48,
+       "tag": "h2"
+      },
+      "left": 120,
+      "right": 142,
+      "textLeft": 120,
+      "textRight": 142,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "figure.bx-band",
+      "tag": "figure",
+      "top": 2187,
+      "height": 468,
+      "words": 0,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": null,
+      "right": null,
+      "textLeft": null,
+      "textRight": null,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.bx-flat",
+      "tag": "section",
+      "top": 2655,
+      "height": 880,
+      "words": 67,
+      "media": 1,
+      "middle": 159,
+      "heading": {
+       "text": "Three",
+       "size": 48,
+       "tag": "h2"
+      },
+      "left": 120,
+      "right": 140,
+      "textLeft": 120,
+      "textRight": 197,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#size.bx-size",
+      "tag": "section",
+      "top": 3535,
+      "height": 841,
+      "words": 36,
+      "media": 1,
+      "middle": 210,
+      "heading": {
+       "text": "Size it to your tower.",
+       "size": 48,
+       "tag": "h2"
+      },
+      "left": 120,
+      "right": 204,
+      "textLeft": 120,
+      "textRight": 834,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#enquire.bx-enquire",
+      "tag": "section",
+      "top": 4376,
+      "height": 777,
+      "words": 84,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "Your next tower.",
+       "size": 48,
+       "tag": "h2"
+      },
+      "left": 120,
+      "right": 120,
+      "textLeft": 120,
+      "textRight": 146,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "footer.footer",
+      "tag": "footer",
+      "top": 5152,
+      "height": 401,
+      "words": 46,
+      "media": 0,
+      "middle": 182,
+      "heading": null,
+      "left": 120,
+      "right": 170,
+      "textLeft": 120,
+      "textRight": 170,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "Drinking water, planned in.",
+      "size": 72,
+      "top": 273,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 120,
+      "n": 10
+     },
+     {
+      "x": 312,
+      "n": 2
+     },
+     {
+      "x": 383,
+      "n": 2
+     },
+     {
+      "x": 162,
+      "n": 1
+     },
+     {
+      "x": 192,
+      "n": 1
+     },
+     {
+      "x": 247,
+      "n": 1
+     },
+     {
+      "x": 411,
+      "n": 1
+     },
+     {
+      "x": 422,
+      "n": 1
+     },
+     {
+      "x": 450,
+      "n": 1
+     },
+     {
+      "x": 834,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 21,
+    "bodySize": 20,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0.14,
+    "voidBox": {
+     "x": 0,
+     "y": 660,
+     "w": 780,
+     "h": 240
+    }
+   },
+   "app": null,
+   "consoleErrors": []
+  },
+  {
+   "width": 768,
+   "height": 1024,
+   "load": "load",
+   "screens": 9,
+   "filled": [
+    0.95,
+    0.94,
+    0.15,
+    0.63,
+    0.71,
+    0.78,
+    0.95,
+    0.95,
+    0.94
+   ],
+   "motion": {
+    "elements": 89,
+    "css": 8,
+    "transitions": 66,
+    "scripted": 15,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "page": {
+     "height": 8659,
+     "screens": 8.5,
+     "words": 440,
+     "img": 5,
+     "video": 0,
+     "canvas": 0,
+     "svg": 28,
+     "sections": 6,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 3,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "tower.webp",
+      "city-build.webp",
+      "city.webp"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Drinking water, planned in.",
+     "words": 4,
+     "chars": 27,
+     "lines": 2,
+     "size": 44,
+     "vw": 5.7,
+     "font": "League Spartan",
+     "weight": 700,
+     "tracking": -0.01,
+     "leading": 1,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "center",
+     "widthRatio": 0.96,
+     "top": 113,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Drinking water, planned in.",
+     "words": 4,
+     "lines": 2,
+     "size": 44,
+     "font": "League Spartan"
+    },
+    "headings": [
+     {
+      "text": "Drinking water, planned in.",
+      "words": 4,
+      "chars": 27,
+      "lines": 2,
+      "size": 44,
+      "vw": 5.7,
+      "font": "League Spartan",
+      "weight": 700,
+      "tracking": -0.01,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.96,
+      "top": 113,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "Why builders plan it in.",
+      "words": 5,
+      "chars": 24,
+      "lines": 1,
+      "size": 28,
+      "vw": 3.6,
+      "font": "League Spartan",
+      "weight": 700,
+      "tracking": 0,
+      "leading": 1.15,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.96,
+      "top": 1532,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "20–30%",
+      "words": 1,
+      "chars": 6,
+      "lines": 1,
+      "size": 28,
+      "vw": 3.6,
+      "font": "League Spartan",
+      "weight": 700,
+      "tracking": 0,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.13,
+      "top": 1839,
+      "tag": "strong",
+      "kind": "statement"
+     },
+     {
+      "text": "It follows your build.",
+      "words": 4,
+      "chars": 22,
+      "lines": 1,
+      "size": 36,
+      "vw": 4.7,
+      "font": "League Spartan",
+      "weight": 700,
+      "tracking": -0.01,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.96,
+      "top": 2212,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Three things go in.",
+      "words": 4,
+      "chars": 19,
+      "lines": 1,
+      "size": 36,
+      "vw": 4.7,
+      "font": "League Spartan",
+      "weight": 700,
+      "tracking": -0.01,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.39,
+      "top": 3881,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Size it to your tower.",
+      "words": 5,
+      "chars": 22,
+      "lines": 1,
+      "size": 36,
+      "vw": 4.7,
+      "font": "League Spartan",
+      "weight": 700,
+      "tracking": -0.01,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.96,
+      "top": 5508,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "96",
+      "words": 1,
+      "chars": 2,
+      "lines": 1,
+      "size": 28,
+      "vw": 3.6,
+      "font": "League Spartan",
+      "weight": 700,
+      "tracking": -0.01,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.31,
+      "top": 5854,
+      "tag": "dd",
+      "kind": "statement"
+     },
+     {
+      "text": "96",
+      "words": 1,
+      "chars": 2,
+      "lines": 1,
+      "size": 28,
+      "vw": 3.6,
+      "font": "League Spartan",
+      "weight": 700,
+      "tracking": -0.01,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.31,
+      "top": 5854,
+      "tag": "dd",
+      "kind": "statement"
+     },
+     {
+      "text": "96",
+      "words": 1,
+      "chars": 2,
+      "lines": 1,
+      "size": 28,
+      "vw": 3.6,
+      "font": "League Spartan",
+      "weight": 700,
+      "tracking": -0.01,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.31,
+      "top": 5854,
+      "tag": "dd",
+      "kind": "statement"
+     },
+     {
+      "text": "Your next tower.",
+      "words": 3,
+      "chars": 16,
+      "lines": 1,
+      "size": 36,
+      "vw": 4.7,
+      "font": "League Spartan",
+      "weight": 700,
+      "tracking": -0.01,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.96,
+      "top": 6736,
+      "tag": "h2",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 10,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 4,
+     "centered": 0,
+     "medianWords": 3,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Outfit",
+       "share": 0.8,
+       "mono": false
+      },
+      {
+       "family": "League Spartan",
+       "share": 0.2,
+       "mono": false
+      }
+     ],
+     "familyCount": 2,
+     "sizes": [
+      13,
+      15,
+      16,
+      17,
+      18,
+      20,
+      28,
+      36,
+      44
+     ],
+     "sizeCount": 9,
+     "notLoaded": [],
+     "body": {
+      "font": "Outfit",
+      "size": 18,
+      "leading": 1.6,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 5.8
+     },
+     "measureChars": 118,
+     "max": {
+      "size": 44,
+      "vw": 5.7,
+      "font": "League Spartan",
+      "text": "Drinking water,"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0.01,
+     "centerShare": 0.01,
+     "smallText": 0
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#ffffff",
+     "bodyBgHsl": {
+      "h": 0,
+      "s": 0,
+      "l": 1
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#0b1626",
+       "top": 65,
+       "hsl": {
+        "h": 216,
+        "s": 0.55,
+        "l": 0.1
+       }
+      },
+      {
+       "color": "#1c2635",
+       "top": 468,
+       "hsl": {
+        "h": 216,
+        "s": 0.31,
+        "l": 0.16
+       }
+      },
+      {
+       "color": "#eef2f7",
+       "top": 1460,
+       "hsl": {
+        "h": 213,
+        "s": 0.36,
+        "l": 0.95
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#0b1626",
+       "share": 0.39
+      },
+      {
+       "color": "#8792a3",
+       "share": 0.3
+      },
+      {
+       "color": "#4b5768",
+       "share": 0.21
+      },
+      {
+       "color": "#ffffff",
+       "share": 0.08
+      },
+      {
+       "color": "#0450f5",
+       "share": 0.02
+      }
+     ],
+     "button": {
+      "bg": "#2f9fe7",
+      "hsl": {
+       "h": 203,
+       "s": 0.79,
+       "l": 0.55
+      },
+      "fg": "#0b1626"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 3,
+     "inHero": 2,
+     "radius": "pill",
+     "height": 52,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Skip to content",
+      "Size it to your tower"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 2,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 1,
+     "hairlineSamples": [
+      "header.nav 768px"
+     ],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 3,
+     "boxRadius": 20,
+     "squareMedia": 1,
+     "roundedMedia": 2,
+     "mediaRadius": 20,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [
+     {
+      "type": "img",
+      "ratio": 0.52
+     }
+    ],
+    "nav": {
+     "links": 1,
+     "fixed": true,
+     "height": 65,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "league spartan",
+     "outfit"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "pageH": 8659,
+    "margins": {
+     "left": 16,
+     "right": 16
+    },
+    "sections": [
+     {
+      "sel": "section.bx-hero",
+      "tag": "section",
+      "top": 65,
+      "height": 1395,
+      "words": 41,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "Drinking water,",
+       "size": 44,
+       "tag": "h1"
+      },
+      "left": 16,
+      "right": 16,
+      "textLeft": 16,
+      "textRight": 357,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.bx-pillars",
+      "tag": "section",
+      "top": 1460,
+      "height": 680,
+      "words": 54,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Why",
+       "size": 28,
+       "tag": "h2"
+      },
+      "left": 16,
+      "right": 268,
+      "textLeft": 16,
+      "textRight": 268,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.bx-plan",
+      "tag": "section",
+      "top": 2140,
+      "height": 1136,
+      "words": 116,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "It",
+       "size": 36,
+       "tag": "h2"
+      },
+      "left": 16,
+      "right": 242,
+      "textLeft": 16,
+      "textRight": 242,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "figure.bx-band",
+      "tag": "figure",
+      "top": 3276,
+      "height": 532,
+      "words": 0,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": null,
+      "right": null,
+      "textLeft": null,
+      "textRight": null,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.bx-flat",
+      "tag": "section",
+      "top": 3809,
+      "height": 1627,
+      "words": 67,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "Three",
+       "size": 36,
+       "tag": "h2"
+      },
+      "left": 16,
+      "right": 36,
+      "textLeft": 16,
+      "textRight": 343,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#size.bx-size",
+      "tag": "section",
+      "top": 5436,
+      "height": 1228,
+      "words": 36,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "Size it to your tower.",
+       "size": 36,
+       "tag": "h2"
+      },
+      "left": 16,
+      "right": 16,
+      "textLeft": 16,
+      "textRight": 16,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#enquire.bx-enquire",
+      "tag": "section",
+      "top": 6664,
+      "height": 1320,
+      "words": 84,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "Your next tower.",
+       "size": 36,
+       "tag": "h2"
+      },
+      "left": 16,
+      "right": 16,
+      "textLeft": 16,
+      "textRight": 39,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "footer.footer",
+      "tag": "footer",
+      "top": 7984,
+      "height": 676,
+      "words": 46,
+      "media": 0,
+      "middle": 300,
+      "heading": null,
+      "left": 16,
+      "right": 58,
+      "textLeft": 16,
+      "textRight": 58,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "Drinking water, planned in.",
+      "size": 44,
+      "top": 113,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 16,
+      "n": 11
+     },
+     {
+      "x": 243,
+      "n": 2
+     },
+     {
+      "x": 264,
+      "n": 2
+     },
+     {
+      "x": 47,
+      "n": 1
+     },
+     {
+      "x": 79,
+      "n": 1
+     },
+     {
+      "x": 111,
+      "n": 1
+     },
+     {
+      "x": 164,
+      "n": 1
+     },
+     {
+      "x": 184,
+      "n": 1
+     },
+     {
+      "x": 216,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 21,
+    "bodySize": 18,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": null,
+   "consoleErrors": []
+  },
+  {
+   "width": 390,
+   "height": 844,
+   "load": "load",
+   "screens": 9,
+   "filled": [
+    0.96,
+    0.95,
+    0.32,
+    0.6,
+    0.51,
+    0.82,
+    0.96,
+    0.96,
+    0.99
+   ],
+   "motion": {
+    "elements": 89,
+    "css": 8,
+    "transitions": 66,
+    "scripted": 15,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "page": {
+     "height": 7580,
+     "screens": 9,
+     "words": 440,
+     "img": 5,
+     "video": 0,
+     "canvas": 0,
+     "svg": 28,
+     "sections": 6,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 3,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "tower.webp",
+      "city-build.webp",
+      "city.webp"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Drinking water, planned in.",
+     "words": 4,
+     "chars": 27,
+     "lines": 2,
+     "size": 44,
+     "vw": 11.3,
+     "font": "League Spartan",
+     "weight": 700,
+     "tracking": -0.01,
+     "leading": 1,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "center",
+     "widthRatio": 0.92,
+     "top": 113,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Drinking water, planned in.",
+     "words": 4,
+     "lines": 2,
+     "size": 44,
+     "font": "League Spartan"
+    },
+    "headings": [
+     {
+      "text": "Drinking water, planned in.",
+      "words": 4,
+      "chars": 27,
+      "lines": 2,
+      "size": 44,
+      "vw": 11.3,
+      "font": "League Spartan",
+      "weight": 700,
+      "tracking": -0.01,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 113,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "Why builders plan it in.",
+      "words": 5,
+      "chars": 24,
+      "lines": 1,
+      "size": 28,
+      "vw": 7.2,
+      "font": "League Spartan",
+      "weight": 700,
+      "tracking": 0,
+      "leading": 1.15,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 1120,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "20–30%",
+      "words": 1,
+      "chars": 6,
+      "lines": 1,
+      "size": 28,
+      "vw": 7.2,
+      "font": "League Spartan",
+      "weight": 700,
+      "tracking": 0,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.25,
+      "top": 1426,
+      "tag": "strong",
+      "kind": "statement"
+     },
+     {
+      "text": "It follows your build.",
+      "words": 4,
+      "chars": 22,
+      "lines": 1,
+      "size": 36,
+      "vw": 9.2,
+      "font": "League Spartan",
+      "weight": 700,
+      "tracking": -0.01,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 1828,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Three things go in.",
+      "words": 4,
+      "chars": 19,
+      "lines": 1,
+      "size": 36,
+      "vw": 9.2,
+      "font": "League Spartan",
+      "weight": 700,
+      "tracking": -0.01,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.77,
+      "top": 3432,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Size it to your tower.",
+      "words": 5,
+      "chars": 22,
+      "lines": 1,
+      "size": 36,
+      "vw": 9.2,
+      "font": "League Spartan",
+      "weight": 700,
+      "tracking": -0.01,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 4633,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "96",
+      "words": 1,
+      "chars": 2,
+      "lines": 1,
+      "size": 28,
+      "vw": 7.2,
+      "font": "League Spartan",
+      "weight": 700,
+      "tracking": -0.01,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.28,
+      "top": 5008,
+      "tag": "dd",
+      "kind": "statement"
+     },
+     {
+      "text": "96",
+      "words": 1,
+      "chars": 2,
+      "lines": 1,
+      "size": 28,
+      "vw": 7.2,
+      "font": "League Spartan",
+      "weight": 700,
+      "tracking": -0.01,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.28,
+      "top": 5029,
+      "tag": "dd",
+      "kind": "statement"
+     },
+     {
+      "text": "96",
+      "words": 1,
+      "chars": 2,
+      "lines": 1,
+      "size": 28,
+      "vw": 7.2,
+      "font": "League Spartan",
+      "weight": 700,
+      "tracking": -0.01,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.28,
+      "top": 5029,
+      "tag": "dd",
+      "kind": "statement"
+     },
+     {
+      "text": "Your next tower.",
+      "words": 3,
+      "chars": 16,
+      "lines": 1,
+      "size": 36,
+      "vw": 9.2,
+      "font": "League Spartan",
+      "weight": 700,
+      "tracking": -0.01,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 5785,
+      "tag": "h2",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 10,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 4,
+     "centered": 0,
+     "medianWords": 3,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Outfit",
+       "share": 0.8,
+       "mono": false
+      },
+      {
+       "family": "League Spartan",
+       "share": 0.2,
+       "mono": false
+      }
+     ],
+     "familyCount": 2,
+     "sizes": [
+      13,
+      15,
+      16,
+      17,
+      18,
+      20,
+      28,
+      36,
+      44
+     ],
+     "sizeCount": 9,
+     "notLoaded": [],
+     "body": {
+      "font": "Outfit",
+      "size": 18,
+      "leading": 1.6,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 5.8
+     },
+     "measureChars": 60,
+     "max": {
+      "size": 44,
+      "vw": 11.3,
+      "font": "League Spartan",
+      "text": "Drinking water,"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0.01,
+     "centerShare": 0.01,
+     "smallText": 0
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#ffffff",
+     "bodyBgHsl": {
+      "h": 0,
+      "s": 0,
+      "l": 1
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#0b1626",
+       "top": 65,
+       "hsl": {
+        "h": 216,
+        "s": 0.55,
+        "l": 0.1
+       }
+      },
+      {
+       "color": "#1c2635",
+       "top": 528,
+       "hsl": {
+        "h": 216,
+        "s": 0.31,
+        "l": 0.16
+       }
+      },
+      {
+       "color": "#eef2f7",
+       "top": 1048,
+       "hsl": {
+        "h": 213,
+        "s": 0.36,
+        "l": 0.95
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#0b1626",
+       "share": 0.39
+      },
+      {
+       "color": "#8792a3",
+       "share": 0.3
+      },
+      {
+       "color": "#4b5768",
+       "share": 0.21
+      },
+      {
+       "color": "#ffffff",
+       "share": 0.08
+      },
+      {
+       "color": "#0450f5",
+       "share": 0.02
+      }
+     ],
+     "button": {
+      "bg": "#2f9fe7",
+      "hsl": {
+       "h": 203,
+       "s": 0.79,
+       "l": 0.55
+      },
+      "fg": "#0b1626"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 3,
+     "inHero": 2,
+     "radius": "pill",
+     "height": 52,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Skip to content",
+      "Size it to your tower"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 2,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 1,
+     "hairlineSamples": [
+      "header.nav 390px"
+     ],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 4,
+     "boxRadius": 20,
+     "squareMedia": 1,
+     "roundedMedia": 2,
+     "mediaRadius": 20,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [
+     {
+      "type": "img",
+      "ratio": 0.34
+     }
+    ],
+    "nav": {
+     "links": 1,
+     "fixed": true,
+     "height": 65,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "league spartan",
+     "outfit"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "pageH": 7580,
+    "margins": {
+     "left": 16,
+     "right": 16
+    },
+    "sections": [
+     {
+      "sel": "section.bx-hero",
+      "tag": "section",
+      "top": 65,
+      "height": 983,
+      "words": 41,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "Drinking water,",
+       "size": 44,
+       "tag": "h1"
+      },
+      "left": 16,
+      "right": 16,
+      "textLeft": 16,
+      "textRight": 18,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.bx-pillars",
+      "tag": "section",
+      "top": 1048,
+      "height": 709,
+      "words": 54,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Why",
+       "size": 28,
+       "tag": "h2"
+      },
+      "left": 16,
+      "right": 33,
+      "textLeft": 16,
+      "textRight": 33,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.bx-plan",
+      "tag": "section",
+      "top": 1756,
+      "height": 1165,
+      "words": 116,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "It",
+       "size": 36,
+       "tag": "h2"
+      },
+      "left": 16,
+      "right": 18,
+      "textLeft": 16,
+      "textRight": 18,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "figure.bx-band",
+      "tag": "figure",
+      "top": 2922,
+      "height": 439,
+      "words": 0,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": null,
+      "right": null,
+      "textLeft": null,
+      "textRight": null,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.bx-flat",
+      "tag": "section",
+      "top": 3360,
+      "height": 1200,
+      "words": 67,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "Three",
+       "size": 36,
+       "tag": "h2"
+      },
+      "left": 16,
+      "right": 24,
+      "textLeft": 16,
+      "textRight": 24,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#size.bx-size",
+      "tag": "section",
+      "top": 4561,
+      "height": 1153,
+      "words": 36,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "Size it to your tower.",
+       "size": 36,
+       "tag": "h2"
+      },
+      "left": 16,
+      "right": 16,
+      "textLeft": 16,
+      "textRight": 16,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#enquire.bx-enquire",
+      "tag": "section",
+      "top": 5713,
+      "height": 1154,
+      "words": 84,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "Your next tower.",
+       "size": 36,
+       "tag": "h2"
+      },
+      "left": 16,
+      "right": 16,
+      "textLeft": 16,
+      "textRight": 20,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "footer.footer",
+      "tag": "footer",
+      "top": 6868,
+      "height": 712,
+      "words": 46,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": 16,
+      "right": 46,
+      "textLeft": 16,
+      "textRight": 46,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "Drinking water, planned in.",
+      "size": 44,
+      "top": 113,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 16,
+      "n": 11
+     },
+     {
+      "x": 243,
+      "n": 2
+     },
+     {
+      "x": 264,
+      "n": 2
+     },
+     {
+      "x": 47,
+      "n": 1
+     },
+     {
+      "x": 79,
+      "n": 1
+     },
+     {
+      "x": 111,
+      "n": 1
+     },
+     {
+      "x": 164,
+      "n": 1
+     },
+     {
+      "x": 184,
+      "n": 1
+     },
+     {
+      "x": 216,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 21,
+    "bodySize": 18,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": null,
+   "consoleErrors": []
+  }
+ ],
+ "findings": [
+  {
+   "level": "WARN",
+   "id": "hairline",
+   "width": 1440,
+   "message": "1 thin rule(s)/divider line(s): header.nav 1440px",
+   "fix": "Delete. Separate with space, a tone change, or scale. Lines are only for real tables and form fields.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "size-count",
+   "width": 1440,
+   "message": "10 different font sizes (13, 15, 16, 17, 20, 22, 32, 36, 48, 72).",
+   "fix": "A page needs about five: display, heading, lead, body, small."
+  },
+  {
+   "level": "WARN",
+   "id": "grey-body",
+   "width": 1440,
+   "message": "The running text is a soft grey on its ground (5.8:1).",
+   "fix": "Set body copy in the full ink (7:1 or more). Keep the muted ink for secondary notes; pages read thin and unfinished when everything is grey.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "few-pictures",
+   "width": 1440,
+   "message": "Only 3 picture(s) on the page (3 photographs, footage or raster images, 0 interface fragments). Drawings in SVG do not count.",
+   "fix": "Find real pictures of the subject's world with scripts/assets.mjs (photographs, archival images, maps, engravings, footage), download them to assets/ and give them room: a hero picture, one per section that has a subject, a full-width band. At least four, usually six to twelve."
+  },
+  {
+   "level": "WARN",
+   "id": "no-footage",
+   "width": 1440,
+   "message": "No video anywhere on the page.",
+   "fix": "Look for one honest clip with scripts/assets.mjs --video (the place, the material, the process) and use it as a muted loop with a poster frame. Defend its absence only if no clip fits the subject."
+  },
+  {
+   "level": "WARN",
+   "id": "measure",
+   "width": 1440,
+   "message": "Longest paragraph runs about 199 characters per line.",
+   "fix": "Cap paragraphs at 45–75 characters (max-width: 60ch).",
+   "alsoAt": [
+    768
+   ]
+  }
+ ],
+ "images": [
+  {
+   "viewport": "desktop",
+   "width": 1440,
+   "fold": "C:\\Users\\Dell\\Documents\\Moya-one-final\\.taste-skill\\inspect-b2b-builders\\desktop-fold.jpg",
+   "pages": [
+    "C:\\Users\\Dell\\Documents\\Moya-one-final\\.taste-skill\\inspect-b2b-builders\\desktop-page-01.jpg",
+    "C:\\Users\\Dell\\Documents\\Moya-one-final\\.taste-skill\\inspect-b2b-builders\\desktop-page-02.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "tablet",
+   "width": 768,
+   "fold": "C:\\Users\\Dell\\Documents\\Moya-one-final\\.taste-skill\\inspect-b2b-builders\\tablet-fold.jpg",
+   "pages": [
+    "C:\\Users\\Dell\\Documents\\Moya-one-final\\.taste-skill\\inspect-b2b-builders\\tablet-page-01.jpg",
+    "C:\\Users\\Dell\\Documents\\Moya-one-final\\.taste-skill\\inspect-b2b-builders\\tablet-page-02.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "mobile",
+   "width": 390,
+   "fold": "C:\\Users\\Dell\\Documents\\Moya-one-final\\.taste-skill\\inspect-b2b-builders\\mobile-fold.jpg",
+   "pages": [
+    "C:\\Users\\Dell\\Documents\\Moya-one-final\\.taste-skill\\inspect-b2b-builders\\mobile-page-01.jpg",
+    "C:\\Users\\Dell\\Documents\\Moya-one-final\\.taste-skill\\inspect-b2b-builders\\mobile-page-02.jpg"
+   ],
+   "film": []
+  }
+ ]
+}

@@ -5,17 +5,17 @@ import { JugShape } from '@/components/Jug';
 
 // One kitchen, shown each way: a stack of jugs in the corner, an RO unit under the sink with its line to the drain,
 // or the Moya1 control unit, one extra tap and the line up the wall. Same flat 2px-ink style as the rest of the site.
-// When it comes into view it steps through the states once and stops on Moya One; then the visitor switches.
-// Reduced motion: no stepping, it opens on Moya One, the final state.
+// When it comes into view it steps through the states once and stops on MoyaOne; then the visitor switches.
+// Reduced motion: no stepping, it opens on MoyaOne, the final state.
 const S = { fill: 'none', stroke: 'var(--ink)', strokeWidth: 2, strokeLinecap: 'round', strokeLinejoin: 'round' };
 const FLOOR = 520;
 
 const CAPTION = {
   jugs: 'Jugs: delivered, carried in, stacked in the corner, carried back out.',
   ro: 'An RO filter: a unit under the sink, filters to change, and water sent to the drain as it works.',
-  moya: 'Moya One: a control unit on the wall, one extra tap, and a line up the tower. Nothing else.',
+  moya: 'MoyaOne: a control unit on the wall, one extra tap, and a line up the tower. Nothing else.',
 };
-const LABEL = { jugs: 'Jugs', ro: 'RO filter', moya: 'Moya One' };
+const LABEL = { jugs: 'Jugs', ro: 'RO filter', moya: 'MoyaOne' };
 
 export default function KitchenSwitch({ states = ['jugs', 'ro', 'moya'], id = 'ks' }) {
   const [state, setState] = useState(states[0]);
@@ -68,7 +68,7 @@ export default function KitchenSwitch({ states = ['jugs', 'ro', 'moya'], id = 'k
         <rect x="470" y="70" width="200" height="140" rx="4" {...S} fill="var(--water)" />
         <path d="M570 70v140M470 140h200" {...S} />
 
-        {/* Moya One's line, behind the counter, up the wall */}
+        {/* MoyaOne's line, behind the counter, up the wall */}
         <path className="ks-line" d={`M790 ${FLOOR}V250H760`} pathLength="1" />
 
         {/* the counter, the cupboard under the sink and the kitchen's own tap */}
@@ -107,11 +107,11 @@ export default function KitchenSwitch({ states = ['jugs', 'ro', 'moya'], id = 'k
           <path className="ks-drain" d="M550 494V506H760" />
         </g>
 
-        {/* Moya One: the control unit, the extra tap and a glass */}
+        {/* MoyaOne: the control unit, the extra tap and a glass */}
         <g className="ks-moya">
           <rect x="704" y="214" width="56" height="78" rx="10" {...S} fill="var(--base)" />
           <rect x="714" y="226" width="36" height="14" rx="2" fill="var(--ink)" />
-          <circle cx="732" cy="270" r="5" fill="var(--yellow)" stroke="var(--ink)" strokeWidth="1.5" />
+          <circle cx="732" cy="270" r="5" fill="var(--highlight)" stroke="var(--ink)" strokeWidth="1.5" />
           <path d="M712 366V328a18 18 0 0 1 36 0v6" {...S} strokeWidth="3" />
           <rect x="737" y="346" width="22" height="20" fill="var(--water)" />
           <path d="M734 336l3 30h22l3-30" {...S} />

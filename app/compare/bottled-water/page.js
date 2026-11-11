@@ -9,7 +9,7 @@ import CompareTable from '@/components/compare/CompareTable';
 import '../compare.css';
 
 export const metadata = {
-  title: 'Moya One and bottled water',
+  title: 'MoyaOne and bottled water',
   description:
     'A full 20-litre jug weighs about twenty kilos. See the weekly jug routine against one line to your kitchen, and work out what your home lifts in a year.',
 };
@@ -27,16 +27,16 @@ export default function BottledWater() {
             </h1>
             <p className="cp-lede">
               A full 20-litre jug of water weighs about twenty kilos. Someone carries it in, lifts it up, and carries
-              the empty back out. Moya One brings the water up the tower instead.
+              the empty back out. MoyaOne brings the water up the tower instead.
             </p>
             <div className="cp-actions">
               <a href="/b2c/how-it-works" className="btn btn-primary">
                 See how it works
-                <ArrowRight size={20} aria-hidden="true" />
+                <ArrowRight weight="bold" size={20} aria-hidden="true" />
               </a>
               <a href="#year" className="text-link">
                 Work out your year
-                <ArrowRight size={20} aria-hidden="true" />
+                <ArrowRight weight="bold" size={20} aria-hidden="true" />
               </a>
             </div>
           </div>
@@ -50,7 +50,7 @@ export default function BottledWater() {
                 {/* the tag, tied to the neck */}
                 <path className="bw-string" d="M150 92C190 92 200 110 214 128" />
                 <g className="bw-tag">
-                  <path d="M204 126h64a6 6 0 0 1 6 6v40a6 6 0 0 1-6 6h-64l-14-26z" fill="var(--yellow)" stroke="var(--ink)" strokeWidth="2" strokeLinejoin="round" />
+                  <path d="M204 126h64a6 6 0 0 1 6 6v40a6 6 0 0 1-6 6h-64l-14-26z" fill="var(--highlight)" stroke="var(--ink)" strokeWidth="2" strokeLinejoin="round" />
                   <circle cx="206" cy="152" r="4" fill="var(--base)" stroke="var(--ink)" strokeWidth="2" />
                   <text x="241" y="160" textAnchor="middle" className="bw-tag-text">
                     20 kg
@@ -72,7 +72,7 @@ export default function BottledWater() {
               <Words>The weekly routine.</Words>
             </h2>
             <p data-reveal="fade">
-              Six small jobs that come round every week. With Moya One the loop is gone: the water is already in the
+              Six small jobs that come round every week. With MoyaOne the loop is gone: the water is already in the
               tower, and you recharge litres from your phone.
             </p>
           </div>
@@ -93,17 +93,17 @@ export default function BottledWater() {
         </div>
       </section>
 
-      {/* ---- jugs against Moya One, plainly ---- */}
+      {/* ---- jugs against MoyaOne, plainly ---- */}
       <section className="cp-table" aria-labelledby="bw-table-title">
         <div className="container">
           <div className="cp-head">
             <h2 id="bw-table-title" data-reveal="words">
-              <Words>Jugs and Moya One.</Words>
+              <Words>Jugs and MoyaOne.</Words>
             </h2>
             <p data-reveal="fade">The same questions, answered for both.</p>
           </div>
           <div data-reveal="card">
-            <CompareTable only={['jugs', 'moya']} rows={['source', 'carry', 'kitchen', 'care', 'track', 'where']} caption="Jugs and Moya One compared." />
+            <CompareTable only={['jugs', 'moya']} rows={['source', 'carry', 'kitchen', 'care', 'track', 'where']} caption="Jugs and MoyaOne compared." />
           </div>
         </div>
       </section>
@@ -118,15 +118,15 @@ export default function BottledWater() {
           <div className="cp-close-actions" data-reveal="fade">
             <a href="/b2c/how-it-works" className="btn btn-primary">
               See how it works
-              <ArrowRight size={20} aria-hidden="true" />
+              <ArrowRight weight="bold" size={20} aria-hidden="true" />
             </a>
             <a href="/compare/ro-filters" className="text-link">
-              Moya One and RO filters
-              <ArrowRight size={20} aria-hidden="true" />
+              MoyaOne and RO filters
+              <ArrowRight weight="bold" size={20} aria-hidden="true" />
             </a>
             <a href="/compare" className="text-link">
               All three side by side
-              <ArrowRight size={20} aria-hidden="true" />
+              <ArrowRight weight="bold" size={20} aria-hidden="true" />
             </a>
           </div>
         </div>

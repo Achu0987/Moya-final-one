@@ -19,12 +19,12 @@ function TowerArt() {
       {floors.map((y) =>
         [66, 106].map((x) => <rect key={`${x}${y}`} x={x} y={y - 8} width="28" height="18" rx="2" fill="var(--base)" {...S} />),
       )}
-      <path className="a-draw a-riser" d="M100 128V30" pathLength="1" stroke="var(--orange)" strokeWidth="3" fill="none" strokeLinecap="round" />
+      <path className="a-draw a-riser" d="M100 128V30" pathLength="1" stroke="var(--sky)" strokeWidth="3" fill="none" strokeLinecap="round" />
       {floors.map((y, i) => (
         <g key={y}>
-          <path className="a-draw a-branch" style={{ '--d': `${1.3 - i * 0.35}s` }} d={`M100 ${y + 6}H80M100 ${y + 6}H120`} pathLength="1" stroke="var(--orange)" strokeWidth="3" fill="none" strokeLinecap="round" />
+          <path className="a-draw a-branch" style={{ '--d': `${1.3 - i * 0.35}s` }} d={`M100 ${y + 6}H80M100 ${y + 6}H120`} pathLength="1" stroke="var(--sky)" strokeWidth="3" fill="none" strokeLinecap="round" />
           {[80, 120].map((x) => (
-            <circle key={x} className="a-pop" style={{ '--d': `${1.6 - i * 0.35}s` }} cx={x} cy={y - 2} r="3.5" fill="var(--yellow)" stroke="var(--ink)" strokeWidth="1.5" />
+            <circle key={x} className="a-pop" style={{ '--d': `${1.6 - i * 0.35}s` }} cx={x} cy={y - 2} r="3.5" fill="var(--highlight)" stroke="var(--ink)" strokeWidth="1.5" />
           ))}
         </g>
       ))}
@@ -37,7 +37,7 @@ function KitchenArt() {
     <svg viewBox="0 0 200 140" aria-hidden="true">
       <rect x="128" y="18" width="44" height="58" rx="10" fill="var(--base)" {...S} />
       <rect x="138" y="30" width="24" height="10" rx="2" fill="var(--ink)" />
-      <circle className="a-pop" style={{ '--d': '0.2s' }} cx="150" cy="58" r="4" fill="var(--yellow)" />
+      <circle className="a-pop" style={{ '--d': '0.2s' }} cx="150" cy="58" r="4" fill="var(--highlight)" />
       <path d="M62 108V58a24 24 0 0 1 48 0v8" {...S} strokeWidth="3" />
       <rect className="a-pour" x="106" y="68" width="8" height="30" rx="4" fill="var(--water)" />
       {/* the glass, filling */}
@@ -62,7 +62,7 @@ function PhoneArt({ litres }) {
       <rect className="a-bar" x="74" y="66" width="52" height="6" rx="3" fill="var(--water)" />
       <rect x="74" y="80" width="24" height="16" rx="8" fill="none" {...S} strokeWidth="1.5" />
       <rect x="102" y="80" width="24" height="16" rx="8" fill="var(--ink)" />
-      <rect className="a-press" x="74" y="106" width="52" height="16" rx="8" fill="var(--orange)" />
+      <rect className="a-press" x="74" y="106" width="52" height="16" rx="8" fill="var(--sky)" />
     </svg>
   );
 }
@@ -81,7 +81,7 @@ const STEPS = [
   },
   {
     title: 'Recharged from your phone.',
-    text: 'Top up litres in the Moya One app, the way you top up a mobile plan.',
+    text: 'Top up litres in the MoyaOne app, the way you top up a mobile plan.',
   },
 ];
 

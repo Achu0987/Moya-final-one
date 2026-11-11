@@ -9,11 +9,11 @@ export default function Close() {
           <Words>Leave the jugs behind.</Words>
         </h2>
         <p data-reveal="fade">
-          Moya One is installed while a tower is built. Ask your builder about it, or write to us.
+          MoyaOne is installed while a tower is built. Ask your builder about it, or write to us.
         </p>
         <a href="/contact" className="btn btn-primary" data-reveal="fade">
           Write to us
-          <ArrowRight size={20} aria-hidden="true" />
+          <ArrowRight weight="bold" size={20} aria-hidden="true" />
         </a>
       </div>
     </section>

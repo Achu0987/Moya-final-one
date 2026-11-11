@@ -6,7 +6,7 @@ import Motion from '@/components/Motion';
 import './how-it-works.css';
 
 export const metadata = {
-  title: 'How it works: Moya One',
+  title: 'How it works: MoyaOne',
   description:
     'Follow one drop of water from the plant room in the basement, up your tower and into your glass. Then try a sample recharge and pour.',
 };
@@ -42,8 +42,8 @@ export default function HowItWorks() {
                 <li>Change a filter under the sink.</li>
               </ul>
               <a href="/compare" className="text-link dodont-link">
-                Compare jugs, RO filters and Moya One
-                <ArrowRight size={20} aria-hidden="true" />
+                Compare jugs, RO filters and MoyaOne
+                <ArrowRight weight="bold" size={20} aria-hidden="true" />
               </a>
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img className="dodont-jug" src="/illustrations/jug.svg" alt="" width="160" height="216" />
@@ -59,18 +59,18 @@ export default function HowItWorks() {
               <Words>See your water, in litres.</Words>
             </h2>
             <p data-reveal="fade">
-              The Moya One app shows your balance, and you recharge when you need more. Builders can plan it into a
+              The MoyaOne app shows your balance, and you recharge when you need more. Builders can plan it into a
               tower from the start.
             </p>
             <div className="how-next-actions" data-reveal="fade">
               {/* PLACEHOLDER: the brief's main action is "check water quality"; point this to /b2c/water-quality once it is built. */}
               <a href="/b2b/builders" className="btn btn-primary">
                 For builders
-                <ArrowRight size={20} aria-hidden="true" />
+                <ArrowRight weight="bold" size={20} aria-hidden="true" />
               </a>
               <a href="/contact" className="text-link">
                 Talk to us
-                <ArrowRight size={20} aria-hidden="true" />
+                <ArrowRight weight="bold" size={20} aria-hidden="true" />
               </a>
             </div>
           </div>

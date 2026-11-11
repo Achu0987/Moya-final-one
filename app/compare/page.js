@@ -2,34 +2,14 @@ import { ArrowDown, ArrowRight } from '@phosphor-icons/react/dist/ssr';
 import Words from '@/components/common/Words';
 import Motion from '@/components/Motion';
 import InView from '@/components/common/InView';
-import Jug from '@/components/Jug';
-import KitchenSwitch from '@/components/compare/KitchenSwitch';
 import CompareTable from '@/components/compare/CompareTable';
 import './compare.css';
 
 export const metadata = {
-  title: 'Compare: Moya One',
+  title: 'Compare: MoyaOne',
   description:
-    'Jugs, an RO filter or Moya One: what each way of getting drinking water asks of your home, side by side, in plain words.',
+    'Jugs, an RO filter or MoyaOne: what each way of getting drinking water asks of your home, side by side, in plain words.',
 };
-
-const S = { fill: 'none', stroke: 'var(--ink)', strokeWidth: 2, strokeLinecap: 'round', strokeLinejoin: 'round' };
-
-// the cupboard under the sink with its RO unit, for the RO door
-function FilterArt() {
-  return (
-    <svg viewBox="0 0 200 160" aria-hidden="true">
-      <path d="M86 50V26a14 14 0 0 1 28 0v4" {...S} strokeWidth="3" />
-      <rect x="24" y="50" width="152" height="10" rx="3" fill="var(--ink)" />
-      <rect x="32" y="60" width="136" height="88" rx="4" {...S} fill="var(--base)" />
-      <rect x="40" y="68" width="120" height="72" rx="3" fill="var(--grey)" />
-      <rect x="52" y="80" width="96" height="48" rx="6" {...S} fill="var(--base)" />
-      {[62, 90, 118].map((x) => (
-        <rect key={x} x={x} y="88" width="20" height="32" rx="6" {...S} fill="var(--water)" />
-      ))}
-    </svg>
-  );
-}
 
 export default function Compare() {
   return (
@@ -49,15 +29,26 @@ export default function Compare() {
             <div className="cp-actions">
               <a href="#side-by-side" className="btn btn-primary">
                 See them side by side
-                <ArrowDown size={20} aria-hidden="true" />
+                <ArrowDown weight="bold" size={20} aria-hidden="true" />
               </a>
               <a href="/contact" className="text-link">
                 Talk to us
-                <ArrowRight size={20} aria-hidden="true" />
+                <ArrowRight weight="bold" size={20} aria-hidden="true" />
               </a>
             </div>
           </div>
-          <KitchenSwitch id="cp-ks" />
+          {/* PLACEHOLDER: a found photograph (credited below); swap in the client's own people photography when it arrives */}
+          <figure className="cp-photo">
+            <img
+              src="/compare/drinking-1600.webp"
+              srcSet="/compare/drinking-800.webp 800w, /compare/drinking-1600.webp 1600w"
+              sizes="(min-width: 900px) 40vw, 100vw"
+              width="1600"
+              height="1067"
+              alt="A woman drinking a glass of water in her kitchen."
+              fetchPriority="high"
+            />
+          </figure>
         </div>
       </section>
 
@@ -73,7 +64,7 @@ export default function Compare() {
             </p>
           </div>
           <div data-reveal="card">
-            <CompareTable caption="Jugs, an RO filter and Moya One, compared on seven questions." />
+            <CompareTable caption="Jugs, an RO filter and MoyaOne, compared on seven questions." />
           </div>
         </div>
       </section>
@@ -85,32 +76,32 @@ export default function Compare() {
             <h2 id="cp-doors-title" data-reveal="words">
               <Words>Look closer.</Words>
             </h2>
-            <p data-reveal="fade">Each option has its own page, against Moya One.</p>
+            <p data-reveal="fade">Each option has its own page, against MoyaOne.</p>
           </div>
           <div className="cp-door-list" data-in>
             <a href="/compare/bottled-water" className="cp-door is-jugs" style={{ '--i': 0 }}>
               <span className="cp-door-art">
-                <Jug id="cp-door-jug" title="A 20-litre water jug" />
+                <img src="/compare/jug.webp" alt="" width="600" height="600" loading="lazy" />
               </span>
               <span className="cp-door-text">
-                <span className="cp-door-title">Moya One and bottled water</span>
+                <span className="cp-door-title">MoyaOne and bottled water</span>
                 <span className="cp-door-sub">Twenty kilos at a time, every week: the jug routine, against one line.</span>
                 <span className="cp-door-go">
                   Read the comparison
-                  <ArrowRight size={20} aria-hidden="true" />
+                  <ArrowRight weight="bold" size={20} aria-hidden="true" />
                 </span>
               </span>
             </a>
             <a href="/compare/ro-filters" className="cp-door is-ro" style={{ '--i': 1 }}>
               <span className="cp-door-art">
-                <FilterArt />
+                <img src="/compare/ro-filter.webp" alt="" width="600" height="600" loading="lazy" />
               </span>
               <span className="cp-door-text">
-                <span className="cp-door-title">Moya One and RO filters</span>
+                <span className="cp-door-title">MoyaOne and RO filters</span>
                 <span className="cp-door-sub">Water, servicing and space: what a filter under the sink asks for.</span>
                 <span className="cp-door-go">
                   Read the comparison
-                  <ArrowRight size={20} aria-hidden="true" />
+                  <ArrowRight weight="bold" size={20} aria-hidden="true" />
                 </span>
               </span>
             </a>
@@ -127,25 +118,33 @@ export default function Compare() {
           <div className="cp-note-body">
             {/* PLACEHOLDER: follows "installed during construction, through the builder"; confirm wording with Rayansh. */}
             <p className="cp-statement" data-reveal="fade">
-              Moya One goes in while a tower is built, so it cannot be added to a flat later.
+              MoyaOne goes in while a tower is built, so it cannot be added to a flat later.
             </p>
             <p className="cp-note-text" data-reveal="fade">
-              Jugs and filters work in any home. Moya One works where it is planned in, so the time to ask for it is
+              Jugs and filters work in any home. MoyaOne works where it is planned in, so the time to ask for it is
               before the tower goes up.
             </p>
             <div className="cp-actions" data-reveal="fade">
               <a href="/contact" className="btn btn-primary">
                 Talk to us
-                <ArrowRight size={20} aria-hidden="true" />
+                <ArrowRight weight="bold" size={20} aria-hidden="true" />
               </a>
               <a href="/b2b/builders" className="text-link">
                 For builders
-                <ArrowRight size={20} aria-hidden="true" />
+                <ArrowRight weight="bold" size={20} aria-hidden="true" />
               </a>
             </div>
           </div>
         </div>
       </section>
+
+      <p className="container cp-credits">
+        First photograph: “Woman drinks water from a glass in a modern kitchen” by Shixart1985,{' '}
+        <a href="https://commons.wikimedia.org/wiki/File:Woman_drinks_water_from_a_glass_in_a_modern_kitchen.jpg">
+          CC BY 2.0
+        </a>
+        , via Wikimedia Commons.
+      </p>
 
       <Motion />
       <InView />

@@ -8,15 +8,15 @@ import { CONTACT_EMAIL, CONTACT_PHONE, WHATSAPP_NUMBER } from '@/lib/content';
 import './contact.css';
 
 export const metadata = {
-  title: 'Contact: Moya One',
+  title: 'Contact: MoyaOne',
   description:
-    'Living in a tower, or building one? Talk to Moya One about drinking water on tap in every flat, planned in from the first drawing.',
+    'Living in a tower, or building one? Talk to MoyaOne about drinking water on tap in every flat, planned in from the first drawing.',
 };
 
 export default function Contact() {
   const whatsapp =
     WHATSAPP_NUMBER &&
-    `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent('Hi Moya One, I would like to know more.')}`;
+    `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent('Hi MoyaOne, I would like to know more.')}`;
 
   return (
     <>
@@ -29,7 +29,7 @@ export default function Contact() {
             </h1>
             {/* PLACEHOLDER: "reads every message and writes back" is not a response-time promise; Rayansh to confirm. */}
             <p className="hero-lede">
-              Living in a tower, or building one? Tell us who you are and what you need. The Moya One team reads every
+              Living in a tower, or building one? Tell us who you are and what you need. The MoyaOne team reads every
               message and writes back.
             </p>
 
@@ -38,7 +38,7 @@ export default function Contact() {
               {/* PLACEHOLDER: contact email, see lib/content.js */}
               <a href={`mailto:${CONTACT_EMAIL}`} className="ct-direct-link">
                 {CONTACT_EMAIL}
-                <ArrowUpRight size={20} aria-hidden="true" />
+                <ArrowUpRight weight="bold" size={20} aria-hidden="true" />
               </a>
               {CONTACT_PHONE && (
                 <a href={`tel:${CONTACT_PHONE}`} className="ct-direct-link">
@@ -47,7 +47,7 @@ export default function Contact() {
               )}
               {whatsapp && (
                 <a href={whatsapp} className="ct-direct-link" target="_blank" rel="noopener noreferrer">
-                  <WhatsappLogo size={20} aria-hidden="true" />
+                  <WhatsappLogo weight="bold" size={20} aria-hidden="true" />
                   WhatsApp
                 </a>
               )}
@@ -66,15 +66,15 @@ export default function Contact() {
           <h2 id="ct-close-title" data-reveal="words">
             <Words>Not ready to write yet?</Words>
           </h2>
-          <p data-reveal="fade">See how the water reaches the kitchen, or how Moya One goes into a tower during the build.</p>
+          <p data-reveal="fade">See how the water reaches the kitchen, or how MoyaOne goes into a tower during the build.</p>
           <div className="ct-close-actions" data-reveal="fade">
             <a href="/b2c/how-it-works" className="text-link">
               See how it works
-              <ArrowRight size={20} aria-hidden="true" />
+              <ArrowRight weight="bold" size={20} aria-hidden="true" />
             </a>
             <a href="/b2b/builders" className="text-link">
               For builders
-              <ArrowRight size={20} aria-hidden="true" />
+              <ArrowRight weight="bold" size={20} aria-hidden="true" />
             </a>
           </div>
         </div>

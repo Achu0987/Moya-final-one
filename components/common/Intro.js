@@ -2,9 +2,9 @@
 
 import { useEffect, useState } from 'react';
 
-// The opening moment on the home page, every time it loads: the idea of Moya One in about three seconds.
-// A residential tower rises from the ground; one orange line climbs from the plant room carrying a drop; every flat
-// fills with water as the drop passes its floor; the mark and name arrive and hold; then the screen drains away
+// The opening moment on the home page, every time it loads: the idea of MoyaOne in about three seconds.
+// A residential tower rises from the ground; one sky blue line climbs from the plant room carrying a drop; every flat
+// fills with water as the drop passes its floor; the logo arrives and holds; then the screen drains away
 // like water and the page is there. Pure CSS on the first paint, so it never waits for the page to load.
 // A click, tap or key ends it early. Skipped for reduced motion.
 const FLOORS = Array.from({ length: 11 }, (_, f) => f); // bottom to top
@@ -100,14 +100,10 @@ export default function Intro() {
           </g>
         </svg>
 
+        {/* the full logo, white on navy, as on the brand book's app splash (p.17); the tagline is part of the artwork */}
         <div className="intro-brand">
-          <svg className="intro-mark" viewBox="0 0 28 32">
-            <path d="M14 1.5C14 1.5 3 13.6 3 20.2a11 11 0 0 0 22 0C25 13.6 14 1.5 14 1.5z" fill="var(--base)" />
-            <path d="M7.5 21q1.6-2 3.25 0t3.25 0t3.25 0t3.25 0" fill="none" stroke="var(--orange)" strokeWidth="2" strokeLinecap="round" />
-          </svg>
-          <p className="intro-name">Moya One</p>
+          <img className="intro-logo" src="/brand/moyaone-logo-white.svg" alt="" width="1262" height="575" />
         </div>
-        <p className="intro-tag">One line. Every flat.</p>
       </div>
     </div>
   );

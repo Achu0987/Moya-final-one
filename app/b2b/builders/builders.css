@@ -19,7 +19,7 @@
 .bx-title {
   font-size: var(--fs-hero);
   line-height: var(--lh-hero);
-  letter-spacing: -0.035em;
+  letter-spacing: -0.01em;
 }
 
 .bx-lede {
@@ -78,7 +78,7 @@
 .bx-plan-head h2 {
   font-size: var(--fs-h1);
   line-height: var(--lh-h1);
-  letter-spacing: -0.03em;
+  letter-spacing: -0.01em;
 }
 
 .bx-plan-head p {
@@ -114,7 +114,7 @@
   bottom: 0;
   width: 4px;
   border-radius: 2px;
-  background: var(--orange);
+  background: var(--sky);
 }
 
 .bx-stage-bar::before {
@@ -125,7 +125,7 @@
   width: 14px;
   height: 14px;
   border-radius: 50%;
-  background: var(--orange);
+  background: var(--sky);
 }
 
 .bx-stage:last-child .bx-stage-bar {
@@ -154,7 +154,7 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: 50% 12%;
+  object-position: 50% 48%;
 }
 
 /* ---------- In and out ---------- */
@@ -171,7 +171,7 @@
   max-width: 14ch;
   font-size: var(--fs-h1);
   line-height: var(--lh-h1);
-  letter-spacing: -0.03em;
+  letter-spacing: -0.01em;
 }
 
 .bx-flat-lists {
@@ -236,7 +236,7 @@
 
 .bx-flat-drawing .ky-line {
   fill: none;
-  stroke: var(--orange);
+  stroke: var(--sky);
   stroke-width: 5;
   stroke-linecap: round;
   stroke-linejoin: round;
@@ -279,7 +279,7 @@
 
 .bx-flat-col svg {
   margin-top: 1px;
-  color: var(--orange);
+  color: var(--ink);
 }
 
 .bx-flat-col.is-out li {
@@ -318,7 +318,7 @@
 .bx-size-copy h2 {
   font-size: var(--fs-h1);
   line-height: var(--lh-h1);
-  letter-spacing: -0.03em;
+  letter-spacing: -0.01em;
 }
 
 .bx-size-lede {
@@ -377,7 +377,7 @@
   font-weight: 700;
   font-size: 28px;
   line-height: 1;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.01em;
   font-variant-numeric: tabular-nums;
 }
 
@@ -412,7 +412,7 @@
 }
 
 .bx-tower-branch {
-  stroke: var(--orange);
+  stroke: var(--sky);
   stroke-width: 1.5;
 }
 
@@ -434,7 +434,7 @@
 
 .bx-tower-line {
   fill: none;
-  stroke: var(--orange);
+  stroke: var(--sky);
   stroke-width: 3;
   stroke-linejoin: round;
   stroke-linecap: round;
@@ -456,7 +456,7 @@
   max-width: 14ch;
   font-size: var(--fs-h1);
   line-height: var(--lh-h1);
-  letter-spacing: -0.03em;
+  letter-spacing: -0.01em;
 }
 
 .bx-enquire-lede {
@@ -492,7 +492,7 @@
 
 .bx-form input:focus-visible,
 .bx-form select:focus-visible {
-  outline: 3px solid var(--orange);
+  outline: 3px solid var(--sky);
   outline-offset: 2px;
 }
 
@@ -833,7 +833,8 @@
   /* ---- the band picture is taller than its frame so it can drift ---- */
   .bx-band img {
     height: 118%;
-    margin-top: -9%;
+    position: relative;
+    top: -9%; /* a share of the band's height (a margin percentage would follow the width and open a gap below) */
     will-change: transform;
   }
 
@@ -852,5 +853,118 @@
   .bx-stage-bar {
     transform: scaleX(0);
     transform-origin: left;
+  }
+}
+
+/* ---------- Why builders plan it in: the three pillars (client change list) ----------
+   A mist field after the dark first screen. Each pillar is a row: a navy icon in a circle (brand book p.16), the
+   pillar large, what it means beside it. Rows on one grid, not a card grid. */
+.bx-pillars {
+  padding-block: var(--section);
+  background: var(--mist);
+}
+
+.bx-pillars-title {
+  margin-bottom: 40px;
+}
+
+.bx-pillar-list {
+  display: grid;
+  gap: 40px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.bx-pillar {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  column-gap: 20px;
+  row-gap: 12px;
+  align-items: center;
+}
+
+.bx-pillar-icon {
+  display: grid;
+  place-items: center;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: var(--white);
+  color: var(--navy);
+}
+
+.bx-pillar h3 {
+  font-size: var(--fs-h3);
+  line-height: var(--lh-h3);
+  font-weight: 700;
+}
+
+.bx-pillar-body {
+  grid-column: 1 / -1;
+  display: grid;
+  gap: 6px;
+}
+
+.bx-pillar-body p {
+  max-width: 46ch;
+  font-size: var(--fs-body-lg);
+  color: var(--slate);
+}
+
+.bx-pillar-body .bx-pillar-figure {
+  color: var(--navy);
+}
+
+.bx-pillar-figure strong {
+  font-family: var(--font-display);
+  font-size: var(--fs-h2);
+  line-height: 1;
+  font-weight: 700;
+  color: var(--royal);
+}
+
+@media (min-width: 900px) {
+  .bx-pillars-title {
+    margin-bottom: 56px;
+  }
+
+  .bx-pillar-list {
+    gap: 56px;
+  }
+
+  .bx-pillar {
+    grid-template-columns: 64px repeat(11, minmax(0, 1fr));
+    column-gap: 24px;
+  }
+
+  .bx-pillar-icon {
+    width: 64px;
+    height: 64px;
+  }
+
+  .bx-pillar h3 {
+    grid-column: 2 / 7;
+    font-size: var(--fs-h2);
+    line-height: var(--lh-h2);
+  }
+
+  .bx-pillar-body {
+    grid-column: 7 / 13;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .bx-pillar {
+    opacity: 0;
+    transform: translateY(20px);
+    transition:
+      opacity 0.6s var(--ease-enter) calc(var(--i) * 0.12s),
+      transform 0.6s var(--ease-enter) calc(var(--i) * 0.12s);
+  }
+
+  .bx-pillar-list.is-in .bx-pillar {
+    opacity: 1;
+    transform: none;
   }
 }

@@ -8,18 +8,18 @@ import CompareTable from '@/components/compare/CompareTable';
 import '../compare.css';
 
 export const metadata = {
-  title: 'Moya One and RO filters',
+  title: 'MoyaOne and RO filters',
   description:
-    'An RO filter asks three things of a household: water, servicing and space. A plain comparison with Moya One, for residents and builders.',
+    'An RO filter asks three things of a household: water, servicing and space. A plain comparison with MoyaOne, for residents and builders.',
 };
 
-// The three things an RO filter asks for, each answered for Moya One. No ratio or percentage (PAGE_BRIEFS.md #8).
+// The three things an RO filter asks for, each answered for MoyaOne. No ratio or percentage (PAGE_BRIEFS.md #8).
 const ASKS = [
   {
     word: 'Water.',
     ro: 'An RO unit sends part of the water it takes to the drain as it filters.',
-    // PLACEHOLDER: the RO wastage ratio and Moya One's own figure are published only once confirmed in writing (tracker C3).
-    moya: 'How much water Moya One uses for each litre you drink is being confirmed, and will be published here.',
+    // PLACEHOLDER: the RO wastage ratio and MoyaOne's own figure are published only once confirmed in writing (tracker C3).
+    moya: 'How much water MoyaOne uses for each litre you drink is being confirmed, and will be published here.',
   },
   {
     word: 'Servicing.',
@@ -46,17 +46,17 @@ export default function RoFilters() {
               <br /> every sink.
             </h1>
             <p className="cp-lede">
-              An RO unit asks three things of a household: water, servicing and space. Moya One asks for none of them
+              An RO unit asks three things of a household: water, servicing and space. MoyaOne asks for none of them
               inside your flat.
             </p>
             <div className="cp-actions">
               <a href="/contact" className="btn btn-primary">
                 Talk to us
-                <ArrowRight size={20} aria-hidden="true" />
+                <ArrowRight weight="bold" size={20} aria-hidden="true" />
               </a>
               <a href="#asks" className="text-link">
                 See the three things
-                <ArrowRight size={20} aria-hidden="true" />
+                <ArrowRight weight="bold" size={20} aria-hidden="true" />
               </a>
             </div>
           </div>
@@ -71,13 +71,13 @@ export default function RoFilters() {
             <h2 id="ro-asks-title" data-reveal="words">
               <Words>Three things it asks for.</Words>
             </h2>
-            <p data-reveal="fade">A fair comparison: what an RO filter needs, and what Moya One needs instead.</p>
+            <p data-reveal="fade">A fair comparison: what an RO filter needs, and what MoyaOne needs instead.</p>
           </div>
           <ul className="ro-ask-list" data-in>
             <li className="ro-ask-key" aria-hidden="true">
               <span />
               <span>With an RO filter</span>
-              <span>With Moya One</span>
+              <span>With MoyaOne</span>
             </li>
             {ASKS.map((a, i) => (
               <li key={a.word} className="ro-ask" style={{ '--i': i }}>
@@ -87,7 +87,7 @@ export default function RoFilters() {
                   {a.ro}
                 </p>
                 <p className="ro-us">
-                  <span className="ro-who">With Moya One</span>
+                  <span className="ro-who">With MoyaOne</span>
                   {a.moya}
                 </p>
               </li>
@@ -116,12 +116,12 @@ export default function RoFilters() {
         <div className="container">
           <div className="cp-head">
             <h2 id="ro-table-title" data-reveal="words">
-              <Words>RO filters and Moya One.</Words>
+              <Words>RO filters and MoyaOne.</Words>
             </h2>
             <p data-reveal="fade">The same questions, answered for both.</p>
           </div>
           <div data-reveal="card">
-            <CompareTable only={['ro', 'moya']} caption="An RO filter and Moya One compared." />
+            <CompareTable only={['ro', 'moya']} caption="An RO filter and MoyaOne compared." />
           </div>
         </div>
       </section>
@@ -136,15 +136,15 @@ export default function RoFilters() {
           <div className="cp-close-actions" data-reveal="fade">
             <a href="/contact" className="btn btn-primary">
               Talk to us
-              <ArrowRight size={20} aria-hidden="true" />
+              <ArrowRight weight="bold" size={20} aria-hidden="true" />
             </a>
             <a href="/compare/bottled-water" className="text-link">
-              Moya One and bottled water
-              <ArrowRight size={20} aria-hidden="true" />
+              MoyaOne and bottled water
+              <ArrowRight weight="bold" size={20} aria-hidden="true" />
             </a>
             <a href="/compare" className="text-link">
               All three side by side
-              <ArrowRight size={20} aria-hidden="true" />
+              <ArrowRight weight="bold" size={20} aria-hidden="true" />
             </a>
           </div>
         </div>

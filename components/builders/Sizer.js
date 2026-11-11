@@ -55,7 +55,7 @@ export default function Sizer() {
   const shown = useCount(flats);
 
   const body = [
-    'Hello Moya One,',
+    'Hello MoyaOne,',
     '',
     `Project: ${name || '(project name)'}`,
     `City: ${city || '(city)'}`,
@@ -64,10 +64,10 @@ export default function Sizer() {
     `Flats per floor: ${perFloor}`,
     `Flats in total: ${flats}`,
     '',
-    'Please get in touch about planning Moya One into this tower.',
+    'Please get in touch about planning MoyaOne into this tower.',
   ].join('\n');
   // PLACEHOLDER: the enquiry goes to the placeholder address in lib/content.js until the client's address exists.
-  const mailto = `mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent(`Moya One for ${name || 'our project'}`)}&body=${encodeURIComponent(body)}`;
+  const mailto = `mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent(`MoyaOne for ${name || 'our project'}`)}&body=${encodeURIComponent(body)}`;
 
   return (
     <>
@@ -124,8 +124,8 @@ export default function Sizer() {
             </p>
             <figure className="bx-enquire-photo" data-in>
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="/builders/city.webp" alt="Residential towers and cranes over Byculla, Mumbai." loading="lazy" />
-              <figcaption>Byculla, Mumbai.</figcaption>
+              <img src="/builders/city.webp" alt="New residential high-rises and their cranes near the Financial District, Hyderabad." loading="lazy" />
+              <figcaption>New residential towers near the Financial District, Hyderabad.</figcaption>
             </figure>
           </div>
           <form
@@ -153,17 +153,18 @@ export default function Sizer() {
             </label>
             <button type="submit" className="btn btn-primary">
               Send the enquiry
-              <ArrowRight size={20} aria-hidden="true" />
+              <ArrowRight weight="bold" size={20} aria-hidden="true" />
             </button>
             <p className="bx-form-note">This opens your email app with the details filled in.</p>
           </form>
         </div>
         <p className="container bx-credits">
-          {/* PLACEHOLDER: confirm the photographer of city.webp (it came with the earlier Unsplash set). */}
-          Photographs: Byculla, Mumbai, by Zoshua Colah on Unsplash; “Moscow, Five Tower construction” by Retired
-          electrician, <a href="https://commons.wikimedia.org/wiki/File:Moscow,_Five_Tower_construction_June_2025_01.jpg">CC0</a>;
-          “Torre Millennium Construccion” by JMRAFFi, colour adjusted,{' '}
-          <a href="https://commons.wikimedia.org/wiki/File:Torre_Millennium_Construccion.jpg">CC BY-SA 4.0</a>, via Wikimedia Commons.
+          Photographs: “Tall skyscrapers under construction at HITEC CITY in Hyderabad” by Saptarshi Pal,{' '}
+          <a href="https://commons.wikimedia.org/wiki/File:Tall_skyscrapers_under_construction_at_HITEC_CITY_in_Hyderabad.jpg">CC BY-SA 4.0</a>{' '}
+          (cropped); “Highrises under construction near Financial district” by iMahesh,{' '}
+          <a href="https://commons.wikimedia.org/wiki/File:Highrises_under_construction_near_Financial_district.jpg">CC BY-SA 4.0</a>,
+          via Wikimedia Commons; “A silhouette of a construction crane against a vibrant orange sunset” by Gagan Deep Singh,{' '}
+          <a href="https://wordpress.org/photos/photo/54963d8833/">CC0</a>, via WordPress Photos.
         </p>
       </section>
     </>

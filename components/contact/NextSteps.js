@@ -11,7 +11,7 @@ function LetterArt() {
     <svg viewBox="0 0 200 140" aria-hidden="true">
       <rect x="44" y="36" width="112" height="76" rx="6" {...S} fill="var(--base)" />
       <path className="nx-draw" d="M46 40l54 40 54-40" pathLength="1" {...S} />
-      <circle className="nx-pop" cx="150" cy="40" r="9" fill="var(--yellow)" stroke="var(--ink)" strokeWidth="1.5" />
+      <circle className="nx-pop" cx="150" cy="40" r="9" fill="var(--highlight)" stroke="var(--ink)" strokeWidth="1.5" />
     </svg>
   );
 }
@@ -38,7 +38,7 @@ function PlanArt() {
       {floors.map((y) =>
         [66, 106].map((x) => <rect key={`${x}${y}`} x={x} y={y - 8} width="28" height="18" rx="2" {...S} fill="var(--base)" />),
       )}
-      <path className="nx-draw" d="M100 128V30" pathLength="1" stroke="var(--orange)" strokeWidth="3" fill="none" strokeLinecap="round" />
+      <path className="nx-draw" d="M100 128V30" pathLength="1" stroke="var(--sky)" strokeWidth="3" fill="none" strokeLinecap="round" />
       {floors.map((y, i) => (
         <path
           key={y}
@@ -46,7 +46,7 @@ function PlanArt() {
           style={{ '--d': `${0.9 - i * 0.25}s` }}
           d={`M100 ${y + 6}H80M100 ${y + 6}H120`}
           pathLength="1"
-          stroke="var(--orange)"
+          stroke="var(--sky)"
           strokeWidth="3"
           fill="none"
           strokeLinecap="round"
@@ -57,12 +57,12 @@ function PlanArt() {
 }
 
 const STEPS = [
-  { Art: LetterArt, title: 'We read your message.', text: 'It comes straight to the Moya One team.' },
+  { Art: LetterArt, title: 'We read your message.', text: 'It comes straight to the MoyaOne team.' },
   { Art: ReplyArt, title: 'We reply your way.', text: 'By phone or by email, whichever you gave us.' },
   {
     Art: PlanArt,
     title: 'We talk about your tower.',
-    text: 'Builders: where Moya One fits into your build. Residents: if your tower is going up now, how to ask your builder for it.',
+    text: 'Builders: where MoyaOne fits into your build. Residents: if your tower is going up now, how to ask your builder for it.',
   },
 ];
 

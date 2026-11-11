@@ -1,6 +1,6 @@
 {
- "url": "http://localhost:3100/",
- "at": "2026-10-24T05:47:43.027Z",
+ "url": "http://localhost:3123/",
+ "at": "2026-11-11T10:55:09.913Z",
  "allow": [],
  "viewports": [
   {
@@ -9,20 +9,20 @@
    "load": "load",
    "screens": 6,
    "filled": [
-    0.88,
-    0.51,
-    0.61,
-    0.96,
+    0.9,
     0.47,
-    0.95
+    0.57,
+    0.96,
+    0.52,
+    0.96
    ],
    "motion": {
-    "elements": 136,
-    "css": 52,
+    "elements": 145,
+    "css": 80,
     "transitions": 10,
-    "scripted": 74,
-    "videos": 0,
-    "playingVideos": 0
+    "scripted": 55,
+    "videos": 1,
+    "playingVideos": 1
    },
    "metrics": {
     "viewport": {
@@ -30,20 +30,20 @@
      "h": 900
     },
     "page": {
-     "height": 4992,
-     "screens": 5.5,
-     "words": 525,
-     "img": 0,
-     "video": 0,
-     "canvas": 2,
-     "svg": 37,
+     "height": 5300,
+     "screens": 5.9,
+     "words": 462,
+     "img": 2,
+     "video": 1,
+     "canvas": 1,
+     "svg": 34,
      "sections": 6,
      "horizontalOverflow": 0,
      "overflowCulprits": [],
      "uiFragments": 2,
      "uiAbuse": false,
-     "realPictures": 0,
-     "videoCount": 0,
+     "realPictures": 1,
+     "videoCount": 1,
      "uiPictures": 1,
      "pictureSamples": [],
      "blendText": 0,
@@ -57,19 +57,19 @@
      "words": 6,
      "chars": 31,
      "lines": 2,
-     "size": 64,
-     "vw": 4.4,
-     "font": "Plus Jakarta Sans",
+     "size": 48,
+     "vw": 3.3,
+     "font": "League Spartan",
      "weight": 700,
-     "tracking": -0.03,
-     "leading": 1,
+     "tracking": -0.01,
+     "leading": 1.05,
      "upper": false,
      "italic": false,
      "mono": false,
      "align": "left",
      "position": "left",
-     "widthRatio": 0.41,
-     "top": 239,
+     "widthRatio": 0.34,
+     "top": 252,
      "tag": "h1",
      "kind": "heading"
     },
@@ -77,8 +77,8 @@
      "text": "Drinking water, on tap at home.",
      "words": 6,
      "lines": 2,
-     "size": 64,
-     "font": "Plus Jakarta Sans"
+     "size": 48,
+     "font": "League Spartan"
     },
     "headings": [
      {
@@ -86,19 +86,19 @@
       "words": 6,
       "chars": 31,
       "lines": 2,
-      "size": 64,
-      "vw": 4.4,
-      "font": "Plus Jakarta Sans",
+      "size": 48,
+      "vw": 3.3,
+      "font": "League Spartan",
       "weight": 700,
-      "tracking": -0.03,
-      "leading": 1,
+      "tracking": -0.01,
+      "leading": 1.05,
       "upper": false,
       "italic": false,
       "mono": false,
       "align": "left",
       "position": "left",
-      "widthRatio": 0.41,
-      "top": 239,
+      "widthRatio": 0.34,
+      "top": 252,
       "tag": "h1",
       "kind": "heading"
      },
@@ -107,19 +107,19 @@
       "words": 6,
       "chars": 30,
       "lines": 1,
-      "size": 44,
-      "vw": 3.1,
-      "font": "Plus Jakarta Sans",
+      "size": 32,
+      "vw": 2.2,
+      "font": "League Spartan",
       "weight": 700,
-      "tracking": -0.02,
-      "leading": 1.1,
+      "tracking": 0,
+      "leading": 1.15,
       "upper": false,
       "italic": false,
       "mono": false,
       "align": "left",
       "position": "left",
       "widthRatio": 0.48,
-      "top": 1133,
+      "top": 1149,
       "tag": "h2",
       "kind": "heading"
      },
@@ -128,19 +128,19 @@
       "words": 9,
       "chars": 43,
       "lines": 2,
-      "size": 64,
-      "vw": 4.4,
-      "font": "Plus Jakarta Sans",
+      "size": 48,
+      "vw": 3.3,
+      "font": "League Spartan",
       "weight": 700,
-      "tracking": -0.03,
-      "leading": 1,
+      "tracking": -0.01,
+      "leading": 1.05,
       "upper": false,
       "italic": false,
       "mono": false,
       "align": "left",
       "position": "left",
       "widthRatio": 0.55,
-      "top": 1841,
+      "top": 1850,
       "tag": "h2",
       "kind": "heading"
      },
@@ -149,19 +149,19 @@
       "words": 7,
       "chars": 36,
       "lines": 2,
-      "size": 44,
-      "vw": 3.1,
-      "font": "Plus Jakarta Sans",
+      "size": 32,
+      "vw": 2.2,
+      "font": "League Spartan",
       "weight": 700,
-      "tracking": -0.02,
-      "leading": 1.1,
+      "tracking": 0,
+      "leading": 1.15,
       "upper": false,
       "italic": false,
       "mono": false,
       "align": "left",
       "position": "left",
       "widthRatio": 0.34,
-      "top": 2264,
+      "top": 2260,
       "tag": "h2",
       "kind": "heading"
      },
@@ -172,9 +172,9 @@
       "lines": 1,
       "size": 44,
       "vw": 3.1,
-      "font": "Plus Jakarta Sans",
+      "font": "League Spartan",
       "weight": 700,
-      "tracking": -0.02,
+      "tracking": -0.01,
       "leading": 1.1,
       "upper": false,
       "italic": false,
@@ -182,7 +182,7 @@
       "align": "left",
       "position": "right",
       "widthRatio": 0.17,
-      "top": 2331,
+      "top": 2314,
       "tag": "p",
       "kind": "statement"
      },
@@ -191,19 +191,19 @@
       "words": 5,
       "chars": 23,
       "lines": 1,
-      "size": 44,
-      "vw": 3.1,
-      "font": "Plus Jakarta Sans",
+      "size": 32,
+      "vw": 2.2,
+      "font": "League Spartan",
       "weight": 700,
-      "tracking": -0.02,
-      "leading": 1.1,
+      "tracking": 0,
+      "leading": 1.15,
       "upper": false,
       "italic": false,
       "mono": false,
       "align": "left",
       "position": "left",
       "widthRatio": 0.34,
-      "top": 2948,
+      "top": 2938,
       "tag": "h2",
       "kind": "heading"
      },
@@ -214,7 +214,7 @@
       "lines": 1,
       "size": 32,
       "vw": 2.2,
-      "font": "Plus Jakarta Sans",
+      "font": "League Spartan",
       "weight": 700,
       "tracking": 0,
       "leading": 1.1,
@@ -223,8 +223,8 @@
       "mono": false,
       "align": "left",
       "position": "center",
-      "widthRatio": 0.05,
-      "top": 2999,
+      "widthRatio": 0.04,
+      "top": 2986,
       "tag": "strong",
       "kind": "heading"
      },
@@ -233,49 +233,28 @@
       "words": 4,
       "chars": 22,
       "lines": 1,
-      "size": 44,
-      "vw": 3.1,
-      "font": "Plus Jakarta Sans",
+      "size": 32,
+      "vw": 2.2,
+      "font": "League Spartan",
       "weight": 700,
-      "tracking": -0.02,
-      "leading": 1.1,
+      "tracking": 0,
+      "leading": 1.15,
       "upper": false,
       "italic": false,
       "mono": false,
       "align": "center",
       "position": "center",
-      "widthRatio": 0.32,
-      "top": 3806,
+      "widthRatio": 0.22,
+      "top": 3793,
       "tag": "h2",
       "kind": "heading"
-     },
-     {
-      "text": "Moya One",
-      "words": 2,
-      "chars": 8,
-      "lines": 1,
-      "size": 269,
-      "vw": 18.7,
-      "font": "Plus Jakarta Sans",
-      "weight": 700,
-      "tracking": -0.055,
-      "leading": 0.8,
-      "upper": false,
-      "italic": false,
-      "mono": false,
-      "align": "left",
-      "position": "center",
-      "widthRatio": 0.85,
-      "top": 4822,
-      "tag": "p",
-      "kind": "statement"
      }
     ],
     "headingSummary": {
-     "count": 9,
+     "count": 8,
      "maxLines": 2,
      "over2Lines": 0,
-     "statements": 2,
+     "statements": 1,
      "centered": 1,
      "medianWords": 5,
      "mixedFontHeadings": 0
@@ -283,13 +262,13 @@
     "type": {
      "families": [
       {
-       "family": "Inter",
-       "share": 0.89,
+       "family": "Outfit",
+       "share": 0.88,
        "mono": false
       },
       {
-       "family": "Plus Jakarta Sans",
-       "share": 0.11,
+       "family": "League Spartan",
+       "share": 0.12,
        "mono": false
       }
      ],
@@ -298,28 +277,28 @@
       13,
       15,
       16,
+      17,
       20,
       22,
-      44,
-      64,
-      269
+      32,
+      48
      ],
      "sizeCount": 8,
      "notLoaded": [],
      "body": {
-      "font": "Inter",
+      "font": "Outfit",
       "size": 20,
       "leading": 1.6,
       "weight": 400,
       "tracking": 0,
-      "contrast": 15.7
+      "contrast": 18.2
      },
-     "measureChars": 53,
+     "measureChars": 49,
      "max": {
-      "size": 269,
-      "vw": 18.7,
-      "font": "Plus Jakarta Sans",
-      "text": "Moya One"
+      "size": 48,
+      "vw": 3.3,
+      "font": "League Spartan",
+      "text": "Drinking water, on tap at home."
      },
      "monoShare": 0,
      "monoProseShare": 0,
@@ -329,82 +308,77 @@
      "microLabelShare": 0,
      "microSamples": [],
      "upperShare": 0,
-     "centerShare": 0.05,
+     "centerShare": 0.06,
      "smallText": 0
     },
     "eyebrows": [],
     "numbered": [],
     "color": {
-     "bodyBg": "#fafaf7",
+     "bodyBg": "#ffffff",
      "bodyBgHsl": {
-      "h": 60,
-      "s": 0.23,
-      "l": 0.97
+      "h": 0,
+      "s": 0,
+      "l": 1
      },
      "dark": false,
      "sectionBgs": [
       {
-       "color": "#e8f3f5",
+       "color": "#0b1626",
        "top": 89,
        "hsl": {
-        "h": 189,
-        "s": 0.39,
-        "l": 0.94
+        "h": 216,
+        "s": 0.55,
+        "l": 0.1
        }
       },
       {
-       "color": "#f3f4f6",
-       "top": 2089,
+       "color": "#eef2f7",
+       "top": 2070,
        "hsl": {
-        "h": 220,
-        "s": 0.14,
-        "l": 0.96
-       }
-      },
-      {
-       "color": "#111827",
-       "top": 2809,
-       "hsl": {
-        "h": 221,
-        "s": 0.39,
-        "l": 0.11
+        "h": 213,
+        "s": 0.36,
+        "l": 0.95
        }
       }
      ],
      "textColors": [
       {
-       "color": "#4b5563",
-       "share": 0.39
+       "color": "#4b5768",
+       "share": 0.37
       },
       {
-       "color": "#111827",
-       "share": 0.32
+       "color": "#8792a3",
+       "share": 0.23
       },
       {
-       "color": "#b9bbbd",
-       "share": 0.2
+       "color": "#0b1626",
+       "share": 0.22
       },
       {
-       "color": "#fafaf7",
-       "share": 0.09
+       "color": "#ffffff",
+       "share": 0.17
+      },
+      {
+       "color": "#2f9fe7",
+       "share": 0.01
       }
      ],
      "button": {
-      "bg": "#f97316",
+      "bg": "#2f9fe7",
       "hsl": {
-       "h": 25,
-       "s": 0.95,
-       "l": 0.53
+       "h": 203,
+       "s": 0.79,
+       "l": 0.55
       },
-      "fg": "#111827"
+      "fg": "#0b1626"
      },
      "lowContrast": []
     },
     "buttons": {
-     "count": 7,
-     "inHero": 4,
+     "count": 6,
+     "inHero": 3,
      "radius": "pill",
-     "height": 50,
+     "height": 52,
      "withShadow": 0,
      "withGradient": 0,
      "mono": 0,
@@ -412,8 +386,7 @@
      "heroLabels": [
       "Skip to content",
       "Contact",
-      "See how it works",
-      "Replay"
+      "See how it works"
      ]
     },
     "surfaces": {
@@ -433,7 +406,7 @@
      "blurred": 0,
      "roundedBoxes": 16,
      "boxRadius": 20,
-     "squareMedia": 0,
+     "squareMedia": 1,
      "roundedMedia": 2,
      "mediaRadius": 20,
      "textShadow": 0,
@@ -442,7 +415,7 @@
        "count": 3,
        "iconTopped": false,
        "rounded": true,
-       "top": 1238
+       "top": 1242
       }
      ]
     },
@@ -452,12 +425,8 @@
       "ratio": 0.9
      },
      {
-      "type": "svg",
-      "ratio": 0.27
-     },
-     {
-      "type": "canvas",
-      "ratio": 0.24
+      "type": "video",
+      "ratio": 0.21
      }
     ],
     "nav": {
@@ -468,8 +437,8 @@
      "blur": false
     },
     "fontsLoaded": [
-     "plus jakarta sans",
-     "inter"
+     "league spartan",
+     "outfit"
     ]
    },
    "layout": {
@@ -477,29 +446,29 @@
      "w": 1440,
      "h": 900
     },
-    "pageH": 4992,
+    "pageH": 5300,
     "margins": {
      "left": 120,
-     "right": 120
+     "right": 123
     },
     "sections": [
      {
       "sel": "section#top.hero",
       "tag": "section",
       "top": 89,
-      "height": 909,
-      "words": 128,
-      "media": 3,
-      "middle": 0,
+      "height": 913,
+      "words": 77,
+      "media": 2,
+      "middle": 31,
       "heading": {
        "text": "Drinking water,",
-       "size": 64,
+       "size": 48,
        "tag": "h1"
       },
       "left": 120,
-      "right": 92,
+      "right": 120,
       "textLeft": 120,
-      "textRight": 92,
+      "textRight": 231,
       "fullBleed": true,
       "footer": false,
       "hero": true,
@@ -509,20 +478,20 @@
      {
       "sel": "section#how.steps",
       "tag": "section",
-      "top": 998,
-      "height": 723,
+      "top": 1002,
+      "height": 727,
       "words": 78,
       "media": 6,
-      "middle": 1,
+      "middle": 0,
       "heading": {
        "text": "From",
-       "size": 44,
+       "size": 32,
        "tag": "h2"
       },
       "left": 120,
       "right": 120,
       "textLeft": 120,
-      "textRight": 141,
+      "textRight": 123,
       "fullBleed": false,
       "footer": false,
       "hero": false,
@@ -532,20 +501,20 @@
      {
       "sel": "section.statement",
       "tag": "section",
-      "top": 1721,
-      "height": 248,
-      "words": 23,
+      "top": 1728,
+      "height": 222,
+      "words": 26,
       "media": 0,
-      "middle": 74,
+      "middle": 171,
       "heading": {
        "text": "Water,",
-       "size": 64,
+       "size": 48,
        "tag": "h2"
       },
       "left": 120,
-      "right": 125,
+      "right": 123,
       "textLeft": 120,
-      "textRight": 125,
+      "textRight": 123,
       "fullBleed": false,
       "footer": false,
       "hero": false,
@@ -555,15 +524,15 @@
      {
       "sel": "section#water.app",
       "tag": "section",
-      "top": 1969,
-      "height": 720,
-      "words": 60,
+      "top": 1950,
+      "height": 725,
+      "words": 58,
       "media": 0,
-      "middle": 233,
+      "middle": 255,
       "heading": {
-       "text": "Know",
+       "text": "120",
        "size": 44,
-       "tag": "h2"
+       "tag": "p"
       },
       "left": 222,
       "right": 274,
@@ -578,20 +547,20 @@
      {
       "sel": "section#builders.builders",
       "tag": "section",
-      "top": 2809,
+      "top": 2796,
       "height": 878,
-      "words": 126,
+      "words": 125,
       "media": 1,
-      "middle": 165,
+      "middle": 167,
       "heading": {
        "text": "Built",
-       "size": 44,
+       "size": 32,
        "tag": "h2"
       },
       "left": 120,
-      "right": 133,
+      "right": 144,
       "textLeft": 120,
-      "textRight": 133,
+      "textRight": 147,
       "fullBleed": false,
       "footer": false,
       "hero": false,
@@ -601,20 +570,20 @@
      {
       "sel": "section#contact.closing",
       "tag": "section",
-      "top": 3686,
-      "height": 454,
-      "words": 24,
+      "top": 3673,
+      "height": 445,
+      "words": 23,
       "media": 0,
       "middle": 0,
       "heading": {
        "text": "Leave",
-       "size": 44,
+       "size": 32,
        "tag": "h2"
       },
-      "left": 473,
-      "right": 473,
-      "textLeft": 473,
-      "textRight": 473,
+      "left": 463,
+      "right": 463,
+      "textLeft": 463,
+      "textRight": 463,
       "fullBleed": false,
       "footer": false,
       "hero": false,
@@ -624,11 +593,11 @@
      {
       "sel": "footer.footer",
       "tag": "footer",
-      "top": 4141,
-      "height": 852,
-      "words": 49,
-      "media": 0,
-      "middle": 282,
+      "top": 4118,
+      "height": 1182,
+      "words": 46,
+      "media": 1,
+      "middle": 55,
       "heading": null,
       "left": 120,
       "right": 170,
@@ -645,8 +614,8 @@
     "h1s": [
      {
       "text": "Drinking water, on tap at home.",
-      "size": 64,
-      "top": 240,
+      "size": 48,
+      "top": 252,
       "firstScreen": true
      }
     ],
@@ -657,47 +626,47 @@
       "n": 8
      },
      {
-      "x": 219,
-      "n": 4
+      "x": 222,
+      "n": 3
      },
      {
-      "x": 305,
+      "x": 192,
       "n": 2
      },
      {
-      "x": 349,
+      "x": 236,
       "n": 2
      },
      {
-      "x": 434,
+      "x": 273,
       "n": 2
      },
      {
-      "x": 234,
+      "x": 352,
+      "n": 2
+     },
+     {
+      "x": 375,
+      "n": 2
+     },
+     {
+      "x": 252,
       "n": 1
      },
      {
-      "x": 262,
+      "x": 290,
       "n": 1
      },
      {
-      "x": 277,
+      "x": 306,
       "n": 1
      },
      {
-      "x": 327,
+      "x": 323,
       "n": 1
      },
      {
-      "x": 366,
-      "n": 1
-     },
-     {
-      "x": 409,
-      "n": 1
-     },
-     {
-      "x": 449,
+      "x": 386,
       "n": 1
      }
     ],
@@ -718,21 +687,21 @@
    "load": "load",
    "screens": 7,
    "filled": [
-    0.96,
-    0.59,
+    0.84,
+    0.57,
+    0.66,
     0.78,
-    0.74,
-    0.96,
-    0.68,
+    0.76,
+    0.87,
     0.93
    ],
    "motion": {
-    "elements": 135,
-    "css": 51,
-    "transitions": 10,
-    "scripted": 74,
-    "videos": 0,
-    "playingVideos": 0
+    "elements": 128,
+    "css": 64,
+    "transitions": 9,
+    "scripted": 55,
+    "videos": 1,
+    "playingVideos": 1
    },
    "metrics": {
     "viewport": {
@@ -740,20 +709,20 @@
      "h": 1024
     },
     "page": {
-     "height": 6654,
-     "screens": 6.5,
-     "words": 456,
-     "img": 0,
-     "video": 0,
-     "canvas": 2,
-     "svg": 37,
+     "height": 6490,
+     "screens": 6.3,
+     "words": 432,
+     "img": 2,
+     "video": 1,
+     "canvas": 1,
+     "svg": 34,
      "sections": 6,
      "horizontalOverflow": 0,
      "overflowCulprits": [],
      "uiFragments": 2,
      "uiAbuse": false,
-     "realPictures": 0,
-     "videoCount": 0,
+     "realPictures": 1,
+     "videoCount": 1,
      "uiPictures": 1,
      "pictureSamples": [],
      "blendText": 0,
@@ -767,11 +736,11 @@
      "words": 6,
      "chars": 31,
      "lines": 2,
-     "size": 40,
-     "vw": 5.2,
-     "font": "Plus Jakarta Sans",
+     "size": 36,
+     "vw": 4.7,
+     "font": "League Spartan",
      "weight": 700,
-     "tracking": -0.03,
+     "tracking": -0.01,
      "leading": 1.05,
      "upper": false,
      "italic": false,
@@ -787,8 +756,8 @@
      "text": "Drinking water, on tap at home.",
      "words": 6,
      "lines": 2,
-     "size": 40,
-     "font": "Plus Jakarta Sans"
+     "size": 36,
+     "font": "League Spartan"
     },
     "headings": [
      {
@@ -796,11 +765,11 @@
       "words": 6,
       "chars": 31,
       "lines": 2,
-      "size": 40,
-      "vw": 5.2,
-      "font": "Plus Jakarta Sans",
+      "size": 36,
+      "vw": 4.7,
+      "font": "League Spartan",
       "weight": 700,
-      "tracking": -0.03,
+      "tracking": -0.01,
       "leading": 1.05,
       "upper": false,
       "italic": false,
@@ -817,19 +786,19 @@
       "words": 6,
       "chars": 30,
       "lines": 1,
-      "size": 32,
-      "vw": 4.2,
-      "font": "Plus Jakarta Sans",
+      "size": 28,
+      "vw": 3.6,
+      "font": "League Spartan",
       "weight": 700,
-      "tracking": -0.02,
-      "leading": 1.1,
+      "tracking": 0,
+      "leading": 1.15,
       "upper": false,
       "italic": false,
       "mono": false,
       "align": "left",
       "position": "center",
       "widthRatio": 0.96,
-      "top": 1720,
+      "top": 1326,
       "tag": "h2",
       "kind": "heading"
      },
@@ -838,19 +807,19 @@
       "words": 9,
       "chars": 43,
       "lines": 1,
-      "size": 32,
-      "vw": 4.2,
-      "font": "Plus Jakarta Sans",
+      "size": 28,
+      "vw": 3.6,
+      "font": "League Spartan",
       "weight": 700,
-      "tracking": -0.03,
-      "leading": 1.1,
+      "tracking": -0.01,
+      "leading": 1.15,
       "upper": false,
       "italic": false,
       "mono": false,
       "align": "left",
       "position": "center",
       "widthRatio": 0.96,
-      "top": 3080,
+      "top": 2685,
       "tag": "h2",
       "kind": "heading"
      },
@@ -859,19 +828,19 @@
       "words": 7,
       "chars": 36,
       "lines": 1,
-      "size": 32,
-      "vw": 4.2,
-      "font": "Plus Jakarta Sans",
+      "size": 28,
+      "vw": 3.6,
+      "font": "League Spartan",
       "weight": 700,
-      "tracking": -0.02,
-      "leading": 1.1,
+      "tracking": 0,
+      "leading": 1.15,
       "upper": false,
       "italic": false,
       "mono": false,
       "align": "left",
       "position": "center",
       "widthRatio": 0.91,
-      "top": 3326,
+      "top": 2899,
       "tag": "h2",
       "kind": "heading"
      },
@@ -882,9 +851,9 @@
       "lines": 1,
       "size": 44,
       "vw": 5.7,
-      "font": "Plus Jakarta Sans",
+      "font": "League Spartan",
       "weight": 700,
-      "tracking": -0.02,
+      "tracking": -0.01,
       "leading": 1.1,
       "upper": false,
       "italic": false,
@@ -892,7 +861,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.32,
-      "top": 3710,
+      "top": 3282,
       "tag": "p",
       "kind": "statement"
      },
@@ -901,30 +870,30 @@
       "words": 5,
       "chars": 23,
       "lines": 1,
-      "size": 32,
-      "vw": 4.2,
-      "font": "Plus Jakarta Sans",
+      "size": 28,
+      "vw": 3.6,
+      "font": "League Spartan",
       "weight": 700,
-      "tracking": -0.02,
-      "leading": 1.1,
+      "tracking": 0,
+      "leading": 1.15,
       "upper": false,
       "italic": false,
       "mono": false,
       "align": "left",
       "position": "center",
       "widthRatio": 0.96,
-      "top": 4172,
+      "top": 3748,
       "tag": "h2",
       "kind": "heading"
      },
      {
-      "text": "10 / 12",
+      "text": "7 / 12",
       "words": 3,
-      "chars": 7,
+      "chars": 6,
       "lines": 1,
       "size": 32,
       "vw": 4.2,
-      "font": "Plus Jakarta Sans",
+      "font": "League Spartan",
       "weight": 700,
       "tracking": 0,
       "leading": 1.1,
@@ -933,8 +902,8 @@
       "mono": false,
       "align": "left",
       "position": "left",
-      "widthRatio": 0.09,
-      "top": 4838,
+      "widthRatio": 0.06,
+      "top": 4415,
       "tag": "strong",
       "kind": "heading"
      },
@@ -943,49 +912,28 @@
       "words": 4,
       "chars": 22,
       "lines": 1,
-      "size": 32,
-      "vw": 4.2,
-      "font": "Plus Jakarta Sans",
+      "size": 28,
+      "vw": 3.6,
+      "font": "League Spartan",
       "weight": 700,
-      "tracking": -0.02,
-      "leading": 1.1,
+      "tracking": 0,
+      "leading": 1.15,
       "upper": false,
       "italic": false,
       "mono": false,
       "align": "center",
       "position": "center",
-      "widthRatio": 0.43,
-      "top": 5400,
+      "widthRatio": 0.36,
+      "top": 4977,
       "tag": "h2",
       "kind": "heading"
-     },
-     {
-      "text": "Moya One",
-      "words": 2,
-      "chars": 8,
-      "lines": 1,
-      "size": 165,
-      "vw": 21.5,
-      "font": "Plus Jakarta Sans",
-      "weight": 700,
-      "tracking": -0.055,
-      "leading": 0.8,
-      "upper": false,
-      "italic": false,
-      "mono": false,
-      "align": "left",
-      "position": "center",
-      "widthRatio": 0.94,
-      "top": 6550,
-      "tag": "p",
-      "kind": "statement"
      }
     ],
     "headingSummary": {
-     "count": 9,
+     "count": 8,
      "maxLines": 2,
      "over2Lines": 0,
-     "statements": 2,
+     "statements": 1,
      "centered": 1,
      "medianWords": 5,
      "mixedFontHeadings": 0
@@ -993,13 +941,13 @@
     "type": {
      "families": [
       {
-       "family": "Inter",
-       "share": 0.87,
+       "family": "Outfit",
+       "share": 0.88,
        "mono": false
       },
       {
-       "family": "Plus Jakarta Sans",
-       "share": 0.13,
+       "family": "League Spartan",
+       "share": 0.12,
        "mono": false
       }
      ],
@@ -1008,29 +956,28 @@
       13,
       15,
       16,
+      17,
       18,
       20,
-      22,
-      32,
-      40,
-      165
+      28,
+      36
      ],
-     "sizeCount": 9,
+     "sizeCount": 8,
      "notLoaded": [],
      "body": {
-      "font": "Inter",
+      "font": "Outfit",
       "size": 18,
       "leading": 1.6,
       "weight": 400,
       "tracking": 0,
-      "contrast": 15.7
+      "contrast": 18.2
      },
-     "measureChars": 53,
+     "measureChars": 55,
      "max": {
-      "size": 165,
-      "vw": 21.5,
-      "font": "Plus Jakarta Sans",
-      "text": "Moya One"
+      "size": 44,
+      "vw": 5.7,
+      "font": "League Spartan",
+      "text": "120"
      },
      "monoShare": 0,
      "monoProseShare": 0,
@@ -1046,85 +993,80 @@
     "eyebrows": [],
     "numbered": [],
     "color": {
-     "bodyBg": "#fafaf7",
+     "bodyBg": "#ffffff",
      "bodyBgHsl": {
-      "h": 60,
-      "s": 0.23,
-      "l": 0.97
+      "h": 0,
+      "s": 0,
+      "l": 1
      },
      "dark": false,
      "sectionBgs": [
       {
-       "color": "#e8f3f5",
+       "color": "#0b1626",
        "top": 65,
        "hsl": {
-        "h": 189,
-        "s": 0.39,
-        "l": 0.94
+        "h": 216,
+        "s": 0.55,
+        "l": 0.1
        }
       },
       {
-       "color": "#111827",
-       "top": 475,
+       "color": "#eef2f7",
+       "top": 1472,
        "hsl": {
-        "h": 221,
-        "s": 0.39,
-        "l": 0.11
+        "h": 213,
+        "s": 0.36,
+        "l": 0.95
        }
       },
       {
-       "color": "#f3f4f6",
-       "top": 1869,
+       "color": "#1c2635",
+       "top": 4348,
        "hsl": {
-        "h": 220,
-        "s": 0.14,
-        "l": 0.96
-       }
-      },
-      {
-       "color": "#212836",
-       "top": 4772,
-       "hsl": {
-        "h": 220,
-        "s": 0.24,
-        "l": 0.17
+        "h": 216,
+        "s": 0.31,
+        "l": 0.16
        }
       }
      ],
      "textColors": [
       {
-       "color": "#4b5563",
+       "color": "#4b5768",
        "share": 0.34
       },
       {
-       "color": "#111827",
-       "share": 0.32
+       "color": "#8792a3",
+       "share": 0.24
       },
       {
-       "color": "#b9bbbd",
+       "color": "#0b1626",
        "share": 0.23
       },
       {
-       "color": "#fafaf7",
-       "share": 0.1
+       "color": "#ffffff",
+       "share": 0.18
+      },
+      {
+       "color": "#2f9fe7",
+       "share": 0.01
       }
      ],
      "button": {
-      "bg": "#f97316",
+      "bg": "#2f9fe7",
       "hsl": {
-       "h": 25,
-       "s": 0.95,
-       "l": 0.53
+       "h": 203,
+       "s": 0.79,
+       "l": 0.55
       },
-      "fg": "#111827"
+      "fg": "#0b1626"
      },
      "lowContrast": []
     },
     "buttons": {
-     "count": 6,
+     "count": 5,
      "inHero": 2,
      "radius": "pill",
-     "height": 50,
+     "height": 52,
      "withShadow": 0,
      "withGradient": 0,
      "mono": 0,
@@ -1151,7 +1093,7 @@
      "blurred": 0,
      "roundedBoxes": 15,
      "boxRadius": 20,
-     "squareMedia": 0,
+     "squareMedia": 1,
      "roundedMedia": 2,
      "mediaRadius": 20,
      "textShadow": 0,
@@ -1163,12 +1105,8 @@
       "ratio": 0.94
      },
      {
-      "type": "canvas",
-      "ratio": 0.51
-     },
-     {
-      "type": "svg",
-      "ratio": 0.51
+      "type": "video",
+      "ratio": 0.39
      }
     ],
     "nav": {
@@ -1179,8 +1117,8 @@
      "blur": false
     },
     "fontsLoaded": [
-     "plus jakarta sans",
-     "inter"
+     "league spartan",
+     "outfit"
     ]
    },
    "layout": {
@@ -1188,7 +1126,7 @@
      "w": 768,
      "h": 1024
     },
-    "pageH": 6654,
+    "pageH": 6490,
     "margins": {
      "left": 16,
      "right": 16
@@ -1198,19 +1136,19 @@
       "sel": "section#top.hero",
       "tag": "section",
       "top": 65,
-      "height": 1583,
-      "words": 89,
-      "media": 3,
+      "height": 1189,
+      "words": 77,
+      "media": 2,
       "middle": 0,
       "heading": {
        "text": "Drinking water,",
-       "size": 40,
+       "size": 36,
        "tag": "h1"
       },
       "left": 16,
       "right": 16,
       "textLeft": 16,
-      "textRight": 56,
+      "textRight": 270,
       "fullBleed": true,
       "footer": false,
       "hero": true,
@@ -1220,20 +1158,20 @@
      {
       "sel": "section#how.steps",
       "tag": "section",
-      "top": 1648,
-      "height": 1360,
+      "top": 1254,
+      "height": 1359,
       "words": 78,
       "media": 6,
       "middle": 0,
       "heading": {
        "text": "From",
-       "size": 32,
+       "size": 28,
        "tag": "h2"
       },
       "left": 16,
       "right": 16,
       "textLeft": 16,
-      "textRight": 73,
+      "textRight": 83,
       "fullBleed": false,
       "footer": false,
       "hero": false,
@@ -1243,20 +1181,20 @@
      {
       "sel": "section.statement",
       "tag": "section",
-      "top": 3008,
-      "height": 214,
+      "top": 2613,
+      "height": 182,
       "words": 26,
       "media": 0,
-      "middle": 5,
+      "middle": 7,
       "heading": {
        "text": "Water,",
-       "size": 32,
+       "size": 28,
        "tag": "h2"
       },
       "left": 16,
-      "right": 113,
+      "right": 217,
       "textLeft": 16,
-      "textRight": 113,
+      "textRight": 217,
       "fullBleed": false,
       "footer": false,
       "hero": false,
@@ -1266,9 +1204,9 @@
      {
       "sel": "section#water.app",
       "tag": "section",
-      "top": 3222,
-      "height": 807,
-      "words": 60,
+      "top": 2795,
+      "height": 809,
+      "words": 58,
       "media": 0,
       "middle": 0,
       "heading": {
@@ -1277,9 +1215,9 @@
        "tag": "p"
       },
       "left": 36,
-      "right": 210,
+      "right": 244,
       "textLeft": 36,
-      "textRight": 210,
+      "textRight": 254,
       "fullBleed": false,
       "footer": false,
       "hero": false,
@@ -1289,20 +1227,20 @@
      {
       "sel": "section#builders.builders",
       "tag": "section",
-      "top": 4100,
-      "height": 1228,
-      "words": 103,
+      "top": 3676,
+      "height": 1229,
+      "words": 101,
       "media": 1,
       "middle": 0,
       "heading": {
        "text": "Built",
-       "size": 32,
+       "size": 28,
        "tag": "h2"
       },
       "left": 16,
       "right": 28,
       "textLeft": 16,
-      "textRight": 99,
+      "textRight": 138,
       "fullBleed": false,
       "footer": false,
       "hero": false,
@@ -1312,20 +1250,20 @@
      {
       "sel": "section#contact.closing",
       "tag": "section",
-      "top": 5328,
-      "height": 339,
-      "words": 24,
+      "top": 4905,
+      "height": 338,
+      "words": 23,
       "media": 0,
       "middle": 0,
       "heading": {
        "text": "Leave",
-       "size": 32,
+       "size": 28,
        "tag": "h2"
       },
-      "left": 162,
-      "right": 162,
-      "textLeft": 162,
-      "textRight": 162,
+      "left": 153,
+      "right": 153,
+      "textLeft": 153,
+      "textRight": 153,
       "fullBleed": false,
       "footer": false,
       "hero": false,
@@ -1335,14 +1273,14 @@
      {
       "sel": "footer.footer",
       "tag": "footer",
-      "top": 5667,
-      "height": 987,
-      "words": 49,
-      "media": 0,
-      "middle": 295,
+      "top": 5242,
+      "height": 1247,
+      "words": 46,
+      "media": 1,
+      "middle": 0,
       "heading": null,
       "left": 16,
-      "right": 58,
+      "right": 38,
       "textLeft": 16,
       "textRight": 58,
       "fullBleed": false,
@@ -1356,7 +1294,7 @@
     "h1s": [
      {
       "text": "Drinking water, on tap at home.",
-      "size": 40,
+      "size": 36,
       "top": 97,
       "firstScreen": true
      }
@@ -1368,7 +1306,7 @@
       "n": 9
      },
      {
-      "x": 390,
+      "x": 334,
       "n": 3
      },
      {
@@ -1376,39 +1314,39 @@
       "n": 2
      },
      {
-      "x": 119,
+      "x": 79,
       "n": 2
      },
      {
-      "x": 290,
+      "x": 105,
       "n": 2
      },
      {
-      "x": 88,
+      "x": 165,
+      "n": 2
+     },
+     {
+      "x": 239,
+      "n": 2
+     },
+     {
+      "x": 399,
+      "n": 2
+     },
+     {
+      "x": 117,
       "n": 1
      },
      {
-      "x": 99,
+      "x": 132,
       "n": 1
      },
      {
-      "x": 130,
+      "x": 151,
       "n": 1
      },
      {
-      "x": 154,
-      "n": 1
-     },
-     {
-      "x": 173,
-      "n": 1
-     },
-     {
-      "x": 186,
-      "n": 1
-     },
-     {
-      "x": 201,
+      "x": 208,
       "n": 1
      }
     ],
@@ -1429,22 +1367,22 @@
    "load": "load",
    "screens": 8,
    "filled": [
-    0.97,
-    0.53,
-    0.86,
-    0.68,
-    0.71,
-    0.99,
+    0.96,
+    0.67,
     0.73,
-    0.97
+    0.67,
+    0.66,
+    0.99,
+    0.69,
+    0.95
    ],
    "motion": {
-    "elements": 135,
-    "css": 51,
-    "transitions": 10,
-    "scripted": 74,
-    "videos": 0,
-    "playingVideos": 0
+    "elements": 143,
+    "css": 79,
+    "transitions": 9,
+    "scripted": 55,
+    "videos": 1,
+    "playingVideos": 1
    },
    "metrics": {
     "viewport": {
@@ -1452,20 +1390,20 @@
      "h": 844
     },
     "page": {
-     "height": 6733,
-     "screens": 8,
-     "words": 458,
-     "img": 0,
-     "video": 0,
-     "canvas": 2,
-     "svg": 37,
+     "height": 6625,
+     "screens": 7.8,
+     "words": 432,
+     "img": 2,
+     "video": 1,
+     "canvas": 1,
+     "svg": 34,
      "sections": 6,
      "horizontalOverflow": 0,
      "overflowCulprits": [],
      "uiFragments": 2,
      "uiAbuse": false,
-     "realPictures": 0,
-     "videoCount": 0,
+     "realPictures": 1,
+     "videoCount": 1,
      "uiPictures": 1,
      "pictureSamples": [],
      "blendText": 0,
@@ -1479,11 +1417,11 @@
      "words": 6,
      "chars": 31,
      "lines": 2,
-     "size": 40,
-     "vw": 10.3,
-     "font": "Plus Jakarta Sans",
+     "size": 36,
+     "vw": 9.2,
+     "font": "League Spartan",
      "weight": 700,
-     "tracking": -0.03,
+     "tracking": -0.01,
      "leading": 1.05,
      "upper": false,
      "italic": false,
@@ -1499,41 +1437,20 @@
      "text": "Drinking water, on tap at home.",
      "words": 6,
      "lines": 2,
-     "size": 40,
-     "font": "Plus Jakarta Sans"
+     "size": 36,
+     "font": "League Spartan"
     },
     "headings": [
-     {
-      "text": "Moya One",
-      "words": 2,
-      "chars": 8,
-      "lines": 1,
-      "size": 22,
-      "vw": 5.6,
-      "font": "Plus Jakarta Sans",
-      "weight": 700,
-      "tracking": -0.035,
-      "leading": 1.6,
-      "upper": false,
-      "italic": false,
-      "mono": false,
-      "align": "left",
-      "position": "left",
-      "widthRatio": 0.36,
-      "top": 10,
-      "tag": "a",
-      "kind": "heading"
-     },
      {
       "text": "Drinking water, on tap at home.",
       "words": 6,
       "chars": 31,
       "lines": 2,
-      "size": 40,
-      "vw": 10.3,
-      "font": "Plus Jakarta Sans",
+      "size": 36,
+      "vw": 9.2,
+      "font": "League Spartan",
       "weight": 700,
-      "tracking": -0.03,
+      "tracking": -0.01,
       "leading": 1.05,
       "upper": false,
       "italic": false,
@@ -1550,19 +1467,19 @@
       "words": 6,
       "chars": 30,
       "lines": 2,
-      "size": 32,
-      "vw": 8.2,
-      "font": "Plus Jakarta Sans",
+      "size": 28,
+      "vw": 7.2,
+      "font": "League Spartan",
       "weight": 700,
-      "tracking": -0.02,
-      "leading": 1.1,
+      "tracking": 0,
+      "leading": 1.15,
       "upper": false,
       "italic": false,
       "mono": false,
       "align": "left",
       "position": "center",
       "widthRatio": 0.92,
-      "top": 1437,
+      "top": 1236,
       "tag": "h2",
       "kind": "heading"
      },
@@ -1571,19 +1488,19 @@
       "words": 9,
       "chars": 43,
       "lines": 2,
-      "size": 32,
-      "vw": 8.2,
-      "font": "Plus Jakarta Sans",
+      "size": 28,
+      "vw": 7.2,
+      "font": "League Spartan",
       "weight": 700,
-      "tracking": -0.03,
-      "leading": 1.1,
+      "tracking": -0.01,
+      "leading": 1.15,
       "upper": false,
       "italic": false,
       "mono": false,
       "align": "left",
       "position": "center",
       "widthRatio": 0.92,
-      "top": 2935,
+      "top": 2736,
       "tag": "h2",
       "kind": "heading"
      },
@@ -1592,19 +1509,19 @@
       "words": 7,
       "chars": 36,
       "lines": 2,
-      "size": 32,
-      "vw": 8.2,
-      "font": "Plus Jakarta Sans",
+      "size": 28,
+      "vw": 7.2,
+      "font": "League Spartan",
       "weight": 700,
-      "tracking": -0.02,
-      "leading": 1.1,
+      "tracking": 0,
+      "leading": 1.15,
       "upper": false,
       "italic": false,
       "mono": false,
       "align": "left",
       "position": "center",
       "widthRatio": 0.82,
-      "top": 3216,
+      "top": 3010,
       "tag": "h2",
       "kind": "heading"
      },
@@ -1615,9 +1532,9 @@
       "lines": 1,
       "size": 44,
       "vw": 11.3,
-      "font": "Plus Jakarta Sans",
+      "font": "League Spartan",
       "weight": 700,
-      "tracking": -0.02,
+      "tracking": -0.01,
       "leading": 1.1,
       "upper": false,
       "italic": false,
@@ -1625,7 +1542,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.57,
-      "top": 3685,
+      "top": 3476,
       "tag": "p",
       "kind": "statement"
      },
@@ -1634,30 +1551,30 @@
       "words": 5,
       "chars": 23,
       "lines": 1,
-      "size": 32,
-      "vw": 8.2,
-      "font": "Plus Jakarta Sans",
+      "size": 28,
+      "vw": 7.2,
+      "font": "League Spartan",
       "weight": 700,
-      "tracking": -0.02,
-      "leading": 1.1,
+      "tracking": 0,
+      "leading": 1.15,
       "upper": false,
       "italic": false,
       "mono": false,
       "align": "left",
       "position": "center",
       "widthRatio": 0.92,
-      "top": 4147,
+      "top": 3942,
       "tag": "h2",
       "kind": "heading"
      },
      {
-      "text": "11 / 12",
+      "text": "5 / 12",
       "words": 3,
-      "chars": 7,
+      "chars": 6,
       "lines": 1,
       "size": 22,
       "vw": 5.6,
-      "font": "Plus Jakarta Sans",
+      "font": "League Spartan",
       "weight": 700,
       "tracking": 0,
       "leading": 1.1,
@@ -1665,9 +1582,9 @@
       "italic": false,
       "mono": false,
       "align": "left",
-      "position": "center",
-      "widthRatio": 0.15,
-      "top": 5201,
+      "position": "right",
+      "widthRatio": 0.11,
+      "top": 4997,
       "tag": "strong",
       "kind": "heading"
      },
@@ -1676,63 +1593,42 @@
       "words": 4,
       "chars": 22,
       "lines": 1,
-      "size": 32,
-      "vw": 8.2,
-      "font": "Plus Jakarta Sans",
+      "size": 28,
+      "vw": 7.2,
+      "font": "League Spartan",
       "weight": 700,
-      "tracking": -0.02,
-      "leading": 1.1,
+      "tracking": 0,
+      "leading": 1.15,
       "upper": false,
       "italic": false,
       "mono": false,
       "align": "center",
       "position": "center",
-      "widthRatio": 0.85,
-      "top": 5471,
+      "widthRatio": 0.71,
+      "top": 5247,
       "tag": "h2",
       "kind": "heading"
-     },
-     {
-      "text": "Moya One",
-      "words": 2,
-      "chars": 8,
-      "lines": 1,
-      "size": 80.3,
-      "vw": 20.6,
-      "font": "Plus Jakarta Sans",
-      "weight": 700,
-      "tracking": -0.055,
-      "leading": 0.8,
-      "upper": false,
-      "italic": false,
-      "mono": false,
-      "align": "left",
-      "position": "center",
-      "widthRatio": 0.94,
-      "top": 6682,
-      "tag": "p",
-      "kind": "statement"
      }
     ],
     "headingSummary": {
-     "count": 10,
+     "count": 8,
      "maxLines": 2,
      "over2Lines": 0,
-     "statements": 2,
+     "statements": 1,
      "centered": 1,
-     "medianWords": 4,
+     "medianWords": 5,
      "mixedFontHeadings": 0
     },
     "type": {
      "families": [
       {
-       "family": "Inter",
-       "share": 0.87,
+       "family": "Outfit",
+       "share": 0.88,
        "mono": false
       },
       {
-       "family": "Plus Jakarta Sans",
-       "share": 0.13,
+       "family": "League Spartan",
+       "share": 0.12,
        "mono": false
       }
      ],
@@ -1741,29 +1637,28 @@
       13,
       15,
       16,
+      17,
       18,
       20,
-      22,
-      32,
-      40,
-      80
+      28,
+      36
      ],
-     "sizeCount": 9,
+     "sizeCount": 8,
      "notLoaded": [],
      "body": {
-      "font": "Inter",
+      "font": "Outfit",
       "size": 18,
       "leading": 1.6,
       "weight": 400,
       "tracking": 0,
-      "contrast": 15.7
+      "contrast": 18.2
      },
      "measureChars": 40,
      "max": {
-      "size": 80.3,
-      "vw": 20.6,
-      "font": "Plus Jakarta Sans",
-      "text": "Moya One"
+      "size": 44,
+      "vw": 11.3,
+      "font": "League Spartan",
+      "text": "120"
      },
      "monoShare": 0,
      "monoProseShare": 0,
@@ -1779,94 +1674,89 @@
     "eyebrows": [],
     "numbered": [],
     "color": {
-     "bodyBg": "#fafaf7",
+     "bodyBg": "#ffffff",
      "bodyBgHsl": {
-      "h": 60,
-      "s": 0.23,
-      "l": 0.97
+      "h": 0,
+      "s": 0,
+      "l": 1
      },
      "dark": false,
      "sectionBgs": [
       {
-       "color": "#e8f3f5",
+       "color": "#0b1626",
        "top": 65,
        "hsl": {
-        "h": 189,
-        "s": 0.39,
-        "l": 0.94
+        "h": 216,
+        "s": 0.55,
+        "l": 0.1
        }
       },
       {
-       "color": "#111827",
-       "top": 564,
+       "color": "#ffffff",
+       "top": 770,
        "hsl": {
-        "h": 221,
-        "s": 0.39,
-        "l": 0.11
+        "h": 0,
+        "s": 0,
+        "l": 1
        }
       },
       {
-       "color": "#fafaf7",
-       "top": 980,
+       "color": "#eef2f7",
+       "top": 1414,
        "hsl": {
-        "h": 60,
-        "s": 0.23,
-        "l": 0.97
+        "h": 213,
+        "s": 0.36,
+        "l": 0.95
        }
       },
       {
-       "color": "#f3f4f6",
-       "top": 1621,
+       "color": "#1c2635",
+       "top": 4597,
        "hsl": {
-        "h": 220,
-        "s": 0.14,
-        "l": 0.96
-       }
-      },
-      {
-       "color": "#212836",
-       "top": 4801,
-       "hsl": {
-        "h": 220,
-        "s": 0.24,
-        "l": 0.17
+        "h": 216,
+        "s": 0.31,
+        "l": 0.16
        }
       }
      ],
      "textColors": [
       {
-       "color": "#4b5563",
-       "share": 0.34
+       "color": "#4b5768",
+       "share": 0.33
       },
       {
-       "color": "#111827",
-       "share": 0.32
+       "color": "#8792a3",
+       "share": 0.24
       },
       {
-       "color": "#b9bbbd",
+       "color": "#0b1626",
        "share": 0.23
       },
       {
-       "color": "#fafaf7",
-       "share": 0.1
+       "color": "#ffffff",
+       "share": 0.18
+      },
+      {
+       "color": "#2f9fe7",
+       "share": 0.01
       }
      ],
      "button": {
-      "bg": "#f97316",
+      "bg": "#2f9fe7",
       "hsl": {
-       "h": 25,
-       "s": 0.95,
-       "l": 0.53
+       "h": 203,
+       "s": 0.79,
+       "l": 0.55
       },
-      "fg": "#111827"
+      "fg": "#0b1626"
      },
      "lowContrast": []
     },
     "buttons": {
-     "count": 6,
+     "count": 5,
      "inHero": 2,
      "radius": "pill",
-     "height": 50,
+     "height": 52,
      "withShadow": 0,
      "withGradient": 0,
      "mono": 0,
@@ -1891,9 +1781,9 @@
      "outlinedBoxes": 0,
      "dashed": 0,
      "blurred": 0,
-     "roundedBoxes": 16,
+     "roundedBoxes": 15,
      "boxRadius": 20,
-     "squareMedia": 0,
+     "squareMedia": 1,
      "roundedMedia": 2,
      "mediaRadius": 20,
      "textShadow": 0,
@@ -1905,12 +1795,8 @@
       "ratio": 0.92
      },
      {
-      "type": "canvas",
-      "ratio": 0.3
-     },
-     {
-      "type": "svg",
-      "ratio": 0.3
+      "type": "video",
+      "ratio": 0.22
      }
     ],
     "nav": {
@@ -1921,8 +1807,8 @@
      "blur": false
     },
     "fontsLoaded": [
-     "plus jakarta sans",
-     "inter"
+     "league spartan",
+     "outfit"
     ]
    },
    "layout": {
@@ -1930,7 +1816,7 @@
      "w": 390,
      "h": 844
     },
-    "pageH": 6733,
+    "pageH": 6625,
     "margins": {
      "left": 16,
      "right": 16
@@ -1940,19 +1826,19 @@
       "sel": "section#top.hero",
       "tag": "section",
       "top": 65,
-      "height": 1300,
-      "words": 91,
-      "media": 3,
+      "height": 1099,
+      "words": 77,
+      "media": 2,
       "middle": 0,
       "heading": {
        "text": "Drinking water,",
-       "size": 40,
+       "size": 36,
        "tag": "h1"
       },
       "left": 16,
       "right": 16,
       "textLeft": 16,
-      "textRight": 22,
+      "textRight": 18,
       "fullBleed": true,
       "footer": false,
       "hero": true,
@@ -1962,87 +1848,18 @@
      {
       "sel": "section#how.steps",
       "tag": "section",
-      "top": 1365,
-      "height": 1498,
+      "top": 1164,
+      "height": 1500,
       "words": 78,
       "media": 6,
       "middle": 0,
       "heading": {
        "text": "From",
-       "size": 32,
+       "size": 28,
        "tag": "h2"
       },
       "left": 16,
       "right": 16,
-      "textLeft": 16,
-      "textRight": 31,
-      "fullBleed": false,
-      "footer": false,
-      "hero": false,
-      "continues": true,
-      "pinned": false
-     },
-     {
-      "sel": "section.statement",
-      "tag": "section",
-      "top": 2863,
-      "height": 249,
-      "words": 26,
-      "media": 0,
-      "middle": 0,
-      "heading": {
-       "text": "Water,",
-       "size": 32,
-       "tag": "h2"
-      },
-      "left": 16,
-      "right": 33,
-      "textLeft": 16,
-      "textRight": 33,
-      "fullBleed": false,
-      "footer": false,
-      "hero": false,
-      "continues": true,
-      "pinned": false
-     },
-     {
-      "sel": "section#water.app",
-      "tag": "section",
-      "top": 3112,
-      "height": 892,
-      "words": 60,
-      "media": 0,
-      "middle": 0,
-      "heading": {
-       "text": "Know",
-       "size": 32,
-       "tag": "h2"
-      },
-      "left": 36,
-      "right": 40,
-      "textLeft": 36,
-      "textRight": 40,
-      "fullBleed": false,
-      "footer": false,
-      "hero": false,
-      "continues": true,
-      "pinned": false
-     },
-     {
-      "sel": "section#builders.builders",
-      "tag": "section",
-      "top": 4075,
-      "height": 1324,
-      "words": 103,
-      "media": 1,
-      "middle": 0,
-      "heading": {
-       "text": "Built",
-       "size": 32,
-       "tag": "h2"
-      },
-      "left": 16,
-      "right": 28,
       "textLeft": 16,
       "textRight": 34,
       "fullBleed": false,
@@ -2052,16 +1869,85 @@
       "pinned": false
      },
      {
+      "sel": "section.statement",
+      "tag": "section",
+      "top": 2664,
+      "height": 243,
+      "words": 26,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Water,",
+       "size": 28,
+       "tag": "h2"
+      },
+      "left": 16,
+      "right": 17,
+      "textLeft": 16,
+      "textRight": 17,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#water.app",
+      "tag": "section",
+      "top": 2906,
+      "height": 891,
+      "words": 58,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Know",
+       "size": 28,
+       "tag": "h2"
+      },
+      "left": 36,
+      "right": 45,
+      "textLeft": 36,
+      "textRight": 45,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#builders.builders",
+      "tag": "section",
+      "top": 3870,
+      "height": 1305,
+      "words": 101,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "Built",
+       "size": 28,
+       "tag": "h2"
+      },
+      "left": 16,
+      "right": 26,
+      "textLeft": 16,
+      "textRight": 26,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
       "sel": "section#contact.closing",
       "tag": "section",
-      "top": 5399,
-      "height": 368,
-      "words": 24,
+      "top": 5175,
+      "height": 338,
+      "words": 23,
       "media": 0,
       "middle": 0,
       "heading": {
        "text": "Leave",
-       "size": 32,
+       "size": 28,
        "tag": "h2"
       },
       "left": 29,
@@ -2077,16 +1963,16 @@
      {
       "sel": "footer.footer",
       "tag": "footer",
-      "top": 5767,
-      "height": 966,
-      "words": 49,
-      "media": 0,
+      "top": 5513,
+      "height": 1112,
+      "words": 46,
+      "media": 1,
       "middle": 0,
       "heading": null,
       "left": 16,
-      "right": 44,
+      "right": 26,
       "textLeft": 16,
-      "textRight": 44,
+      "textRight": 26,
       "fullBleed": false,
       "footer": true,
       "hero": false,
@@ -2098,7 +1984,7 @@
     "h1s": [
      {
       "text": "Drinking water, on tap at home.",
-      "size": 40,
+      "size": 36,
       "top": 97,
       "firstScreen": true
      }
@@ -2110,7 +1996,7 @@
       "n": 11
      },
      {
-      "x": 119,
+      "x": 77,
       "n": 4
      },
      {
@@ -2118,39 +2004,39 @@
       "n": 3
      },
      {
-      "x": 52,
+      "x": 105,
+      "n": 3
+     },
+     {
+      "x": 150,
+      "n": 3
+     },
+     {
+      "x": 117,
       "n": 2
      },
      {
-      "x": 88,
+      "x": 165,
       "n": 2
      },
      {
-      "x": 172,
+      "x": 249,
       "n": 2
      },
      {
-      "x": 290,
-      "n": 2
-     },
-     {
-      "x": 99,
+      "x": 48,
       "n": 1
      },
      {
-      "x": 130,
+      "x": 132,
       "n": 1
      },
      {
-      "x": 141,
+      "x": 208,
       "n": 1
      },
      {
-      "x": 154,
-      "n": 1
-     },
-     {
-      "x": 186,
+      "x": 307,
       "n": 1
      }
     ],
@@ -2179,46 +2065,17 @@
    ]
   },
   {
-   "level": "WARN",
-   "id": "palette-cream",
-   "width": 1440,
-   "message": "Yellow-cream background (page background #fafaf7, text #fafaf7).",
-   "fix": "Use the drawn palette. If you want warmth, take a low-chroma stone or bone, not a yellow cream.",
-   "alsoAt": [
-    768,
-    390
-   ]
-  },
-  {
    "level": "FAIL",
    "id": "few-pictures",
    "width": 1440,
-   "message": "Only 1 picture(s) on the page (0 photographs, footage or raster images, 1 interface fragments). Drawings in SVG do not count.",
+   "message": "Only 2 picture(s) on the page (1 photographs, footage or raster images, 1 interface fragments). Drawings in SVG do not count.",
    "fix": "Find real pictures of the subject's world with scripts/assets.mjs (photographs, archival images, maps, engravings, footage), download them to assets/ and give them room: a hero picture, one per section that has a subject, a full-width band. At least four, usually six to twelve."
-  },
-  {
-   "level": "WARN",
-   "id": "no-footage",
-   "width": 1440,
-   "message": "No video anywhere on the page.",
-   "fix": "Look for one honest clip with scripts/assets.mjs --video (the place, the material, the process) and use it as a muted loop with a poster frame. Defend its absence only if no clip fits the subject."
-  },
-  {
-   "level": "FAIL",
-   "id": "late-title",
-   "width": 1440,
-   "message": "The title is not readable 1.2s after the page loaded (something lies over it).",
-   "fix": "Put the headline in the HTML, painted on the first frame; the load sequence only adds arrival and is settled by 1.2s (references/motion.md, \"Load sequence in 1.2 seconds\"). No preloader, no gate, no waiting for the load event.",
-   "alsoAt": [
-    768,
-    390
-   ]
   },
   {
    "level": "WARN",
    "id": "ragged-edges",
    "width": 1440,
-   "message": "Left-aligned text starts at 12 different lines (120px, 219px, 305px, 349px, 434px, 234px, 262px); the three most used hold only 41% of it.",
+   "message": "Left-aligned text starts at 12 different lines (120px, 222px, 192px, 236px, 273px, 352px, 375px); the three most used hold only 38% of it.",
    "fix": "Pick two or three anchor lines from the grid and start every heading and paragraph on one of them.",
    "alsoAt": [
     768
@@ -2226,10 +2083,10 @@
   },
   {
    "level": "FAIL",
-   "id": "covered-text",
+   "id": "late-title",
    "width": 390,
-   "message": "Large text lies under another element at some scroll position: \"on.\" (screen 5, 75% hidden); \"Moya One\" (screen 8, 38% hidden)",
-   "fix": "Nothing may sit on top of a headline or statement. Move the picture, shorten the pinned run, or raise the text above it (z-index) and give it a ground."
+   "message": "The title is not readable 1.2s after the page loaded (something lies over it).",
+   "fix": "Put the headline in the HTML, painted on the first frame; the load sequence only adds arrival and is settled by 1.2s (references/motion.md, \"Load sequence in 1.2 seconds\"). No preloader, no gate, no waiting for the load event."
   }
  ],
  "images": [

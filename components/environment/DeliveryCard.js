@@ -5,7 +5,7 @@ import { ArrowCounterClockwise } from '@phosphor-icons/react/dist/ssr';
 
 // The delivery card: on jugs, someone keeps count, a tick for every delivery, week after week. When the card comes
 // into view the ticks go in across the whole year, then a wave of water sweeps across and washes them off: with
-// Moya One there is nothing to count. Each step stays under 3 seconds (CLAUDE.md). Replay runs it again.
+// MoyaOne there is nothing to count. Each step stays under 3 seconds (CLAUDE.md). Replay runs it again.
 // Reduced motion: the clean card, the final state.
 const QUARTERS = ['Jan to Mar', 'Apr to Jun', 'Jul to Sep', 'Oct to Dec'];
 const X0 = 176; // first week cell
@@ -48,11 +48,11 @@ export default function DeliveryCard() {
             On jugs, someone keeps count: a tick on a card for every delivery, week after week, all year.
           </p>
           <p>
-            With Moya One there is no card. You see your water in litres in the app, and recharge when you need more.
+            With MoyaOne there is no card. You see your water in litres in the app, and recharge when you need more.
           </p>
           {!still && (
             <button type="button" className="dc-replay" onClick={() => setRun((r) => r + 1)} disabled={run === 0}>
-              <ArrowCounterClockwise size={20} aria-hidden="true" />
+              <ArrowCounterClockwise weight="bold" size={20} aria-hidden="true" />
               Watch it again
             </button>
           )}

@@ -1,12 +1,12 @@
 'use client';
 
 import { useState } from 'react';
-import { OPTIONS, ROWS } from '@/lib/compare';
+import { OPTIONS, PHOTO_CREDITS, ROWS } from '@/lib/compare';
 
-// The comparison as a real table. On a desktop all the options sit side by side with Moya One tinted (DESIGN.md
-// section 8). On a phone the table shows Moya One against one other option, chosen with the switch above it, so
+// The comparison as a real table. On a desktop all the options sit side by side with MoyaOne tinted (DESIGN.md
+// section 8). On a phone the table shows MoyaOne against one other option, chosen with the switch above it, so
 // it never scrolls sideways at 390px (PAGE_BRIEFS.md #6). `only` limits the columns (the bottled water page shows
-// jugs against Moya One); `rows` limits the questions.
+// jugs against MoyaOne); `rows` limits the questions.
 function Cell({ row, id }) {
   return (
     <>
@@ -25,7 +25,7 @@ export default function CompareTable({ only, rows, caption }) {
   return (
     <div className={`cmp cols-${cols.length}`} data-other={other}>
       {others.length > 1 && (
-        <div className="cmp-pick" role="group" aria-label="Compare Moya One with">
+        <div className="cmp-pick" role="group" aria-label="Compare MoyaOne with">
           <span>Compare with</span>
           {others.map((o) => (
             <button key={o.id} type="button" aria-pressed={other === o.id} onClick={() => setOther(o.id)}>
@@ -43,6 +43,10 @@ export default function CompareTable({ only, rows, caption }) {
             </th>
             {cols.map((o) => (
               <th key={o.id} scope="col" className={`cmp-col is-${o.id}`}>
+                <span className="cmp-pic">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img src={o.img} alt={o.alt} width="600" height="600" loading="lazy" decoding="async" />
+                </span>
                 {o.long}
               </th>
             ))}
@@ -63,6 +67,16 @@ export default function CompareTable({ only, rows, caption }) {
           ))}
         </tbody>
       </table>
+      <p className="cmp-credit">
+        Photographs:{' '}
+        {PHOTO_CREDITS.filter((c) => cols.some((o) => o.id === c.id)).map((c, i) => (
+          <span key={c.url}>
+            {i > 0 && '; '}“{c.title}” by {c.by}, <a href={c.url}>{c.lic}</a>
+            {c.note}
+          </span>
+        ))}
+        , via Wikimedia Commons.
+      </p>
     </div>
   );
 }

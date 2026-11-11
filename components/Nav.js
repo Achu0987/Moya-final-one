@@ -5,16 +5,6 @@ import { usePathname } from 'next/navigation';
 import { ArrowRight, ArrowUpRight, CaretDown, Funnel, List, Package, Scales, X } from '@phosphor-icons/react/dist/ssr';
 import { ALL_PAGES, CONTACT_LINK, NAV_LINKS } from '@/lib/content';
 
-// PLACEHOLDER: brand mark and wordmark until the client's approved logo arrives (DESIGN.md DD2, DD5).
-// The mark is a drop carrying the water line from the brand drawings.
-function Mark() {
-  return (
-    <svg className="nav-logo" viewBox="0 0 28 32" aria-hidden="true">
-      <path d="M14 1.5C14 1.5 3 13.6 3 20.2a11 11 0 0 0 22 0C25 13.6 14 1.5 14 1.5z" fill="var(--ink)" />
-      <path d="M7.5 21q1.6-2 3.25 0t3.25 0t3.25 0t3.25 0" fill="none" stroke="var(--orange)" strokeWidth="2" strokeLinecap="round" />
-    </svg>
-  );
-}
 
 // an icon for each comparison in the Compare menu
 const MENU_ICONS = { '/compare': Scales, '/compare/bottled-water': Package, '/compare/ro-filters': Funnel };
@@ -67,9 +57,9 @@ export default function Nav() {
   return (
     <header className={`nav${scrolled ? ' is-scrolled' : ''}`}>
       <div className="container nav-inner">
-        <a href="/" className="nav-mark" aria-label="Moya One, home">
-          <Mark />
-          <span>Moya One</span>
+        {/* the approved logo, navy on white (brand book p.9: for light backgrounds), from the master artwork, never retyped */}
+        <a href="/" className="nav-mark">
+          <img className="nav-logo" src="/brand/moyaone-logo-navy.svg" alt="MoyaOne, home" width="1262" height="575" />
         </a>
         <nav aria-label="Main">
           <ul className="nav-links">
@@ -91,7 +81,7 @@ export default function Nav() {
                     onClick={() => setMenu((m) => !m)}
                   >
                     {l.label}
-                    <CaretDown size={16} aria-hidden="true" />
+                    <CaretDown weight="bold" size={16} aria-hidden="true" />
                   </button>
                   <ul id="compare-menu" className="nav-menu" hidden={!menu}>
                     {l.children.map((c) => {
@@ -100,13 +90,13 @@ export default function Nav() {
                         <li key={c.href}>
                           <a href={c.href} aria-current={c.href === pathname ? 'page' : undefined}>
                             <span className="nav-menu-icon">
-                              <Icon size={22} aria-hidden="true" />
+                              <Icon weight="bold" size={22} aria-hidden="true" />
                             </span>
                             <span className="nav-menu-text">
                               <strong>{c.label}</strong>
                               <span>{c.note}</span>
                             </span>
-                            <ArrowRight className="nav-menu-arrow" size={18} aria-hidden="true" />
+                            <ArrowRight weight="bold" className="nav-menu-arrow" size={18} aria-hidden="true" />
                           </a>
                         </li>
                       );
@@ -125,7 +115,7 @@ export default function Nav() {
         </nav>
         <a href={CONTACT_LINK.href} className="nav-cta" aria-current={pathname === CONTACT_LINK.href ? 'page' : undefined}>
           {CONTACT_LINK.label}
-          <ArrowUpRight size={18} aria-hidden="true" />
+          <ArrowUpRight weight="bold" size={18} aria-hidden="true" />
         </a>
         <button
           type="button"
@@ -134,7 +124,7 @@ export default function Nav() {
           aria-controls="mobile-menu"
           onClick={() => setOpen((o) => !o)}
         >
-          {open ? <X size={24} aria-hidden="true" /> : <List size={24} aria-hidden="true" />}
+          {open ? <X weight="bold" size={24} aria-hidden="true" /> : <List weight="bold" size={24} aria-hidden="true" />}
           <span>{open ? 'Close' : 'Menu'}</span>
         </button>
       </div>

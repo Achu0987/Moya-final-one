@@ -41,9 +41,9 @@ const FIELDS = {
 };
 
 const SUBJECT = {
-  resident: 'A resident asking about Moya One',
-  builder: 'Moya One for our project',
-  other: 'A message for Moya One',
+  resident: 'A resident asking about MoyaOne',
+  builder: 'MoyaOne for our project',
+  other: 'A message for MoyaOne',
 };
 
 // an email address, or a phone number with at least ten digits
@@ -95,7 +95,7 @@ export default function ContactForm() {
       return;
     }
     const lines = [
-      'Hello Moya One,',
+      'Hello MoyaOne,',
       '',
       `I am writing as: ${ROLES.find((r) => r.id === role).label.toLowerCase()}`,
       ...fields
@@ -105,7 +105,7 @@ export default function ContactForm() {
       (values.message || '').trim(),
     ];
     // PLACEHOLDER: sends to the placeholder address in lib/content.js until the client confirms the real one.
-    const subject = role === 'builder' && values.company ? `Moya One for ${values.company.trim()}` : SUBJECT[role];
+    const subject = role === 'builder' && values.company ? `MoyaOne for ${values.company.trim()}` : SUBJECT[role];
     window.location.href = `mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(
       lines.join('\n').trim(),
     )}`;
@@ -115,7 +115,7 @@ export default function ContactForm() {
   if (sent) {
     return (
       <div className="ct-panel ct-done" role="status" tabIndex={-1} ref={doneRef}>
-        <CheckCircle size={44} aria-hidden="true" className="ct-done-icon" />
+        <CheckCircle weight="bold" size={44} aria-hidden="true" className="ct-done-icon" />
         <h2 className="ct-done-title">Your message is ready to send.</h2>
         <p>
           Your email app should have opened with everything filled in. Press send there, and it comes to us.
@@ -126,7 +126,7 @@ export default function ContactForm() {
           <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a> directly.
         </p>
         <button type="button" className="btn btn-secondary" onClick={() => setSent(false)}>
-          <PencilSimple size={20} aria-hidden="true" />
+          <PencilSimple weight="bold" size={20} aria-hidden="true" />
           Change your message
         </button>
       </div>
@@ -196,7 +196,7 @@ export default function ContactForm() {
               )}
               {err && (
                 <p className="ct-error" id={`${id}-err`}>
-                  <WarningCircle size={18} aria-hidden="true" />
+                  <WarningCircle weight="bold" size={18} aria-hidden="true" />
                   {err}
                 </p>
               )}
@@ -208,7 +208,7 @@ export default function ContactForm() {
       <div className="ct-send">
         <button type="submit" className="btn btn-primary">
           Send message
-          <ArrowRight size={20} aria-hidden="true" />
+          <ArrowRight weight="bold" size={20} aria-hidden="true" />
         </button>
         <p className="ct-send-note">This opens your email app with your message filled in.</p>
       </div>

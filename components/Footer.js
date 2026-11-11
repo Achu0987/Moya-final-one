@@ -8,8 +8,10 @@ export default function Footer() {
       <div className="container">
         <div className="footer-grid">
           <div className="footer-brand">
-            {/* PLACEHOLDER: text wordmark until the client's approved logo arrives */}
-            <p className="footer-name">Moya One</p>
+            {/* the approved logo, white on navy, from the master artwork (brand book p.9) */}
+            <a href="/" className="footer-logo">
+              <img src="/brand/moyaone-logo-white.svg" alt="MoyaOne, home" width="1262" height="575" loading="lazy" />
+            </a>
             <p className="footer-about">
               Drinking water on tap in every flat. Built into residential towers in India, recharged from your phone.
             </p>
@@ -31,7 +33,7 @@ export default function Footer() {
             {/* PLACEHOLDER: contact email, see lib/content.js */}
             <a href={`mailto:${CONTACT_EMAIL}`} className="footer-email">
               {CONTACT_EMAIL}
-              <ArrowUpRight size={20} aria-hidden="true" />
+              <ArrowUpRight weight="bold" size={20} aria-hidden="true" />
             </a>
             {CONTACT_PHONE && (
               <a href={`tel:${CONTACT_PHONE}`} className="footer-email">
@@ -48,13 +50,10 @@ export default function Footer() {
           </p>
           <a href="#main" className="footer-top">
             Back to top
-            <ArrowUp size={16} aria-hidden="true" />
+            <ArrowUp weight="bold" size={16} aria-hidden="true" />
           </a>
         </div>
       </div>
-      <p className="footer-mark" aria-hidden="true">
-        Moya One
-      </p>
     </footer>
   );
 }

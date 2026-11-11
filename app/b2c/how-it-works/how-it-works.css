@@ -84,7 +84,7 @@
   top: 0;
   bottom: 0;
   width: 3px;
-  background: var(--orange);
+  background: var(--sky);
 }
 
 .drop-door-l::after {
@@ -127,7 +127,7 @@
   max-width: 12ch;
   font-size: var(--fs-hero);
   line-height: var(--lh-hero);
-  letter-spacing: -0.03em;
+  letter-spacing: -0.01em;
 }
 
 .drop-open-lede {
@@ -192,7 +192,7 @@
   margin-bottom: 8px;
   font-size: var(--fs-caption);
   font-weight: 600;
-  color: var(--orange);
+  color: var(--sky); /* sky on navy (6.3:1); royal fails on navy */
 }
 
 .drop-caption-step span {
@@ -255,7 +255,7 @@
 
 .drop-rail li.is-past + li::before,
 .drop-rail li.is-now::before {
-  background: var(--orange);
+  background: var(--sky);
 }
 
 .drop-rail span {
@@ -279,7 +279,7 @@
 }
 
 .drop-rail .is-now span {
-  background: var(--orange);
+  background: var(--sky);
   color: var(--ink);
   transform: scale(1.25);
 }
@@ -696,7 +696,7 @@
 .dodont-never li {
   color: var(--muted);
   text-decoration: line-through;
-  text-decoration-color: var(--orange);
+  text-decoration-color: var(--sky);
   text-decoration-thickness: 2px;
 }
 
@@ -816,7 +816,7 @@
   font-weight: 700;
   font-size: var(--fs-h2);
   line-height: var(--lh-h2);
-  letter-spacing: -0.02em;
+  letter-spacing: -0.01em;
 }
 
 .drop-recap-grid {
@@ -847,7 +847,7 @@
   width: 28px;
   height: 28px;
   border-radius: 50%;
-  background: var(--orange);
+  background: var(--sky);
   color: var(--ink);
   font: 700 13px / 1 var(--font-display);
 }

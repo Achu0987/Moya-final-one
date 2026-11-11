@@ -18,7 +18,6 @@ export default function Motion() {
 
       ctx = gsap.context(() => {
         reveals(gsap);
-        monument(gsap);
       });
     })();
 
@@ -78,12 +77,3 @@ function reveals(gsap) {
   }
 }
 
-// The name is heavy: it grows into place as the footer arrives.
-function monument(gsap) {
-  gsap.from('.footer-mark', {
-    scale: 0.94,
-    transformOrigin: '50% 100%',
-    ease: 'none',
-    scrollTrigger: { trigger: '.footer', start: 'top bottom', end: 'bottom bottom', scrub: true },
-  });
-}

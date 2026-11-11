@@ -25,7 +25,7 @@ export default function Builders() {
             <Words>Built in, not added on.</Words>
           </h2>
           <p className="builders-lede" data-reveal="fade">
-            For builders and developers: Moya One goes into your project during construction, so every flat has
+            For builders and developers: MoyaOne goes into your project during construction, so every flat has
             drinking water on tap from its own line.
           </p>
 
@@ -41,7 +41,7 @@ export default function Builders() {
                     onClick={() => setOpen(isOpen ? -1 : i)}
                   >
                     <span>{name}</span>
-                    <CaretDown size={20} aria-hidden="true" />
+                    <CaretDown weight="bold" size={20} aria-hidden="true" />
                   </button>
                   <p id={`point-${i}`} hidden={!isOpen}>
                     {text}
@@ -53,7 +53,7 @@ export default function Builders() {
 
           <a href="/contact?as=builder" className="btn btn-primary" data-reveal="fade">
             Talk to us about a project
-            <ArrowRight size={20} aria-hidden="true" />
+            <ArrowRight weight="bold" size={20} aria-hidden="true" />
           </a>
         </div>
 

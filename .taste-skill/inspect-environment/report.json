@@ -1,29 +1,33 @@
 {
  "url": "http://localhost:3123/environment",
- "at": "2026-10-24T11:40:32.809Z",
+ "at": "2026-11-11T10:45:11.865Z",
  "allow": [],
  "viewports": [
   {
    "width": 1440,
    "height": 900,
    "load": "load",
-   "screens": 7,
+   "screens": 11,
    "filled": [
-    0.94,
-    0.96,
-    0.96,
-    0.96,
-    0.97,
-    0.48,
-    0.95
+    1,
+    0.93,
+    0.6,
+    0.64,
+    1,
+    1,
+    0.99,
+    1,
+    0.44,
+    0.99,
+    0.99
    ],
    "motion": {
-    "elements": 140,
-    "css": 65,
-    "transitions": 61,
-    "scripted": 14,
-    "videos": 0,
-    "playingVideos": 0
+    "elements": 159,
+    "css": 68,
+    "transitions": 66,
+    "scripted": 25,
+    "videos": 1,
+    "playingVideos": 1
    },
    "metrics": {
     "viewport": {
@@ -31,22 +35,27 @@
      "h": 900
     },
     "page": {
-     "height": 6065,
-     "screens": 6.7,
-     "words": 357,
-     "img": 0,
-     "video": 0,
+     "height": 9170,
+     "screens": 10.2,
+     "words": 546,
+     "img": 6,
+     "video": 1,
      "canvas": 0,
-     "svg": 21,
-     "sections": 5,
+     "svg": 22,
+     "sections": 8,
      "horizontalOverflow": 0,
      "overflowCulprits": [],
      "uiFragments": 0,
      "uiAbuse": false,
-     "realPictures": 0,
-     "videoCount": 0,
+     "realPictures": 5,
+     "videoCount": 1,
      "uiPictures": 0,
-     "pictureSamples": [],
+     "pictureSamples": [
+      "beach-1600.webp",
+      "stream-600.webp",
+      "bales-600.webp",
+      "forest-1024.webp"
+     ],
      "blendText": 0,
      "sideScrollers": 0,
      "brokenImages": [],
@@ -54,73 +63,136 @@
      "videosNoPoster": 0
     },
     "hero": {
-     "text": "Less plastic, in every home.",
-     "words": 5,
-     "chars": 28,
+     "text": "Less plastic, more green.",
+     "words": 4,
+     "chars": 25,
      "lines": 2,
-     "size": 96,
-     "vw": 6.7,
-     "font": "Plus Jakarta Sans",
+     "size": 72,
+     "vw": 5,
+     "font": "League Spartan",
      "weight": 700,
-     "tracking": -0.035,
-     "leading": 0.95,
+     "tracking": -0.01,
+     "leading": 1,
      "upper": false,
      "italic": false,
      "mono": false,
      "align": "left",
-     "position": "left",
-     "widthRatio": 0.48,
-     "top": 244,
+     "position": "center",
+     "widthRatio": 0.83,
+     "top": 436,
      "tag": "h1",
      "kind": "heading"
     },
     "h1": {
-     "text": "Less plastic, in every home.",
-     "words": 5,
+     "text": "Less plastic, more green.",
+     "words": 4,
      "lines": 2,
-     "size": 96,
-     "font": "Plus Jakarta Sans"
+     "size": 72,
+     "font": "League Spartan"
     },
     "headings": [
      {
-      "text": "Less plastic, in every home.",
-      "words": 5,
-      "chars": 28,
+      "text": "Less plastic, more green.",
+      "words": 4,
+      "chars": 25,
       "lines": 2,
-      "size": 96,
-      "vw": 6.7,
-      "font": "Plus Jakarta Sans",
+      "size": 72,
+      "vw": 5,
+      "font": "League Spartan",
       "weight": 700,
-      "tracking": -0.035,
-      "leading": 0.95,
+      "tracking": -0.01,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.83,
+      "top": 436,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "Today, and with MoyaOne.",
+      "words": 4,
+      "chars": 24,
+      "lines": 1,
+      "size": 48,
+      "vw": 3.3,
+      "font": "League Spartan",
+      "weight": 700,
+      "tracking": -0.01,
+      "leading": 1.05,
       "upper": false,
       "italic": false,
       "mono": false,
       "align": "left",
       "position": "left",
       "widthRatio": 0.48,
-      "top": 244,
-      "tag": "h1",
+      "top": 1233,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Where the plastic goes.",
+      "words": 4,
+      "chars": 23,
+      "lines": 1,
+      "size": 32,
+      "vw": 2.2,
+      "font": "League Spartan",
+      "weight": 700,
+      "tracking": 0,
+      "leading": 1.15,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.83,
+      "top": 1852,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Keep the green the way it is.",
+      "words": 7,
+      "chars": 29,
+      "lines": 1,
+      "size": 32,
+      "vw": 2.2,
+      "font": "League Spartan",
+      "weight": 700,
+      "tracking": -0.01,
+      "leading": 1.15,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.76,
+      "top": 3269,
+      "tag": "h2",
       "kind": "heading"
      },
      {
       "text": "A year in one kitchen.",
       "words": 5,
       "chars": 22,
-      "lines": 2,
-      "size": 44,
-      "vw": 3.1,
-      "font": "Plus Jakarta Sans",
+      "lines": 1,
+      "size": 32,
+      "vw": 2.2,
+      "font": "League Spartan",
       "weight": 700,
-      "tracking": -0.02,
-      "leading": 1.1,
+      "tracking": 0,
+      "leading": 1.15,
       "upper": false,
       "italic": false,
       "mono": false,
       "align": "left",
       "position": "left",
       "widthRatio": 0.27,
-      "top": 1064,
+      "top": 3786,
       "tag": "h2",
       "kind": "heading"
      },
@@ -129,11 +201,11 @@
       "words": 2,
       "chars": 6,
       "lines": 1,
-      "size": 64,
-      "vw": 4.4,
-      "font": "Plus Jakarta Sans",
+      "size": 48,
+      "vw": 3.3,
+      "font": "League Spartan",
       "weight": 700,
-      "tracking": -0.03,
+      "tracking": -0.01,
       "leading": 1,
       "upper": false,
       "italic": false,
@@ -141,7 +213,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.27,
-      "top": 1221,
+      "top": 3883,
       "tag": "p",
       "kind": "statement"
      },
@@ -150,19 +222,19 @@
       "words": 4,
       "chars": 21,
       "lines": 2,
-      "size": 64,
-      "vw": 4.4,
-      "font": "Plus Jakarta Sans",
+      "size": 48,
+      "vw": 3.3,
+      "font": "League Spartan",
       "weight": 700,
-      "tracking": -0.03,
-      "leading": 1,
+      "tracking": -0.01,
+      "leading": 1.05,
       "upper": false,
       "italic": false,
       "mono": false,
       "align": "left",
       "position": "left",
       "widthRatio": 0.27,
-      "top": 3513,
+      "top": 6211,
       "tag": "h2",
       "kind": "heading"
      },
@@ -171,19 +243,19 @@
       "words": 3,
       "chars": 21,
       "lines": 1,
-      "size": 44,
-      "vw": 3.1,
-      "font": "Plus Jakarta Sans",
+      "size": 32,
+      "vw": 2.2,
+      "font": "League Spartan",
       "weight": 700,
-      "tracking": -0.02,
-      "leading": 1.1,
+      "tracking": 0,
+      "leading": 1.15,
       "upper": false,
       "italic": false,
       "mono": false,
       "align": "left",
       "position": "left",
       "widthRatio": 0.34,
-      "top": 4173,
+      "top": 6856,
       "tag": "h2",
       "kind": "heading"
      },
@@ -192,49 +264,28 @@
       "words": 5,
       "chars": 25,
       "lines": 1,
-      "size": 44,
-      "vw": 3.1,
-      "font": "Plus Jakarta Sans",
+      "size": 32,
+      "vw": 2.2,
+      "font": "League Spartan",
       "weight": 700,
-      "tracking": -0.02,
-      "leading": 1.1,
+      "tracking": 0,
+      "leading": 1.15,
       "upper": false,
       "italic": false,
       "mono": false,
       "align": "center",
       "position": "center",
-      "widthRatio": 0.35,
-      "top": 4867,
+      "widthRatio": 0.25,
+      "top": 7533,
       "tag": "h2",
       "kind": "heading"
-     },
-     {
-      "text": "Moya One",
-      "words": 2,
-      "chars": 8,
-      "lines": 1,
-      "size": 269,
-      "vw": 18.7,
-      "font": "Plus Jakarta Sans",
-      "weight": 700,
-      "tracking": -0.055,
-      "leading": 0.8,
-      "upper": false,
-      "italic": false,
-      "mono": false,
-      "align": "left",
-      "position": "center",
-      "widthRatio": 0.85,
-      "top": 5895,
-      "tag": "p",
-      "kind": "statement"
      }
     ],
     "headingSummary": {
-     "count": 7,
+     "count": 9,
      "maxLines": 2,
      "over2Lines": 0,
-     "statements": 2,
+     "statements": 1,
      "centered": 1,
      "medianWords": 4,
      "mixedFontHeadings": 0
@@ -242,44 +293,45 @@
     "type": {
      "families": [
       {
-       "family": "Inter",
-       "share": 0.86,
+       "family": "Outfit",
+       "share": 0.85,
        "mono": false
       },
       {
-       "family": "Plus Jakarta Sans",
-       "share": 0.14,
+       "family": "League Spartan",
+       "share": 0.15,
        "mono": false
       }
      ],
      "familyCount": 2,
      "sizes": [
       13,
+      14,
       15,
       16,
+      17,
       20,
       22,
-      44,
-      64,
-      96,
-      269
+      32,
+      48,
+      72
      ],
-     "sizeCount": 9,
+     "sizeCount": 10,
      "notLoaded": [],
      "body": {
-      "font": "Inter",
+      "font": "Outfit",
       "size": 20,
       "leading": 1.6,
       "weight": 400,
       "tracking": 0,
-      "contrast": 9.2
+      "contrast": 14.1
      },
-     "measureChars": 49,
+     "measureChars": 199,
      "max": {
-      "size": 269,
-      "vw": 18.7,
-      "font": "Plus Jakarta Sans",
-      "text": "Moya One"
+      "size": 72,
+      "vw": 5,
+      "font": "League Spartan",
+      "text": "Less plastic, more green."
      },
      "monoShare": 0,
      "monoProseShare": 0,
@@ -288,92 +340,104 @@
      "microLabels": 0,
      "microLabelShare": 0,
      "microSamples": [],
-     "upperShare": 0,
-     "centerShare": 0.13,
+     "upperShare": 0.02,
+     "centerShare": 0.24,
      "smallText": 0
     },
     "eyebrows": [],
     "numbered": [],
     "color": {
-     "bodyBg": "#fafaf7",
+     "bodyBg": "#ffffff",
      "bodyBgHsl": {
-      "h": 60,
-      "s": 0.23,
-      "l": 0.97
+      "h": 0,
+      "s": 0,
+      "l": 1
      },
      "dark": false,
      "sectionBgs": [
       {
-       "color": "#111827",
-       "top": 89,
+       "color": "#0b1626",
+       "top": 88,
        "hsl": {
-        "h": 221,
-        "s": 0.39,
-        "l": 0.11
+        "h": 216,
+        "s": 0.55,
+        "l": 0.1
        }
       },
       {
-       "color": "#f3f4f6",
-       "top": 873,
+       "color": "#ffffff",
+       "top": 1732,
        "hsl": {
-        "h": 220,
-        "s": 0.14,
+        "h": 0,
+        "s": 0,
+        "l": 1
+       }
+      },
+      {
+       "color": "#eef2f7",
+       "top": 3558,
+       "hsl": {
+        "h": 213,
+        "s": 0.36,
+        "l": 0.95
+       }
+      },
+      {
+       "color": "#ecf6fd",
+       "top": 6078,
+       "hsl": {
+        "h": 205,
+        "s": 0.81,
         "l": 0.96
-       }
-      },
-      {
-       "color": "#e8f3f5",
-       "top": 3393,
-       "hsl": {
-        "h": 189,
-        "s": 0.39,
-        "l": 0.94
        }
       }
      ],
      "textColors": [
       {
-       "color": "#b9bbbd",
-       "share": 0.42
+       "color": "#4b5768",
+       "share": 0.32
       },
       {
-       "color": "#111827",
-       "share": 0.24
+       "color": "#8792a3",
+       "share": 0.26
       },
       {
-       "color": "#4b5563",
-       "share": 0.17
+       "color": "#0b1626",
+       "share": 0.19
       },
       {
-       "color": "#fafaf7",
-       "share": 0.17
+       "color": "#ffffff",
+       "share": 0.12
+      },
+      {
+       "color": "#e2e3e5",
+       "share": 0.09
       }
      ],
      "button": {
-      "bg": "#111827",
+      "bg": "#0b1626",
       "hsl": {
-       "h": 221,
-       "s": 0.39,
-       "l": 0.11
+       "h": 216,
+       "s": 0.55,
+       "l": 0.1
       },
-      "fg": "#fafaf7"
+      "fg": "#ffffff"
      },
      "lowContrast": []
     },
     "buttons": {
      "count": 6,
-     "inHero": 4,
+     "inHero": 3,
      "radius": "pill",
-     "height": 50,
+     "height": 44,
      "withShadow": 0,
      "withGradient": 0,
      "mono": 0,
      "upper": 0,
      "heroLabels": [
       "Skip to content",
-      "Contact",
-      "See a year of jugs",
-      "With Moya One"
+      "Pause film",
+      "See a year of jugs"
      ]
     },
     "surfaces": {
@@ -384,37 +448,35 @@
      "scrims": 0,
      "gradientSamples": [],
      "gradientText": 0,
-     "hairlines": 1,
-     "hairlineSamples": [
-      "header.nav 1440px"
-     ],
+     "hairlines": 0,
+     "hairlineSamples": [],
      "outlinedBoxes": 0,
      "dashed": 0,
      "blurred": 0,
-     "roundedBoxes": 1,
+     "roundedBoxes": 2,
      "boxRadius": 20,
-     "squareMedia": 0,
-     "roundedMedia": 0,
-     "mediaRadius": 0,
+     "squareMedia": 2,
+     "roundedMedia": 4,
+     "mediaRadius": 20,
      "textShadow": 0,
      "cardRows": []
     },
     "heroMedia": [
      {
-      "type": "svg",
-      "ratio": 0.15
+      "type": "video",
+      "ratio": 0.9
      }
     ],
     "nav": {
      "links": 6,
      "fixed": true,
-     "height": 89,
+     "height": 88,
      "floatingPill": false,
      "blur": false
     },
     "fontsLoaded": [
-     "plus jakarta sans",
-     "inter"
+     "league spartan",
+     "outfit"
     ]
    },
    "layout": {
@@ -422,46 +484,115 @@
      "w": 1440,
      "h": 900
     },
-    "pageH": 6065,
+    "pageH": 9170,
     "margins": {
      "left": 120,
-     "right": 120
+     "right": 115
     },
     "sections": [
      {
-      "sel": "section.ev-hero",
+      "sel": "section.ev-film",
       "tag": "section",
-      "top": 89,
-      "height": 784,
-      "words": 62,
+      "top": 88,
+      "height": 812,
+      "words": 49,
       "media": 1,
-      "middle": 80,
+      "middle": 688,
       "heading": {
        "text": "Less plastic,",
-       "size": 96,
+       "size": 72,
        "tag": "h1"
       },
       "left": 120,
-      "right": 120,
+      "right": 48,
       "textLeft": 120,
-      "textRight": 190,
-      "fullBleed": false,
+      "textRight": 64,
+      "fullBleed": true,
       "footer": false,
       "hero": true,
       "continues": true,
       "pinned": false
      },
      {
+      "sel": "section.ev-hero",
+      "tag": "section",
+      "top": 900,
+      "height": 832,
+      "words": 49,
+      "media": 1,
+      "middle": 161,
+      "heading": {
+       "text": "Today,",
+       "size": 48,
+       "tag": "h2"
+      },
+      "left": 120,
+      "right": 120,
+      "textLeft": 120,
+      "textRight": 168,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.ev-photos",
+      "tag": "section",
+      "top": 1732,
+      "height": 1146,
+      "words": 66,
+      "media": 3,
+      "middle": 32,
+      "heading": {
+       "text": "Where",
+       "size": 32,
+       "tag": "h2"
+      },
+      "left": 120,
+      "right": 120,
+      "textLeft": 120,
+      "textRight": 367,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.ev-forest",
+      "tag": "section",
+      "top": 2878,
+      "height": 680,
+      "words": 23,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "Keep the green the way it is.",
+       "size": 32,
+       "tag": "h2"
+      },
+      "left": 120,
+      "right": 120,
+      "textLeft": 176,
+      "textRight": 817,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
       "sel": "section#year.ky",
       "tag": "section",
-      "top": 873,
+      "top": 3558,
       "height": 2520,
       "words": 38,
       "media": 1,
       "middle": 28,
       "heading": {
        "text": "Week 1",
-       "size": 64,
+       "size": 48,
        "tag": "p"
       },
       "left": 120,
@@ -477,20 +608,20 @@
      {
       "sel": "section.dc",
       "tag": "section",
-      "top": 3393,
-      "height": 660,
+      "top": 6078,
+      "height": 658,
       "words": 46,
       "media": 1,
       "middle": 121,
       "heading": {
        "text": "Nothing left to tick.",
-       "size": 64,
+       "size": 48,
        "tag": "h2"
       },
       "left": 120,
       "right": 115,
       "textLeft": 120,
-      "textRight": 743,
+      "textRight": 745,
       "fullBleed": false,
       "footer": false,
       "hero": false,
@@ -500,20 +631,20 @@
      {
       "sel": "section.ev-proof",
       "tag": "section",
-      "top": 4053,
-      "height": 694,
-      "words": 90,
+      "top": 6736,
+      "height": 676,
+      "words": 89,
       "media": 0,
-      "middle": 144,
+      "middle": 128,
       "heading": {
        "text": "Proof",
-       "size": 44,
+       "size": 32,
        "tag": "h2"
       },
       "left": 120,
-      "right": 267,
+      "right": 247,
       "textLeft": 120,
-      "textRight": 267,
+      "textRight": 247,
       "fullBleed": false,
       "footer": false,
       "hero": false,
@@ -523,20 +654,20 @@
      {
       "sel": "section.closing",
       "tag": "section",
-      "top": 4747,
-      "height": 466,
-      "words": 29,
+      "top": 7413,
+      "height": 575,
+      "words": 105,
       "media": 0,
       "middle": 0,
       "heading": {
        "text": "Leave",
-       "size": 44,
+       "size": 32,
        "tag": "h2"
       },
-      "left": 466,
-      "right": 466,
-      "textLeft": 466,
-      "textRight": 466,
+      "left": 130,
+      "right": 130,
+      "textLeft": 130,
+      "textRight": 130,
       "fullBleed": false,
       "footer": false,
       "hero": false,
@@ -546,11 +677,11 @@
      {
       "sel": "footer.footer",
       "tag": "footer",
-      "top": 5213,
-      "height": 852,
-      "words": 49,
-      "media": 0,
-      "middle": 282,
+      "top": 7988,
+      "height": 1182,
+      "words": 46,
+      "media": 1,
+      "middle": 55,
       "heading": null,
       "left": 120,
       "right": 170,
@@ -566,9 +697,9 @@
     "gaps": [],
     "h1s": [
      {
-      "text": "Less plastic, in every home.",
-      "size": 96,
-      "top": 244,
+      "text": "Less plastic, more green.",
+      "size": 72,
+      "top": 436,
       "firstScreen": true
      }
     ],
@@ -576,29 +707,48 @@
     "edges": [
      {
       "x": 120,
-      "n": 9
+      "n": 13
      },
      {
-      "x": 242,
+      "x": 267,
+      "n": 2
+     },
+     {
+      "x": 202,
       "n": 1
      },
      {
-      "x": 390,
+      "x": 220,
+      "n": 1
+     },
+     {
+      "x": 300,
+      "n": 1
+     },
+     {
+      "x": 358,
+      "n": 1
+     },
+     {
+      "x": 373,
+      "n": 1
+     },
+     {
+      "x": 460,
+      "n": 1
+     },
+     {
+      "x": 531,
       "n": 1
      }
     ],
-    "leftBlocks": 11,
+    "leftBlocks": 22,
     "bodySize": 20,
     "stage": false,
     "explains": true,
     "slivers": [],
-    "voidShare": 0.2,
-    "voidBox": {
-     "x": 0,
-     "y": 720,
-     "w": 1440,
-     "h": 180
-    }
+    "voidShare": 0,
+    "voidBox": null
    },
    "app": null,
    "consoleErrors": []
@@ -607,23 +757,27 @@
    "width": 768,
    "height": 1024,
    "load": "load",
-   "screens": 7,
+   "screens": 11,
    "filled": [
-    0.96,
-    0.85,
+    1,
+    0.88,
     0.88,
     0.96,
-    0.97,
-    0.71,
-    0.93
+    0.82,
+    0.96,
+    0.96,
+    1,
+    0.73,
+    0.93,
+    0.98
    ],
    "motion": {
-    "elements": 139,
-    "css": 65,
-    "transitions": 60,
-    "scripted": 14,
-    "videos": 0,
-    "playingVideos": 0
+    "elements": 156,
+    "css": 67,
+    "transitions": 64,
+    "scripted": 25,
+    "videos": 1,
+    "playingVideos": 1
    },
    "metrics": {
     "viewport": {
@@ -631,22 +785,27 @@
      "h": 1024
     },
     "page": {
-     "height": 6670,
-     "screens": 6.5,
-     "words": 350,
-     "img": 0,
-     "video": 0,
+     "height": 10569,
+     "screens": 10.3,
+     "words": 539,
+     "img": 6,
+     "video": 1,
      "canvas": 0,
-     "svg": 21,
-     "sections": 5,
+     "svg": 22,
+     "sections": 8,
      "horizontalOverflow": 0,
      "overflowCulprits": [],
      "uiFragments": 0,
      "uiAbuse": false,
-     "realPictures": 0,
-     "videoCount": 0,
+     "realPictures": 5,
+     "videoCount": 1,
      "uiPictures": 0,
-     "pictureSamples": [],
+     "pictureSamples": [
+      "beach-800.webp",
+      "stream-900.webp",
+      "bales-1000.webp",
+      "forest-1024.webp"
+     ],
      "blendText": 0,
      "sideScrollers": 0,
      "brokenImages": [],
@@ -654,15 +813,15 @@
      "videosNoPoster": 0
     },
     "hero": {
-     "text": "Less plastic, in every home.",
-     "words": 5,
-     "chars": 28,
+     "text": "Less plastic, more green.",
+     "words": 4,
+     "chars": 25,
      "lines": 2,
-     "size": 48,
-     "vw": 6.3,
-     "font": "Plus Jakarta Sans",
+     "size": 44,
+     "vw": 5.7,
+     "font": "League Spartan",
      "weight": 700,
-     "tracking": -0.035,
+     "tracking": -0.01,
      "leading": 1,
      "upper": false,
      "italic": false,
@@ -670,28 +829,28 @@
      "align": "left",
      "position": "center",
      "widthRatio": 0.96,
-     "top": 113,
+     "top": 561,
      "tag": "h1",
      "kind": "heading"
     },
     "h1": {
-     "text": "Less plastic, in every home.",
-     "words": 5,
+     "text": "Less plastic, more green.",
+     "words": 4,
      "lines": 2,
-     "size": 48,
-     "font": "Plus Jakarta Sans"
+     "size": 44,
+     "font": "League Spartan"
     },
     "headings": [
      {
-      "text": "Less plastic, in every home.",
-      "words": 5,
-      "chars": 28,
+      "text": "Less plastic, more green.",
+      "words": 4,
+      "chars": 25,
       "lines": 2,
-      "size": 48,
-      "vw": 6.3,
-      "font": "Plus Jakarta Sans",
+      "size": 44,
+      "vw": 5.7,
+      "font": "League Spartan",
       "weight": 700,
-      "tracking": -0.035,
+      "tracking": -0.01,
       "leading": 1,
       "upper": false,
       "italic": false,
@@ -699,8 +858,71 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.96,
-      "top": 113,
+      "top": 561,
       "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "Today, and with MoyaOne.",
+      "words": 4,
+      "chars": 24,
+      "lines": 1,
+      "size": 36,
+      "vw": 4.7,
+      "font": "League Spartan",
+      "weight": 700,
+      "tracking": -0.01,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.96,
+      "top": 996,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Where the plastic goes.",
+      "words": 4,
+      "chars": 23,
+      "lines": 1,
+      "size": 28,
+      "vw": 3.6,
+      "font": "League Spartan",
+      "weight": 700,
+      "tracking": 0,
+      "leading": 1.15,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.96,
+      "top": 2079,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Keep the green the way it is.",
+      "words": 7,
+      "chars": 29,
+      "lines": 1,
+      "size": 28,
+      "vw": 3.6,
+      "font": "League Spartan",
+      "weight": 700,
+      "tracking": -0.01,
+      "leading": 1.15,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 4660,
+      "tag": "h2",
       "kind": "heading"
      },
      {
@@ -708,19 +930,19 @@
       "words": 5,
       "chars": 22,
       "lines": 1,
-      "size": 32,
-      "vw": 4.2,
-      "font": "Plus Jakarta Sans",
+      "size": 28,
+      "vw": 3.6,
+      "font": "League Spartan",
       "weight": 700,
-      "tracking": -0.02,
-      "leading": 1.1,
+      "tracking": 0,
+      "leading": 1.15,
       "upper": false,
       "italic": false,
       "mono": false,
       "align": "left",
       "position": "center",
       "widthRatio": 0.96,
-      "top": 1429,
+      "top": 4988,
       "tag": "h2",
       "kind": "heading"
      },
@@ -729,11 +951,11 @@
       "words": 2,
       "chars": 6,
       "lines": 1,
-      "size": 40,
-      "vw": 5.2,
-      "font": "Plus Jakarta Sans",
+      "size": 36,
+      "vw": 4.7,
+      "font": "League Spartan",
       "weight": 700,
-      "tracking": -0.03,
+      "tracking": -0.01,
       "leading": 1,
       "upper": false,
       "italic": false,
@@ -741,7 +963,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.96,
-      "top": 1525,
+      "top": 5081,
       "tag": "p",
       "kind": "statement"
      },
@@ -750,11 +972,11 @@
       "words": 4,
       "chars": 21,
       "lines": 1,
-      "size": 40,
-      "vw": 5.2,
-      "font": "Plus Jakarta Sans",
+      "size": 36,
+      "vw": 4.7,
+      "font": "League Spartan",
       "weight": 700,
-      "tracking": -0.03,
+      "tracking": -0.01,
       "leading": 1.05,
       "upper": false,
       "italic": false,
@@ -762,7 +984,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.96,
-      "top": 3736,
+      "top": 7293,
       "tag": "h2",
       "kind": "heading"
      },
@@ -771,19 +993,19 @@
       "words": 3,
       "chars": 21,
       "lines": 1,
-      "size": 32,
-      "vw": 4.2,
-      "font": "Plus Jakarta Sans",
+      "size": 28,
+      "vw": 3.6,
+      "font": "League Spartan",
       "weight": 700,
-      "tracking": -0.02,
-      "leading": 1.1,
+      "tracking": 0,
+      "leading": 1.15,
       "upper": false,
       "italic": false,
       "mono": false,
       "align": "left",
       "position": "center",
       "widthRatio": 0.96,
-      "top": 4649,
+      "top": 8174,
       "tag": "h2",
       "kind": "heading"
      },
@@ -792,49 +1014,28 @@
       "words": 5,
       "chars": 25,
       "lines": 1,
-      "size": 32,
-      "vw": 4.2,
-      "font": "Plus Jakarta Sans",
+      "size": 28,
+      "vw": 3.6,
+      "font": "League Spartan",
       "weight": 700,
-      "tracking": -0.02,
-      "leading": 1.1,
+      "tracking": 0,
+      "leading": 1.15,
       "upper": false,
       "italic": false,
       "mono": false,
       "align": "center",
       "position": "center",
-      "widthRatio": 0.48,
-      "top": 5405,
+      "widthRatio": 0.41,
+      "top": 8905,
       "tag": "h2",
       "kind": "heading"
-     },
-     {
-      "text": "Moya One",
-      "words": 2,
-      "chars": 8,
-      "lines": 1,
-      "size": 165,
-      "vw": 21.5,
-      "font": "Plus Jakarta Sans",
-      "weight": 700,
-      "tracking": -0.055,
-      "leading": 0.8,
-      "upper": false,
-      "italic": false,
-      "mono": false,
-      "align": "left",
-      "position": "center",
-      "widthRatio": 0.94,
-      "top": 6566,
-      "tag": "p",
-      "kind": "statement"
      }
     ],
     "headingSummary": {
-     "count": 7,
+     "count": 9,
      "maxLines": 2,
      "over2Lines": 0,
-     "statements": 2,
+     "statements": 1,
      "centered": 1,
      "medianWords": 4,
      "mixedFontHeadings": 0
@@ -842,45 +1043,45 @@
     "type": {
      "families": [
       {
-       "family": "Inter",
-       "share": 0.86,
+       "family": "Outfit",
+       "share": 0.85,
        "mono": false
       },
       {
-       "family": "Plus Jakarta Sans",
-       "share": 0.14,
+       "family": "League Spartan",
+       "share": 0.15,
        "mono": false
       }
      ],
      "familyCount": 2,
      "sizes": [
       13,
+      14,
       15,
       16,
+      17,
       18,
       20,
-      22,
-      32,
-      40,
-      48,
-      165
+      28,
+      36,
+      44
      ],
      "sizeCount": 10,
      "notLoaded": [],
      "body": {
-      "font": "Inter",
+      "font": "Outfit",
       "size": 18,
       "leading": 1.6,
       "weight": 400,
       "tracking": 0,
-      "contrast": 9.2
+      "contrast": 14.1
      },
-     "measureChars": 50,
+     "measureChars": 118,
      "max": {
-      "size": 165,
-      "vw": 21.5,
-      "font": "Plus Jakarta Sans",
-      "text": "Moya One"
+      "size": 44,
+      "vw": 5.7,
+      "font": "League Spartan",
+      "text": "Less plastic, more green."
      },
      "monoShare": 0,
      "monoProseShare": 0,
@@ -889,98 +1090,103 @@
      "microLabels": 0,
      "microLabelShare": 0,
      "microSamples": [],
-     "upperShare": 0,
-     "centerShare": 0.13,
+     "upperShare": 0.02,
+     "centerShare": 0.24,
      "smallText": 0
     },
     "eyebrows": [],
     "numbered": [],
     "color": {
-     "bodyBg": "#fafaf7",
+     "bodyBg": "#ffffff",
      "bodyBgHsl": {
-      "h": 60,
-      "s": 0.23,
-      "l": 0.97
+      "h": 0,
+      "s": 0,
+      "l": 1
      },
      "dark": false,
      "sectionBgs": [
       {
-       "color": "#111827",
-       "top": 65,
+       "color": "#0b1626",
+       "top": 64,
        "hsl": {
-        "h": 221,
-        "s": 0.39,
-        "l": 0.11
+        "h": 216,
+        "s": 0.55,
+        "l": 0.1
        }
       },
       {
-       "color": "#fafaf7",
-       "top": 474,
+       "color": "#ffffff",
+       "top": 1172,
        "hsl": {
-        "h": 60,
-        "s": 0.23,
-        "l": 0.97
+        "h": 0,
+        "s": 0,
+        "l": 1
        }
       },
       {
-       "color": "#f3f4f6",
-       "top": 1309,
+       "color": "#eef2f7",
+       "top": 2209,
        "hsl": {
-        "h": 220,
-        "s": 0.14,
+        "h": 213,
+        "s": 0.36,
+        "l": 0.95
+       }
+      },
+      {
+       "color": "#ecf6fd",
+       "top": 7221,
+       "hsl": {
+        "h": 205,
+        "s": 0.81,
         "l": 0.96
-       }
-      },
-      {
-       "color": "#e8f3f5",
-       "top": 3664,
-       "hsl": {
-        "h": 189,
-        "s": 0.39,
-        "l": 0.94
        }
       }
      ],
      "textColors": [
       {
-       "color": "#b9bbbd",
-       "share": 0.43
+       "color": "#4b5768",
+       "share": 0.33
       },
       {
-       "color": "#111827",
+       "color": "#8792a3",
        "share": 0.25
       },
       {
-       "color": "#fafaf7",
-       "share": 0.17
+       "color": "#0b1626",
+       "share": 0.19
       },
       {
-       "color": "#4b5563",
-       "share": 0.16
+       "color": "#ffffff",
+       "share": 0.12
+      },
+      {
+       "color": "#e2e3e5",
+       "share": 0.1
       }
      ],
      "button": {
-      "bg": "#111827",
+      "bg": "#0b1626",
       "hsl": {
-       "h": 221,
-       "s": 0.39,
-       "l": 0.11
+       "h": 216,
+       "s": 0.55,
+       "l": 0.1
       },
-      "fg": "#fafaf7"
+      "fg": "#ffffff"
      },
      "lowContrast": []
     },
     "buttons": {
-     "count": 5,
-     "inHero": 2,
+     "count": 6,
+     "inHero": 3,
      "radius": "pill",
-     "height": 50,
+     "height": 44,
      "withShadow": 0,
      "withGradient": 0,
      "mono": 0,
      "upper": 0,
      "heroLabels": [
       "Skip to content",
+      "Pause film",
       "See a year of jugs"
      ]
     },
@@ -992,37 +1198,35 @@
      "scrims": 0,
      "gradientSamples": [],
      "gradientText": 0,
-     "hairlines": 1,
-     "hairlineSamples": [
-      "header.nav 768px"
-     ],
+     "hairlines": 0,
+     "hairlineSamples": [],
      "outlinedBoxes": 0,
      "dashed": 0,
      "blurred": 0,
-     "roundedBoxes": 1,
+     "roundedBoxes": 2,
      "boxRadius": 20,
-     "squareMedia": 0,
-     "roundedMedia": 0,
-     "mediaRadius": 0,
+     "squareMedia": 2,
+     "roundedMedia": 4,
+     "mediaRadius": 20,
      "textShadow": 0,
      "cardRows": []
     },
     "heroMedia": [
      {
-      "type": "svg",
-      "ratio": 0.51
+      "type": "video",
+      "ratio": 0.84
      }
     ],
     "nav": {
      "links": 1,
      "fixed": true,
-     "height": 65,
+     "height": 64,
      "floatingPill": false,
      "blur": false
     },
     "fontsLoaded": [
-     "plus jakarta sans",
-     "inter"
+     "league spartan",
+     "outfit"
     ]
    },
    "layout": {
@@ -1030,52 +1234,121 @@
      "w": 768,
      "h": 1024
     },
-    "pageH": 6670,
+    "pageH": 10569,
     "margins": {
      "left": 16,
      "right": 16
     },
     "sections": [
      {
-      "sel": "section.ev-hero",
+      "sel": "section.ev-film",
       "tag": "section",
-      "top": 65,
-      "height": 1244,
-      "words": 62,
+      "top": 64,
+      "height": 860,
+      "words": 49,
       "media": 1,
-      "middle": 0,
+      "middle": 198,
       "heading": {
        "text": "Less plastic,",
-       "size": 48,
+       "size": 44,
        "tag": "h1"
       },
       "left": 16,
       "right": 16,
       "textLeft": 16,
-      "textRight": 205,
-      "fullBleed": false,
+      "textRight": 32,
+      "fullBleed": true,
       "footer": false,
       "hero": true,
       "continues": true,
       "pinned": false
      },
      {
+      "sel": "section.ev-hero",
+      "tag": "section",
+      "top": 924,
+      "height": 1083,
+      "words": 49,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "Today,",
+       "size": 36,
+       "tag": "h2"
+      },
+      "left": 16,
+      "right": 16,
+      "textLeft": 16,
+      "textRight": 248,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.ev-photos",
+      "tag": "section",
+      "top": 2007,
+      "height": 2367,
+      "words": 66,
+      "media": 3,
+      "middle": 0,
+      "heading": {
+       "text": "Where",
+       "size": 28,
+       "tag": "h2"
+      },
+      "left": 16,
+      "right": 16,
+      "textLeft": 16,
+      "textRight": 291,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.ev-forest",
+      "tag": "section",
+      "top": 4374,
+      "height": 492,
+      "words": 23,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "Keep the green the way it is.",
+       "size": 28,
+       "tag": "h2"
+      },
+      "left": 16,
+      "right": 16,
+      "textLeft": 40,
+      "textRight": 326,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
       "sel": "section#year.ky",
       "tag": "section",
-      "top": 1309,
+      "top": 4866,
       "height": 2355,
       "words": 38,
       "media": 1,
       "middle": 0,
       "heading": {
        "text": "Week 1",
-       "size": 40,
+       "size": 36,
        "tag": "p"
       },
       "left": 16,
       "right": 16,
       "textLeft": 16,
-      "textRight": 34,
+      "textRight": 35,
       "fullBleed": false,
       "footer": false,
       "hero": false,
@@ -1085,20 +1358,20 @@
      {
       "sel": "section.dc",
       "tag": "section",
-      "top": 3664,
-      "height": 914,
+      "top": 7221,
+      "height": 881,
       "words": 46,
       "media": 1,
       "middle": 0,
       "heading": {
        "text": "Nothing left to tick.",
-       "size": 40,
+       "size": 36,
        "tag": "h2"
       },
       "left": 16,
-      "right": 338,
+      "right": 308,
       "textLeft": 16,
-      "textRight": 338,
+      "textRight": 308,
       "fullBleed": true,
       "footer": false,
       "hero": false,
@@ -1108,20 +1381,20 @@
      {
       "sel": "section.ev-proof",
       "tag": "section",
-      "top": 4577,
-      "height": 755,
-      "words": 90,
+      "top": 8102,
+      "height": 732,
+      "words": 89,
       "media": 0,
       "middle": 0,
       "heading": {
        "text": "Proof",
-       "size": 32,
+       "size": 28,
        "tag": "h2"
       },
       "left": 16,
-      "right": 309,
+      "right": 291,
       "textLeft": 16,
-      "textRight": 309,
+      "textRight": 291,
       "fullBleed": false,
       "footer": false,
       "hero": false,
@@ -1131,20 +1404,20 @@
      {
       "sel": "section.closing",
       "tag": "section",
-      "top": 5333,
-      "height": 351,
-      "words": 29,
+      "top": 8833,
+      "height": 489,
+      "words": 105,
       "media": 0,
       "middle": 0,
       "heading": {
        "text": "Leave",
-       "size": 32,
+       "size": 28,
        "tag": "h2"
       },
-      "left": 163,
-      "right": 163,
-      "textLeft": 163,
-      "textRight": 163,
+      "left": 25,
+      "right": 25,
+      "textLeft": 25,
+      "textRight": 25,
       "fullBleed": false,
       "footer": false,
       "hero": false,
@@ -1154,14 +1427,14 @@
      {
       "sel": "footer.footer",
       "tag": "footer",
-      "top": 5683,
-      "height": 987,
-      "words": 49,
-      "media": 0,
-      "middle": 295,
+      "top": 9322,
+      "height": 1247,
+      "words": 46,
+      "media": 1,
+      "middle": 0,
       "heading": null,
       "left": 16,
-      "right": 58,
+      "right": 38,
       "textLeft": 16,
       "textRight": 58,
       "fullBleed": false,
@@ -1174,9 +1447,9 @@
     "gaps": [],
     "h1s": [
      {
-      "text": "Less plastic, in every home.",
-      "size": 48,
-      "top": 113,
+      "text": "Less plastic, more green.",
+      "size": 44,
+      "top": 561,
       "firstScreen": true
      }
     ],
@@ -1184,18 +1457,42 @@
     "edges": [
      {
       "x": 16,
-      "n": 9
+      "n": 14
      },
      {
-      "x": 105,
+      "x": 88,
       "n": 1
      },
      {
-      "x": 212,
+      "x": 103,
+      "n": 1
+     },
+     {
+      "x": 127,
+      "n": 1
+     },
+     {
+      "x": 150,
+      "n": 1
+     },
+     {
+      "x": 174,
+      "n": 1
+     },
+     {
+      "x": 195,
+      "n": 1
+     },
+     {
+      "x": 238,
+      "n": 1
+     },
+     {
+      "x": 271,
       "n": 1
      }
     ],
-    "leftBlocks": 11,
+    "leftBlocks": 22,
     "bodySize": 18,
     "stage": false,
     "explains": true,
@@ -1210,23 +1507,27 @@
    "width": 390,
    "height": 844,
    "load": "load",
-   "screens": 7,
+   "screens": 11,
    "filled": [
-    0.97,
-    0.98,
-    0.96,
-    0.97,
-    0.97,
-    0.63,
-    0.97
+    1,
+    0.92,
+    0.79,
+    0.72,
+    0.91,
+    0.99,
+    0.99,
+    1,
+    0.69,
+    0.83,
+    0.99
    ],
    "motion": {
-    "elements": 139,
-    "css": 65,
-    "transitions": 60,
-    "scripted": 14,
-    "videos": 0,
-    "playingVideos": 0
+    "elements": 157,
+    "css": 68,
+    "transitions": 64,
+    "scripted": 25,
+    "videos": 1,
+    "playingVideos": 1
    },
    "metrics": {
     "viewport": {
@@ -1234,22 +1535,27 @@
      "h": 844
     },
     "page": {
-     "height": 5892,
-     "screens": 7,
-     "words": 350,
-     "img": 0,
-     "video": 0,
+     "height": 8853,
+     "screens": 10.5,
+     "words": 539,
+     "img": 6,
+     "video": 1,
      "canvas": 0,
-     "svg": 21,
-     "sections": 5,
+     "svg": 22,
+     "sections": 8,
      "horizontalOverflow": 0,
      "overflowCulprits": [],
      "uiFragments": 0,
      "uiAbuse": false,
-     "realPictures": 0,
-     "videoCount": 0,
+     "realPictures": 5,
+     "videoCount": 1,
      "uiPictures": 0,
-     "pictureSamples": [],
+     "pictureSamples": [
+      "beach-800.webp",
+      "stream-600.webp",
+      "bales-600.webp",
+      "forest-640.webp"
+     ],
      "blendText": 0,
      "sideScrollers": 0,
      "brokenImages": [],
@@ -1257,15 +1563,15 @@
      "videosNoPoster": 0
     },
     "hero": {
-     "text": "Less plastic, in every home.",
-     "words": 5,
-     "chars": 28,
+     "text": "Less plastic, more green.",
+     "words": 4,
+     "chars": 25,
      "lines": 2,
-     "size": 48,
-     "vw": 12.3,
-     "font": "Plus Jakarta Sans",
+     "size": 44,
+     "vw": 11.3,
+     "font": "League Spartan",
      "weight": 700,
-     "tracking": -0.035,
+     "tracking": -0.01,
      "leading": 1,
      "upper": false,
      "italic": false,
@@ -1273,49 +1579,28 @@
      "align": "left",
      "position": "center",
      "widthRatio": 0.92,
-     "top": 113,
+     "top": 392,
      "tag": "h1",
      "kind": "heading"
     },
     "h1": {
-     "text": "Less plastic, in every home.",
-     "words": 5,
+     "text": "Less plastic, more green.",
+     "words": 4,
      "lines": 2,
-     "size": 48,
-     "font": "Plus Jakarta Sans"
+     "size": 44,
+     "font": "League Spartan"
     },
     "headings": [
      {
-      "text": "Moya One",
-      "words": 2,
-      "chars": 8,
-      "lines": 1,
-      "size": 22,
-      "vw": 5.6,
-      "font": "Plus Jakarta Sans",
-      "weight": 700,
-      "tracking": -0.035,
-      "leading": 1.6,
-      "upper": false,
-      "italic": false,
-      "mono": false,
-      "align": "left",
-      "position": "left",
-      "widthRatio": 0.36,
-      "top": 10,
-      "tag": "a",
-      "kind": "heading"
-     },
-     {
-      "text": "Less plastic, in every home.",
-      "words": 5,
-      "chars": 28,
+      "text": "Less plastic, more green.",
+      "words": 4,
+      "chars": 25,
       "lines": 2,
-      "size": 48,
-      "vw": 12.3,
-      "font": "Plus Jakarta Sans",
+      "size": 44,
+      "vw": 11.3,
+      "font": "League Spartan",
       "weight": 700,
-      "tracking": -0.035,
+      "tracking": -0.01,
       "leading": 1,
       "upper": false,
       "italic": false,
@@ -1323,8 +1608,71 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.92,
-      "top": 113,
+      "top": 392,
       "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "Today, and with MoyaOne.",
+      "words": 4,
+      "chars": 24,
+      "lines": 2,
+      "size": 36,
+      "vw": 9.2,
+      "font": "League Spartan",
+      "weight": 700,
+      "tracking": -0.01,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 916,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Where the plastic goes.",
+      "words": 4,
+      "chars": 23,
+      "lines": 1,
+      "size": 28,
+      "vw": 7.2,
+      "font": "League Spartan",
+      "weight": 700,
+      "tracking": 0,
+      "leading": 1.15,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 1750,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Keep the green the way it is.",
+      "words": 7,
+      "chars": 29,
+      "lines": 2,
+      "size": 28,
+      "vw": 7.2,
+      "font": "League Spartan",
+      "weight": 700,
+      "tracking": -0.01,
+      "leading": 1.15,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.79,
+      "top": 3355,
+      "tag": "h2",
       "kind": "heading"
      },
      {
@@ -1332,19 +1680,19 @@
       "words": 5,
       "chars": 22,
       "lines": 1,
-      "size": 32,
-      "vw": 8.2,
-      "font": "Plus Jakarta Sans",
+      "size": 28,
+      "vw": 7.2,
+      "font": "League Spartan",
       "weight": 700,
-      "tracking": -0.02,
-      "leading": 1.1,
+      "tracking": 0,
+      "leading": 1.15,
       "upper": false,
       "italic": false,
       "mono": false,
       "align": "left",
       "position": "center",
       "widthRatio": 0.92,
-      "top": 1136,
+      "top": 3708,
       "tag": "h2",
       "kind": "heading"
      },
@@ -1353,11 +1701,11 @@
       "words": 2,
       "chars": 6,
       "lines": 1,
-      "size": 40,
-      "vw": 10.3,
-      "font": "Plus Jakarta Sans",
+      "size": 36,
+      "vw": 9.2,
+      "font": "League Spartan",
       "weight": 700,
-      "tracking": -0.03,
+      "tracking": -0.01,
       "leading": 1,
       "upper": false,
       "italic": false,
@@ -1365,7 +1713,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.92,
-      "top": 1232,
+      "top": 3801,
       "tag": "p",
       "kind": "statement"
      },
@@ -1374,11 +1722,11 @@
       "words": 4,
       "chars": 21,
       "lines": 1,
-      "size": 40,
-      "vw": 10.3,
-      "font": "Plus Jakarta Sans",
+      "size": 36,
+      "vw": 9.2,
+      "font": "League Spartan",
       "weight": 700,
-      "tracking": -0.03,
+      "tracking": -0.01,
       "leading": 1.05,
       "upper": false,
       "italic": false,
@@ -1386,7 +1734,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.92,
-      "top": 3066,
+      "top": 5635,
       "tag": "h2",
       "kind": "heading"
      },
@@ -1395,19 +1743,19 @@
       "words": 3,
       "chars": 21,
       "lines": 1,
-      "size": 32,
-      "vw": 8.2,
-      "font": "Plus Jakarta Sans",
+      "size": 28,
+      "vw": 7.2,
+      "font": "League Spartan",
       "weight": 700,
-      "tracking": -0.02,
-      "leading": 1.1,
+      "tracking": 0,
+      "leading": 1.15,
       "upper": false,
       "italic": false,
       "mono": false,
       "align": "left",
       "position": "center",
       "widthRatio": 0.92,
-      "top": 3800,
+      "top": 6364,
       "tag": "h2",
       "kind": "heading"
      },
@@ -1415,64 +1763,43 @@
       "text": "Leave the jug run behind.",
       "words": 5,
       "chars": 25,
-      "lines": 2,
-      "size": 32,
-      "vw": 8.2,
-      "font": "Plus Jakarta Sans",
+      "lines": 1,
+      "size": 28,
+      "vw": 7.2,
+      "font": "League Spartan",
       "weight": 700,
-      "tracking": -0.02,
-      "leading": 1.1,
+      "tracking": 0,
+      "leading": 1.15,
       "upper": false,
       "italic": false,
       "mono": false,
       "align": "center",
       "position": "center",
-      "widthRatio": 0.92,
-      "top": 4584,
+      "widthRatio": 0.81,
+      "top": 7152,
       "tag": "h2",
       "kind": "heading"
-     },
-     {
-      "text": "Moya One",
-      "words": 2,
-      "chars": 8,
-      "lines": 1,
-      "size": 80.3,
-      "vw": 20.6,
-      "font": "Plus Jakarta Sans",
-      "weight": 700,
-      "tracking": -0.055,
-      "leading": 0.8,
-      "upper": false,
-      "italic": false,
-      "mono": false,
-      "align": "left",
-      "position": "center",
-      "widthRatio": 0.94,
-      "top": 5841,
-      "tag": "p",
-      "kind": "statement"
      }
     ],
     "headingSummary": {
-     "count": 8,
+     "count": 9,
      "maxLines": 2,
      "over2Lines": 0,
-     "statements": 2,
+     "statements": 1,
      "centered": 1,
-     "medianWords": 3,
+     "medianWords": 4,
      "mixedFontHeadings": 0
     },
     "type": {
      "families": [
       {
-       "family": "Inter",
-       "share": 0.86,
+       "family": "Outfit",
+       "share": 0.85,
        "mono": false
       },
       {
-       "family": "Plus Jakarta Sans",
-       "share": 0.14,
+       "family": "League Spartan",
+       "share": 0.15,
        "mono": false
       }
      ],
@@ -1481,30 +1808,29 @@
       13,
       15,
       16,
+      17,
       18,
       20,
-      22,
-      32,
-      40,
-      48,
-      80
+      28,
+      36,
+      44
      ],
-     "sizeCount": 10,
+     "sizeCount": 9,
      "notLoaded": [],
      "body": {
-      "font": "Inter",
+      "font": "Outfit",
       "size": 18,
       "leading": 1.6,
       "weight": 400,
       "tracking": 0,
-      "contrast": 9.2
+      "contrast": 14.1
      },
-     "measureChars": 40,
+     "measureChars": 60,
      "max": {
-      "size": 80.3,
-      "vw": 20.6,
-      "font": "Plus Jakarta Sans",
-      "text": "Moya One"
+      "size": 44,
+      "vw": 11.3,
+      "font": "League Spartan",
+      "text": "Less plastic, more green."
      },
      "monoShare": 0,
      "monoProseShare": 0,
@@ -1513,84 +1839,88 @@
      "microLabels": 0,
      "microLabelShare": 0,
      "microSamples": [],
-     "upperShare": 0,
-     "centerShare": 0.13,
+     "upperShare": 0.02,
+     "centerShare": 0.24,
      "smallText": 0
     },
     "eyebrows": [],
     "numbered": [],
     "color": {
-     "bodyBg": "#fafaf7",
+     "bodyBg": "#ffffff",
      "bodyBgHsl": {
-      "h": 60,
-      "s": 0.23,
-      "l": 0.97
+      "h": 0,
+      "s": 0,
+      "l": 1
      },
      "dark": false,
      "sectionBgs": [
       {
-       "color": "#111827",
-       "top": 65,
+       "color": "#0b1626",
+       "top": 64,
        "hsl": {
-        "h": 221,
-        "s": 0.39,
-        "l": 0.11
+        "h": 216,
+        "s": 0.55,
+        "l": 0.1
        }
       },
       {
-       "color": "#fafaf7",
-       "top": 534,
+       "color": "#ffffff",
+       "top": 1159,
        "hsl": {
-        "h": 60,
-        "s": 0.23,
-        "l": 0.97
+        "h": 0,
+        "s": 0,
+        "l": 1
        }
       },
       {
-       "color": "#f3f4f6",
-       "top": 1053,
+       "color": "#eef2f7",
+       "top": 2164,
        "hsl": {
-        "h": 220,
-        "s": 0.14,
+        "h": 213,
+        "s": 0.36,
+        "l": 0.95
+       }
+      },
+      {
+       "color": "#ecf6fd",
+       "top": 5563,
+       "hsl": {
+        "h": 205,
+        "s": 0.81,
         "l": 0.96
-       }
-      },
-      {
-       "color": "#e8f3f5",
-       "top": 2994,
-       "hsl": {
-        "h": 189,
-        "s": 0.39,
-        "l": 0.94
        }
       }
      ],
      "textColors": [
       {
-       "color": "#b9bbbd",
-       "share": 0.43
+       "color": "#4b5768",
+       "share": 0.33
       },
       {
-       "color": "#111827",
+       "color": "#8792a3",
        "share": 0.25
       },
       {
-       "color": "#fafaf7",
-       "share": 0.17
+       "color": "#0b1626",
+       "share": 0.19
       },
       {
-       "color": "#4b5563",
-       "share": 0.16
+       "color": "#ffffff",
+       "share": 0.12
+      },
+      {
+       "color": "#e2e3e5",
+       "share": 0.1
       }
      ],
      "button": {
-      "bg": "#111827",
+      "bg": "#0b1626",
       "hsl": {
-       "h": 221,
-       "s": 0.39,
-       "l": 0.11
+       "h": 216,
+       "s": 0.55,
+       "l": 0.1
       },
-      "fg": "#fafaf7"
+      "fg": "#ffffff"
      },
      "lowContrast": []
     },
@@ -1598,7 +1928,7 @@
      "count": 5,
      "inHero": 2,
      "radius": "pill",
-     "height": 50,
+     "height": 52,
      "withShadow": 0,
      "withGradient": 0,
      "mono": 0,
@@ -1616,37 +1946,35 @@
      "scrims": 0,
      "gradientSamples": [],
      "gradientText": 0,
-     "hairlines": 1,
-     "hairlineSamples": [
-      "header.nav 390px"
-     ],
+     "hairlines": 0,
+     "hairlineSamples": [],
      "outlinedBoxes": 0,
      "dashed": 0,
      "blurred": 0,
-     "roundedBoxes": 2,
+     "roundedBoxes": 3,
      "boxRadius": 20,
-     "squareMedia": 0,
-     "roundedMedia": 0,
-     "mediaRadius": 0,
+     "squareMedia": 2,
+     "roundedMedia": 4,
+     "mediaRadius": 20,
      "textShadow": 0,
      "cardRows": []
     },
     "heroMedia": [
      {
-      "type": "svg",
-      "ratio": 0.33
+      "type": "video",
+      "ratio": 0.92
      }
     ],
     "nav": {
      "links": 1,
      "fixed": true,
-     "height": 65,
+     "height": 64,
      "floatingPill": false,
      "blur": false
     },
     "fontsLoaded": [
-     "plus jakarta sans",
-     "inter"
+     "league spartan",
+     "outfit"
     ]
    },
    "layout": {
@@ -1654,24 +1982,70 @@
      "w": 390,
      "h": 844
     },
-    "pageH": 5892,
+    "pageH": 8853,
     "margins": {
      "left": 16,
      "right": 16
     },
     "sections": [
      {
-      "sel": "section.ev-hero",
+      "sel": "section.ev-film",
       "tag": "section",
-      "top": 65,
-      "height": 988,
-      "words": 62,
+      "top": 64,
+      "height": 780,
+      "words": 47,
       "media": 1,
       "middle": 0,
       "heading": {
        "text": "Less plastic,",
-       "size": 48,
+       "size": 44,
        "tag": "h1"
+      },
+      "left": 16,
+      "right": 16,
+      "textLeft": 16,
+      "textRight": 25,
+      "fullBleed": true,
+      "footer": false,
+      "hero": true,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.ev-hero",
+      "tag": "section",
+      "top": 844,
+      "height": 834,
+      "words": 49,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "Today,",
+       "size": 36,
+       "tag": "h2"
+      },
+      "left": 16,
+      "right": 16,
+      "textLeft": 16,
+      "textRight": 34,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.ev-photos",
+      "tag": "section",
+      "top": 1678,
+      "height": 1452,
+      "words": 66,
+      "media": 3,
+      "middle": 0,
+      "heading": {
+       "text": "Where",
+       "size": 28,
+       "tag": "h2"
       },
       "left": 16,
       "right": 16,
@@ -1679,21 +2053,44 @@
       "textRight": 23,
       "fullBleed": false,
       "footer": false,
-      "hero": true,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.ev-forest",
+      "tag": "section",
+      "top": 3130,
+      "height": 492,
+      "words": 23,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "Keep the green the way it is.",
+       "size": 28,
+       "tag": "h2"
+      },
+      "left": 16,
+      "right": 16,
+      "textLeft": 40,
+      "textRight": 86,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
       "continues": true,
       "pinned": false
      },
      {
       "sel": "section#year.ky",
       "tag": "section",
-      "top": 1053,
+      "top": 3622,
       "height": 1941,
       "words": 38,
       "media": 1,
       "middle": 0,
       "heading": {
        "text": "Week 1",
-       "size": 40,
+       "size": 36,
        "tag": "p"
       },
       "left": 16,
@@ -1709,20 +2106,20 @@
      {
       "sel": "section.dc",
       "tag": "section",
-      "top": 2994,
-      "height": 733,
+      "top": 5563,
+      "height": 729,
       "words": 46,
       "media": 1,
       "middle": 0,
       "heading": {
        "text": "Nothing left to tick.",
-       "size": 40,
+       "size": 36,
        "tag": "h2"
       },
       "left": 13,
       "right": 13,
       "textLeft": 16,
-      "textRight": 23,
+      "textRight": 21,
       "fullBleed": false,
       "footer": false,
       "hero": false,
@@ -1732,20 +2129,20 @@
      {
       "sel": "section.ev-proof",
       "tag": "section",
-      "top": 3728,
-      "height": 784,
-      "words": 90,
+      "top": 6292,
+      "height": 788,
+      "words": 89,
       "media": 0,
       "middle": 0,
       "heading": {
        "text": "Proof",
-       "size": 32,
+       "size": 28,
        "tag": "h2"
       },
       "left": 16,
-      "right": 26,
+      "right": 16,
       "textLeft": 16,
-      "textRight": 26,
+      "textRight": 16,
       "fullBleed": false,
       "footer": false,
       "hero": false,
@@ -1755,20 +2152,20 @@
      {
       "sel": "section.closing",
       "tag": "section",
-      "top": 4512,
-      "height": 415,
-      "words": 29,
+      "top": 7080,
+      "height": 661,
+      "words": 105,
       "media": 0,
       "middle": 0,
       "heading": {
        "text": "Leave",
-       "size": 32,
+       "size": 28,
        "tag": "h2"
       },
-      "left": 32,
-      "right": 32,
-      "textLeft": 32,
-      "textRight": 32,
+      "left": 21,
+      "right": 21,
+      "textLeft": 21,
+      "textRight": 21,
       "fullBleed": false,
       "footer": false,
       "hero": false,
@@ -1778,16 +2175,16 @@
      {
       "sel": "footer.footer",
       "tag": "footer",
-      "top": 4926,
-      "height": 966,
-      "words": 49,
-      "media": 0,
+      "top": 7741,
+      "height": 1112,
+      "words": 46,
+      "media": 1,
       "middle": 0,
       "heading": null,
       "left": 16,
-      "right": 44,
+      "right": 26,
       "textLeft": 16,
-      "textRight": 44,
+      "textRight": 26,
       "fullBleed": false,
       "footer": true,
       "hero": false,
@@ -1798,9 +2195,9 @@
     "gaps": [],
     "h1s": [
      {
-      "text": "Less plastic, in every home.",
-      "size": 48,
-      "top": 113,
+      "text": "Less plastic, more green.",
+      "size": 44,
+      "top": 392,
       "firstScreen": true
      }
     ],
@@ -1808,18 +2205,34 @@
     "edges": [
      {
       "x": 16,
-      "n": 9
+      "n": 15
      },
      {
-      "x": 105,
+      "x": 88,
+      "n": 2
+     },
+     {
+      "x": 103,
       "n": 1
      },
      {
-      "x": 212,
+      "x": 127,
+      "n": 1
+     },
+     {
+      "x": 150,
+      "n": 1
+     },
+     {
+      "x": 174,
+      "n": 1
+     },
+     {
+      "x": 238,
       "n": 1
      }
     ],
-    "leftBlocks": 11,
+    "leftBlocks": 22,
     "bodySize": 18,
     "stage": false,
     "explains": true,
@@ -1834,39 +2247,23 @@
  "findings": [
   {
    "level": "WARN",
-   "id": "hairline",
+   "id": "size-count",
    "width": 1440,
-   "message": "1 thin rule(s)/divider line(s): header.nav 1440px",
-   "fix": "Delete. Separate with space, a tone change, or scale. Lines are only for real tables and form fields.",
+   "message": "10 different font sizes (13, 14, 15, 16, 17, 20, 22, 32, 48, 72).",
+   "fix": "A page needs about five: display, heading, lead, body, small.",
    "alsoAt": [
-    768,
-    390
+    768
    ]
   },
   {
    "level": "WARN",
-   "id": "palette-cream",
+   "id": "measure",
    "width": 1440,
-   "message": "Yellow-cream background (page background #fafaf7, text #fafaf7).",
-   "fix": "Use the drawn palette. If you want warmth, take a low-chroma stone or bone, not a yellow cream.",
+   "message": "Longest paragraph runs about 199 characters per line.",
+   "fix": "Cap paragraphs at 45–75 characters (max-width: 60ch).",
    "alsoAt": [
-    768,
-    390
+    768
    ]
-  },
-  {
-   "level": "FAIL",
-   "id": "few-pictures",
-   "width": 1440,
-   "message": "Only 0 picture(s) on the page (0 photographs, footage or raster images, 0 interface fragments). Drawings in SVG do not count.",
-   "fix": "Find real pictures of the subject's world with scripts/assets.mjs (photographs, archival images, maps, engravings, footage), download them to assets/ and give them room: a hero picture, one per section that has a subject, a full-width band. At least four, usually six to twelve."
-  },
-  {
-   "level": "WARN",
-   "id": "no-footage",
-   "width": 1440,
-   "message": "No video anywhere on the page.",
-   "fix": "Look for one honest clip with scripts/assets.mjs --video (the place, the material, the process) and use it as a muted loop with a poster frame. Defend its absence only if no clip fits the subject."
   },
   {
    "level": "WARN",
@@ -1874,23 +2271,6 @@
    "width": 1440,
    "message": "The same large text stays on screen for 3 screens in a row: \"A year in one kitchen.\"",
    "fix": "A pinned element earns two screens, and something must change at each. Shorten the run or give every screen its own content."
-  },
-  {
-   "level": "WARN",
-   "id": "size-count",
-   "width": 768,
-   "message": "10 different font sizes (13, 15, 16, 18, 20, 22, 32, 40, 48, 165).",
-   "fix": "A page needs about five: display, heading, lead, body, small.",
-   "alsoAt": [
-    390
-   ]
-  },
-  {
-   "level": "FAIL",
-   "id": "covered-text",
-   "width": 390,
-   "message": "Large text lies under another element at some scroll position: \"Moya One\" (screen 7, 38% hidden)",
-   "fix": "Nothing may sit on top of a headline or statement. Move the picture, shorten the pinned run, or raise the text above it (z-index) and give it a ground."
   }
  ],
  "images": [
@@ -1900,7 +2280,8 @@
    "fold": "C:\\Users\\Dell\\Documents\\Moya-one-final\\.taste-skill\\inspect-environment\\desktop-fold.jpg",
    "pages": [
     "C:\\Users\\Dell\\Documents\\Moya-one-final\\.taste-skill\\inspect-environment\\desktop-page-01.jpg",
-    "C:\\Users\\Dell\\Documents\\Moya-one-final\\.taste-skill\\inspect-environment\\desktop-page-02.jpg"
+    "C:\\Users\\Dell\\Documents\\Moya-one-final\\.taste-skill\\inspect-environment\\desktop-page-02.jpg",
+    "C:\\Users\\Dell\\Documents\\Moya-one-final\\.taste-skill\\inspect-environment\\desktop-page-03.jpg"
    ],
    "film": []
   },
@@ -1919,7 +2300,8 @@
    "width": 390,
    "fold": "C:\\Users\\Dell\\Documents\\Moya-one-final\\.taste-skill\\inspect-environment\\mobile-fold.jpg",
    "pages": [
-    "C:\\Users\\Dell\\Documents\\Moya-one-final\\.taste-skill\\inspect-environment\\mobile-page-01.jpg"
+    "C:\\Users\\Dell\\Documents\\Moya-one-final\\.taste-skill\\inspect-environment\\mobile-page-01.jpg",
+    "C:\\Users\\Dell\\Documents\\Moya-one-final\\.taste-skill\\inspect-environment\\mobile-page-02.jpg"
    ],
    "film": []
   }

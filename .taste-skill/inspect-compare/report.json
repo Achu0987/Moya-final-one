@@ -1,25 +1,24 @@
 {
  "url": "http://localhost:3123/compare",
- "at": "2026-10-29T04:59:02.321Z",
+ "at": "2026-11-11T13:33:50.076Z",
  "allow": [],
  "viewports": [
   {
    "width": 1440,
    "height": 900,
    "load": "load",
-   "screens": 5,
+   "screens": 4,
    "filled": [
-    0.75,
+    0.96,
+    0.38,
     0.51,
-    0.73,
-    0.95,
-    0.95
+    0.93
    ],
    "motion": {
-    "elements": 39,
-    "css": 5,
-    "transitions": 18,
-    "scripted": 16,
+    "elements": 25,
+    "css": 4,
+    "transitions": 6,
+    "scripted": 15,
     "videos": 0,
     "playingVideos": 0
    },
@@ -29,22 +28,26 @@
      "h": 900
     },
     "page": {
-     "height": 3693,
-     "screens": 4.1,
-     "words": 430,
-     "img": 0,
+     "height": 3569,
+     "screens": 4,
+     "words": 433,
+     "img": 8,
      "video": 0,
      "canvas": 0,
-     "svg": 22,
+     "svg": 18,
      "sections": 4,
      "horizontalOverflow": 0,
      "overflowCulprits": [],
      "uiFragments": 0,
      "uiAbuse": false,
-     "realPictures": 0,
+     "realPictures": 3,
      "videoCount": 0,
      "uiPictures": 0,
-     "pictureSamples": [],
+     "pictureSamples": [
+      "drinking-800.webp",
+      "jug.webp",
+      "ro-filter.webp"
+     ],
      "blendText": 0,
      "sideScrollers": 0,
      "brokenImages": [],
@@ -56,19 +59,19 @@
      "words": 5,
      "chars": 29,
      "lines": 2,
-     "size": 96,
-     "vw": 6.7,
-     "font": "Plus Jakarta Sans",
+     "size": 72,
+     "vw": 5,
+     "font": "League Spartan",
      "weight": 700,
-     "tracking": -0.035,
-     "leading": 0.95,
+     "tracking": -0.01,
+     "leading": 1,
      "upper": false,
      "italic": false,
      "mono": false,
      "align": "left",
      "position": "left",
      "widthRatio": 0.48,
-     "top": 195,
+     "top": 289,
      "tag": "h1",
      "kind": "heading"
     },
@@ -76,8 +79,8 @@
      "text": "Three ways to drinking water.",
      "words": 5,
      "lines": 2,
-     "size": 96,
-     "font": "Plus Jakarta Sans"
+     "size": 72,
+     "font": "League Spartan"
     },
     "headings": [
      {
@@ -85,19 +88,19 @@
       "words": 5,
       "chars": 29,
       "lines": 2,
-      "size": 96,
-      "vw": 6.7,
-      "font": "Plus Jakarta Sans",
+      "size": 72,
+      "vw": 5,
+      "font": "League Spartan",
       "weight": 700,
-      "tracking": -0.035,
-      "leading": 0.95,
+      "tracking": -0.01,
+      "leading": 1,
       "upper": false,
       "italic": false,
       "mono": false,
       "align": "left",
       "position": "left",
       "widthRatio": 0.48,
-      "top": 195,
+      "top": 289,
       "tag": "h1",
       "kind": "heading"
      },
@@ -106,19 +109,19 @@
       "words": 3,
       "chars": 13,
       "lines": 1,
-      "size": 64,
-      "vw": 4.4,
-      "font": "Plus Jakarta Sans",
+      "size": 48,
+      "vw": 3.3,
+      "font": "League Spartan",
       "weight": 700,
-      "tracking": -0.03,
-      "leading": 1,
+      "tracking": -0.01,
+      "leading": 1.05,
       "upper": false,
       "italic": false,
       "mono": false,
       "align": "left",
       "position": "left",
       "widthRatio": 0.41,
-      "top": 858,
+      "top": 1022,
       "tag": "h2",
       "kind": "heading"
      },
@@ -127,19 +130,19 @@
       "words": 2,
       "chars": 12,
       "lines": 1,
-      "size": 64,
-      "vw": 4.4,
-      "font": "Plus Jakarta Sans",
+      "size": 48,
+      "vw": 3.3,
+      "font": "League Spartan",
       "weight": 700,
-      "tracking": -0.03,
-      "leading": 1,
+      "tracking": -0.01,
+      "leading": 1.05,
       "upper": false,
       "italic": false,
       "mono": false,
       "align": "left",
       "position": "left",
       "widthRatio": 0.41,
-      "top": 1844,
+      "top": 2162,
       "tag": "h2",
       "kind": "heading"
      },
@@ -147,31 +150,31 @@
       "text": "One thing to know.",
       "words": 4,
       "chars": 18,
-      "lines": 2,
-      "size": 64,
-      "vw": 4.4,
-      "font": "Plus Jakarta Sans",
+      "lines": 1,
+      "size": 48,
+      "vw": 3.3,
+      "font": "League Spartan",
       "weight": 700,
-      "tracking": -0.03,
-      "leading": 1,
+      "tracking": -0.01,
+      "leading": 1.05,
       "upper": false,
       "italic": false,
       "mono": false,
       "align": "left",
       "position": "left",
       "widthRatio": 0.34,
-      "top": 2448,
+      "top": 2752,
       "tag": "h2",
       "kind": "heading"
      },
      {
-      "text": "Moya One goes in while a tower is built, so it cannot be added to a flat later.",
-      "words": 18,
-      "chars": 79,
+      "text": "MoyaOne goes in while a tower is built, so it cannot be added to a flat later.",
+      "words": 17,
+      "chars": 78,
       "lines": 2,
       "size": 32,
       "vw": 2.2,
-      "font": "Plus Jakarta Sans",
+      "font": "League Spartan",
       "weight": 600,
       "tracking": -0.01,
       "leading": 1.3,
@@ -180,52 +183,31 @@
       "mono": false,
       "align": "left",
       "position": "right",
-      "widthRatio": 0.41,
-      "top": 2448,
-      "tag": "p",
-      "kind": "statement"
-     },
-     {
-      "text": "Moya One",
-      "words": 2,
-      "chars": 8,
-      "lines": 1,
-      "size": 269,
-      "vw": 18.7,
-      "font": "Plus Jakarta Sans",
-      "weight": 700,
-      "tracking": -0.055,
-      "leading": 0.8,
-      "upper": false,
-      "italic": false,
-      "mono": false,
-      "align": "left",
-      "position": "center",
-      "widthRatio": 0.85,
-      "top": 3523,
+      "widthRatio": 0.39,
+      "top": 2752,
       "tag": "p",
       "kind": "statement"
      }
     ],
     "headingSummary": {
-     "count": 6,
+     "count": 5,
      "maxLines": 2,
      "over2Lines": 0,
-     "statements": 2,
+     "statements": 1,
      "centered": 0,
-     "medianWords": 3,
+     "medianWords": 4,
      "mixedFontHeadings": 0
     },
     "type": {
      "families": [
       {
-       "family": "Inter",
-       "share": 0.88,
+       "family": "Outfit",
+       "share": 0.89,
        "mono": false
       },
       {
-       "family": "Plus Jakarta Sans",
-       "share": 0.12,
+       "family": "League Spartan",
+       "share": 0.11,
        "mono": false
       }
      ],
@@ -234,29 +216,29 @@
       13,
       15,
       16,
+      17,
       20,
       22,
       32,
-      64,
-      96,
-      269
+      48,
+      72
      ],
      "sizeCount": 9,
      "notLoaded": [],
      "body": {
-      "font": "Inter",
+      "font": "Outfit",
       "size": 20,
       "leading": 1.6,
       "weight": 400,
       "tracking": 0,
-      "contrast": 9.2
+      "contrast": 5.8
      },
-     "measureChars": 48,
+     "measureChars": 50,
      "max": {
-      "size": 269,
-      "vw": 18.7,
-      "font": "Plus Jakarta Sans",
-      "text": "Moya One"
+      "size": 72,
+      "vw": 5,
+      "font": "League Spartan",
+      "text": "Three ways to drinking water."
      },
      "monoShare": 0,
      "monoProseShare": 0,
@@ -265,72 +247,76 @@
      "microLabels": 0,
      "microLabelShare": 0,
      "microSamples": [],
-     "upperShare": 0,
-     "centerShare": 0.02,
+     "upperShare": 0.01,
+     "centerShare": 0.01,
      "smallText": 0
     },
     "eyebrows": [],
     "numbered": [],
     "color": {
-     "bodyBg": "#fafaf7",
+     "bodyBg": "#ffffff",
      "bodyBgHsl": {
-      "h": 60,
-      "s": 0.23,
-      "l": 0.97
+      "h": 0,
+      "s": 0,
+      "l": 1
      },
      "dark": false,
      "sectionBgs": [
       {
-       "color": "#111827",
+       "color": "#0b1626",
        "top": 89,
        "hsl": {
-        "h": 221,
-        "s": 0.39,
-        "l": 0.11
+        "h": 216,
+        "s": 0.55,
+        "l": 0.1
        }
       },
       {
-       "color": "#e8f3f5",
-       "top": 2328,
+       "color": "#ecf6fd",
+       "top": 2632,
        "hsl": {
-        "h": 189,
-        "s": 0.39,
-        "l": 0.94
+        "h": 205,
+        "s": 0.81,
+        "l": 0.96
        }
       }
      ],
      "textColors": [
       {
-       "color": "#111827",
-       "share": 0.58
+       "color": "#0b1626",
+       "share": 0.54
       },
       {
-       "color": "#b9bbbd",
-       "share": 0.17
+       "color": "#4b5768",
+       "share": 0.21
       },
       {
-       "color": "#4b5563",
-       "share": 0.14
+       "color": "#8792a3",
+       "share": 0.16
       },
       {
-       "color": "#fafaf7",
-       "share": 0.1
+       "color": "#ffffff",
+       "share": 0.08
+      },
+      {
+       "color": "#0450f5",
+       "share": 0.01
       }
      ],
      "button": {
-      "bg": "#111827",
+      "bg": "#0b1626",
       "hsl": {
-       "h": 221,
-       "s": 0.39,
-       "l": 0.11
+       "h": 216,
+       "s": 0.55,
+       "l": 0.1
       },
-      "fg": "#fafaf7"
+      "fg": "#ffffff"
      },
      "lowContrast": []
     },
     "buttons": {
-     "count": 7,
-     "inHero": 4,
+     "count": 6,
+     "inHero": 3,
      "radius": "pill",
      "height": 44,
      "withShadow": 0,
@@ -340,8 +326,7 @@
      "heroLabels": [
       "Skip to content",
       "Contact",
-      "See them side by side",
-      "Moya One"
+      "See them side by side"
      ]
     },
     "surfaces": {
@@ -359,18 +344,18 @@
      "outlinedBoxes": 0,
      "dashed": 0,
      "blurred": 0,
-     "roundedBoxes": 8,
+     "roundedBoxes": 9,
      "boxRadius": 12,
      "squareMedia": 0,
-     "roundedMedia": 0,
-     "mediaRadius": 0,
+     "roundedMedia": 1,
+     "mediaRadius": 20,
      "textShadow": 0,
      "cardRows": []
     },
     "heroMedia": [
      {
-      "type": "svg",
-      "ratio": 0.11
+      "type": "img",
+      "ratio": 0.23
      }
     ],
     "nav": {
@@ -381,8 +366,8 @@
      "blur": false
     },
     "fontsLoaded": [
-     "plus jakarta sans",
-     "inter"
+     "league spartan",
+     "outfit"
     ]
    },
    "layout": {
@@ -390,29 +375,29 @@
      "w": 1440,
      "h": 900
     },
-    "pageH": 3693,
+    "pageH": 3569,
     "margins": {
      "left": 120,
-     "right": 141
+     "right": 145
     },
     "sections": [
      {
       "sel": "section.cp-hero",
       "tag": "section",
       "top": 89,
-      "height": 650,
-      "words": 62,
+      "height": 800,
+      "words": 39,
       "media": 1,
-      "middle": 63,
+      "middle": 217,
       "heading": {
        "text": "Three ways to",
-       "size": 96,
+       "size": 72,
        "tag": "h1"
       },
       "left": 120,
       "right": 120,
       "textLeft": 120,
-      "textRight": 174,
+      "textRight": 823,
       "fullBleed": false,
       "footer": false,
       "hero": true,
@@ -422,20 +407,20 @@
      {
       "sel": "section#side-by-side.cp-table",
       "tag": "section",
-      "top": 739,
-      "height": 1081,
-      "words": 182,
+      "top": 888,
+      "height": 1249,
+      "words": 205,
       "media": 0,
-      "middle": 49,
+      "middle": 0,
       "heading": {
        "text": "Side",
-       "size": 64,
+       "size": 48,
        "tag": "h2"
       },
       "left": 120,
-      "right": 141,
+      "right": 142,
       "textLeft": 120,
-      "textRight": 141,
+      "textRight": 142,
       "fullBleed": false,
       "footer": false,
       "hero": false,
@@ -445,20 +430,20 @@
      {
       "sel": "section.cp-doors",
       "tag": "section",
-      "top": 1820,
-      "height": 508,
-      "words": 52,
+      "top": 2138,
+      "height": 494,
+      "words": 49,
       "media": 2,
-      "middle": 118,
+      "middle": 91,
       "heading": {
        "text": "Look",
-       "size": 64,
+       "size": 48,
        "tag": "h2"
       },
       "left": 120,
-      "right": 141,
+      "right": 167,
       "textLeft": 120,
-      "textRight": 141,
+      "textRight": 167,
       "fullBleed": false,
       "footer": false,
       "hero": false,
@@ -468,20 +453,20 @@
      {
       "sel": "section.cp-note",
       "tag": "section",
-      "top": 2328,
-      "height": 513,
-      "words": 50,
+      "top": 2632,
+      "height": 483,
+      "words": 48,
       "media": 0,
-      "middle": 324,
+      "middle": 219,
       "heading": {
        "text": "One",
-       "size": 64,
+       "size": 48,
        "tag": "h2"
       },
       "left": 120,
-      "right": 126,
+      "right": 147,
       "textLeft": 120,
-      "textRight": 126,
+      "textRight": 147,
       "fullBleed": false,
       "footer": false,
       "hero": false,
@@ -491,11 +476,11 @@
      {
       "sel": "footer.footer",
       "tag": "footer",
-      "top": 2841,
-      "height": 852,
-      "words": 49,
+      "top": 3168,
+      "height": 401,
+      "words": 46,
       "media": 0,
-      "middle": 282,
+      "middle": 182,
       "heading": null,
       "left": 120,
       "right": 170,
@@ -512,8 +497,8 @@
     "h1s": [
      {
       "text": "Three ways to drinking water.",
-      "size": 96,
-      "top": 196,
+      "size": 72,
+      "top": 289,
       "firstScreen": true
      }
     ],
@@ -521,10 +506,10 @@
     "edges": [
      {
       "x": 120,
-      "n": 7
+      "n": 6
      },
      {
-      "x": 257,
+      "x": 217,
       "n": 2
      },
      {
@@ -532,15 +517,19 @@
       "n": 2
      },
      {
-      "x": 193,
+      "x": 228,
       "n": 1
      },
      {
-      "x": 277,
+      "x": 283,
       "n": 1
      },
      {
-      "x": 347,
+      "x": 337,
+      "n": 1
+     },
+     {
+      "x": 390,
       "n": 1
      },
      {
@@ -553,11 +542,11 @@
     "stage": false,
     "explains": true,
     "slivers": [],
-    "voidShare": 0.22,
+    "voidShare": 0.14,
     "voidBox": {
      "x": 0,
-     "y": 600,
-     "w": 1200,
+     "y": 660,
+     "w": 780,
      "h": 240
     }
    },
@@ -570,17 +559,17 @@
    "load": "load",
    "screens": 5,
    "filled": [
-    0.84,
-    0.52,
+    0.95,
+    0.49,
     0.55,
-    0.96,
-    0.93
+    0.95,
+    0.96
    ],
    "motion": {
-    "elements": 38,
-    "css": 5,
-    "transitions": 17,
-    "scripted": 16,
+    "elements": 23,
+    "css": 4,
+    "transitions": 4,
+    "scripted": 15,
     "videos": 0,
     "playingVideos": 0
    },
@@ -590,22 +579,24 @@
      "h": 1024
     },
     "page": {
-     "height": 4437,
-     "screens": 4.3,
-     "words": 423,
-     "img": 0,
+     "height": 4244,
+     "screens": 4.1,
+     "words": 426,
+     "img": 8,
      "video": 0,
      "canvas": 0,
-     "svg": 22,
+     "svg": 18,
      "sections": 4,
      "horizontalOverflow": 0,
      "overflowCulprits": [],
      "uiFragments": 0,
      "uiAbuse": false,
-     "realPictures": 0,
+     "realPictures": 1,
      "videoCount": 0,
      "uiPictures": 0,
-     "pictureSamples": [],
+     "pictureSamples": [
+      "drinking-800.webp"
+     ],
      "blendText": 0,
      "sideScrollers": 0,
      "brokenImages": [],
@@ -617,11 +608,11 @@
      "words": 5,
      "chars": 29,
      "lines": 2,
-     "size": 48,
-     "vw": 6.3,
-     "font": "Plus Jakarta Sans",
+     "size": 44,
+     "vw": 5.7,
+     "font": "League Spartan",
      "weight": 700,
-     "tracking": -0.035,
+     "tracking": -0.01,
      "leading": 1,
      "upper": false,
      "italic": false,
@@ -637,8 +628,8 @@
      "text": "Three ways to drinking water.",
      "words": 5,
      "lines": 2,
-     "size": 48,
-     "font": "Plus Jakarta Sans"
+     "size": 44,
+     "font": "League Spartan"
     },
     "headings": [
      {
@@ -646,11 +637,11 @@
       "words": 5,
       "chars": 29,
       "lines": 2,
-      "size": 48,
-      "vw": 6.3,
-      "font": "Plus Jakarta Sans",
+      "size": 44,
+      "vw": 5.7,
+      "font": "League Spartan",
       "weight": 700,
-      "tracking": -0.035,
+      "tracking": -0.01,
       "leading": 1,
       "upper": false,
       "italic": false,
@@ -667,11 +658,11 @@
       "words": 3,
       "chars": 13,
       "lines": 1,
-      "size": 40,
-      "vw": 5.2,
-      "font": "Plus Jakarta Sans",
+      "size": 36,
+      "vw": 4.7,
+      "font": "League Spartan",
       "weight": 700,
-      "tracking": -0.03,
+      "tracking": -0.01,
       "leading": 1.05,
       "upper": false,
       "italic": false,
@@ -679,7 +670,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.96,
-      "top": 1209,
+      "top": 1135,
       "tag": "h2",
       "kind": "heading"
      },
@@ -688,11 +679,11 @@
       "words": 2,
       "chars": 12,
       "lines": 1,
-      "size": 40,
-      "vw": 5.2,
-      "font": "Plus Jakarta Sans",
+      "size": 36,
+      "vw": 4.7,
+      "font": "League Spartan",
       "weight": 700,
-      "tracking": -0.03,
+      "tracking": -0.01,
       "leading": 1.05,
       "upper": false,
       "italic": false,
@@ -700,7 +691,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.96,
-      "top": 2441,
+      "top": 2534,
       "tag": "h2",
       "kind": "heading"
      },
@@ -709,11 +700,11 @@
       "words": 4,
       "chars": 18,
       "lines": 1,
-      "size": 40,
-      "vw": 5.2,
-      "font": "Plus Jakarta Sans",
+      "size": 36,
+      "vw": 4.7,
+      "font": "League Spartan",
       "weight": 700,
-      "tracking": -0.03,
+      "tracking": -0.01,
       "leading": 1.05,
       "upper": false,
       "italic": false,
@@ -721,37 +712,16 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.96,
-      "top": 3069,
+      "top": 3166,
       "tag": "h2",
       "kind": "heading"
-     },
-     {
-      "text": "Moya One",
-      "words": 2,
-      "chars": 8,
-      "lines": 1,
-      "size": 165,
-      "vw": 21.5,
-      "font": "Plus Jakarta Sans",
-      "weight": 700,
-      "tracking": -0.055,
-      "leading": 0.8,
-      "upper": false,
-      "italic": false,
-      "mono": false,
-      "align": "left",
-      "position": "center",
-      "widthRatio": 0.94,
-      "top": 4332,
-      "tag": "p",
-      "kind": "statement"
      }
     ],
     "headingSummary": {
-     "count": 5,
+     "count": 4,
      "maxLines": 2,
      "over2Lines": 0,
-     "statements": 1,
+     "statements": 0,
      "centered": 0,
      "medianWords": 3,
      "mixedFontHeadings": 0
@@ -759,13 +729,13 @@
     "type": {
      "families": [
       {
-       "family": "Inter",
-       "share": 0.87,
+       "family": "Outfit",
+       "share": 0.89,
        "mono": false
       },
       {
-       "family": "Plus Jakarta Sans",
-       "share": 0.13,
+       "family": "League Spartan",
+       "share": 0.11,
        "mono": false
       }
      ],
@@ -774,30 +744,29 @@
       13,
       15,
       16,
+      17,
       18,
       20,
-      22,
       24,
-      40,
-      48,
-      165
+      36,
+      44
      ],
-     "sizeCount": 10,
+     "sizeCount": 9,
      "notLoaded": [],
      "body": {
-      "font": "Inter",
+      "font": "Outfit",
       "size": 18,
       "leading": 1.6,
       "weight": 400,
       "tracking": 0,
-      "contrast": 9.2
+      "contrast": 5.8
      },
-     "measureChars": 48,
+     "measureChars": 50,
      "max": {
-      "size": 165,
-      "vw": 21.5,
-      "font": "Plus Jakarta Sans",
-      "text": "Moya One"
+      "size": 44,
+      "vw": 5.7,
+      "font": "League Spartan",
+      "text": "Three ways to drinking water."
      },
      "monoShare": 0,
      "monoProseShare": 0,
@@ -806,91 +775,94 @@
      "microLabels": 0,
      "microLabelShare": 0,
      "microSamples": [],
-     "upperShare": 0,
-     "centerShare": 0.02,
+     "upperShare": 0.01,
+     "centerShare": 0.01,
      "smallText": 0
     },
     "eyebrows": [],
     "numbered": [],
     "color": {
-     "bodyBg": "#fafaf7",
+     "bodyBg": "#ffffff",
      "bodyBgHsl": {
-      "h": 60,
-      "s": 0.23,
-      "l": 0.97
+      "h": 0,
+      "s": 0,
+      "l": 1
      },
      "dark": false,
      "sectionBgs": [
       {
-       "color": "#111827",
+       "color": "#0b1626",
        "top": 65,
        "hsl": {
-        "h": 221,
-        "s": 0.39,
-        "l": 0.11
+        "h": 216,
+        "s": 0.55,
+        "l": 0.1
        }
       },
       {
-       "color": "#fafaf7",
-       "top": 445,
+       "color": "#1c2635",
+       "top": 439,
        "hsl": {
-        "h": 60,
-        "s": 0.23,
-        "l": 0.97
+        "h": 216,
+        "s": 0.31,
+        "l": 0.16
        }
       },
       {
-       "color": "#e8f3f5",
-       "top": 2997,
+       "color": "#ecf6fd",
+       "top": 3094,
        "hsl": {
-        "h": 189,
-        "s": 0.39,
-        "l": 0.94
+        "h": 205,
+        "s": 0.81,
+        "l": 0.96
        }
       }
      ],
      "textColors": [
       {
-       "color": "#111827",
-       "share": 0.59
+       "color": "#0b1626",
+       "share": 0.55
       },
       {
-       "color": "#b9bbbd",
-       "share": 0.17
+       "color": "#4b5768",
+       "share": 0.2
       },
       {
-       "color": "#4b5563",
-       "share": 0.13
+       "color": "#8792a3",
+       "share": 0.16
       },
       {
-       "color": "#fafaf7",
-       "share": 0.1
+       "color": "#ffffff",
+       "share": 0.08
+      },
+      {
+       "color": "#0450f5",
+       "share": 0.01
       }
      ],
      "button": {
-      "bg": "#111827",
+      "bg": "#0b1626",
       "hsl": {
-       "h": 221,
-       "s": 0.39,
-       "l": 0.11
+       "h": 216,
+       "s": 0.55,
+       "l": 0.1
       },
-      "fg": "#fafaf7"
+      "fg": "#0b1626"
      },
      "lowContrast": []
     },
     "buttons": {
-     "count": 6,
-     "inHero": 3,
+     "count": 5,
+     "inHero": 2,
      "radius": "pill",
-     "height": 50,
+     "height": 52,
      "withShadow": 0,
      "withGradient": 0,
      "mono": 0,
      "upper": 0,
      "heroLabels": [
       "Skip to content",
-      "See them side by side",
-      "Moya One"
+      "See them side by side"
      ]
     },
     "surfaces": {
@@ -911,15 +883,15 @@
      "roundedBoxes": 4,
      "boxRadius": 20,
      "squareMedia": 0,
-     "roundedMedia": 0,
-     "mediaRadius": 0,
+     "roundedMedia": 1,
+     "mediaRadius": 20,
      "textShadow": 0,
      "cardRows": []
     },
     "heroMedia": [
      {
-      "type": "svg",
-      "ratio": 0.44
+      "type": "img",
+      "ratio": 0.52
      }
     ],
     "nav": {
@@ -930,8 +902,8 @@
      "blur": false
     },
     "fontsLoaded": [
-     "plus jakarta sans",
-     "inter"
+     "league spartan",
+     "outfit"
     ]
    },
    "layout": {
@@ -939,7 +911,7 @@
      "w": 768,
      "h": 1024
     },
-    "pageH": 4437,
+    "pageH": 4244,
     "margins": {
      "left": 16,
      "right": 20
@@ -949,19 +921,19 @@
       "sel": "section.cp-hero",
       "tag": "section",
       "top": 65,
-      "height": 1072,
-      "words": 62,
+      "height": 998,
+      "words": 39,
       "media": 1,
       "middle": 0,
       "heading": {
        "text": "Three ways to",
-       "size": 48,
+       "size": 44,
        "tag": "h1"
       },
       "left": 16,
       "right": 16,
       "textLeft": 16,
-      "textRight": 105,
+      "textRight": 305,
       "fullBleed": false,
       "footer": false,
       "hero": true,
@@ -971,20 +943,20 @@
      {
       "sel": "section#side-by-side.cp-table",
       "tag": "section",
-      "top": 1137,
-      "height": 1280,
-      "words": 182,
+      "top": 1063,
+      "height": 1447,
+      "words": 205,
       "media": 0,
-      "middle": 33,
+      "middle": 0,
       "heading": {
        "text": "Side",
-       "size": 40,
+       "size": 36,
        "tag": "h2"
       },
       "left": 16,
-      "right": 44,
+      "right": 34,
       "textLeft": 16,
-      "textRight": 44,
+      "textRight": 34,
       "fullBleed": false,
       "footer": false,
       "hero": false,
@@ -994,20 +966,20 @@
      {
       "sel": "section.cp-doors",
       "tag": "section",
-      "top": 2417,
-      "height": 580,
-      "words": 52,
+      "top": 2510,
+      "height": 584,
+      "words": 49,
       "media": 0,
       "middle": 0,
       "heading": {
        "text": "Look",
-       "size": 40,
+       "size": 36,
        "tag": "h2"
       },
       "left": 16,
-      "right": 206,
+      "right": 143,
       "textLeft": 16,
-      "textRight": 206,
+      "textRight": 143,
       "fullBleed": false,
       "footer": false,
       "hero": false,
@@ -1017,20 +989,20 @@
      {
       "sel": "section.cp-note",
       "tag": "section",
-      "top": 2997,
-      "height": 453,
-      "words": 50,
+      "top": 3094,
+      "height": 422,
+      "words": 48,
       "media": 0,
       "middle": 0,
       "heading": {
        "text": "One",
-       "size": 40,
+       "size": 36,
        "tag": "h2"
       },
       "left": 16,
-      "right": 253,
+      "right": 257,
       "textLeft": 16,
-      "textRight": 253,
+      "textRight": 257,
       "fullBleed": false,
       "footer": false,
       "hero": false,
@@ -1040,11 +1012,11 @@
      {
       "sel": "footer.footer",
       "tag": "footer",
-      "top": 3450,
-      "height": 987,
-      "words": 49,
+      "top": 3569,
+      "height": 676,
+      "words": 46,
       "media": 0,
-      "middle": 295,
+      "middle": 300,
       "heading": null,
       "left": 16,
       "right": 58,
@@ -1061,7 +1033,7 @@
     "h1s": [
      {
       "text": "Three ways to drinking water.",
-      "size": 48,
+      "size": 44,
       "top": 113,
       "firstScreen": true
      }
@@ -1073,23 +1045,19 @@
       "n": 9
      },
      {
-      "x": 102,
-      "n": 2
+      "x": 89,
+      "n": 3
      },
      {
-      "x": 114,
+      "x": 138,
       "n": 1
      },
      {
-      "x": 158,
+      "x": 179,
       "n": 1
      },
      {
-      "x": 202,
-      "n": 1
-     },
-     {
-      "x": 248,
+      "x": 219,
       "n": 1
      }
     ],
@@ -1110,18 +1078,18 @@
    "load": "load",
    "screens": 6,
    "filled": [
-    0.97,
-    0.59,
-    0.79,
-    0.76,
-    0.94,
-    0.97
+    0.96,
+    0.72,
+    0.68,
+    0.78,
+    0.89,
+    0.92
    ],
    "motion": {
-    "elements": 38,
-    "css": 5,
-    "transitions": 17,
-    "scripted": 16,
+    "elements": 23,
+    "css": 4,
+    "transitions": 4,
+    "scripted": 15,
     "videos": 0,
     "playingVideos": 0
    },
@@ -1131,22 +1099,24 @@
      "h": 844
     },
     "page": {
-     "height": 4766,
-     "screens": 5.6,
-     "words": 380,
-     "img": 0,
+     "height": 4593,
+     "screens": 5.4,
+     "words": 383,
+     "img": 8,
      "video": 0,
      "canvas": 0,
-     "svg": 22,
+     "svg": 18,
      "sections": 4,
      "horizontalOverflow": 0,
      "overflowCulprits": [],
      "uiFragments": 0,
      "uiAbuse": false,
-     "realPictures": 0,
+     "realPictures": 1,
      "videoCount": 0,
      "uiPictures": 0,
-     "pictureSamples": [],
+     "pictureSamples": [
+      "drinking-800.webp"
+     ],
      "blendText": 0,
      "sideScrollers": 0,
      "brokenImages": [],
@@ -1158,11 +1128,11 @@
      "words": 5,
      "chars": 29,
      "lines": 2,
-     "size": 48,
-     "vw": 12.3,
-     "font": "Plus Jakarta Sans",
+     "size": 44,
+     "vw": 11.3,
+     "font": "League Spartan",
      "weight": 700,
-     "tracking": -0.035,
+     "tracking": -0.01,
      "leading": 1,
      "upper": false,
      "italic": false,
@@ -1178,41 +1148,20 @@
      "text": "Three ways to drinking water.",
      "words": 5,
      "lines": 2,
-     "size": 48,
-     "font": "Plus Jakarta Sans"
+     "size": 44,
+     "font": "League Spartan"
     },
     "headings": [
-     {
-      "text": "Moya One",
-      "words": 2,
-      "chars": 8,
-      "lines": 1,
-      "size": 22,
-      "vw": 5.6,
-      "font": "Plus Jakarta Sans",
-      "weight": 700,
-      "tracking": -0.035,
-      "leading": 1.6,
-      "upper": false,
-      "italic": false,
-      "mono": false,
-      "align": "left",
-      "position": "left",
-      "widthRatio": 0.36,
-      "top": 10,
-      "tag": "a",
-      "kind": "heading"
-     },
      {
       "text": "Three ways to drinking water.",
       "words": 5,
       "chars": 29,
       "lines": 2,
-      "size": 48,
-      "vw": 12.3,
-      "font": "Plus Jakarta Sans",
+      "size": 44,
+      "vw": 11.3,
+      "font": "League Spartan",
       "weight": 700,
-      "tracking": -0.035,
+      "tracking": -0.01,
       "leading": 1,
       "upper": false,
       "italic": false,
@@ -1229,11 +1178,11 @@
       "words": 3,
       "chars": 13,
       "lines": 1,
-      "size": 40,
-      "vw": 10.3,
-      "font": "Plus Jakarta Sans",
+      "size": 36,
+      "vw": 9.2,
+      "font": "League Spartan",
       "weight": 700,
-      "tracking": -0.03,
+      "tracking": -0.01,
       "leading": 1.05,
       "upper": false,
       "italic": false,
@@ -1241,7 +1190,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.92,
-      "top": 1082,
+      "top": 912,
       "tag": "h2",
       "kind": "heading"
      },
@@ -1250,11 +1199,11 @@
       "words": 2,
       "chars": 12,
       "lines": 1,
-      "size": 40,
-      "vw": 10.3,
-      "font": "Plus Jakarta Sans",
+      "size": 36,
+      "vw": 9.2,
+      "font": "League Spartan",
       "weight": 700,
-      "tracking": -0.03,
+      "tracking": -0.01,
       "leading": 1.05,
       "upper": false,
       "italic": false,
@@ -1262,7 +1211,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.92,
-      "top": 2455,
+      "top": 2465,
       "tag": "h2",
       "kind": "heading"
      },
@@ -1271,11 +1220,11 @@
       "words": 4,
       "chars": 18,
       "lines": 2,
-      "size": 40,
-      "vw": 10.3,
-      "font": "Plus Jakarta Sans",
+      "size": 36,
+      "vw": 9.2,
+      "font": "League Spartan",
       "weight": 700,
-      "tracking": -0.03,
+      "tracking": -0.01,
       "leading": 1.05,
       "upper": false,
       "italic": false,
@@ -1283,18 +1232,18 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.92,
-      "top": 3317,
+      "top": 3338,
       "tag": "h2",
       "kind": "heading"
      },
      {
-      "text": "Moya One goes in while a tower is built, so it cannot be added to a flat later.",
-      "words": 18,
-      "chars": 79,
+      "text": "MoyaOne goes in while a tower is built, so it cannot be added to a flat later.",
+      "words": 17,
+      "chars": 78,
       "lines": 3,
       "size": 24,
       "vw": 6.2,
-      "font": "Plus Jakarta Sans",
+      "font": "League Spartan",
       "weight": 600,
       "tracking": -0.01,
       "leading": 1.3,
@@ -1304,51 +1253,30 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.92,
-      "top": 3425,
-      "tag": "p",
-      "kind": "statement"
-     },
-     {
-      "text": "Moya One",
-      "words": 2,
-      "chars": 8,
-      "lines": 1,
-      "size": 80.3,
-      "vw": 20.6,
-      "font": "Plus Jakarta Sans",
-      "weight": 700,
-      "tracking": -0.055,
-      "leading": 0.8,
-      "upper": false,
-      "italic": false,
-      "mono": false,
-      "align": "left",
-      "position": "center",
-      "widthRatio": 0.94,
-      "top": 4715,
+      "top": 3438,
       "tag": "p",
       "kind": "statement"
      }
     ],
     "headingSummary": {
-     "count": 7,
+     "count": 5,
      "maxLines": 3,
      "over2Lines": 0,
-     "statements": 2,
+     "statements": 1,
      "centered": 0,
-     "medianWords": 3,
+     "medianWords": 4,
      "mixedFontHeadings": 0
     },
     "type": {
      "families": [
       {
-       "family": "Inter",
-       "share": 0.86,
+       "family": "Outfit",
+       "share": 0.89,
        "mono": false
       },
       {
-       "family": "Plus Jakarta Sans",
-       "share": 0.14,
+       "family": "League Spartan",
+       "share": 0.11,
        "mono": false
       }
      ],
@@ -1357,30 +1285,29 @@
       13,
       15,
       16,
+      17,
       18,
       20,
-      22,
       24,
-      40,
-      48,
-      80
+      36,
+      44
      ],
-     "sizeCount": 10,
+     "sizeCount": 9,
      "notLoaded": [],
      "body": {
-      "font": "Inter",
+      "font": "Outfit",
       "size": 18,
       "leading": 1.6,
       "weight": 400,
       "tracking": 0,
-      "contrast": 9.2
+      "contrast": 5.8
      },
      "measureChars": 40,
      "max": {
-      "size": 80.3,
-      "vw": 20.6,
-      "font": "Plus Jakarta Sans",
-      "text": "Moya One"
+      "size": 44,
+      "vw": 11.3,
+      "font": "League Spartan",
+      "text": "Three ways to drinking water."
      },
      "monoShare": 0,
      "monoProseShare": 0,
@@ -1389,91 +1316,94 @@
      "microLabels": 0,
      "microLabelShare": 0,
      "microSamples": [],
-     "upperShare": 0,
-     "centerShare": 0.02,
+     "upperShare": 0.01,
+     "centerShare": 0.01,
      "smallText": 0
     },
     "eyebrows": [],
     "numbered": [],
     "color": {
-     "bodyBg": "#fafaf7",
+     "bodyBg": "#ffffff",
      "bodyBgHsl": {
-      "h": 60,
-      "s": 0.23,
-      "l": 0.97
+      "h": 0,
+      "s": 0,
+      "l": 1
      },
      "dark": false,
      "sectionBgs": [
       {
-       "color": "#111827",
+       "color": "#0b1626",
        "top": 65,
        "hsl": {
-        "h": 221,
-        "s": 0.39,
-        "l": 0.11
+        "h": 216,
+        "s": 0.55,
+        "l": 0.1
        }
       },
       {
-       "color": "#fafaf7",
-       "top": 534,
+       "color": "#eef2f7",
+       "top": 2616,
        "hsl": {
-        "h": 60,
-        "s": 0.23,
-        "l": 0.97
+        "h": 213,
+        "s": 0.36,
+        "l": 0.95
        }
       },
       {
-       "color": "#e8f3f5",
-       "top": 3245,
+       "color": "#ecf6fd",
+       "top": 3266,
        "hsl": {
-        "h": 189,
-        "s": 0.39,
-        "l": 0.94
+        "h": 205,
+        "s": 0.81,
+        "l": 0.96
        }
       }
      ],
      "textColors": [
       {
-       "color": "#111827",
-       "share": 0.55
+       "color": "#0b1626",
+       "share": 0.5
       },
       {
-       "color": "#b9bbbd",
-       "share": 0.2
+       "color": "#4b5768",
+       "share": 0.21
       },
       {
-       "color": "#4b5563",
-       "share": 0.14
+       "color": "#8792a3",
+       "share": 0.18
       },
       {
-       "color": "#fafaf7",
-       "share": 0.12
+       "color": "#ffffff",
+       "share": 0.09
+      },
+      {
+       "color": "#0450f5",
+       "share": 0.01
       }
      ],
      "button": {
-      "bg": "#111827",
+      "bg": "#0b1626",
       "hsl": {
-       "h": 221,
-       "s": 0.39,
-       "l": 0.11
+       "h": 216,
+       "s": 0.55,
+       "l": 0.1
       },
-      "fg": "#fafaf7"
+      "fg": "#0b1626"
      },
      "lowContrast": []
     },
     "buttons": {
-     "count": 6,
-     "inHero": 3,
+     "count": 5,
+     "inHero": 2,
      "radius": "pill",
-     "height": 50,
+     "height": 52,
      "withShadow": 0,
      "withGradient": 0,
      "mono": 0,
      "upper": 0,
      "heroLabels": [
       "Skip to content",
-      "See them side by side",
-      "Moya One"
+      "See them side by side"
      ]
     },
     "surfaces": {
@@ -1491,18 +1421,18 @@
      "outlinedBoxes": 0,
      "dashed": 0,
      "blurred": 0,
-     "roundedBoxes": 4,
+     "roundedBoxes": 5,
      "boxRadius": 20,
      "squareMedia": 0,
-     "roundedMedia": 0,
-     "mediaRadius": 0,
+     "roundedMedia": 1,
+     "mediaRadius": 20,
      "textShadow": 0,
      "cardRows": []
     },
     "heroMedia": [
      {
-      "type": "svg",
-      "ratio": 0.25
+      "type": "img",
+      "ratio": 0.29
      }
     ],
     "nav": {
@@ -1513,8 +1443,8 @@
      "blur": false
     },
     "fontsLoaded": [
-     "plus jakarta sans",
-     "inter"
+     "league spartan",
+     "outfit"
     ]
    },
    "layout": {
@@ -1522,29 +1452,29 @@
      "w": 390,
      "h": 844
     },
-    "pageH": 4766,
+    "pageH": 4593,
     "margins": {
      "left": 16,
-     "right": 17
+     "right": 20
     },
     "sections": [
      {
       "sel": "section.cp-hero",
       "tag": "section",
       "top": 65,
-      "height": 945,
-      "words": 62,
+      "height": 775,
+      "words": 39,
       "media": 1,
       "middle": 0,
       "heading": {
        "text": "Three ways to",
-       "size": 48,
+       "size": 44,
        "tag": "h1"
       },
       "left": 16,
       "right": 16,
       "textLeft": 16,
-      "textRight": 41,
+      "textRight": 30,
       "fullBleed": false,
       "footer": false,
       "hero": true,
@@ -1554,20 +1484,20 @@
      {
       "sel": "section#side-by-side.cp-table",
       "tag": "section",
-      "top": 1010,
-      "height": 1421,
-      "words": 139,
+      "top": 840,
+      "height": 1601,
+      "words": 162,
       "media": 0,
       "middle": 0,
       "heading": {
        "text": "Side",
-       "size": 40,
+       "size": 36,
        "tag": "h2"
       },
       "left": 16,
-      "right": 19,
+      "right": 32,
       "textLeft": 16,
-      "textRight": 19,
+      "textRight": 32,
       "fullBleed": false,
       "footer": false,
       "hero": false,
@@ -1577,20 +1507,20 @@
      {
       "sel": "section.cp-doors",
       "tag": "section",
-      "top": 2431,
-      "height": 815,
-      "words": 52,
+      "top": 2441,
+      "height": 826,
+      "words": 49,
       "media": 0,
       "middle": 0,
       "heading": {
        "text": "Look",
-       "size": 40,
+       "size": 36,
        "tag": "h2"
       },
       "left": 16,
-      "right": 42,
+      "right": 44,
       "textLeft": 16,
-      "textRight": 42,
+      "textRight": 44,
       "fullBleed": false,
       "footer": false,
       "hero": false,
@@ -1600,20 +1530,20 @@
      {
       "sel": "section.cp-note",
       "tag": "section",
-      "top": 3245,
-      "height": 555,
-      "words": 50,
+      "top": 3266,
+      "height": 520,
+      "words": 48,
       "media": 0,
       "middle": 0,
       "heading": {
        "text": "One",
-       "size": 40,
+       "size": 36,
        "tag": "h2"
       },
       "left": 16,
-      "right": 17,
+      "right": 24,
       "textLeft": 16,
-      "textRight": 17,
+      "textRight": 24,
       "fullBleed": false,
       "footer": false,
       "hero": false,
@@ -1623,16 +1553,16 @@
      {
       "sel": "footer.footer",
       "tag": "footer",
-      "top": 3800,
-      "height": 966,
-      "words": 49,
+      "top": 3880,
+      "height": 712,
+      "words": 46,
       "media": 0,
       "middle": 0,
       "heading": null,
       "left": 16,
-      "right": 44,
+      "right": 46,
       "textLeft": 16,
-      "textRight": 44,
+      "textRight": 46,
       "fullBleed": false,
       "footer": true,
       "hero": false,
@@ -1644,7 +1574,7 @@
     "h1s": [
      {
       "text": "Three ways to drinking water.",
-      "size": 48,
+      "size": 44,
       "top": 113,
       "firstScreen": true
      }
@@ -1656,19 +1586,15 @@
       "n": 10
      },
      {
-      "x": 102,
-      "n": 2
+      "x": 89,
+      "n": 3
      },
      {
-      "x": 62,
+      "x": 56,
       "n": 1
      },
      {
-      "x": 114,
-      "n": 1
-     },
-     {
-      "x": 158,
+      "x": 138,
       "n": 1
      }
     ],
@@ -1698,10 +1624,10 @@
   },
   {
    "level": "WARN",
-   "id": "palette-cream",
+   "id": "grey-body",
    "width": 1440,
-   "message": "Yellow-cream background (page background #fafaf7, text #fafaf7).",
-   "fix": "Use the drawn palette. If you want warmth, take a low-chroma stone or bone, not a yellow cream.",
+   "message": "The running text is a soft grey on its ground (5.8:1).",
+   "fix": "Set body copy in the full ink (7:1 or more). Keep the muted ink for secondary notes; pages read thin and unfinished when everything is grey.",
    "alsoAt": [
     768,
     390
@@ -1711,7 +1637,7 @@
    "level": "FAIL",
    "id": "few-pictures",
    "width": 1440,
-   "message": "Only 0 picture(s) on the page (0 photographs, footage or raster images, 0 interface fragments). Drawings in SVG do not count.",
+   "message": "Only 3 picture(s) on the page (3 photographs, footage or raster images, 0 interface fragments). Drawings in SVG do not count.",
    "fix": "Find real pictures of the subject's world with scripts/assets.mjs (photographs, archival images, maps, engravings, footage), download them to assets/ and give them room: a hero picture, one per section that has a subject, a full-width band. At least four, usually six to twelve."
   },
   {
@@ -1725,25 +1651,8 @@
    "level": "WARN",
    "id": "off-centre",
    "width": 1440,
-   "message": "The margins differ: 120px on the left, 141px on the right, at 1440px.",
+   "message": "The margins differ: 120px on the left, 145px on the right, at 1440px.",
    "fix": "Put the navigation and the content on one pair of margins; check for padding on one side only, a scrollbar gutter, or a header on another inset than the page."
-  },
-  {
-   "level": "WARN",
-   "id": "size-count",
-   "width": 768,
-   "message": "10 different font sizes (13, 15, 16, 18, 20, 22, 24, 40, 48, 165).",
-   "fix": "A page needs about five: display, heading, lead, body, small.",
-   "alsoAt": [
-    390
-   ]
-  },
-  {
-   "level": "FAIL",
-   "id": "covered-text",
-   "width": 390,
-   "message": "Large text lies under another element at some scroll position: \"closer.\" (screen 3, 50% hidden); \"Moya One\" (screen 6, 38% hidden)",
-   "fix": "Nothing may sit on top of a headline or statement. Move the picture, shorten the pinned run, or raise the text above it (z-index) and give it a ground."
   }
  ],
  "images": [
@@ -1752,8 +1661,7 @@
    "width": 1440,
    "fold": "C:\\Users\\Dell\\Documents\\Moya-one-final\\.taste-skill\\inspect-compare\\desktop-fold.jpg",
    "pages": [
-    "C:\\Users\\Dell\\Documents\\Moya-one-final\\.taste-skill\\inspect-compare\\desktop-page-01.jpg",
-    "C:\\Users\\Dell\\Documents\\Moya-one-final\\.taste-skill\\inspect-compare\\desktop-page-02.jpg"
+    "C:\\Users\\Dell\\Documents\\Moya-one-final\\.taste-skill\\inspect-compare\\desktop-page-01.jpg"
    ],
    "film": []
   },

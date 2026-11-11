@@ -15,51 +15,48 @@ The client's words: "not looking luxurious", "a sign of a brand", "like a Merced
 
 Rule of thumb: if a decoration does not make the offer clearer or the brand more credible, remove it.
 
-## 2. Colour (chosen by Vinayak, pending client review)
+## 2. Colour (client brand book, Edition 1, November 2026)
 
-| Token | Hex | Use |
-|---|---|---|
-| `--base` | #FAFAF7 | Page background |
-| `--ink` | #111827 | Text, dark sections, headings |
-| `--orange` | #F97316 | Primary action, one accent per section, key icons |
-| `--yellow` | #FFD60A | Highlight marker behind dark text only. Never text colour |
-| `--grey` | #F3F4F6 | Cards, quiet panels |
-| `--muted` | #4B5563 | Secondary text |
-| `--line` | #E5E7EB | Hairline dividers and borders |
-| `--water` | #BFE3F0 | Water in illustrations and the app screen only |
+Source: MoyaOne_Brand_Book_Final.pdf, pages 12 to 15. Colour is flat, with no gradients. Navy leads.
 
-Rules:
-- Orange is for actions, not decoration. Maximum one orange element per viewport, besides the logo.
-- Yellow is a marker only. Never yellow text on white (fails contrast).
-- Dark ink sections are for the builders section and the footer. They carry the "premium" weight.
-- Client may change the palette. Keep the tokens so one edit changes everything.
-
-## 3. Typography
-
-Current pairing: **Plus Jakarta Sans** (headings) and **Inter** (body). Both are on Google Fonts and self-hosted in the build.
-
-Open decision (B4): whether to keep this pairing or move to a more editorial display face for the hero and section titles. Test both at 1440px before choosing. Do not mix more than two families.
-
-Scale (desktop, mobile in brackets):
-
-| Role | Size / line height | Weight | Tracking |
+| Brand colour | Hex | Use | Site token |
 |---|---|---|---|
-| Hero display | 96 / 0.95 (48 / 1.0) | 700 | -0.035em |
-| H1 | 64 / 1.0 (40 / 1.05) | 700 | -0.03em |
-| H2 | 44 / 1.1 (32 / 1.1) | 700 | -0.02em |
-| H3 | 22 / 1.25 (20 / 1.3) | 600 | -0.01em |
-| Body large | 20 / 1.6 (18 / 1.6) | 400 | 0 |
-| Body | 16 / 1.6 | 400 | 0 |
-| Eyebrow (label) | 12 / 1 | 600, uppercase | +0.14em |
-| Caption, sample data label | 12 / 1.4 | 500 | 0 |
+| Deep navy | #0B1626 | Primary background, text, headings, logo | `--navy` (role `--ink`) |
+| White | #FFFFFF | Page ground, text on dark fields | `--white` (role `--base`) |
+| Royal blue | #0450F5 | Brand accent: colour fields, links on white | `--royal` |
+| Sky blue | #2F9FE7 | Buttons, links on navy, highlights | `--sky` |
+| Mist | #EEF2F7 | Light panels and cards | `--mist` (role `--grey`) |
+| Steel | #8792A3 | Secondary text on navy, dividers | `--steel` (role `--on-ink-muted`) |
+| Slate | #4B5768 | Secondary text on white | `--slate` (role `--muted`) |
 
-Heading rules:
-- Sentence case, never Title Case, except brand name.
-- Headlines are short statements, not labels. Example: "Get rid of the hassle." Not "Our Benefits".
-- Maximum two lines in a headline. Break deliberately with a `<br>` if needed.
-- Use the yellow marker on at most one phrase per section.
-- Eyebrow labels are the only uppercase text.
-- No text over images or illustrations without a solid or blurred backing.
+Derived tints (from the palette, not new hues): `--highlight` and `--water` are sky blue at 30% on white (the pale sky
+marker and water in drawings); `--line` is steel at 28% on white; `--ink-raised` is a tone step on navy.
+
+Rules (brand book p.13):
+- Navy field: white text, sky blue actions and links. White field: navy text, royal blue links, sky buttons with navy text.
+  Royal blue field: white text, navy buttons. Mist panel: navy text, slate secondary text.
+- Sky blue never carries white text and is never used for text on white.
+- One primary (sky blue) button per view.
+- Icons: navy on white, white on navy.
+- The brand palette has no green. The client's request for a green contact section was met with the royal blue field.
+
+## 3. Typography (brand book p.14)
+
+**League Spartan** (headings, the font of the logo) and **Outfit** (body, interface, captions). Both from Google Fonts,
+self-hosted in the build by next/font. Sentence case, left aligned, headlines on two lines at most.
+
+| Role | Desktop size / line height | Weight | Tracking | Phone |
+|---|---|---|---|---|
+| Display | 72 / 1.0 | 700 | -0.01em | 44 |
+| Heading 1 | 48 / 1.05 | 700 | -0.01em | 36 |
+| Heading 2 | 32 / 1.15 | 700 | 0 | 28 |
+| Heading 3 | 22 / 1.25 | 600 | 0 | 20 |
+| Body large | 20 / 1.55 | 400 | 0 | 18 |
+| Body | 17 / 1.6 | 400 | 0 | 17 |
+| Caption | 13 / 1.4 | 500 | 0.02em | 13 |
+
+The logo is used only from the master artwork in `public/brand/` (white on navy in the header, footer and opening
+screen). It is never retyped, recoloured, rotated or given effects (brand book p.11). The name is written MoyaOne, one word.
 
 ## 4. Layout and space
 
@@ -71,9 +68,9 @@ Heading rules:
 
 ## 5. Iconography
 
-- Use one icon family: **Phosphor**, Light or Regular weight only. Do not mix weights.
+- One icon family: **Phosphor**, Bold weight only (closest to the brand book's 2px stroke, p.16). Do not mix weights. The brand book's own 14-icon set replaces it once the files arrive.
 - Icon size 24px in text, 44px in feature cards. Stroke 1.5px at 24px.
-- Orange icons on light backgrounds, white on dark. No filled icons except status dots.
+- Navy icons on light backgrounds, white on dark (brand book p.16). No filled icons except status dots.
 - No emoji anywhere on the site. No cartoon characters.
 - Custom icons (control unit, dustbin, jug) must match the same stroke weight and corner radius.
 

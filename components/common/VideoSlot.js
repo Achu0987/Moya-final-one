@@ -26,7 +26,7 @@ export default function VideoSlot({ src, poster, title }) {
   if (!src) {
     return (
       <div className="video-slot is-placeholder" ref={box}>
-        <FilmSlate size={44} aria-hidden="true" />
+        <FilmSlate weight="bold" size={44} aria-hidden="true" />
         <p className="video-slot-title">{title}</p>
         <p className="video-slot-note">The explainer film plays here once the final cut is approved.</p>
       </div>

@@ -1,14 +1,276 @@
-/* Environment (/environment). Tokens only. A dark first screen as on the builders page, then two scenes this page
-   alone has: a year of jugs piling up in one kitchen (held while you scroll) and the delivery card washed clean,
-   then the figures that wait for proof and the centred close. Flat 2px-ink drawings throughout.
-   Shared pieces (.hero-*, .closing, .sample) live in app/site.css and app/globals.css.
-   Rhythm: ink, grey (held scene), water, ink, base. */
+/* Environment (/environment). Tokens only. A quiet forest film opens the page (client review, Nov 7), then the
+   tower today and with MoyaOne on dark ink, then two scenes this page alone has: a year of jugs piling up in one
+   kitchen (held while you scroll) and the delivery card washed clean, then the figures that wait for proof and the
+   centred close. Shared pieces (.hero-*, .closing, .sample) live in app/site.css and app/globals.css.
+   Rhythm: film, ink, base (photographs, forest band), grey (held scene), water, ink, base. */
 
-/* ---------- First screen: dark ink, the same ground as the builders page's first screen ---------- */
+/* ---------- First screen: the forest film, the promise set on it ---------- */
+.ev-film {
+  position: relative;
+  isolation: isolate;
+  display: grid;
+  align-content: end;
+  min-height: min(calc(100svh - var(--nav-h)), 860px);
+  padding-block: 120px 0;
+  overflow: hidden;
+  background: var(--ink);
+  color: var(--base);
+}
+
+.ev-film-video {
+  position: absolute;
+  inset: 0;
+  z-index: -3;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 40%;
+}
+
+/* the opening shot: sun rays through a forest, a slow push-in, then it dissolves into the film beneath it.
+   Two steps, each under three seconds (CLAUDE.md motion rule). Reduced motion: not shown; the film's still frame is. */
+.ev-film-open {
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 35%;
+  pointer-events: none;
+  animation:
+    ev-open-push 3s var(--ease-fill) both,
+    ev-open-out 1.6s var(--ease-fill) 2.6s both;
+}
+
+@keyframes ev-open-push {
+  from {
+    transform: scale(1.1);
+  }
+  to {
+    transform: scale(1.02);
+  }
+}
+
+@keyframes ev-open-out {
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ev-film-open {
+    display: none;
+  }
+}
+
+/* a neutral scrim under the words only, so the text reads on any frame of the film */
+.ev-film::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(to top, rgb(11 22 38 / 0.82), rgb(11 22 38 / 0.38) 60%, rgb(11 22 38 / 0.12)); /* taste-skill-ignore: scrim under text on a photograph */
+}
+
+/* the film holds the promise; a flat white band closes it with the year's plastic, on the page grid */
+.ev-film-copy {
+  padding-bottom: 56px;
+}
+
+/* the one action on the film, in the logo's colours: white with navy text */
+.ev-film .btn-primary {
+  background: var(--white);
+  color: var(--navy);
+}
+
+.ev-film .btn-primary:hover {
+  background: var(--mist);
+}
+
+/* the year's plastic on a white band: the yearly figure on the left, the live count in a mist panel on the right,
+   both on the page's 12-column grid and sharing one baseline */
+.ev-clock {
+  position: relative;
+  z-index: 1;
+  background: var(--white);
+  color: var(--navy);
+}
+
+.ev-clock-grid {
+  display: grid;
+  gap: 24px;
+  padding-block: 40px;
+}
+
+.ev-clock-year {
+  display: grid;
+  gap: 10px;
+  align-content: center;
+}
+
+.ev-clock-big {
+  font-family: var(--font-display);
+  font-size: clamp(36px, 4.4vw, 60px);
+  line-height: 1;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+.ev-clock-text {
+  max-width: 40ch;
+  font-size: var(--fs-body-lg);
+  line-height: 1.45;
+}
+
+.ev-clock-src {
+  font-size: var(--fs-caption);
+  color: var(--slate);
+}
+
+.ev-clock-src a {
+  color: inherit;
+}
+
+/* the live count sits on the brand's mist panel, a tone step instead of a line */
+.ev-clock-panel {
+  display: grid;
+  align-content: center;
+  padding: 24px 28px;
+  border-radius: var(--radius-card);
+  background: var(--mist);
+}
+
+.ev-clock-live {
+  display: grid;
+  gap: 10px;
+}
+
+.ev-clock-num {
+  color: var(--royal); /* sky blue is never text on white (brand book p.13) */
+  font-variant-numeric: tabular-nums;
+}
+
+.ev-clock-unit {
+  font-size: var(--fs-body-lg);
+  line-height: 1.45;
+  color: var(--slate);
+}
+
+@media (min-width: 900px) {
+  .ev-film-copy {
+    padding-bottom: 88px;
+  }
+
+  .ev-film-main {
+    max-width: 640px;
+  }
+
+  .ev-clock-grid {
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    column-gap: 24px;
+    align-items: stretch;
+    padding-block: 56px;
+  }
+
+  .ev-clock-year {
+    grid-column: 1 / 8;
+  }
+
+  .ev-clock-panel {
+    grid-column: 8 / 13;
+    padding: 32px 36px;
+  }
+}
+
+.ev-film-title {
+  font-size: var(--fs-hero);
+  line-height: var(--lh-hero);
+  letter-spacing: -0.01em;
+}
+
+.ev-film-lede {
+  max-width: 36ch;
+  margin-top: 20px;
+  font-size: var(--fs-body-lg);
+  color: color-mix(in srgb, var(--base) 88%, var(--ink));
+}
+
+.ev-film .text-link {
+  color: var(--white); /* over moving footage white reads; sky blue is kept for flat navy fields */
+}
+
+.ev-film-toggle {
+  position: absolute;
+  right: var(--gutter);
+  top: 24px;
+  z-index: 1;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 44px;
+  padding: 0 16px;
+  border: 0;
+  border-radius: var(--radius-pill);
+  background: rgb(17 24 39 / 0.55);
+  color: var(--base);
+  font: 600 14px / 1 var(--font-text);
+  cursor: pointer;
+  transition: background-color 0.25s var(--ease-enter);
+}
+
+.ev-film-toggle:hover {
+  background: rgb(17 24 39 / 0.8);
+}
+
+@media (max-width: 599px) {
+  .ev-film-toggle span {
+    position: absolute;
+    width: 1px;
+    height: 1px; /* taste-skill-ignore: visually hidden label kept for screen readers, not a rule */
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+  }
+
+  .ev-film-toggle {
+    padding: 0 13px;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .ev-film-main > * {
+    animation: ev-film-up 0.9s var(--ease-enter) both;
+  }
+
+  .ev-film-main > :nth-child(2) {
+    animation-delay: 0.12s;
+  }
+
+  .ev-film-main > :nth-child(3) {
+    animation-delay: 0.24s;
+  }
+
+
+  @keyframes ev-film-up {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+  }
+}
+
+/* ---------- Second: the tower, today and with MoyaOne, on dark ink ---------- */
 .ev-hero {
   background: var(--ink);
   color: var(--base);
-  padding-block: 48px var(--section);
+  padding-block: var(--section);
+}
+
+.ev-today-title {
+  font-size: var(--fs-h1);
+  line-height: var(--lh-h1);
+  letter-spacing: -0.01em;
 }
 
 .ev-hero .hero-lede,
@@ -20,25 +282,21 @@
 .ev-hero .hero-title {
   font-size: var(--fs-hero);
   line-height: var(--lh-hero);
-  letter-spacing: -0.035em;
+  letter-spacing: -0.01em;
 }
 
 .ev-hero .text-link {
-  color: var(--base);
+  color: var(--sky);
 }
 
 @media (min-width: 900px) {
-  .ev-hero {
-    padding-top: 72px;
-  }
-
   /* as on the builders page: copy across seven columns, the picture in the last five */
   .ev-hero .hero-copy {
     grid-column: 1 / 8;
   }
 }
 
-/* ---------- The tower, today and with Moya One ---------- */
+/* ---------- The tower, today and with MoyaOne ---------- */
 .tt {
   margin: 0;
   color: var(--ink);
@@ -72,7 +330,7 @@
 .tt-riser,
 .tt-branch {
   fill: none;
-  stroke: var(--orange);
+  stroke: var(--sky);
   stroke-width: 4;
   stroke-linecap: round;
   stroke-linejoin: round;
@@ -85,7 +343,7 @@
 }
 
 .tt-dot {
-  fill: var(--yellow);
+  fill: var(--highlight);
   stroke: var(--ink);
   stroke-width: 1.5;
   opacity: 0;
@@ -98,7 +356,7 @@
   transform-origin: center;
 }
 
-/* With Moya One: the van drives off, the jugs go, the line rises and each flat lights */
+/* With MoyaOne: the van drives off, the jugs go, the line rises and each flat lights */
 .tt.is-moya .tt-van {
   opacity: 0;
   transform: translateX(-130%);
@@ -234,7 +492,7 @@
   font-weight: 700;
   font-size: var(--fs-h1);
   line-height: 1;
-  letter-spacing: -0.03em;
+  letter-spacing: -0.01em;
   font-variant-numeric: tabular-nums;
 }
 
@@ -275,7 +533,7 @@
 
 .ky-none dd {
   padding-inline: 4px;
-  background: var(--yellow);
+  background: var(--highlight);
 }
 
 .ky-beat {
@@ -360,7 +618,7 @@
 
 .ky-line {
   fill: none;
-  stroke: var(--orange);
+  stroke: var(--sky);
   stroke-width: 5;
   stroke-linecap: round;
   stroke-linejoin: round;
@@ -430,7 +688,7 @@
 .dc-title {
   font-size: var(--fs-h1);
   line-height: var(--lh-h1);
-  letter-spacing: -0.03em;
+  letter-spacing: -0.01em;
 }
 
 .dc-copy p {
@@ -492,7 +750,7 @@
   font-family: var(--font-display);
   font-weight: 700;
   font-size: 28px;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.01em;
   fill: var(--ink);
 }
 
@@ -591,7 +849,7 @@
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  background: var(--yellow);
+  background: var(--highlight);
 }
 
 /* ---------- Close ---------- */
@@ -725,7 +983,7 @@
     }
   }
 
-  /* ---- the kitchen: jugs slide in from the door; for Moya One they lift away, the top of the stack first ---- */
+  /* ---- the kitchen: jugs slide in from the door; for MoyaOne they lift away, the top of the stack first ---- */
   .ky-jug {
     transition:
       opacity 0.45s var(--ease-enter),
@@ -800,4 +1058,192 @@
     opacity: 1;
     transform: none;
   }
+}
+
+/* ---------- Where the plastic goes: real photographs, an uneven editorial mosaic (client brief, Nov 11) ---------- */
+.ev-photos {
+  padding-block: var(--section) 40px;
+  background: var(--base);
+}
+
+.ev-photos-grid {
+  display: grid;
+  gap: 24px;
+}
+
+.ev-photos-head {
+  display: grid;
+  gap: 16px;
+  align-content: end;
+}
+
+.ev-photos-head p,
+.ev-photos-note {
+  max-width: 40ch;
+  font-size: var(--fs-body-lg);
+  color: var(--muted);
+}
+
+.ev-photo {
+  margin: 0;
+  display: grid;
+  gap: 10px;
+}
+
+.ev-photo img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: var(--radius-card);
+  background: var(--grey);
+}
+
+.ev-photo figcaption {
+  font-size: var(--fs-caption);
+  color: var(--muted);
+}
+
+.ev-photo-beach img {
+  aspect-ratio: 16 / 9;
+}
+
+.ev-photo-stream img {
+  aspect-ratio: 4 / 5;
+}
+
+.ev-photo-bales img {
+  aspect-ratio: 4 / 3;
+}
+
+.ev-photos-note {
+  font-family: var(--font-display);
+  font-size: var(--fs-h3);
+  line-height: var(--lh-h3);
+  color: var(--ink);
+}
+
+/* ---------- Back to the forest: one wide picture, the line set on it ---------- */
+.ev-forest {
+  padding-block: 0 var(--section);
+  background: var(--base);
+}
+
+.ev-forest-band {
+  position: relative;
+  isolation: isolate;
+  margin: 0;
+  display: grid;
+  align-items: end;
+  min-height: 420px;
+  overflow: hidden;
+  border-radius: var(--radius-card);
+  background: var(--ink);
+  color: var(--base);
+}
+
+.ev-forest-band img {
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* the same neutral scrim as the film, under the words only */
+.ev-forest-band::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(to top, rgb(17 24 39 / 0.72), rgb(17 24 39 / 0) 70%); /* taste-skill-ignore: scrim under text on a photograph */
+}
+
+.ev-forest-copy {
+  display: grid;
+  gap: 12px;
+  padding: 32px 24px;
+}
+
+.ev-forest-copy h2 {
+  font-size: var(--fs-h2);
+  line-height: var(--lh-h2);
+  letter-spacing: -0.01em;
+}
+
+.ev-forest-copy p {
+  max-width: 36ch;
+  font-size: var(--fs-body-lg);
+  color: color-mix(in srgb, var(--base) 88%, var(--ink));
+}
+
+@media (min-width: 900px) {
+  .ev-photos-grid {
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    gap: 32px;
+    align-items: start;
+  }
+
+  .ev-photos-head {
+    grid-column: 1 / 13;
+    grid-row: 1;
+    margin-bottom: 16px;
+  }
+
+  .ev-photo-beach {
+    grid-column: 1 / 9;
+    grid-row: 2;
+  }
+
+  /* the tall picture runs beside the wide one and drops below it, so the rows never line up like cards */
+  .ev-photo-stream {
+    grid-column: 9 / 13;
+    grid-row: 2 / 4;
+    margin-top: 72px;
+  }
+
+  .ev-photo-bales {
+    grid-column: 1 / 5;
+    grid-row: 3;
+  }
+
+  .ev-photos-note {
+    grid-column: 5 / 9;
+    grid-row: 3;
+    align-self: center;
+  }
+
+  .ev-forest-band {
+    min-height: 560px;
+  }
+
+  .ev-forest-copy {
+    padding: 56px;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .ev-photo,
+  .ev-forest-band {
+    opacity: 0;
+    transform: translateY(16px);
+    transition:
+      opacity 700ms var(--ease-enter),
+      transform 700ms var(--ease-enter);
+  }
+
+  .ev-photo.is-in,
+  .ev-forest-band.is-in {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* ---------- The film's and the photographs' credits, small, at the foot of the close ---------- */
+.ev-credits {
+  margin-top: 56px;
+  font-size: var(--fs-caption);
+  color: var(--muted);
+  text-align: center;
 }

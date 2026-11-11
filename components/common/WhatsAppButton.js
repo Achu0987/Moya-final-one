@@ -28,7 +28,7 @@ export default function WhatsAppButton() {
   }, []);
 
   const href = WHATSAPP_NUMBER
-    ? `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent('Hi Moya One, I would like to know more.')}`
+    ? `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent('Hi MoyaOne, I would like to know more.')}`
     : '/contact';
 
   return (
@@ -39,14 +39,14 @@ export default function WhatsAppButton() {
       <a
         href={href}
         className="wa-button"
-        aria-label="Chat with Moya One on WhatsApp"
+        aria-label="Chat with MoyaOne on WhatsApp"
         {...(WHATSAPP_NUMBER ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
         onMouseEnter={() => setBubble(true)}
         onMouseLeave={() => setBubble(false)}
         onFocus={() => setBubble(true)}
         onBlur={() => setBubble(false)}
       >
-        <WhatsappLogo size={28} aria-hidden="true" />
+        <WhatsappLogo weight="bold" size={28} aria-hidden="true" />
       </a>
     </div>
   );

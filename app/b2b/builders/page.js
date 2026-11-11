@@ -1,4 +1,4 @@
-import { ArrowDown, ArrowRight, Check, X } from '@phosphor-icons/react/dist/ssr';
+import { ArrowDown, ArrowRight, Check, Elevator, ShieldCheck, TrendUp, X } from '@phosphor-icons/react/dist/ssr';
 import Words from '@/components/common/Words';
 import Motion from '@/components/Motion';
 import Sizer from '@/components/builders/Sizer';
@@ -7,21 +7,44 @@ import { Kitchen } from '@/components/environment/KitchenYear';
 import './builders.css';
 
 export const metadata = {
-  title: 'For builders: Moya One',
+  title: 'For builders: MoyaOne',
   description:
     'Plan drinking water into your tower during construction: one dedicated line to every flat, a Moya1 control unit and an extra tap in each kitchen, nothing added after handover.',
 };
 
-// Where Moya One sits in a construction schedule. Each step restates CLAUDE.md "What the project is".
+// Where MoyaOne sits in a construction schedule. Each step restates CLAUDE.md "What the project is".
 // PLACEHOLDER: the stage-by-stage mapping is our reading of "installed during construction, through the builder";
 // Rayansh to confirm with the client before launch.
 const STAGES = [
-  { stage: 'Design', title: 'Planned in', text: 'Moya One is chosen at the design stage and shown in your drawings.' },
+  { stage: 'Design', title: 'Planned in', text: 'MoyaOne is chosen at the design stage and shown in your drawings.' },
   // PLACEHOLDER: "its own plant room" follows CLIENT_CONTEXT.md; Claims tab "To confirm".
   { stage: 'Structure', title: 'Room for the line', text: 'Space is kept for one line to rise from the plant room through the tower.' },
   { stage: 'Services', title: 'A line to every flat', text: 'The dedicated line is laid floor by floor while the tower is built.' },
   { stage: 'Finishing', title: 'Kitchens fitted', text: 'Each kitchen gets a Moya1™ control unit and an extra tap.' },
   { stage: 'Handover', title: 'Ready on day one', text: 'Residents move in and recharge litres from their phones.' },
+];
+
+// The three pillars, in the client's words (client change list: Builder section, 3 pillars).
+// PLACEHOLDER: "high sales value", "saves 20–30% kitchen space" and "zero maintenance" are the client's claims, published
+// at the client's request; Rayansh to add each to the Claims tab with its source (CLAUDE.md non-negotiable 3).
+const PILLARS = [
+  {
+    icon: TrendUp,
+    title: 'High sales value.',
+    text: 'A differentiator, a competitive edge and an extra amenity for your project.',
+  },
+  {
+    icon: Elevator,
+    title: 'Decluttered modular kitchens and elevators.',
+    figure: '20–30%',
+    figureText: 'kitchen space saved',
+    text: 'It also cuts the security and logistics load of daily bottled-water delivery.',
+  },
+  {
+    icon: ShieldCheck,
+    title: 'Zero maintenance.',
+    text: 'With reliable after-installation support from MoyaOne.',
+  },
 ];
 
 const GOES_IN = ['Its own branch of the line', 'A Moya1™ control unit on the kitchen wall', 'An extra tap beside the sink'];
@@ -49,24 +72,51 @@ export default function Builders() {
               </span>
             </h1>
             <p className="bx-lede">
-              Moya One goes into your tower while it is built, through you. Every flat gets its own line, a Moya1™
+              MoyaOne goes into your tower while it is built, through you. Every flat gets its own line, a Moya1™
               control unit and an extra tap. Nothing is added after handover.
             </p>
             <div className="bx-actions">
               <a href="#size" className="btn btn-primary">
                 Size it to your tower
-                <ArrowDown size={20} aria-hidden="true" />
+                <ArrowDown weight="bold" size={20} aria-hidden="true" />
               </a>
               <a href="#enquire" className="text-link bx-link-light">
                 Start an enquiry
-                <ArrowRight size={20} aria-hidden="true" />
+                <ArrowRight weight="bold" size={20} aria-hidden="true" />
               </a>
             </div>
           </div>
           <figure className="bx-hero-photo">
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/builders/tower.webp" alt="A tall residential tower near completion against a soft, cloudy sky." />
+            <img src="/builders/tower.webp" alt="Tall residential towers under construction in Hyderabad, with a tower crane against a clear sky." />
           </figure>
+        </div>
+      </section>
+
+      {/* ---- why plan it in: the three pillars (client change list) ---- */}
+      <section className="bx-pillars" aria-labelledby="bx-pillars-title">
+        <div className="container">
+          <h2 id="bx-pillars-title" className="bx-pillars-title" data-reveal="words">
+            <Words>Why builders plan it in.</Words>
+          </h2>
+          <ul className="bx-pillar-list" data-in>
+            {PILLARS.map((p, i) => (
+              <li key={p.title} className="bx-pillar" style={{ '--i': i }}>
+                <span className="bx-pillar-icon" aria-hidden="true">
+                  <p.icon weight="bold" size={26} />
+                </span>
+                <h3>{p.title}</h3>
+                <div className="bx-pillar-body">
+                  {p.figure && (
+                    <p className="bx-pillar-figure">
+                      <strong>{p.figure}</strong> {p.figureText}
+                    </p>
+                  )}
+                  <p>{p.text}</p>
+                </div>
+              </li>
+            ))}
+          </ul>
         </div>
       </section>
 
@@ -93,13 +143,13 @@ export default function Builders() {
           </ol>
           <a href="/b2c/how-it-works" className="text-link bx-plan-link">
             See how the water reaches each flat
-            <ArrowRight size={20} aria-hidden="true" />
+            <ArrowRight weight="bold" size={20} aria-hidden="true" />
           </a>
         </div>
       </section>
 
       {/* ---- a rest: the skyline being built ---- */}
-      <figure className="bx-band" aria-label="A tower going up above a green city, with hills behind.">
+      <figure className="bx-band" aria-label="A tower crane on a building site, in silhouette against an orange sunset.">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img src="/builders/city-build.webp" alt="" loading="lazy" />
       </figure>
@@ -116,7 +166,7 @@ export default function Builders() {
             <ul>
               {GOES_IN.map((t, i) => (
                 <li key={t} style={{ '--i': i }}>
-                  <Check size={24} aria-hidden="true" />
+                  <Check weight="bold" size={24} aria-hidden="true" />
                   {t}
                 </li>
               ))}
@@ -127,14 +177,14 @@ export default function Builders() {
             <ul>
               {STAYS_OUT.map((t, i) => (
                 <li key={t} style={{ '--i': i + 3 }}>
-                  <X size={24} aria-hidden="true" />
+                  <X weight="bold" size={24} aria-hidden="true" />
                   {t}
                 </li>
               ))}
             </ul>
             <a href="/compare" className="text-link bx-flat-link">
-              Compare jugs, RO filters and Moya One
-              <ArrowRight size={20} aria-hidden="true" />
+              Compare jugs, RO filters and MoyaOne
+              <ArrowRight weight="bold" size={20} aria-hidden="true" />
             </a>
           </div>
           </div>

@@ -3,27 +3,29 @@
    Shared pieces (.hero, .steps-head, .step, .closing) live in app/site.css and app/globals.css.
    Rhythm: ink, base, base. */
 
-/* ---------- First screen: dark ink, the same ground as the builders page's first screen ---------- */
+/* ---------- First screen: the brand's royal blue field (brand book p.13: white text, navy buttons). The client asked
+   for a coloured contact section; the brand palette has no green, so it takes the brand-colour field. ---------- */
 .ct-hero {
-  background: var(--ink);
-  color: var(--base);
+  background: var(--royal);
+  color: var(--white);
   padding-block: 48px var(--section);
 }
 
+/* white is the only text colour that passes on royal blue (6.0:1); steel and sky do not */
 .ct-hero .hero-lede,
 .ct-hero .hero-note {
-  color: var(--on-ink-muted);
+  color: var(--white);
 }
 
 /* the hero size and tracking of the builders page's first screen */
 .ct-hero .hero-title {
   font-size: var(--fs-hero);
   line-height: var(--lh-hero);
-  letter-spacing: -0.035em;
+  letter-spacing: -0.01em;
 }
 
 .ct-hero .text-link {
-  color: var(--base);
+  color: var(--white);
 }
 
 @media (min-width: 900px) {
@@ -38,11 +40,11 @@
 }
 
 .ct-hero .ct-direct-label {
-  color: var(--on-ink-muted);
+  color: var(--white);
 }
 
 .ct-hero .ct-direct-link {
-  color: var(--base);
+  color: var(--white);
 }
 
 .ct-grid {
@@ -161,7 +163,7 @@
 }
 
 .ct-roles label:has(input:focus-visible) {
-  outline: 3px solid var(--orange);
+  outline: 3px solid var(--sky);
   outline-offset: 3px;
 }
 
@@ -203,7 +205,7 @@
   background: var(--grey);
   color: var(--ink);
   font: inherit;
-  caret-color: var(--orange);
+  caret-color: var(--sky);
   transition:
     border-color 0.2s var(--ease-enter),
     background-color 0.2s var(--ease-enter);
@@ -224,7 +226,7 @@
 .ct-field input:focus-visible,
 .ct-field select:focus-visible,
 .ct-field textarea:focus-visible {
-  outline: 3px solid var(--orange);
+  outline: 3px solid var(--sky);
   outline-offset: 2px;
   border-color: var(--ink);
   background: var(--base);
@@ -251,7 +253,7 @@
 .ct-error svg {
   flex: none;
   margin-top: 1px;
-  color: var(--orange);
+  color: var(--royal);
 }
 
 .ct-send {

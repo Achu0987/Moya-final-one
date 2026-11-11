@@ -1,0 +1,1816 @@
+{
+ "url": "http://localhost:3123/b2c/how-it-works",
+ "at": "2026-11-11T15:10:56.821Z",
+ "allow": [],
+ "viewports": [
+  {
+   "width": 1440,
+   "height": 900,
+   "load": "load",
+   "screens": 5,
+   "filled": [
+    0.96,
+    0.96,
+    0.66,
+    0.61,
+    0.78
+   ],
+   "motion": {
+    "elements": 29,
+    "css": 2,
+    "transitions": 4,
+    "scripted": 23,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "page": {
+     "height": 3925,
+     "screens": 4.4,
+     "words": 421,
+     "img": 4,
+     "video": 0,
+     "canvas": 1,
+     "svg": 21,
+     "sections": 4,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 3,
+     "uiAbuse": false,
+     "realPictures": 1,
+     "videoCount": 0,
+     "uiPictures": 1,
+     "pictureSamples": [
+      "guide.webp"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "How MoyaOne works",
+     "words": 3,
+     "chars": 17,
+     "lines": 2,
+     "size": 72,
+     "vw": 5,
+     "font": "League Spartan",
+     "weight": 700,
+     "tracking": -0.01,
+     "leading": 1,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "left",
+     "widthRatio": 0.36,
+     "top": 347,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "How MoyaOne works",
+     "words": 3,
+     "lines": 2,
+     "size": 72,
+     "font": "League Spartan"
+    },
+    "headings": [
+     {
+      "text": "How MoyaOne works",
+      "words": 3,
+      "chars": 17,
+      "lines": 2,
+      "size": 72,
+      "vw": 5,
+      "font": "League Spartan",
+      "weight": 700,
+      "tracking": -0.01,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.36,
+      "top": 347,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "Try it: recharge, then pour.",
+      "words": 5,
+      "chars": 28,
+      "lines": 1,
+      "size": 32,
+      "vw": 2.2,
+      "font": "League Spartan",
+      "weight": 700,
+      "tracking": 0,
+      "leading": 1.15,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.41,
+      "top": 1605,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "120.00 litres",
+      "words": 2,
+      "chars": 13,
+      "lines": 1,
+      "size": 44,
+      "vw": 3.1,
+      "font": "League Spartan",
+      "weight": 700,
+      "tracking": -0.01,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.17,
+      "top": 1945,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "What you do. What you never do.",
+      "words": 7,
+      "chars": 31,
+      "lines": 1,
+      "size": 32,
+      "vw": 2.2,
+      "font": "League Spartan",
+      "weight": 700,
+      "tracking": 0,
+      "leading": 1.15,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.83,
+      "top": 2557,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "See your water, in litres.",
+      "words": 5,
+      "chars": 26,
+      "lines": 1,
+      "size": 32,
+      "vw": 2.2,
+      "font": "League Spartan",
+      "weight": 700,
+      "tracking": 0,
+      "leading": 1.15,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.43,
+      "top": 3131,
+      "tag": "h2",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 5,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 1,
+     "centered": 0,
+     "medianWords": 5,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Outfit",
+       "share": 0.76,
+       "mono": false
+      },
+      {
+       "family": "League Spartan",
+       "share": 0.24,
+       "mono": false
+      }
+     ],
+     "familyCount": 2,
+     "sizes": [
+      12,
+      13,
+      15,
+      16,
+      17,
+      20,
+      22,
+      32,
+      72
+     ],
+     "sizeCount": 9,
+     "notLoaded": [],
+     "body": {
+      "font": "Outfit",
+      "size": 17,
+      "leading": 1.6,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 5.8
+     },
+     "measureChars": 58,
+     "max": {
+      "size": 72,
+      "vw": 5,
+      "font": "League Spartan",
+      "text": "How MoyaOne works"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0,
+     "centerShare": 0.04,
+     "smallText": 0
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#ffffff",
+     "bodyBgHsl": {
+      "h": 0,
+      "s": 0,
+      "l": 1
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#0b1626",
+       "top": 89,
+       "hsl": {
+        "h": 216,
+        "s": 0.55,
+        "l": 0.1
+       }
+      },
+      {
+       "color": "#eef2f7",
+       "top": 1458,
+       "hsl": {
+        "h": 213,
+        "s": 0.36,
+        "l": 0.95
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#8792a3",
+       "share": 0.41
+      },
+      {
+       "color": "#ffffff",
+       "share": 0.21
+      },
+      {
+       "color": "#4b5768",
+       "share": 0.2
+      },
+      {
+       "color": "#0b1626",
+       "share": 0.11
+      },
+      {
+       "color": "#e2e3e5",
+       "share": 0.04
+      }
+     ],
+     "button": {
+      "bg": "#2f9fe7",
+      "hsl": {
+       "h": 203,
+       "s": 0.79,
+       "l": 0.55
+      },
+      "fg": "#0b1626"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 8,
+     "inHero": 3,
+     "radius": "pill",
+     "height": 52,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Skip to content",
+      "Contact",
+      "Play the film"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 2,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 1,
+     "hairlineSamples": [
+      "header.nav 1440px"
+     ],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 15,
+     "boxRadius": 20,
+     "squareMedia": 1,
+     "roundedMedia": 1,
+     "mediaRadius": 20,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [
+     {
+      "type": "canvas",
+      "ratio": 0.9
+     },
+     {
+      "type": "img",
+      "ratio": 0.27
+     }
+    ],
+    "nav": {
+     "links": 6,
+     "fixed": true,
+     "height": 89,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "league spartan",
+     "outfit"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "pageH": 3925,
+    "margins": {
+     "left": 120,
+     "right": 120
+    },
+    "sections": [
+     {
+      "sel": "section.drop.is-ready",
+      "tag": "section",
+      "top": 89,
+      "height": 1369,
+      "words": 205,
+      "media": 2,
+      "middle": 0,
+      "heading": {
+       "text": "How MoyaOne works",
+       "size": 72,
+       "tag": "h1"
+      },
+      "left": 120,
+      "right": 116,
+      "textLeft": 120,
+      "textRight": 116,
+      "fullBleed": true,
+      "footer": false,
+      "hero": true,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.try",
+      "tag": "section",
+      "top": 1458,
+      "height": 979,
+      "words": 53,
+      "media": 1,
+      "middle": 221,
+      "heading": {
+       "text": "120.00",
+       "size": 44,
+       "tag": "p"
+      },
+      "left": 120,
+      "right": 125,
+      "textLeft": 120,
+      "textRight": 125,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.dodont",
+      "tag": "section",
+      "top": 2437,
+      "height": 622,
+      "words": 45,
+      "media": 1,
+      "middle": 179,
+      "heading": {
+       "text": "What",
+       "size": 32,
+       "tag": "h2"
+      },
+      "left": 120,
+      "right": 133,
+      "textLeft": 120,
+      "textRight": 371,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.how-next",
+      "tag": "section",
+      "top": 3059,
+      "height": 465,
+      "words": 31,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "See",
+       "size": 32,
+       "tag": "h2"
+      },
+      "left": 184,
+      "right": 699,
+      "textLeft": 184,
+      "textRight": 699,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "footer.footer",
+      "tag": "footer",
+      "top": 3524,
+      "height": 401,
+      "words": 46,
+      "media": 0,
+      "middle": 182,
+      "heading": null,
+      "left": 120,
+      "right": 170,
+      "textLeft": 120,
+      "textRight": 170,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "How MoyaOne works",
+      "size": 72,
+      "top": 347,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 120,
+      "n": 4
+     },
+     {
+      "x": 184,
+      "n": 2
+     },
+     {
+      "x": 205,
+      "n": 2
+     },
+     {
+      "x": 314,
+      "n": 2
+     },
+     {
+      "x": 138,
+      "n": 1
+     },
+     {
+      "x": 173,
+      "n": 1
+     },
+     {
+      "x": 242,
+      "n": 1
+     },
+     {
+      "x": 264,
+      "n": 1
+     },
+     {
+      "x": 353,
+      "n": 1
+     },
+     {
+      "x": 402,
+      "n": 1
+     },
+     {
+      "x": 413,
+      "n": 1
+     },
+     {
+      "x": 424,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 22,
+    "bodySize": 17,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": null,
+   "consoleErrors": []
+  },
+  {
+   "width": 768,
+   "height": 1024,
+   "load": "load",
+   "screens": 5,
+   "filled": [
+    0.95,
+    0.99,
+    0.89,
+    0.76,
+    0.86
+   ],
+   "motion": {
+    "elements": 28,
+    "css": 2,
+    "transitions": 3,
+    "scripted": 23,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "page": {
+     "height": 4917,
+     "screens": 4.8,
+     "words": 414,
+     "img": 4,
+     "video": 0,
+     "canvas": 1,
+     "svg": 21,
+     "sections": 4,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 3,
+     "uiAbuse": false,
+     "realPictures": 1,
+     "videoCount": 0,
+     "uiPictures": 1,
+     "pictureSamples": [
+      "guide.webp"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "How MoyaOne works",
+     "words": 3,
+     "chars": 17,
+     "lines": 2,
+     "size": 44,
+     "vw": 5.7,
+     "font": "League Spartan",
+     "weight": 700,
+     "tracking": -0.01,
+     "leading": 1,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "left",
+     "widthRatio": 0.41,
+     "top": 358,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "How MoyaOne works",
+     "words": 3,
+     "lines": 2,
+     "size": 44,
+     "font": "League Spartan"
+    },
+    "headings": [
+     {
+      "text": "How MoyaOne works",
+      "words": 3,
+      "chars": 17,
+      "lines": 2,
+      "size": 44,
+      "vw": 5.7,
+      "font": "League Spartan",
+      "weight": 700,
+      "tracking": -0.01,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.41,
+      "top": 358,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "Try it: recharge, then pour.",
+      "words": 5,
+      "chars": 28,
+      "lines": 1,
+      "size": 28,
+      "vw": 3.6,
+      "font": "League Spartan",
+      "weight": 700,
+      "tracking": 0,
+      "leading": 1.15,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.96,
+      "top": 1891,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "120.00 litres",
+      "words": 2,
+      "chars": 13,
+      "lines": 1,
+      "size": 44,
+      "vw": 5.7,
+      "font": "League Spartan",
+      "weight": 700,
+      "tracking": -0.01,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.32,
+      "top": 2205,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "What you do. What you never do.",
+      "words": 7,
+      "chars": 31,
+      "lines": 1,
+      "size": 28,
+      "vw": 3.6,
+      "font": "League Spartan",
+      "weight": 700,
+      "tracking": 0,
+      "leading": 1.15,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.96,
+      "top": 3294,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "See your water, in litres.",
+      "words": 5,
+      "chars": 26,
+      "lines": 1,
+      "size": 28,
+      "vw": 3.6,
+      "font": "League Spartan",
+      "weight": 700,
+      "tracking": 0,
+      "leading": 1.15,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 3940,
+      "tag": "h2",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 5,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 1,
+     "centered": 0,
+     "medianWords": 5,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Outfit",
+       "share": 0.76,
+       "mono": false
+      },
+      {
+       "family": "League Spartan",
+       "share": 0.24,
+       "mono": false
+      }
+     ],
+     "familyCount": 2,
+     "sizes": [
+      12,
+      13,
+      15,
+      16,
+      17,
+      18,
+      20,
+      28,
+      44
+     ],
+     "sizeCount": 9,
+     "notLoaded": [],
+     "body": {
+      "font": "Outfit",
+      "size": 17,
+      "leading": 1.6,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 5.8
+     },
+     "measureChars": 58,
+     "max": {
+      "size": 44,
+      "vw": 5.7,
+      "font": "League Spartan",
+      "text": "How MoyaOne works"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0,
+     "centerShare": 0.04,
+     "smallText": 0
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#ffffff",
+     "bodyBgHsl": {
+      "h": 0,
+      "s": 0,
+      "l": 1
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#0b1626",
+       "top": 65,
+       "hsl": {
+        "h": 216,
+        "s": 0.55,
+        "l": 0.1
+       }
+      },
+      {
+       "color": "#eef2f7",
+       "top": 1819,
+       "hsl": {
+        "h": 213,
+        "s": 0.36,
+        "l": 0.95
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#8792a3",
+       "share": 0.42
+      },
+      {
+       "color": "#ffffff",
+       "share": 0.21
+      },
+      {
+       "color": "#4b5768",
+       "share": 0.19
+      },
+      {
+       "color": "#0b1626",
+       "share": 0.11
+      },
+      {
+       "color": "#e2e3e5",
+       "share": 0.04
+      }
+     ],
+     "button": {
+      "bg": "#2f9fe7",
+      "hsl": {
+       "h": 203,
+       "s": 0.79,
+       "l": 0.55
+      },
+      "fg": "#0b1626"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 7,
+     "inHero": 5,
+     "radius": "pill",
+     "height": 52,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Skip to content",
+      "Play the film",
+      "Back",
+      "Play",
+      "Next"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 2,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 1,
+     "hairlineSamples": [
+      "header.nav 768px"
+     ],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 15,
+     "boxRadius": 20,
+     "squareMedia": 1,
+     "roundedMedia": 1,
+     "mediaRadius": 20,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [
+     {
+      "type": "canvas",
+      "ratio": 0.8
+     },
+     {
+      "type": "img",
+      "ratio": 0.26
+     }
+    ],
+    "nav": {
+     "links": 1,
+     "fixed": true,
+     "height": 65,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "league spartan",
+     "outfit"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "pageH": 4917,
+    "margins": {
+     "left": 16,
+     "right": 16
+    },
+    "sections": [
+     {
+      "sel": "div.drop-stage",
+      "tag": "div",
+      "top": 65,
+      "height": 820,
+      "words": 61,
+      "media": 2,
+      "middle": 32,
+      "heading": {
+       "text": "How MoyaOne works",
+       "size": 44,
+       "tag": "h1"
+      },
+      "left": 16,
+      "right": 44,
+      "textLeft": 16,
+      "textRight": 44,
+      "fullBleed": true,
+      "footer": false,
+      "hero": true,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "ol.drop-steps.container",
+      "tag": "ol",
+      "top": 985,
+      "height": 762,
+      "words": 139,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": 16,
+      "right": 16,
+      "textLeft": 86,
+      "textRight": 52,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.try",
+      "tag": "section",
+      "top": 1819,
+      "height": 1403,
+      "words": 53,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "120.00",
+       "size": 44,
+       "tag": "p"
+      },
+      "left": 16,
+      "right": 184,
+      "textLeft": 16,
+      "textRight": 276,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.dodont",
+      "tag": "section",
+      "top": 3222,
+      "height": 678,
+      "words": 45,
+      "media": 1,
+      "middle": 170,
+      "heading": {
+       "text": "What",
+       "size": 28,
+       "tag": "h2"
+      },
+      "left": 16,
+      "right": 16,
+      "textLeft": 16,
+      "textRight": 338,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.how-next",
+      "tag": "section",
+      "top": 3900,
+      "height": 342,
+      "words": 31,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "See",
+       "size": 28,
+       "tag": "h2"
+      },
+      "left": 40,
+      "right": 227,
+      "textLeft": 40,
+      "textRight": 227,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "footer.footer",
+      "tag": "footer",
+      "top": 4242,
+      "height": 676,
+      "words": 46,
+      "media": 0,
+      "middle": 300,
+      "heading": null,
+      "left": 16,
+      "right": 58,
+      "textLeft": 16,
+      "textRight": 58,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "How MoyaOne works",
+      "size": 44,
+      "top": 358,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 16,
+      "n": 5
+     },
+     {
+      "x": 34,
+      "n": 3
+     },
+     {
+      "x": 91,
+      "n": 3
+     },
+     {
+      "x": 263,
+      "n": 2
+     },
+     {
+      "x": 62,
+      "n": 1
+     },
+     {
+      "x": 142,
+      "n": 1
+     },
+     {
+      "x": 154,
+      "n": 1
+     },
+     {
+      "x": 188,
+      "n": 1
+     },
+     {
+      "x": 219,
+      "n": 1
+     },
+     {
+      "x": 241,
+      "n": 1
+     },
+     {
+      "x": 282,
+      "n": 1
+     },
+     {
+      "x": 314,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 22,
+    "bodySize": 17,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": null,
+   "consoleErrors": []
+  },
+  {
+   "width": 390,
+   "height": 844,
+   "load": "load",
+   "screens": 7,
+   "filled": [
+    0.96,
+    0.96,
+    0.87,
+    0.91,
+    0.7,
+    0.87,
+    0.89
+   ],
+   "motion": {
+    "elements": 28,
+    "css": 2,
+    "transitions": 3,
+    "scripted": 23,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "page": {
+     "height": 5330,
+     "screens": 6.3,
+     "words": 403,
+     "img": 4,
+     "video": 0,
+     "canvas": 1,
+     "svg": 21,
+     "sections": 4,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 3,
+     "uiAbuse": false,
+     "realPictures": 0,
+     "videoCount": 0,
+     "uiPictures": 1,
+     "pictureSamples": [],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "How MoyaOne works",
+     "words": 3,
+     "chars": 17,
+     "lines": 2,
+     "size": 44,
+     "vw": 11.3,
+     "font": "League Spartan",
+     "weight": 700,
+     "tracking": -0.01,
+     "leading": 1,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "center",
+     "widthRatio": 0.8,
+     "top": 338,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "How MoyaOne works",
+     "words": 3,
+     "lines": 2,
+     "size": 44,
+     "font": "League Spartan"
+    },
+    "headings": [
+     {
+      "text": "How MoyaOne works",
+      "words": 3,
+      "chars": 17,
+      "lines": 2,
+      "size": 44,
+      "vw": 11.3,
+      "font": "League Spartan",
+      "weight": 700,
+      "tracking": -0.01,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.8,
+      "top": 338,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "Try it: recharge, then pour.",
+      "words": 5,
+      "chars": 28,
+      "lines": 1,
+      "size": 28,
+      "vw": 7.2,
+      "font": "League Spartan",
+      "weight": 700,
+      "tracking": 0,
+      "leading": 1.15,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 2160,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "120.00 litres",
+      "words": 2,
+      "chars": 13,
+      "lines": 1,
+      "size": 44,
+      "vw": 11.3,
+      "font": "League Spartan",
+      "weight": 700,
+      "tracking": -0.01,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.63,
+      "top": 2502,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "What you do. What you never do.",
+      "words": 7,
+      "chars": 31,
+      "lines": 2,
+      "size": 28,
+      "vw": 7.2,
+      "font": "League Spartan",
+      "weight": 700,
+      "tracking": 0,
+      "leading": 1.15,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 3543,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "See your water, in litres.",
+      "words": 5,
+      "chars": 26,
+      "lines": 1,
+      "size": 28,
+      "vw": 7.2,
+      "font": "League Spartan",
+      "weight": 700,
+      "tracking": 0,
+      "leading": 1.15,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.79,
+      "top": 4258,
+      "tag": "h2",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 5,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 1,
+     "centered": 0,
+     "medianWords": 5,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Outfit",
+       "share": 0.76,
+       "mono": false
+      },
+      {
+       "family": "League Spartan",
+       "share": 0.24,
+       "mono": false
+      }
+     ],
+     "familyCount": 2,
+     "sizes": [
+      13,
+      15,
+      16,
+      17,
+      18,
+      20,
+      28,
+      44
+     ],
+     "sizeCount": 8,
+     "notLoaded": [],
+     "body": {
+      "font": "Outfit",
+      "size": 17,
+      "leading": 1.6,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 5.8
+     },
+     "measureChars": 34,
+     "max": {
+      "size": 44,
+      "vw": 11.3,
+      "font": "League Spartan",
+      "text": "How MoyaOne works"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0,
+     "centerShare": 0.04,
+     "smallText": 0
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#ffffff",
+     "bodyBgHsl": {
+      "h": 0,
+      "s": 0,
+      "l": 1
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#0b1626",
+       "top": 65,
+       "hsl": {
+        "h": 216,
+        "s": 0.55,
+        "l": 0.1
+       }
+      },
+      {
+       "color": "#eef2f7",
+       "top": 2088,
+       "hsl": {
+        "h": 213,
+        "s": 0.36,
+        "l": 0.95
+       }
+      },
+      {
+       "color": "#ffffff",
+       "top": 2344,
+       "hsl": {
+        "h": 0,
+        "s": 0,
+        "l": 1
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#8792a3",
+       "share": 0.42
+      },
+      {
+       "color": "#ffffff",
+       "share": 0.21
+      },
+      {
+       "color": "#4b5768",
+       "share": 0.2
+      },
+      {
+       "color": "#0b1626",
+       "share": 0.11
+      },
+      {
+       "color": "#e2e3e5",
+       "share": 0.04
+      }
+     ],
+     "button": {
+      "bg": "#2f9fe7",
+      "hsl": {
+       "h": 203,
+       "s": 0.79,
+       "l": 0.55
+      },
+      "fg": "#0b1626"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 7,
+     "inHero": 2,
+     "radius": "pill",
+     "height": 52,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Skip to content",
+      "Play the film"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 2,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 1,
+     "hairlineSamples": [
+      "header.nav 390px"
+     ],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 16,
+     "boxRadius": 20,
+     "squareMedia": 1,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [
+     {
+      "type": "canvas",
+      "ratio": 0.92
+     }
+    ],
+    "nav": {
+     "links": 1,
+     "fixed": true,
+     "height": 65,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "league spartan",
+     "outfit"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "pageH": 5330,
+    "margins": {
+     "left": 16,
+     "right": 16
+    },
+    "sections": [
+     {
+      "sel": "div.drop-stage",
+      "tag": "div",
+      "top": 65,
+      "height": 780,
+      "words": 56,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "How MoyaOne works",
+       "size": 44,
+       "tag": "h1"
+      },
+      "left": 16,
+      "right": 46,
+      "textLeft": 16,
+      "textRight": 46,
+      "fullBleed": true,
+      "footer": false,
+      "hero": true,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "ol.drop-steps.container",
+      "tag": "ol",
+      "top": 984,
+      "height": 1032,
+      "words": 139,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": 16,
+      "right": 16,
+      "textLeft": 86,
+      "textRight": 37,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.try",
+      "tag": "section",
+      "top": 2088,
+      "height": 1383,
+      "words": 53,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "120.00",
+       "size": 44,
+       "tag": "p"
+      },
+      "left": 16,
+      "right": 16,
+      "textLeft": 16,
+      "textRight": 43,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.dodont",
+      "tag": "section",
+      "top": 3471,
+      "height": 747,
+      "words": 45,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "What",
+       "size": 28,
+       "tag": "h2"
+      },
+      "left": 16,
+      "right": 16,
+      "textLeft": 16,
+      "textRight": 72,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.how-next",
+      "tag": "section",
+      "top": 4218,
+      "height": 399,
+      "words": 31,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "See",
+       "size": 28,
+       "tag": "h2"
+      },
+      "left": 40,
+      "right": 49,
+      "textLeft": 40,
+      "textRight": 49,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "footer.footer",
+      "tag": "footer",
+      "top": 4618,
+      "height": 712,
+      "words": 46,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": 16,
+      "right": 46,
+      "textLeft": 16,
+      "textRight": 46,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "How MoyaOne works",
+      "size": 44,
+      "top": 338,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 16,
+      "n": 6
+     },
+     {
+      "x": 34,
+      "n": 3
+     },
+     {
+      "x": 91,
+      "n": 3
+     },
+     {
+      "x": 62,
+      "n": 2
+     },
+     {
+      "x": 142,
+      "n": 2
+     },
+     {
+      "x": 154,
+      "n": 1
+     },
+     {
+      "x": 188,
+      "n": 1
+     },
+     {
+      "x": 219,
+      "n": 1
+     },
+     {
+      "x": 241,
+      "n": 1
+     },
+     {
+      "x": 271,
+      "n": 1
+     },
+     {
+      "x": 282,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 22,
+    "bodySize": 17,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": null,
+   "consoleErrors": []
+  }
+ ],
+ "findings": [
+  {
+   "level": "WARN",
+   "id": "hairline",
+   "width": 1440,
+   "message": "1 thin rule(s)/divider line(s): header.nav 1440px",
+   "fix": "Delete. Separate with space, a tone change, or scale. Lines are only for real tables and form fields.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "grey-body",
+   "width": 1440,
+   "message": "The running text is a soft grey on its ground (5.8:1).",
+   "fix": "Set body copy in the full ink (7:1 or more). Keep the muted ink for secondary notes; pages read thin and unfinished when everything is grey.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "few-pictures",
+   "width": 1440,
+   "message": "Only 2 picture(s) on the page (1 photographs, footage or raster images, 1 interface fragments). Drawings in SVG do not count.",
+   "fix": "Find real pictures of the subject's world with scripts/assets.mjs (photographs, archival images, maps, engravings, footage), download them to assets/ and give them room: a hero picture, one per section that has a subject, a full-width band. At least four, usually six to twelve."
+  },
+  {
+   "level": "WARN",
+   "id": "no-footage",
+   "width": 1440,
+   "message": "No video anywhere on the page.",
+   "fix": "Look for one honest clip with scripts/assets.mjs --video (the place, the material, the process) and use it as a muted loop with a poster frame. Defend its absence only if no clip fits the subject."
+  },
+  {
+   "level": "WARN",
+   "id": "ragged-edges",
+   "width": 1440,
+   "message": "Left-aligned text starts at 12 different lines (120px, 184px, 205px, 314px, 138px, 173px, 242px); the three most used hold only 36% of it.",
+   "fix": "Pick two or three anchor lines from the grid and start every heading and paragraph on one of them.",
+   "alsoAt": [
+    768
+   ]
+  }
+ ],
+ "images": [
+  {
+   "viewport": "desktop",
+   "width": 1440,
+   "fold": "C:\\Users\\Dell\\Documents\\Moya-one-final\\.taste-skill\\inspect-b2c-how-it-works\\desktop-fold.jpg",
+   "pages": [
+    "C:\\Users\\Dell\\Documents\\Moya-one-final\\.taste-skill\\inspect-b2c-how-it-works\\desktop-page-01.jpg",
+    "C:\\Users\\Dell\\Documents\\Moya-one-final\\.taste-skill\\inspect-b2c-how-it-works\\desktop-page-02.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "tablet",
+   "width": 768,
+   "fold": "C:\\Users\\Dell\\Documents\\Moya-one-final\\.taste-skill\\inspect-b2c-how-it-works\\tablet-fold.jpg",
+   "pages": [
+    "C:\\Users\\Dell\\Documents\\Moya-one-final\\.taste-skill\\inspect-b2c-how-it-works\\tablet-page-01.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "mobile",
+   "width": 390,
+   "fold": "C:\\Users\\Dell\\Documents\\Moya-one-final\\.taste-skill\\inspect-b2c-how-it-works\\mobile-fold.jpg",
+   "pages": [
+    "C:\\Users\\Dell\\Documents\\Moya-one-final\\.taste-skill\\inspect-b2c-how-it-works\\mobile-page-01.jpg"
+   ],
+   "film": []
+  }
+ ]
+}

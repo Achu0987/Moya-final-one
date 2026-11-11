@@ -12,7 +12,7 @@ export function JugShape({ id, water = true }) {
         </clipPath>
       </defs>
       <rect x="61" y="47" width="38" height="16" rx="3" fill="var(--base)" stroke="var(--ink)" strokeWidth="2" />
-      <rect x="58" y="36" width="44" height="13" rx="4" fill="var(--orange)" />
+      <rect x="58" y="36" width="44" height="13" rx="4" fill="var(--sky)" />
       <path d={BODY} fill="var(--base)" />
       {water && (
         <g clipPath={`url(#${id}-clip)`}>

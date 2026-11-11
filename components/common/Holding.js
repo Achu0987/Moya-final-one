@@ -13,11 +13,11 @@ export default function Holding({ title, text, related = [] }) {
         <div className="holding-actions">
           <a href="/b2c/how-it-works" className="btn btn-primary">
             See how it works
-            <ArrowRight size={20} aria-hidden="true" />
+            <ArrowRight weight="bold" size={20} aria-hidden="true" />
           </a>
           <a href="/" className="text-link">
             Back to home
-            <ArrowRight size={20} aria-hidden="true" />
+            <ArrowRight weight="bold" size={20} aria-hidden="true" />
           </a>
         </div>
         {related.length > 0 && (
@@ -25,7 +25,7 @@ export default function Holding({ title, text, related = [] }) {
             {related.map((r) => (
               <a key={r.href} href={r.href} className="text-link">
                 {r.label}
-                <ArrowRight size={20} aria-hidden="true" />
+                <ArrowRight weight="bold" size={20} aria-hidden="true" />
               </a>
             ))}
           </nav>

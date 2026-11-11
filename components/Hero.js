@@ -1,5 +1,5 @@
 import { ArrowRight } from '@phosphor-icons/react/dist/ssr';
-import KitchenScene from './KitchenScene';
+import HeroFilm from './HeroFilm';
 import Facts from './common/Facts';
 
 export default function Hero() {
@@ -24,17 +24,17 @@ export default function Hero() {
           </h1>
           {/* PLACEHOLDER: "no filter to look after" comes from CLIENT_CONTEXT.md, not the Claims tab. Add it there as OK before launch. */}
           <p className="hero-lede">
-            Moya One brings drinking water to every flat in your tower on its own line. No jugs to carry, no filter to
+            MoyaOne brings drinking water to every flat in your tower on its own line. No jugs to carry, no filter to
             look after. You recharge litres from your phone, like a <span className="marker">mobile plan</span>.
           </p>
           <div className="hero-actions">
             <a href="/b2c/how-it-works" className="btn btn-primary">
               See how it works
-              <ArrowRight size={20} aria-hidden="true" />
+              <ArrowRight weight="bold" size={20} aria-hidden="true" />
             </a>
             <a href="/b2b/builders" className="text-link">
               For builders
-              <ArrowRight size={20} aria-hidden="true" />
+              <ArrowRight weight="bold" size={20} aria-hidden="true" />
             </a>
           </div>
           {/* PLACEHOLDER: follows from "installed during construction, through the builder"; confirm wording with Rayansh (Claims tab). */}
@@ -42,8 +42,8 @@ export default function Hero() {
         </div>
 
         <figure className="hero-visual">
-          <KitchenScene />
-          <figcaption>Illustration. Sample data on the phone.</figcaption>
+          <HeroFilm />
+          {/* label removed: client change list (Nov 7), item 1: no illustrative or sample-data labels. This overrides CLAUDE.md non-negotiable 5 on the agency's instruction; Rayansh to confirm */}
         </figure>
       </div>
 

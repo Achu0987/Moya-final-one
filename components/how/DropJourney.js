@@ -9,10 +9,10 @@ import { marbleTexture, tileTexture, woodTexture } from '@/lib/three/finishes';
 // "Follow one drop": a real residential tower at dusk, among its neighbours. The water line glows through the
 // building like an x-ray. Scrolling (or "Play the journey") carries one drop from the plant room below ground,
 // up the core past every floor, into one flat on floor 7, through the window into its kitchen, past the Moya1
-// control unit and out of the Moya One tap into a glass. No part is named and nothing shows how the water is
+// control unit and out of the MoyaOne tap into a glass. No part is named and nothing shows how the water is
 // treated (CLAUDE.md non-negotiables 2 and 7). Reduced motion: one still frame and the captions as a list.
 
-const C = { base: 0xfafaf7, ink: 0x111827, orange: 0xf97316, yellow: 0xffd60a, grey: 0xf3f4f6, water: 0xbfe3f0 };
+const C = { base: 0xffffff, ink: 0x0b1626, orange: 0x2f9fe7, yellow: 0xc1e2f8, grey: 0xeef2f7, water: 0xc1e2f8 }; // brand book palette (orange key now holds sky blue)
 
 const W = 2.4; // tower width
 const D = 1.6; // tower depth
@@ -39,15 +39,15 @@ export const MOMENTS = [
   { at: 0.84, title: 'It lands in your glass.', text: 'From its own tap. Your usual tap stays as it is.' },
 ];
 
-// How Moya One works, start to end: the six steps the film is told in, over the page's scroll (0 to 1).
+// How MoyaOne works, start to end: the six steps the film is told in, over the page's scroll (0 to 1).
 // The 3D film runs under them; recharge and top-up show a phone card over the kitchen, since the film has no phone.
 // Every step restates CLAUDE.md "What the project is"; nothing goes beyond it.
 export const STEPS = [
   // PLACEHOLDER: "its own plant room" follows CLIENT_CONTEXT.md; Claims tab "To confirm".
-  { at: 0, phase: 'Before you move in', who: 'Your builder, with Moya One', title: 'Fits the plant room below the tower', text: 'Planned at the design stage, it goes in while the tower is built.' },
-  { at: 0.2, phase: 'Before you move in', who: 'Builder and Moya One', title: 'Lays one line to every flat', text: 'A dedicated line runs from the plant room below ground up the tower, while it is built.' },
-  { at: 0.5, phase: 'Before you move in', who: 'Builder and Moya One', title: 'Fits your kitchen', text: 'Your flat gets its own branch, a Moya1™ control unit and an extra tap.' },
-  { at: 0.74, phase: 'After you move in', who: 'You', title: 'Recharge litres on your phone', text: 'Choose a pack in the Moya One app, the way you top up a mobile plan.' },
+  { at: 0, phase: 'Before you move in', who: 'Your builder, with MoyaOne', title: 'Fits the plant room below the tower', text: 'Planned at the design stage, it goes in while the tower is built.' },
+  { at: 0.2, phase: 'Before you move in', who: 'Builder and MoyaOne', title: 'Lays one line to every flat', text: 'A dedicated line runs from the plant room below ground up the tower, while it is built.' },
+  { at: 0.5, phase: 'Before you move in', who: 'Builder and MoyaOne', title: 'Fits your kitchen', text: 'Your flat gets its own branch, a Moya1™ control unit and an extra tap.' },
+  { at: 0.74, phase: 'After you move in', who: 'You', title: 'Recharge litres on your phone', text: 'Choose a pack in the MoyaOne app, the way you top up a mobile plan.' },
   { at: 0.81, phase: 'After you move in', who: 'You', title: 'Pour a glass', text: 'Drinking water comes from its own tap. Your usual tap stays as it is.' },
   // PLACEHOLDER: "no filter" follows CLIENT_CONTEXT.md; Claims tab "To confirm".
   { at: 0.89, phase: 'After you move in', who: 'You', title: 'Top up when you run low', text: 'Recharge again from the app. No jugs to carry, no filter to service.' },
@@ -568,7 +568,7 @@ export default function DropJourney() {
           ref={host}
           className="drop-canvas"
           role="img"
-          aria-label="A residential tower at dusk among its neighbours. The water line glows through the building. One drop travels from the plant room below ground, up the tower, into a flat on floor 7, through its window into the kitchen, past the Moya1 control unit and out of the Moya One tap into a glass."
+          aria-label="A residential tower at dusk among its neighbours. The water line glows through the building. One drop travels from the plant room below ground, up the tower, into a flat on floor 7, through its window into the kitchen, past the Moya1 control unit and out of the MoyaOne tap into a glass."
         />
 
         {/* the opening: two doors carrying the water line; they part as the page moves, and the tower is behind them */}
@@ -579,7 +579,7 @@ export default function DropJourney() {
           </span>
           {recap && !still && (
             <div className="drop-recap container" aria-live="polite">
-              <p className="drop-recap-title">That’s Moya One, start to end.</p>
+              <p className="drop-recap-title">That’s MoyaOne, start to end.</p>
               <p className="drop-open-lede">Fitted once, while your tower is built. Then it is yours.</p>
               <div className="drop-recap-grid">
                 {['Before you move in', 'After you move in'].map((phase) => (
@@ -602,13 +602,13 @@ export default function DropJourney() {
           )}
           <div className="drop-open-copy container">
             <h1 id="how-title" className="drop-open-title">
-              How Moya One works
+              How MoyaOne works
             </h1>
             <p className="drop-open-lede">Six steps, start to end: from your builder’s first drawing to the glass in your hand.</p>
             {!still && (
               <button type="button" className="btn btn-primary drop-open-go" onClick={play} disabled={playing}>
                 Let’s see
-                <ArrowDown size={18} aria-hidden="true" />
+                <ArrowDown weight="bold" size={18} aria-hidden="true" />
               </button>
             )}
             {!still && <p className="drop-open-hint">or scroll</p>}
@@ -646,7 +646,7 @@ export default function DropJourney() {
             {/* steps 4 and 6: the app, litres going in. No numbers, so nothing to mistake for a price or a real balance */}
             <div className={`drop-phone${step === 3 || step === 5 ? ' is-on' : ''}${step === 5 ? ' is-topup' : ''}`} data-ui aria-hidden="true">
               <p className="drop-phone-top">
-                Moya One <em className="sample">Sample</em>
+                MoyaOne
               </p>
               <p className="drop-phone-label">Your water</p>
               <span className="drop-phone-meter">
@@ -657,7 +657,7 @@ export default function DropJourney() {
             <div className="drop-hud" data-ui aria-hidden="true">
               <span>{floor ? 'Floor' : 'Where it is'}</span>
               <strong>{floor ? floor : 'Plant room'}</strong>
-              <em className="sample">Illustrative</em>
+              {/* label removed: client change list (Nov 7), item 1: no illustrative or sample-data labels. This overrides CLAUDE.md non-negotiable 5 on the agency's instruction; Rayansh to confirm */}
             </div>
           </>
         )}

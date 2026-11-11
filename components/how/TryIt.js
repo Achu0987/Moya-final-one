@@ -100,8 +100,8 @@ export default function TryIt() {
             <Words>Try it: recharge, then pour.</Words>
           </h2>
           <p data-reveal="fade">
-            Top up litres on the phone, then press and hold the tap. Your balance goes down as you pour. Everything
-            here is sample data.
+            {/* "Everything here is sample data" removed: client change list (Nov 7), item 1: no illustrative or sample-data labels. This overrides CLAUDE.md non-negotiable 5 on the agency's instruction; Rayansh to confirm */}
+            Top up litres on the phone, then press and hold the tap. Your balance goes down as you pour.
           </p>
         </div>
 
@@ -110,8 +110,7 @@ export default function TryIt() {
           <div className="phone try-phone" data-ui>
             <div className="phone-screen">
               <div className="phone-top">
-                <span className="phone-brand">Moya One</span>
-                <span className="sample">Sample data</span>
+                <span className="phone-brand">MoyaOne</span>
               </div>
               <p className="phone-hello">Your water</p>
               <div className="phone-card">
@@ -143,7 +142,7 @@ export default function TryIt() {
 
           {/* the tap and the glass */}
           <div className="try-tap">
-            <svg viewBox="0 0 360 420" role="img" aria-label={`The Moya One tap above a glass, ${Math.round(fill * 100)}% full.`}>
+            <svg viewBox="0 0 360 420" role="img" aria-label={`The MoyaOne tap above a glass, ${Math.round(fill * 100)}% full.`}>
               <defs>
                 <clipPath id="try-glass">
                   <path d="M92 230h96l-10 124a8 8 0 0 1-8 7h-60a8 8 0 0 1-8-7z" />
@@ -152,9 +151,9 @@ export default function TryIt() {
               {/* worktop */}
               <rect x="20" y="362" width="320" height="22" rx="4" fill="var(--grey)" />
               <rect x="20" y="384" width="320" height="10" rx="2" fill="var(--line)" />
-              {/* the Moya One tap: matte ink column, orange ring, gooseneck */}
+              {/* the MoyaOne tap: matte ink column, orange ring, gooseneck */}
               <rect x="252" y="352" width="40" height="10" rx="3" fill="var(--ink)" />
-              <rect x="252" y="346" width="40" height="6" rx="3" fill="var(--orange)" />
+              <rect x="252" y="346" width="40" height="6" rx="3" fill="var(--sky)" />
               <rect x="262" y="160" width="20" height="188" rx="10" fill="var(--ink)" />
               <path d="M272 168c0-78-48-104-96-104s-36 68-36 98" fill="none" stroke="var(--ink)" strokeWidth="16" strokeLinecap="round" />
               <rect x="128" y="156" width="24" height="12" rx="4" fill="var(--ink)" />
@@ -190,10 +189,10 @@ export default function TryIt() {
               onKeyUp={onKey}
               onContextMenu={(e) => e.preventDefault()}
             >
-              <Drop size={22} aria-hidden="true" />
+              <Drop weight="bold" size={22} aria-hidden="true" />
               {pouring ? 'Pouring…' : 'Press and hold to pour'}
             </button>
-            <p className="try-note">One glass here is {fmt(GLASS_L, 2)} litres. Sample data.</p>
+            <p className="try-note">One glass here is {fmt(GLASS_L, 2)} litres.</p>
           </div>
         </div>
       </div>

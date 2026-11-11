@@ -51,7 +51,7 @@ export default function Facts() {
                 <path d="M0 6q7.5-6 15 0t15 0t15 0t15 0t15 0t15 0t15 0t15 0V12H0z" />
               </svg>
             </span>
-            <Icon size={24} aria-hidden="true" />
+            <Icon weight="bold" size={24} aria-hidden="true" />
           </span>
           <span className="facts-text">
             <strong>{title}</strong>

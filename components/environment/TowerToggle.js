@@ -4,10 +4,11 @@ import { useEffect, useRef, useState } from 'react';
 import { JugShape } from '@/components/Jug';
 
 // The first screen's drawing: one tower, two ways to get drinking water into it.
-// Today: a van brings 20-litre jugs to the gate and a jug waits in every flat. With Moya One: the van drives off, the
-// jugs go, and one orange line rises from the plant room to every flat. It plays once when it comes into view, then
-// the visitor switches between the two. Same flat 2px-ink style as the home page's step drawings.
-// Reduced motion: shows the Moya One state, the final state, with no travel.
+// Today: a van brings 20-litre jugs to the gate and a jug waits in every flat. With MoyaOne: the van drives off, the
+// jugs go, and one line rises from the plant room to every flat. The scroll drives it (client request): as the card
+// passes the middle of the screen going down it turns to MoyaOne, and scrolling back up returns it to today. The two
+// buttons still switch it by hand. Same flat 2px-ink style as the home page's step drawings.
+// Reduced motion: shows the MoyaOne state, the final state, with no travel.
 const S = { fill: 'none', stroke: 'var(--ink)', strokeWidth: 2, strokeLinecap: 'round', strokeLinejoin: 'round' };
 const GROUND = 318;
 const FLOORS = [86, 132, 178, 224]; // top of each floor, top to bottom
@@ -22,33 +23,37 @@ const CAPTION = {
 export default function TowerToggle() {
   const [state, setState] = useState('today');
   const box = useRef(null);
-  const touched = useRef(false);
 
   useEffect(() => {
     if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
       setState('moya');
       return;
     }
-    let t = 0;
-    const io = new IntersectionObserver(
-      ([e]) => {
-        if (!e.isIntersecting) return;
-        io.disconnect();
-        t = setTimeout(() => touched.current || setState('moya'), 1600);
-      },
-      { threshold: 0.5 },
-    );
-    io.observe(box.current);
+    // which side of the screen's middle the card's centre is on; the state changes only when that side changes,
+    // so a choice made with the buttons holds until the visitor scrolls past the middle again
+    let zone = null;
+    let raf = 0;
+    const check = () => {
+      raf = 0;
+      const r = box.current.getBoundingClientRect();
+      const next = r.top + r.height * 0.5 < window.innerHeight * 0.5 ? 'moya' : 'today';
+      if (next !== zone) {
+        zone = next;
+        setState(next);
+      }
+    };
+    const onScroll = () => raf || (raf = requestAnimationFrame(check));
+    check();
+    window.addEventListener('scroll', onScroll, { passive: true });
+    window.addEventListener('resize', onScroll);
     return () => {
-      io.disconnect();
-      clearTimeout(t);
+      window.removeEventListener('scroll', onScroll);
+      window.removeEventListener('resize', onScroll);
+      cancelAnimationFrame(raf);
     };
   }, []);
 
-  const pick = (s) => {
-    touched.current = true;
-    setState(s);
-  };
+  const pick = (s) => setState(s);
 
   return (
     <figure ref={box} className={`tt is-${state}`}>
@@ -58,7 +63,7 @@ export default function TowerToggle() {
         role="img"
         aria-label={
           state === 'moya'
-            ? 'A tower with one orange line rising from the plant room to every flat. No van, no jugs.'
+            ? 'A tower with one line rising from the plant room to every flat. No van, no jugs.'
             : 'A van with water jugs at the gate of a tower, and a jug in every flat.'
         }
       >
@@ -103,7 +108,7 @@ export default function TowerToggle() {
           <circle cx="150" cy="308" r="10" {...S} fill="var(--base)" />
         </g>
 
-        {/* With Moya One: one line from the plant room up the tower, a branch to every flat */}
+        {/* With MoyaOne: one line from the plant room up the tower, a branch to every flat */}
         <path className="tt-riser" d={`M292 344H${RISER}V${FLOORS[0] + 16}`} pathLength="1" />
         {FLOORS.map((y, f) => (
           <g key={y}>
@@ -133,7 +138,7 @@ export default function TowerToggle() {
             Today
           </button>
           <button type="button" aria-pressed={state === 'moya'} onClick={() => pick('moya')}>
-            With Moya One
+            With MoyaOne
           </button>
         </div>
         <figcaption className="tt-caption" aria-live="polite">

@@ -51,7 +51,7 @@ export default function AppDemo() {
               <Words>Know your balance. Top up in litres.</Words>
             </h2>
             <p className="app-lede" data-reveal="fade">
-              The Moya One app shows how many litres you have left. When you need more, choose a pack and recharge.
+              The MoyaOne app shows how many litres you have left. When you need more, choose a pack and recharge.
               Try it on the screen.
             </p>
             <p className="app-note" data-reveal="fade">
@@ -62,7 +62,7 @@ export default function AppDemo() {
           <div className="phone" data-ui data-reveal="phone">
             <div className="phone-screen">
               <div className="phone-top">
-                <span className="phone-brand">Moya One</span>
+                <span className="phone-brand">MoyaOne</span>
                 <span className="sample">Sample data</span>
               </div>
               <p className="phone-hello">Your water</p>
@@ -91,7 +91,7 @@ export default function AppDemo() {
 
               {done ? (
                 <button type="button" className="btn btn-secondary phone-btn" onClick={() => setBalance(SAMPLE_BALANCE_L)}>
-                  <ArrowCounterClockwise size={20} aria-hidden="true" />
+                  <ArrowCounterClockwise weight="bold" size={20} aria-hidden="true" />
                   Reset the demo
                 </button>
               ) : (

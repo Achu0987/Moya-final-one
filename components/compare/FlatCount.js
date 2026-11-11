@@ -4,7 +4,7 @@ import { useState } from 'react';
 import useCount from '@/components/common/useCount';
 
 // For builders: one RO unit per kitchen means one unit to buy, fit and service per flat. The visitor sets the
-// number of flats and sees a unit drawn for every one, then switches to Moya One: one system for the tower, the
+// number of flats and sees a unit drawn for every one, then switches to MoyaOne: one system for the tower, the
 // units gone from the flats. Simple counting on the visitor's own number, labelled Illustrative.
 const fmt = (n) => n.toLocaleString('en-IN');
 const MAX = 400;
@@ -33,7 +33,7 @@ export default function FlatCount() {
             RO filters
           </button>
           <button type="button" aria-pressed={moya} onClick={() => setMoya(true)}>
-            Moya One
+            MoyaOne
           </button>
         </div>
         <p className="ly-key">

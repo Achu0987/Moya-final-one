@@ -1,12 +1,15 @@
 /* Homepage. Tokens only (app/globals.css). Mobile first; desktop from 900px. */
 
 /* ---------- Nav ---------- */
+/* a white bar with the navy-on-white logo (brand book p.9: the version for light backgrounds), so the header reads
+   apart from the navy first screens below it; a quiet line separates it from white sections */
 .nav {
   position: sticky;
   top: 0;
   z-index: 50;
   background: var(--base);
-  border-bottom: 1px solid var(--line); /* taste-skill-ignore: line under the header, requested by the client team */
+  color: var(--ink);
+  border-bottom: 1px solid var(--line); /* taste-skill-ignore: the header's edge against white sections, requested by the client team */
 }
 
 .nav-inner {
@@ -20,26 +23,16 @@
 .nav-mark {
   display: inline-flex;
   align-items: center;
-  gap: 10px;
   min-height: 44px;
   margin-right: auto;
-  font-family: var(--font-display);
-  font-weight: 700;
-  font-size: 22px;
-  letter-spacing: -0.035em;
-  white-space: nowrap;
-  text-decoration: none;
 }
 
+/* the logo is never rotated, stretched or recoloured (brand book p.11) */
 .nav-logo {
-  width: 26px;
-  height: 30px;
-  flex: none;
-  transition: transform 0.6s var(--ease-enter);
-}
-
-.nav-mark:hover .nav-logo {
-  transform: rotate(-12deg);
+  display: block;
+  width: auto;
+  height: 40px;
+  transition: height 0.35s var(--ease-enter);
 }
 
 .nav-links,
@@ -83,7 +76,15 @@
   }
 
   .nav.is-scrolled .nav-inner {
-    height: 68px;
+    height: 72px;
+  }
+
+  .nav-logo {
+    height: 52px;
+  }
+
+  .nav.is-scrolled .nav-logo {
+    height: 44px;
   }
 
   .nav-mark {
@@ -124,7 +125,7 @@
     height: 5px;
     margin-left: -2.5px;
     border-radius: 50%;
-    background: var(--orange);
+    background: var(--sky);
     opacity: 0;
     transform: scale(0.6);
     transition:
@@ -146,19 +147,23 @@
     padding: 0 20px 0 22px;
     border-radius: var(--radius-pill);
     background: var(--ink);
+    border: 0;
     color: var(--base);
     font-weight: 600;
-    font-size: 15px;
+    font-size: 16px;
     text-decoration: none;
-    transition: background-color 0.25s var(--ease-enter);
+    transition:
+      background-color 0.25s var(--ease-enter),
+      color 0.25s var(--ease-enter);
   }
 
   .nav-cta svg {
     transition: transform 0.3s var(--ease-enter);
   }
 
+  /* a navy pill on the white bar; the sky blue fill stays for the page's one primary action */
   .nav-cta:hover {
-    background: color-mix(in srgb, var(--ink) 85%, var(--base));
+    background: var(--royal);
   }
 
   .nav-cta:hover svg {
@@ -172,14 +177,29 @@
 }
 
 /* ---------- Hero ---------- */
-/* PROPOSED (pending Vinayak): the hero uses a pale mix of the --water token as its field, at the client team's request */
+/* the website hero of the brand book (p.17): a navy field, white text, one sky blue action */
 .hero {
   position: relative;
   isolation: isolate;
   padding-top: 32px;
   padding-bottom: 56px;
   overflow-x: clip;
-  background: color-mix(in srgb, var(--water) 30%, var(--base));
+  background: var(--ink);
+  color: var(--base);
+}
+
+.hero .hero-note {
+  color: var(--on-ink-muted);
+}
+
+/* on navy, links and highlight words are sky blue (brand book p.15) */
+.hero .text-link {
+  color: var(--sky);
+}
+
+.hero .marker {
+  text-decoration: none;
+  color: var(--sky);
 }
 
 .hero-water {
@@ -195,7 +215,7 @@
   fill: none;
   stroke: var(--base);
   stroke-width: 1.5;
-  opacity: 0.7;
+  opacity: 0.06;
   vector-effect: non-scaling-stroke;
   animation: ripple-drift 30s linear infinite;
 }
@@ -220,7 +240,7 @@
 .hero-title {
   font-size: var(--fs-h1);
   line-height: var(--lh-h1);
-  letter-spacing: -0.03em;
+  letter-spacing: -0.01em;
 }
 
 .hero-lede {
@@ -238,15 +258,22 @@
   margin-top: 32px;
 }
 
+/* links: royal blue on white, sky blue on navy (brand book p.15) */
 .text-link {
   display: inline-flex;
   align-items: center;
   gap: 8px;
   min-height: 44px;
+  color: var(--royal);
   font-weight: 600;
   text-decoration: underline;
   text-decoration-thickness: 1.5px;
   text-underline-offset: 6px;
+}
+
+/* every link set on a navy field turns sky blue (6.3:1); royal blue on navy fails (brand book p.13) */
+:is(.bx-hero, .bx-band, .bx-enquire, .drop, .dodont-do, .ro-build, .ev-proof, .builders, .intro, .cp-hero, .ev-hero) .text-link {
+  color: var(--sky);
 }
 
 .text-link svg {
@@ -264,6 +291,22 @@
   aspect-ratio: 1 / 1.05;
   max-height: 78svh;
 }
+
+/* the recorded kitchen film (client request, Nov 11), shown whole at its own 16:9 with its chapter line */
+.hero-visual:has(.hero-film) {
+  overflow: hidden;
+  aspect-ratio: 16 / 9;
+  max-height: none;
+}
+
+.hero-film {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 
 .hero-visual figcaption {
   position: absolute;
@@ -290,6 +333,24 @@
 .kitchen {
   position: absolute;
   inset: 0;
+}
+
+/* "100% space is free": shown over the kitchen while the loft and cupboards turn see-through (client change list) */
+.kitchen-space {
+  position: absolute;
+  z-index: 2;
+  left: 50%;
+  top: 22px;
+  margin: 0;
+  padding: 12px 24px;
+  border-radius: var(--radius-pill);
+  background: var(--white);
+  color: var(--navy);
+  font: 700 clamp(18px, 2.4vw, 28px) / 1 var(--font-display);
+  white-space: nowrap;
+  opacity: 0;
+  transform: translateX(-50%);
+  pointer-events: none;
 }
 
 .kitchen-canvas {
@@ -412,6 +473,7 @@
   margin-top: 40px;
   padding: 24px;
   background: var(--base);
+  color: var(--ink); /* a white panel on the navy hero: its text returns to navy */
   border-radius: var(--radius-card);
 }
 
@@ -440,7 +502,7 @@
 }
 
 .trace .trace-run {
-  stroke: var(--orange);
+  stroke: var(--sky);
   stroke-linecap: round;
   stroke-dasharray: 12 88;
 }
@@ -489,7 +551,7 @@
 }
 
 .facts li:focus-visible {
-  outline: 3px solid var(--orange);
+  outline: 3px solid var(--sky);
   outline-offset: 2px;
 }
 
@@ -503,7 +565,7 @@
   border-radius: 50%;
   overflow: hidden;
   background: color-mix(in srgb, var(--water) 30%, var(--base));
-  color: var(--orange);
+  color: var(--ink); /* icons navy on white, in a circle (brand book p.16) */
 }
 
 .facts-icon > svg {
@@ -705,6 +767,18 @@
     height: 100%;
     min-height: 460px;
     max-height: none;
+  }
+
+  /* the film is wide: the card takes one more column so it reads larger (client, Nov 11: increase the size) */
+  .hero-grid:has(.hero-film) .hero-copy {
+    grid-column: 1 / 6;
+  }
+
+  .hero-visual:has(.hero-film) {
+    grid-column: 6 / 13;
+    height: auto;
+    min-height: 0;
+    aspect-ratio: 16 / 9;
   }
 
   .hero-visual figcaption {
@@ -956,7 +1030,7 @@
     top: 172px;
     height: 3px;
     border-radius: 2px;
-    background: var(--orange);
+    background: var(--sky);
     transform-origin: left;
   }
 
@@ -990,7 +1064,7 @@
 .statement-title {
   font-size: var(--fs-h2);
   line-height: var(--lh-h2);
-  letter-spacing: -0.03em;
+  letter-spacing: -0.01em;
   text-wrap: pretty;
 }
 
@@ -1069,7 +1143,7 @@
 .phone-brand {
   font-family: var(--font-display);
   font-weight: 700;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.01em;
 }
 
 .phone-hello {
@@ -1097,7 +1171,7 @@
   font-weight: 700;
   font-size: 44px;
   line-height: 1.1;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.01em;
   font-variant-numeric: tabular-nums;
 }
 
@@ -1176,7 +1250,7 @@
 }
 
 .pack input:focus-visible + span {
-  outline: 3px solid var(--orange);
+  outline: 3px solid var(--sky);
   outline-offset: 3px;
 }
 
@@ -1315,7 +1389,7 @@
 }
 
 .tower3d .kitchen-dot {
-  background: var(--orange);
+  background: var(--sky);
   border-color: var(--ink);
 }
 
@@ -1435,41 +1509,56 @@
   margin-top: 12px;
 }
 
-/* ---------- Footer ---------- */
+/* ---------- Footer ----------
+   A compact close: the logo and one line about the service, the pages in two short columns, the contact, then the
+   legal row on a tone step. No monument logo, no rules. */
 .footer {
   background: var(--ink);
   color: var(--base);
-  overflow: hidden;
+  padding-bottom: 24px;
 }
 
 .footer-grid {
   display: grid;
-  gap: 40px;
-  padding-top: 64px;
+  gap: 36px;
+  padding-top: 56px;
 }
 
-.footer-name {
-  font-family: var(--font-display);
-  font-weight: 700;
-  font-size: var(--fs-h3);
-  letter-spacing: -0.02em;
+.footer-brand {
+  display: grid;
+  gap: 16px;
+  align-content: start;
+}
+
+.footer-logo {
+  display: inline-block;
+  justify-self: start;
+}
+
+.footer-logo img {
+  display: block;
+  width: 168px;
+  height: auto;
 }
 
 .footer-about {
-  margin-top: 12px;
   max-width: 34ch;
+  font-size: var(--fs-body);
   color: var(--on-ink-muted);
 }
 
 .footer-label {
-  margin-bottom: 12px;
+  margin-bottom: 8px;
   font-size: var(--fs-caption);
   font-weight: 600;
   color: var(--on-ink-muted);
 }
 
+/* the pages in two columns, so the list stays short */
 .footer-col ul {
   display: grid;
+  grid-template-columns: repeat(2, minmax(0, max-content));
+  column-gap: 40px;
 }
 
 .footer-col ul a,
@@ -1477,21 +1566,20 @@
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  min-height: 44px;
+  min-height: 40px;
   text-decoration: none;
   transition: color 0.25s var(--ease-enter);
 }
 
 .footer-col ul a:hover,
 .footer-email:hover {
-  color: var(--on-ink-muted);
+  color: var(--sky);
 }
 
 .footer-email {
   font-family: var(--font-display);
   font-weight: 600;
   font-size: var(--fs-h3);
-  letter-spacing: -0.01em;
   overflow-wrap: anywhere;
 }
 
@@ -1510,8 +1598,8 @@
   align-items: center;
   gap: 16px;
   flex-wrap: wrap;
-  margin-top: 56px;
-  padding: 8px 20px;
+  margin-top: 40px;
+  padding: 6px 20px;
   border-radius: var(--radius-card);
   background: var(--ink-raised);
   font-size: var(--fs-caption);
@@ -1522,7 +1610,7 @@
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  min-height: 44px;
+  min-height: 40px;
   text-decoration: none;
 }
 
@@ -1530,35 +1618,23 @@
   color: var(--base);
 }
 
-/* The name as a monument: it closes the page at full width, cropped by the bottom edge. */
-.footer-mark {
-  font-family: var(--font-display);
-  font-weight: 700;
-  letter-spacing: -0.055em;
-  line-height: 0.8;
-  /* glyph ink measures 4.46em wide; the negative indent cancels the M's side bearing so the ink sits on the margins */
-  font-size: calc((100vw - 2 * var(--gutter)) / 4.46);
-  white-space: nowrap;
-  padding-inline: var(--gutter);
-  margin: 32px auto -0.12em;
-  text-indent: -0.066em;
-  max-width: calc(var(--container) + 2 * var(--gutter));
-  will-change: transform;
-}
-
 @media (min-width: 900px) {
+  .footer {
+    padding-bottom: 32px;
+  }
+
   .footer-grid {
-    grid-template-columns: repeat(12, 1fr);
-    gap: 24px;
-    padding-top: 96px;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    column-gap: 24px;
+    padding-top: 72px;
   }
 
   .footer-brand {
-    grid-column: 1 / 6;
+    grid-column: 1 / 5;
   }
 
   .footer-col:nth-child(2) {
-    grid-column: 7 / 9;
+    grid-column: 6 / 10;
   }
 
   .footer-col:nth-child(3) {
@@ -1566,14 +1642,9 @@
   }
 
   .footer-legal {
-    margin-top: 80px;
+    margin-top: 56px;
     padding-inline: 28px;
     border-radius: var(--radius-pill);
-  }
-
-  .footer-mark {
-    font-size: min(calc((100vw - 2 * var(--gutter)) / 4.46), 269px);
-    margin-top: 48px;
   }
 }
 
@@ -1645,7 +1716,7 @@
   position: absolute;
   inset: 0;
   border-radius: 50%;
-  border: 2px solid var(--orange);
+  border: 2px solid var(--sky);
   opacity: 0;
 }
 
@@ -1663,7 +1734,7 @@
   position: absolute;
   inset: 0;
   border-radius: 50%;
-  border: 2px solid var(--orange);
+  border: 2px solid var(--sky);
   opacity: 0;
   animation: wa-ring 5s var(--ease-enter) 0.8s infinite;
 }
@@ -1723,7 +1794,7 @@
   height: 6px;
   margin-left: 10px;
   border-radius: 50%;
-  background: var(--orange);
+  background: var(--sky);
 }
 
 @media (min-width: 900px) {
@@ -1771,7 +1842,7 @@
     height: 5px;
     margin-left: -10px;
     border-radius: 50%;
-    background: var(--orange);
+    background: var(--sky);
     opacity: 0;
     transform: scale(0.6);
     transition:
@@ -1840,7 +1911,7 @@
     height: 44px;
     border-radius: 50%;
     background: color-mix(in srgb, var(--water) 35%, var(--base));
-    color: var(--orange);
+    color: var(--ink);
     transition: transform 0.35s var(--ease-enter);
   }
 
@@ -1899,7 +1970,7 @@
 .holding h1 {
   font-size: var(--fs-h1);
   line-height: var(--lh-h1);
-  letter-spacing: -0.03em;
+  letter-spacing: -0.01em;
 }
 
 .holding p {
@@ -2061,7 +2132,7 @@
 
 .intro-line {
   fill: none;
-  stroke: var(--orange);
+  stroke: var(--sky);
   stroke-width: 3;
   stroke-linecap: round;
   stroke-linejoin: round;
@@ -2131,7 +2202,7 @@
 }
 
 .intro-branch {
-  stroke: var(--orange);
+  stroke: var(--sky);
   stroke-width: 2;
   stroke-linecap: round;
   opacity: 0;
@@ -2147,25 +2218,12 @@
   animation: intro-arrive 0.5s var(--ease-enter) 1.25s both;
 }
 
-.intro-mark {
-  width: clamp(30px, 4vw, 44px);
+.intro-logo {
+  display: block;
+  width: clamp(200px, 22vw, 300px);
   height: auto;
 }
 
-.intro-name {
-  font-family: var(--font-display);
-  font-weight: 700;
-  font-size: clamp(40px, 5.5vw, 64px);
-  line-height: 1;
-  letter-spacing: -0.035em;
-}
-
-.intro-tag {
-  margin-top: 10px;
-  font-size: var(--fs-body-lg);
-  color: var(--on-ink-muted);
-  animation: intro-arrive 0.5s var(--ease-enter) 1.4s both;
-}
 
 @keyframes intro-arrive {
   from {

@@ -21,7 +21,7 @@
 .cp-title {
   font-size: var(--fs-hero);
   line-height: var(--lh-hero);
-  letter-spacing: -0.035em;
+  letter-spacing: -0.01em;
 }
 
 .cp-lede {
@@ -40,7 +40,7 @@
 }
 
 .cp-hero .text-link {
-  color: var(--base);
+  color: var(--sky);
 }
 
 /* ---------- Section heads (heading left, sentence right on desktop) ---------- */
@@ -53,7 +53,7 @@
 .cp-head h2 {
   font-size: var(--fs-h1);
   line-height: var(--lh-h1);
-  letter-spacing: -0.03em;
+  letter-spacing: -0.01em;
 }
 
 .cp-head p {
@@ -103,7 +103,7 @@
 
 .ks-line {
   fill: none;
-  stroke: var(--orange);
+  stroke: var(--sky);
   stroke-width: 5;
   stroke-linecap: round;
   stroke-linejoin: round;
@@ -135,7 +135,7 @@
   opacity: 0;
 }
 
-/* Moya One: the line climbs the wall, the unit and the extra tap appear */
+/* MoyaOne: the line climbs the wall, the unit and the extra tap appear */
 .ks.is-moya .ks-moya {
   opacity: 1;
   transform: none;
@@ -246,9 +246,7 @@
 }
 
 .cmp-table thead th {
-  position: sticky;
-  top: var(--nav-h);
-  z-index: 1;
+  vertical-align: bottom;
   background: var(--base);
   font-family: var(--font-display);
   font-size: var(--fs-h3);
@@ -273,22 +271,55 @@
   color: var(--muted);
 }
 
-/* the Moya One column, tinted (DESIGN.md section 8) */
+/* the MoyaOne column, tinted (DESIGN.md section 8) */
 .cmp-table .is-moya {
   font-weight: 600;
 }
 
 .cmp-table thead th.is-moya,
 .cmp-table tbody tr > td.is-moya {
-  background: color-mix(in srgb, var(--orange) 9%, var(--base));
+  background: color-mix(in srgb, var(--sky) 9%, var(--base));
 }
 
 .cmp-table tbody tr:nth-child(odd) > td.is-moya {
-  background: color-mix(in srgb, var(--orange) 13%, var(--base));
+  background: color-mix(in srgb, var(--sky) 13%, var(--base));
 }
 
 .cmp-table thead th.is-moya {
   border-radius: 12px 12px 0 0;
+}
+
+/* a real picture of each option in a circle above its column (client review, after drinkprime.in) */
+.cmp-pic {
+  display: block;
+  width: 96px;
+  height: 96px;
+  margin-bottom: 14px;
+  border-radius: 50%;
+  overflow: hidden;
+  background: var(--grey);
+}
+
+.cmp-pic img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.is-moya .cmp-pic {
+  outline: 3px solid var(--sky);
+  outline-offset: 3px;
+}
+
+.cmp-credit {
+  margin-top: 16px;
+  font-size: var(--fs-caption);
+  color: var(--muted);
+}
+
+.cmp-credit a {
+  color: inherit;
 }
 
 .ct-pending {
@@ -311,10 +342,10 @@
   width: 7px;
   height: 7px;
   border-radius: 50%;
-  background: var(--yellow);
+  background: var(--highlight);
 }
 
-/* phones: each question on its own line, Moya One against the chosen option below it */
+/* phones: each question on its own line, MoyaOne against the chosen option below it */
 @media (max-width: 767px) {
   .cmp-table,
   .cmp-table thead,
@@ -346,6 +377,12 @@
     font-size: 16px;
   }
 
+  .cmp-pic {
+    width: 64px;
+    height: 64px;
+    margin-bottom: 10px;
+  }
+
   .cmp-table tbody tr > :first-child,
   .cmp-table tbody tr > :last-child {
     border-radius: 0;
@@ -362,10 +399,10 @@
   }
 
   .cmp-table tbody tr > td.is-moya {
-    background: color-mix(in srgb, var(--orange) 13%, var(--base)) !important;
+    background: color-mix(in srgb, var(--sky) 13%, var(--base)) !important;
   }
 
-  /* Moya One first, then the option chosen above the table */
+  /* MoyaOne first, then the option chosen above the table */
   .cmp-table .is-moya {
     order: 1;
   }
@@ -427,18 +464,47 @@
   background: var(--ink-raised);
 }
 
+/* each door shows its option as a real picture in a circle */
 .cp-door-art {
-  display: grid;
-  place-items: center;
+  display: block;
   aspect-ratio: 1;
-  border-radius: 12px;
+  border-radius: 50%;
+  overflow: hidden;
   background: var(--base);
-  padding: 12px;
 }
 
-.cp-door-art svg {
+.cp-door-art img {
+  display: block;
   width: 100%;
   height: 100%;
+  object-fit: cover;
+}
+
+/* the first screen's picture: a real person drinking water at home (client review, after drinkprime.in) */
+.cp-photo {
+  margin: 0;
+  border-radius: var(--radius-card);
+  overflow: hidden;
+  aspect-ratio: 4 / 3;
+  background: var(--ink-raised);
+}
+
+.cp-photo img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 62% 40%;
+}
+
+.cp-credits {
+  padding-bottom: 32px;
+  font-size: var(--fs-caption);
+  color: var(--muted);
+}
+
+.cp-credits a {
+  color: inherit;
 }
 
 .cp-door-text {
@@ -496,7 +562,7 @@
 .cp-note-title {
   font-size: var(--fs-h1);
   line-height: var(--lh-h1);
-  letter-spacing: -0.03em;
+  letter-spacing: -0.01em;
 }
 
 .cp-note-text {
@@ -579,14 +645,14 @@
 }
 
 .rt-stop.is-on {
-  fill: var(--yellow);
+  fill: var(--highlight);
 }
 
 .rt-centre {
   font-family: var(--font-display);
   font-weight: 700;
   font-size: 34px;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.01em;
   fill: var(--ink);
 }
 
@@ -685,7 +751,7 @@
   font-weight: 700;
   font-size: var(--fs-h1);
   line-height: 1;
-  letter-spacing: -0.03em;
+  letter-spacing: -0.01em;
   font-variant-numeric: tabular-nums;
 }
 
@@ -761,7 +827,7 @@
 .ro-word {
   font-size: var(--fs-h2);
   line-height: var(--lh-h2);
-  letter-spacing: -0.02em;
+  letter-spacing: -0.01em;
   font-weight: 700;
 }
 
@@ -810,7 +876,7 @@
 }
 
 .fc input[type='range'] {
-  accent-color: var(--orange);
+  accent-color: var(--sky);
 }
 
 .fc-total span {
@@ -869,7 +935,7 @@
 
 .fc-line {
   fill: none;
-  stroke: var(--orange);
+  stroke: var(--sky);
   stroke-width: 4;
   stroke-linecap: round;
   stroke-dasharray: 1;
@@ -917,8 +983,13 @@
   }
 
   .ks,
-  .bw-jug {
+  .bw-jug,
+  .cp-photo {
     grid-column: 8 / 13;
+  }
+
+  .cp-photo {
+    aspect-ratio: 4 / 5;
   }
 
   .ks-art {
@@ -1012,7 +1083,7 @@
   .ro-word {
     font-size: var(--fs-h1);
     line-height: var(--lh-h1);
-    letter-spacing: -0.03em;
+    letter-spacing: -0.01em;
   }
 
   .ro-who {
